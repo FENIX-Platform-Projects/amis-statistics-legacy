@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/fenix/!svn/ver/7669/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/common/vo
+END
+ClientProjectedDataDimension.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/fenix/!svn/ver/6410/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/common/vo/ClientProjectedDataDimension.java
+END
+Counter.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/fenix/!svn/ver/6410/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/common/vo/Counter.java
+END
+ClientGeoView.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/fenix/!svn/ver/7669/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/common/vo/ClientGeoView.java
+END
+Position.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/fenix/!svn/ver/6410/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/common/vo/Position.java
+END
+JoinDatasetVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/fenix/!svn/ver/7156/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/common/vo/JoinDatasetVO.java
+END
+EditableClientGeoView.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/fenix/!svn/ver/6410/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/common/vo/EditableClientGeoView.java
+END
+ClientMapView.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/fenix/!svn/ver/6410/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/common/vo/ClientMapView.java
+END
+StaticProjectionVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/fenix/!svn/ver/7156/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/common/vo/StaticProjectionVO.java
+END
+ClientBBox.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/fenix/!svn/ver/6410/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/common/vo/ClientBBox.java
+END
+StyleDefinition.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/fenix/!svn/ver/6410/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/common/vo/StyleDefinition.java
+END

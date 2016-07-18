@@ -1,0 +1,29 @@
+<layer type="shp">
+  <title>Kenya Land Use</title>
+  <abstract>Generated from KenyaLandUse -- Shapefile Layer 'KenyaLandUse::kenya_landuse'</abstract>
+  <source country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</source>
+  <provider country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</provider>
+  <region>133</region>
+  <categories />
+  <sharingcode>Public</sharingcode>
+  <featuretype>
+    <title>Kenya Land Use</title>
+    <abstract>Generated from KenyaLandUse</abstract>
+    <defaultstyle>kenyalandusestyle</defaultstyle>
+    <bbox>
+      <srs>4326</srs>
+      <minx>33.94366455078125</minx>
+      <maxx>41.892913818359375</maxx>
+      <miny>-4.700167655944824</miny>
+      <maxy>5.43585729598999</maxy>
+    </bbox>
+    <layername>kenya_landuse</layername>
+    <datastore>
+      <name>KenyaLandUse</name>
+      <namespace>fenix</namespace>
+    </datastore>
+  </featuretype>
+  <!--Data dumped from geoserver at:-->
+  <!--REST url: http://ldvapp07.fao.org:8032/geoserverDev-->
+  <!--WMS url: http://ldvapp07.fao.org:8032/geoserverDev/wms?-->
+</layer>

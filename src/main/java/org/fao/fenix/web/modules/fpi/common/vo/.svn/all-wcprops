@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/fenix/!svn/ver/6408/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/fpi/common/vo
+END
+FeedIndexVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/fenix/!svn/ver/6408/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/fpi/common/vo/FeedIndexVo.java
+END
+EconomicsIndexVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/fenix/!svn/ver/6408/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/fpi/common/vo/EconomicsIndexVo.java
+END
+OilsIndexVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/fenix/!svn/ver/6408/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/fpi/common/vo/OilsIndexVo.java
+END
+PoultryIndexVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/fenix/!svn/ver/6408/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/fpi/common/vo/PoultryIndexVo.java
+END
+WheatIndexVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/fenix/!svn/ver/6408/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/fpi/common/vo/WheatIndexVo.java
+END
+CerealsIndexParametersVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/fenix/!svn/ver/6408/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/fpi/common/vo/CerealsIndexParametersVo.java
+END
+DataEntryVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/fenix/!svn/ver/6408/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/fpi/common/vo/DataEntryVo.java
+END
+PeriodTypeCodeVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/fenix/!svn/ver/6408/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/fpi/common/vo/PeriodTypeCodeVo.java
+END
+FoodPriceIndexVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/fenix/!svn/ver/6408/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/fpi/common/vo/FoodPriceIndexVo.java
+END
+MeatIndexVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/fenix/!svn/ver/6408/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/fpi/common/vo/MeatIndexVo.java
+END
+SaveDataVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/fenix/!svn/ver/6408/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/fpi/common/vo/SaveDataVo.java
+END
+PigIndexVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/fenix/!svn/ver/6408/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/fpi/common/vo/PigIndexVo.java
+END
+MealsIndexVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/fenix/!svn/ver/6408/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/fpi/common/vo/MealsIndexVo.java
+END
+MeasurementUnitVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/fenix/!svn/ver/6408/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/fpi/common/vo/MeasurementUnitVo.java
+END
+DairyIndexVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/fenix/!svn/ver/6408/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/fpi/common/vo/DairyIndexVo.java
+END
+CerealsIndexVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/fenix/!svn/ver/6408/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/fpi/common/vo/CerealsIndexVo.java
+END
+SugarIndexVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/fenix/!svn/ver/6408/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/fpi/common/vo/SugarIndexVo.java
+END
+BovineIndexVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/fenix/!svn/ver/6408/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/fpi/common/vo/BovineIndexVo.java
+END
+OvineIndexVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/fenix/!svn/ver/6408/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/fpi/common/vo/OvineIndexVo.java
+END
+RiceIndexVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/fenix/!svn/ver/6408/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/fpi/common/vo/RiceIndexVo.java
+END

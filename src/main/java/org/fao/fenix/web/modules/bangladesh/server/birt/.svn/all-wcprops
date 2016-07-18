@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/fenix/!svn/ver/6747/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/bangladesh/server/birt
+END
+CreateImportsTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/fenix/!svn/ver/6747/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/bangladesh/server/birt/CreateImportsTable.java
+END
+CreateBangladeshReportFirstPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/fenix/!svn/ver/6404/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/bangladesh/server/birt/CreateBangladeshReportFirstPage.java
+END
+CreateBangladeshReportFourthPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/fenix/!svn/ver/6747/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/bangladesh/server/birt/CreateBangladeshReportFourthPage.java
+END
+CreateLCTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/fenix/!svn/ver/6747/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/bangladesh/server/birt/CreateLCTable.java
+END
+CreateDomesticPricesTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/fenix/!svn/ver/6747/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/bangladesh/server/birt/CreateDomesticPricesTable.java
+END
+CreateWheatMarketTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/fenix/!svn/ver/6404/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/bangladesh/server/birt/CreateWheatMarketTable.java
+END
+CreateBangladeshReportSecondPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/fenix/!svn/ver/6747/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/bangladesh/server/birt/CreateBangladeshReportSecondPage.java
+END
+CreateBangladeshReportThirdPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/fenix/!svn/ver/6747/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/bangladesh/server/birt/CreateBangladeshReportThirdPage.java
+END
+SettingGraphStyle.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/fenix/!svn/ver/6747/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/bangladesh/server/birt/SettingGraphStyle.java
+END
+CreateBangladeshReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/fenix/!svn/ver/6747/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/bangladesh/server/birt/CreateBangladeshReport.java
+END
+CreateRiceWheatProductionTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/fenix/!svn/ver/6747/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/bangladesh/server/birt/CreateRiceWheatProductionTable.java
+END

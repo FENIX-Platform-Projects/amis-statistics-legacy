@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/udtable/common/vo
+END
+DimensionItemModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/fenix/!svn/ver/6414/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/udtable/common/vo/DimensionItemModel.java
+END
+UDTableFilterVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/fenix/!svn/ver/6414/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/udtable/common/vo/UDTableFilterVO.java
+END
+UDTableCellVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/fenix/!svn/ver/6414/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/udtable/common/vo/UDTableCellVO.java
+END
+UDTableVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/udtable/common/vo/UDTableVO.java
+END
+DimensionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/udtable/common/vo/DimensionBean.java
+END
+UDTableHeaderVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/fenix/!svn/ver/6414/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/udtable/common/vo/UDTableHeaderVO.java
+END
+UDTableRowVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/fenix/!svn/ver/6414/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/udtable/common/vo/UDTableRowVO.java
+END

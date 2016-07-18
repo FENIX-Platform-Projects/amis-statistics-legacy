@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/fenix/!svn/ver/8782/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/adam/server/report/global
+END
+CreateADAMGlobalStandardReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/fenix/!svn/ver/6831/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/adam/server/report/global/CreateADAMGlobalStandardReport.java
+END
+CreateADAMAskAdamBody.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/fenix/!svn/ver/7461/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/adam/server/report/global/CreateADAMAskAdamBody.java
+END
+CreateADAMGlobalMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/fenix/!svn/ver/6831/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/adam/server/report/global/CreateADAMGlobalMap.java
+END
+CreateADAMReportResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/fenix/!svn/ver/8782/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/adam/server/report/global/CreateADAMReportResource.java
+END
+CreateADAMGlobalLegendInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/fenix/!svn/ver/6831/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/adam/server/report/global/CreateADAMGlobalLegendInfo.java
+END
+CreateADAMAskAdamReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/fenix/!svn/ver/7126/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/adam/server/report/global/CreateADAMAskAdamReport.java
+END

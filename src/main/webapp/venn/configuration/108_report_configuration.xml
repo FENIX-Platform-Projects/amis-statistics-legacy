@@ -1,0 +1,44 @@
+<configuration>
+ <!--  the venn is unique for each country (may be in the future more venn?!) -->
+	<venns>
+		<venn type='normal' show='yes'></venn>
+	</venns>
+
+	<countries>
+		<!--  that's for each country -->
+		<country code='108'>
+			<code>108</code>
+			
+			<tables>
+				<!-- for each tab we will have a table -->
+				<table type='summary' show='yes'> 
+					<filters>
+						<show intersection='a' total='yes' avg='yes'></show>
+						<show intersection='b' total='yes' avg='yes'></show>
+					</filters>
+				</table>
+			</tables>
+			
+			<charts>
+				<!-- for each tab we will have list of charts -->
+				
+			</charts>
+			
+			
+			
+			
+			<maps>
+				<!-- for each tab we will have a map -->
+				<map> 	
+				</map>
+			</maps>
+			
+			
+			
+			
+			
+		</country>
+	</countries>
+	
+	
+</configuration>

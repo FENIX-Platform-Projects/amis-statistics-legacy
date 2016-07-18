@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/fenix/!svn/ver/9505/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/utils
+END
+FAOSTATLoadingPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/fenix/!svn/ver/9369/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/utils/FAOSTATLoadingPanel.java
+END
+FAOSTATEmptyValuesPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/fenix/!svn/ver/9307/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/utils/FAOSTATEmptyValuesPanel.java
+END
+FAOSTATMapDisclaimerPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/fenix/!svn/ver/9314/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/utils/FAOSTATMapDisclaimerPanel.java
+END

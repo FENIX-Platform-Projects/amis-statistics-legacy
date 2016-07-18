@@ -1,0 +1,347 @@
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+     "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2012 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at http://typo3.org/
+-->
+
+<base href="http://www.amis-outlook.org/" />
+<link rel="shortcut icon" href="http://www.amis-outlook.org/fileadmin/templates/AMIS/images/amis_icon.ico" type="image/x-ico; charset=binary" />
+<link rel="icon" href="http://www.amis-outlook.org/fileadmin/templates/AMIS/images/amis_icon.ico" type="image/x-ico; charset=binary" />
+<title>Agricultural Market Information System: AMIS crops</title>
+<meta name="generator" content="TYPO3 4.5 CMS" />
+
+<link rel="stylesheet" type="text/css" href="typo3conf/ext/jfmulticontent/res/jquery/css/theme-1.9.2/jquery-ui-1.9.2.custom.css?1361539097" media="all" />
+<link rel="stylesheet" type="text/css" href="typo3conf/ext/jfmulticontent/res/tx_jfmulticontent_pi1.css?1361539097" media="all" />
+<link rel="stylesheet" type="text/css" href="typo3temp/stylesheet_6d7d35b2ce.css?1362125918" media="all" />
+
+<link rel="stylesheet" type="text/css" href="fileadmin/templates/AMIS/amis_style.css?1352462719" media="all" />
+
+<!--<script type="text/javascript" src="http://statistics.amis-outlook.org/data/amis-charts-widget/fileadmin/scripts/jquery/jquery-1.8.2.min.js?1349182319"></script>-->
+
+<script src="fileadmin/scripts/jquery/jquery-1.8.2.min.js?1349182319" type="text/javascript"></script>
+<script src="typo3conf/ext/jfmulticontent/res/jquery/js/jquery.easing-1.3.js?1361539097" type="text/javascript"></script>
+<script src="fileadmin/scripts/jquery/jquery-ui-1.8.21.custom.min.js?1343137149" type="text/javascript"></script>
+<script src="fileadmin/templates/AMIS/js/emailpage.js?1352123714" type="text/javascript"></script>
+<script src="typo3temp/javascript_93077bb238.js?1362125902" type="text/javascript"></script>
+
+
+
+<script type="text/javascript">
+/*<![CDATA[*/
+<!--
+/*db3c185bbf3ad128ec1f60b97e3aa5f5*/
+jQuery(document).ready(function(){
+	jQuery('#jfmulticontent_c182527').tabs({
+		heightStyle:'auto', hide:false, show:false
+	});
+
+
+});
+
+// -->
+/*]]>*/
+</script>
+
+
+	<!-- pp_lib:headmgr BEGIN  -->
+
+	<!-- pp_lib:headmgr END -->
+<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+	try {
+		var pageTracker = _gat._getTracker("UA-28772471-10"); //www.amis-outlook.org
+		pageTracker._setAllowHash(false);
+		pageTracker._setDomainName(".amis-outlook.org");
+		pageTracker._setAllowLinker(true);
+		pageTracker._trackPageview();
+		var rollupTracker = _gat._getTracker("UA-16957552-1"); //rollup account all internet
+		rollupTracker._setAllowHash(false);
+		rollupTracker._setDomainName(".fao.org");
+		rollupTracker._setAllowLinker(true);
+		rollupTracker._trackPageview();
+	}
+	catch(err) {}
+</script>
+<script type="text/javascript">
+	//<![CDATA[
+	function show(element){
+	element.className += "hover";
+  	}
+
+  	function hide(element){
+   	element.className = element.className = "";
+  	}
+  	//]]>
+</script>
+
+
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements" />
+
+<!-- AMIS STATISTICS JS  -->
+<script src="http://statistics.amis-outlook.org/data/amis-charts-widget/amis-statistics-charts.js" type="text/javascript"></script>
+
+
+
+<script type="text/javascript">
+	   window.SESSION_COOKIE_NAME = 'null';
+</script>
+
+
+</head>
+
+
+
+<body>
+
+
+
+<div id="wrapper">
+  <div class="banner">
+    <div class="tools"><div class="tools">
+	<!--  CONTENT ELEMENT, uid:134065/html [begin] -->
+		<div id="c134065" class="csc-default">
+		<!--  Raw HTML content: [begin] -->
+			<a href="javascript:mailpage()">send by email</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:print()" target="">print this page</a>
+
+		<!--  Raw HTML content: [end] -->
+			</div>
+	<!--  CONTENT ELEMENT, uid:134065/html [end] -->
+		</div></div>
+    <div class="logo">
+	<!--  CONTENT ELEMENT, uid:134044/text [begin] -->
+		<div id="c134044" class="csc-default">
+		<!--  Text: [begin] -->
+			<p class="bodytext"><a href="home/en/" title="AMIS homepage" class="internal-link"><img alt="AMIS homepage" src="fileadmin/templates/AMIS/images/amis_logo.jpg" height="129" width="260" /></a></p>
+
+		<!--  Text: [end] -->
+			</div>
+	<!--  CONTENT ELEMENT, uid:134044/text [end] -->
+		</div>
+  </div>
+  <div class="navmenu"><ul class="topmenu"><li onmouseover="show(this)" onmouseout="hide(this)"><a href="home/en/" onfocus="blurLink(this);">Home</a></li><li onmouseover="show(this)" onmouseout="hide(this)"><a href="amis-about/en/" onfocus="blurLink(this);" class="topmenu_active">About</a><ul class="topmenu"><li onmouseover="show(this)" onmouseout="hide(this)"><a href="amis-about/secretariat/en/" onfocus="blurLink(this);">Secretariat</a></li><li onmouseover="show(this)" onmouseout="hide(this)"><a href="amis-about/information/en/" onfocus="blurLink(this);">Market Information Group</a></li><li onmouseover="show(this)" onmouseout="hide(this)"><a href="amis-about/forum/en/" onfocus="blurLink(this);">Rapid Response Forum</a></li><li onmouseover="show(this)" onmouseout="hide(this)"><a href="amis-about/amis-crops/en/" onfocus="blurLink(this);" class="topmenu_active">AMIS crops</a></li><li onmouseover="show(this)" onmouseout="hide(this)"><a href="amis-about/calendars/en/" onfocus="blurLink(this);">Crop calendars</a></li></ul></li><li onmouseover="show(this)" onmouseout="hide(this)"><a href="amis-monitoring/en/" onfocus="blurLink(this);">Market monitor</a></li><li onmouseover="show(this)" onmouseout="hide(this)"><a href="amis-analysis/en/" onfocus="blurLink(this);">Analyses</a></li><li onmouseover="show(this)" onmouseout="hide(this)"><a href="statistics/en/" onfocus="blurLink(this);">statistics</a></li><li onmouseover="show(this)" onmouseout="hide(this)"><a href="capacity-development/en/" onfocus="blurLink(this);">Capacity development</a></li><li onmouseover="show(this)" onmouseout="hide(this)"><a href="amis-events/en/" onfocus="blurLink(this);">Events</a></li></ul></div>
+
+  <div class="maincontent">
+
+    <div class="content">
+	<!--  CONTENT ELEMENT, uid:181179/text [begin] -->
+		<div id="c181179" class="csc-default">
+		<!--  Text: [begin] -->
+			<p class="bodytext">The initial focus of AMIS is on four grains that are particularly important in international food markets, namely wheat, maize, rice and soybeans. Uniting G20 members (and Spain) plus seven major producers, consumers and exporters of agricultural commodities, AMIS participating countries represent a large share of global production, consumption and trade volumes of those four crops, typically in the range of 80-90 percent.
+</p>
+<p class="bodytext">Click on the tabs below for more information about each specific crop.
+</p>
+<p class="bodytext">&nbsp;</p>
+		<!--  Text: [end] -->
+
+			</div>
+	<!--  CONTENT ELEMENT, uid:181179/text [end] -->
+
+	<!--  CONTENT ELEMENT, uid:182527/list [begin] -->
+		<div id="c182527" class="csc-default">
+		<!--  Plugin inserted: [begin] -->
+
+
+
+	<!--
+
+		BEGIN: Content of extension "jfmulticontent", plugin "tx_jfmulticontent_pi1"
+
+	-->
+	<div class="tx-jfmulticontent-pi1">
+
+<div id="jfmulticontent_c182527">
+	<ul>
+
+
+		<li><a href="#jfmulticontent_c182527-1" rel="">Wheat</a></li>
+
+		<li><a href="#jfmulticontent_c182527-2" rel="">Maize</a></li>
+
+		<li><a href="#jfmulticontent_c182527-3" rel="">Rice</a></li>
+
+		<li><a href="#jfmulticontent_c182527-4" rel="">Soybeans</a></li>
+
+	</ul>
+
+	<div id="jfmulticontent_c182527-1">
+
+	<!--  CONTENT ELEMENT, uid:181071/textpic [begin] -->
+
+		<div id="c181071" class="csc-default">
+		<!--  Image block: [begin] -->
+			<div class="csc-textpic csc-textpic-center csc-textpic-below"><div class="csc-textpic-text">
+		<!--  Text: [begin] -->
+			<p class="bodytext"><img src="uploads/RTEmagicC_wheat_1_01.jpg.jpg" style="FLOAT: right" height="224" width="300" alt="" />Wheat is one of the first cereals known to have been domesticated. Its origin can be traced back to at least 11,000 years ago in the Nile Delta and Mesopotamia. There are several domesticated wheat varieties, including hybrids, but most often the distinction is made between soft and hard (durum) wheat.
+</p>
+<p class="bodytext">Soft wheat is by far the most important for production. It is used for food preparations, but lower quality supplies are commonly destined to feed and, in recent years, also for the production of bio-ethanol. With much smaller production volumes, hard wheat is largely used as ingredient for producing semolina and pasta. A number of countries grow two wheat crops per year: the winter wheat and spring wheat crops, named after the period of their planting.
+</p>
+<p class="bodytext">Global production of wheat averaged 680 million tonnes in 2009-2011, with close to half of the world output coming from the European Union, China and India. Overall AMIS countries accounted for 87 percent of the total. About 132 million tonnes of wheat (including wheat flour) were traded internationally in the same period, of which some 97 percent were exported by AMIS countries. AMIS countries accounted for a much <br />smaller share of world wheat imports, of 49 percent.</p>
+		<!--  Text: [end] -->
+
+			</div>
+
+<!-- AMIS STATISTICS CHART CONTENT-->
+<div id="amis_chart_container">
+  <!-- Where id below = product code -->
+  <table border="0" id="1">
+	 			<tr>
+	 				<td>
+	 				    <div id='chart_production' style='width: 300px; height: 320px;' ></div>
+	 				</td>
+
+	 				<td>
+	 				     <div id='chart_exports' style='width: 300px; height: 320px;'  ></div>
+					</td>
+
+	 				<td>
+	 				   <div id='chart_imports'  style='width: 300px; height: 320px;'  ></div>
+					</td>
+			  </tr>
+</table>
+</div>
+
+		<!--  Image block: [end] -->
+			</div>
+	<!--  CONTENT ELEMENT, uid:181071/textpic [end] -->
+
+	</div>
+
+	<div id="jfmulticontent_c182527-2">
+
+	<!--  CONTENT ELEMENT, uid:181084/textpic [begin] -->
+		<div id="c181084" class="csc-default">
+		<!--  Image block: [begin] -->
+
+			<div class="csc-textpic csc-textpic-center csc-textpic-below"><div class="csc-textpic-text">
+		<!--  Text: [begin] -->
+			<table summary="" class="contenttable"><tbody><tr><td><p class="bodytext">Maize (also known as corn) is a cereal grain, believed to have been domesticated at least 7,000 years ago when it was grown in Central Mexico. Maize is an annual plant with high productivity and exceptional geographic adaptability. There exist several hybrids of maize, each with their own specific properties and kernel, but maize is generally categorized into two broad groups: yellow maize and white maize, depending on their colour and taste.</p>
+<p class="bodytext">Yellow maize constitutes the bulk of world production and international trade. It is grown in northern hemisphere countries where it is traditionally used for animal feed. In addition, it has a wide range of industrial applications, including the production of ethanol. White maize cultivation, which requires more favourable climatic conditions than yellow maize, is mainly produced in the United States, Mexico and in a few countries in southern Africa. It is generally considered a food crop. Production of genetically modified maize has gained ground in recent years and now represent an important share of total production.</p>
+<p class="bodytext">Global production of maize averaged 853 million tonnes in 2009-2011, with more than half concentrated in the United States and China. Overall, AMIS countries accounted for 91 percent of the total. About 96 million tonnes of wheat were traded internationally in the same period, 93 percent of which were exported by AMIS countries. At the same time, AMIS countries accounted for about 59 percent of world maize imports.</p></td><td><p class="bodytext"><img src="uploads/RTEmagicC_maize_04.jpg.jpg" height="300" width="300" alt="" /></p></td></tr></tbody></table>
+		<!--  Text: [end] -->
+			</div><div class="csc-textpic-imagewrap csc-textpic-single-image" style="width:928px;"><img src="uploads/pics/Maize_coverage_01.png" width="928" height="342" alt="" /></div></div><div class="csc-textpic-clear"><!-- --></div>
+		<!--  Image block: [end] -->
+
+			</div>
+	<!--  CONTENT ELEMENT, uid:181084/textpic [end] -->
+
+	</div>
+
+	<div id="jfmulticontent_c182527-3">
+
+	<!--  CONTENT ELEMENT, uid:181078/textpic [begin] -->
+		<div id="c181078" class="csc-default">
+		<!--  Image block: [begin] -->
+			<div class="csc-textpic csc-textpic-center csc-textpic-below"><div class="csc-textpic-text">
+		<!--  Text: [begin] -->
+
+			<p class="bodytext"><img src="uploads/RTEmagicC_rice_01.jpg.jpg" style="FLOAT: right" height="209" width="300" alt="" />Rice is a cereal grain thought to have originated in the Yangtze River valley in China where it was domesticated at least 10,000 years ago. It is now widely cultivated around the world under a wide range of ecologies and climates. Rice is mainly an annual crop, even though it may survive as a perennial. It is grown predominantly under flooded conditions, as this facilitates fertilization and reduces the incidence of weeds and pest plants. More than one rice crop may be cultivated every season, especially under tropical and sub-tropical climates.
+</p>
+<p class="bodytext">There are two major rice varieties grown, Indica and Japonica, but popular strains also include Basmati, Hom Mali and other aromatic rices. Despite its migration to other regions, Asia remains the hub of rice production, with many countries in the region growing more than one crop per season. Rice is principally a food commodity, with only few countries diverting supplies to feed or industrial uses.
+</p>
+<p class="bodytext">Global production of rice averaged 469 million tonnes in 2009-2011, in milled rice equivalent, with more than half concentrated in China and India. Overall, AMIS countries accounted for 78 percent of the total. About 32 million tonnes of rice were traded internationally in the same period, 79 percent of which were exported by AMIS countries. At the same time, AMIS countries accounted for only 43 percent of world rice imports.</p>
+		<!--  Text: [end] -->
+			</div><div class="csc-textpic-imagewrap csc-textpic-single-image" style="width:917px;"><img src="uploads/pics/Rice_coverage_01.png" width="917" height="344" alt="" /></div></div><div class="csc-textpic-clear"><!-- --></div>
+
+		<div id="amis_charts_container">
+		    <table border="0">
+			 			<tr>
+			 				<td>
+			 				    <div id='chart_production_4' style='width: 300px; height: 320px;' ></div>
+			 				</td>
+
+			 				<td>
+			 				     <div id='chart_exports_4' style='width: 300px; height: 320px;'  ></div>
+							</td>
+
+			 				<td>
+			 				   <div id='chart_imports_4'  style='width: 300px; height: 320px;'  ></div>
+							</td>
+					  </tr>
+		</table>
+       </div>
+
+
+		<!--  Image block: [end] -->
+			</div>
+	<!--  CONTENT ELEMENT, uid:181078/textpic [end] -->
+
+
+	</div>
+
+	<div id="jfmulticontent_c182527-4">
+
+	<!--  CONTENT ELEMENT, uid:181086/textpic [begin] -->
+		<div id="c181086" class="csc-default">
+		<!--  Image block: [begin] -->
+			<div class="csc-textpic csc-textpic-center csc-textpic-below"><div class="csc-textpic-text">
+		<!--  Text: [begin] -->
+			<p class="bodytext"><img src="uploads/RTEmagicC_soybeans.jpg.jpg" style="FLOAT: right" height="178" width="300" alt="" />Soybeans are a legume classified by FAO as an oil crop. References to the crop have been found in China around 3,000 years ago. Soybeans were originally used for crop rotation, as a nitrogen fixing plant, and for the production of fermented food products. Until fairly recently, cultivation was limited largely to Asian countries and only gained popularity in the Americas and Europe in the early 1900s.
+</p>
+
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">Although in some countries soybeans are transformed at the local level into food products for direct human consumption, much of today’s production is crushed at industrial scale to obtain soybean oil and soybean meal, which account for about one third and two thirds of the crop’s economic value respectively. Soy-oil and soy-meal are consumed worldwide as food and animal feedstuff respectively. In recent years, soybean oil also started to be used for the production of bio-diesel. Commercial production of genetically modified soybeans has increased fast in recent years, with important implications for consumption and trade.
+</p>
+<p class="bodytext">Global soybean production averaged 254 million tonnes in 2009-2011. Production is highly concentrated, with some 80 percent originating in three countries alone: the United States, Brazil and Argentina. As a group, AMIS countries accounted for 95 percent of world production. Global soybean trade stood at around 92 million tonnes in 2009-2011, with AMIS countries accounting for about 93 percent of world exports and 90 percent of global imports.</p>
+		<!--  Text: [end] -->
+			</div><div class="csc-textpic-imagewrap csc-textpic-single-image" style="width:910px;"><img src="uploads/pics/Soybeans_coverage.png" width="910" height="346" alt="" /></div></div><div class="csc-textpic-clear"><!-- --></div>
+		<!--  Image block: [end] -->
+			</div>
+	<!--  CONTENT ELEMENT, uid:181086/textpic [end] -->
+
+	</div>
+
+
+</div>
+
+	</div>
+
+	<!-- END: Content of extension "jfmulticontent", plugin "tx_jfmulticontent_pi1" -->
+
+
+		<!--  Plugin inserted: [end] -->
+			</div>
+	<!--  CONTENT ELEMENT, uid:182527/list [end] -->
+		</div>
+  </div>
+
+  <div class="footer">
+    <!-- ###FOOTER_HOME### start --> <!-- ###FOOTER_HOME### end -->
+    <div class="copyright">
+	<!--  CONTENT ELEMENT, uid:135301/text [begin] -->
+		<div id="c135301" class="csc-default">
+		<!--  Text: [begin] -->
+			<p class="bodytext">© AMIS 2013</p>
+		<!--  Text: [end] -->
+
+			</div>
+	<!--  CONTENT ELEMENT, uid:135301/text [end] -->
+		</div>
+	<!--  CONTENT ELEMENT, uid:134576/text [begin] -->
+		<div id="c134576" class="csc-default">
+		<!--  Text: [begin] -->
+			<p class="bodytext"><a href="mailto:AMIS-Secretariat@fao.org">Contact us</a></p>
+		<!--  Text: [end] -->
+			</div>
+
+	<!--  CONTENT ELEMENT, uid:134576/text [end] -->
+
+    <div style="clear:both;"></div>
+  </div>
+</div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/fenix/!svn/ver/6752/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/communication/common/services
+END
+CommunicationService.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/fenix/!svn/ver/6752/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/communication/common/services/CommunicationService.java
+END
+CommunicationServiceAsync.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/fenix/!svn/ver/6752/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/communication/common/services/CommunicationServiceAsync.java
+END
+CommunicationServiceEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/fenix/!svn/ver/6407/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/communication/common/services/CommunicationServiceEntry.java
+END

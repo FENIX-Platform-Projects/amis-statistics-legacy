@@ -1,0 +1,74 @@
+<metadata>
+	<type>FAOStatProductionCrops</type>
+	<periodTypeCode>yearly</periodTypeCode>
+	<abstractAbstract>Area Harvested data is in hectares; yield in hectogram/hectare; production and seed data in tonnes. For additional information and general disclaimer, please refer to http://faostat.fao.org/site/567/default.aspx#ancor</abstractAbstract>
+	<keywords>faostat, production, crops</keywords>
+	<source country="0" contact="http://faostat.fao.org">FAOSTAT</source>
+	<provider country="0" contact="fabio.grita@fao.org">FENIX Workstation</provider>
+	<region>0</region>
+	<startDate>1960-01-01</startDate>
+	<endDate>2009-12-1001</endDate>
+	<dateLastUpdate>2010-12-12</dateLastUpdate>
+	<sharingCode>Public</sharingCode>
+	<categories>001</categories>
+	<title>FAOSTAT - Crops (Production)</title>
+	<code>FAOStatProductionCrops</code>
+	<descriptors>
+		<descriptor key="true">
+			<header>Year</header>
+			<contentDescriptor>date</contentDescriptor>
+		</descriptor>
+		<descriptor key="true">
+			<header>Area Name</header>
+			<contentDescriptor>featureCode</contentDescriptor>
+			<options>
+				<option>
+					<name>Geographic</name>
+					<value>FAOStatAreas</value>
+					<region>0</region>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="true">
+			<header>Item Name</header>
+			<contentDescriptor>commodityCode</contentDescriptor>
+			<options>
+				<option>
+					<name>Indicator</name>
+					<value>FAOStatItems</value>
+					<region>0</region>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="true">
+			<header>Element Name</header>
+			<contentDescriptor>firstIndicator</contentDescriptor>
+			<options>
+				<option>
+					<name>Indicator</name>
+					<value>FAOStatElements</value>
+					<region>0</region>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="false">
+			<header>Value</header>
+			<contentDescriptor>quantity</contentDescriptor>
+		</descriptor>
+		<descriptor key="true">
+			<header>Flag</header>
+			<contentDescriptor>secondIndicator</contentDescriptor>
+			<options>
+				<option>
+					<name>Indicator</name>
+					<value>FAOStatIFlags</value>
+					<region>0</region>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="true">
+			<header>Measurement Unit</header>
+			<contentDescriptor>measurementUnit</contentDescriptor>
+		</descriptor>
+	</descriptors>
+</metadata>

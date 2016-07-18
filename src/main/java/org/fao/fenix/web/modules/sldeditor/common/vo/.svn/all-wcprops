@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/fenix/!svn/ver/7206/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/sldeditor/common/vo
+END
+RGBContrast.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/fenix/!svn/ver/7206/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/sldeditor/common/vo/RGBContrast.java
+END
+ColorMapBigGrid.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/fenix/!svn/ver/7206/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/sldeditor/common/vo/ColorMapBigGrid.java
+END
+SLDEditorRuleVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/fenix/!svn/ver/7206/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/sldeditor/common/vo/SLDEditorRuleVO.java
+END
+SLDEditorBackgroundRuleVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/fenix/!svn/ver/7206/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/sldeditor/common/vo/SLDEditorBackgroundRuleVO.java
+END
+SldEditorUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/fenix/!svn/ver/7206/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/sldeditor/common/vo/SldEditorUtils.java
+END
+SLDEditorConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/fenix/!svn/ver/6990/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/sldeditor/common/vo/SLDEditorConstants.java
+END
+Interval.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/fenix/!svn/ver/7206/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/sldeditor/common/vo/Interval.java
+END
+ColorMapSmallGrid.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/fenix/!svn/ver/7206/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/sldeditor/common/vo/ColorMapSmallGrid.java
+END

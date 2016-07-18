@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ipc/common/vo
+END
+IPCMapValuesVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/fenix/!svn/ver/6409/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ipc/common/vo/IPCMapValuesVO.java
+END
+DropDownVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/fenix/!svn/ver/6409/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ipc/common/vo/DropDownVO.java
+END
+IPCGridMD.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/fenix/!svn/ver/6409/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ipc/common/vo/IPCGridMD.java
+END
+IPCReportBeanVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/fenix/!svn/ver/6409/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ipc/common/vo/IPCReportBeanVO.java
+END
+ProvinceVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ipc/common/vo/ProvinceVO.java
+END
+BulletPointVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/fenix/!svn/ver/6409/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ipc/common/vo/BulletPointVO.java
+END
+WorkflowInfoVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ipc/common/vo/WorkflowInfoVO.java
+END
+MapVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/fenix/!svn/ver/6409/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ipc/common/vo/MapVO.java
+END
+ModuleVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/fenix/!svn/ver/6409/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ipc/common/vo/ModuleVO.java
+END
+UserVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ipc/common/vo/UserVO.java
+END
+IPCCodesVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/fenix/!svn/ver/6409/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ipc/common/vo/IPCCodesVO.java
+END
+FreeTextVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/fenix/!svn/ver/6409/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ipc/common/vo/FreeTextVO.java
+END

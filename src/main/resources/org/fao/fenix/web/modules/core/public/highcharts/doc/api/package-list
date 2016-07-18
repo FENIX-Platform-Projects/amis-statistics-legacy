@@ -1,0 +1,10 @@
+org.adapters.highcharts.codegen
+org.adapters.highcharts.codegen.sections
+org.adapters.highcharts.codegen.sections.options
+org.adapters.highcharts.codegen.sections.options.types
+org.adapters.highcharts.codegen.types
+org.adapters.highcharts.codegen.utils
+org.adapters.highcharts.gxt.widgets
+org.adapters.highcharts.gxt.widgets.ext
+org.adapters.highcharts.gxt.widgets.ext.plugins
+org.adapters.highcharts.gxt.widgets.ext.plugins.impl

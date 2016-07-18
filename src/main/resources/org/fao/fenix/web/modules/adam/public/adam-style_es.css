@@ -1,0 +1,570 @@
+@CHARSET "UTF-8";
+
+/********************************** ADAM HOME PAGE STYLE REVISED ****************************************/
+body {
+margin:0;
+padding:0;
+height:100%; /* this is the key! */
+}
+
+/*** BANNER ***/
+#banner_es
+	{
+	width:100%;
+	height:120px;
+	background:url(adam-images/background.gif);
+	}
+	
+.pointer
+	{
+	cursor:pointer;
+	
+	}
+	
+	
+#languages-menu
+	{
+	width:100%;
+	height:20px;
+	background:url(adam-images/TopGreyBar.gif);
+	background-repeat:repeat-x;
+	vertical-align:center;
+	
+	}
+
+.language-links_selected {
+    background-color: gray;
+    color: #FFFFFF;
+    height:20px;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.language-links {
+    height:20px;
+    color: #4E5055;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.language-links a:link {
+    color: #4E5055;
+    text-decoration: none;
+}
+
+.language-links a:visited {
+    color: #4E5055;
+    text-decoration: none;
+}
+
+.language-links a:active {
+    color: #4E5055;
+    text-decoration: none;
+}
+
+.language-links a:hover {
+    color: #4E5055;
+    text-decoration: none;
+}
+
+	
+.formatting {
+	font-family:arial;
+	color: #ffffff;
+	font-size:0.7em;
+}
+
+
+/* HOME PAGE - LEFT SIDE CONTENT */
+
+#content-wrapper{
+	float: left;
+	width: 900px;
+	border:1px solid E8F0F9;
+	background:#fff;
+	margin-bottom:3px;
+        font-size:12px; 
+}
+
+#top-container {     
+	background-color: white;     
+	width : 900px;  
+	height : 300px;     	  
+	margin-bottom: 5px;  
+	font-size:12px;	
+	font-family:Verdana;
+	
+
+} 
+
+.top-container-list {
+	list-style:none outside none;
+	margin: 0;
+	padding: 0;
+	font-size:13px; 
+	
+	
+}
+
+.top-container-list li{
+
+	background:url(adam-images/bullets_blue.gif) no-repeat;
+	background-position: 0 .2em;
+	padding-left: 4em;
+	margin-left: 2em;
+	margin-top: 2em;
+	color: #1b65a4;
+	font-weight:bold;
+
+	
+	
+	
+}
+
+#top-column1 {     
+	float:left;
+	width:370px;
+	padding-top: 10px;  
+	padding-left: 0;  
+	padding-right:20px;
+	padding-right : 5px; 
+
+} 
+
+#top-column2 {    
+	float:left; 
+	width:460px;
+	padding-left : 30px;     
+	padding-top : 5px;     
+	padding-bottom : 5px; 
+} 
+
+.welcome {
+	color:#1b65a4;
+	font-size:1.4em;
+	font-style:normal;
+	font-weight: bold;
+	margin-left: 1em;
+	text-align:justify;
+}
+
+.adam_wel {
+	color:#000;
+	
+	
+	margin-left: 2em;
+	text-indent:0em;
+	
+}
+
+.colimage {
+	text-align:center;
+}
+
+.gototext_es {
+	font-family:Verdana;
+	color:#3381CE;
+	font-size:11px;
+	padding:0px;
+	text-align:left;
+	cursor: pointer;
+	font-weight:bold;
+}
+
+.indent {
+	cursor: pointer;
+	margin-left:15px;
+}
+
+.minitext_es {
+	margin-left:15px;
+	font-family:Verdana;
+	color:#000;
+	font-size:11px;
+	padding-top:5px;
+	line-height: 1.6em;
+	text-align:justify;
+        height:135px;
+}
+
+
+#column1 {
+	float: left;
+	padding:5px;
+	margin-right:15px;
+	width:30%;
+        
+}
+
+
+#column2 {
+	float: left;
+	padding:5px;
+	width:30%;
+}
+
+
+#column3 {
+	float: right;
+	padding:5px;
+	width:30%;
+	margin-right: 25px;
+}
+
+.col-image {
+ margin-left:15px;
+ 
+} 
+
+.col-image img { border:1px solid #93B5D8;}
+
+
+/* HOME PAGE - RIGHT SIDE CONTENT*/
+
+
+#right {
+	padding:0;
+	width:200px;
+	height:100%; /* works only if parent container is assigned a height value */
+	color:#606368;
+	background:#DAE0E8;
+}
+
+#right p {
+	padding:0 10px;
+	text-align:center;
+	font-weight:bold;
+}
+
+p.top {
+	margin-top:10px;
+}
+
+
+
+.promotion{
+	background-color: #e2e1dc;
+}
+
+.right-list {
+	list-style-type: none;
+	padding: 0;
+	margin-left: 1em;
+
+     
+
+}
+
+.right-list li {
+        list-style-type: none;
+        background-image: url(adam-images/blue_arrow.gif);
+        background-repeat: no-repeat;
+        background-position: 0 .7em;
+        padding-left: .3em;
+        margin-top: 0em;
+        text-indent: .5em;
+        font-weight:bold;
+  }
+
+ .right-list li a {
+        font-family:verdana;
+	font-size:10px;
+	text-decoration: none;
+	color: #424242;
+
+ } 
+
+
+.subtitles {
+	font-size:12px;
+	font-family:verdana;
+	text-indent:0.6em;
+	font-weight: bold;
+	color:#ffffff;
+ }
+
+ .subtitles2 {
+	font-size:11px;
+	font-family:verdana;
+	text-indent:4em;
+	font-weight: bold;
+	color:#336699;
+ }
+
+ a.link-section:link {
+	color: #424242;
+	text-decoration: none
+	font-size: 12pt;
+}
+
+
+ a.link-section2:link {
+	color: #fff;
+	text-decoration: none
+	font-size: 8pt;
+	text-indent:1em;
+}
+
+
+ a.link-section:visited {
+ 	color: #424242;
+ 	text-decoration: none;
+ }
+
+ a.link-section:hover {
+ 	color: #154F85;
+ 	text-decoration: none;
+}
+
+
+	
+/********************************** ADAM HOME PAGE STYLE ****************************************/
+.home-title {
+	text-align: left;
+	font-size: 12pt;
+}
+
+div#home-wrapper {
+    width: 100%;
+	margin: 0px auto;
+	border: 0px;
+	text-align: left;
+	font-family: sans-serif;
+	font-size: 10pt;
+	color: #424242;
+
+}
+
+.content-box1,.content-box2,.content-box3,.content-box4 {
+	margin-top: 8px;
+	padding: 0px;
+	position: absolute;
+	text-align: justify;
+	
+}
+
+.header-para p, .content-box p, .content-box1 p,.content-box2 p,.content-box3 p,.content-box4 p {
+	margin: 12px;	
+}
+
+
+
+.content-box1 {
+	margin-left: 165px;
+	width: 200px;
+}
+
+.content-box2 {
+	margin-left: 365px;
+	width: 200px;
+}
+
+.content-box3 {
+	margin-left: 560px;
+	width: 200px;
+}
+
+.content-box4 {
+	margin-left: 760px;
+	width: 200px;
+}
+
+
+.goto-box1,.goto-box2,.goto-box3,.goto-box4 {
+	padding: 0px;
+	position: absolute;
+	text-align: center;       
+	
+}
+
+
+.goto-box1 {
+	margin-left: 165px;
+	width: 200px;
+}
+
+.goto-box2 {
+	margin-left: 365px;
+	width: 200px;
+}
+
+.goto-box3 {
+	margin-left: 560px;
+	width: 200px;
+}
+
+.goto-box4 {
+	margin-left: 760px;
+	width: 200px;
+}
+
+
+
+
+.header-list, .header-para, .section-title {
+	margin-top: 0em;
+	margin: 0;
+}
+
+.header-para {
+	line-height: 17.5px;
+
+}
+
+
+
+.section-title {
+	font-size: 10pt;
+	font-weight: bold;
+	color: #154F85;
+	text-align: center;
+	
+}
+
+.link-items {
+	list-style-type: none;
+	padding: 0;
+        margin: 0;
+        margin-left: 1em;
+        text-indent: 0.5em;
+}
+
+.link-items li {
+       background-image: url(adam-images/bullet.gif);
+       background-repeat: no-repeat;
+       background-position: 0 .4em;
+       padding-left: .6em;
+	
+}
+
+.header-box {
+	height: 190px;
+	border: 1px solid #bbb;
+	padding: 5px;
+	padding-bottom: 0px;
+	background: #e7eff7;
+}
+
+.header-box-questions {
+	width: 470px;
+	float: left;
+}
+
+.header-box-desc {
+	width: 460px;
+	float: right;
+}
+
+
+.content-box {
+	margin-top: 8px;
+	padding-bottom: 10px;
+}
+
+
+.content-box div {
+	float: left;
+}
+
+.content-box-links {
+	width: 150px;
+	height: 160px;
+	border:1px solid #bbb;
+}
+ 
+ .header-list {
+ 	list-style-type: none;
+ 	padding: 0;
+        margin-left: 1em;
+        text-indent: 0.5em;
+        margin-top: 0.50em;
+ }
+ 
+ .header-list li {
+        background-image: url(adam-images/bullet2.gif);
+        background-repeat: no-repeat;
+        background-position: 0 .4em;
+        padding-left: .6em;
+        margin-top: .4em;
+ 	
+ }
+
+
+.bottom {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	clear: both;
+}
+
+
+.adamLogo {
+	background: transparent url(adam-images/ADAM_LOGO.png) no-repeat center
+		center;
+}
+
+/*********************** Toolbar Icons *************************************/
+.adam_print {
+	background: transparent url(adam-images/printer.gif) no-repeat center
+		center;
+}
+
+.adam_add {
+	background: transparent url(adam-images/plus.gif) no-repeat center center;
+}
+
+.gear {
+	background: transparent url(adam-images/gear.gif) no-repeat center center;
+}
+
+ .adam_info {
+  background: transparent url(adam-images/info.gif) no-repeat center center;
+}
+	
+ .moreIcon {
+	background: transparent url(adam-images/play.gif) no-repeat center center;
+  }
+
+.aggregation {
+	background: transparent url(images/arrow_in.png) no-repeat center center
+		;
+}
+.arrow_out {
+	background: transparent url(images/arrow_out.png) no-repeat center center
+		;
+}
+
+.help {
+	background: transparent url(images/help.png) no-repeat center center;
+}
+
+.info {
+	background: transparent url(images/information.png) no-repeat center
+		center;
+}
+
+.minimize-icon {
+	background: transparent url(adam-images/minimize-icon.png) no-repeat center
+		center;
+}
+
+.maximize-icon {
+	background: transparent url(adam-images/maximize-icon.png) no-repeat center
+		center;
+}
+
+.bulletPointGreen {
+	background: transparent url(images/bullet_green.png) no-repeat center
+		center;
+}
+
+.adamLogo {
+	background: transparent url(adam-images/ADAM_LOGO.png) no-repeat center
+		center;
+}
+
+.back {
+	background: transparent url(adam-images/arrow_left.png) no-repeat center
+		center;
+}

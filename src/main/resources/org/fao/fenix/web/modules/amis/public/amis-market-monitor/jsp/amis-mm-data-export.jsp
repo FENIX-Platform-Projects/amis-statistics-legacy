@@ -1,0 +1,464 @@
+<%@ page contentType="text/html; charset=UTF-8" language="java" import="java.sql.* " %>
+<%@ page import="java.io.*" %>
+<%@ page import="java.util.*" %>
+<%@ page import="org.json.simple.JSONObject"%>
+<%@ page import="org.json.simple.JSONArray"%>
+<%@ page import="java.text.SimpleDateFormat" %>
+<%@ page import="java.text.ParseException" %>
+<%@ page import="java.lang.System" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>AMIS Market Monitor Export to Excel</title>
+<link rel="stylesheet" type="text/css" href="http://statistics.amis-outlook.org/data/amis-market-monitor/css/amis-mm-export-data-table-theme.css">
+
+</head>
+<body>
+	<%
+String[] indicatorcodes = null;
+String domaintablecode = "";
+String minDate = "";
+String maxDate = "";
+String title = "";
+String period = "";
+
+
+if(request.getParameter("indicatorcode")!=null && request.getParameter("domaintable")!=null && request.getParameter("mindate")!=null && request.getParameter("maxdate")!=null && request.getParameter("title")!=null) {
+
+	response.setContentType("application/vnd.ms-excel");
+	response.setHeader("Content-Disposition", "inline; filename="+ "amis_market_monitor_download.xls");
+
+	indicatorcodes = request.getParameter("indicatorcode").trim().split(",");
+
+	domaintablecode = request.getParameter("domaintable");
+	minDate = request.getParameter("mindate");
+	maxDate = request.getParameter("maxdate");
+	title = "AMIS Market Monitor: "+ request.getParameter("title");
+	period = "From "+minDate+" to "+maxDate;
+
+    if(domaintablecode.indexOf("MONTHLY") > 0){
+        SimpleDateFormat df = new SimpleDateFormat("MMM yyyy");
+        SimpleDateFormat amis_df = new SimpleDateFormat("yyyy-MM-dd");
+
+        try{
+          java.util.Date fMinDate = df.parse(minDate);
+          java.util.Date fMaxDate = df.parse(maxDate);
+
+          minDate = amis_df.format(fMinDate);
+          maxDate = amis_df.format(fMaxDate);
+
+        } catch(ParseException e){
+
+        }
+
+      }
+
+        Connection connection = null;
+        PreparedStatement preparedStatement = null;
+        ResultSet resultSet = null;
+        PreparedStatement preparedStatement1a = null;
+        ResultSet resultSet1a = null;
+        PreparedStatement preparedStatement1 = null;
+        ResultSet resultSet1 = null;
+
+  try {
+	String driver = "org.postgresql.Driver";
+	String url = "jdbc:postgresql://localhost/fenix?user=fenix&password=Qwaszx";
+	String username = "fenix";
+	String password = "Qwaszx";
+	String DataField = null;
+
+	String query1 =
+	"SELECT tablename from customdataset WHERE code='"+domaintablecode+"'";
+
+
+	String query1a =
+		"SELECT tablename from customdataset WHERE code ='AMIS_INDICATOR_DEFINITIONS'";
+
+	Class.forName(driver).newInstance();
+	connection = DriverManager.getConnection(url);
+
+	preparedStatement = connection.prepareStatement(query1);
+	resultSet = preparedStatement.executeQuery();
+
+	preparedStatement1a = connection.prepareStatement(query1a);
+	resultSet1a = preparedStatement1a.executeQuery();
+
+	if(resultSet.next()) {
+
+	String amisTableName = resultSet.getString("tablename");
+
+	if(resultSet1a.next()) {
+
+		String amisDefTable = resultSet1a.getString("tablename");
+
+
+//Query 1 
+	String dataQuery1 = "";
+
+	if(!domaintablecode.equalsIgnoreCase("AMIS")){
+	    dataQuery1 = getExportData(indicatorcodes, amisTableName, amisDefTable, minDate, maxDate);
+	}
+	else {
+	    dataQuery1 = getWorldStockToUseRatioQuery(indicatorcodes, amisTableName, minDate, maxDate);
+	    //out.println("data "+dataQuery1);
+	}
+
+	preparedStatement1 = connection.prepareStatement(dataQuery1);
+	resultSet1 = preparedStatement1.executeQuery();
+	
+	
+	
+	%>
+	 <table id="amis-mm-export-data-table">
+			<thead>
+				<tr>
+				   <th class="amis-mm-export-data-table-header" colspan="6"><%=title%></th>
+				</tr>
+				<tr>
+				   <th class="amis-mm-export-data-table-header" colspan="6"><%=period%></th>
+				</tr>
+				<tr>
+					<th  class="amis-mm-export-data-table-column">Date</th>
+					<th  class="amis-mm-export-data-table-column">Indicator</th>
+					<th  class="amis-mm-export-data-table-column">Source</th>
+					<th  class="amis-mm-export-data-table-column">Value</th>
+					<th  class="amis-mm-export-data-table-column">Measurement Unit</th>
+					<th  class="amis-mm-export-data-table-column">Periodicity</th>
+				</tr>
+	        </thead>
+		<tbody>
+	    	<%
+		       while(resultSet1.next()) {
+                  String value = resultSet1.getString(4);
+		          String mUnit = resultSet1.getString(5);
+
+		          if(mUnit==null) {
+		            mUnit = "Index";
+		          }
+
+                   if(value==null) {
+                       value = "";
+                   }
+		          
+			%>
+			<tr>							
+				<td><%=resultSet1.getString(1)%></td>
+				<td><%=resultSet1.getString(2)%></td>
+				<td><%=resultSet1.getString(3)%></td>
+				<td><%=value%></td>
+				<td><%=mUnit%></td>				
+				<td><%=resultSet1.getString(6)%></td>
+			</tr>
+			<%
+			 }
+			%>
+		</tbody>
+	</table>
+	<%
+	  } 
+	 }
+	} catch(ClassNotFoundException e){e.printStackTrace();}
+catch (SQLException ex)
+{
+ex.getMessage();
+ex.getSQLState();
+ex.getErrorCode();
+}
+finally
+{
+ resultSet.close();
+ resultSet1a.close();
+ resultSet1.close();
+ preparedStatement1.close();
+ preparedStatement1a.close();
+ preparedStatement.close();
+ connection.close();
+out.flush(); 
+out.close();
+} 
+
+}
+	%>
+</body>
+</html>
+
+<%!
+
+public String getExportData(String[] indicatorCodes, String amisTableName, String amisDefinitionTableName, String minDate, String maxDate){
+         StringBuffer buffer = new StringBuffer();
+            
+             buffer.append(" SELECT D.date, ");
+	     buffer.append(" D.indicator_name, D.source,  "); 
+	     buffer.append(" CASE WHEN  D.measurement_unit is not null THEN ROUND(CAST(value as numeric), 2) ELSE ROUND(CAST(value as numeric), 1) END AS value, D.measurement_unit, I.periodicity "); 	   
+	     buffer.append(" FROM "+amisTableName + " D, "+amisDefinitionTableName + " I");
+	     buffer.append(" WHERE D.date BETWEEN '"+minDate+"' AND '"+maxDate+"'" );
+	     buffer.append(" AND D.indicator_code IN (");
+	     int i = 0;
+	     for(String indicator: indicatorCodes){
+	       buffer.append("'"+indicator+"'");
+	       
+	       if(i < indicatorCodes.length-1)
+	         buffer.append(", ");
+	       
+	       i ++;
+	     }
+	     buffer.append(" ) ");
+	     
+	     buffer.append(" AND D.indicator_code = I.indicator_code");
+	     buffer.append(" ORDER BY D.indicator_code, D.date DESC ");
+			 
+	     return buffer.toString();
+
+}
+
+
+public String getWorldStockToUseRatioQuery(String[] indicatorCodes, String amisTableName, String minDate, String maxDate){
+            
+            LinkedHashMap<String, String> product_trend_values = new LinkedHashMap<String, String>();
+	    	product_trend_values.put("5", "943.3");
+	    	product_trend_values.put("4", "479.4");
+	    	product_trend_values.put("6", "");
+	    	product_trend_values.put("1", "693.9");
+	    	
+
+            StringBuffer buffer = new StringBuffer();
+            
+                         buffer.append(" SELECT year as year_id, CAST(extract(year from year) as varchar) ||'/'|| substring(CAST(extract(year from (year + interval '1 years')) as varchar) from '..$') as year, ");		
+                         buffer.append(" CASE WHEN product_code = '6' THEN year ELSE (year + interval '1 years')::date END AS next_year, ");
+		         buffer.append(" SUM(case when element_code='20' THEN value end) as util, ");
+			 buffer.append(" SUM(case when element_code='16' THEN value end) as closing_stocks, ");
+			 buffer.append(" product_name ");
+			 buffer.append(" FROM "+amisTableName + " ");
+			 buffer.append(" WHERE  region_code='999000' "); 
+			 buffer.append(" AND product_code IN (");
+			 	     int i = 0;
+			 	     for(String indicator: indicatorCodes){
+			 	       buffer.append("'"+indicator+"'");
+			 	       
+			 	       if(i < indicatorCodes.length-1)
+			 	         buffer.append(", ");
+			 	       
+			 	       i ++;
+			 	     }
+	                 buffer.append(" ) ");
+			 buffer.append(" AND  database='CBS' and value_type='TOTAL'  ");
+			 buffer.append(" AND year BETWEEN '"+minDate+"' AND '"+maxDate+"'" );
+			 buffer.append(" GROUP BY year, product_code, product_name ORDER BY year DESC ");
+			 
+			 return buffer.toString();
+
+}
+
+
+public String getWorldStockToUseRatioQueryOriginal(String[] indicatorCodes, String amisTableName, String minDate, String maxDate){
+            
+            StringBuffer buffer = new StringBuffer();
+            
+                         buffer.append(" SELECT year as year_id, CAST(extract(year from year) as varchar) ||'/'|| substring(CAST(extract(year from (year + interval '1 years')) as varchar) from '..$') as year, ");		
+                         buffer.append(" CASE WHEN product_code = '6' THEN year ELSE (year + interval '1 years')::date END AS next_year, ");
+		         buffer.append(" SUM(case when element_code='20' THEN value end) as util, ");
+			 buffer.append(" SUM(case when element_code='16' THEN value end) as closing_stocks, ");
+			 buffer.append(" product_name ");
+			 buffer.append(" FROM "+amisTableName + " ");
+			 buffer.append(" WHERE  region_code='999000' "); 
+			 buffer.append(" AND product_code IN (");
+			 	     int i = 0;
+			 	     for(String indicator: indicatorCodes){
+			 	       buffer.append("'"+indicator+"'");
+			 	       
+			 	       if(i < indicatorCodes.length-1)
+			 	         buffer.append(", ");
+			 	       
+			 	       i ++;
+			 	     }
+	                 buffer.append(" ) ");
+			 buffer.append(" AND  database='CBS' and value_type='TOTAL'  ");
+			 buffer.append(" AND year BETWEEN '"+minDate+"' AND '"+maxDate+"'" );
+			 buffer.append(" GROUP BY year, product_name ORDER BY year DESC ");
+			 
+			 return buffer.toString();
+
+}
+
+public JSONObject prepareStocksData( javax.servlet.jsp.JspWriter out, ResultSet resultSet1, JSONObject results, String trendValue) throws SQLException, ParseException, IOException {
+        	//out.println("START ");
+		
+		LinkedHashMap<String, String> years = new LinkedHashMap<String, String>(); // year, year_label
+		LinkedHashMap<String, String> yearsTimestamp = new LinkedHashMap<String, String>(); // year, timestamp
+		LinkedHashMap<String, HashMap<String, Double>> closing = new LinkedHashMap<String, HashMap<String, Double>>(); // year, <next-year, val>
+		LinkedHashMap<String, Double> utils = new LinkedHashMap<String, Double>(); // year, val
+		
+		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		SimpleDateFormat newDateformat = new SimpleDateFormat("yyyy-MM-dd");
+                JSONArray dataArray = new JSONArray();
+		
+		
+		 //Query 1 RESULTS: prepare data	
+		 while(resultSet1.next()) {
+			   
+			    HashMap<String, Double> map = new  HashMap<String, Double>();
+			    map.put((String)resultSet1.getString(3), Double.valueOf((String)resultSet1.getString(5)));
+			    
+	            String year_label = (String)resultSet1.getString(2);		  
+	            
+	            boolean firstRow = resultSet1.isFirst(); 
+	         
+	           
+	         
+	            if(firstRow){
+	         	    year_label += " f'cast";
+	         	    results.put("enddate", (String)resultSet1.getString(1));
+	             } 
+	             
+	            if(resultSet1.isLast()){
+	               results.put("startdate", (String)resultSet1.getString(1));
+	            }
+			    
+			    years.put((String)resultSet1.getString(1), year_label);
+			    yearsTimestamp.put((String)resultSet1.getString(1), (String)resultSet1.getString(7));
+			    closing.put((String)resultSet1.getString(1), map);
+			    utils.put((String)resultSet1.getString(1), Double.valueOf((String)resultSet1.getString(4)));
+			
+			
+			
+		    results.put("indicator", (String)resultSet1.getString(6));
+		   
+		
+		   }
+		
+		
+		
+			
+		// 5 data arrays (for each crop):
+		// - year categories list
+		// - 4 data series list
+		
+	
+	       
+	        JSONArray ratioDataArray = new JSONArray();
+		JSONArray categoriesArray = new JSONArray();
+		
+	    ArrayList<String> keys = new ArrayList<String>(closing.keySet());
+	
+	
+	
+	
+
+	    for(int j=closing.keySet().size()-1; j>=0;j--){ // loop in reverse (as the query is DESC)
+	        String year = keys.get(j);
+	    	categoriesArray.add(years.get(year));
+	      	HashMap<String, Double> data = closing.get(year);
+			
+			for(String next_year: data.keySet()){
+			JSONArray indexDataArray = new JSONArray();
+			
+		        Double utilVal = null;
+				if(utils.containsKey(next_year)){
+					utilVal = utils.get(next_year);
+		        }
+		        else 
+		           utilVal = Double.valueOf(trendValue);
+				  
+				double ratio = data.get(next_year) / utilVal;
+				double percent =  ratio * 100;
+				
+				int percent_whole = (int) Math.round(ratio * 100);
+				
+			          JSONObject ratioData = new JSONObject();
+				   ratioData.put("year_id",  year);
+				   ratioData.put("ratio", ratio);
+				   ratioData.put("percent", percent);
+				   ratioData.put("rounded_percent", percent_whole);
+				   ratioData.put("util", utilVal);
+				   ratioData.put("closing",  data.get(next_year));  
+				  
+				  
+				  
+				  
+				  ratioDataArray.add(percent_whole);
+				   
+			   
+				   String dateSt = yearsTimestamp.get(year);
+				   java.util.Date date = dateFormat.parse(dateSt);
+				   
+				   long epoch = date.getTime();
+				   
+				 //  indexDataArray.add(year);
+				    
+				   
+				   indexDataArray.add(Long.valueOf(epoch));
+	                        //   dataArray.add(indexDataArray);      
+	           
+	           
+				  //Double dVal = Double.valueOf(percent);
+				  // indexDataArray.add(dVal);
+				 
+				  indexDataArray.add(percent_whole);
+							 
+			        //  dataArray.add(indexDataArray);
+			          
+			          
+			          JSONObject dataValues = new JSONObject();
+			          dataValues.put("x", Long.valueOf(epoch));
+			          dataValues.put("y", percent_whole);
+			          dataValues.put("name", years.get(year));
+			          dataValues.put("unit", "%");
+			          
+			       
+			          dataArray.add(dataValues);
+			          
+			  
+				   
+			}	
+			
+		}
+		// out.println("<br/> HERE ");
+		
+		 JSONArray dataSeries = new JSONArray();
+		 JSONObject dataSeriesDef = new JSONObject();
+	         dataSeriesDef = new JSONObject();
+		 dataSeriesDef.put("indicator", "World Stock-to-use ratio");	
+		 dataSeriesDef.put("units", "Percent");
+		 dataSeriesDef.put("data", ratioDataArray);
+//		 dataSeriesDef.put("source", "FAO-CBS (distributed by AMIS Statistics)");
+         dataSeriesDef.put("source", "FAO-AMIS (distributed by AMIS Statistics)");
+		 dataSeriesDef.put("sourceurl", "http://statistics.amis-outlook.org/data/index.html");
+		 dataSeriesDef.put("charttype", "spline");
+		 		 
+		 dataSeries.add(dataSeriesDef);
+	
+		
+		
+		//results.put("indicator", "World Stock-to-use ratio ");
+		//results.put("periodicity", periodicity);
+		//		results.put("baseperiod", base_period);
+		
+//		results.put("source", "FAO-CBS (distributed by AMIS Statistics)");
+        results.put("source", "FAO-AMIS (distributed by AMIS Statistics)");
+		results.put("sourceurl", "http://statistics.amis-outlook.org/data/index.html");
+		results.put("units", "Percent");
+		results.put("data", dataArray);
+		results.put("periodicity", "Annual");
+		
+		//results.put("startdate", startdate);
+		//results.put("enddate", enddate);
+		
+		
+	        results.put("dataseries", dataSeries);
+	        results.put("categories", categoriesArray);
+	        
+	        
+	     
+			   
+	        return results;
+}
+
+
+
+
+%>
+
+

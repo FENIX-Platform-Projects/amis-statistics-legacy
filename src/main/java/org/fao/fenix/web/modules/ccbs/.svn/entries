@@ -1,0 +1,71 @@
+9
+
+dir
+9508
+https://joinup.ec.europa.eu/svn/fenix/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ccbs
+https://joinup.ec.europa.eu/svn/fenix
+
+
+
+2011-10-10T14:34:28.551839Z
+8446
+babic
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+8049af31-f9ff-4023-afbb-8bc685b739a6
+
+CCBS.gwt.xml
+file
+
+
+
+
+2012-05-04T10:28:00.000000Z
+79a516c0f71a872279306efa01448868
+2010-04-22T21:03:31.970700Z
+6406
+kalimaha
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+889
+
+client
+dir
+
+common
+dir
+
+server
+dir
+

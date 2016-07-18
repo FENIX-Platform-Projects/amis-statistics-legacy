@@ -1,0 +1,132 @@
+﻿<NOTES type="Resources">
+<NOTE type="Introduction">
+<E>&lt;b&gt;Click in the tree &lt;/b&gt; to access the download page of the &lt;b&gt;agricultural resources
+sub-domains.&lt;/b&gt;&lt;br/&gt;&lt;br/&gt; The agricultural resources domain covers:&lt;br/&gt;&lt;br/&gt;
+
+&lt;ul class='bullet-list'&gt;
+&lt;li&gt;Investment (forthcoming)&lt;/li&gt;
+&lt;li&gt;Land&lt;/li&gt;
+&lt;li&gt;Labour&lt;/li&gt;
+&lt;li&gt;Machinery<br/>
+&lt;li&gt;Fertilizers&lt;/li&gt;
+&lt;li&gt;Pesticides&lt;/li&gt;
+&lt;/ul&gt;
+</E>
+<F>&lt;b&gt;Click in the tree &lt;/b&gt; to access the download page of the &lt;b&gt;agricultural resources
+sub-domains.&lt;/b&gt;&lt;br/&gt;&lt;br/&gt; Le domaine resources agricoles couvre:&lt;br/&gt;&lt;br/&gt;
+
+&lt;ul class='bullet-list'&gt;
+&lt;li&gt;Investissement (à venir)&lt;/li&gt;
+&lt;li&gt;Terres&lt;/li&gt;
+&lt;li&gt;Main d'oeuvre &lt;/li&gt;
+&lt;li&gt;Machines agricoles<br/>
+&lt;li&gt;Engrais&lt;/li&gt;
+&lt;li&gt;Pesticides&lt;/li&gt;
+&lt;/ul&gt;
+</F>
+<S>&lt;b&gt;Click in the tree &lt;/b&gt; to access the download page of the &lt;b&gt;agricultural resources
+sub-domains.&lt;/b&gt;&lt;br/&gt;&lt;br/&gt; El ámbito de los recursos agrícolas cubre:&lt;br/&gt;&lt;br/&gt;
+
+&lt;ul class='bullet-list'&gt;
+&lt;li&gt;Inversión (próximamente)&lt;/li&gt;
+&lt;li&gt;Tierra&lt;/li&gt;
+&lt;li&gt;Mano de obra&lt;/li&gt;
+&lt;li&gt;Maquinaria<br/>
+&lt;li&gt;Fertilizantes&lt;/li&gt;
+&lt;li&gt;Plaguicidas&lt;/li&gt;
+&lt;/ul&gt;
+</S>
+</NOTE>
+<NOTE type="Description">
+<E>Some of the most interesting data for economists is found in this domain. The national distribution of land, among arable land, pastures and other lands, as well as the importance of irrigation are just some of the interesting data sets.&lt;br/&gt;&lt;br/&gt;
+
+Farmers produce food and fiber using a wide variety of farm practices and management systems that differ by commodity, region, and farm and operator characteristics. The mix of inputs, practices, and technologies used by farmers, when combined with land, labor, and water resources, affects production costs; farm income; and soil, water and air quality.
+</E>
+<F>Les données présentées dans ce domaine sont parmi les plus intéressantes pour les économistes. La distribution nationale des terres en terres arables, pâturages et autres terres, ainsi que l'importance de l'irrigation font partie de domaine.&lt;br/&gt;&lt;br/&gt;
+
+Les agriculteurs produisent les aliments et les fibres en utilisant une large variété de pratiques agricoles et des systèmes de gestion qui diffèrent selon les produits, la région et les caractéristiques des exploitations. Le mélange des apports, des pratiques et des technologies utilisées par les agriculteurs, combinés avec la qualité de la terre, le travail et les ressources en eau, affecte des coûts de production, le revenu agricole, le sol, l'eau et la qualité de l'air.
+</F>
+<S>Algunos de los datos más interesantes para los económistas se encuentra en este ámbito. La distribución nacional de tierras, entre tierra arable, pasturas y otras tierras, así como la importancia de la irrigación son solo algunos de los grupos de datos interesantes.&lt;br/&gt;&lt;br/&gt;
+
+Los productores producen alimento y fibra que utilizan una gran variedad de prácticas de las fincas y sistemas de administración que difieren por productos, por región, y por características de la finca y operación. La combinación de producción, prácticas, y tecnologías utilizadas por granjeros, cuando combinado con tierra, trabajo, y con recursos de agua, afectan los costos de producción; los ingresos de las fincas; y la tierra, el agua y la calidad del aire.
+</S>
+</NOTE>
+<NOTE type="Description">
+<E>The Resources domain considers factors of production for the agricultural sector. Broadly speaking, this section details how countries differ in endowments of the three classic inputs: labour, land and capital. Qualitative differences are important for each but are particularly difficult to summarise in a single indicator for land, the productivity of which depends heavily on water and soil conditions.</E>
+<F>Le module Ressources présente les facteurs de production pour le secteur agricole. Au sens large, cette section illustre en détails comment les pays diffèrent dans leur dotation en trois types classiques de ressources: main d'oeuvre, terres et  capital. Les différences qualitatives sont importantes pour chacun de ces facteurs de production, mais sont extrêmement difficiles à synthétiser dans un seul indicateur pour les terres, dont  la productivité dépend considérablement de l'eau et des caractéristiques des sols.</F>
+<S>El módulo de Recursos considera factores de producción para el sector agrícola. Hablando en términos generales, esta sección detalla como los países difieren en la dotación de los tres clásicos insumos: trabajo, tierra y capital. Las diferencias cualitativas son importantes para cada una de ellas pero para la tierra son particularmente difíciles de resumir en un simple indicador, la productividad de la misma depende fuertemente del agua y de las condiciones del suelo.</S>
+</NOTE>
+<NOTE type="Description">
+<TITLE><E>Fertilizers</E></TITLE>
+<E>The Fertilizer dataset contains summary data from 2002 onwards. This dataset has been prepared using a revised methodology and new dissemination formats starting in 2006. The previous fertilizer data series in FAOSTAT (data from 1961 to 2002) can be found in the Fertilizer Archive. The two sets should be used separately and not combined in order to create longer time series. This is due to the following changes from 2002 including: a change in the underlying fertilizer data methodology; the move to the use of calendar rather than a mixture of calendar and fertilizer year; revised classification of the fertilizer items; the addition of the non-fertilizer use parameter in the fertilizer balance and the use of new data sources for some data (e.g. UN COMTRADE).&lt;br/&gt;&lt;br/&gt;
+
+The fertilizer statistics data are generally received from individual countries in product weight through the new FAO Questionnaire on Agricultural Resources – Fertilizers and then converted to nutrients and validated for consistency regarding summary totals of production, import, export, non-fertilizer use and consumption for the three types of fertilizers: nitrogen (N), phosphate (P205), potash (K20) and including complex fertilizers (NP, PK, NK and NPK).</E>
+</NOTE>
+<NOTE type="Description">
+<TITLE><E>Fertilizer Trade Values</E></TITLE>
+<E>The Fertilizer Trade Values contains data from 1961 onwards. This dataset has been prepared from detailed fertilizer imports and exports statistics reported by national statistical authorities, The United Nations Commodity Trade Statistics Database (UN Comtrade) and Eurostat. All values are in 1000 US Dollars (1000 $). Please note that differences between exports and imports are mainly due to: &lt;br/&gt;&lt;br/&gt;
+&lt;ul class='bullet-list'&gt;
+&lt;li&gt;the time lag between the date when the exports are recorded and the date of their entry into the importing countries;&lt;/li&gt;
+&lt;li&gt;the time reference period: some exporting countries report for the calendar year while the corresponding importing countries report for the fertilizer year, and vice versa;&lt;/li&gt;
+&lt;li&gt;the different statistical systems used in reporting intermediate material.&lt;/li&gt;
+&lt;/ul&gt;
+ </E>
+</NOTE>
+<NOTE type="Description">
+<TITLE><E>Pesticides Trade</E></TITLE>
+<E>Pesticides (trade) – refer to insecticides, fungicides, herbicides, disinfectants and others covered by the Harmonised Coding System (HS) code 3808. Data refer to the value of the trade expressed in 1000 USD. For more information on the Codes and Description of Elements and Trade in Rotterdam Convention Pesticides, please click &lt;a href='web_pages/E/pesticides_trade.html' target='_blank'&gt;here &lt;/a&gt;.</E>
+</NOTE>
+<NOTE type="Description">
+<TITLE><E>Pesticides Consumption</E></TITLE>
+<E>The Statistics Division of the Food and Agriculture Organization of the United Nations started the collection of data on consumption of major individual pesticides products about three decades ago. However, the response to the related Pesticides Consumption Annual Questionnaire sent to all member countries was not very encouraging. Therefore, in 1986 in co-operation with the Commission of the European Union, a study was undertaken to find ways to improve the country coverage of the data. The present work of collecting data on groups of pesticides is a result of the recommendations of this study. Data collected earlier have been published in various issues of the Production Yearbook. The present database refers to the quantity of pesticides used in or sold to the agricultural sector for crops and seeds; data are expressed in metric tons of active ingredients. Information on quantities applied to single crops is not available. For more information on the Description of Elements and General Notes, please click &lt;a href='web_pages/E/pesticides_consumption.html' target='_blank'&gt;here&lt;/a&gt;.</E>
+</NOTE>
+<NOTE type="Description">
+<TITLE><E>Land Use</E></TITLE>
+<E>&lt;b&gt;Land-use statistics&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+
+Data on agricultural land-use are valuable for conducting studies on a various perspectives concerning agricultural production, food security and for deriving cropping intensity among others uses. Indicators derived from the land-use categories can also elucidate the environmental sustainability of countries’ agricultural practices. FAOSTAT Land-use statistics contain a wide range of information on variables that are significant for: understanding the structure of a country’s agricultural sector; making economic plans and policies for food security; deriving environmental indicators, including those related to investment in agriculture and data on gross crop area and net crop area which are useful for policy formulation and monitoring.&lt;br/&gt;&lt;br/&gt;
+
+&lt;b&gt;Land-use resources domain in FAOSTAT&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+
+The ResourceSTAT-Land-use domain includes: Country area (including area under inland water bodies), Land area (excluding area under inland water bodies), Agricultural area, Arable land and Permanent crops, Arable land, Permanent crops, Permanent meadows and pastures, Forest area, Other land and Area equipped for irrigation. Detailed information on sub-categories: Temporary crops, Temporary meadows and pastures, Fallow land (temporary: less than 5 years), Permanent meadows and pastures cultivated and naturally grown and Organic land. Data are available from 1961 to 2009 for more than 200 countries and areas.
+
+Forest area: Global Forest Resource Assessment 2010 (FRA 2010) is the main source of forest area data in FAOSTAT. Data were provided by countries for years 1990, 2000, 2005 and 2010. Data for intermediate years were estimated for FAO using linear interpolation and tabulation.&lt;br/&gt;&lt;br/&gt;
+
+&lt;b&gt;Questionnaire&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+
+The annual FAO land resource questionnaire is the primary source of country land-use data. The data collected from the questionnaires are from official national sources. Starting from 2001, the land-use questionnaire was revised in order to obtain further information on the land-use sub-categories as well as areas that are actually irrigated. Starting in 2010, the FAO Statistics Division Land resource questionnaire includes items on land used for organic production and land in conversion to organic production. The new items in the questionnaire are: agricultural area certified organic, agricultural area in conversion to organic, arable area organic, arable area in conversion to organic, permanent crops area organic, permanent crops in conversion to organic, permanent meadows and pastures area organic and permanent meadows and pastures in conversion to organic. If official data about Organic land have not been provided, the information has been supplemented by other sources such as the Research Institute of Organic Agriculture FiBL and the Mediterranean Organic Agriculture Network, MOAN.&lt;br/&gt;&lt;br/&gt;
+
+&lt;b&gt;Secondary sources&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+
+The data collected from official national sources through the questionnaire are supplemented with information from official secondary data sources. The secondary sources cover: official country data from websites of national ministries, national publications and related country data reported by various international organizations.
+</E>
+</NOTE>
+<NOTEGROUP type="Please Note">
+ <TITLE><E>Please Note</E></TITLE>
+ <NOTE type="General">
+<E>&lt;b&gt;Fertilizers:&lt;/b&gt; Aggregates Continental and regional aggregates only include data for reporting countries. Estimates for non-reporting countries are not included in the continental and regional aggregates. For more information on the Concepts and Definitions, please click &lt;a href='web_pages/E/fertilizers.html' target='_blank'&gt;here &lt;/a&gt;.
+</E>
+</NOTE>
+<NOTE type="General">
+<E>&lt;b&gt;Fertilizers Archive:&lt;/b&gt; Fertilizer prices paid by farmers are shown in local currency per metric tonne of plant nutrients (N, P2O5 and K2O) for straight fertilizers and per metric tonne of product for mixed and complex fertilizers. They generally refer to bagged fertilizers. Prices are shown with subsidies deducted wherever possible. Caution should be exercised in intercountry comparisons since pricing points, price policies, credit arrangements, etc. are not uniform. The following specifications relate to price data.&lt;br/&gt;&lt;br/&gt;
+
+&lt;b&gt;Element References:&lt;/b&gt;&lt;br/&gt;
+51 Production MT&lt;br/&gt;
+Quantity, in metric tonnes, of plant nutrient for domestic use in agriculture.&lt;br/&gt;&lt;br/&gt;
+
+61 Imports MT&lt;br/&gt;
+Quantity of Fertilizers in metric tons of plant nutrient imported by a country.&lt;br/&gt;&lt;br/&gt;
+
+91 Exports MT&lt;br/&gt;
+Quantity of Fertilizers equivalent in metric tons of plant nutrient exported by a country.&lt;br/&gt;&lt;br/&gt;
+
+151 Consumption MT&lt;br/&gt;
+Quantity of Fertilizer in metric tons of plant nutrient consumed in agriculture by a country.&lt;br/&gt;&lt;br/&gt;
+
+171 Farmer Price LC/MT&lt;br/&gt;
+Fertilizer prices paid by farmers are shown in local currency per metric ton (LC/MT) of plant nutrients (N, P2O5 and K2O); wherever possible prices are shown with subsidies deducted.
+</E>
+</NOTE>
+
+</NOTEGROUP>
+</NOTES>

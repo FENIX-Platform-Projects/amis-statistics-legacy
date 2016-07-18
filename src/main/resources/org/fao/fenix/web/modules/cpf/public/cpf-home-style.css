@@ -1,0 +1,299 @@
+
+/********************************** CPF HOME PAGE STYLE ****************************************/
+
+
+html,body{margin:0;padding:0}
+body{
+	font-family: arial, verdana;
+}
+
+
+/*** BANNER ***/
+
+#languages-menu {
+	width:100%;
+	height:20px;
+	background:url(cpf-images/TopGreyBar.gif);
+	background-repeat:repeat-x;
+	vertical-align:center;
+	}
+	
+.language-selected {
+    float:left;
+    background-color: gray;
+    color: #FFFFFF;
+    height:20px;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.language-unselected {
+    float:left;
+    height:20px;
+    color: #4E5055;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.language-unselected a:link, a:visited, a:hover, a:active {
+    font-size: 11px;
+    font-weight:bold;
+    color: #4E5055;
+    text-decoration: none;
+}
+
+	
+#banner {
+	width:100%;
+	height:110px;
+	background:url(cpf-images/background.gif);
+}
+
+.fao-header {
+   	float:left;
+   	padding-left:85px;
+   	padding-top:10px;
+}
+
+.fao-header a:link, a:visited, a:hover, a:active {
+    font-weight:normal;
+    font-size:12px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.banner-menu {
+	float:right;
+	padding-top:10px; 
+	padding-left:10px;
+	padding-right:10px;
+	font-size:12px;
+}
+	
+.banner-menu a:link, a:visited, a:hover, a:active {
+    	font-size:12px;
+    	color: #0E4A8F;
+    	font-weight:bold;
+    	text-decoration: none;
+}
+
+
+.orange-separator {
+	 color: #E9811D;
+	 font-weight:bold;
+}
+
+.logo-left {
+	float:left;
+	padding-top:10px;	
+	padding-left:30px;	
+	padding-right:10px;
+	}
+	
+.logo-right {
+	float:left;
+	padding-top:15px;	
+	color: #0E4A8F;	
+	cursor:pointer;
+	}
+
+.logo-title {
+        font-size:20px;
+        font-weight:bold;
+    	font-family: Geneva, Arial, Helvetica, sans-serif;
+	}	
+
+
+	
+/** FORMATTING **/
+
+.clear-div {
+	clear:both;
+}
+
+.align-right {
+	float:right;
+        padding: 0px;
+	text-align: right;
+}
+
+.align-left {
+	float:left;	
+	padding-left: 10px;
+	padding-top: 5px;
+}
+
+.pointer {
+    cursor:pointer;
+}
+
+.blue-background {
+        background:#0E4A8F;
+	background-color:#0E4A8F;
+}
+
+
+/*** FOOTER ***/
+
+		
+#footer { 	
+	width:100%;
+	background-color:#0E4A8F;
+	height:26px;
+	font-size:12px;
+	}
+
+#footer a { 	
+	color:#ffffff;
+	font-weight:bold;
+	text-decoration:none;
+	}
+	
+	
+#footer a:visited { 	
+	color:#ffffff;
+	}
+
+#footer a:hover { 	
+	color:#ffffff;
+	}	
+
+.footer_align_right {	
+	 float:right;
+	 padding-top:6px;
+         padding-right:20px;
+	}
+	
+.footer_align_left { 
+        float:left;
+        padding-top:3px;
+        padding-left:20px;
+	}	
+
+
+
+
+/***********************************************************
+*                     MenuBar Main
+***********************************************************/
+
+div#MENU
+{
+	width:100%;
+	background:#0E4A8F;
+        height:34px;
+       
+}
+
+.tab {	
+	background: #0E4A8F;
+	text-decoration: none;
+        padding-top: 10px;
+        padding-left: 30px;
+	padding-right: 20px;
+padding-bottom: 3px;
+	cursor: hand;
+ 	cursor: pointer;
+ 	text-align: center;
+ 	font-weight:bold;
+	font-family: arial,verdana;
+	font-size:0.85em;
+color: #FFFFFF;
+}
+
+
+
+.tab:hover {
+	background: #0E4A8F;
+	text-decoration: none;
+       /* padding-top: 10px;
+        padding-left: 30px;
+	padding-right: 20px;*/
+	cursor: hand;
+ 	cursor: pointer;
+ 	font-weight:bold;
+	font-family: arial,verdana;
+	font-size:0.85em;
+        color: #E9811D;
+	
+}
+
+.tab-selected {
+	background: #0E4A8F;
+	text-decoration: none;
+        padding-top: 10px;
+        padding-left: 30px;
+	padding-right: 20px;
+        padding-bottom: 3px;
+	cursor: hand;
+ 	cursor: pointer;
+ 	font-weight:bold;
+	font-family: arial,verdana;
+	font-size:0.85em;
+	color: #E9811D;
+padding-bottom: 3px;
+}
+
+
+/***********************************************************
+*                     MenuBar Login panel
+***********************************************************/
+
+
+.login_panel {
+        background:#0E4A8F;
+	background-color:#0E4A8F;
+	font-size: 11px;
+    	font-weight:bold;
+    	color: #FFFFFF;
+    	padding-top:7px;
+}
+
+.login_label {
+    padding-top:5px;
+}
+
+.login_button {
+      padding-top:5px;
+      color: #E9811D;
+      cursor:pointer;
+}
+
+.login_button:hover {
+        padding-top:5px;
+	color:#FFFFFF;
+        cursor:pointer;
+}
+
+/** LOGIN MESSAGES **/
+
+.login-message {
+        float:right;
+	padding-top:0px;
+	padding-left:10px;
+	padding-right:10px;
+	font-size:13px;
+}
+
+.welcome-message{
+       color: #E9811D;
+	font-weight:bold;
+}
+
+.logout-message{
+       color: #0E4A8F;
+       font-weight:bold;
+       cursor:ponter;
+}
+
+.error-message{
+       color: #E9811D;
+       font-weight:bold;
+       cursor:ponter;
+}

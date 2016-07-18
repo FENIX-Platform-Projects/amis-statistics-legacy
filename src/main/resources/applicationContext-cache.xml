@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+	<bean id="autoproxy" class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator">
+		<property name="usePrefix" value="true" />
+	</bean>
+
+	<!--  
+		The created cache manager is an instance of net.sf.ehcache.CacheManager
+	-->
+	<bean id="cacheManager" class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean"></bean>
+
+	<bean id="cacheProviderFacade" class="org.springmodules.cache.provider.ehcache.EhCacheFacade">
+		<property name="cacheManager" ref="cacheManager" />
+	</bean>
+
+	<bean id="cachingAttributeSource" class="org.springmodules.cache.annotations.AnnotationCachingAttributeSource">
+	</bean>
+
+	<bean id="cachingInterceptor" class="org.springmodules.cache.interceptor.caching.MetadataCachingInterceptor">
+		<property name="cacheProviderFacade" ref="cacheProviderFacade" />
+		<property name="cachingAttributeSource" ref="cachingAttributeSource" />
+		<property name="cachingModels">
+			<props>
+				<prop key="fenixCaching">cacheName=fenixCache</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="cachingAttributeSourceAdvisor"
+		class="org.springmodules.cache.interceptor.caching.CachingAttributeSourceAdvisor">
+		<constructor-arg ref="cachingInterceptor" />
+	</bean>
+
+	<bean id="flushingAttributeSource" class="org.springmodules.cache.annotations.AnnotationFlushingAttributeSource">
+	</bean>
+
+	<bean id="flushingInterceptor" class="org.springmodules.cache.interceptor.flush.MetadataFlushingInterceptor">
+		<property name="cacheProviderFacade" ref="cacheProviderFacade" />
+		<property name="flushingAttributeSource" ref="flushingAttributeSource" />
+		<property name="flushingModels">
+			<props>
+				<prop key="fenixCacheFlushing">cacheNames=fenixCache</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="flushingAttributeSourceAdvisor"
+		class="org.springmodules.cache.interceptor.flush.FlushingAttributeSourceAdvisor">
+		<constructor-arg ref="flushingInterceptor" />
+	</bean>
+
+</beans>

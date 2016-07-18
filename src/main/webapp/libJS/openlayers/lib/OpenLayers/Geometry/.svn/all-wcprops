@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Geometry
+END
+MultiPoint.js
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Geometry/MultiPoint.js
+END
+LinearRing.js
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Geometry/LinearRing.js
+END
+LineString.js
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Geometry/LineString.js
+END
+MultiPolygon.js
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Geometry/MultiPolygon.js
+END
+Point.js
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Geometry/Point.js
+END
+Curve.js
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Geometry/Curve.js
+END
+Rectangle.js
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Geometry/Rectangle.js
+END
+MultiLineString.js
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Geometry/MultiLineString.js
+END
+Collection.js
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Geometry/Collection.js
+END
+Surface.js
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Geometry/Surface.js
+END
+Polygon.js
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Geometry/Polygon.js
+END

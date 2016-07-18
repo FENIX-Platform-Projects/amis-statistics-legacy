@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/fenix/!svn/ver/6630/trunk/fenix-web/src/main/webapp/FieldClimate
+END
+FieldClimateDataset_DAILY_metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/fenix/!svn/ver/6630/trunk/fenix-web/src/main/webapp/FieldClimate/FieldClimateDataset_DAILY_metadata.xml
+END
+FieldClimateDataset_HOURLY_metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/fenix/!svn/ver/6630/trunk/fenix-web/src/main/webapp/FieldClimate/FieldClimateDataset_HOURLY_metadata.xml
+END
+FieldClimateDataset_MONTHLY_metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/fenix/!svn/ver/6630/trunk/fenix-web/src/main/webapp/FieldClimate/FieldClimateDataset_MONTHLY_metadata.xml
+END

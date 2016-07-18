@@ -1,0 +1,516 @@
+
+<VIEW type="Browse By BL - Livestock and Fish Primary Equivalent" >
+
+	<TITLE>
+		<E>Commodity balances - commodity live</E>
+		<S>Balances de Producto - Producto vivo</S>
+		<F>Bilan des marchandises - Marchandise vivante</F>
+	</TITLE>
+
+	 <FILTERS>
+		<FILTER>
+			<FILTERTYPE>ITEMS</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE label="Eggs" domain='BL'>2949</CODE>
+			</DEFAULTCODES>
+		</FILTER>	
+		<FILTER>
+			<FILTERTYPE>COUNTRIES</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE label="Albania">3</CODE>
+			</DEFAULTCODES> 
+		</FILTER>
+		
+		<FILTER type="CODING_SYSTEM">
+			<FILTERTYPE>TIMERANGE</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE>1992</CODE>
+				<CODE>2007</CODE>
+			</DEFAULTCODES>
+		</FILTER>
+			
+		<FILTER type="CODING_SYSTEM">
+			<FILTERTYPE>AGGREGATION_TYPE</FILTERTYPE>
+			<CODE label="Average">AVG</CODE>
+		</FILTER>
+	</FILTERS> 
+	
+	<RESOURCES>
+		<DEFAULT>
+
+			
+			<RESOURCE>			
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>880</WIDTH>
+					<HEIGHT>330</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>Import - export trends in selected country</E>
+					<S>Tendencias de importacin - exportación en el país seleccionado</S>
+					<F>Importation - Les tendances des exportations dans les pays sélectionn</F>
+				</TITLE>
+			
+				<DATEQUERY>
+					<MAXDATELIMIT>2007</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> --> 
+					<TIMESPAN type="year">15</TIMESPAN>
+				</DATEQUERY>
+
+				<BASEQUERY>					 
+					<SELECTS>		       
+						<SELECT lang="true">E.ElementName</SELECT>
+						<SELECT>D.Year</SELECT>
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Balance Livestock">BL</DOMAIN>
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Eggs">2949</ITEM>
+						</ITEMS>
+						<ELEMENTS>
+							<ELEMENT label='Import Quantity'>5610</ELEMENT>
+							<ELEMENT label='Export Quantity'>5910</ELEMENT>
+		
+						</ELEMENTS>							
+					<AREAS>
+						<AREA label="Albania">3</AREA>	
+					</AREAS> 
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD>D.Year</FIELD>
+					</SORT>
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>TRUE</COUNTRY_LEVEL>			
+	             
+				 </BASEQUERY>					
+			</RESOURCE>
+			
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>BAR_WITH_CATEGORIES</OUTPUTTYPE>
+				<TITLE>
+					<E>Feed, food, other util, waste in selected country</E>
+					<S>Pienso, alimentos, otra utilidad, desperdicio en el paí­s seleccionado</S>
+					<F>Alimentation, aliments pour animaux, autres utilisations, pertes par regions</F>
+				</TITLE>
+				<APPLICABLE_FILTERS>
+					<APPLY_ALL_FILTERS_EXCEPT_AREAS>true</APPLY_ALL_FILTERS_EXCEPT_AREAS>
+				</APPLICABLE_FILTERS>
+				<SIZE>
+					<WIDTH>430</WIDTH>
+					<HEIGHT>250</HEIGHT>
+				</SIZE>
+				<DATEQUERY>
+					<MAXDATELIMIT>2007</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> --> 
+					<TIMESPAN type="year">15</TIMESPAN>
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+ 						<SELECT lang="true">E.ElementName</SELECT>	
+						<SELECT lang="true">A.AreaName</SELECT>		
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Balance Crops">BL</DOMAIN>
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Eggs">2949</ITEM>
+						</ITEMS>
+						<ELEMENTS>
+							<ELEMENT label='Waste'>5120</ELEMENT>		
+							<ELEMENT label='Food'>5141</ELEMENT>		
+							<ELEMENT label='Other Util'>5153</ELEMENT>		
+							<ELEMENT label='Feed'>5520</ELEMENT>		
+						</ELEMENTS>	
+					<AREAS>
+						<AREA label="Albania">3</AREA>	
+					</AREAS>
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">A.AreaName</FIELD>
+					</SORT>	
+				</BASEQUERY>					
+			</RESOURCE>
+
+
+			<!-- GROWTH RATES -->
+			<RESOURCE>			
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+ 				 <OUTPUTTYPE>BAR_WITH_CATEGORIES</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>430</WIDTH>
+					<HEIGHT>200</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>Growth rate by region</E>
+					<S>Tasa de crecimiento por región</S>
+					<F>Taux de croissance par région</F>
+				</TITLE>
+				<APPLICABLE_FILTERS>
+					<APPLY_ONLY_ITEMS_FILTER>true</APPLY_ONLY_ITEMS_FILTER>
+				</APPLICABLE_FILTERS>
+				<DATEQUERY>
+					<MAXDATELIMIT>2007</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> --> 
+					<TIMESPAN type="year">7</TIMESPAN>
+				</DATEQUERY>
+				<CALCULATIONQUERY>
+					<TYPE>ANNUAL_GROWTH_RATE_LEAST_SQUARE</TYPE> 
+				</CALCULATIONQUERY> 
+				<BASEQUERY>					 
+					<SELECTS>		       		
+						<SELECT lang="true">E.ElementName</SELECT>
+						<SELECT lang="true">A.AreaName</SELECT>
+						<SELECT>D.Year</SELECT>
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Balance Livestock">BL</DOMAIN>
+						</DOMAINS>
+						<ELEMENTS>
+							<ELEMENT label='Import Quantity'>5610</ELEMENT>	
+							<ELEMENT label='Export Quantity'>5910</ELEMENT>		
+						</ELEMENTS>	
+						<AREAS>
+							<AREA label="Africa">5100</AREA>	
+							<AREA label="Europa">5400</AREA>	
+							<AREA label="America">5200</AREA>	
+							<AREA label="Asia">5300</AREA>
+							<AREA label="Oceania">5500</AREA>
+							<AREA label="World">5000</AREA>
+						</AREAS> 
+						<ITEMS>
+							<ITEM label="Eggs">2949</ITEM>
+						</ITEMS>
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">A.AreaName</FIELD>
+					</SORT>	
+
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>			
+	             
+				 </BASEQUERY>					
+			</RESOURCE> 
+
+
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>PIE</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>400</WIDTH>
+					<HEIGHT>250</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>Exports by region</E>
+					<S>Exportaciones por región</S>
+					<F>Exportations par régions</F>
+				</TITLE>
+				<APPLICABLE_FILTERS>
+					<APPLY_ALL_FILTERS_EXCEPT_AREAS>true</APPLY_ALL_FILTERS_EXCEPT_AREAS>
+				</APPLICABLE_FILTERS>
+				<DATEQUERY>
+					<MAXDATELIMIT>2007</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> --> 
+					<TIMESPAN type="year">15</TIMESPAN>
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+						<SELECT>D.AreaCode</SELECT>	
+						<SELECT lang="true">A.AreaName</SELECT>
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Balance Livestock">BL</DOMAIN>
+						</DOMAINS>
+						<ELEMENTS>
+							<ELEMENT label='Export Quantity'>5910</ELEMENT>		
+						</ELEMENTS>	
+						<AREAS>
+							<AREA label="Africa">5100</AREA>	
+							<AREA label="Europa">5400</AREA>	
+							<AREA label="America">5200</AREA>	
+							<AREA label="Asia">5300</AREA>
+							<AREA label="Oceania">5500</AREA>
+						</AREAS> 
+						<ITEMS>
+							<ITEM label="Eggs">2949</ITEM>
+						</ITEMS>
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">A.AreaName</FIELD>
+					</SORT>	
+
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>	
+
+				</BASEQUERY>							
+			</RESOURCE>
+
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>PIE</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>400</WIDTH>
+					<HEIGHT>250</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>Imports by region</E>
+					<S>Importaciones por región</S>
+					<F>Importations par régions</F>
+				</TITLE>
+				<APPLICABLE_FILTERS>
+					<APPLY_ALL_FILTERS_EXCEPT_AREAS>true</APPLY_ALL_FILTERS_EXCEPT_AREAS>
+				</APPLICABLE_FILTERS>
+				<DATEQUERY>
+					<MAXDATELIMIT>2007</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> --> 
+					<TIMESPAN type="year">15</TIMESPAN>
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+						<SELECT>D.AreaCode</SELECT>	
+						<SELECT lang="true">A.AreaName</SELECT>
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Balance Livestock">BL</DOMAIN>
+						</DOMAINS>
+						<ELEMENTS>
+							<ELEMENT label='Import Quantity'>5610</ELEMENT>		
+						</ELEMENTS>	
+						<AREAS>
+							<AREA label="Africa">5100</AREA>	
+							<AREA label="Europa">5400</AREA>	
+							<AREA label="America">5200</AREA>	
+							<AREA label="Asia">5300</AREA>
+							<AREA label="Oceania">5500</AREA>
+						</AREAS> 
+						<ITEMS>
+							<ITEM label="Eggs">2949</ITEM>
+						</ITEMS>
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">A.AreaName</FIELD>
+					</SORT>	
+
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>	
+
+				</BASEQUERY>							
+			</RESOURCE>
+
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>BAR_WITH_CATEGORIES</OUTPUTTYPE>
+				<TITLE>
+					<E>Exports of top 5 exporters</E>
+					<S>Exportaciones de los 5 principales exportadores</S>
+					<F>Les exportations des 5 meilleurs exportateurs</F>
+				</TITLE>
+				<APPLICABLE_FILTERS>
+					<APPLY_ALL_FILTERS_EXCEPT_AREAS>true</APPLY_ALL_FILTERS_EXCEPT_AREAS>
+				</APPLICABLE_FILTERS>
+				<SIZE>
+					<WIDTH>430</WIDTH>
+					<HEIGHT>250</HEIGHT>
+				</SIZE>
+				<DATEQUERY>
+					<MAXDATELIMIT>2007</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> --> 
+					<TIMESPAN type="year">15</TIMESPAN>
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+ 						<SELECT lang="true">I.ItemName</SELECT>	
+						<SELECT lang="true">A.AreaName</SELECT>		
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Balance Livestock">BL</DOMAIN>
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Eggs">2949</ITEM>
+						</ITEMS>
+						<ELEMENTS>
+							<ELEMENT label='Export Quantity'>5910</ELEMENT>		
+						</ELEMENTS>	
+					</WHERE>
+					<SORT>
+						<FIELD type="aggregation">D.Value</FIELD>
+					</SORT>	
+			
+					<NESTEDLIMIT field="D.AreaCode">5</NESTEDLIMIT>
+					
+				</BASEQUERY>					
+			</RESOURCE>
+
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>BAR_WITH_CATEGORIES</OUTPUTTYPE>
+				<TITLE>
+					<E>Imports of top 5 importers</E>
+					<S>Importaciones de los 5 principales importadores</S>
+					<F>Importations  des 5 meilleurs importateurs</F>
+				</TITLE>
+				<APPLICABLE_FILTERS>
+					<APPLY_ALL_FILTERS_EXCEPT_AREAS>true</APPLY_ALL_FILTERS_EXCEPT_AREAS>
+				</APPLICABLE_FILTERS>
+				<SIZE>
+					<WIDTH>430</WIDTH>
+					<HEIGHT>250</HEIGHT>
+				</SIZE>
+				<DATEQUERY>
+					<MAXDATELIMIT>2007</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> --> 
+					<TIMESPAN type="year">15</TIMESPAN>
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+ 						<SELECT lang="true">I.ItemName</SELECT>	
+						<SELECT lang="true">A.AreaName</SELECT>		
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Balance Livestock">BL</DOMAIN>
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Eggs">2949</ITEM>
+						</ITEMS>
+						<ELEMENTS>
+							<ELEMENT label='Import Quantity'>5610</ELEMENT>		
+						</ELEMENTS>	
+					</WHERE>
+					<SORT>
+						<FIELD type="aggregation">D.Value</FIELD>
+					</SORT>	
+			
+					<NESTEDLIMIT field="D.AreaCode">5</NESTEDLIMIT>
+					
+				</BASEQUERY>					
+			</RESOURCE>
+
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>BAR_WITH_CATEGORIES</OUTPUTTYPE>
+				<TITLE>
+					<E>Feed, food, other util, waste by region</E>
+					<S>Pienso, alimentos, otra utilidad, desperdicio por región</S>
+					<F>Alimentation, aliments pour animaux, autres utilisations, pertes par régions</F>
+				</TITLE>
+				<APPLICABLE_FILTERS>
+					<APPLY_ALL_FILTERS_EXCEPT_AREAS>true</APPLY_ALL_FILTERS_EXCEPT_AREAS>
+				</APPLICABLE_FILTERS>
+				<SIZE>
+					<WIDTH>880</WIDTH>
+					<HEIGHT>250</HEIGHT>
+				</SIZE>
+				<DATEQUERY>
+					<MAXDATELIMIT>2007</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> --> 
+					<TIMESPAN type="year">15</TIMESPAN>
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+ 						<SELECT lang="true">E.ElementName</SELECT>	
+						<SELECT lang="true">A.AreaName</SELECT>		
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Balance Livestock">BL</DOMAIN>
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Eggs">2949</ITEM>
+						</ITEMS>
+						<ELEMENTS>
+							<ELEMENT label='Waste'>5120</ELEMENT>		
+							<ELEMENT label='Food'>5141</ELEMENT>		
+							<ELEMENT label='Other Util'>5153</ELEMENT>		
+							<ELEMENT label='Feed'>5520</ELEMENT>		
+						</ELEMENTS>	
+						<AREAS>
+							<AREA label="Africa">5100</AREA>	
+							<AREA label="Europa">5400</AREA>	
+							<AREA label="America">5200</AREA>	
+							<AREA label="Asia">5300</AREA>
+							<AREA label="Oceania">5500</AREA>
+						</AREAS> 
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">A.AreaName</FIELD>
+					</SORT>	
+
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>	
+					
+				</BASEQUERY>					
+			</RESOURCE>
+		</DEFAULT>	
+	</RESOURCES>
+</VIEW>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NOTES>
+	
+	<DESCRIPTION>
+		<E>/FB/Description_E.html</E>
+		<F>/FB/Description_F.html</F>
+		<S>/FB/Description_S.html</S>
+	</DESCRIPTION>
+	
+	<!--
+	<PLEASENOTE>
+		<E>/FB/PleaseNote_E.html</E>
+		<F>/FB/PleaseNote_F.html</F>
+		<S>/FB/PleaseNote_S.html</S>
+	</PLEASENOTE>
+	-->
+	
+	<!--
+	<DISCLAIMER>
+		<E>/COMMONS/GeneralDisclaimer_E.html</E>
+		<F>/COMMONS/GeneralDisclaimer_F.html</F>
+		<S>/COMMONS/GeneralDisclaimer_S.html</S>
+	</DISCLAIMER>
+	-->
+	
+</NOTES>

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/fenix/!svn/ver/7361/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/imftool/common/services
+END
+IMFServiceEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/fenix/!svn/ver/7361/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/imftool/common/services/IMFServiceEntry.java
+END
+IMFServiceAsync.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/fenix/!svn/ver/7361/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/imftool/common/services/IMFServiceAsync.java
+END
+IMFService.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/fenix/!svn/ver/7361/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/imftool/common/services/IMFService.java
+END

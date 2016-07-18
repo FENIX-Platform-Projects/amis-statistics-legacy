@@ -1,0 +1,40 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://fenixapps.fao.org/wrepo/service/support"></script>
+<script src="http://statistics.amis-outlook.org/data/amis-market-monitor/fnx_amis_market_monitor_charts.js" type="text/javascript"></script>
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+
+
+</head>
+<body>
+<style>
+#ie-box { display: none; } /* this goes in your main stylesheet */
+</style>
+
+<script>
+
+/* Add Close function for IE Modal */
+$('.close').bind('click',function(e){
+e.preventDefault();
+$('#ie-box').fadeOut('slow');
+});
+
+</script>
+<div>
+<b>AMIS Indicator/Market Monitor Charts Preview - FRED test</b>
+<br/><br/>
+ <div id="amis_mm_fred_charts_container">
+        <table id="amis_mm_fred_charts" border="0">
+            <tr><td><div id="amis_mm_fred_chart_COP" style="width: 700px; height: 450px;"></div></td></tr>
+        </table>
+    </div>
+    <div id="amis_mm_fred_charts_container">
+        <table id="amis_mm_fred_charts" border="0">
+            <tr><td><div id="amis_mm_fred_chart_DI" style="width: 700px; height: 450px;"></div></td></tr>
+        </table>
+    </div>
+ </div>
+</body>
+</html>

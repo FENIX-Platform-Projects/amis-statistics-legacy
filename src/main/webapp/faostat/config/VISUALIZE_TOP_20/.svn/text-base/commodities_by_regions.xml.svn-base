@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<VIEW type="Commodities By Regions" >
+
+	<TITLE>
+		<E>Commodities by regions</E>
+		<S>Productos por regiones</S>
+		<F>Produits par regions</F>
+	</TITLE>
+
+	 <FILTERS>
+		<FILTER width="300px" >
+			<FILTERTYPE>AREAS_WORLD</FILTERTYPE>
+			<DOMAINS>
+				<DOMAIN label="">QC</DOMAIN>	
+			</DOMAINS>
+			<DEFAULTCODES>
+				<CODE label="World">5000</CODE>
+			</DEFAULTCODES>
+
+		</FILTER>
+
+		<FILTER width="80px" type="CODING_SYSTEM">
+			<FILTERTYPE>YEARS</FILTERTYPE>
+			<DOMAINS>
+				<DOMAIN label="">QC</DOMAIN>	
+			</DOMAINS>
+		</FILTER>
+
+		<FILTER width="110px" useCodingSystem="false">
+			<FILTERTYPE>SORTING</FILTERTYPE>
+			<DROPDOWNCODES>
+				<CODE labelE="Quantity" labelF="Quantité" labelS="Cantidad">Q1.Value</CODE>
+				<CODE labelE="Value" labelF="Valeur" labelS="Valor">Q2.Value</CODE>
+			</DROPDOWNCODES>
+			<DEFAULTCODES>
+				<CODE labelE="Quantity" labelF="Quantité" labelS="Cantidad">Q1.Value</CODE>
+			</DEFAULTCODES>
+		</FILTER>	
+		
+	</FILTERS> 
+	<RESOURCES>
+		<DEFAULT>
+
+			
+
+			<RESOURCE>
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>BAR_WITH_CATEGORIES</OUTPUTTYPE>
+				<TITLE>
+					<E>Top 10 Commodities</E>
+					<S>10 principales Productos</S>
+					<F>Top 10 Produits</F>
+				</TITLE>
+				<IMAGESIZE>
+				        <SIZE>
+						<WIDTH>750</WIDTH>
+						<HEIGHT>290</HEIGHT>
+					</SIZE>
+				</IMAGESIZE>
+
+
+				<JOINQUERY>
+					
+					<JOINCOLUMN>ItemCode</JOINCOLUMN>
+					<SORT type="DESC">
+						<FIELD>Q1.Value</FIELD>
+					</SORT>
+					<!-- <DATEQUERY>
+						<MAX>D.Year</MAX>
+					</DATEQUERY> -->
+
+			
+					<LIMIT field="D.ItemCode">10</LIMIT>
+
+					<SELECTS>
+						<SELECT lang="true">Q1.ItemName</SELECT>
+						<SELECT lang="true">Q1.ElementName</SELECT>
+						<SELECT lang="true">Q1.UnitName</SELECT>	
+						<SELECT>Q1.Value</SELECT>
+						<SELECT lang="true">Q2.ElementName</SELECT>
+						<SELECT lang="true">Q2.UnitName</SELECT>
+						<SELECT>Q2.Value</SELECT>
+						<!-- <SELECT lang="true">Q3.ElementName</SELECT>
+						<SELECT lang="true">Q3.UnitName</SELECT>
+						<SELECT>Q3.Value</SELECT>
+						<SELECT>'Percentage Prod/Net Prod' as Element</SELECT>
+						<SELECT>'%' as MU</SELECT>
+						<SELECT>ROUND((((Q1.Value - Q3.Value) / Q3.Value) * 100), 2) as 'Percentage'</SELECT> -->
+						
+					</SELECTS>
+
+
+					
+		
+					<BASEQUERIES>
+					  	<BASEQUERY>
+					
+							<SELECTS>
+								<SELECT>I.ItemCode</SELECT>	
+		 						<SELECT lang="true">I.ItemName</SELECT>	
+								<SELECT lang="true">E.ElementName</SELECT>	
+								<SELECT lang="true">E.UnitName</SELECT>	
+								<SELECT>D.Year</SELECT>
+								<SELECT>D.Value</SELECT>
+							</SELECTS>
+							<TABLES>		       
+								<FROM>Data</FROM>
+								<FROM>Element</FROM>
+								<FROM>Area</FROM>
+								<FROM>Item</FROM>
+								<FROM>DomainArea</FROM>	
+							</TABLES>
+							<WHERE>
+							    	<DOMAINS>
+									<DOMAIN label="Production">QC</DOMAIN>
+									<DOMAIN label="Production">QP</DOMAIN>	
+								</DOMAINS>
+								<AREAS>
+									<AREA label="Wolrd">5000</AREA>
+								</AREAS>
+								<ELEMENTSLIST>
+									<ELEMENTLIST label='Production'>2510</ELEMENTLIST>
+								</ELEMENTSLIST>
+								<ITEMSLEVEL>
+									<ITEMLEVEL>5</ITEMLEVEL>
+								</ITEMSLEVEL>
+								<YEARS>
+									<YEAR>2010</YEAR>
+								</YEARS>
+							</WHERE>
+							<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+
+						</BASEQUERY>	
+
+						<BASEQUERY>
+							<SELECTS>
+								<SELECT>I.ItemCode</SELECT>	
+		 						<SELECT lang="true">I.ItemName</SELECT>	
+								<SELECT lang="true">E.ElementName</SELECT>	
+								<SELECT lang="true">E.UnitName</SELECT>	
+								<SELECT>D.Year</SELECT>
+								<SELECT>D.Value</SELECT>
+							</SELECTS>
+							<TABLES>		       
+								<FROM>Data</FROM>
+								<FROM>Element</FROM>
+								<FROM>Area</FROM>
+								<FROM>Item</FROM>
+								<FROM>DomainArea</FROM>	
+							</TABLES>
+							<WHERE>
+							    	<DOMAINS>
+									<DOMAIN label="Production">QV</DOMAIN>	
+								</DOMAINS>
+								<AREAS>
+									<AREA label="Wolrd">5000</AREA>
+								</AREAS>
+								<ELEMENTSLIST>
+									<ELEMENTLIST label='Net Production Value (constant 2004-2006 1000 I$)'>154</ELEMENTLIST>
+								</ELEMENTSLIST>
+								<ITEMSLEVEL>
+									<ITEMLEVEL>5</ITEMLEVEL>
+								</ITEMSLEVEL>
+								<YEARS>
+									<YEAR>2010</YEAR>
+								</YEARS>
+							</WHERE>
+							<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					
+						</BASEQUERY>
+						<!-- <BASEQUERY>
+					
+							<SELECTS>
+								<SELECT>I.ItemCode</SELECT>	
+		 						<SELECT lang="true">I.ItemName</SELECT>	
+								<SELECT lang="true">E.ElementName</SELECT>	
+								<SELECT lang="true">E.UnitName</SELECT>	
+								<SELECT>D.Year</SELECT>
+								<SELECT>D.Value</SELECT>
+							</SELECTS>
+							<TABLES>		       
+								<FROM>Data</FROM>
+								<FROM>Element</FROM>
+								<FROM>Area</FROM>
+								<FROM>Item</FROM>
+								<FROM>DomainArea</FROM>	
+							</TABLES>
+							<WHERE>
+							    	<DOMAINS>
+									<DOMAIN label="Production">QC</DOMAIN>
+									<DOMAIN label="Production">QP</DOMAIN>	
+								</DOMAINS>
+								<AREAS>
+									<AREA label="Afghanistan">2</AREA>
+								</AREAS>
+								<ELEMENTSLIST>
+									<ELEMENTLIST label='Area harvestes'>2312</ELEMENTLIST>
+								</ELEMENTSLIST>
+
+							</WHERE>
+					
+						</BASEQUERY>	-->
+
+
+				</BASEQUERIES>
+				</JOINQUERY>
+			</RESOURCE>
+
+			<RESOURCE>
+				<RESOURCETYPE>TABLE</RESOURCETYPE>
+				<OUTPUTTYPE>HTML</OUTPUTTYPE>
+				<TITLE>
+					<E>Top 25 Commodities</E>
+					<S>25 principales Productos</S>
+					<F>Top 25 Produits</F>
+				</TITLE>
+				<IMAGESIZE>
+				        <SIZE>
+						<WIDTH>750</WIDTH>
+						<HEIGHT>400</HEIGHT>
+					</SIZE>
+				</IMAGESIZE>
+
+
+				<JOINQUERY>
+					
+					<JOINCOLUMN>ItemCode</JOINCOLUMN>
+					<SORT type="DESC">
+						<FIELD>Q1.Value</FIELD>
+					</SORT>
+
+					<!-- <DATEQUERY>
+						<MAX>D.Year</MAX>
+					</DATEQUERY>-->
+			
+					<LIMIT field="D.ItemCode">25</LIMIT>
+
+					<SELECTS>
+						<SELECT aliasE="Commodity" aliasS="Producto"  aliasF="Produit" lang="true">Q1.ItemName</SELECT>		
+						<SELECT aliasE="Production (tonnes)" aliasS="Producción (tonnes)" aliasF="Production (tonnes)">CAST(Q1.Value as numeric(38,0))</SELECT>
+						<SELECT aliasS="Símbolo" aliasF="Symbole">Q1.Flag</SELECT>
+						<!-- <SELECT lang="true">Q1.FlagDescription</SELECT> -->
+						<SELECT aliasE="Production (1000$ Int)" aliasS="Producción (1000$ Int)" aliasF="Production (1000$ Int)">CAST(Q2.Value as numeric(38,0))</SELECT>
+						<SELECT aliasS="Símbolo" aliasF="Symbole">Q2.Flag</SELECT>
+						<!-- <SELECT lang="true">Q2.FlagDescription</SELECT> -->
+
+					</SELECTS>
+
+					<BASEQUERIES>
+					  	<BASEQUERY>
+					
+							<SELECTS>
+								<SELECT>I.ItemCode</SELECT>	
+		 						<SELECT lang="true">I.ItemName</SELECT>	
+								<SELECT lang="true">E.ElementName</SELECT>	
+								<SELECT lang="true">E.UnitName</SELECT>	
+								<SELECT>D.Flag</SELECT>	
+								<SELECT lang="true">F.FlagDescription</SELECT>	
+								<SELECT>D.Year</SELECT>
+								<SELECT>D.Value</SELECT>
+							</SELECTS>
+							<TABLES>		       
+								<FROM>Data</FROM>
+								<FROM>Element</FROM>
+								<FROM>Area</FROM>
+								<FROM>Item</FROM>
+							</TABLES>
+							<WHERE>
+							    	<DOMAINS>
+									<DOMAIN label="Production">QC</DOMAIN>
+									<DOMAIN label="Production">QP</DOMAIN>	
+								</DOMAINS>
+								<AREAS>
+									<AREA label="Wolrd">5000</AREA>
+								</AREAS>
+								<ELEMENTSLIST>
+									<ELEMENTLIST label='Production'>2510</ELEMENTLIST>
+								</ELEMENTSLIST>
+								<ITEMSLEVEL>
+									<ITEMLEVEL>5</ITEMLEVEL>
+								</ITEMSLEVEL>
+								<YEARS>
+									<YEAR>2010</YEAR>
+								</YEARS>
+							</WHERE>
+							<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					
+						</BASEQUERY>	
+
+						<BASEQUERY>
+							<SELECTS>
+								<SELECT>I.ItemCode</SELECT>	
+		 						<SELECT lang="true">I.ItemName</SELECT>	
+								<SELECT lang="true">E.ElementName</SELECT>	
+								<SELECT lang="true">E.UnitName</SELECT>	
+								<SELECT>D.Flag</SELECT>	
+								<SELECT lang="true">F.FlagDescription</SELECT>	
+								<SELECT>D.Year</SELECT>
+								<SELECT>D.Value</SELECT>
+							</SELECTS>
+							<TABLES>		       
+								<FROM>Data</FROM>
+								<FROM>Element</FROM>
+								<FROM>Area</FROM>
+								<FROM>Item</FROM>
+								<FROM>DomainArea</FROM>	
+							</TABLES>
+							<WHERE>
+							    	<DOMAINS>
+									<DOMAIN label="Production">QV</DOMAIN>	
+								</DOMAINS>
+								<AREAS>
+									<AREA label="Wolrd">5000</AREA>
+								</AREAS>
+								<ELEMENTSLIST>
+									<ELEMENTLIST label='Net Production Value (constant 2004-2006 1000 I$)'>154</ELEMENTLIST>
+								</ELEMENTSLIST>
+								<ITEMSLEVEL>
+									<ITEMLEVEL>5</ITEMLEVEL>
+								</ITEMSLEVEL>
+								<YEARS>
+									<YEAR>2010</YEAR>
+								</YEARS>
+							</WHERE>
+							<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					
+						</BASEQUERY>
+
+
+
+					</BASEQUERIES>
+				</JOINQUERY>
+			</RESOURCE>
+		</DEFAULT>	
+	</RESOURCES>
+</VIEW>

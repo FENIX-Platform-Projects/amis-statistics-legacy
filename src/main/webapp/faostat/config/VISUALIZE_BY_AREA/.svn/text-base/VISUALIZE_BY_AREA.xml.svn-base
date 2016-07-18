@@ -1,0 +1,420 @@
+<VIEW type="Browse By Area">
+	<FILTERS>
+	</FILTERS>
+	<RESOURCES>
+		<DEFAULT>
+
+<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>BAR_WITH_CATEGORIES</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>500</WIDTH>
+					<HEIGHT>200</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>Population composition in selected country (by year)</E>
+					<S>Composición de la población en el país seleccionado (por año)</S>
+					<F>Composition de la population dans le pays sélectionné (par année)</F>
+				</TITLE>
+				<BASEQUERY>
+					
+					<SELECTS>
+						<SELECT lang="true">E.ElementName</SELECT>
+						<SELECT>D.Year</SELECT>
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Annual Population">OA</DOMAIN>
+						</DOMAINS>
+						<ELEMENTS>
+							<ELEMENT label='Rural population'>551</ELEMENT>		
+							<ELEMENT label='Agricultural population'>571</ELEMENT>	
+							<ELEMENT label='total population'>511</ELEMENT>	
+							<ELEMENT label='Male economically active population in Agr'>602</ELEMENT>		
+							<ELEMENT label='Female economically active population in Agr'>603</ELEMENT>	
+						</ELEMENTS>	
+						<AREAS>
+							<AREA label="Afghanistan">2</AREA>	
+						</AREAS> 
+						<ITEMS>
+							<ITEM label="Population - Est. Proj">3010</ITEM>
+						</ITEMS>
+						<YEARS>
+							<YEAR>2010</YEAR>
+						</YEARS>
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD>D.Year</FIELD>
+					</SORT>	
+
+				</BASEQUERY>							
+			</RESOURCE>
+
+
+
+			<RESOURCE>
+				<RESOURCETYPE>TABLE</RESOURCETYPE>
+				<OUTPUTTYPE>HTML</OUTPUTTYPE>
+				<TITLE>
+					<E>Land Resources</E>
+					<S>Recursos de la Tierra</S>
+					<F>Ressource des terres</F>
+				</TITLE>
+				<SIZE>
+					<WIDTH>300</WIDTH>
+					<HEIGHT>200</HEIGHT>
+				</SIZE>
+				 <DATEQUERY>
+					<MAX>D.Year</MAX> 
+			        </DATEQUERY>
+		          	<BASEQUERY>
+					<SELECTS>		       
+						<SELECT aliasE="Item" lang="true">I.ItemName</SELECT>	
+						<SELECT aliasE="Value" >D.Value</SELECT>
+						<SELECT aliasE="Unit" lang="true">E.UnitName</SELECT>	>
+					</SELECTS>
+					<FROMS>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</FROMS>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Land">RL</DOMAIN>	
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Country area">6600</ITEM>
+							<ITEM label="Agricultural area">6610</ITEM>
+							<ITEM label="Forest area">6661</ITEM>
+						</ITEMS>
+						<ELEMENTS>
+							<ELEMENT label='Area'>5110</ELEMENT>
+						</ELEMENTS>
+						<!--<YEARS>
+							<YEAR>2009</YEAR>
+						</YEARS> -->						
+					</WHERE>
+				</BASEQUERY>
+			</RESOURCE>
+
+			
+
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>PIE</OUTPUTTYPE>
+				<TITLE>
+					<E>Land Use</E>
+					<S>Utilizo de la Tierra</S>
+					<F>Utilisation des terres</F>
+				</TITLE>
+				<SIZE>
+					<WIDTH>880</WIDTH>
+					<HEIGHT>250</HEIGHT>
+				</SIZE>
+				<DATEQUERY>
+					<MAX>D.Year</MAX> 
+				</DATEQUERY>
+				<BASEQUERY>
+					<SELECTS>
+						<SELECT>I.ItemCode</SELECT>	
+						<SELECT lang="true">I.ItemName</SELECT>					
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Land">RL</DOMAIN>	
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Arable land (code 6621)">6621</ITEM>							<ITEM label="Permanent crops (code 6650)">6650</ITEM>
+							<ITEM label="Permanent meadows and pastures (code 6655)">6655</ITEM>							<ITEM label="Forest area (code 6661)">6661</ITEM>
+							<ITEM label="Other land (code 6670)">6670</ITEM>
+						</ITEMS>
+						<ELEMENTS>
+							<ELEMENT label='Area'>5110</ELEMENT>
+						</ELEMENTS>
+						<!--<YEARS>
+							<YEAR>2009</YEAR>
+					        </YEARS>-->					
+					</WHERE>
+					<SORT>
+						<FIELD type="aggregation">D.Value</FIELD>
+					</SORT>	
+				</BASEQUERY>					
+			</RESOURCE>
+
+
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<TITLE>
+<E>Production top 3 Crops</E>
+  <S>Producción de los 3 principales Cultivos</S>
+  <F>Top 3 des productions en récoltes</F>
+				</TITLE>
+				<APPLICABLE_FILTERS>
+					<APPLY_ALL_FILTERS_EXCEPT_AREAS>true</APPLY_ALL_FILTERS_EXCEPT_AREAS>
+				</APPLICABLE_FILTERS>
+				<SIZE>
+					<WIDTH>430</WIDTH>
+					<HEIGHT>250</HEIGHT>
+				</SIZE>
+				<DATEQUERY>
+					<!--<MAXDATELIMIT>2010</MAXDATELIMIT>-->
+					<MAX>D.Year</MAX>
+					<TIMESPAN type="year">10</TIMESPAN>			
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+						<SELECT lang="true">I.ItemName</SELECT>	
+						<SELECT>D.Year</SELECT>			
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Crops">QC</DOMAIN>	
+						</DOMAINS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Production'>2510</ELEMENTLIST>
+						</ELEMENTSLIST>	
+						<ITEMSLEVEL>
+							<ITEMLEVEL>5</ITEMLEVEL>
+						</ITEMSLEVEL>									
+					</WHERE>
+					<SORT type="ASC">
+						<FIELD>D.Year</FIELD>
+					</SORT>	
+			
+					<NESTEDLIMIT field="D.ItemCode">3</NESTEDLIMIT>
+					<NESTEDSORT type="DESC">
+						<FIELD type="aggregation">D.Value</FIELD>
+					</NESTEDSORT>	
+					
+				</BASEQUERY>					
+			</RESOURCE>
+
+			
+			
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<TITLE>
+<E>Production top 3 Livestocks</E>
+  <S>Producción de los 3 principales Productos Ganaderos</S>
+  <F>Top 3 des Production d'élevage </F>
+				</TITLE>
+				<SIZE>
+					<WIDTH>430</WIDTH>
+					<HEIGHT>250</HEIGHT>
+				</SIZE>
+				<DATEQUERY>
+					<!--<MAXDATELIMIT>2010</MAXDATELIMIT>-->
+					<MAX>D.Year</MAX>
+					<TIMESPAN type="year">10</TIMESPAN>	
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+						<SELECT lang="true">I.ItemName</SELECT>	
+						<SELECT>D.Year</SELECT>			
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label=" Livestock Primary">QL</DOMAIN>	
+						</DOMAINS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Production'>2510</ELEMENTLIST>
+						</ELEMENTSLIST>	
+						<ITEMSLEVEL>
+							<ITEMLEVEL>5</ITEMLEVEL>
+						</ITEMSLEVEL>							
+					</WHERE>
+					<SORT type="ASC">
+						<FIELD>D.Year</FIELD>
+					</SORT>	
+			
+					<NESTEDLIMIT field="D.ItemCode">3</NESTEDLIMIT>
+					<NESTEDSORT type="DESC">
+						<FIELD type="aggregation">D.Value</FIELD>
+					</NESTEDSORT>	
+					
+				</BASEQUERY>					
+			</RESOURCE>
+			
+			<RESOURCE>			
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<TITLE>
+<E>Production Indices - Net Production Index Number (2004-2006 = 100)</E>
+  <S>Índices de Producción - Número Índice de Producción Neta (2004-2006 = 100)</S>
+  <F>Indices de Production - Index de production Net (2004-2006=100)</F>
+				</TITLE>
+				<SIZE>
+					<WIDTH>880</WIDTH>
+					<HEIGHT>250</HEIGHT>
+				</SIZE>
+
+				<DATEQUERY>
+					<!--<MAXDATELIMIT>2010</MAXDATELIMIT>-->
+					<MAX>D.Year</MAX>
+					<TIMESPAN type="year">10</TIMESPAN>	
+				</DATEQUERY>
+				<BASEQUERY>					 
+					<SELECTS>		       
+						<SELECT lang="true">I.ItemName</SELECT>
+						<SELECT>D.Year</SELECT>
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="PIN">QI</DOMAIN>
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Cereal, Total">1717</ITEM>
+							<ITEM label="Agriculture">2051</ITEM>
+							<ITEM label="Food">2054</ITEM>
+							<ITEM label="Non Food">2057</ITEM> 
+						</ITEMS>
+						<ELEMENTS>
+							<ELEMENT label='Net per capita'>438</ELEMENT>
+						</ELEMENTS>						
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">I.ItemName</FIELD>
+						<FIELD>D.Year</FIELD>
+					</SORT>				             
+				 </BASEQUERY>					
+			</RESOURCE>
+
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<TITLE>
+					<E>Export Value indices (2004-2006 = 100)</E>
+					<S>Índices del Valor de Exportación (2004-2006 = 100)</S>
+					<F>Indices de valeur d'exportation(2004-2006=100)</F>
+				</TITLE>
+				<SIZE>
+					<WIDTH>430</WIDTH>
+					<HEIGHT>230</HEIGHT>
+				</SIZE>
+			
+				<DATEQUERY>
+					<!--<MAXDATELIMIT>2010</MAXDATELIMIT>-->
+					<MAX>D.Year</MAX>
+					<TIMESPAN type="year">9</TIMESPAN>	
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+ 						<SELECT lang="true">I.ItemName</SELECT>	
+						<SELECT>D.Year</SELECT>		
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Trade indices">TI</DOMAIN>
+						</DOMAINS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Export Value Index (2004-2006 = 100)'>492</ELEMENTLIST>
+						</ELEMENTSLIST>		
+						<ITEMS>
+							<ITEM label='Agricult.Products,Total'>1882</ITEM>
+							<ITEM label='Food, excl. fish'>1982</ITEM>
+						</ITEMS>					
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD>D.Year</FIELD>
+					</SORT>			
+				</BASEQUERY>					
+			</RESOURCE>
+			
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<TITLE>
+					<E>Import Value indices (2004-2006 = 100)</E>
+					  <S>Índices del Valor de Importación (2004-2006 = 100)</S>
+					  <F>Indices de valeur d'importation(2004-2006=100)</F>
+				</TITLE>
+				<SIZE>
+					<WIDTH>430</WIDTH>
+					<HEIGHT>230</HEIGHT>
+				</SIZE>
+			
+				<DATEQUERY>
+					<!--<MAXDATELIMIT>2010</MAXDATELIMIT>-->
+					<MAX>D.Year</MAX>
+					<TIMESPAN type="year">9</TIMESPAN>
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+ 						<SELECT lang="true">I.ItemName</SELECT>	
+						<SELECT>D.Year</SELECT>		
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Trade indices">TI</DOMAIN>
+						</DOMAINS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Import Value Index (2004-2006 = 100)'>462</ELEMENTLIST>
+						</ELEMENTSLIST>	
+						<ITEMS>
+							<ITEM label='Agricult.Products,Total'>1882</ITEM>
+							<ITEM label='Food, excl. fish'>1982</ITEM>
+						</ITEMS>					
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD>D.Year</FIELD>
+					</SORT>			
+				</BASEQUERY>					
+			</RESOURCE>
+			
+			
+		</DEFAULT>			
+	</RESOURCES>
+</VIEW>

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/fenix/!svn/ver/8590/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/common/vo/highcharts
+END
+HighChartValueVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/fenix/!svn/ver/8590/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/common/vo/highcharts/HighChartValueVO.java
+END
+HighChartXAxis.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/fenix/!svn/ver/8590/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/common/vo/highcharts/HighChartXAxis.java
+END
+HighChartLegend.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/fenix/!svn/ver/8590/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/common/vo/highcharts/HighChartLegend.java
+END
+HighChartParametersConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/fenix/!svn/ver/8590/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/common/vo/highcharts/HighChartParametersConstants.java
+END
+HighChartTooltip.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/fenix/!svn/ver/8590/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/common/vo/highcharts/HighChartTooltip.java
+END
+HighChartVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/fenix/!svn/ver/8590/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/common/vo/highcharts/HighChartVO.java
+END
+HighChartsTypes.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/fenix/!svn/ver/9582/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/common/vo/highcharts/HighChartsTypes.java
+END

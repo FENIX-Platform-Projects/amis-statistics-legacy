@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/fenix/!svn/ver/6410/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/metadataeditor/common/vo/modeldata
+END
+DataTypeModelData.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/fenix/!svn/ver/6410/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/metadataeditor/common/vo/modeldata/DataTypeModelData.java
+END
+CategoryModelData.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/fenix/!svn/ver/6410/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/metadataeditor/common/vo/modeldata/CategoryModelData.java
+END
+FeatureCodeSetModelData.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/fenix/!svn/ver/6410/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/metadataeditor/common/vo/modeldata/FeatureCodeSetModelData.java
+END
+GaulModelData.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/fenix/!svn/ver/10314/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/metadataeditor/common/vo/modeldata/GaulModelData.java
+END

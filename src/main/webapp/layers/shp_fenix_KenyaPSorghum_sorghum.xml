@@ -1,0 +1,29 @@
+<layer type="shp">
+  <title>Kenya Sorghum Production</title>
+  <abstract>Generated from KenyaPSorghum -- Shapefile Layer 'KenyaPSorghum::sorghum'</abstract>
+  <source country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</source>
+  <provider country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</provider>
+  <region>133</region>
+  <categories />
+  <sharingcode>Public</sharingcode>
+  <featuretype>
+    <title>Kenya Sorghum Production</title>
+    <abstract>Generated from KenyaPSorghum</abstract>
+    <defaultstyle>kenya_sorghum</defaultstyle>
+    <bbox>
+      <srs>4326</srs>
+      <minx>33.994495</minx>
+      <maxx>35.325276</maxx>
+      <miny>1.517203</miny>
+      <maxy>4.612574</maxy>
+    </bbox>
+    <layername>sorghum</layername>
+    <datastore>
+      <name>KenyaPSorghum</name>
+      <namespace>fenix</namespace>
+    </datastore>
+  </featuretype>
+  <!--Data dumped from geoserver at:-->
+  <!--REST url: http://ldvapp07.fao.org:8032/geoserverDev-->
+  <!--WMS url: http://ldvapp07.fao.org:8032/geoserverDev/wms?-->
+</layer>

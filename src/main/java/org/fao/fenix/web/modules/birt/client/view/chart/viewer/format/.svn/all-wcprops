@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/fenix/!svn/ver/7153/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/client/view/chart/viewer/format
+END
+TabAxes.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/fenix/!svn/ver/7153/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/client/view/chart/viewer/format/TabAxes.java
+END
+TabLegSer.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/fenix/!svn/ver/6747/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/client/view/chart/viewer/format/TabLegSer.java
+END
+FormatChart.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/fenix/!svn/ver/7153/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/client/view/chart/viewer/format/FormatChart.java
+END
+TabChartArea.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/fenix/!svn/ver/7111/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/client/view/chart/viewer/format/TabChartArea.java
+END
+StylePanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/fenix/!svn/ver/7153/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/client/view/chart/viewer/format/StylePanel.java
+END
+TabTitle.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/fenix/!svn/ver/7153/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/client/view/chart/viewer/format/TabTitle.java
+END

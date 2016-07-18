@@ -1,0 +1,57 @@
+<StyledLayerDescriptor 
+	xmlns="http://www.opengis.net/sld" version="1.0.0"
+	xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<NamedLayer>
+		<Name>giewsunfavourable</Name>
+		<UserStyle>
+			<Title>Unfavourable prospects</Title>
+			<Abstract>Unfavourable prospects - Used on datasets joined with GAUL0</Abstract>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>yes</Name>
+					<Title>Yes</Title>
+					<ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>quantity</ogc:PropertyName>
+							<ogc:Literal>122</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<PolygonSymbolizer>
+						<Fill>
+							<CssParameter name="fill">#29049C</CssParameter>
+							<CssParameter name="fill-opacity">1.0</CssParameter>
+						</Fill>
+						<Stroke>
+							<CssParameter name="stroke">#000000</CssParameter>
+							<CssParameter name="stroke-opacity">butt</CssParameter>
+							<CssParameter name="stroke-width"/>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+				<Rule>
+					<Name>unknown</Name>
+					<Title>Unknown</Title>
+					<ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>quantity</ogc:PropertyName>
+							<ogc:Literal>123</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<PolygonSymbolizer>
+						<Fill>
+							<CssParameter name="fill">#FFFFFF</CssParameter>
+							<CssParameter name="fill-opacity">1.0</CssParameter>
+						</Fill>
+						<Stroke>
+							<CssParameter name="stroke">#000000</CssParameter>
+							<CssParameter name="stroke-opacity">butt</CssParameter>
+							<CssParameter name="stroke-width"/>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+			</FeatureTypeStyle>
+		</UserStyle>
+	</NamedLayer>
+</StyledLayerDescriptor>

@@ -1,0 +1,17 @@
+<metadata type="WholesalePriceDataset">
+  <title>Wholesale Prices</title>
+  <abstractAbstract>Kenya wholesale prices of  Maize and Beans</abstractAbstract>
+  <keywords>Kenya, Wholesale, Price, Maize, Beans</keywords>
+  <categories>005</categories>
+  <provider country="0" contact="">Regional Agricultural Trade Intelligence Network</provider>
+  <source country="0" contact="">Regional Agricultural Trade Intelligence Network</source>
+  <region>133</region>
+  <startDate>2006-01-01</startDate>
+  <endDate>2008-08-01</endDate>
+  <dateLastUpdate>2008-11-03</dateLastUpdate>
+  <periodTypeCode>monthly</periodTypeCode>
+  <sharingCode>PublicAndDownload</sharingCode>
+  <refGeoUnit>Administrative Boundaries Level 1</refGeoUnit>
+  <layerCodeSet>gaul1</layerCodeSet>
+  <precision>2</precision>
+</metadata>

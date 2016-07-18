@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/fenix/!svn/ver/7015/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/search
+END
+ResourceTypeSelector.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/fenix/!svn/ver/7015/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/search/ResourceTypeSelector.java
+END
+ResourceExplorerSearch.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/search/ResourceExplorerSearch.java
+END
+CataloguePagerSearch.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/fenix/!svn/ver/6412/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/search/CataloguePagerSearch.java
+END

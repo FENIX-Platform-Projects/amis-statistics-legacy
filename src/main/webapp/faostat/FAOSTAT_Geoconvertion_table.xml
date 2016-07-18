@@ -1,0 +1,65 @@
+<metadata>
+<type>GEOCODE_CONVERSION_TABLE</type>
+<periodTypeCode>yearly</periodTypeCode>
+<abstractAbstract>GEOCODE_CONVERSION_TABLE</abstractAbstract>
+<keywords>GAUL,CRS,ISO2,ISO3, FAOSTAT, conversion</keywords>
+<provider country="0"></provider>
+<startDate>2011-01-01</startDate>
+<endDate>2011-01-01</endDate>
+<dateLastUpdate>2011-01-01</dateLastUpdate>
+<sharingCode>Public</sharingCode>
+<source country="0"></source>
+<categories></categories>
+<code>GEO_CONVERTION_TABLE</code>
+<title>Geoconversion table</title>
+<descriptors>
+	<descriptor>
+		<header>ADM0_CODE</header>
+		<contentDescriptor>text</contentDescriptor>
+	</descriptor>
+	<descriptor>
+		<header>CRS</header>
+		<contentDescriptor>text</contentDescriptor>
+	</descriptor>
+	<descriptor>
+		<header>ISO2</header>
+		<contentDescriptor>text</contentDescriptor>
+	</descriptor>
+	<descriptor>
+		<header>ISO3</header>
+		<contentDescriptor>text</contentDescriptor>
+	</descriptor>
+	<descriptor>
+		<header>AreaCode</header>
+		<contentDescriptor>text</contentDescriptor>
+	</descriptor>
+	<descriptor>
+		<header>AreanameE</header>
+		<contentDescriptor>text</contentDescriptor>
+	</descriptor>
+	<descriptor>
+		<header>AreanameF</header>
+		<contentDescriptor>text</contentDescriptor>
+	</descriptor>
+	<descriptor>
+		<header>AreanameS</header>
+		<contentDescriptor>text</contentDescriptor>
+	</descriptor>
+	<descriptor>
+		<header>UN_CODE</header>
+		<contentDescriptor>text</contentDescriptor>
+	</descriptor>
+	<descriptor>
+		<header>FAO_CODE</header>
+		<contentDescriptor>text</contentDescriptor>
+	</descriptor>
+	<descriptor>
+		<header>CONTINENT</header>
+		<contentDescriptor>text</contentDescriptor>
+	</descriptor>
+	<descriptor>
+		<header>CRS_NAME</header>
+		<contentDescriptor>text</contentDescriptor>
+	</descriptor>
+</descriptors>
+</metadata>

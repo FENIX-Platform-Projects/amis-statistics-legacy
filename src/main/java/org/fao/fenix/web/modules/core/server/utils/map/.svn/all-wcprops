@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/fenix/!svn/ver/6753/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/server/utils/map
+END
+LayerImporterWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/fenix/!svn/ver/6407/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/server/utils/map/LayerImporterWrapper.java
+END
+GSLayerSynchronizerWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/fenix/!svn/ver/6407/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/server/utils/map/GSLayerSynchronizerWrapper.java
+END
+SLDImporterWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/fenix/!svn/ver/6753/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/server/utils/map/SLDImporterWrapper.java
+END
+GeoTiffHarvesterWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/fenix/!svn/ver/6407/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/server/utils/map/GeoTiffHarvesterWrapper.java
+END

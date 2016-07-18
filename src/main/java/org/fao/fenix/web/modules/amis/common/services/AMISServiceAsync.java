@@ -1,0 +1,81 @@
+package org.fao.fenix.web.modules.amis.common.services;
+
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.fao.fenix.core.exception.FenixException;
+import org.fao.fenix.web.modules.amis.common.constants.AMISCurrentView;
+import org.fao.fenix.web.modules.amis.common.model.AMISCodesModelData;
+import org.fao.fenix.web.modules.amis.common.vo.AMISQueryVO;
+import org.fao.fenix.web.modules.amis.common.vo.AMISResultVO;
+import org.fao.fenix.web.modules.amis.common.vo.AMISSettingsVO;
+import org.fao.fenix.web.modules.amis.common.vo.Book;
+import org.fao.fenix.web.modules.amis.common.vo.ClientCbsDatasetResult;
+import org.fao.fenix.web.modules.core.common.exception.FenixGWTException;
+import org.springframework.security.annotation.Secured;
+
+
+import com.google.gwt.user.client.rpc.AsyncCallback;
+
+public interface AMISServiceAsync {
+
+	public void askAMIS(AMISQueryVO qvo, AsyncCallback<AMISResultVO> callback) throws FenixGWTException;
+	
+	public void getAMISQueryVOs(AMISCurrentView currentView, String filename, AsyncCallback<AMISSettingsVO> callback) throws FenixGWTException;
+	
+	public void export(AMISResultVO rvo, AsyncCallback<String> callback);
+	
+	public void getDatasetProperties(AMISQueryVO qvo, AsyncCallback<List<AMISResultVO>> callback) throws FenixGWTException;
+	
+	@Secured({"IS_AUTHENTICATED_ANONYMOUSLY", "ROLE_USER"})
+	void populateCCBS(AsyncCallback<Integer> async);
+
+	@Secured({"IS_AUTHENTICATED_ANONYMOUSLY", "ROLE_USER"})
+	void getCCBSData(AMISQueryVO qvo, List<String> years, int numberFirstYearsToShow, String lastMonthCombo, String oneElementName, List<HashMap<String, String>> monthForecastToQuery, AsyncCallback<Book> async);
+	
+	@Secured({"IS_AUTHENTICATED_ANONYMOUSLY", "ROLE_USER"})
+	void getCBSSubElementsData(AMISQueryVO qvo, List<String> years, String lastMonthCombo, int numberFirstYearsToShow, String oneElementName, List<HashMap<String, String>> monthForecastToQuery,AsyncCallback<List<ClientCbsDatasetResult>> async);
+
+	@Secured({"IS_AUTHENTICATED_ANONYMOUSLY", "ROLE_USER"})
+	void getDataFromAnElement(AMISQueryVO qvo, String oneElementName, String lastMonthMarketingyear, AsyncCallback<List<HashMap<String, String>>> async);
+
+	@Secured({"IS_AUTHENTICATED_ANONYMOUSLY", "ROLE_USER"})
+	public void getYearsWithTheBestMonthForForecast(AMISQueryVO qvo, List<HashMap<String, String>> monthForecastToQuery, AsyncCallback<AMISResultVO> callback);
+	
+	public void findGroupsOfUser(String username, AsyncCallback<List<AMISCodesModelData>> callback);
+	
+	public void getAllCustomDatasets(AsyncCallback<Map<Long, AMISCodesModelData>> callback);
+	
+	public void checkCountryData(AMISQueryVO qvo, boolean fill, AsyncCallback<AMISResultVO> callback);	
+	
+	public void checkCountryDataForLoadingWindow(AMISQueryVO qvo, AsyncCallback<AMISResultVO> callback);
+	
+	public void fillCountryData(AMISQueryVO qvo, AsyncCallback<Boolean> callback);
+	
+	public void getYearsForComboBox(AMISQueryVO qvo, AsyncCallback<AMISResultVO> callback);
+
+	public void saveGridCcbsTool(String amisCountryDataset, List<HashMap<String, String>> listForProdAndOtherUsesForm, int numColumns, AsyncCallback<Boolean> callback);
+	
+	public void getCountryInformation(AMISQueryVO qvo, List<String> commodityCodesCbs, AsyncCallback<AMISResultVO> callback);
+//	public void saveGridCcbsTool(ClientCbsDatasetResult listForProdAndOtherUsesForm[], AsyncCallback<Boolean> callback);
+	//	@Secured({"IS_AUTHENTICATED_ANONYMOUSLY", "ROLE_USER"})
+//	void getCCBSGaulCodes(AsyncCallback<String[]> async);
+
+//	@Secured({"IS_AUTHENTICATED_ANONYMOUSLY", "ROLE_USER"})
+
+	public void sendRegistrationEMail(Map<String, String> formFields, AsyncCallback<String> callback) throws FenixGWTException;
+	
+	public void getOpeningClosingStocksForYear(AMISQueryVO qvo, String oneElementName, String lastMonthMarketingyear, AsyncCallback<HashMap<String, HashMap<String,String>>> callbacks);
+
+	public void getCBSURL(AsyncCallback<String> callback);
+	
+	public void getCBSMONTHSURL(AsyncCallback<String> callback);
+
+    public void getCBSInputToolUrl(AsyncCallback<String> callback);
+
+    public void getPopulationURL(AsyncCallback<String> callback);
+	
+	public void createOlapTable(AMISQueryVO qvo, String userRole, String userCountryCode, AsyncCallback<List<HashMap<String, String>>> callback);
+}

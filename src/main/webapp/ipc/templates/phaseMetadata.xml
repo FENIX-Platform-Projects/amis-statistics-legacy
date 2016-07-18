@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<type>IPCPhaseDataset</type>
+	<title>TITLE</title>
+	<abstractAbstract>ABSTRACT</abstractAbstract>
+	<keywords>phase classification, IPC, early warning</keywords>
+	<provider country="0" contact="Info-GIEWS-Workstation@fao.org">FAO</provider>
+	<source country="0" contact="Info-GIEWS-Workstation@fao.org">FAO</source>
+	<region>GAUL_CODE</region>
+	<startDate>START_DATE</startDate>
+	<endDate>END_DATE</endDate>
+	<dateLastUpdate>DATE_LAST_UPDATE</dateLastUpdate>
+	<periodTypeCode>yearly</periodTypeCode>
+	<sharingCode>Public</sharingCode>
+	<refGeoUnit>LAYER_LABEL</refGeoUnit>
+	<featureCodeSet>GAUL_LEVEL</featureCodeSet>
+	<precision>0</precision>
+	<categories>023</categories>
+	<code/>
+	<descriptors>
+		<descriptor key="true">
+			<header>Date</header>
+			<contentDescriptor>date</contentDescriptor>
+		</descriptor>
+		<descriptor key="true">
+			<header>Area</header>
+			<contentDescriptor>featureCode</contentDescriptor>
+			<options>
+				<option>
+					<name>Geographic</name>
+					<value>GAUL</value>
+					<region>0</region>
+				</option>
+				<option>
+					<name>featureCodeSet</name>
+					<value>GAUL_LEVEL</value>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor>
+			<header>Phase</header>
+			<contentDescriptor>quantity</contentDescriptor>
+			<options>
+				<option>
+					<name>Indicator</name>
+					<value>IPC Phase Classification</value>
+					<region>0</region>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="true">
+			<header>Workflow ID</header>
+			<contentDescriptor>firstIndicator</contentDescriptor>
+		</descriptor>
+		<descriptor key="true">
+			<header>User ID</header>
+			<contentDescriptor>secondIndicator</contentDescriptor>
+		</descriptor>
+	</descriptors>
+</metadata>

@@ -1,0 +1,29 @@
+<layer type="shp">
+  <title>World volcano</title>
+  <abstract>Generated from world_volcano -- Shapefile Layer 'world_volcano::world_volcano'</abstract>
+  <source country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</source>
+  <provider country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</provider>
+  <region />
+  <categories />
+  <sharingcode>Public</sharingcode>
+  <featuretype>
+    <title>World volcano</title>
+    <abstract>Generated from world_volcano</abstract>
+    <defaultstyle>world_volcano</defaultstyle>
+    <bbox>
+      <srs>4326</srs>
+      <minx>-179.63330078125</minx>
+      <maxx>178.5</maxx>
+      <miny>-78.467529296875</miny>
+      <maxy>71.0</maxy>
+    </bbox>
+    <layername>world_volcano</layername>
+    <datastore>
+      <name>world_volcano</name>
+      <namespace>fenix</namespace>
+    </datastore>
+  </featuretype>
+  <!--Data dumped from geoserver at:-->
+  <!--REST url: http://ldvapp07.fao.org:8032/geoserverDev-->
+  <!--WMS url: http://ldvapp07.fao.org:8032/geoserverDev/wms?-->
+</layer>

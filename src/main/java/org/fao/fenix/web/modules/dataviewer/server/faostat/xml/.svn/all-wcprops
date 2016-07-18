@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/fenix/!svn/ver/10058/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/server/faostat/xml
+END
+FAOSTATXMLParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/fenix/!svn/ver/10058/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/server/faostat/xml/FAOSTATXMLParser.java
+END
+FAOSTATNotesXMLParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/fenix/!svn/ver/8794/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/server/faostat/xml/FAOSTATNotesXMLParser.java
+END
+XMLUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/fenix/!svn/ver/9625/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/server/faostat/xml/XMLUtils.java
+END
+DOM4JUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/fenix/!svn/ver/8794/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/server/faostat/xml/DOM4JUtils.java
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/fenix/!svn/ver/6405/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/server/utils/ISFPTemplate
+END
+ChartMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/fenix/!svn/ver/6405/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/server/utils/ISFPTemplate/ChartMap.java
+END
+TableAsHTML.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/fenix/!svn/ver/6405/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/server/utils/ISFPTemplate/TableAsHTML.java
+END
+ISFPChart.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/fenix/!svn/ver/6405/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/server/utils/ISFPTemplate/ISFPChart.java
+END
+ISFPTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/fenix/!svn/ver/6405/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/server/utils/ISFPTemplate/ISFPTable.java
+END
+TableAsGrid.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/fenix/!svn/ver/6405/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/server/utils/ISFPTemplate/TableAsGrid.java
+END

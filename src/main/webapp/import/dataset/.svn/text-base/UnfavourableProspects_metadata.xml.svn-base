@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<type>UnfavourableProspects</type>
+	<title>Countries with unfavourable prospects for current crops</title>
+	<abstractAbstract>Refer to prospects of a shortfall in production of current crops thereby indicating a need for close monitoring of the crops for the remainder of the growing season</abstractAbstract>
+	<keywords>food insecurity, unfavourable prospects, early warning</keywords>
+	<provider country="0" contact="Info-GIEWS-Workstation@fao.org">FAO GIEWS</provider>
+	<source country="0" contact="Info-GIEWS-Workstation@fao.org">FAO</source>
+	<region>0</region>
+	<startDate>2006-01-27</startDate>
+	<endDate>2009-03-01</endDate>
+	<dateLastUpdate>2009-03-01</dateLastUpdate>
+	<periodTypeCode>monthly</periodTypeCode>
+	<sharingCode>Public</sharingCode>
+	<refGeoUnit>Country Boundary</refGeoUnit>
+	<layerCodeSet>gaul0</layerCodeSet>
+	<precision>0</precision>
+	<categories>023</categories>
+	<code/>
+	<descriptors>
+		<descriptor key="true">
+			<header>Date</header>
+			<contentDescriptor>date</contentDescriptor>
+		</descriptor>
+		<descriptor key="true">
+			<header>Country</header>
+			<contentDescriptor>featureCode</contentDescriptor>
+			<options>
+				<option>
+					<name>Geographic</name>
+					<value>GAUL</value>
+					<region>0</region>
+				</option>
+				<option>
+					<name>featureCodeSet</name>
+					<value>gaul0</value>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor>
+			<header>Unfavourable Prospects</header>
+			<contentDescriptor>quantity</contentDescriptor>
+			<options>
+				<option>
+					<name>Indicator</name>
+					<value>UnfavourableProspects</value>
+					<region>0</region>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="true">
+			<header>Contributing Factors</header>
+			<contentDescriptor>firstIndicator</contentDescriptor>
+		</descriptor>
+		<descriptor key="true">
+			<header>Changes from Last Report</header>
+			<contentDescriptor>secondIndicator</contentDescriptor>
+			<options>
+				<option>
+					<name>Indicator</name>
+					<value>LastReportChanges</value>
+					<region>0</region>
+				</option>
+			</options>
+		</descriptor>
+	</descriptors>
+</metadata>

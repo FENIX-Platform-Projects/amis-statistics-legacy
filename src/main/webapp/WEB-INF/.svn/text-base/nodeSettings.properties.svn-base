@@ -1,0 +1,9 @@
+# Banner Settings
+BANNER_LEFT = http://localhost:8080/fenix-web/exportObject/BANNER_LEFT.png
+BANNER_RIGHT = http://localhost:8080/fenix-web/exportObject/BANNER_RIGHT.png
+BANNER_BACKGROUND_COLOR = #D0DDED
+
+# Welcome Screen Settings
+WELCOME_SCREEN_URL = WELCOME_SCREEN_TEXT.html
+WELCOME_SCREEN_BACKGROUND_COLOR_ONE = #40A62C 
+WELCOME_SCREEN_BACKGROUND_COLOR_TWO = #9FCA1B

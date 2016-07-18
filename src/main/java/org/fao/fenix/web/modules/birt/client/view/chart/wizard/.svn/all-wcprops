@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/fenix/!svn/ver/7191/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/client/view/chart/wizard
+END
+QuantityDimension.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/fenix/!svn/ver/6747/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/client/view/chart/wizard/QuantityDimension.java
+END
+ChartWizard.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/fenix/!svn/ver/7191/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/client/view/chart/wizard/ChartWizard.java
+END
+ChartType.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/fenix/!svn/ver/6787/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/client/view/chart/wizard/ChartType.java
+END
+DateLastUpdatePanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/fenix/!svn/ver/6747/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/client/view/chart/wizard/DateLastUpdatePanel.java
+END
+FormatChart.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/fenix/!svn/ver/6747/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/client/view/chart/wizard/FormatChart.java
+END
+SelectData.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/fenix/!svn/ver/6787/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/client/view/chart/wizard/SelectData.java
+END
+DateFromToPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/fenix/!svn/ver/6747/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/client/view/chart/wizard/DateFromToPanel.java
+END

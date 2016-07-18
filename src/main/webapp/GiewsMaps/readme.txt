@@ -1,0 +1,1 @@
+This folder contains the GIEWS map for the fenix-portal

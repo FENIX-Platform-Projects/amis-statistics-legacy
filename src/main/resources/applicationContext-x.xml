@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:lang="http://www.springframework.org/schema/lang"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+                           http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang-2.5.xsd">
+	
+	<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location">
+			<value>/WEB-INF/devel.properties</value>
+		</property>
+	</bean>
+	
+	<!-- SCHEDULING -->
+	<bean id="networkSynchronizer" class="org.fao.fenix.web.modules.core.server.utils.NetworkSynchronizer" scope="singleton">
+		<property name="group" value="${services.group}" />
+		<property name="hostLabel" value="${services.hostLabel}" />
+		<property name="urlFinder" ref="urlFinder" />
+		<property name="communicationDao" ref="communicationDao" />
+		<property name="saveUniqueDao" ref="saveUniqueDao" />
+	</bean>
+	<bean id="retrieveUrlJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="urlFinder" />
+		<property name="targetMethod" value="setFenixServicesUrl" />
+	</bean>
+	<bean id="synchronizeNetworkJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="networkSynchronizer" />
+		<property name="targetMethod" value="synchronizeNetwork" />
+	</bean>
+	<bean id="cronTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="synchronizeNetworkJob" />
+		<property name="cronExpression" value="0 ${services.synchMM} ${services.synchHH} ${services.synchDD} * ?" />
+	</bean>
+	<bean id="simpleTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+		<property name="jobDetail" ref="retrieveUrlJob" />
+		<property name="startDelay" value="5000" />
+		<property name="repeatInterval" value="28800000" />
+	</bean>
+	
+	<!-- SPRING SCHEDULERS -->
+	<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="triggers">
+			<list>
+				<ref bean="simpleTrigger" />
+				<ref bean="cronTrigger" />
+			</list>
+		</property>
+	</bean>
+	
+	<!-- RSS Related -->
+	<bean id="rssFactory" class="org.fao.fenix.core.x.RSSFactory">
+		<property name="findDao" ref="findDao" />
+		<property name="hostLabel" value="${services.hostLabel}" />
+	</bean>
+	<bean id="rssWriter" class="org.fao.fenix.web.modules.x.server.utils.RSSWriter">
+		<constructor-arg value="/RSS" />
+	</bean>
+	<bean id="xDao" class="org.fao.fenix.core.persistence.x.XDao"/>
+	<bean id="xImporter" class="org.fao.fenix.core.x.XImporter">
+		<property name="xDao" ref="xDao" />
+		<property name="saveUniqueDao" ref="saveUniqueDao" />
+	</bean>
+	
+	<!-- X Layer Utils -->
+	<bean id="xLayerUtils" class="org.fao.fenix.core.x.XLayerUtils">
+		<property name="wmsMapProviderDao" ref="wmsMapProviderDao" />
+		<property name="xDao" ref="xDao" />
+		<property name="username" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+		<constructor-arg value="/SLD" />
+	</bean>
+	<bean id="shapeFilePersister" class="org.fao.fenix.web.modules.core.server.upload.ShapeFilePersister">
+		<property name="wmsMapProviderDao" ref="wmsMapProviderDao" />
+		<property name="xLayerUtils" ref="xLayerUtils" />
+		<property name="fenixFakeDataSource" ref="fenixFakeDataSource" />
+		<property name="geoserverDao" ref="geoServerDao" />
+		<property name="defaultGeoserver" ref="geoserver" />
+		<property name="defaultDatastore" ref="dbdatastore" />
+	</bean>
+	<bean id="shpFeatureLayerPersister" class="org.fao.fenix.web.modules.core.server.upload.ShpFeatureLayerPersister">
+		<property name="wmsMapProviderDao" ref="wmsMapProviderDao" />
+		<property name="xLayerUtils" ref="xLayerUtils" />
+		<property name="saveDao" ref="saveDao" />
+		<property name="saveUniqueDao" ref="saveUniqueDao" />
+	</bean>
+	<bean id="rasterLayerPersister" class="org.fao.fenix.web.modules.core.server.upload.RasterLayerPersister">
+		<property name="wmsMapProviderDao" ref="wmsMapProviderDao" />
+		<property name="geoserverDao" ref="geoServerDao" />
+		<property name="defaultGeoserver" ref="geoserver" />
+		<property name="xLayerUtils" ref="xLayerUtils" />
+	</bean>
+	
+	<!-- Old... -->
+	<bean id="communicationDao" class="org.fao.fenix.core.persistence.communication.CommunicationDao"/>
+	
+</beans>

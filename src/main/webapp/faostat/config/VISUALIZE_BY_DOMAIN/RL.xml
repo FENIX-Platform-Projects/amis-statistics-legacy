@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<VIEW type="Browse By RL - Resources - Land" >
+	<TITLE>
+		<E>Resources - land </E>
+		<S>Recursos - tierra</S>
+		<F>Ressources - terre</F>
+	</TITLE>
+	<FILTERS>
+		<FILTER width='250px'>
+			<FILTERTYPE>COUNTRIES</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE label="Afghanistan">2</CODE>
+			</DEFAULTCODES>
+		</FILTER>
+		<FILTER>
+			<FILTERTYPE>TIMERANGE</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE>1992</CODE>
+				<CODE>2009</CODE>
+			</DEFAULTCODES>
+		</FILTER>
+	</FILTERS>
+
+	<RESOURCES>
+		<DEFAULT>
+			<RESOURCE>
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<TITLE>
+<E>Share of agricultural land in selected country</E>
+  <S>Proporción de tierra agrícola en el país seleccionado</S>
+  <F>Part des terres agricoles dans le pays sélectionné</F>
+				</TITLE>
+				<IMAGESIZE>
+				        <SIZE>
+						<WIDTH>880</WIDTH>
+						<HEIGHT>290</HEIGHT>
+					</SIZE>
+				</IMAGESIZE>
+				<JOINQUERY>
+					
+					<JOINCOLUMN>Year</JOINCOLUMN>
+					<SORT type="ASC">
+						<FIELD>Q1.Year</FIELD>
+					</SORT>
+					<DATEQUERY>
+						<MAX>D.Year</MAX>
+						<TIMESPAN type="year">17</TIMESPAN>
+					</DATEQUERY>
+
+			
+					<!-- <LIMIT field="D.ItemCode">10</LIMIT> -->
+
+					<SELECTS>
+						<SELECT>Q1.Year</SELECT>
+						<!--<SELECT lang="true">Q1.ItemName</SELECT>
+						<SELECT lang="true">Q1.UnitName</SELECT>	
+						<SELECT>Q1.Value</SELECT>
+						<SELECT lang="true">Q2.ItemName</SELECT>
+						<SELECT lang="true">Q2.UnitName</SELECT>
+						<SELECT>Q2.Value</SELECT>-->
+						<SELECT aliasE='Agricultural area as share of total Land area'>'Agricultural area as share of total Land area'</SELECT>
+						<SELECT>'%' as MU</SELECT>
+						<SELECT>ROUND((Q2.Value/ Q1.Value) * 100, 4) as 'Percentage'</SELECT>
+						
+					</SELECTS>
+
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>TRUE</COUNTRY_LEVEL>
+					
+		
+					<BASEQUERIES>
+					  	<BASEQUERY>
+					
+							<SELECTS>
+								<SELECT>A.AreaCode</SELECT>	
+								<SELECT>I.ItemCode</SELECT>
+								<SELECT>D.ElementCode</SELECT>		
+		 						<SELECT lang="true">I.ItemName</SELECT>	
+								<SELECT lang="true">E.ElementName</SELECT>	
+								<SELECT lang="true">E.UnitName</SELECT>	
+								<SELECT>D.Year</SELECT>
+								<SELECT>D.Value</SELECT>
+							</SELECTS>
+							<TABLES>		       
+								<FROM>Data</FROM>
+								<FROM>Element</FROM>
+								<FROM>Area</FROM>
+								<FROM>Item</FROM>
+							</TABLES>
+							<WHERE>
+							    	<DOMAINS>
+									<DOMAIN label="Production">RL</DOMAIN>
+								</DOMAINS>
+								<AREAS>
+									<AREA label="Afghanistan">2</AREA>
+								</AREAS>
+								<ELEMENTSLIST>
+									<ELEMENTLIST label='Area'>5110</ELEMENTLIST>
+								</ELEMENTSLIST>
+								<ITEMS>
+									<ITEM label='Land area'>6601</ITEM>
+								</ITEMS>
+							</WHERE>
+							<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+							<COUNTRY_LEVEL>TRUE</COUNTRY_LEVEL>
+					
+						</BASEQUERY>	
+
+						<BASEQUERY>
+							<SELECTS>
+								<SELECT>A.AreaCode</SELECT>	
+								<SELECT>I.ItemCode</SELECT>	
+								<SELECT>D.ElementCode</SELECT>		
+		 						<SELECT lang="true">I.ItemName</SELECT>	
+								<SELECT lang="true">E.ElementName</SELECT>	
+								<SELECT lang="true">E.UnitName</SELECT>	
+								<SELECT>D.Year</SELECT>
+								<SELECT>D.Value</SELECT>
+							</SELECTS>
+							<TABLES>		       
+								<FROM>Data</FROM>
+								<FROM>Element</FROM>
+								<FROM>Area</FROM>
+								<FROM>Item</FROM>
+								<FROM>DomainArea</FROM>	
+							</TABLES>
+							<WHERE>
+							    	<DOMAINS>
+									<DOMAIN label="Production">RL</DOMAIN>
+								</DOMAINS>
+								<AREAS>
+									<AREA label="Afghanistan">2</AREA>
+								</AREAS>
+								<ELEMENTSLIST>
+									<ELEMENTLIST label='Area'>5110</ELEMENTLIST>
+								</ELEMENTSLIST>
+								<ITEMS>
+									<ITEM label='Agricultural area'>6610</ITEM>
+								</ITEMS>
+
+							</WHERE>
+							<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+							<COUNTRY_LEVEL>TRUE</COUNTRY_LEVEL>
+					
+						</BASEQUERY>
+
+				</BASEQUERIES>
+				</JOINQUERY>
+			</RESOURCE>
+
+
+			<RESOURCE>
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<TITLE>
+<E>Share of agricultural land equipped for irrigation in selected country</E>
+  <S>Proporción de tierra agrícola equipada para irrigación en el país seleccionado</S>
+  <F>Part des terres agricoles aménagées pour  l irrigation dans le pays sélectionné</F>
+				</TITLE>
+				<IMAGESIZE>
+				        <SIZE>
+						<WIDTH>880</WIDTH>
+						<HEIGHT>290</HEIGHT>
+					</SIZE>
+				</IMAGESIZE>
+
+
+				<JOINQUERY>
+					
+					<JOINCOLUMN>Year</JOINCOLUMN>
+					<SORT type="ASC">
+						<FIELD>Q1.Year</FIELD>
+					</SORT>
+					<DATEQUERY>
+						<MAX>D.Year</MAX>
+						<TIMESPAN type="year">17</TIMESPAN>
+					</DATEQUERY>
+
+			
+					<!-- <LIMIT field="D.ItemCode">10</LIMIT> -->
+
+					<SELECTS>
+						<SELECT>Q1.Year</SELECT>
+						<!--<SELECT lang="true">Q1.ItemName</SELECT>
+						<SELECT lang="true">Q1.UnitName</SELECT>	
+						<SELECT>Q1.Value</SELECT>
+						<SELECT lang="true">Q2.ItemName</SELECT>
+						<SELECT lang="true">Q2.UnitName</SELECT>
+						<SELECT>Q2.Value</SELECT>-->
+						<SELECT aliasE='Agricultural area as share of total Land area'>'Agricultural area as share of total Land area'</SELECT>
+						<SELECT>'%' as MU</SELECT>
+						<SELECT>ROUND((Q2.Value/ Q1.Value) * 100, 4) as 'Percentage'</SELECT>
+						
+					</SELECTS>
+
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>TRUE</COUNTRY_LEVEL>
+					
+		
+					<BASEQUERIES>
+					  	<BASEQUERY>
+					
+							<SELECTS>
+								<SELECT>A.AreaCode</SELECT>	
+								<SELECT>I.ItemCode</SELECT>
+								<SELECT>D.ElementCode</SELECT>		
+		 						<SELECT lang="true">I.ItemName</SELECT>	
+								<SELECT lang="true">E.ElementName</SELECT>	
+								<SELECT lang="true">E.UnitName</SELECT>	
+								<SELECT>D.Year</SELECT>
+								<SELECT>D.Value</SELECT>
+							</SELECTS>
+							<TABLES>		       
+								<FROM>Data</FROM>
+								<FROM>Element</FROM>
+								<FROM>Area</FROM>
+								<FROM>Item</FROM>
+							</TABLES>
+							<WHERE>
+							    	<DOMAINS>
+									<DOMAIN label="Production">RL</DOMAIN>
+								</DOMAINS>
+								<AREAS>
+									<AREA label="Afghanistan">2</AREA>
+								</AREAS>
+								<ELEMENTSLIST>
+									<ELEMENTLIST label='Area'>5110</ELEMENTLIST>
+								</ELEMENTSLIST>
+								<ITEMS>
+									<ITEM label='Agricultural area'>6610</ITEM>
+								</ITEMS>
+							</WHERE>
+							<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+							<COUNTRY_LEVEL>TRUE</COUNTRY_LEVEL>
+					
+						</BASEQUERY>	
+
+						<BASEQUERY>
+							<SELECTS>
+								<SELECT>A.AreaCode</SELECT>	
+								<SELECT>I.ItemCode</SELECT>	
+								<SELECT>D.ElementCode</SELECT>		
+		 						<SELECT lang="true">I.ItemName</SELECT>	
+								<SELECT lang="true">E.ElementName</SELECT>	
+								<SELECT lang="true">E.UnitName</SELECT>	
+								<SELECT>D.Year</SELECT>
+								<SELECT>D.Value</SELECT>
+							</SELECTS>
+							<TABLES>		       
+								<FROM>Data</FROM>
+								<FROM>Element</FROM>
+								<FROM>Area</FROM>
+								<FROM>Item</FROM>
+								<FROM>DomainArea</FROM>	
+							</TABLES>
+							<WHERE>
+							    	<DOMAINS>
+									<DOMAIN label="Production">RL</DOMAIN>
+								</DOMAINS>
+								<AREAS>
+									<AREA label="Afghanistan">2</AREA>
+								</AREAS>
+								<ELEMENTSLIST>
+									<ELEMENTLIST label='Area'>5110</ELEMENTLIST>
+								</ELEMENTSLIST>
+								<ITEMS>
+									<ITEM label='Irrigated Agricultural area'>6690</ITEM>
+								</ITEMS>
+
+							</WHERE>
+							<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+							<COUNTRY_LEVEL>TRUE</COUNTRY_LEVEL>
+					
+						</BASEQUERY>
+
+				</BASEQUERIES>
+				</JOINQUERY>
+			</RESOURCE>
+
+			<RESOURCE>			
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>STACKED</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>430</WIDTH>
+					<HEIGHT>230</HEIGHT>
+				</SIZE>
+				<TITLE>
+<E>Composition of global agricultural area</E>
+  <S>Composición del área agrícola mundial</S>
+  <F>Composition de la surface agricole mondiale</F>
+				</TITLE>
+				<APPLICABLE_FILTERS>
+					<APPLY_ONLY_YEAR_FILTER>true</APPLY_ONLY_YEAR_FILTER>
+				</APPLICABLE_FILTERS>
+				<AGGREGATIONTYPE>FALSE</AGGREGATIONTYPE>
+				<BASEQUERY>					 
+					<SELECTS>	
+						<SELECT lang="true">I.ItemName</SELECT>
+						<SELECT>D.Year</SELECT>
+						
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Land">RL</DOMAIN>	
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Arable Land">6621</ITEM>
+							<ITEM label="Permanent crops">6650</ITEM>
+							<ITEM label="Permanent meadows and pastures">6655</ITEM>
+						</ITEMS>
+						<ELEMENTS>
+							<ELEMENT label='Area'>5110</ELEMENT>
+						</ELEMENTS>						
+						<AREAS>
+							<AREA label="World">5000</AREA>
+						</AREAS> 
+						<YEARS>
+							<YEAR>2000</YEAR>
+							<YEAR>2001</YEAR>
+							<YEAR>2002</YEAR>
+							<YEAR>2003</YEAR>
+							<YEAR>2004</YEAR>
+							<YEAR>2005</YEAR>
+							<YEAR>2006</YEAR>
+							<YEAR>2007</YEAR>
+							<YEAR>2008</YEAR>
+							<YEAR>2009</YEAR>
+						</YEARS>	
+					</WHERE>
+
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>			
+	             
+				 </BASEQUERY>					
+			</RESOURCE>
+			
+
+			<RESOURCE>			
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>STACKED</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>430</WIDTH>
+					<HEIGHT>230</HEIGHT>
+				</SIZE>
+				<TITLE>
+<E>Composition of agricultural area by region</E>
+  <S>Composición del área agrícola por región</S>
+  <F>Composition de la zone agricole par région</F>
+				</TITLE>
+				<APPLICABLE_FILTERS>
+					<APPLY_ONLY_YEAR_FILTER>true</APPLY_ONLY_YEAR_FILTER>
+				</APPLICABLE_FILTERS>
+				
+				<DATEQUERY>
+					<MAXDATELIMIT>2009</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> -->
+					<TIMESPAN type="year">17</TIMESPAN>
+				</DATEQUERY>
+
+				<BASEQUERY>					 
+					<SELECTS>	
+						<SELECT lang="true">I.ItemName</SELECT>
+						<SELECT lang="true">A.AreaName</SELECT>
+						
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Land">RL</DOMAIN>	
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Arable Land">6621</ITEM>
+							<ITEM label="Permanent crops">6650</ITEM>
+							<ITEM label="Permanent meadows and pastures">6655</ITEM>
+						</ITEMS>
+						<ELEMENTS>
+							<ELEMENT label='Area'>5110</ELEMENT>
+						</ELEMENTS>						
+						<AREAS>
+							<AREA label="Africa">5100</AREA>	
+							<AREA label="Europa">5400</AREA>	
+							<AREA label="America">5200</AREA>	
+							<AREA label="Asia">5300</AREA>
+							<AREA label="Oceania">5500</AREA>
+						</AREAS> 
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">A.AreaName</FIELD>
+					</SORT>	
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>			
+	             
+				 </BASEQUERY>					
+			</RESOURCE>
+
+		</DEFAULT>	
+
+		
+	</RESOURCES>
+</VIEW>

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/fenix/!svn/ver/8896/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/client/control
+END
+ChartDesignerOpener.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/fenix/!svn/ver/8896/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/client/control/ChartDesignerOpener.java
+END
+ChartDesignerDimensionsComparator.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/fenix/!svn/ver/7626/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/client/control/ChartDesignerDimensionsComparator.java
+END
+ChartDesignerParametersCollector.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/fenix/!svn/ver/8896/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/client/control/ChartDesignerParametersCollector.java
+END
+ChartDesignerValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/fenix/!svn/ver/7640/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/client/control/ChartDesignerValidator.java
+END
+ChartDesignerController.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/fenix/!svn/ver/8896/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/client/control/ChartDesignerController.java
+END

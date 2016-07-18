@@ -1,0 +1,18 @@
+Indexes created on production DB
+--------------------------------
+
+CREATE INDEX amis_igc_price_ic_index ON AMIS_MARKET_MONITOR_IGC_GRAINS_AND_OILSEEDS_PRICE__da27ceb4(indicator_code);
+CREATE INDEX amis_indicator_defn_ic_index ON AMIS_MARKET_MONITOR_INDICATOR_DEFINITIONS_0774087b(indicator_code);
+CREATE INDEX amis_stu_index ON AMIS_DATA_e74da9e2(product_code,element_code,database,region_code, value_type);
+
+
+CREATE INDEX amis_monthly_indicators_ic_index ON AMIS_MONTHLY_MARKET_MONITOR_INDICATORS_bb4e2c6c(indicator_code);
+
+
+CREATE INDEX amis_daily_indicators_ic_index ON AMIS_MARKET_MONITOR_DAILY_INDICATORS_INCLUDING_IGC_2319a2bd(indicator_code);
+
+
+ 
+
+
+

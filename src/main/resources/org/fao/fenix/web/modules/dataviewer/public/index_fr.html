@@ -1,0 +1,352 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr"><head>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="description" content="FAOSTAT">
+<meta name="keywords"
+	content="">
+<title>FAOSTAT</title>
+<link rel="shortcut icon" href="images/faostat.png"/>
+<link rel="stylesheet" type="text/css" href="resources/css/gxt-all.css">
+
+
+<script type='text/javascript' src='home.nocache.js'></script>
+<link rel="stylesheet" href="map-style.css" type="text/css" />
+<link rel="stylesheet" href="dataviewer-style.css" type="text/css" />
+<!-- <link rel="stylesheet" href="dataviewer-home-style.css" type="text/css" /> -->
+<link rel="stylesheet" href="dataviewer-slider-style.css" type="text/css" />
+<link rel="stylesheet" href="fenix-style.css" type="text/css" />
+<link rel="stylesheet" href="feedback.css" type="text/css" />
+
+<!--[if !IE 7]> -->
+	<link rel="stylesheet" href="dataviewer-home-style.css" type="text/css" /> 
+<!-- <![endif]-->
+
+<!--[if IE 7]>
+     <link rel="stylesheet" href="dataviewer-home-style_ie7.css" type="text/css" />
+<![endif]--> 
+
+<script type='text/javascript' src="tinyslider/script.js"></script>
+
+<!-- For HighCharts support -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="highcharts/js/highcharts.src.js"></script>
+<script type="text/javascript" src="highcharts/js/modules/exporting.js"></script>
+<!-- ENDOF For HighCharts support -->
+
+<!-- Adapter for integration with gxt -->
+<script type="text/javascript" src="highcharts/js/gxt-adapter.js"></script>
+
+<script type='text/javascript' src='http://www.google.com/jsapi'></script>
+  <script type='text/javascript'>
+
+    var slideshow;
+
+    google.load('visualization', '1.2', {'packages': ['geomap']});
+
+    var countries;
+    var values;
+    var countriesLabel;
+    var measurementUnit;
+
+    var map_width;
+    var map_height;
+    var map_position;
+    var map_region;
+
+    function drawMap() {
+
+      var data = new google.visualization.DataTable();
+
+      data.addRows(countries.length);
+
+      data.addColumn('string', 'Country');
+      data.addColumn('number', measurementUnit);
+      data.addColumn('string', 'Country Label');
+
+      for (var i=0; i<countries.length; i++) {
+//	alert("0:" + countries[i]);
+//	alert("1:" + values[i]);
+	data.setValue(i, 0, countries[i]);
+        data.setValue(i, 1, values[i]);
+ 	data.setValue(i, 2, countriesLabel[i]);
+     }
+
+
+      var options = {};
+      options['dataMode'] = 'regions';
+      options['height'] = map_height;
+      options['width'] = map_width;
+      options['region'] = map_region;
+
+
+   //   options['showZoomOut'] = true;
+
+      var container = document.getElementById(map_position);
+      var geomap = new google.visualization.GeoMap(container);
+      geomap.draw(data, options);
+
+
+	google.visualization.events.addListener(
+    geomap, 'regionClick', regionClickHandler);
+      function regionClickHandler() {
+        var country_data = geomap.getSelection();
+        var country_code = data.getValue(country_data[0].row,0);
+        location.href = "?region=" + country_code;
+        geomap.setSelection();
+
+
+      }
+  };
+
+  </script>
+
+<script type="text/javascript">
+(function(){
+  if (window.addEventListener)
+  {
+    window.addEventListener("load", nascondi_loading_screen, false);
+  }else{
+    window.attachEvent("onload", nascondi_loading_screen);
+  }
+})();
+function mostra_loading_screen()
+{
+ // document.getElementById("loading_screen").style.display = 'block';
+}
+function nascondi_loading_screen()
+{
+  //document.getElementById("loading_screen").style.display = 'none';
+}
+</script>
+
+<!--GOOGLE ANALYTICS: START-->
+<script type="text/javascript">
+var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29534670-1']);
+  _gaq.push(['_trackPageview']);
+  _gaq.push(['_trackPageLoadTime']); 
+  _gaq.push(['_setSiteSpeedSampleRate', 5]);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!--GOOGLE ANALYTICS: END-->
+
+<!--  User Voice -->
+<script type="text/javascript">
+	var uvOptions = {};
+    (function() {
+   	 	var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
+        uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/7tu1AMqHWNUtv4f9Ad9pOA.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
+	})();
+</script>
+
+<style>
+html,body{margin:0;padding:0}
+body{
+
+font: 100.01% "Trebuchet MS",Arial,sans-serif
+font-size:.9em;
+
+}
+</style>
+</head>
+<body>
+
+
+<div id="centerColumn">
+
+	<div id="language-bar">
+			<div class="left">
+				<a href="http://www.fao.org/index_fr.htm" target="_blank">Organisation des Nations Unies pour l'alimentation et l'agriculture - pour un monde lib&#233;r&#233; de la faim</a>
+			</div>
+			<div id="language" class="right">
+				 			<a id="en" href='index.html'>english</a> | <b>fran&#231;ais</b> | <a id="es" href='index_es.html?locale=es'>espa&#241;ol</a>
+			</div>
+</div>
+
+         <div id="header">
+		<!-- OLD VERSION <div class="logo">
+			<div class="left-logo"><a href="http://www.fao.org" target="_blank"><img src="dataviewer-images/FAO.png"></a></div>
+			<div id="FAOSTAT-LOGO"  class="right-logo"><img src="dataviewer-images/faostat_logo.png" title="FAOSTAT Home" class="right-logo"></img></div>
+		</div>-->
+
+		<div class="left" id="FAOSTAT-LOGO"><a href="#HOME"><img src="dataviewer-images/faostat_logo.png"></a></img></div>
+
+		<div id="FAO-LOGO"class="right"><a href="http://www.fao.org" target="_blank"><img src="dataviewer-images/FAO.png" title="FAO"></img></a></div>
+
+		</div>
+
+<div id="TOP_MENU">
+<div id="MENU"></div>
+   <div id="CONTACT"></div>
+</div> <!--//end #footer//-->
+
+<div id="SECONDARY_MENU_VISUALIZE"></div>
+<div id="SECONDARY_MENU_DOWNLOAD"></div>
+<div id="SECONDARY_MENU_METADATA"></div>
+<div id="SECONDARY_MENU_COMPARE"></div>
+<div id="MAIN_CONTENT"></div>
+
+<div id="HOME_CONTENT">
+<div id="separation"></div>
+
+
+<div id="first_corner"></div>   <!--//here the rounded corner//-->
+
+<div id="top_box_container">
+
+	<div id="top_box_1">
+	 	<img src="dataviewer-images/picture1.png" width="217" height="100">
+  		<span class="text_box" id="goto-browse"><img src="dataviewer-images/arrow_002.png" alt="" width="7" height="6"/><a class="titles" href="#VISUALIZE_BY_DOMAIN"> Parcourir les donn&eacute;es par</a><br/></span>
+		<span id="browse-domain">Domaine,</span> <span id="browse-area"> Pays/R&eacute;gions,</span><span id="browse-topic"> &nbsp;&nbsp;&nbsp;&nbsp;Classements</span>
+	</div><!--//end #box_1//-->
+
+
+    <div id="top_box_3">
+	 	<img src="dataviewer-images/picture3.png" width="217" height="100">
+  		<span class="text_box" id="goto-download"><img src="dataviewer-images/arrow_002.png" alt="" width="7" height="6"/><a class="titles" href="#DOWNLOAD"> T&eacute;l&eacute;charger les donn&eacute;es</a></span>
+		<span id="browse-download">Tous les domaines de FAOSTAT</span>
+	</div><!--//end #box_3//-->
+
+
+    <div id="top_box_2">
+	 <img src="dataviewer-images/picture2.png" width="217" height="100"/>
+	 <span class="text_box" id="goto-search"><img src="dataviewer-images/arrow_002.png" alt="" width="7" height="6"/><a class="titles" href="#SEARCH_DATA"> Rechercher dans les donn&eacute;es</a><br/></span>
+	 <span id="browse-search">Recherche en texte libre (ex: Riz)</span>
+	</div><!--//end #box_2//-->
+
+	<div id="top_box_4">
+    <img src="dataviewer-images/picture4.png" width="217" height="100"/>
+     <span class="text_box" id="goto-analysis"><img src="dataviewer-images/arrow_002.png" alt="" width="7" height="6"/><a class="titles" href="#ANALYSIS"> Analyse FAOSTAT</a><br/></span>
+	 <span id="browse-analysis">Votre vision de l'information</span>
+	</div><!--//end #box_4//-->
+  </div><!--//end #top box container//-->
+
+    <div id="separation"></div>
+
+     <div id="second_corner"></div>
+     <div id="faostat_div"><p class="faostat_title_welcome">Bienvenue dans FAOSTAT</p><p class="faostat_title">FAOSTAT fournit des séries chronologiques et de données transversales relatives à la faim, la nourriture et l'agriculture pour environ 245 pays et 35 zones régionales de 1961 à nos jours. Il offre également un outil innovant, analyse FAOSTAT, pour l'analyse statistique de base de données. Il offre aux utilisateurs:</p>
+	<p>
+	<ul class="faostat_text">
+		<li>une collection complète de statistiques mondiales sur l'agriculture;</li>
+		<li>outils d'analyse comparative des secteurs, des matières premières, des pays et régions;</li>
+		<li>téléchargement facile et la visualisation des données et des indicateurs</li>
+	</ul>
+	</p>
+</div>
+		<div id="gallery">
+        <div id="gallery_spacer"></div>
+        <p class="faostat_title"> <img src="dataviewer-images/square_arrow.png" alt="" width="12" height="11" /> <span class="titles">Points importants</span></p>
+       <div id="wrapper">
+			  <div>
+				<div class="sliderbutton"></div>
+					<div style="overflow: hidden;" id="slider">
+						<ul style="left: -380px; width: 1520px;">
+							<li><a href="http://www.fao.org/economic/ess/syb/en/" target="_blank"><img src="dataviewer-images/slides/stats_yearbook_faostat3.jpg"></a></li>
+							<li><img src="dataviewer-images/slides/1stslide80.jpg"></li>
+							<li><img src="dataviewer-images/slides/2slide80.jpg"></li>
+						</ul>
+					</div>
+					<div class="sliderbutton"></div>
+				</div>
+				<ul id="pagination" class="pagination">
+					<li class="" onclick="slideshow.pos(0)"></li>
+					<li class="current" onclick="slideshow.pos(1)"></li>
+					<li class="" onclick="slideshow.pos(2)"></li>
+				</ul>
+		</div>
+
+        </div><!--//end #gallery//-->
+
+          <div id="third_corner"></div>
+
+		<div id="latest_news">
+        <div id="updates"> </div>
+         <div id="rss"></div>
+        </div><!--//end #latest news//-->
+
+
+        </div>
+
+ <div id="footer">
+    <div id="footer_contents_right">
+     <span class="footer"><a class="footer-link" href="http://www.fao.org/economic/ess/fr/" target="_blank"> Division de la Statistique</a></span>
+     <span class="footer"><a class="footer-link" href="http://www.fao.org/knowledge/ask-question/en/?tx_mblnewsevent_organizer=FAOSTAT@fao.org" target="_blank" title="Pour questions et commentaires">&nbsp;&nbsp;&nbsp;&nbsp;AskFAOSTAT</a></span>
+    </div>
+     <div id="footer_contents_left"><span class="footer"> <a class="footer-link" href="http://faostat.fao.org/site/380/default.aspx?lang=fr" target="_blank">Droit d'auteur</a></span> </span>
+     <span class="footer">&nbsp;&nbsp;&nbsp;&nbsp;
+      <a class="footer-link" href="http://www.fao.org/corp/copyright/fr/" target="_blank">&copy;FAO 2012&nbsp;</a></span></div>
+
+</div> <!--//end #footer//-->
+
+<!--
+<div id="FEEDBACK_FORM"></div>
+<div id='palette' class=''>
+	<div  id="block-datafinder_settings-report" class="block block-datafinder_settings yt-rounded">
+	      <div class='block-title' id="FEEDBACK"></div>
+	</div>
+</div>-->
+
+
+
+    </div>
+  <!--//end #central_container//-->
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+		var slideshow=new TINY.slider.slide('slideshow',{
+			id:'slider',
+			auto:6,
+			resume:true,
+			vertical:false,
+			navid:'pagination',
+			activeclass:'current',
+			position:0
+		});
+		</script>
+
+		<iframe src="javascript:''" id="__gwt_historyFrame" style="width:0;height:0;border:0"></iframe>
+
+<script type="text/javascript">
+
+	function getInternetExplorerVersion() {
+		var rv = -1; // Return value assumes failure.
+		if (navigator.appName == 'Microsoft Internet Explorer') {
+		    	var ua = navigator.userAgent;
+		    	var re  = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+		    	if (re.exec(ua) != null) {
+		      		rv = parseFloat( RegExp.$1 );
+			}
+	  	}
+	  return rv;
+	}
+
+
+	var ver = getInternetExplorerVersion();
+	
+	if ( ver > -1 ) {
+	    if ( ver <= 7.0 ) {
+ 	    	// alert("You are currently using Internet Explorer " + ver +" (IE"+ver+"). For optimal performance please use IE8, IE9, Mozilla Firefox or Google Chrome.");
+	    }
+	}
+
+</script>
+
+</body></html>
+

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/fenix/!svn/ver/9462/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/control/faostat/objects
+END
+FAOSTATPivotTableController.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/fenix/!svn/ver/9462/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/control/faostat/objects/FAOSTATPivotTableController.java
+END
+FAOSTATMapController.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/fenix/!svn/ver/10058/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/control/faostat/objects/FAOSTATMapController.java
+END
+FAOSTATChartController.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/fenix/!svn/ver/9312/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/control/faostat/objects/FAOSTATChartController.java
+END
+FAOSTATTableController.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/fenix/!svn/ver/9248/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/control/faostat/objects/FAOSTATTableController.java
+END

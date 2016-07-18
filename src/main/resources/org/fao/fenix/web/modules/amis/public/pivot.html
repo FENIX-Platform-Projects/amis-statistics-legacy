@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="text/javascript" >
+	   // var featureList = ["pivotNEW", "statistics", "GhostDrag", "BarChart", "Instant"];
+	    var featureList = ["pivot", "statistics"];
+	    var pivot;
+    </script>
+	<script type="text/javascript" src="oat28/oat/loader.js"></script>
+    <!--script type="text/javascript" src="oat28/oat/pivot.js"></script-->
+	<script type="text/javascript" >
+	
+	    var header = ["Data Source","Country","Product","Element","Year","Unit","Flag","&nbsp;"];
+		var data;
+	  	var pivot;
+	    var row = [0,1];
+	    var col = [2,3,4];
+	    var agg = [];
+	    var dataIndex=0;
+	    var option = { showChart: 0, headingBefore: 0, headingAfter: 0, nbDec:2,headingOutside: 1, showUnit: 0,showFlag:1 ,nestedby:1,subtotals:0,totals:0,calcTotal:0};
+
+	    function init() {
+	      //init2(); 
+	        
+	    }
+	    function init2() {
+
+	       // alert("pivot_content" + "\n" + "pivot_chart" + "\n" + "pivot_page" + "\n" + header + "\n" + data + "\n" + row + "\n" + col + "\n" + agg + "\n" + dataIndex + "\n" + option);
+
+		  
+            if(option.nestedby==0)
+			{document.getElementById("ODC_NESTED").style.display="none";
+			document.getElementById("legendrow").style.display="none";
+			}
+			else{document.getElementById("ODC_NESTED").style.display="inline";
+			document.getElementById("legendrow").style.display="inline";
+			}
+			dataIndex = data[0].length - 1;
+           
+		   
+		   
+		  
+                pivot = new OAT.Pivot("pivot_content", "pivot_chart", "pivot_page", header, data, row, col, agg, dataIndex, option);
+           
+		  
+		 
+		   
+	        var aggRef = function () {
+	            pivot.options.agg = parseInt($v("pivot_agg"));
+	            pivot.go();
+	        }
+            var nbDecRef = function () {
+	            pivot.options.nbDec = parseInt($v("nbDec"));
+	            pivot.go();
+	        }
+	        var aggRefTotals = function () {
+	            pivot.options.aggTotals = parseInt($v("pivot_agg_totals"));
+	            pivot.go();
+	        }
+			
+			
+			
+			
+		  
+	        /* create agg function list */
+	        OAT.Dom.clear("pivot_agg");
+	        OAT.Dom.clear("pivot_agg_totals");
+			
+			
+			
+	       for (var i = 0; i < OAT.Statistics.list.length; i++) {
+	            
+				var item = OAT.Statistics.list[i];
+				if (item.shortDesc == "SUM" || item.shortDesc == "MEAN") {
+				OAT.Dom.option(item.shortDesc, i, "pivot_agg");
+				OAT.Dom.option(item.shortDesc, i, "pivot_agg_totals");
+				if (pivot.options.agg == i) { $("pivot_agg").selectedIndex = i; }
+				if (pivot.options.aggTotals == i) { $("pivot_agg_totals").selectedIndex = i; }
+				
+                }
+	        }
+			
+			
+	        OAT.Dom.attach("pivot_agg", "change", aggRef);
+	        OAT.Dom.attach("pivot_agg_totals", "change", aggRefTotals);
+	        OAT.Dom.attach("nbDec", "change", nbDecRef);
+	    }
+		
+		function setInnerHTML(inDOMNode, inHTML) {
+     inDOMNode.innerHTML = "_" + inHTML;
+     inDOMNode.removeChild(inDOMNode.firstChild);
+}
+		
+	function getElementsByClassName2(className, tag, elm){
+	
+	var testClass = new RegExp("(^|\\s)" + className + "(\\s|$)");
+	var tag = tag || "*";
+	var elm = elm || document;
+	var elements = (tag == "*" && elm.all)? elm.all : elm.getElementsByTagName(tag);
+	var returnElements = [];
+	var current;
+	var length = elements.length;
+	for(var i=0; i<length; i++){
+		current = elements[i];
+		if(testClass.test(current.className)){
+			returnElements.push(current);
+		}
+	}
+	return returnElements;
+}
+		
+		
+		
+		 function showCode() {
+		 
+		 /*	alert("te2");
+		var arr=getElementsByClassName2("sc","*",document);
+		var arr2=getElementsByClassName2("sc2","*",document);
+		alert(arr);
+		alert(arr2);
+		
+		for(var i=0;i<arr.lenght;i++)
+		{arr[i].className="sc2"}
+		for(var i=0;i<arr2.lenght;i++)
+		{arr2[i].className="sc"}
+		
+		alert("te");
+		*/
+	     if (document.getElementById('showCode').checked) {
+			setInnerHTML(document.getElementById("CodeStyle"),"<style>.cs{display:inline}</style>");
+			   //document.getElementById("CodeStyle").innerHTML = ".cs{display:inline}";
+            }
+            else {
+			//document.getElementById("CodeStyle").innerHTML = ".cs{display:none}"; 
+			setInnerHTML(document.getElementById("CodeStyle"),"<style>.cs{display:none}</style>");
+			
+			}
+
+        }
+        function showAggregate() {
+            if (document.getElementById('showAgregate').checked) {
+                option.totals = 1;
+                document.getElementById('subTotalsDiv').style.display = "block";
+              }
+            else { option.totals = 0; document.getElementById('subTotalsDiv').style.display = "none"; }
+          
+            pivot.options = option;
+            init2();
+           // alert(document.getElementById('showAgregate').checked+"  " +option.aggTotals + "  $ " + option.showChart);
+        }
+		
+		
+        function showUnit() {
+            if (document.getElementById('showUnit').checked) {
+                option.showUnit = 1;
+               
+            }
+            else { option.showUnit = 0; }
+
+            pivot.options = option;
+            init2();
+        }
+		
+		
+		
+		
+		
+		
+       
+		
+		function changeNestedBy()
+		{
+		
+		if(option.nestedby==1){option.nestedby=0;}
+		else{option.nestedby=1;}
+		init2();
+		}
+		
+		
+		
+        function changevisi(id) {
+            if (document.getElementById(id).style.display == "none")
+            {document.getElementById(id).style.display = "block"; }
+            else {document.getElementById(id).style.display = "none";}
+        }
+function inputClick()
+{
+ this.blur();
+ this.focus();
+}	</script>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<title>PIVOT TABLE</title>
+    <style>
+	   tr.spaceTop > td
+	   {
+	     padding-top: 0.5em;
+	     padding-bottom: 1em;
+        }
+    </style>
+    <div id="CodeStyle" ><style>.cs{display:none}</style></div>
+	 
+</head>
+<body>
+	
+<!--<div id=\"pivot\"><select id=\"pivot_agg\" style=\"display:none\"></select><br/><fieldset>-->
+<!--<legend onclick=\"javascript:changevisi('olapGenConf')\" id=\"conflegend\">Configuration</legend>-->
+<!--<div id=\"olapGenConf\" style=\"display:none\">-->
+<!--<table border=1><tbody><tr><td> <input type=\"checkbox\" id=\"showCode\"   onChange=\"javascript:showCode()\"><label>-->
+<!--show Code</label></td> <td id=\"showNul\"></td><td>-->
+<!-- <input type=\"checkbox\" id=\"shownestedby\" checked=\"checked\"  onChange=\"javascript:changeNestedBy()\"/>-->
+<!-- <label>Nested by</label> </td><td> </td></tr>-->
+<!--  <tr><td id=\"NumType\"  style=\"vertical-align:top\">Number of Decimal: <br />-->
+<!--  <select id=\"nbDec\"><option>0</option>-->
+<!--   <option>1</option><option selected>2</option> <option>3</option><option>4</option> </select></td>-->
+<!--    <td  style=\"vertical-align:top\"><div id=\"olapconf\" style=\"float:left;clear:both\"></div></td>-->
+<!--  <td  style=\"vertical-align:top\"> <div id=\"subTotalsDiv\" style=\"display:none\">Sub-totals function <br /> <select id=\"pivot_agg_totals\"></select></div>-->
+<!--  </td> </tr> </tbody> </table> </div> </fieldset>  <hr />-->
+<!--  <div id=\"pivot_page\"></div><div id=\"DimRowCol\"><fieldset id=\"ODC_ROWS\"><legend>Rows</legend>-->
+<!--		<div><fieldset id=\"ODC_NESTED\"><legend>Nested by</legend><div id=\"ODC2_NESTED\"></div></fieldset>-->
+<!--		<fieldset id=\"ODC_ROW\"><legend id=\"legendrow\">Others rows</legend><div id=\"ODC2_ROW\"></div></fieldset>-->
+<!--		</div></fieldset> <fieldset id=\"ODC_COL\"><legend>Columns</legend><div id=\"ODC2_COL\"></div></fieldset>-->
+<!--            </div><div id=\"pivot_content\"></div><div id=\"pivot_chart\" style=\"display:none\"></div></div>-->
+  
+  
+  
+  
+  
+
+	<div id="pivot">
+	
+		<!--Aggregate function: -->
+		<select id="pivot_agg" style="display:none"></select>
+        <fieldset>
+        <legend onclick="javascript:changevisi('olapGenConf')" id="conflegend" title="Click to show/hide table settings">&nbsp;&nbsp;Table Settings &nabla;</legend>
+        <div id="olapGenConf" style="background:#CCCCCC;">
+        <table border="1px" width="60%">
+        <tbody>
+        <tr class="spaceTop"><td>
+        <input type="checkbox" onclick="javascript:inputClick()" id="showCode" onChange="javascript:showCode()"><label>
+        Show code</label></td>
+        <td id="showNul"></td>
+        <td>
+        <!--input type="checkbox" id="showAgregate" checked="checked"  onChange="javascript:showAggregate()"/>
+        <label>show Aggregation</label-->
+
+
+
+	     <input type="checkbox" onclick="javascript:inputClick()" id="shownestedby" checked="checked"  onChange="javascript:changeNestedBy()"/>
+        <label>Include Rows Nested by</label>
+
+
+        </td>
+        <td id="NumType"  style="vertical-align:top">Number of decimal places: <br />
+		        <select id="nbDec"><option value="0">0</option>
+		        <option value="1">1</option><option value="2" selected>2</option>
+		        <option value="3">3</option><option value="4">4</option>
+		        </select></td>
+		        <td  style="vertical-align:top"><div id="olapconf" style="float:left;clear:both"></div></td>
+		        <td  style="vertical-align:top"> <div id="subTotalsDiv" style="display:none">Sub-totals function <br /> <select id="pivot_agg_totals"></select></div>
+	    </td>
+        <td>
+
+        </td>
+
+        </tr>
+        </tbody>
+        </table>
+   
+        </div>
+        </fieldset>
+        <div style="padding-bottom:10px; padding-top:10px; padding-left:10px">To re-arrange the data in the table, <font color="#0073EA">drag and drop</font> the dimension boxes (<font color="#0073EA">Data Source</font>, <font color="#0073EA">Country</font>, <font color="#0073EA">Product</font>, <font color="#0073EA">Element</font> and <font color="#0073EA">Year</font>) to and from <u>Rows Nested by</u>, <u>Other rows</u> and <u>Columns</u>. Watch a demo <a href="#" onclick="window.open('amis-images/pivot_dragdrop.gif','_blank','scrollbars=no,width=340,height=302, bgcolor=white');">here</a>.<br/><br/></div>
+
+		<div id="pivot_page"></div>
+        <div id="DimRowCol">
+		<fieldset id="ODC_ROWS">
+		<legend>Rows</legend>
+		<div>
+		<fieldset id="ODC_NESTED"><legend>Nested by</legend><div id="ODC2_NESTED"></div></fieldset>
+		<fieldset id="ODC_ROW"><legend id="legendrow">Others rows</legend><div id="ODC2_ROW"></div></fieldset>
+		</div>
+		</fieldset>
+            <fieldset id="ODC_COL"><legend>Columns</legend><div id="ODC2_COL"></div></fieldset>
+            
+        </div>
+        <div id="pivot_content"></div>
+		<div id="pivot_chart" style="display:none"></div>
+	</div>
+	
+
+</body>
+</html>
+

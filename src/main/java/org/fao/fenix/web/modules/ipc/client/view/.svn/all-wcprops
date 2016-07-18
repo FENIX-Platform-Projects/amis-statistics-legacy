@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/fenix/!svn/ver/7311/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ipc/client/view
+END
+ConfirmWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/fenix/!svn/ver/6756/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ipc/client/view/ConfirmWindow.java
+END
+ViewerIPCWorkflowTab.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/fenix/!svn/ver/6756/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ipc/client/view/ViewerIPCWorkflowTab.java
+END
+IPCTabPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/fenix/!svn/ver/6409/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ipc/client/view/IPCTabPanel.java
+END
+IPCWorkflowWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/fenix/!svn/ver/6409/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ipc/client/view/IPCWorkflowWindow.java
+END
+ShowIPCWorkflowTab.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/fenix/!svn/ver/6756/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ipc/client/view/ShowIPCWorkflowTab.java
+END
+CreateIPCWorkflowTab.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/fenix/!svn/ver/6756/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ipc/client/view/CreateIPCWorkflowTab.java
+END
+ShowEditIPCWorkflow.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/fenix/!svn/ver/6756/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ipc/client/view/ShowEditIPCWorkflow.java
+END
+IPCaddActorsWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/fenix/!svn/ver/6409/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ipc/client/view/IPCaddActorsWindow.java
+END

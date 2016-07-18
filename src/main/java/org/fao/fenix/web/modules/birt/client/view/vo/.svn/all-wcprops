@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/fenix/!svn/ver/6405/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/client/view/vo
+END
+LabelsChartVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/fenix/!svn/ver/6405/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/client/view/vo/LabelsChartVo.java
+END
+ChartLegendVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/fenix/!svn/ver/6405/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/client/view/vo/ChartLegendVo.java
+END
+ScaleVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/fenix/!svn/ver/6405/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/client/view/vo/ScaleVo.java
+END

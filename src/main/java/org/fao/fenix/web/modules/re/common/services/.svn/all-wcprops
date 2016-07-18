@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/fenix/!svn/ver/8247/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/common/services
+END
+REServiceEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/fenix/!svn/ver/6412/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/common/services/REServiceEntry.java
+END
+REServiceAsync.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/fenix/!svn/ver/8247/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/common/services/REServiceAsync.java
+END
+REService.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/fenix/!svn/ver/8247/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/common/services/REService.java
+END

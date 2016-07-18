@@ -1,0 +1,23 @@
+<!-- BODY TEXT SECTION -->
+<br/><br/>
+<div class='text'>
+Los precios de fertilizantes pagados por los agricultores figuran en moneda local por tonelada m&eacute;trica de nutrientes, N, P2O5 y K2O, por lo que se refiere a los fertilizantes puros. Los precios generalmente se refieren a fertilizantes en sacos. Los subsidios se han deducido de los precios cuando ha sido posible. Se debe tener prudencia al comparar los precios de los distintos pa&iacute;ses, ya que no existe uniformidad en los puntos de fijaci&oacute;n de precios, la pol&iacute;tica de los precios, los acuerdos de cr&eacute;dito, etc.
+<br/><br/> 
+<i>Descripci&oacute;n de los elementos </i>
+<br/><br/>
+51 Producci&oacute;n MT 
+Este dato se refiere a las cantidades, en toneladas m&eacute;tricas de nutrientes de plantas destinadas a fines de uso dom&eacute;stico agr&iacute;colo.
+<br/><br/>
+61 Importaciones MT 
+Este dato se refiere a las cantidades de fertilizantes, en toneladas m&eacute;tricas de nutrientes de plantas, importadas por los pa&iacute;ses.
+<br/><br/>
+91 Exportaciones MT 
+Este dato se refiere a las cantidades de fertilizantes, en toneladas m&eacute;tricas de nutrientes de plantas, exportadas por los pa&iacute;ses.
+<br/><br/>
+151 Consumo MT 
+Este dato se refiere a las cantidades de fertilizantes, en toneladas m&eacute;tricas de nutrientes de plantas, consumidas por los pa&iacute;ses.
+<br/><br/>
+171 Precio pagado por el Agricultor LC/MT 
+Los precios figuran en moneda local (LC) por tonelada m&eacute;trica de nutrientes (N, P2O5 y K2O). Los subsidios se han deducido de los precios cuando ha sido posible.
+<br/><br/><br /><br />
+</div>

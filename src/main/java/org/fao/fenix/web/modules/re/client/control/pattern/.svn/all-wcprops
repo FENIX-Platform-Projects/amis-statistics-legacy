@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/control/pattern
+END
+CatalogueContextMenuPatternController.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/control/pattern/CatalogueContextMenuPatternController.java
+END
+CataloguePagerDatesetController.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/fenix/!svn/ver/6412/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/control/pattern/CataloguePagerDatesetController.java
+END
+CataloguePatternController.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/fenix/!svn/ver/6412/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/control/pattern/CataloguePatternController.java
+END
+CataloguePagerPatternController.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/fenix/!svn/ver/6412/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/control/pattern/CataloguePagerPatternController.java
+END

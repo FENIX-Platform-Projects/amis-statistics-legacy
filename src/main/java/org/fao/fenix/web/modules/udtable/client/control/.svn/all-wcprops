@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/udtable/client/control
+END
+UDTablePagerController.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/udtable/client/control/UDTablePagerController.java
+END
+UniqueValuesController.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/udtable/client/control/UniqueValuesController.java
+END
+UDTableController.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/udtable/client/control/UDTableController.java
+END
+UDTableToolbarController.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/udtable/client/control/UDTableToolbarController.java
+END
+UDTableGridController.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/udtable/client/control/UDTableGridController.java
+END

@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:lang="http://www.springframework.org/schema/lang"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+                           http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang-2.5.xsd">
+    <bean id="aquastatServicePojo"
+          class="org.fao.fenix.web.modules.aquastat.server.AquastatServiceImpl">
+        <property name="aquastatLib" ref="aquastatLib" />
+    </bean>
+    <bean id="adamServicePojo" class="org.fao.fenix.web.modules.adam.server.ADAMServiceImpl">
+        <constructor-arg value="/adamObjects" />
+        <property name="adamDao" ref="adamDao" />
+        <property name="codecDao" ref="codecDao" />
+        <property name="customDatasetJDBC" ref="customDatasetJDBC" />
+        <property name="customDatasetDao" ref="customDatasetDao" />
+        <property name="urlFinder" ref="urlFinder" />
+        <property name="wmsMapProviderDao" ref="wmsMapProviderDao" />
+        <property name="datasetDao" ref="datasetDao" />
+        <property name="fenixPermissionManager" ref="fenixPermissionManager" />
+        <property name="olapDao" ref="olapDao" />
+        <property name="resourceViewDao" ref="resourceViewDao" />
+        <property name="tableExcel" ref="tableExcel" />
+    </bean>
+    <bean id="bangladeshServicePojo"
+          class="org.fao.fenix.web.modules.bangladesh.server.BangladeshServiceImpl">
+        <property name="bangladeshDao" ref="bangladeshDao" />
+        <property name="textDao" ref="textDao" />
+    </bean>
+    <bean id="reServicePojo" class="org.fao.fenix.web.modules.re.server.REServiceImpl">
+        <property name="chartDao" ref="chartDao" />
+        <property name="reportDao" ref="reportDao" />
+        <property name="datasetDao" ref="datasetDao" />
+        <property name="tableDao" ref="tableDao" />
+        <property name="mapDao" ref="mapDao" />
+        <property name="projectDao" ref="projectDao" />
+        <property name="wmsMapProviderDao" ref="wmsMapProviderDao" />
+        <property name="textDao" ref="textDao" />
+        <property name="metadataDao" ref="metadataDao" />
+        <property name="searchDao" ref="searchDao" />
+        <property name="domain2VoConverter" ref="domain2VoConverter" />
+        <property name="communicationDao" ref="communicationDao" />
+        <property name="fenixGaulDao" ref="fenixGaulDao" />
+        <property name="codecDao" ref="codecDao" />
+        <property name="dcmtImporter" ref="dcmtImporter" />
+        <property name="resourceDao" ref="resourceDao" />
+        <property name="uniqueValuesDao" ref="uniqueValuesDao" />
+        <property name="updateDao" ref="updateDao" />
+        <property name="findDao" ref="findDao" />
+        <property name="propertiesReader" ref="propertiesReader" />
+        <constructor-arg value="/exportObject" />
+    </bean>
+    <bean id="textServicePojo" class="org.fao.fenix.web.modules.text.server.TextServiceImpl">
+        <property name="textDao" ref="textDao" />
+        <property name="textGroupDao" ref="textGroupDao" />
+        <property name="fenixPermissionManager" ref="fenixPermissionManager" />
+        <property name="saveUniqueDao" ref="saveUniqueDao" />
+    </bean>
+    <bean id="fpiServicePojo" class="org.fao.fenix.web.modules.fpi.server.FpiServiceImpl">
+        <property name="fenixGaulDao" ref="fenixGaulDao" />
+        <property name="hsDao" ref="hsDao" />
+        <property name="datasetDao" ref="datasetDao" />
+        <property name="indexCalculator" ref="indexCalculator" />
+        <property name="fpiExcel" ref="fpiExcel" />
+    </bean>
+    <bean id="giewsServicePojo" class="org.fao.fenix.web.modules.giews.server.GIEWSServiceImpl">
+        <property name="codecDao" ref="codecDao" />
+        <property name="projectDao" ref="projectDao" />
+        <property name="metadataDao" ref="metadataDao" />
+        <property name="textDao" ref="textDao" />
+        <property name="datasetDao" ref="datasetDao" />
+        <property name="mapDao" ref="mapDao" />
+        <property name="geoViewDao" ref="geoViewDao" />
+        <property name="layerGaulUtils" ref="layerGaulUtils" />
+        <property name="wmsMapProviderDao" ref="wmsMapProviderDao" />
+        <property name="currentLayerUpdater" ref="currentLayerUpdater" />
+        <property name="isfpDao" ref="isfpDao" />
+        <property name="crisisDao" ref="crisisDao" />
+        <property name="projectedDataDao" ref="projectedDataDao" />
+        <property name="projectedDataMetadao" ref="projectedDataMetadao" />
+        <property name="chartDao" ref="chartDao" />
+    </bean>
+    <bean id="fsatmisServicePojo"
+          class="org.fao.fenix.web.modules.fsatmis.server.FSATMISServiceImpl">
+    </bean>
+    <bean id="tableServicePojo" class="org.fao.fenix.web.modules.table.server.TableServiceImpl">
+        <property name="tableDao" ref="tableDao" />
+        <property name="datasetDao" ref="datasetDao" />
+        <property name="codecDao" ref="codecDao" />
+        <property name="gwtConnector" ref='gwtConnector' />
+        <property name="meDao" ref="meDao" />
+        <property name="datasetCoreDao" ref="datasetCoreDao" />
+        <property name="datasetFlexDao" ref="datasetFlexDao" />
+        <property name="appender" ref="appender" />
+        <property name="crisisDao" ref="crisisDao" />
+        <property name="uniqueValuesDao" ref="uniqueValuesDao" />
+        <property name="tableExcel" ref="tableExcel" />
+        <property name="chartUpdater" ref="chartUpdater" />
+        <property name="fenixPermissionManager" ref="fenixPermissionManager" />
+        <property name="resourceViewDao" ref="resourceViewDao" />
+        <property name="olapJdbc" ref="olapJdbc" />
+        <property name="olapUpdater" ref="olapUpdater" />
+        <property name="findDao" ref="findDao" />
+        <property name="chartDesignUpdater" ref="chartDesignUpdater" />
+    </bean>
+    <bean id="udtableServicePojo"
+          class="org.fao.fenix.web.modules.udtable.server.UDTableServiceImpl">
+        <property name="udtableDao" ref="udtableDao" />
+        <property name="udtableConnector" ref="udtableConnector" />
+        <property name="datasetDao" ref="datasetDao" />
+        <property name="codecDao" ref="codecDao" />
+        <property name="gwtConnector" ref='gwtConnector' />
+        <property name="meDao" ref="meDao" />
+        <property name="findDao" ref="findDao" />
+        <property name="updateDao" ref="updateDao" />
+        <property name="appender" ref="appender" />
+        <property name="deleteDao" ref="deleteDao" />
+        <property name="crisisDao" ref="crisisDao" />
+        <property name="uniqueValuesDao" ref="uniqueValuesDao" />
+    </bean>
+    <bean id="cerealBalanceCBDao" class="org.fao.fenix.core.persistence.cb.CerealBalanceCBDao" />
+    <bean id="birtServicePojo" class="org.fao.fenix.web.modules.birt.server.BirtServiceImpl">
+        <property name="dataviewDao" ref="dataviewDao" />
+        <property name="mapDao" ref="mapDao" />
+        <property name="chartDao" ref="chartDao" />
+        <property name="datasetDao" ref="datasetDao" />
+        <property name="tableDao" ref="tableDao" />
+        <property name="textDao" ref="textDao" />
+        <property name="isfpDao" ref="isfpDao" />
+        <property name="importESTPriceDatabase" ref="importESTPriceDatabase" />
+        <property name="codecDao" ref="codecDao" />
+        <property name="gwtConnector" ref='gwtConnector' />
+        <property name="rainfallDao" ref="rainfallDao" />
+        <property name="rainfallUtils" ref="rainfallUtils" />
+        <property name="cropMaps" ref="cropMaps" />
+        <property name="cerealBalanceCBDao" ref="cerealBalanceCBDao" />
+        <property name="wmsMapProviderDao" ref="wmsMapProviderDao" />
+        <property name="ipcDao" ref="ipcDao" />
+        <property name="fsatmisDao" ref="fsatmisDao" />
+        <property name="saveUniqueDao" ref="saveUniqueDao" />
+        <property name="chartUpdater" ref="chartUpdater" />
+        <property name="olapDao" ref="olapDao" />
+    </bean>
+    <bean id="userServicePojo"
+          class="org.fao.fenix.web.modules.core.server.security.UserServiceImpl">
+        <property name="fenixDomainUserDao" ref="fenixDomainUserDao" />
+        <property name="fenixDoubleUserManager" ref="fenixDoubleUserManager" />
+        <property name="userDetailsManager" ref="userDetailsManager" />
+        <property name="fenixLogin" ref="fenixLogin" />
+        <property name="fenixPermissionManager" ref="fenixPermissionManager" />
+        <property name="resourceDao" ref="resourceDao" />
+        <property name="fenixModuleConfiguration" ref="fenixModuleConfiguration" />
+    </bean>
+    <bean id="metadataServicePojo"
+          class="org.fao.fenix.web.modules.metadataeditor.server.MetadataServiceImpl">
+        <property name="metadataDao" ref="metadataDao" />
+        <property name="meDao" ref="meDao" />
+        <property name="fileFactory" ref="fileFactory" />
+        <property name="codecDao" ref="codecDao" />
+        <property name="backupUtils" ref="backupUtils" />
+    </bean>
+    <bean id="mapServicePojo" class="org.fao.fenix.web.modules.map.server.MapServiceImpl">
+        <property name="datasetDao" ref="datasetDao" />
+        <property name="mapDao" ref="mapDao" />
+        <property name="geoViewDao" ref="geoViewDao" />
+        <property name="geoServerDao" ref="geoServerDao" />
+        <property name="wmsMapProviderDao" ref="wmsMapProviderDao" />
+        <property name="projectedDataMetadao" ref="projectedDataMetadao" />
+        <property name="projectedDataDao" ref="projectedDataDao" />
+        <property name="hsDao" ref="hsDao" />
+        <property name="layerImporter" ref="layerImporter" />
+        <property name="gsSynch" ref="gsLayerSynch" />
+        <property name="geotiffHarvester" ref="geotiffHarvester" />
+        <property name="layerGaulUtils" ref="layerGaulUtils" />
+        <property name="tableInfo" ref="dbTableInfo" />
+        <property name="exportPath" value="/export/map" />
+        <property name="fileFactory" ref="fileFactory" />
+        <property name="codecDao" ref="codecDao" />
+        <property name="uniqueValuesDao" ref="uniqueValuesDao" />
+        <property name="urlFinder" ref="urlFinder" />
+    </bean>
+    <bean id="projectManagerServicePojo"
+          class="org.fao.fenix.web.modules.pm.server.ProjectManagerServiceImpl">
+        <property name="projectDao" ref="projectDao" />
+        <property name="datasetDao" ref="datasetDao" />
+    </bean>
+    <bean id="communicationServicePojo"
+          class="org.fao.fenix.web.modules.communication.server.CommunicationServiceImpl">
+        <property name="urlFinder" ref="urlFinder" />
+        <property name="networkSynchronizer" ref="networkSynchronizer" />
+        <property name="communicationDao" ref="communicationDao" />
+    </bean>
+    <bean id="ipcServicePojo" class="org.fao.fenix.web.modules.ipc.server.IPCServiceImpl">
+        <property name="fenixGaulDao" ref="fenixGaulDao" />
+        <property name="fenixDomainUserDao" ref="fenixDomainUserDao" />
+        <property name="codecDao" ref="codecDao" />
+        <property name="saveDao" ref="saveDao" />
+        <property name="ipcDao" ref="ipcDao" />
+        <property name="fileFactory" ref="fileFactory" />
+        <property name="datasetImporter" ref="datasetImporter" />
+        <property name="datasetDao" ref="datasetDao" />
+        <property name="fenixPermissionManager" ref="fenixPermissionManager" />
+        <property name="mapDao" ref="mapDao" />
+        <property name="geoViewDao" ref="geoViewDao" />
+        <property name="projectedDataDao" ref="projectedDataDao" />
+        <property name="projectedDataMetadao" ref="projectedDataMetadao" />
+        <property name="wmsMapProviderDao" ref="wmsMapProviderDao" />
+        <property name="layerGaulUtils" ref="layerGaulUtils" />
+    </bean>
+    <bean id="haitiServicePojo" class="org.fao.fenix.web.modules.haiti.server.HaitiServiceImpl">
+        <property name="codecDao" ref="codecDao" />
+        <property name="wmsMapProviderDao" ref="wmsMapProviderDao" />
+        <property name="urlFinder" ref="urlFinder" />
+        <constructor-arg value="/layerFormatters" />
+    </bean>
+    <bean id="ipcxmlServicePojo" class="org.fao.fenix.web.modules.ipc.server.IPCXMLServiceImpl">
+        <property name="codecDao" ref="codecDao" />
+        <property name="saveDao" ref="saveDao" />
+        <property name="fenixDomainUserDao" ref="fenixDomainUserDao" />
+        <property name="ipcDao" ref="ipcDao" />
+    </bean>
+    <bean id="codingServicePojo"
+          class="org.fao.fenix.web.modules.coding.server.CodingServiceImpl">
+        <property name="findDao" ref="findDao" />
+        <property name="codecDao" ref="codecDao" />
+        <property name="dcmtImporter" ref="dcmtImporter" />
+        <property name="dcmtTranslator" ref="dcmtTranslator" />
+        <property name="populateCoding" ref="populateCoding" />
+        <property name="codeListImporter" ref="codeListImporter" />
+    </bean>
+    <bean id="consoleServicePojo"
+          class="org.fao.fenix.web.modules.console.server.ConsoleServiceImpl" />
+    <bean id="rainfallServicePojo"
+          class="org.fao.fenix.web.modules.rainfall.server.RainfallServiceImpl">
+        <property name="codecDao" ref="codecDao" />
+        <property name="rainfallDao" ref="rainfallDao" />
+        <property name="wmsMapProviderDao" ref="wmsMapProviderDao" />
+        <property name="layerGaulUtils" ref="layerGaulUtils" />
+        <property name="rainfallUtils" ref="rainfallUtils" />
+    </bean>
+    <bean id="olapServicePojo" class="org.fao.fenix.web.modules.olap.server.OlapServiceImpl">
+        <property name="olapDao" ref="olapDao" />
+        <property name="datasetDao" ref="datasetDao" />
+        <property name="resourceViewDao" ref="resourceViewDao" />
+        <property name="gwtConnector" ref="gwtConnector" />
+        <property name="udtableDao" ref="udtableDao" />
+        <property name="fenixPermissionManager" ref="fenixPermissionManager" />
+        <property name="layerGaulUtils" ref="layerGaulUtils" />
+        <property name="wmsMapProviderDao" ref="wmsMapProviderDao" />
+        <property name="olapJdbc" ref="olapJdbc" />
+        <property name="olapUpdater" ref="olapUpdater" />
+        <property name="urlFinder" ref="urlFinder" />
+        <property name="mtSaver" ref="mtSaver" />
+    </bean>
+    <bean id="cfsServicePojo" class="org.fao.fenix.web.modules.cfs.server.CFSServiceImpl">
+        <!-- ADD BEANS HERE -->
+    </bean>
+    <bean id="wcctServicePojo" class="org.fao.fenix.web.modules.wcct.server.WCCTServiceImpl">
+        <property name="wcctDao" ref="wcctDao" />
+        <property name="codecDao" ref="codecDao" />
+        <property name="cropCalendarMapBuilder" ref="cropCalendarMapBuilder" />
+    </bean>
+    <bean id="fixerServicePojo" class="org.fao.fenix.web.modules.fixer.server.FixerServiceImpl">
+    </bean>
+
+    <!--	<bean id="ccbsDbAdapter"-->
+    <!--
+        class="org.fao.fenix.web.modules.ccbs.server.FenixCCBSDBAdapter">
+    -->
+    <!--		<property name="datasetDao" ref="datasetDao" />-->
+    <!--	</bean>-->
+    <!--
+        <bean id="ccbsServicePojo"
+        class="org.fao.fenix.web.modules.ccbs.server.CCBSServiceImpl">
+    -->
+    <!--		<property name="dbAdapter" ref="ccbsDbAdapter" />-->
+    <!--	</bean>-->
+    <!--	<bean id="ccbsDbAdapter"-->
+    <!--
+        class="org.fao.fenix.web.modules.amis.server.FenixCCBSDBAdapter">
+    -->
+    <!--		<property name="datasetDao" ref="datasetDao" />-->
+    <!--	</bean>-->
+    <!--
+        <bean id="ccbsServicePojo"
+        class="org.fao.fenix.web.modules.amis.server.AMISServiceImpl">
+    -->
+    <!--		<property name="dbAdapter" ref="ccbsDbAdapter" />-->
+    <!--	</bean>-->
+
+    <bean id="ccbsDbAdapter"
+          class="org.fao.fenix.web.modules.amis.server.FenixCBSToolDBAdapter">
+        <!--		<property name="datasetDao" ref="datasetDao" />-->
+    </bean>
+    <bean id="ccbsServicePojo" class="org.fao.fenix.web.modules.amis.server.AMISServiceImpl">
+        <property name="dbAdapter" ref="ccbsDbAdapter" />
+        <property name="ip" value="${cbs.ip}" />
+        <property name="port" value="${cbs.port}" />
+        <property name="cbsMonths_ip" value="${cbs.cbsMonths_ip}" />
+        <property name="cbsMonths_port" value="${cbs.cbsMonths_port}" />
+    </bean>
+    <bean id="ofcChartServicePojo"
+          class="org.fao.fenix.web.modules.ofcchart.server.OfcChartServiceImpl">
+        <property name="ofcChartDao" ref="ofcChartDao" />
+        <property name="uniqueValuesDao" ref="uniqueValuesDao" />
+    </bean>
+
+    <bean id="ecServicePojo" class="org.fao.fenix.web.modules.ec.server.ECServiceImpl">
+        <property name="ecDao" ref="ecDao" />
+        <property name="codecDao" ref="codecDao" />
+        <constructor-arg value="/ec" />
+    </bean>
+
+    <!-- X Pojo -->
+    <bean id="xServicePojo" class="org.fao.fenix.web.modules.x.server.XServiceImpl">
+        <property name="rssFactory" ref="rssFactory" />
+        <property name="rssWriter" ref="rssWriter" />
+        <property name="urlFinder" ref="urlFinder" />
+        <property name="xDao" ref="xDao" />
+        <property name="codecDao" ref="codecDao" />
+        <property name="xImporter" ref="xImporter" />
+        <property name="datasetImporter" ref="datasetImporter" />
+        <property name="dcmtImporter" ref="dcmtImporter" />
+        <property name="textImporter" ref="textImporter" />
+        <property name="xLayerUtils" ref="xLayerUtils" />
+        <property name="shapeFilePersister" ref="shapeFilePersister" />
+        <property name="shpFeatureLayerPersister" ref="shpFeatureLayerPersister" />
+        <property name="rasterLayerPersister" ref="rasterLayerPersister" />
+        <property name="emailReceiver" ref="emailReceiver" />
+        <property name="POP_HOST" value="${email.pop.host}" />
+        <property name="USERNAME" value="${email.username}" />
+        <property name="PASSWORD" value="${email.password}" />
+    </bean>
+
+    <!-- SDMX Pojo -->
+    <bean id="sdmxServicePojo" class="org.fao.fenix.web.modules.sdmx.server.SDMXServiceImpl">
+    </bean>
+
+    <!-- SLD Editor Pojo -->
+    <bean id="sldEditorServicePojo"
+          class="org.fao.fenix.web.modules.sldeditor.server.SLDEditorServiceImpl">
+        <constructor-arg value="/exportObject" />
+    </bean>
+
+    <!-- Query Builder Pojo -->
+    <bean id="queryBuilderServicePojo"
+          class="org.fao.fenix.web.modules.qb.server.QueryBuilderServiceImpl">
+        <property name="queryBuilderDao" ref="queryBuilderDao" />
+        <property name="datasetDao" ref="datasetDao" />
+    </bean>
+
+    <!-- LaTeX Pojo -->
+    <bean id="latexServicePojo" class="org.fao.fenix.web.modules.latex.server.LatexServiceImpl">
+        <property name="latexUtils" ref="latexUtils" />
+        <property name="latexBuilder" ref="latexBuilder" />
+        <property name="resourceViewDao" ref="resourceViewDao" />
+        <property name="fenixPermissionManager" ref="fenixPermissionManager" />
+        <constructor-arg value="/exportObject" />
+    </bean>
+
+    <!-- Venn Pojo -->
+    <bean id="vennServicePojo" class="org.fao.fenix.web.modules.venn.server.VennServiceImpl">
+        <property name="vennDao" ref="vennDao" />
+        <property name="datasetDao" ref="datasetDao" />
+        <property name="codecDao" ref="codecDao" />
+        <property name="layerGaulUtils" ref="layerGaulUtils" />
+        <property name="wmsMapProviderDao" ref="wmsMapProviderDao" />
+        <property name="olapDao" ref="olapDao" />
+        <property name="viewDao" ref="viewDao" />
+        <constructor-arg value="/venn/configuration" />
+    </bean>
+
+    <!-- Excel Importer Pojo -->
+    <bean id="excelImporterServicePojo"
+          class="org.fao.fenix.web.modules.excelimporter.server.ExcelImporterServiceImpl">
+        <property name="codecDao" ref="codecDao" />
+        <property name="findDao" ref="findDao" />
+        <property name="csvFactory" ref="csvFactory" />
+        <property name="metadataFactory" ref="metadataFactory" />
+        <constructor-arg value="/exportObject" />
+    </bean>
+
+    <!-- Esoko Pojo -->
+    <bean id="esokoServicePojo" class="org.fao.fenix.web.modules.esoko.server.EsokoServiceImpl">
+        <property name="esokoImporter" ref="esokoImporter" />
+        <property name="urlFinder" ref="urlFinder" />
+    </bean>
+
+    <!-- FieldClimate Pojo -->
+    <bean id="fcServicePojo"
+          class="org.fao.fenix.web.modules.fieldclimate.server.FCServiceImpl">
+        <property name="fieldClimateConnector" ref="fieldClimateConnector" />
+        <property name="urlFinder" ref="urlFinder" />
+    </bean>
+
+    <!-- CNSA Pojo -->
+    <bean id="cnsaServicePojo" class="org.fao.fenix.web.modules.cnsa.server.CNSAServiceImpl">
+        <property name="cnsaDao" ref="cnsaDao" />
+        <property name="datasetDao" ref="datasetDao" />
+        <property name="codecDao" ref="codecDao" />
+        <property name="cnsaExportExcel" ref="cnsaExportExcel" />
+    </bean>
+
+    <!-- R Pojo -->
+    <bean id="rServicePojo" class="org.fao.fenix.web.modules.r.server.RServiceImpl">
+        <property name="rUtils" ref="rUtils" />
+    </bean>
+
+    <!--  haiti cnsa tool -->
+    <bean id="haitiCNSAToolServicePojo"
+          class="org.fao.fenix.web.modules.haiticnsatool.server.HaitiCNSAToolServiceImpl">
+        <property name="codecDao" ref="codecDao" />
+        <property name="wmsMapProviderDao" ref="wmsMapProviderDao" />
+        <property name="urlFinder" ref="urlFinder" />
+        <property name="haitiChartUtils" ref="haitiChartUtils" />
+        <property name="cnsaDao" ref="cnsaDao" />
+        <constructor-arg value="/layerFormatters" />
+    </bean>
+
+    <!--  sifsiaServicePojo -->
+    <bean id="sifsiaServicePojo"
+          class="org.fao.fenix.web.modules.sifsia.server.SifsiaServiceImpl">
+    </bean>
+
+    <!--  dataMapperServicePojo -->
+    <bean id="dataMapperServicePojo"
+          class="org.fao.fenix.web.modules.dataMapper.server.DataMapperServiceImpl">
+        <property name="codecDao" ref="codecDao" />
+        <property name="adamDao" ref="adamDao" />
+    </bean>
+
+    <!--  FAOStat Pojo -->
+    <bean id="faoStatServicePojo" class="org.fao.fenix.web.modules.edi.server.FAOStatServiceImpl">
+        <property name="faoStatDao" ref="faoStatDao" />
+        <property name="datasetImporter" ref="datasetImporter" />
+        <property name="csvFactory" ref="csvFactory" />
+        <property name="tableExcel" ref="tableExcel" />
+        <constructor-arg value="/faostat" />
+    </bean>
+
+    <!--  FAOStat Pojo -->
+    <bean id="fewsnetServicePojo" class="org.fao.fenix.web.modules.edi.server.FEWSNETServiceImpl">
+        <property name="metadataFactory" ref="metadataFactory" />
+        <property name="bootDir" value="${geotiffharvester.bootdir}" />
+        <property name="geotiffHarvester" ref="geotiffHarvester" />
+        <constructor-arg value="/exportObject" />
+    </bean>
+
+    <!--  Chart Designer Pojo -->
+    <bean id="chartDesignerServicePojo"
+          class="org.fao.fenix.web.modules.chartdesigner.server.ChartDesignerServiceImpl">
+        <constructor-arg value="/exportObject" />
+        <property name="chartDesignerUtils" ref="chartDesignerUtils" />
+        <property name="chartDesignerDao" ref="chartDesignerDao" />
+        <property name="fenixPermissionManager" ref="fenixPermissionManager" />
+        <property name="chartDesignUpdater" ref="chartDesignUpdater" />
+        <property name="chartDesignerExporter" ref="chartDesignerExporter" />
+        <property name="urlFinder" ref="urlFinder" />
+    </bean>
+
+    <!--  IMF Pojo -->
+    <bean id="imfServicePojo" class="org.fao.fenix.web.modules.imftool.server.IMFServiceImpl">
+        <property name="imfUtils" ref="imfUtils" />
+    </bean>
+
+    <!--  mackx -->
+    <bean id="dom4jUtils"
+          class="org.fao.fenix.web.modules.dataviewer.server.faostat.xml.DOM4JUtils">
+        <property name="ip" value="${serverip}" />
+        <property name="port" value="${port}" />
+    </bean>
+
+    <bean id="faostatNotesXMLParser"
+          class="org.fao.fenix.web.modules.dataviewer.server.faostat.xml.FAOSTATNotesXMLParser">
+        <property name="dom4jUtils" ref="dom4jUtils" />
+    </bean>
+    <!--  mackx off -->
+
+    <!--  DataViewer Pojo -->
+    <bean id="dataViewerServicePojo" class="org.fao.fenix.web.modules.dataviewer.server.DataViewerServiceImpl">
+        <constructor-arg value="/dataviewerObjects" />
+        <property name="dbName" value="FAOSTAT" />
+        <property name="fileFactory" ref="fileFactory" />
+        <property name="customDatasetDao" ref="customDatasetDao" />
+        <property name="faoStatDao" ref="faoStatDao" />
+        <property name="tableExcel" ref="tableExcel" />
+        <property name="configFilePath" value="/faostat/config" />
+        <property name="notesConfigFilePath" value="/faostat/config/NOTES" />
+        <property name="faostatNotesXMLParser" ref="faostatNotesXMLParser" />
+        <property name="dataServiceUtils" ref="dataServiceUtils" />
+        <property name="mapsServiceUtils" ref="mapsServiceUtils" />
+    </bean>
+
+    <!--  TinyMCE Pojo -->
+    <bean id="tinyMCEServicePojo"
+          class="org.fao.fenix.web.modules.tinymcereport.server.TinyMCEServiceImpl">
+        <constructor-arg value="/exportObject" />
+        <constructor-arg value="/libJS" />
+        <property name="tinyMCEUtils" ref="tinyMCEUtils" />
+        <property name="fenixPermissionManager" ref="fenixPermissionManager" />
+        <property name="urlFinder" ref="urlFinder" />
+        <property name="chartDesignerUtils" ref="chartDesignerUtils" />
+        <property name="mtSaver" ref="mtSaver" />
+        <property name="propertiesReader" ref="propertiesReader" />
+    </bean>
+
+    <!--  Welcome Pojo -->
+    <bean id="welcomeServicePojo"
+          class="org.fao.fenix.web.modules.welcome.server.WelcomeServiceImpl">
+        <property name="welcomeUtils" ref="welcomeUtils" />
+    </bean>
+
+    <!--  Statistics Pojo -->
+    <bean id="statisticsServicePojo"
+          class="org.fao.fenix.web.modules.statistics.server.StatisticsServiceImpl">
+        <property name="statisticsUtils" ref="statisticsUtils" />
+    </bean>
+
+    <!--  AMIS Pojo -->
+    <bean id="amisServicePojo" class="org.fao.fenix.web.modules.amis.server.AMISServiceImpl">
+        <constructor-arg value="/dataviewerObjects" />
+        <property name="amisDao" ref="amisDao" />
+        <property name="tableExcel" ref="tableExcel" />
+        <property name="amisSupplyDemandExcel" ref="amisSupplyDemandExcel" />
+        <property name="configFilePath" value="/data/config" />
+        <property name="fileFactory" ref="fileFactory" />
+        <property name="dbAdapter" ref="ccbsDbAdapter" />
+        <property name="fenixPermissionManager" ref="fenixPermissionManager" />
+        <property name="datasetDao" ref="datasetDao" />
+        <property name="emailSender" ref="emailSender" />
+        <property name="ip" value="${cbs.ip}" />
+        <property name="port" value="${cbs.port}" />
+        <property name="cbsMonths_ip" value="${cbs.cbsMonths_ip}" />
+        <property name="cbsMonths_port" value="${cbs.cbsMonths_port}" />
+    </bean>
+
+    <!--	<bean id="cpfDao" class="org.fao.fenix.core.persistence.cpf.CPFDao" />-->
+
+    <!--  CPF Pojo -->
+    <bean id="cpfServicePojo" class="org.fao.fenix.web.modules.cpf.server.CPFServiceImpl">
+        <property name="cpfDao" ref="cpfDao" />
+        <property name="tableExcel" ref="tableExcel" />
+        <property name="fileFactory" ref="fileFactory" />
+    </bean>
+
+    <!--  CPF Pojo -->
+    <bean id="olapViewerServicePojo" class="org.fao.fenix.web.modules.olapviewer.server.OlapViewerServiceImpl">
+
+    </bean>
+</beans>

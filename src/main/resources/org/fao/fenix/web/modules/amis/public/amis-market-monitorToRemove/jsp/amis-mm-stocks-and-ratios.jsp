@@ -1,0 +1,481 @@
+<%@ page contentType="text/html; charset=UTF-8" language="java" import="java.sql.* " %>
+<%@ page import="java.io.*" %>
+<%@ page import="java.util.*" %>
+<%@page import="org.json.simple.JSONObject"%>
+<%@page import="org.json.simple.JSONArray"%>
+
+<%
+
+String indicatorcode = "";
+
+if(request.getParameter("indicatorcode")!=null) {
+    indicatorcode = request.getParameter("indicatorcode");
+
+try {
+String driver = "org.postgresql.Driver";
+String url = "jdbc:postgresql://localhost/fenix?user=fenix&password=Qwaszx";
+String username = "fenix";
+String password = "Qwaszx";
+String DataField = null;
+
+String query1 =
+"SELECT tablename from customdataset WHERE code='AMIS'";
+
+
+List<String> majorExporters = new ArrayList<String>();
+String trendValue = "";
+/**
+"Maize";"5"
+"Rice, Milled equivalent";"4"
+"Soybeans";"6"
+"Wheat (Total)";"1"
+**/
+
+/**
+"Argentina";"12"
+"Australia";"17"
+"Brazil";"37"
+"Canada";"46"
+"China";"53"
+"China Mainland";"9999002"
+"Egypt";"40765"
+"European Union";"999001"
+"India";"115"
+"Indonesia";"116"
+"Japan";"126"
+"Kazakhstan";"132"
+"Mexico";"162"
+"Nigeria";"182"
+"Philippines";"196"
+"Republic of Korea";"202"
+"Russian Federation";"204"
+"Saudi Arabia";"215"
+"South Africa";"227"
+"Thailand";"240"
+"Turkey";"249"
+"Ukraine";"254"
+"United States of America";"259"
+"Viet Nam";"264"
+"World";"999000"
+**/
+
+
+
+switch (Integer.valueOf(indicatorcode)) {
+    case 5:     majorExporters.clear();
+    			majorExporters.add("12");
+    			majorExporters.add("17");
+    			majorExporters.add("37");
+    			majorExporters.add("46");
+    			majorExporters.add("999001");
+    			majorExporters.add("204");
+    		    majorExporters.add("254");
+    		    majorExporters.add("259");
+    		    
+    		    //maize
+    		    trendValue = "943.1";
+    			break;
+    case 4:  //Rice:
+		    	        majorExporters.clear();
+				majorExporters.add("115");
+				majorExporters.add("240");
+				majorExporters.add("259");
+				majorExporters.add("264");
+				majorExporters.add("188"); //pakistan
+				
+				trendValue = "480.3";
+				
+             break;         
+    case 6:  //Soybean: Other South America = south America - Argentina + Brazil (handled at the Query)
+		    	majorExporters.clear();
+				majorExporters.add("12");
+				majorExporters.add("37");
+				majorExporters.add("259");
+				
+				trendValue = ""; //not needed for soybeans
+				
+             break;
+    case 1:     majorExporters.clear(); 
+				majorExporters.add("12");
+				majorExporters.add("17");
+				majorExporters.add("46");
+				majorExporters.add("999001");
+				majorExporters.add("132");
+				majorExporters.add("204");
+			    majorExporters.add("254");
+			    majorExporters.add("259");
+			    
+			    //wheat 
+			    trendValue = "693.6";
+			    
+             break;
+}
+
+
+
+//out.print("Query: " + query1);
+
+
+Connection connection = null;
+PreparedStatement preparedStatement = null;
+ResultSet resultSet = null;
+
+Class.forName(driver).newInstance();
+connection = DriverManager.getConnection(url);
+
+preparedStatement = connection.prepareStatement(query1);
+resultSet = preparedStatement.executeQuery();
+
+if(resultSet.next()) {
+
+String amisTableName = resultSet.getString("tablename");
+
+
+PreparedStatement preparedStatement1 = null;
+ResultSet resultSet1 = null;
+
+//Query 1 
+String dataQuery1 = getWorldStockToUseRatioQuery(indicatorcode, amisTableName);
+
+//out.print("dataQuery 1 = "+ dataQuery1);
+
+preparedStatement1 = connection.prepareStatement(dataQuery1);
+resultSet1 = preparedStatement1.executeQuery();
+
+    JSONObject results=new JSONObject(); 
+    
+
+
+	//out.print("resultSet2 . NEXT STARt  ");
+	
+	LinkedHashMap<String, String> years = new LinkedHashMap<String, String>(); // year, year_label
+	LinkedHashMap<String, HashMap<String, Double>> closing = new LinkedHashMap<String, HashMap<String, Double>>(); // year, <next-year, val>
+	LinkedHashMap<String, Double> utils = new LinkedHashMap<String, Double>(); // year, val
+	LinkedHashMap<String, Integer> major_exporters = new LinkedHashMap<String, Integer>(); //major_exporters: year, final percent
+	LinkedHashMap<String, LinkedList<Double>> exporters_closing_stocks = new LinkedHashMap<String, LinkedList<Double>>(); //exporters_closing_stocks: year, List = [0] major exporters closing stocks, [1] rest of the world closing stocks
+	
+	 //Query 1 RESULTS: prepare data	
+	 while(resultSet1.next()) {
+		      
+		    HashMap<String, Double> map = new  HashMap<String, Double>();
+		    map.put((String)resultSet1.getString(3), Double.valueOf((String)resultSet1.getString(5)));
+		    
+            String year_label = (String)resultSet1.getString(2);		  
+            
+            boolean firstRow = resultSet1.isFirst(); 
+         
+            if(firstRow){
+         	    year_label += " f'cast";
+             } 
+		    
+		    years.put((String)resultSet1.getString(1), year_label);
+		    closing.put((String)resultSet1.getString(1), map);
+		    utils.put((String)resultSet1.getString(1), Double.valueOf((String)resultSet1.getString(4)));
+		 
+	   }
+	
+	
+	   
+	//Query 2 
+	 String dataQuery2 = getStockToDisappearanceRatioQuery(indicatorcode, amisTableName, majorExporters);
+	 
+	// out.println("dataQuery2 = "+dataQuery2);
+	 
+         PreparedStatement preparedStatement2 = null;
+	 ResultSet resultSet2 = null;
+
+  
+
+	 preparedStatement2 = connection.prepareStatement(dataQuery2);
+	 resultSet2 = preparedStatement2.executeQuery();
+	 
+
+  
+	 //Query 2 RESULTS: prepare data
+	 while(resultSet2.next()) {
+	          LinkedList<Double> closing_values_list = new LinkedList<Double>();
+	          
+		 major_exporters.put((String)resultSet2.getString(1), Integer.valueOf((String)resultSet2.getString(2)));
+		 closing_values_list.add(0, Double.valueOf((String)resultSet2.getString(3)));
+		 closing_values_list.add(1, Double.valueOf((String)resultSet2.getString(4)));
+		 
+		 exporters_closing_stocks.put((String)resultSet2.getString(1), closing_values_list);
+		 
+		results.put("product", (String)resultSet2.getString(6));
+
+
+	 }
+
+	// out.print("major_exporters 1= "+ major_exporters);
+	 
+	 
+
+	
+		
+	// 5 data arrays (for each crop):
+	// - year categories list
+	// - 4 data series list
+	
+
+       
+        JSONArray ratioDataArray = new JSONArray();
+	JSONArray categoriesArray = new JSONArray();
+	JSONArray worldStocksDataArray = new JSONArray();
+	JSONArray majorExportersDataArray = new JSONArray();
+	JSONArray restWorldDataArray = new JSONArray();
+	
+	JSONArray disappearanceRatioDataArray = new JSONArray();
+	
+    ArrayList<String> keys = new ArrayList<String>(closing.keySet());
+
+    for(int j=closing.keySet().size()-1; j>=0;j--){ // loop in reverse (as the query is DESC)
+
+    	String year = keys.get(j);
+    	categoriesArray.add(years.get(year));
+    
+    	HashMap<String, Double> data = closing.get(year);
+		
+		for(String next_year: data.keySet()){
+	        Double utilVal = null;
+			if(utils.containsKey(next_year)){
+				utilVal = utils.get(next_year);
+	        }
+	        else 
+	        	utilVal = Double.valueOf(trendValue);
+			
+			double ratio = data.get(next_year) / utilVal;
+			double percent =  ratio * 100;
+			
+			int percent_whole = (int) Math.round(ratio * 100);
+			
+		    
+			   JSONObject ratioData = new JSONObject();
+			   ratioData.put("year_id",  year);
+			   ratioData.put("ratio", ratio);
+			   ratioData.put("percent", percent);
+			   ratioData.put("rounded_percent", percent_whole);
+			   ratioData.put("util", utilVal);
+			   ratioData.put("closing",  data.get(next_year));  
+			   
+			  // ratioDataArray.add(ratioData);
+			    ratioDataArray.add(percent_whole);
+			   
+			   JSONObject dispRatioData = new JSONObject();
+			   dispRatioData.put("year_id", year);
+			   dispRatioData.put("percent", major_exporters.get(year));
+			   
+			   worldStocksDataArray.add(data.get(next_year));
+			  
+			   LinkedList<Double> closing_vals = exporters_closing_stocks.get(year);
+			   
+			   majorExportersDataArray.add(closing_vals.get(0));
+			   restWorldDataArray.add(closing_vals.get(1));
+			   
+			   //disappearanceRatioDataArray.add(dispRatioData);
+			    disappearanceRatioDataArray.add(major_exporters.get(year));
+			   
+		}	
+		
+	}
+	
+	 JSONArray dataSeries = new JSONArray();
+					    
+	 JSONObject dataSeriesDef = new JSONObject();
+	 dataSeriesDef = new JSONObject();
+	 dataSeriesDef.put("indicator", "Rest of the World Closing Stocks");
+	 dataSeriesDef.put("units", "Million tonnes");
+	 dataSeriesDef.put("data", restWorldDataArray);
+//	 dataSeriesDef.put("source", "FAO-CBS (distributed by AMIS Statistics)");
+    dataSeriesDef.put("source", "FAO-AMIS (distributed by AMIS Statistics)");
+	 dataSeriesDef.put("sourceurl", "http://statistics.amis-outlook.org/data/index.html");
+	 dataSeriesDef.put("charttype", "column");
+	 
+         dataSeries.add(dataSeriesDef);
+
+	 dataSeriesDef = new JSONObject();
+	 dataSeriesDef.put("indicator", "Major Exporters Closing Stocks");
+	 dataSeriesDef.put("units", "Million tonnes");
+	 dataSeriesDef.put("data", majorExportersDataArray);
+//     dataSeriesDef.put("source", "FAO-CBS (distributed by AMIS Statistics)");
+	 dataSeriesDef.put("source", "FAO-AMIS (distributed by AMIS Statistics)");
+	 dataSeriesDef.put("sourceurl", "http://statistics.amis-outlook.org/data/index.html");
+	 dataSeriesDef.put("charttype", "column");
+	 
+	
+         dataSeries.add(dataSeriesDef);
+
+         dataSeriesDef = new JSONObject();
+	 dataSeriesDef.put("indicator", "World Stock-to-use ratio");
+	 dataSeriesDef.put("units", "Percent");
+	 dataSeriesDef.put("data", ratioDataArray);
+//     dataSeriesDef.put("source", "FAO-CBS (distributed by AMIS Statistics)");
+	 dataSeriesDef.put("source", "FAO-AMIS (distributed by AMIS Statistics)");
+	 dataSeriesDef.put("sourceurl", "http://statistics.amis-outlook.org/data/index.html");
+	 dataSeriesDef.put("charttype", "spline");
+	 
+	 
+	 dataSeries.add(dataSeriesDef);
+
+         dataSeriesDef = new JSONObject();
+	 dataSeriesDef.put("indicator", "Stock-to-disappearance ratio of Major Exporters");
+	 dataSeriesDef.put("indicatorshortname", "Stock-to-disappearance ratio");
+	 dataSeriesDef.put("units", "Percent");
+	 dataSeriesDef.put("data", disappearanceRatioDataArray);
+     dataSeriesDef.put("source", "FAO-AMIS (distributed by AMIS Statistics)");
+// 	 dataSeriesDef.put("source", "FAO-CBS (distributed by AMIS Statistics)");
+	 dataSeriesDef.put("sourceurl", "http://statistics.amis-outlook.org/data/index.html");
+	 dataSeriesDef.put("type", "http://statistics.amis-outlook.org/data/index.html");
+	 dataSeriesDef.put("charttype", "spline");
+	 dataSeriesDef.put("chartformat", "shortdash");
+	 
+	 dataSeries.add(dataSeriesDef);
+	
+         results.put("dataseries", dataSeries);
+	 results.put("categories", categoriesArray);
+	
+	
+		response.setHeader("Access-Control-Allow-Origin", "*");
+		response.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+		//response.setHeader("Access-Control-Allow-Headers", "X-Requested-With,Host,User-Agent,Accept,Accept-Language,Accept-Encoding,Accept-Charset,Keep-Alive,Connection,Referer,Origin"); 
+		response.setHeader("Access-Control-Allow-Headers", "*"); 
+		response.setHeader("Cache-Control","no-cache,no-store"); 
+		response.setHeader("X-UA-Compatible","chrome=IE8"); 
+		
+		
+		response.setContentType("application/json");
+	   // response.setCharacterEncoding("UTF-8"); 
+	    
+
+	   String jsonp = "jsonCallback" + indicatorcode +"(" + results.toString() + ")";
+	   
+	   //out.println(results.toString());
+	   response.getWriter().write(jsonp);
+	  // response.getWriter().write(results.toString());
+	  
+	   resultSet1.close();
+	   preparedStatement1.close();
+	  	 
+	 resultSet2.close();
+	 preparedStatement2.close();
+	 
+
+     }
+resultSet.close();
+preparedStatement.close();
+
+connection.close();
+
+out.flush(); 
+out.close(); 
+
+
+}
+
+catch(ClassNotFoundException e){e.printStackTrace();}
+catch (SQLException ex)
+{
+out.print("SQLException: "+ex.getMessage());
+out.print("SQLState: " + ex.getSQLState());
+out.print("VendorError: " + ex.getErrorCode());
+}
+}
+%>
+
+<%!
+/**
+  Calculation for all Products except for Soybean: Closing stocks for a year / Utilization for year + 1
+  Calculation for Soybean: Closing stocks for a year / Utilization for a year
+  Where region = World
+		product_code = 1 product
+**/
+public String getWorldStockToUseRatioQuery(String product_code, String amisTableName){
+            StringBuffer buffer = new StringBuffer();
+            
+             buffer.append(" SELECT year as year_id,  CAST(extract(year from year) as varchar) ||'/'|| substring(CAST(extract(year from (year + interval '1 years')) as varchar) from '..$') as year, ");
+			
+             //soybeans
+		     if(product_code.equals("6")){  
+			     buffer.append(" year as next_year, ");
+			 } else {
+				  buffer.append(" (year + interval '1 years')::date as next_year, ");
+			 }
+		     
+		     buffer.append(" SUM(case when element_code='20' THEN value end) as util, ");
+			 buffer.append(" SUM(case when element_code='16' THEN value end) as closing_stocks ");
+			 buffer.append(" FROM "+amisTableName + " ");
+			 buffer.append(" WHERE  region_code='999000' AND product_code='"+product_code+"' and  database='CBS'  and value_type='TOTAL'  ");
+			 buffer.append(" GROUP BY year ORDER BY year DESC ");
+			 buffer.append(" LIMIT 5;");
+			 
+			 return buffer.toString();
+
+}
+
+/**
+Calculation true for all Products: 
+Closing stocks for a year / (Utilization for a year + Exports for a year)
+Where region = All Major Exporters for the product
+product_code = 1 product
+**/
+
+public String getStockToDisappearanceRatioQuery(String product_code, String amisTableName, List<String> majorExporters){
+    
+	 StringBuffer buffer = new StringBuffer();
+
+         buffer.append(" SELECT product_data.year as year_id, ");
+	 buffer.append(" ROUND(CAST((product_data.closing/(product_data.util + product_data.exports))* 100 as numeric), 0) as ratio, ROUND(CAST(product_data.closing as numeric), 2) as major_exporters, ROUND(CAST(product_data.world_closing - closing as numeric), 2) as rest_world, product_data.world_closing as world, product_data.product_name as product from ");
+	 buffer.append(" (SELECT ");
+	// buffer.append(" (CASE WHEN product_code='4' THEN 'Rice' WHEN product_code='1' THEN 'Wheat' ELSE product_name end) as product_name, ");
+	 buffer.append(" product_name, ");
+	 buffer.append(" year, ");	
+	 buffer.append(" SUM(CASE WHEN element_code='16' and region_code = '999000' THEN value end) as world_closing, ");
+	 buffer.append(" SUM(CASE WHEN element_code='10' and region_code IN (");
+	 addMajorExporters(buffer, majorExporters);
+	 buffer.append(")");		 
+	 buffer.append(" THEN value end) ");
+	 if(product_code.equals("6")){  
+	   buffer.append(" + ");
+	   buffer.append(" SUM(CASE WHEN element_code='10' and region_code ='999003' THEN value end) - SUM(CASE WHEN element_code='10' and region_code IN ('12', '37') THEN value end) ");
+         }
+         buffer.append(" as exports, ");	 
+	 buffer.append(" SUM(case when element_code='20' and region_code IN (");
+	 addMajorExporters(buffer, majorExporters);
+	 buffer.append(")");
+	 buffer.append(" THEN value end) ");
+	 if(product_code.equals("6")){  
+	    buffer.append(" + ");
+	    buffer.append(" SUM(CASE WHEN element_code='20' and region_code ='999003' THEN value end) - SUM(CASE WHEN element_code='20' and region_code IN ('12', '37') THEN value end) ");
+         }
+	 buffer.append(" as util, ");
+	 buffer.append(" SUM(case when element_code='16' and region_code IN (");
+	 addMajorExporters(buffer, majorExporters);
+	 buffer.append(")");		 
+         buffer.append(" THEN value end) ");
+         if(product_code.equals("6")){  
+	    buffer.append(" + ");
+	    buffer.append(" SUM(CASE WHEN element_code='16' and region_code ='999003' THEN value end) - SUM(CASE WHEN element_code='16' and region_code IN ('12', '37') THEN value end) ");
+         }
+         buffer.append(" as closing ");
+	 buffer.append(" FROM "+amisTableName + " ");
+	 buffer.append(" WHERE  product_code='"+product_code+"' and  database='CBS'  and value_type='TOTAL'  ");
+	 buffer.append(" GROUP BY year, product_name, product_code  ORDER BY year DESC ");
+	 buffer.append(" ) product_data LIMIT 5;");
+	 
+	 return buffer.toString();
+
+}
+
+public void addMajorExporters(StringBuffer buffer, List<String> majorExporters ){
+	 int i = 0;
+	 for(String exporter: majorExporters){
+		 buffer.append(" '"+exporter+"'");
+		 
+		 if(i < majorExporters.size() - 1)
+			 buffer.append(", ");
+		 
+	   i++;
+	 }
+}
+
+%>
+

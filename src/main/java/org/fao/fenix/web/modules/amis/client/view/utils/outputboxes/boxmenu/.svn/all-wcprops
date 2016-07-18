@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/fenix/!svn/ver/9077/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/client/view/utils/outputboxes/boxmenu
+END
+AMISBoxMenuPivotTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/fenix/!svn/ver/8126/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/client/view/utils/outputboxes/boxmenu/AMISBoxMenuPivotTable.java
+END
+AMISBoxMenuChart.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/fenix/!svn/ver/9077/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/client/view/utils/outputboxes/boxmenu/AMISBoxMenuChart.java
+END
+BoxMenu.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/fenix/!svn/ver/8190/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/client/view/utils/outputboxes/boxmenu/BoxMenu.java
+END
+AMISBoxMenuMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/fenix/!svn/ver/8092/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/client/view/utils/outputboxes/boxmenu/AMISBoxMenuMap.java
+END
+AMISBoxMenuFlatTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/fenix/!svn/ver/9034/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/client/view/utils/outputboxes/boxmenu/AMISBoxMenuFlatTable.java
+END

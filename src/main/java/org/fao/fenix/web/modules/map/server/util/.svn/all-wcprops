@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/fenix/!svn/ver/7156/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/server/util
+END
+MapViewUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/fenix/!svn/ver/7156/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/server/util/MapViewUtils.java
+END
+ClientGeoViewLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/fenix/!svn/ver/6410/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/server/util/ClientGeoViewLoader.java
+END
+ClientMapViewBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/fenix/!svn/ver/6410/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/server/util/ClientMapViewBuilder.java
+END
+DateUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/fenix/!svn/ver/6410/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/server/util/DateUtils.java
+END
+Util.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/fenix/!svn/ver/6410/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/server/util/Util.java
+END

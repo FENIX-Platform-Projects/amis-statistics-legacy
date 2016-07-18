@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<VIEW type="Browse By R  - Resources" >
+	<TITLE>
+		<E>Resources</E>
+		<S>Recursos</S>
+		<F>Ressources</F>
+	</TITLE>
+	<RESOURCES>
+		<DEFAULT>
+			<RESOURCE>			
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>880</WIDTH>
+					<HEIGHT>330</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>World fertilizers consumption (nutrients)</E>
+					<S>Consumo mundial de fertilizantes (nutrientes)</S>
+					<F>Consomation mondiale d'engrais (nutriments)</F>
+				</TITLE>
+				<APPLICABLE_FILTERS>
+					<NOT_APPLY_FILTERS>true</NOT_APPLY_FILTERS>
+				</APPLICABLE_FILTERS>
+				<BASEQUERY>					 
+					<SELECTS>		       
+						<SELECT lang="true">I.ItemName</SELECT>
+						<SELECT>D.Year</SELECT>
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Fertilizers">RF</DOMAIN>
+						</DOMAINS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Consumption in nutrients'>5155</ELEMENTLIST>
+						</ELEMENTSLIST>	
+						<ITEMS>
+							<ITEM label='Nitrogen Fertilizers (N total nutrients)'>3102</ITEM>
+							<ITEM label='Phosphate Fertilizers (P205 total nutrients)'>3103</ITEM>
+							<ITEM label='Potash Fertilizers (K20 total nutrients)'>3104</ITEM>
+						</ITEMS>	
+						<YEARS>
+							<YEAR>2002</YEAR>
+							<YEAR>2003</YEAR>
+							<YEAR>2004</YEAR>
+							<YEAR>2005</YEAR>
+							<YEAR>2006</YEAR>
+							<YEAR>2007</YEAR>
+							<YEAR>2008</YEAR>
+							<YEAR>2009</YEAR>
+						</YEARS>									
+						<AREAS>
+							<AREA label="Wolrd">5000</AREA>	
+						</AREAS> 
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">I.ItemName</FIELD>
+					</SORT>	
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>			
+	             
+				 </BASEQUERY>					
+			</RESOURCE>				
+
+			<RESOURCE>			
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>STACKED</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>880</WIDTH>
+					<HEIGHT>330</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>Composition of agricultural area by region</E>
+					<S>Composición del área agrícola por región</S>
+					<F>Composition de la zone agricole par région</F>
+				</TITLE>
+				<APPLICABLE_FILTERS>
+					<APPLY_ONLY_YEAR_FILTER>true</APPLY_ONLY_YEAR_FILTER>
+				</APPLICABLE_FILTERS>
+				
+				<DATEQUERY>
+					<MAXDATELIMIT>2009</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> -->
+					<TIMESPAN type="year">17</TIMESPAN>
+				</DATEQUERY>
+
+				<BASEQUERY>					 
+					<SELECTS>	
+						<SELECT lang="true">I.ItemName</SELECT>
+						<SELECT lang="true">A.AreaName</SELECT>
+						
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Land">RL</DOMAIN>	
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Arable Land">6621</ITEM>
+							<ITEM label="Permanent crops">6650</ITEM>
+							<ITEM label="Permanent meadows and pastures">6655</ITEM>
+						</ITEMS>
+						<ELEMENTS>
+							<ELEMENT label='Area'>5110</ELEMENT>
+						</ELEMENTS>						
+						<AREAS>
+							<AREA label="Africa">5100</AREA>	
+							<AREA label="Europa">5400</AREA>	
+							<AREA label="America">5200</AREA>	
+							<AREA label="Asia">5300</AREA>
+							<AREA label="Oceania">5500</AREA>
+						</AREAS> 
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">A.AreaName</FIELD>
+					</SORT>	
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>			 
+				 </BASEQUERY>					
+			</RESOURCE>
+		</DEFAULT>	
+	</RESOURCES>
+</VIEW>

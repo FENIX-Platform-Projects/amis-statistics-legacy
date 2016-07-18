@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<VIEW type="Browse By FB - Food balance sheet" >
+	<TITLE>
+		<E>Food balance sheet </E>
+		<S>Hoja de balance de alimentos</S>
+		<F>Bilans Alimentaires</F>
+	</TITLE>
+	<FILTERS>
+		<FILTER width='200px'>
+			<FILTERTYPE>COUNTRIES</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE label="Albania">3</CODE>
+			</DEFAULTCODES>
+		</FILTER>
+		<FILTER>
+			<FILTERTYPE>TIMERANGE</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE>1992</CODE>
+				<CODE>2009</CODE>
+			</DEFAULTCODES>
+		</FILTER>
+	</FILTERS>
+	<RESOURCES>
+		<DEFAULT>
+			<RESOURCE>	
+				<RESOURCETYPE>MAP</RESOURCETYPE>
+				<OUTPUTTYPE>MAP</OUTPUTTYPE>
+				<TITLE>
+					<E>Food supply</E>
+					<S>Suministro alimentario de energía</S>
+					<F>Disponibilité alimentaire</F>
+				</TITLE>
+				<SIZE>
+					<WIDTH>880</WIDTH>
+					<HEIGHT>330</HEIGHT>
+				</SIZE>
+				<APPLICABLE_FILTERS>
+					<APPLY_ALL_FILTERS_EXCEPT_AREAS>true</APPLY_ALL_FILTERS_EXCEPT_AREAS>
+				</APPLICABLE_FILTERS>
+				<DATEQUERY>
+					<MAXDATELIMIT>2009</MAXDATELIMIT>
+					<TIMESPAN type="year">15</TIMESPAN>
+				</DATEQUERY>
+				<BASEQUERY>
+					<SELECTS>
+						<SELECT>D.AreaCode</SELECT>
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Food Balance Sheets">FB</DOMAIN>	
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Grand Total">2901</ITEM>
+						</ITEMS>
+
+						<ELEMENTS>
+							<ELEMENT label='Food supply (kcal/capita/day)'>664</ELEMENT>
+						</ELEMENTS>								
+					</WHERE>
+				</BASEQUERY>					
+			</RESOURCE>
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<TITLE>
+					<E>Food supply in selected country</E>
+					<S>Suministro alimentario de energía en el país seleccionado</S>
+					<F>Disponibilité alimentaire dans le pays sélectionné</F>
+				</TITLE>
+				<SIZE>
+					<WIDTH>880</WIDTH>
+					<HEIGHT>330</HEIGHT>
+				</SIZE>
+				<DATEQUERY>
+					<MAXDATELIMIT>2009</MAXDATELIMIT>
+					<TIMESPAN type="year">15</TIMESPAN>
+				</DATEQUERY>
+				<BASEQUERY>
+					<SELECTS>
+						<SELECT lang="true">E.ElementName</SELECT>	
+						<SELECT>D.Year</SELECT>			
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Food Balance Sheets">FB</DOMAIN>	
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Grand Total">2901</ITEM>
+						</ITEMS>
+						<ELEMENTS>
+							<ELEMENT label='Food supply (kcal/capita/day)'>664</ELEMENT>
+						</ELEMENTS>	
+                       				 <AREAS>
+							<AREA label="Albania">3</AREA>
+						</AREAS>							
+					</WHERE>						
+				</BASEQUERY>					
+			</RESOURCE>
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<TITLE>
+					<E>Fat supply quantity and protein supply quantity in selected country</E>
+					<S>Cantidad de suministro de grasa y cantidad de suministro de proteínas en el país seleccionado</S>
+					<F>Disponibilité de matière grasse et disponibilité de protéines dans le pays sélectionné</F>
+				</TITLE>
+				<SIZE>
+					<WIDTH>880</WIDTH>
+					<HEIGHT>330</HEIGHT>
+				</SIZE>
+				<DATEQUERY>
+					<MAXDATELIMIT>2009</MAXDATELIMIT>
+					<TIMESPAN type="year">15</TIMESPAN>
+				</DATEQUERY>
+				<BASEQUERY>
+					<SELECTS>
+						<SELECT lang="true">E.ElementName</SELECT>
+						<SELECT>D.Year</SELECT>			
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Food Balance Sheets">FB</DOMAIN>	
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Grand Total">2901</ITEM>
+						</ITEMS>
+
+						<ELEMENTS>
+							<ELEMENT label='Fat supply quantity (g/capita/day)'>684</ELEMENT>
+							<ELEMENT label='Protein supply quantity (g/capita/day)'>674</ELEMENT>
+						</ELEMENTS>	
+                       				 <AREAS>
+							<AREA label="Albania">3</AREA>
+						</AREAS>							
+					</WHERE>						
+				</BASEQUERY>					
+			</RESOURCE>
+		</DEFAULT>	
+	</RESOURCES>
+</VIEW>

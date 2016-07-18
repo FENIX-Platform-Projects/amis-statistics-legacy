@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/fenix/!svn/ver/6402/trunk/fenix-web/src/main/webapp/ipc/templates
+END
+phaseMetadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/fenix/!svn/ver/6402/trunk/fenix-web/src/main/webapp/ipc/templates/phaseMetadata.xml
+END
+trendMetadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/fenix/!svn/ver/6402/trunk/fenix-web/src/main/webapp/ipc/templates/trendMetadata.xml
+END
+riskMetadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/fenix/!svn/ver/6402/trunk/fenix-web/src/main/webapp/ipc/templates/riskMetadata.xml
+END

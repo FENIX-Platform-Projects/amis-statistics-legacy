@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<type>CountriesInCrisis</type>
+	<title>Countries in crisis requiring external assistance</title>
+	<abstractAbstract>Countries in crisis requiring external assistance are expected to lack the resources to deal with reported critical problems of food insecurity
+	</abstractAbstract>
+	<keywords>food insecurity, countries in crisis, external assistance, early warning</keywords>
+	<provider country="0" contact="Info-GIEWS-Workstation@fao.org">FAO GIEWS</provider>
+	<source country="0" contact="Info-GIEWS-Workstation@fao.org">FAO</source>
+	<region>0</region>
+	<startDate>2006-01-27</startDate>
+	<endDate>2009-03-01</endDate>
+	<dateLastUpdate>2009-03-01</dateLastUpdate>
+	<periodTypeCode>monthly</periodTypeCode>
+	<sharingCode>Public</sharingCode>
+	<refGeoUnit>Country Boundary</refGeoUnit>
+	<layerCodeSet>gaul0</layerCodeSet>
+	<precision>0</precision>
+	<categories>023</categories>
+	<code/>
+	<descriptors>
+		<descriptor key="true">
+			<header>Date</header>
+			<contentDescriptor>date</contentDescriptor>
+		</descriptor>
+		<descriptor key="true">
+			<header>Country</header>
+			<contentDescriptor>featureCode</contentDescriptor>
+			<options>
+				<option>
+					<name>Geographic</name>
+					<value>GAUL</value>
+					<region>0</region>
+				</option>
+				<option>
+					<name>featureCodeSet</name>
+					<value>gaul0</value>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor>
+			<header>Nature of Food Insecurity</header>
+			<contentDescriptor>quantity</contentDescriptor>
+			<options>
+				<option>
+					<name>Indicator</name>
+					<value>CountriesInCrisis</value>
+					<region>0</region>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="true">
+			<header>Main Reasons</header>
+			<contentDescriptor>firstIndicator</contentDescriptor>
+		</descriptor>
+		<descriptor key="true">
+			<header>Changes from Last Report</header>
+			<contentDescriptor>secondIndicator</contentDescriptor>
+			<options>
+				<option>
+					<name>Indicator</name>
+					<value>LastReportChanges</value>
+					<region>0</region>
+				</option>
+			</options>
+		</descriptor>
+	</descriptors>
+</metadata>

@@ -1,0 +1,202 @@
+<VIEW type="CBS" >
+	<TITLE>
+		<E>Cereal Balance at a Glance</E>
+	</TITLE>
+	<DATABASE code="CBS">CBS</DATABASE>
+	<FILTERS>		
+		<!-- <FILTER>
+			<FILTERTYPE multiselection="true">AMIS_COUNTRIES</FILTERTYPE>
+		</FILTER> -->
+		<FILTER>
+			<FILTERTYPE>AMIS_PRODUCTS_WITHOUT_POPULATION</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE label="Cereals Total">8</CODE>
+			</DEFAULTCODES>
+		</FILTER>			
+	</FILTERS>
+	<RESOURCES>
+		<DEFAULT>	
+		<RESOURCE>			<RESOURCETYPE>CEREAL_BALANCE_TABLE</RESOURCETYPE>
+														<OUTPUTTYPE>HTML</OUTPUTTYPE>
+														<TITLE>
+															<E>Market Summary</E>
+														</TITLE>
+														<SIZE>
+															<WIDTH>1080</WIDTH>
+															<HEIGHT>250</HEIGHT>
+														</SIZE> 
+														<DATEQUERY>
+															<MAX>year</MAX>  <!-- RUN a MAX(year) query and use this value in the data QUERY -->
+															<TIMESPAN type="year">10</TIMESPAN>
+															<TIMESPANQUERY>ROUND(CAST(extract(year from MAX(D.year)) AS NUMERIC), 0) - 10 as start_date, ROUND(CAST(extract(year from MAX(D.year)) AS NUMERIC), 0) as end_date</TIMESPANQUERY>
+														</DATEQUERY>
+														<BASEQUERY>
+															<SELECTS>
+																<SELECT>E.element_name</SELECT>	
+																
+																<SELECT>ROUND(CAST(extract(year from D.year) AS NUMERIC), 0) AS year</SELECT>
+																<!--<SELECT>ROUND(CAST(D.value / 1000000 AS NUMERIC), 3)</SELECT>-->
+																<SELECT>ROUND(CAST(D.value AS NUMERIC), 3)</SELECT>
+															</SELECTS>
+															<WHERE>
+															<AREAS>
+															    <AREA label="World">999000</AREA>
+															</AREAS>
+															<DATABASES>
+															    <DATABASE label="CBS">CBS</DATABASE>
+															</DATABASES>
+																<ITEMS>
+																	<ITEM label="Cereals Total">8</ITEM>
+																</ITEMS>
+																<ELEMENTS>
+																     <ELEMENT label='Production'>5</ELEMENT>
+																	<ELEMENT label='Exports'>12</ELEMENT>
+	                                                                                                                                <ELEMENT label='Imports'>8</ELEMENT>
+																	<ELEMENT label='Utilization'>20</ELEMENT>
+																	<ELEMENT label='Supply'>27</ELEMENT>
+																	<ELEMENT label='Closing Stocks'>16</ELEMENT>	
+																</ELEMENTS>								
+															</WHERE>
+				                                        <GROUPBYS>
+										<FIELD>D.year</FIELD>
+										<FIELD>E.element_name</FIELD>
+										<FIELD>D.value</FIELD>
+									</GROUPBYS>	
+									<SORT type="ASC">
+										<FIELD>year</FIELD>
+									</SORT>		
+								</BASEQUERY>			
+					</RESOURCE>
+		
+			<!-- Consumption and Production -->
+			 <RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIES</OUTPUTTYPE>
+				<TITLE>
+					<E>Utilization and Production</E>
+				</TITLE>
+				<SIZE>
+					<WIDTH>522</WIDTH>
+					<HEIGHT>450</HEIGHT>
+				</SIZE>
+				<CALCULATIONQUERY>
+					<TYPE>PERCENTAGE_SHARE</TYPE> 
+					<PARAMETERS>
+						<FILTERCOLUMN>Area</FILTERCOLUMN>
+						<RESULTLABEL>Share</RESULTLABEL>
+						<DIVIDEND>
+							<CODE label="Argentina">9</CODE>
+							<CODE label="Australia">10</CODE>
+							<CODE label="Brazil">21</CODE>
+							<CODE label="Canada">33</CODE>
+							<CODE label="China (Mainland)">41</CODE>
+							<CODE label="Egypt">59</CODE>
+							<CODE label="India">100</CODE>
+							<CODE label="Indonesia">101</CODE>
+							<CODE label="Kazakhstan">108</CODE>
+							<CODE label="Japan">110</CODE>
+							<CODE label="Korea, Republic of">117</CODE>
+							<CODE label="Mexico">138</CODE>
+							<CODE label="Nigeria">159</CODE>
+							<CODE label="Philippines">171</CODE>
+							<CODE label="Russian Federation">185</CODE>
+							<CODE label="Saudi Arabia">194</CODE>
+							<CODE label="South Africa">202</CODE>
+							<CODE label="Thailand">216</CODE>
+							<CODE label="Turkey">223</CODE>
+							<CODE label="Ukraine">230</CODE>
+							<CODE label="United States of America">231</CODE>
+							<CODE label="Viet Nam">237</CODE>
+							<CODE label="EU 15/27">1017</CODE>
+						</DIVIDEND>
+						<DIVISOR>
+							<CODE label="World">341</CODE>
+							
+							
+						</DIVISOR>
+					</PARAMETERS>
+				</CALCULATIONQUERY> 
+				<BASEQUERY>
+					<SELECTS>
+						<SELECT>D.element_name</SELECT>	
+						<SELECT>CASE WHEN year = (SELECT MAX(year) FROM AMIS_DATA_TABLE) THEN ROUND(CAST(extract(year from D.year) AS NUMERIC), 0) || '/' || substring(CAST(ROUND(CAST(extract(year from year + interval '1 year') AS NUMERIC), 0) AS TEXT), 3) || ' f''cast'
+ELSE ROUND(CAST(extract(year from D.year) AS NUMERIC), 0) || '/' || substring(CAST(ROUND(CAST(extract(year from year + interval '1 year') AS NUMERIC), 0) AS TEXT), 3)
+END AS year</SELECT>	
+						<!--<SELECT>ROUND(CAST(D.value / 1000000 AS NUMERIC), 3)</SELECT>-->
+						<SELECT>ROUND(CAST(D.value AS NUMERIC), 3)</SELECT>
+					</SELECTS>
+					<UNITNAME>Million tonnes</UNITNAME>
+					<WHERE>					        
+					         <AREAS>
+						 	<AREA label="World">999000</AREA>
+						 	
+						</AREAS>
+						<ITEMS>
+							<ITEM label="Cereals Total">8</ITEM>
+						</ITEMS>
+						<ELEMENTS>
+							<ELEMENT label='Production'>5</ELEMENT>
+							<ELEMENT label='Utilization'>20</ELEMENT>
+						</ELEMENTS>		
+							<DATABASES>
+								<DATABASE label="CBS">CBS</DATABASE>
+							</DATABASES>						
+					</WHERE>
+					<GROUPBYS>
+						<FIELD>D.year</FIELD>
+						<FIELD>D.element_name</FIELD>
+						<FIELD>D.value</FIELD>
+					</GROUPBYS>	
+					<SORT type="ASC">
+						<FIELD>D.year</FIELD>
+					</SORT>				
+				</BASEQUERY>					
+			</RESOURCE>
+			<RESOURCE>			<RESOURCETYPE>CHART</RESOURCETYPE>
+										<OUTPUTTYPE>TIMESERIES</OUTPUTTYPE>
+										<TITLE>
+											<E>Imports and Exports</E>
+										</TITLE>
+										<SIZE>
+											<WIDTH>522</WIDTH>
+											<HEIGHT>450</HEIGHT>
+										</SIZE> 
+										<BASEQUERY>
+											<SELECTS>
+												<SELECT>D.element_name</SELECT>	
+												<SELECT>CASE WHEN year = (SELECT MAX(year) FROM AMIS_DATA_TABLE) THEN ROUND(CAST(extract(year from D.year) AS NUMERIC), 0) || '/' || substring(CAST(ROUND(CAST(extract(year from year + interval '1 year') AS NUMERIC), 0) AS TEXT), 3) || ' f''cast'
+ELSE ROUND(CAST(extract(year from D.year) AS NUMERIC), 0) || '/' || substring(CAST(ROUND(CAST(extract(year from year + interval '1 year') AS NUMERIC), 0) AS TEXT), 3)
+END AS year</SELECT>	
+												<!--<SELECT>ROUND(CAST(D.value / 1000000 AS NUMERIC), 3)</SELECT>-->
+												<SELECT>ROUND(CAST(D.value AS NUMERIC), 3)</SELECT>
+											</SELECTS>
+											<UNITNAME>Million tonnes</UNITNAME>
+											<WHERE>
+											<AREAS>
+											    <AREA label="World">999000</AREA>
+											</AREAS>
+												<ITEMS>
+													<ITEM label="Cereals Total">8</ITEM>
+												</ITEMS>
+												<ELEMENTS>
+													<ELEMENT label='Exports'>12</ELEMENT>
+	                                                <ELEMENT label='Imports'>8</ELEMENT>
+												</ELEMENTS>	
+													<DATABASES>
+													    <DATABASE label="CBS">CBS</DATABASE>
+													</DATABASES>							
+											</WHERE>
+                                        <GROUPBYS>
+						<FIELD>D.year</FIELD>
+						<FIELD>D.element_name</FIELD>
+						<FIELD>D.value</FIELD>
+					</GROUPBYS>	
+					<SORT type="ASC">
+						<FIELD>year</FIELD>
+					</SORT>		
+				</BASEQUERY>			
+			</RESOURCE>
+		</DEFAULT>	
+		
+	</RESOURCES>
+</VIEW>

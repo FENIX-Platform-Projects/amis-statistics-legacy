@@ -1,0 +1,1 @@
+Empty dirs are deleted on deploy. This file prevents its parent directory to be deleted.

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/fenix/!svn/ver/9242/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ec/server
+END
+ECServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/fenix/!svn/ver/8529/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ec/server/ECServiceImpl.java
+END
+ECGIEWSChartsParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/fenix/!svn/ver/6753/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ec/server/ECGIEWSChartsParser.java
+END
+ECRSSParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/fenix/!svn/ver/7722/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ec/server/ECRSSParser.java
+END

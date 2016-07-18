@@ -1,0 +1,7 @@
+<html>
+<body>
+These files are copied from the internet:<br>
+http://www.telio.be/blog/2006/01/06/ajax-upload-progress-monitor-for-commons-fileupload-example/
+
+<br><br><br>Changed the implementation a little bit, only 'cosmetic'changes. Added the UploadServlet and moved the java code from the jsp from the original example into this servlet. <br></body> 
+</html>

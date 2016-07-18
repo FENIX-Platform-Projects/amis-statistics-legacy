@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/fenix/!svn/ver/6409/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ipc/utils
+END
+XmlUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/fenix/!svn/ver/6409/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ipc/utils/XmlUtils.java
+END
+DatasetCreationUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/fenix/!svn/ver/6409/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ipc/utils/DatasetCreationUtils.java
+END
+IPCUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/fenix/!svn/ver/6409/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ipc/utils/IPCUtils.java
+END

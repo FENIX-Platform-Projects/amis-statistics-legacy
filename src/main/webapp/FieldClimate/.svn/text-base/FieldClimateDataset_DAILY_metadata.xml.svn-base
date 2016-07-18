@@ -1,0 +1,50 @@
+<metadata>
+<type>FieldClimateDataset</type>
+<periodTypeCode>daily</periodTypeCode>
+<abstractAbstract>Southern Sudan Weather Data collected by FieldClimate automathic stations.</abstractAbstract>
+<keywords>southern, sudan, weather, stations, data</keywords>
+<provider country="18" contact="support@metos.at">FieldClimate</provider>
+<region>40764</region>
+<dateLastUpdate>2010-02-23</dateLastUpdate>
+<sharingCode>Public</sharingCode>
+<source country="40764" contact="elijah.mukhala@fao.org">SIFSIA-S</source>
+<categories>004</categories>
+<title>Southern Sudan Weather Stations Data (Daily)</title>
+<code>null</code>
+<descriptors>
+	<descriptor key="true">
+		<header>Date</header>
+		<contentDescriptor>date</contentDescriptor>
+	</descriptor>
+	<descriptor key="true">
+		<header>Station</header>
+		<contentDescriptor>firstIndicator</contentDescriptor>
+		<options>
+			<option>
+				<name>Indicator</name>
+				<value>FieldClimateIndicators</value>
+				<region>0</region>
+			</option>
+		</options>
+	</descriptor>
+	<descriptor key="true">
+		<header>Sensor</header>
+		<contentDescriptor>secondIndicator</contentDescriptor>
+		<options>
+			<option>
+				<name>Indicator</name>
+				<value>FieldClimateIndicators</value>
+				<region>0</region>
+			</option>
+		</options>
+	</descriptor>
+	<descriptor>
+		<header>Value</header>
+		<contentDescriptor>quantity</contentDescriptor>
+	</descriptor>
+	<descriptor key="true">
+		<header>Measurement Unit</header>
+		<contentDescriptor>measurementUnit</contentDescriptor>
+	</descriptor>
+</descriptors>
+</metadata>

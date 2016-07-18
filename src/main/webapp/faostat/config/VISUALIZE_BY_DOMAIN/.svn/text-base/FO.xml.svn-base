@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<VIEW type="Browse By F - Forestry" >
+
+	<TITLE>
+		<E>Forestry </E>
+		<S>Forestal</S>
+		<F>Forêts</F>
+	</TITLE>
+
+	 <FILTERS>
+
+		<FILTER width="140px">
+			<FILTERTYPE>ITEMS</FILTERTYPE>
+			<DEFAULTCODES>
+					<CODE label="Bleached Sulphate Pulp">1663</CODE>
+			</DEFAULTCODES>
+		</FILTER>
+
+		<FILTER width="140px">
+			<FILTERTYPE>ELEMENTS_LIST</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE label="Production Quantity">2510</CODE>
+			</DEFAULTCODES>
+		</FILTER>
+
+		<FILTER width="140px">
+			<FILTERTYPE>COUNTRIES</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE label="Brazil">21</CODE>
+			</DEFAULTCODES> 
+		</FILTER>
+		
+		<FILTER>
+			<FILTERTYPE>TIMERANGE</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE>1992</CODE>
+				<CODE>2011</CODE>
+			</DEFAULTCODES>
+		</FILTER>
+	</FILTERS> 
+
+	<RESOURCES>
+		<DEFAULT>
+
+			<RESOURCE>	
+				<RESOURCETYPE>MAP</RESOURCETYPE>
+				<OUTPUTTYPE>MAP</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>880</WIDTH>
+					<HEIGHT>250</HEIGHT>
+				</SIZE>
+				<DATEQUERY>
+					<MAXDATELIMIT>2011</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> -->
+					<TIMESPAN type="year">19</TIMESPAN>	
+				</DATEQUERY>
+				<APPLICABLE_FILTERS>
+					<APPLY_ALL_FILTERS_EXCEPT_AREAS>true</APPLY_ALL_FILTERS_EXCEPT_AREAS>
+				</APPLICABLE_FILTERS>
+				<TITLE>
+					<E>Value by country</E>
+					<S>Valor por país</S>
+					<F>Valeur par pays</F>
+				</TITLE>
+				<BASEQUERY>
+					
+					<SELECTS>
+						<SELECT>D.AreaCode</SELECT>	
+						<SELECT lang="true">A.AreaName</SELECT>					
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Forestry">FO</DOMAIN>	
+						</DOMAINS>
+						
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Production quantity'>2510</ELEMENTLIST>
+						</ELEMENTSLIST>	
+						<ITEMS>
+							<ITEM label="Bleached Sulphate Pulp">1663</ITEM>
+						</ITEMS>						
+					</WHERE>
+				</BASEQUERY>					
+			</RESOURCE>
+
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<TITLE>
+					<E>In selected country</E>
+					<S>En el país seleccionado</S>
+					<F>Dans le pays selectioné</F>
+				</TITLE>
+				<SIZE>
+					<WIDTH>430</WIDTH>
+					<HEIGHT>250</HEIGHT>
+				</SIZE>
+				<DATEQUERY>
+					<MAXDATELIMIT>2011</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> -->
+					<TIMESPAN type="year">19</TIMESPAN>			
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+						<SELECT lang="true">A.AreaName</SELECT>	
+						<SELECT>D.Year</SELECT>			
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Forestry">FO</DOMAIN>	
+						</DOMAINS>
+						
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Production quantity'>2510</ELEMENTLIST>
+						</ELEMENTSLIST>	
+						<ITEMS>
+							<ITEM label="Bleached Sulphate Pulp">1663</ITEM>
+						</ITEMS>
+                       				 <AREAS>
+							<AREA label="Brazil">21</AREA>
+						</AREAS>						
+					</WHERE>
+					<SORT type="ASC">
+						<FIELD>D.Year</FIELD>
+					</SORT>	
+			
+					<NESTEDLIMIT field="D.AreaCode">5</NESTEDLIMIT>
+					<NESTEDSORT type="DESC">
+						<FIELD type="aggregation">D.Value</FIELD>
+					</NESTEDSORT>	
+					
+				</BASEQUERY>					
+			</RESOURCE>
+
+
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>PIE</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>430</WIDTH>
+					<HEIGHT>250</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>Share by region</E>
+					<S>Proporción por región</S>
+					<F>Part par région</F>
+				</TITLE>
+				<APPLICABLE_FILTERS>
+					<APPLY_ALL_FILTERS_EXCEPT_AREAS>true</APPLY_ALL_FILTERS_EXCEPT_AREAS>
+				</APPLICABLE_FILTERS>
+				<DATEQUERY>
+					<MAXDATELIMIT>2011</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> -->
+					<TIMESPAN type="year">19</TIMESPAN>			
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+						<SELECT>D.AreaCode</SELECT>	
+						<SELECT lang="true">A.AreaName</SELECT>
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Forestry">FO</DOMAIN>	
+						</DOMAINS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Production quantity'>2510</ELEMENTLIST>
+						</ELEMENTSLIST>	
+						<ITEMS>
+							<ITEM label="Bleached Sulphate Pulp">1663</ITEM>
+						</ITEMS>
+						<AREAS>
+							<AREA label="Africa">5100</AREA>	
+							<AREA label="Europa">5400</AREA>	
+							<AREA label="America">5200</AREA>	
+							<AREA label="Asia">5300</AREA>
+							<AREA label="Oceania">5500</AREA>
+						</AREAS> 							
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">A.AreaName</FIELD>
+					</SORT>	
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>
+				</BASEQUERY>							
+			</RESOURCE>
+
+
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>BAR_WITH_CATEGORIES</OUTPUTTYPE>
+				<TITLE>
+					<E>Top 5</E>
+					<S>5 Principales </S>
+					<F>Top 5</F>
+				</TITLE>
+				<APPLICABLE_FILTERS>
+					<APPLY_ALL_FILTERS_EXCEPT_AREAS>true</APPLY_ALL_FILTERS_EXCEPT_AREAS>
+				</APPLICABLE_FILTERS>
+				<SIZE>
+					<WIDTH>430</WIDTH>
+					<HEIGHT>250</HEIGHT>
+				</SIZE>
+				<DATEQUERY>
+					<MAXDATELIMIT>2011</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> -->
+					<TIMESPAN type="year">19</TIMESPAN>			
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+ 						<SELECT lang="true">I.ItemName</SELECT>	
+						<SELECT lang="true">A.AreaName</SELECT>		
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Forestry">FO</DOMAIN>	
+						</DOMAINS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Production quantity'>2510</ELEMENTLIST>
+						</ELEMENTSLIST>	
+						<ITEMS>
+							<ITEM label="Bleached Sulphate Pulp">1663</ITEM>
+						</ITEMS>
+					</WHERE>
+					<SORT>
+						<FIELD type="aggregation">D.Value</FIELD>
+					</SORT>	
+			
+					<NESTEDLIMIT field="D.AreaCode">5</NESTEDLIMIT>
+					
+				</BASEQUERY>					
+			</RESOURCE>
+
+
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<TITLE>
+					<E>Top 5</E>
+					<S>5 Principales </S>
+					<F>Top 5</F>
+				</TITLE>
+				<APPLICABLE_FILTERS>
+					<APPLY_ALL_FILTERS_EXCEPT_AREAS>true</APPLY_ALL_FILTERS_EXCEPT_AREAS>
+				</APPLICABLE_FILTERS>
+				<SIZE>
+					<WIDTH>430</WIDTH>
+					<HEIGHT>250</HEIGHT>
+				</SIZE>
+				<DATEQUERY>
+					<MAXDATELIMIT>2011</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> -->
+					<TIMESPAN type="year">19</TIMESPAN>			
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+						<SELECT lang="true">A.AreaName</SELECT>	
+						<SELECT>D.Year</SELECT>			
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Forestry">FO</DOMAIN>	
+						</DOMAINS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Production quantity'>2510</ELEMENTLIST>
+						</ELEMENTSLIST>	
+						<ITEMS>
+							<ITEM label="Bleached Sulphate Pulp">1663</ITEM>
+						</ITEMS>							
+					</WHERE>
+					<SORT type="ASC">
+						<FIELD>D.Year</FIELD>
+					</SORT>	
+			
+					<NESTEDLIMIT field="D.AreaCode">5</NESTEDLIMIT>
+					<NESTEDSORT type="DESC">
+						<FIELD type="aggregation">D.Value</FIELD>
+					</NESTEDSORT>	
+					
+				</BASEQUERY>					
+			</RESOURCE>
+		</DEFAULT>	
+	</RESOURCES>
+</VIEW>

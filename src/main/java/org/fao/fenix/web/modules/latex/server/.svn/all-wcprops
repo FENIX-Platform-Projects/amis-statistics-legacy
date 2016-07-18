@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/fenix/!svn/ver/7731/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/latex/server
+END
+LatexUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/fenix/!svn/ver/7323/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/latex/server/LatexUtils.java
+END
+HTML2LaTeX.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/fenix/!svn/ver/7100/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/latex/server/HTML2LaTeX.java
+END
+LatexBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/fenix/!svn/ver/7731/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/latex/server/LatexBuilder.java
+END
+LaTeXVOConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/fenix/!svn/ver/7044/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/latex/server/LaTeXVOConverter.java
+END
+LatexServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/fenix/!svn/ver/7323/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/latex/server/LatexServiceImpl.java
+END
+LatexStyleSettings.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/fenix/!svn/ver/7100/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/latex/server/LatexStyleSettings.java
+END
+BirtImageHound.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/fenix/!svn/ver/7054/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/latex/server/BirtImageHound.java
+END

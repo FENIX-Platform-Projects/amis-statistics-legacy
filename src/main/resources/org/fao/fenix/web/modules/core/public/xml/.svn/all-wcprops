@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/fenix/!svn/ver/8456/trunk/fenix-web/src/main/resources/org/fao/fenix/web/modules/core/public/xml
+END
+secondary-menu-admin.xml
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/fenix/!svn/ver/7904/trunk/fenix-web/src/main/resources/org/fao/fenix/web/modules/core/public/xml/secondary-menu-admin.xml
+END
+tools.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/fenix/!svn/ver/8456/trunk/fenix-web/src/main/resources/org/fao/fenix/web/modules/core/public/xml/tools.xml
+END
+main-menu-admin.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/fenix/!svn/ver/7904/trunk/fenix-web/src/main/resources/org/fao/fenix/web/modules/core/public/xml/main-menu-admin.xml
+END

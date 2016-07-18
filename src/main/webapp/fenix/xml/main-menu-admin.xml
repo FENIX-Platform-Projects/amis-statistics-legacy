@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu-bar>
+	<!-- If a menu item should be removed in the installer, please append the attribute removeForInstaller="true" to the menu element -->
+	<first-level name="file" iconStyle="projectIcon">
+		<second-level name="newNew" command="" iconStyle="wand">
+			<third-level name="project" command="newProject" iconStyle="projectIcon"/>
+			<third-level name="map" command="newMap" iconStyle="mapIcon"/>
+			<third-level name="openText" command="" iconStyle="textResourceIcon">
+				<fourth-level name="createText" command="textEditor" iconStyle="textResourceIcon"/>
+				<fourth-level name="createTextGroup" command="newTextGroup" iconStyle="textGroupIcon"/>
+			</third-level>
+			<third-level name="olap" command="newOlap" iconStyle="olap"/>
+			<third-level name="chart" command="chartWizard" iconStyle="chartIcon"/>
+			<third-level name="report" command="reportWizard" iconStyle="reportIcon"/>
+			<!-- <third-level name="table" command="newTable" iconStyle="tableIcon"/> -->
+			<third-level name="image" command="newImage" iconStyle="smallCamera"/>
+			<third-level name="dataset" command="uploadGWTDataset" iconStyle="datasetIcon"/>
+		</second-level>
+		<second-level name="open" command="" iconStyle="open">
+			<third-level name="codingSystem" command="openCodingSystem" iconStyle="codingSystemIcon"/>
+			<third-level name="chart" command="openChart" iconStyle="chartIcon"/>
+			<third-level name="dataset" command="openDataset" iconStyle="datasetIcon"/>
+			<third-level name="map" command="openMap" iconStyle="mapIcon"/>
+			<third-level name="project" command="openProject" iconStyle="projectIcon"/>
+			<third-level name="table" command="openTable" iconStyle="tableIcon"/>
+			<third-level name="olap" command="openOlap" iconStyle="olap"/>
+			<third-level name="text" command="openText" iconStyle="textResourceIcon"/>
+			<third-level name="textGroup" command="openTextGroup" iconStyle="textGroupIcon"/>
+			<third-level name="report" command="openReport" iconStyle="reportIcon"/>
+			<third-level name="image" command="openImage" iconStyle="smallCamera"/>
+		</second-level>
+	</first-level>
+	<first-level name="view" command="" iconStyle="eye">
+		<second-level name="projectManager" command="viewProjectManager" iconStyle=""/>
+		<second-level name="resourceExplorer" command="openAll" iconStyle=""/>
+		<second-level name="toolbox" command="viewToolbox" iconStyle=""/>
+		<second-level name="welcomePage" command="welcome" iconStyle=""/>
+	</first-level>
+	<first-level name="tools" command="" iconStyle="tools">
+<!--		<second-level name="bangladeshReport" command="bangladeshReport" iconStyle="reportIcon" removeForInstaller="true"/>-->
+		<second-level name="chartDesigner" command="chartDesigner" iconStyle="workspaceChart" removeForInstaller="true"/>
+		<second-level name="tinyMCEReport" command="tinyMCEReport" iconStyle="reportIcon" removeForInstaller="true"/>
+		<second-level name="dcmt" command="" iconStyle="codingSystemIcon">
+			<third-level name="findCode" command="codingFindConvert" iconStyle="codingSystemIcon"/>
+		</second-level>
+<!--		<second-level name="designer" command="designer" iconStyle="reportIcon" removeForInstaller="true"/>-->
+		<second-level name="bangladeshReport" command="bangladeshReport" iconStyle="reportIcon" removeForInstaller="true"/>
+<!--		<second-level name="ecReports" command="ecReports" iconStyle="reportIcon" removeForInstaller="true"/>-->
+<!--		<second-level name="esoko" command="esoko" iconStyle="esoko" removeForInstaller="true"/>-->
+<!--		<second-level name="faostatImporter" command="faostatImporter" iconStyle="faostat" removeForInstaller="true"/>-->
+<!--		<second-level name="fieldClimate" command="fieldClimate" iconStyle="fieldClimate" removeForInstaller="true"/>-->
+<!--		<second-level name="integratedPhaseClassification" command="" iconStyle="ipc">-->
+<!--			<third-level name="ipcWorkflow" command="IPCWorkflowWindow" iconStyle="ipc" />-->
+<!--			<third-level name="ipcReports" command="IPCReports" iconStyle="ipc" />-->
+<!--		</second-level>-->
+<!--		<second-level name="designer" command="designer" iconStyle="latex" removeForInstaller="true"/>-->
+		<second-level name="sldEditor" command="" iconStyle="sld" removeForInstaller="true">
+				<third-level name="sldEditorShapefile" command="sldEditorShapefile" iconStyle=""/>
+				<third-level name="sldEditorRaster" command="sldEditorRaster" iconStyle=""/>
+				<third-level name="sldEditorImportSld" command="sldEditorImportSld" iconStyle=""/>
+		</second-level>
+	</first-level>
+	<first-level name="dataManagement" command="" iconStyle="dataManagement">
+		<second-level name="uploadData" command="" iconStyle="uploadData">
+			<third-level name="excelImporter" command="excelImporter" iconStyle="sendToExcel"/>
+			<third-level name="uploadCodingSystem" command="codingUploader" iconStyle="cs"/>
+			<third-level name="codingHierarchyUploader" command="codingHierarchyUploader" iconStyle="cs"/>			
+			<third-level name="uploadShape" command="uploadGWTShapeFile" iconStyle="uploadLayer"/>
+			<third-level name="uploadRaster" command="uploadGWTGeoTiff" iconStyle="uploadLayer"/>
+			<third-level name="uploadSLD" command="uploadGWTSLD" iconStyle="uploadLayer"/>
+			<third-level name="uploadImage" command="uploadImage" iconStyle="uploadImage"/>
+		</second-level>
+		<second-level name="metadataEditor" command="" iconStyle="">
+			<third-level name="datasetMetadataEditor" command="metadataEditor" iconStyle=""/>
+			<third-level name="codingSystemMetadataEditor" command="codingSystemMetadataEditor" iconStyle=""/>
+		</second-level>
+	</first-level>
+	<first-level name="informationeXchange" command="" iconStyle="xExplorer">
+		<second-level name="xImporter" command="xImporter" iconStyle="xExplorerImport"/>
+		<second-level name="informationeXchangeTool" command="xExplorerWindow" iconStyle="xExplorer"/>
+		<second-level name="rss" command="" iconStyle="rss">
+			<third-level name="createDatasetRSSLight" command="createDatasetRSS" iconStyle="datasetIcon"/>
+			<third-level name="createDatasetRSSHeavy" command="createDatasetRSSWithUniqueValues" iconStyle="datasetIcon"/>
+			<third-level name="createTextRSS" command="createTextRSS" iconStyle="textResourceIcon"/>
+			<third-level name="createRasterRSS" command="createRasterRSS" iconStyle="mapIcon"/>
+			<third-level name="createVectorRSS" command="createVectorRSS" iconStyle="mapIcon"/>
+		</second-level>
+		<second-level name="settings" command="xExplorerWindow" iconStyle="xExplorerEdit">
+			<third-level name="informationeXchangeURL" command="communicationModuleUrl" iconStyle="xExplorerURL"/>
+			<third-level name="settings" command="communicationModuleSettings" iconStyle=""/>
+		</second-level>
+		<second-level name="email" command="email" iconStyle="email"/>
+	</first-level>
+	<first-level name="administration" command="" iconStyle="key">
+		<second-level name="security" command="" iconStyle="user_group">
+			<third-level name="userManager" command="userManager" iconStyle="user_green"/>
+			<third-level name="groupManager" command="groupManager" iconStyle="user_group"/>
+			<third-level name="permissionManager" command="permissionManager" iconStyle="user_red"/>
+			<third-level name="userProperties" command="userProperties" iconStyle="user_group"/>
+		</second-level>
+		<second-level name="changeBanner" command="changeBanner" iconStyle=""/>
+		<second-level name="recreateCharts" command="recreateCharts" iconStyle="chartIcon"/>
+	</first-level>
+	<first-level name="help" command="" iconStyle="help">
+		<second-level name="giewsWorkstationPortal" command="openPortal" iconStyle=""/>
+		<second-level name="onlineTutorialsAndGuides" command="openHelpOnline" iconStyle=""/>
+		<second-level name="userGroup" command="openForum" iconStyle=""/>
+	</first-level>
+</menu-bar>

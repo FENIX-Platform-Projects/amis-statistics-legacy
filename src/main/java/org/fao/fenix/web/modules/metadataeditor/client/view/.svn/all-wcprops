@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/fenix/!svn/ver/8855/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/metadataeditor/client/view
+END
+KeysPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/fenix/!svn/ver/6766/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/metadataeditor/client/view/KeysPanel.java
+END
+GeneralInfoPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/fenix/!svn/ver/7323/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/metadataeditor/client/view/GeneralInfoPanel.java
+END
+MetadataEditorWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/fenix/!svn/ver/8852/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/metadataeditor/client/view/MetadataEditorWindow.java
+END
+ColumnDefinitionPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/fenix/!svn/ver/8852/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/metadataeditor/client/view/ColumnDefinitionPanel.java
+END
+CodeListMetadataEditorWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/metadataeditor/client/view/CodeListMetadataEditorWindow.java
+END
+METabPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/fenix/!svn/ver/8852/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/metadataeditor/client/view/METabPanel.java
+END
+ExtraInfoPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/fenix/!svn/ver/8852/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/metadataeditor/client/view/ExtraInfoPanel.java
+END
+MetadataPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/fenix/!svn/ver/8855/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/metadataeditor/client/view/MetadataPanel.java
+END
+ResourceSpecificPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/fenix/!svn/ver/6766/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/metadataeditor/client/view/ResourceSpecificPanel.java
+END
+ButtonsPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/metadataeditor/client/view/ButtonsPanel.java
+END
+DatasetTypePanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/fenix/!svn/ver/6766/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/metadataeditor/client/view/DatasetTypePanel.java
+END

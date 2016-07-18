@@ -1,0 +1,1037 @@
+<VIEW type="Browse By Countries by commodity" >
+
+	<TITLE>
+					<E>Countries by commodity</E>
+	</TITLE>
+
+	 <FILTERS>
+		<FILTER width="300px" type="CODING_SYSTEM">
+			<FILTERTYPE>ITEMS</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE label="Cereals, Total" domain='QC'>1717</CODE>
+			</DEFAULTCODES>
+		</FILTER>
+
+		<FILTER width="80px" type="CODING_SYSTEM">
+			<FILTERTYPE>YEARS</FILTERTYPE>
+		</FILTER>
+			
+		<FILTER width="110px" useCodingSystem="false">
+			<FILTERTYPE>SORTING</FILTERTYPE>
+			<DROPDOWNCODES>
+				<CODE labelE="Quantity">Q1.Value</CODE>
+				<CODE labelE="Value">Q2.Value</CODE>
+			</DROPDOWNCODES>
+			<DEFAULTCODES>
+				<CODE labelE="Quantity">Q1.Value</CODE>
+			</DEFAULTCODES>
+		</FILTER>	
+		
+	</FILTERS> 
+	<RESOURCES>
+		<DEFAULT>
+
+
+
+			<RESOURCE>
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>BAR_WITH_CATEGORIES</OUTPUTTYPE>
+				<TITLE>
+					<E>Top 10 Countries</E>
+				</TITLE>
+				<IMAGESIZE>
+				        <SIZE>
+						<WIDTH>750</WIDTH>
+						<HEIGHT>300</HEIGHT>
+					</SIZE>
+				</IMAGESIZE>
+
+
+				<JOINQUERY>
+			
+					<JOINCOLUMN>AreaCode</JOINCOLUMN>
+					<SORT type="DESC">
+						<FIELD>Q1.Value</FIELD>
+					</SORT>
+					<DATEQUERY>
+						<MAX>D.Year</MAX> 
+					</DATEQUERY>
+
+					<LIMIT field="D.AreaCode">10</LIMIT>
+	
+
+					<SELECTS>	
+						<SELECT lang="true">Q1.AreaName</SELECT>
+						<SELECT lang="true">Q1.ElementName</SELECT>	
+						<SELECT lang="true">Q1.UnitName</SELECT>	
+						<SELECT>Q1.Value</SELECT>
+						<SELECT lang="true">Q2.ElementName</SELECT>	
+						<SELECT lang="true">Q2.UnitName</SELECT>	
+						<SELECT>Q2.Value</SELECT>
+						
+					</SELECTS>
+
+					<BASEQUERIES>
+
+					  	<BASEQUERY>
+							<SELECTS>
+								<SELECT>D.AreaCode</SELECT>	
+		 						<SELECT lang="true">A.AreaName</SELECT>	
+								<SELECT lang="true">E.ElementName</SELECT>	
+								<SELECT lang="true">E.UnitName</SELECT>	
+								<SELECT>D.Value</SELECT>
+							</SELECTS>
+							<TABLES>		       
+								<FROM>Data</FROM>
+								<FROM>Element</FROM>
+								<FROM>Area</FROM>
+								<FROM>Item</FROM>
+								<FROM>DomainArea</FROM>	
+							</TABLES>
+							<WHERE>
+							    	<DOMAINS>
+									<DOMAIN label="Production">QC</DOMAIN>
+									<DOMAIN label="Production">QP</DOMAIN>	
+								</DOMAINS>
+
+								<ITEMS>
+									<ITEM label="Cereal, Total">1717</ITEM>
+								</ITEMS>
+								<ELEMENTSLIST>
+									<ELEMENTLIST label='Production'>2510</ELEMENTLIST>
+								</ELEMENTSLIST>
+
+							</WHERE>
+						</BASEQUERY>	
+
+					  	<BASEQUERY>
+							<SELECTS>
+								<SELECT>D.AreaCode</SELECT>	
+		 						<SELECT lang="true">A.AreaName</SELECT>	
+								<SELECT lang="true">E.ElementName</SELECT>	
+								<SELECT lang="true">E.UnitName</SELECT>	
+								<SELECT>D.Value</SELECT>
+							</SELECTS>
+							<TABLES>		       
+								<FROM>Data</FROM>
+								<FROM>Element</FROM>
+								<FROM>Area</FROM>
+								<FROM>Item</FROM>
+								<FROM>DomainArea</FROM>	
+							</TABLES>
+							<WHERE>
+							    	<DOMAINS>
+									<DOMAIN label="Production">QV</DOMAIN>
+								</DOMAINS>
+
+								<ITEMS>
+									<ITEM label="Cereal, Total">1717</ITEM>
+								</ITEMS>
+								<ELEMENTSLIST>
+									<ELEMENTLIST label='Net Production Value (constant 2004-2006 1000 I$)'>154</ELEMENTLIST>
+								</ELEMENTSLIST>
+
+							</WHERE>
+						</BASEQUERY>	
+
+					</BASEQUERIES>
+				</JOINQUERY>
+			</RESOURCE> 
+
+
+
+
+			<RESOURCE>
+				<RESOURCETYPE>TABLE</RESOURCETYPE>
+				<OUTPUTTYPE>HTML</OUTPUTTYPE>
+				<TITLE>
+					<E>Top 25 Commodities</E>
+				</TITLE>
+				<IMAGESIZE>
+				        <SIZE>
+						<WIDTH>750</WIDTH>
+						<HEIGHT>400</HEIGHT>
+					</SIZE>
+				</IMAGESIZE>
+
+
+				<JOINQUERY>
+					
+					<JOINCOLUMN>AreaCode</JOINCOLUMN>
+					<SORT type="DESC">
+						<FIELD>Q1.Value</FIELD>
+					</SORT>
+
+					<DATEQUERY>
+						<MAX>D.Year</MAX>
+					</DATEQUERY>
+			
+					<LIMIT field="D.ItemCode">25</LIMIT>
+
+					<SELECTS>
+						<SELECT aliasE="Commodity" lang="true">Q1.AreaName</SELECT>		
+						<SELECT aliasE="Production (MT)">ROUND(Q1.Value, 2)</SELECT>
+						<SELECT>Q1.Flag</SELECT>
+						<!-- <SELECT lang="true">Q1.FlagDescription</SELECT> -->
+						<SELECT aliasE="Production (Int $1000)">ROUND(Q2.Value, 2)</SELECT>
+						<SELECT>Q2.Flag</SELECT>
+						<!-- <SELECT lang="true">Q2.FlagDescription</SELECT> -->
+
+					</SELECTS>
+
+
+					
+		
+					<BASEQUERIES>
+					  	<BASEQUERY>
+							<SELECTS>
+								<SELECT>A.AreaCode</SELECT>	
+		 						<SELECT lang="true">A.AreaName</SELECT>	
+								<SELECT lang="true">E.ElementName</SELECT>	
+								<SELECT lang="true">E.UnitName</SELECT>	
+								<SELECT>D.Flag</SELECT>	
+								<SELECT lang="true">F.FlagDescription</SELECT>	
+								<SELECT>D.Year</SELECT>
+								<SELECT>D.Value</SELECT>
+							</SELECTS>
+							<TABLES>		       
+								<FROM>Data</FROM>
+								<FROM>Element</FROM>
+								<FROM>Area</FROM>
+								<FROM>Item</FROM>
+								<FROM>DomainArea</FROM>	
+							</TABLES>
+							<WHERE>
+							    	<DOMAINS>
+									<DOMAIN label="Production">QC</DOMAIN>
+									<DOMAIN label="Production">QP</DOMAIN>	
+								</DOMAINS>
+
+								<ITEMS>
+									<ITEM label="Cereal, Total">1717</ITEM>
+								</ITEMS>
+								<ELEMENTSLIST>
+									<ELEMENTLIST label='Production'>2510</ELEMENTLIST>
+								</ELEMENTSLIST>
+
+							</WHERE>
+						</BASEQUERY>	
+
+					  	<BASEQUERY>
+							<SELECTS>
+								<SELECT>A.AreaCode</SELECT>	
+		 						<SELECT lang="true">A.AreaName</SELECT>	
+								<SELECT lang="true">E.ElementName</SELECT>	
+								<SELECT lang="true">E.UnitName</SELECT>	
+								<SELECT>D.Flag</SELECT>	
+								<SELECT lang="true">F.FlagDescription</SELECT>	
+								<SELECT>D.Year</SELECT>
+								<SELECT>D.Value</SELECT>
+							</SELECTS>
+							<TABLES>		       
+								<FROM>Data</FROM>
+								<FROM>Element</FROM>
+								<FROM>Area</FROM>
+								<FROM>Item</FROM>
+								<FROM>DomainArea</FROM>	
+							</TABLES>
+							<WHERE>
+							    	<DOMAINS>
+									<DOMAIN label="Production">QV</DOMAIN>
+								</DOMAINS>
+
+								<ITEMS>
+									<ITEM label="Cereal, Total">1717</ITEM>
+								</ITEMS>
+								<ELEMENTSLIST>
+									<ELEMENTLIST label='Net Production Value (constant 2004-2006 1000 I$)'>154</ELEMENTLIST>
+								</ELEMENTSLIST>
+
+							</WHERE>
+						</BASEQUERY>
+
+
+
+					</BASEQUERIES>
+				</JOINQUERY>
+			</RESOURCE>
+
+
+
+			<!-- <RESOURCE>			
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+ 				 <OUTPUTTYPE>BAR_WITH_CATEGORIES</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>540</WIDTH>
+					<HEIGHT>230</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>Growth Rate</E>
+				</TITLE>
+				<APPLICABLE_FILTERS>
+					<APPLY_ALL_FILTERS_EXCEPT_AGGREGATION_TYPE>true</APPLY_ALL_FILTERS_EXCEPT_AGGREGATION_TYPE>
+				</APPLICABLE_FILTERS>
+				<DATEQUERY>
+					<MAX>D.Year</MAX>
+					<TIMESPAN type="year">9</TIMESPAN>
+				</DATEQUERY>
+				<CALCULATIONQUERY>
+					<TYPE>GROWTH_RATE</TYPE> 
+				</CALCULATIONQUERY> 
+				<BASEQUERY>					 
+					<SELECTS>		       
+						
+						<SELECT lang="true">E.ElementName</SELECT>
+						<SELECT lang="true">A.AreaName</SELECT>
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Production">QC</DOMAIN>
+						</DOMAINS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Production'>2510</ELEMENTLIST>
+							<ELEMENTLIST label='Yield'>2413</ELEMENTLIST>
+							<ELEMENTLIST label='Area Harvested'>2312</ELEMENTLIST> 
+						</ELEMENTSLIST>				
+						<AREAS>
+							<AREA label="Africa">5100</AREA>	
+							<AREA label="Europa">5400</AREA>	
+							<AREA label="America">5200</AREA>	
+							<AREA label="Asia">5300</AREA>
+							<AREA label="Oceania">5500</AREA>
+						</AREAS> 
+						<ITEMS>
+							<ITEM label="Cereal, Total">1717</ITEM>
+						</ITEMS>
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">A.AreaName</FIELD>
+					</SORT>	
+
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>			
+	             
+				 </BASEQUERY>					
+			</RESOURCE> -->
+
+
+			<!--<RESOURCE>
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>BAR_WITH_CATEGORIES</OUTPUTTYPE>
+				<TITLE>
+					<E>Production</E>
+				</TITLE>
+				<IMAGESIZE>
+				        <SIZE>
+						<WIDTH>750</WIDTH>
+						<HEIGHT>300</HEIGHT>
+					</SIZE>
+				</IMAGESIZE>
+
+
+				<JOINQUERY>
+			
+					<JOINCOLUMN>Year</JOINCOLUMN>
+					<SORT type="ASC">
+						<FIELD>Year</FIELD>
+						
+					</SORT>
+					<DATEQUERY>
+						<MAX>D.Year</MAX> 
+						<TIMESPAN type="year">3</TIMESPAN>
+					</DATEQUERY>
+	
+
+					<SELECTS>
+						<SELECT>Q1.Year</SELECT>	-->	
+						<!--<SELECT lang="true">Q1.AreaName</SELECT>
+						<SELECT lang="true">Q1.UnitName</SELECT>	
+						<SELECT>Q1.Value</SELECT>
+						<SELECT lang="true">Q2.AreaName</SELECT>
+						<SELECT lang="true">Q2.UnitName</SELECT>
+						<SELECT>Q2.Value</SELECT>
+						<SELECT>'Percentage' as Element</SELECT>
+						<SELECT>'%' as MU</SELECT>
+						<SELECT>ROUND((((Q2.Value - Q1.Value) / Q1.Value) * 100), 2) as 'Percentage'</SELECT> -->
+						<!--<SELECT lang="true">Q3.AreaName</SELECT>
+						<SELECT lang="true">Q3.UnitName</SELECT>
+						<SELECT>Q3.Value</SELECT>-->
+						<!--<SELECT>'Proporzione % India' as Element</SELECT>
+						<SELECT>'%' as MU</SELECT>
+						<SELECT>ROUND((((Q1.Value) / Q3.Value) * 100), 2) as '%'</SELECT>
+						<SELECT>'Proporzione % China' as Element</SELECT>
+						<SELECT>'%' as MU</SELECT>
+						<SELECT>ROUND((((Q2.Value) / Q3.Value) * 100), 2) as '%'</SELECT>
+						<SELECT>'Proporzione % All' as Element</SELECT>
+						<SELECT>'%' as MU</SELECT>
+						<SELECT>ROUND(((((Q1.Value + Q2.Value)) / Q3.Value) * 100), 2) as '%'</SELECT> -->
+						
+						<!--<SELECT>(Q3.AreaNameE + ' - % World') as Element</SELECT>
+						<SELECT>'%' as MU</SELECT>
+						<SELECT>ROUND(((Q3.Value / Q4.Value) * 100), 2) as '%'</SELECT>-->
+				<!--	</SELECTS>
+
+
+					
+		
+					<BASEQUERIES>
+
+					  	<BASEQUERY>
+							<SELECTS>
+								<SELECT>A.AreaCode</SELECT>	
+		 						<SELECT lang="true">A.AreaName</SELECT>	
+								<SELECT lang="true">E.ElementName</SELECT>	
+								<SELECT lang="true">E.UnitName</SELECT>	
+								<SELECT>D.Year</SELECT>
+								<SELECT>D.Value</SELECT>
+							</SELECTS>
+							<TABLES>		       
+								<FROM>Data</FROM>
+								<FROM>Element</FROM>
+								<FROM>Area</FROM>
+								<FROM>Item</FROM>
+								<FROM>DomainArea</FROM>	
+							</TABLES>
+								<WHERE>
+									<DOMAINS>
+										<DOMAIN label="Production">QC</DOMAIN>	
+									</DOMAINS>
+									<ITEMS>
+										<ITEM label="Rice">27</ITEM>
+									</ITEMS>
+									<AREAS>
+										<AREA label='China'>100</AREA>
+									</AREAS>
+									<ELEMENTS>
+										<ELEMENT label='Production'>5510</ELEMENT>
+									</ELEMENTS>								
+								</WHERE>
+						</BASEQUERY>	
+
+					  	<BASEQUERY>
+							<SELECTS>
+								<SELECT>A.AreaCode</SELECT>	
+		 						<SELECT lang="true">A.AreaName</SELECT>	
+								<SELECT lang="true">E.ElementName</SELECT>	
+								<SELECT lang="true">E.UnitName</SELECT>	
+								<SELECT>D.Year</SELECT>
+								<SELECT>D.Value</SELECT>
+							</SELECTS>
+							<TABLES>		       
+								<FROM>Data</FROM>
+								<FROM>Element</FROM>
+								<FROM>Area</FROM>
+								<FROM>Item</FROM>
+								<FROM>DomainArea</FROM>	
+							</TABLES>
+								<WHERE>
+									<DOMAINS>
+										<DOMAIN label="Production">QC</DOMAIN>	
+									</DOMAINS>
+									<ITEMS>
+										<ITEM label="Rice">27</ITEM>
+									</ITEMS>
+									<ELEMENTS>
+										<ELEMENT label='Production'>5510</ELEMENT>
+									</ELEMENTS>	
+									<AREAS>
+										<AREA label='India'>351</AREA>
+									</AREAS>							
+								</WHERE>
+						</BASEQUERY>	
+
+					  	<BASEQUERY>
+							<SELECTS>
+								<SELECT>A.AreaCode</SELECT>	
+		 						<SELECT lang="true">A.AreaName</SELECT>	
+								<SELECT lang="true">E.ElementName</SELECT>	
+								<SELECT lang="true">E.UnitName</SELECT>	
+								<SELECT>D.Year</SELECT>
+								<SELECT>D.Value</SELECT>
+							</SELECTS>
+							<TABLES>		       
+								<FROM>Data</FROM>
+								<FROM>Element</FROM>
+								<FROM>Area</FROM>
+								<FROM>Item</FROM>
+								<FROM>DomainArea</FROM>	
+							</TABLES>
+							<WHERE>
+								<DOMAINS>
+									<DOMAIN label="Production">QC</DOMAIN>	
+								</DOMAINS>
+								<ITEMS>
+									<ITEM label="Rice">27</ITEM>
+								</ITEMS>
+								<ELEMENTS>
+									<ELEMENT label='Production'>5510</ELEMENT>
+								</ELEMENTS>	
+								 <AREAS>
+									<AREA label='Asia'>5300</AREA>
+									<AREA label='Africa'>5100</AREA>
+									<AREA label='Americas'>5200</AREA>
+									<AREA label='Europe'>5400</AREA>
+									<AREA label='Oceania'>5500</AREA>
+								</AREAS>
+							</WHERE>
+
+							<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+							<COUNTRY_LEVEL>TRUE</COUNTRY_LEVEL>
+
+						</BASEQUERY>	
+
+
+					  	<BASEQUERY>
+							<SELECTS>
+								<SELECT>A.AreaCode</SELECT>	
+		 						<SELECT lang="true">A.AreaName</SELECT>	
+								<SELECT lang="true">E.ElementName</SELECT>	
+								<SELECT lang="true">E.UnitName</SELECT>	
+								<SELECT>D.Year</SELECT>
+								<SELECT>D.Value</SELECT>
+							</SELECTS>
+							<TABLES>		       
+								<FROM>Data</FROM>
+								<FROM>Element</FROM>
+								<FROM>Area</FROM>
+								<FROM>Item</FROM>
+								<FROM>DomainArea</FROM>	
+							</TABLES>
+							<WHERE>
+								<DOMAINS>
+									<DOMAIN label="Production">QC</DOMAIN>	
+								</DOMAINS>
+								<ITEMS>
+									<ITEM label="Rice">27</ITEM>
+								</ITEMS>
+								<ELEMENTS>
+									<ELEMENT label='Production'>5510</ELEMENT>
+								</ELEMENTS>	
+								<AREAS>
+									<AREA label='World'>5000</AREA>
+								</AREAS>							
+							</WHERE>
+
+							<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+							<COUNTRY_LEVEL>TRUE</COUNTRY_LEVEL>
+
+						</BASEQUERY>	
+
+					</BASEQUERIES>
+				</JOINQUERY>
+			</RESOURCE> -->
+
+
+			<!-- <RESOURCE>
+				<RESOURCETYPE>TABLE</RESOURCETYPE>
+				<OUTPUTTYPE>HTML</OUTPUTTYPE>
+				<TITLE>
+					<E>Race between China and India on Rice, Paddy</E>
+				</TITLE>
+				<IMAGESIZE>
+				        <SIZE>
+						<WIDTH>750</WIDTH>
+						<HEIGHT>300</HEIGHT>
+					</SIZE>
+				</IMAGESIZE>
+
+
+				<JOINQUERY>
+			
+					<JOINCOLUMN>Year</JOINCOLUMN>
+					<SORT type="ASC">
+						<FIELD>Year</FIELD>
+					</SORT>
+					<DATEQUERY>
+						<MAX>D.Year</MAX> 
+						<TIMESPAN type="year">3</TIMESPAN>
+					</DATEQUERY>
+	
+
+					<SELECTS>
+						<SELECT>Q1.Year</SELECT>		
+						<SELECT lang="true">Q3.AreaName</SELECT>
+						<SELECT lang="true">Q3.UnitName</SELECT>
+						<SELECT>Q3.Value</SELECT>
+						<SELECT>'Proporzione % World' as Element</SELECT>
+						<SELECT>'%' as MU</SELECT>
+						<SELECT>ROUND(((Q3.Value / Q4.Value) * 100), 2) as '%'</SELECT>
+					</SELECTS>
+
+
+					
+		
+					<BASEQUERIES>
+
+					  	<BASEQUERY>
+							<SELECTS>
+								<SELECT>A.AreaCode</SELECT>	
+		 						<SELECT lang="true">A.AreaName</SELECT>	
+								<SELECT lang="true">E.ElementName</SELECT>	
+								<SELECT lang="true">E.UnitName</SELECT>	
+								<SELECT>D.Year</SELECT>
+								<SELECT>D.Value</SELECT>
+							</SELECTS>
+							<TABLES>		       
+								<FROM>Data</FROM>
+								<FROM>Element</FROM>
+								<FROM>Area</FROM>
+								<FROM>Item</FROM>
+								<FROM>DomainArea</FROM>	
+							</TABLES>
+								<WHERE>
+									<DOMAINS>
+										<DOMAIN label="Production">QC</DOMAIN>	
+									</DOMAINS>
+									<ITEMS>
+										<ITEM label="Rice">27</ITEM>
+									</ITEMS>
+									<AREAS>
+										<AREA label='China'>100</AREA>
+									</AREAS>
+									<ELEMENTS>
+										<ELEMENT label='Production'>5510</ELEMENT>
+									</ELEMENTS>								
+								</WHERE>
+						</BASEQUERY>	
+
+					  	<BASEQUERY>
+							<SELECTS>
+								<SELECT>A.AreaCode</SELECT>	
+		 						<SELECT lang="true">A.AreaName</SELECT>	
+								<SELECT lang="true">E.ElementName</SELECT>	
+								<SELECT lang="true">E.UnitName</SELECT>	
+								<SELECT>D.Year</SELECT>
+								<SELECT>D.Value</SELECT>
+							</SELECTS>
+							<TABLES>		       
+								<FROM>Data</FROM>
+								<FROM>Element</FROM>
+								<FROM>Area</FROM>
+								<FROM>Item</FROM>
+								<FROM>DomainArea</FROM>	
+							</TABLES>
+								<WHERE>
+									<DOMAINS>
+										<DOMAIN label="Production">QC</DOMAIN>	
+									</DOMAINS>
+									<ITEMS>
+										<ITEM label="Rice">27</ITEM>
+									</ITEMS>
+									<ELEMENTS>
+										<ELEMENT label='Production'>5510</ELEMENT>
+									</ELEMENTS>	
+									<AREAS>
+										<AREA label='India'>351</AREA>
+									</AREAS>							
+								</WHERE>
+						</BASEQUERY>	
+
+					  	<BASEQUERY>
+							<SELECTS>
+								<SELECT>A.AreaCode</SELECT>	
+		 						<SELECT lang="true">A.AreaName</SELECT>	
+								<SELECT lang="true">E.ElementName</SELECT>	
+								<SELECT lang="true">E.UnitName</SELECT>	
+								<SELECT>D.Year</SELECT>
+								<SELECT>D.Value</SELECT>
+							</SELECTS>
+							<TABLES>		       
+								<FROM>Data</FROM>
+								<FROM>Element</FROM>
+								<FROM>Area</FROM>
+								<FROM>Item</FROM>
+								<FROM>DomainArea</FROM>	
+							</TABLES>
+							<WHERE>
+								<DOMAINS>
+									<DOMAIN label="Production">QC</DOMAIN>	
+								</DOMAINS>
+								<ITEMS>
+									<ITEM label="Rice">27</ITEM>
+								</ITEMS>
+								<ELEMENTS>
+									<ELEMENT label='Production'>5510</ELEMENT>
+								</ELEMENTS>	
+								<AREAS>
+									<AREA label='Asia'>5300</AREA>
+									<AREA label='Asia'>5100</AREA>
+									<AREA label='Asia'>5200</AREA>
+								</AREAS>							
+							</WHERE>
+
+							<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+							<COUNTRY_LEVEL>TRUE</COUNTRY_LEVEL>
+
+						</BASEQUERY>	
+
+
+					  	<BASEQUERY>
+							<SELECTS>
+								<SELECT>A.AreaCode</SELECT>	
+		 						<SELECT lang="true">A.AreaName</SELECT>	
+								<SELECT lang="true">E.ElementName</SELECT>	
+								<SELECT lang="true">E.UnitName</SELECT>	
+								<SELECT>D.Year</SELECT>
+								<SELECT>D.Value</SELECT>
+							</SELECTS>
+							<TABLES>		       
+								<FROM>Data</FROM>
+								<FROM>Element</FROM>
+								<FROM>Area</FROM>
+								<FROM>Item</FROM>
+								<FROM>DomainArea</FROM>	
+							</TABLES>
+							<WHERE>
+								<DOMAINS>
+									<DOMAIN label="Production">QC</DOMAIN>	
+								</DOMAINS>
+								<ITEMS>
+									<ITEM label="Rice">27</ITEM>
+								</ITEMS>
+								<ELEMENTS>
+									<ELEMENT label='Production'>5510</ELEMENT>
+								</ELEMENTS>	
+								<AREAS>
+									<AREA label='World'>5000</AREA>
+								</AREAS>							
+							</WHERE>
+
+							<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+							<COUNTRY_LEVEL>TRUE</COUNTRY_LEVEL>
+
+						</BASEQUERY>	
+
+					</BASEQUERIES>
+				</JOINQUERY>
+			</RESOURCE> -->
+
+
+			<!-- <RESOURCE>
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>BAR_WITH_CATEGORIES</OUTPUTTYPE>
+				<TITLE>
+					<E>Race between China and India on Rice, Paddy</E>
+				</TITLE>
+				<IMAGESIZE>
+				        <SIZE>
+						<WIDTH>750</WIDTH>
+						<HEIGHT>300</HEIGHT>
+					</SIZE>
+				</IMAGESIZE>
+
+
+				<JOINQUERY>
+			
+					<JOINCOLUMN>Year</JOINCOLUMN>
+					<SORT type="ASC">
+						<FIELD>Year</FIELD>
+					</SORT>
+					<DATEQUERY>
+						<MAX>D.Year</MAX> 
+						<TIMESPAN type="year">3</TIMESPAN>
+					</DATEQUERY>
+	
+
+					<SELECTS>
+						<SELECT>Q1.Year</SELECT>	-->	
+						<!--<SELECT lang="true">Q1.AreaName</SELECT>
+						<SELECT lang="true">Q1.UnitName</SELECT>	
+						<SELECT>Q1.Value</SELECT>
+						<SELECT lang="true">Q2.AreaName</SELECT>
+						<SELECT lang="true">Q2.UnitName</SELECT>
+						<SELECT>Q2.Value</SELECT>
+						<SELECT>'Percentage' as Element</SELECT>
+						<SELECT>'%' as MU</SELECT>
+						<SELECT>ROUND((((Q2.Value - Q1.Value) / Q1.Value) * 100), 2) as 'Percentage'</SELECT> -->
+						<!--<SELECT lang="true">Q3.AreaName</SELECT>
+						<SELECT lang="true">Q3.UnitName</SELECT>
+						<SELECT>Q3.Value</SELECT> -->
+						<!--<SELECT>'Proporzione % India' as Element</SELECT>
+						<SELECT>'%' as MU</SELECT>
+						<SELECT>ROUND((((Q1.Value) / Q3.Value) * 100), 2) as '%'</SELECT>
+						<SELECT>'Proporzione % China' as Element</SELECT>
+						<SELECT>'%' as MU</SELECT>
+						<SELECT>ROUND((((Q2.Value) / Q3.Value) * 100), 2) as '%'</SELECT>
+						<SELECT>'Proporzione % All' as Element</SELECT>
+						<SELECT>'%' as MU</SELECT>
+						<SELECT>ROUND(((((Q1.Value + Q2.Value)) / Q3.Value) * 100), 2) as '%'</SELECT> -->
+						<!--<SELECT>'Proporzione % World' as Element</SELECT>
+						<SELECT>'%' as MU</SELECT>
+						<SELECT>ROUND(((Q3.Value / Q4.Value) * 100), 2) as '%'</SELECT>
+					</SELECTS>
+
+
+					
+		
+					<BASEQUERIES>
+
+					  	<BASEQUERY>
+							<SELECTS>
+								<SELECT>A.AreaCode</SELECT>	
+		 						<SELECT lang="true">A.AreaName</SELECT>	
+								<SELECT lang="true">E.ElementName</SELECT>	
+								<SELECT lang="true">E.UnitName</SELECT>	
+								<SELECT>D.Year</SELECT>
+								<SELECT>D.Value</SELECT>
+							</SELECTS>
+							<TABLES>		       
+								<FROM>Data</FROM>
+								<FROM>Element</FROM>
+								<FROM>Area</FROM>
+								<FROM>Item</FROM>
+								<FROM>DomainArea</FROM>	
+							</TABLES>
+								<WHERE>
+									<DOMAINS>
+										<DOMAIN label="Production">QC</DOMAIN>	
+									</DOMAINS>
+									<ITEMS>
+										<ITEM label="Rice">27</ITEM>
+									</ITEMS>
+									<AREAS>
+										<AREA label='China'>100</AREA>
+									</AREAS>
+									<ELEMENTS>
+										<ELEMENT label='Production'>5510</ELEMENT>
+									</ELEMENTS>								
+								</WHERE>
+						</BASEQUERY>	
+
+					  	<BASEQUERY>
+							<SELECTS>
+								<SELECT>A.AreaCode</SELECT>	
+		 						<SELECT lang="true">A.AreaName</SELECT>	
+								<SELECT lang="true">E.ElementName</SELECT>	
+								<SELECT lang="true">E.UnitName</SELECT>	
+								<SELECT>D.Year</SELECT>
+								<SELECT>D.Value</SELECT>
+							</SELECTS>
+							<TABLES>		       
+								<FROM>Data</FROM>
+								<FROM>Element</FROM>
+								<FROM>Area</FROM>
+								<FROM>Item</FROM>
+								<FROM>DomainArea</FROM>	
+							</TABLES>
+								<WHERE>
+									<DOMAINS>
+										<DOMAIN label="Production">QC</DOMAIN>	
+									</DOMAINS>
+									<ITEMS>
+										<ITEM label="Rice">27</ITEM>
+									</ITEMS>
+									<ELEMENTS>
+										<ELEMENT label='Production'>5510</ELEMENT>
+									</ELEMENTS>	
+									<AREAS>
+										<AREA label='India'>351</AREA>
+									</AREAS>							
+								</WHERE>
+						</BASEQUERY>	
+
+					  	<BASEQUERY>
+							<SELECTS>
+								<SELECT>A.AreaCode</SELECT>	
+		 						<SELECT lang="true">A.AreaName</SELECT>	
+								<SELECT lang="true">E.ElementName</SELECT>	
+								<SELECT lang="true">E.UnitName</SELECT>	
+								<SELECT>D.Year</SELECT>
+								<SELECT>D.Value</SELECT>
+							</SELECTS>
+							<TABLES>		       
+								<FROM>Data</FROM>
+								<FROM>Element</FROM>
+								<FROM>Area</FROM>
+								<FROM>Item</FROM>
+								<FROM>DomainArea</FROM>	
+							</TABLES>
+							<WHERE>
+								<DOMAINS>
+									<DOMAIN label="Production">QC</DOMAIN>	
+								</DOMAINS>
+								<ITEMS>
+									<ITEM label="Rice">27</ITEM>
+								</ITEMS>
+								<ELEMENTS>
+									<ELEMENT label='Production'>5510</ELEMENT>
+								</ELEMENTS>	
+								<AREAS>
+									<AREA label='Asia'>5300</AREA>
+								</AREAS>							
+							</WHERE>
+
+							<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+							<COUNTRY_LEVEL>TRUE</COUNTRY_LEVEL>
+
+						</BASEQUERY>	
+
+
+					  	<BASEQUERY>
+							<SELECTS>
+								<SELECT>A.AreaCode</SELECT>	
+		 						<SELECT lang="true">A.AreaName</SELECT>	
+								<SELECT lang="true">E.ElementName</SELECT>	
+								<SELECT lang="true">E.UnitName</SELECT>	
+								<SELECT>D.Year</SELECT>
+								<SELECT>D.Value</SELECT>
+							</SELECTS>
+							<TABLES>		       
+								<FROM>Data</FROM>
+								<FROM>Element</FROM>
+								<FROM>Area</FROM>
+								<FROM>Item</FROM>
+								<FROM>DomainArea</FROM>	
+							</TABLES>
+							<WHERE>
+								<DOMAINS>
+									<DOMAIN label="Production">QC</DOMAIN>	
+								</DOMAINS>
+								<ITEMS>
+									<ITEM label="Rice">27</ITEM>
+								</ITEMS>
+								<ELEMENTS>
+									<ELEMENT label='Production'>5510</ELEMENT>
+								</ELEMENTS>	
+								<AREAS>
+									<AREA label='World'>5000</AREA>
+								</AREAS>							
+							</WHERE>
+
+							<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+							<COUNTRY_LEVEL>TRUE</COUNTRY_LEVEL>
+
+						</BASEQUERY>	
+
+					</BASEQUERIES>
+				</JOINQUERY>
+			</RESOURCE> --> 
+
+			<!-- <RESOURCE>
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>BAR_WITH_CATEGORIES</OUTPUTTYPE>
+				<TITLE>
+					<E>Top Production</E>
+				</TITLE>
+				<IMAGESIZE>
+				        <SIZE>
+						<WIDTH>750</WIDTH>
+						<HEIGHT>300</HEIGHT>
+					</SIZE>
+				</IMAGESIZE>
+
+
+				<JOINQUERY>
+					
+					<JOINCOLUMN>AreaCode</JOINCOLUMN>
+					<SORT type="DESC">
+						<FIELD>Q1.Value</FIELD>
+					</SORT>
+					<DATEQUERY>
+						<MAX>D.Year</MAX> 
+					</DATEQUERY>
+			
+					<LIMIT field="D.AreaCode">10</LIMIT>
+
+					<SELECTS>
+		
+
+						<SELECT lang="true">Q1.AreaName</SELECT>		
+						<SELECT lang="true">Q1.ElementName</SELECT>
+						<SELECT lang="true">Q1.UnitName</SELECT>	
+						<SELECT>Q1.Value</SELECT>
+						<SELECT lang="true">Q2.ElementName</SELECT>
+						<SELECT lang="true">Q2.UnitName</SELECT>
+						<SELECT>Q2.Value</SELECT>
+	
+						
+					</SELECTS>
+
+
+					
+		
+					<BASEQUERIES>
+					  	<BASEQUERY>
+					
+							<SELECTS>
+								<SELECT>A.AreaCode</SELECT>	
+		 						<SELECT lang="true">A.AreaName</SELECT>	
+								<SELECT lang="true">E.ElementName</SELECT>	
+								<SELECT lang="true">E.UnitName</SELECT>	
+								<SELECT>D.Year</SELECT>
+								<SELECT>D.Value</SELECT>
+							</SELECTS>
+							<TABLES>		       
+								<FROM>Data</FROM>
+								<FROM>Element</FROM>
+								<FROM>Area</FROM>
+								<FROM>Item</FROM>
+								<FROM>DomainArea</FROM>	
+							</TABLES>
+							<WHERE>
+							    	<DOMAINS>
+									<DOMAIN label="Production">QC</DOMAIN>
+								</DOMAINS>
+								<ITEMS>
+									<ITEM label="Rice">27</ITEM>
+								</ITEMS>
+								<ELEMENTSLIST>
+									<ELEMENTLIST label='Production'>2510</ELEMENTLIST>
+								</ELEMENTSLIST>
+								<YEARS>
+					 				<YEAR>2009</YEAR>	
+								</YEARS>
+							</WHERE>
+					
+						</BASEQUERY>	
+
+						<BASEQUERY>
+							<SELECTS>
+								<SELECT>A.AreaCode</SELECT>	
+		 						<SELECT lang="true">A.AreaName</SELECT>	
+								<SELECT lang="true">E.ElementName</SELECT>	
+								<SELECT lang="true">E.UnitName</SELECT>	
+								<SELECT>D.Year</SELECT>
+								<SELECT>D.Value</SELECT>
+							</SELECTS>
+							<TABLES>		       
+								<FROM>Data</FROM>
+								<FROM>Element</FROM>
+								<FROM>Area</FROM>
+								<FROM>Item</FROM>
+								<FROM>DomainArea</FROM>	
+							</TABLES>
+							<WHERE>
+							    	<DOMAINS>
+									<DOMAIN label="Production">QV</DOMAIN>	
+								</DOMAINS>
+								<ITEMS>
+									<ITEM label="Rice">27</ITEM>
+								</ITEMS>
+								<ELEMENTSLIST>
+									<ELEMENTLIST label='Net Production Value (constant 2004-2006 1000 I$)'>154</ELEMENTLIST>
+								</ELEMENTSLIST>
+								<YEARS>
+					 				<YEAR>2009</YEAR>	
+								</YEARS>
+							</WHERE>
+					
+						</BASEQUERY>
+
+					</BASEQUERIES>
+				</JOINQUERY>
+			</RESOURCE> -->
+
+			
+		</DEFAULT>	
+
+		
+	</RESOURCES>
+</VIEW>

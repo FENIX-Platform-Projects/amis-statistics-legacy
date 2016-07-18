@@ -1,0 +1,3 @@
+Code,Label,LangCode,Description
+"http://lprapp08.fao.org:8080/geoserver/", "FAO-HQ Workstation", "EN", "true"
+"http://www.pdc.org/wms/wmservlet/HAITI_EQ_RESPONSE?", "BOH", "EN", "false"

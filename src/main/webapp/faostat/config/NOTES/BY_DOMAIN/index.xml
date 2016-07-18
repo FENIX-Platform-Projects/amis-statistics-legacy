@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NOTES>
+
+	<B>
+		<SECTION gwtLangCode="commodityBalances">B</SECTION>
+	</B>
+	
+	<C>
+		<SECTION gwtLangCode="foodSupply">C</SECTION>
+	</C>
+	
+	<O>
+		<SECTION gwtLangCode="population">O</SECTION>
+	</O>
+	
+	<P>
+		<SECTION gwtLangCode="prices">P</SECTION>
+		<SECTION gwtLangCode="agriculturalProductionPriceIndices">PI</SECTION>
+		<SECTION gwtLangCode="priceArchives">PA</SECTION>
+		<SECTION gwtLangCode="producerPrices">PP</SECTION>
+	</P>
+
+	<Q>
+		<SECTION gwtLangCode="production">Q</SECTION>
+		<SECTION gwtLangCode="pin">QI</SECTION>
+		<SECTION gwtLangCode="valueOfAgriculturalProduction">QV</SECTION>
+	</Q>
+	
+	<R>
+		<SECTION gwtLangCode="resources">R</SECTION>
+		<SECTION gwtLangCode="fertilizers">RF</SECTION>
+		<SECTION gwtLangCode="fertilizersTradeValue">RV</SECTION>
+		<SECTION gwtLangCode="fertilizersArchive">RA</SECTION>
+		<SECTION gwtLangCode="landUse">RL</SECTION>
+		<SECTION gwtLangCode="pesticidesConsumption">RP</SECTION>
+		<SECTION gwtLangCode="pesticidesTrade">RT</SECTION>
+	</R>
+	
+	<T>
+		<SECTION gwtLangCode="trade">T</SECTION>
+		<SECTION gwtLangCode="tin">TI</SECTION>
+	</T>
+
+	<I>
+		<SECTION gwtLangCode="investment">I</SECTION>
+		<!--
+		<SECTION gwtLangCode="capitalStock">CS</SECTION>
+		<SECTION gwtLangCode="externalAssistanceToAgriculture">RY</SECTION>
+		<SECTION gwtLangCode="machinery">RM</SECTION>
+		-->
+	</I>
+	
+	<CS>
+		<SECTION gwtLangCode="capitalStock">CS</SECTION>
+	</CS>
+	
+	<FB>
+		<SECTION gwtLangCode="foodBalanceSheets">FB</SECTION>
+	</FB>
+	
+	<F>
+		<SECTION gwtLangCode="forestry">F</SECTION>
+	</F>
+	
+	<G1>
+		<SECTION gwtLangCode="ghgAgriculture">G1</SECTION>
+	</G1>
+	
+	<G2>
+		<SECTION gwtLangCode="ghgLULUCF">G2</SECTION>
+	</G2>
+
+</NOTES>

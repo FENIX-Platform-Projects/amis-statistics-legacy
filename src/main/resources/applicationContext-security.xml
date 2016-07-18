@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:security="http://www.springframework.org/schema/security"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+    http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+                        http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-2.0.4.xsd">
+
+	<!--
+		Check this article for more an explanation of this configuration file:
+		http://giews.ominiverdi.org/wiki//index.php/Security_%40Secured_annnotations_explained
+	-->
+
+
+
+	<!-- the fenixLogin will be used by the GWT services -->
+	<bean id="fenixLogin" class="org.fao.fenix.web.modules.core.server.security.FenixLogin">
+		<property name="authenticationManager" ref="authenticationManager" />
+		<property name="userDetailsManager" ref="userDetailsManager" />
+		<property name="logoutHandler" ref="logoutHandler" />
+	</bean>
+
+
+	<!-- fenix secures the service layer via @Secured annotations -->
+	<security:global-method-security secured-annotations="enabled"
+		access-decision-manager-ref="businessAccessDecisionManager">
+	</security:global-method-security>
+
+
+	<!-- name space configuration -->
+	<security:http realm="FenixRealm" entry-point-ref="authenticationEntryPoint">
+		<security:intercept-url pattern="/**"
+			access="IS_AUTHENTICATED_ANONYMOUSLY, ROLE_USER, ROLE_ADMIN, ROLE_FPI, ROLE_CCBS" />
+		<security:anonymous />
+	</security:http>
+
+
+
+
+
+	<!-- userDetailsService is used by the authenticationProvider  -->
+	<bean id="authenticationProvider" class="org.springframework.security.providers.dao.DaoAuthenticationProvider">
+		<property name="userDetailsService" ref="userDetailsManager" />
+	</bean>
+
+	<!-- The authentication manager that iterates through our only authentication provider -->
+	<!-- fenix has only one authenticationProvider  -->
+	<bean id="authenticationManager" class="org.springframework.security.providers.ProviderManager">
+		<property name="providers">
+			<list>
+				<ref bean="authenticationProvider" />
+			</list>
+		</property>
+	</bean>
+
+
+
+
+	<!-- the logoutHandler is needed to access directly via the gwt services/UserService/fenixLogin            -->
+	<!-- Fenix cannot use the standard logout because that is not gwt/ajax/gwt-springservices compliant  -->
+	<bean id="logoutHandler" class="org.springframework.security.ui.logout.SecurityContextLogoutHandler" />
+
+
+
+
+	<!-- the fenix custom authentication entrypoint -->
+	<bean id="authenticationEntryPoint" class="org.springframework.security.ui.basicauth.BasicProcessingFilterEntryPoint">
+		<property name="realmName" value="FenixRealm" />
+	</bean>
+
+
+	<!-- IN PRODUCTION the attribute deleteCreate should be deleted or set to false. True only in development! -->
+	<bean id="securityDbSchemaCreator" class="org.fao.fenix.core.persistence.security.SecurityDbSchemaCreator"
+		lazy-init="false" init-method="createSecuritySchema">
+		<property name="dataSource" ref="dataSource" />
+<!--		<property name="deleteCreate" value="true" />-->
+	</bean>
+
+	<bean id="fenixSystemGroupCreator" class="org.fao.fenix.core.persistence.security.FenixSystemGroupCreator"
+		init-method="run" lazy-init="false" depends-on="securityDbSchemaCreator">
+		<property name="userDetailsManager" ref="userDetailsManager" />
+		<property name="fenixDomainUserDao" ref="fenixDomainUserDao" />
+		<property name="fenixDoubleUserManager" ref="fenixDoubleUserManager" />
+	</bean>
+
+	<bean id="fenixIPCGroupCreator" class="org.fao.fenix.core.persistence.security.FenixIPCGroupCreator"
+		init-method="run" lazy-init="false" depends-on="securityDbSchemaCreator">
+		<property name="userDetailsManager" ref="userDetailsManager" />
+		<property name="fenixModuleConfiguration" ref="fenixModuleConfiguration" />
+	</bean>
+	
+
+	<bean id="fenixAfterDaoSaveAspect" class="org.fao.fenix.core.persistence.security.FenixAclAspect" depends-on="fenixSystemGroupCreator">
+		<property name="userDetailsManager" ref="userDetailsManager" />
+		<property name="fenixPermissionManager" ref="fenixPermissionManager" />
+	</bean>
+
+
+	<bean id="fenixPermissionManager" class="org.fao.fenix.core.persistence.security.FenixPermissionManager">
+		<property name="userDetailsManager" ref="userDetailsManager" />
+		<property name="aclService" ref="aclService" />
+		<property name="resourceDao" ref="resourceDao" />
+		<property name="aclCache" ref="aclCache" />
+	</bean>
+
+
+	<bean id="userDetailsManager" class="org.springframework.security.userdetails.jdbc.JdbcUserDetailsManager">
+		<property name="dataSource" ref="dataSource" />
+		<property name="enableGroups" value="true" />
+	</bean>
+
+	<bean id="fenixDoubleUserManager" class="org.fao.fenix.core.persistence.security.FenixDoubleUserManager">
+		<property name="userDetailsManager" ref="userDetailsManager" />
+		<property name="fenixDomainUserDao" ref="fenixDomainUserDao" />
+	</bean>
+
+	<!-- ~~~~~~~~~~~~~~~~~~ "BEFORE INVOCATION" AUTHORIZATION DEFINITIONS ~~~~~~~~~~~~~~~~ -->
+
+	<!-- ACL permission masks used by this application -->
+	<bean id="org.fao.fenix.core.domain.security.FenixPermission.READ" class="org.springframework.beans.factory.config.FieldRetrievingFactoryBean">
+		<property name="staticField" value="org.fao.fenix.core.domain.security.FenixPermission.READ" />
+	</bean>
+	<bean id="org.fao.fenix.core.domain.security.FenixPermission.WRITE" class="org.springframework.beans.factory.config.FieldRetrievingFactoryBean">
+		<property name="staticField" value="org.fao.fenix.core.domain.security.FenixPermission.WRITE" />
+	</bean>
+	<bean id="org.fao.fenix.core.domain.security.FenixPermission.DELETE" class="org.springframework.beans.factory.config.FieldRetrievingFactoryBean">
+		<property name="staticField" value="org.fao.fenix.core.domain.security.FenixPermission.DELETE" />
+	</bean>
+	<bean id="org.fao.fenix.core.domain.security.FenixPermission.DOWNLOAD" class="org.springframework.beans.factory.config.FieldRetrievingFactoryBean">
+		<property name="staticField" value="org.fao.fenix.core.domain.security.FenixPermission.DOWNLOAD" />
+	</bean>
+
+
+	<!-- An access decision voter that reads ACL_FENIXRESOURCE_READ configuration settings -->
+	<bean id="aclFenixResourceReadVoter" class="org.springframework.security.vote.AclEntryVoter">
+		<constructor-arg ref="aclService" />
+		<constructor-arg value="ACL_FENIXRESOURCE_READ" />
+		<constructor-arg>
+			<list>
+				<ref local="org.fao.fenix.core.domain.security.FenixPermission.READ" />
+			</list>
+		</constructor-arg>
+		<property name="processDomainObjectClass" value="org.fao.fenix.core.domain.Resource" />
+		<property name="sidRetrievalStrategy" ref="fenixSidRetrievalStrategy" />
+	</bean>
+	<!-- An access decision voter that reads ACL_FENIXRESOURCE_WRITE configuration settings -->
+	<bean id="aclFenixResourceWriteVoter" class="org.springframework.security.vote.AclEntryVoter">
+		<constructor-arg ref="aclService" />
+		<constructor-arg value="ACL_FENIXRESOURCE_WRITE" />
+		<constructor-arg>
+			<list>
+				<ref local="org.fao.fenix.core.domain.security.FenixPermission.READ" />
+			</list>
+		</constructor-arg>
+		<property name="processDomainObjectClass" value="org.fao.fenix.core.domain.Resource" />
+		<property name="sidRetrievalStrategy" ref="fenixSidRetrievalStrategy" />
+	</bean>
+
+	<!-- An access decision voter that reads ACL_FENIXRESOURCE_DELETE configuration settings -->
+	<bean id="aclFenixResourceDeleteVoter" class="org.springframework.security.vote.AclEntryVoter">
+		<constructor-arg ref="aclService" />
+		<constructor-arg value="ACL_FENIXRESOURCE_DELETE" />
+		<constructor-arg>
+			<list>
+				<ref local="org.fao.fenix.core.domain.security.FenixPermission.DELETE" />
+			</list>
+		</constructor-arg>
+		<property name="processDomainObjectClass" value="org.fao.fenix.core.domain.Resource" />
+		<property name="sidRetrievalStrategy" ref="fenixSidRetrievalStrategy" />
+	</bean>
+
+	<!-- An access decision voter that reads ACL_FENIXRESOURCE_DOWNLOAD configuration settings -->
+	<bean id="aclFenixResourceDownloadVoter" class="org.springframework.security.vote.AclEntryVoter">
+		<constructor-arg ref="aclService" />
+		<constructor-arg value="ACL_FENIXRESOURCE_DOWNLOAD" />
+		<constructor-arg>
+			<list>
+				<ref local="org.fao.fenix.core.domain.security.FenixPermission.DOWNLOAD" />
+			</list>
+		</constructor-arg>
+		<property name="processDomainObjectClass" value="org.fao.fenix.core.domain.Resource" />
+		<property name="sidRetrievalStrategy" ref="fenixSidRetrievalStrategy" />
+	</bean>
+
+
+	<!-- An access decision voter that reads ROLE_* configuration settings -->
+	<bean id="roleHierarchyVoter" class="org.springframework.security.vote.RoleHierarchyVoter">
+		<constructor-arg>
+			<ref local="roleHierarchy" />
+		</constructor-arg>
+	</bean>
+	<bean id="roleHierarchy" class="org.springframework.security.userdetails.hierarchicalroles.RoleHierarchyImpl">
+		<property name="hierarchy">
+			<value>
+				ROLE_ADMIN > ROLE_USER
+				ROLE_USER > IS_AUTHENTICATED_ANONYMOUSLY
+				ROLE_FPI > ROLE_USER
+				ROLE_CCBS > ROLE_USER
+				ROLE_IPC > ROLE_USER
+				ROLE_ADMIN > ROLE_FPI
+				ROLE_ADMIN > ROLE_CCBS  
+				ROLE_ADMIN > ROLE_IPC
+            </value>
+		</property>
+	</bean>
+
+
+	<!-- An access decision manager used by the business objects -->
+	<bean id="businessAccessDecisionManager" class="org.springframework.security.vote.UnanimousBased">
+		<property name="allowIfAllAbstainDecisions" value="false" />
+		<property name="decisionVoters">
+			<list>
+				<ref local="roleHierarchyVoter" />
+				<bean class="org.springframework.security.vote.AuthenticatedVoter" />
+				<ref local="aclFenixResourceReadVoter" />
+				<ref local="aclFenixResourceWriteVoter" />
+				<ref local="aclFenixResourceDeleteVoter" />
+				<ref local="aclFenixResourceDownloadVoter" />
+			</list>
+		</property>
+	</bean>
+
+	<!-- ========= ACCESS CONTROL LIST LOOKUP MANAGER DEFINITIONS ========= -->
+
+	<bean id="aclCache" class="org.springframework.security.acls.jdbc.EhCacheBasedAclCache">
+		<constructor-arg>
+			<bean class="org.springframework.cache.ehcache.EhCacheFactoryBean">
+				<property name="cacheManager">
+					<bean class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean">
+						<property name="configLocation">
+							<value>classpath:ehcache-failsafe.xml</value>
+						</property>
+					</bean>
+				</property>
+				<property name="cacheName" value="aclCache" />
+			</bean>
+		</constructor-arg>
+	</bean>
+
+	<bean id="lookupStrategy" class="org.fao.fenix.core.persistence.security.PostgresqlBasicLookupStrategy">
+		<constructor-arg ref="dataSource" />
+		<constructor-arg ref="aclCache" />
+		<constructor-arg>
+			<bean class="org.springframework.security.acls.domain.AclAuthorizationStrategyImpl">
+				<constructor-arg>
+					<list>
+						<bean class="org.springframework.security.GrantedAuthorityImpl">
+							<constructor-arg value="ROLE_ADMIN" />
+						</bean>
+						<bean class="org.springframework.security.GrantedAuthorityImpl">
+							<constructor-arg value="ROLE_ADMIN" />
+						</bean>
+						<bean class="org.springframework.security.GrantedAuthorityImpl">
+							<constructor-arg value="ROLE_ADMIN" />
+						</bean>
+					</list>
+				</constructor-arg>
+			</bean>
+		</constructor-arg>
+		<constructor-arg>
+			<bean class="org.springframework.security.acls.domain.ConsoleAuditLogger" />
+		</constructor-arg>
+	</bean>
+
+	<bean id="aclService" class="org.fao.fenix.core.persistence.security.PostgresqlJdbcMutableAclService">
+		<constructor-arg ref="dataSource" />
+		<constructor-arg ref="lookupStrategy" />
+		<constructor-arg ref="aclCache" />
+	</bean>
+
+	<!-- ============== "AFTER INTERCEPTION" AUTHORIZATION DEFINITIONS =========== -->
+
+
+	<!--	 ================= METHOD INVOCATION AUTHORIZATION ==================== -->
+
+
+	<!-- since we use global-security...we use the custom-after-invocation-provider to register the instances -->
+	<!--
+		<bean id="afterInvocationManager" class="org.springframework.security.afterinvocation.AfterInvocationProviderManager">
+		<property name="providers"> <list> <ref local="afterAclRead"/> <ref local="afterAclCollectionRead"/> </list>
+		</property> </bean>
+	-->
+
+	<!-- this picks up on AFTER_ACL_READ -->
+	<bean id="afterAclRead" class="org.springframework.security.afterinvocation.AclEntryAfterInvocationProvider">
+		<security:custom-after-invocation-provider />
+		<constructor-arg>
+			<ref bean="aclService" />
+		</constructor-arg>
+		<constructor-arg>
+			<list>
+				<ref local="org.fao.fenix.core.domain.security.FenixPermission.READ" />
+			</list>
+		</constructor-arg>
+		<property name="sidRetrievalStrategy" ref="fenixSidRetrievalStrategy" />
+	</bean>
+
+
+
+	<bean id="fenixSidRetrievalStrategy" class="org.fao.fenix.core.persistence.security.FenixSidRetrievalStrategyImpl">
+		<property name="userDetailsManager" ref="userDetailsManager" />
+	</bean>
+
+
+	<!-- this picks up on AFTER_ACL_COLLECTION_READ -->
+	<bean id="afterAclCollectionRead" class="org.springframework.security.afterinvocation.AclEntryAfterInvocationCollectionFilteringProvider">
+		<security:custom-after-invocation-provider />
+		<constructor-arg>
+			<ref bean="aclService" />
+		</constructor-arg>
+		<constructor-arg>
+			<list>
+				<ref local="org.fao.fenix.core.domain.security.FenixPermission.READ" />
+			</list>
+		</constructor-arg>
+		<property name="sidRetrievalStrategy" ref="fenixSidRetrievalStrategy" />
+	</bean>
+
+
+<!-- #Configure which modules will be running in this instance of Fenix -->
+	<bean id="fenixModuleConfiguration" class="org.fao.fenix.core.modules.framework.FenixModuleConfiguration">
+		<property name="ccbsIsRunning" value="${ccbs.is.running}" />
+		<property name="fpiIsRunning" value="${fpi.is.running}" />
+		<property name="ipcIsRunning" value="${ipc.is.running}" />
+	</bean>
+
+
+
+</beans>

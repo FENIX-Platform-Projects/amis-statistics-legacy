@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/fenix/!svn/ver/6747/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/bangladesh/client/view
+END
+BangladeshPreviewTab.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/fenix/!svn/ver/6747/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/bangladesh/client/view/BangladeshPreviewTab.java
+END
+BangladeshOldOutlookTab.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/fenix/!svn/ver/6396/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/bangladesh/client/view/BangladeshOldOutlookTab.java
+END
+BangladeshNewOutlookTab.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/fenix/!svn/ver/6396/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/bangladesh/client/view/BangladeshNewOutlookTab.java
+END
+BangladeshWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/fenix/!svn/ver/6396/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/bangladesh/client/view/BangladeshWindow.java
+END
+BangladeshTabPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/fenix/!svn/ver/6396/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/bangladesh/client/view/BangladeshTabPanel.java
+END

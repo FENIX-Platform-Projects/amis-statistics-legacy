@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<VIEW type="Browse By PI - Agricultural producer price indices" >
+	<TITLE>
+		<E>Producer price indices</E>
+		<S>Índices del precio al productor</S>
+		<F>Indice de prix à la production</F>
+	</TITLE>
+	<FILTERS>
+		
+		<FILTER>
+			<FILTERTYPE>COUNTRIES</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE label="Argentina">9</CODE>
+			</DEFAULTCODES> 
+		</FILTER>
+		<FILTER>
+			<FILTERTYPE>TIMERANGE</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE>1999</CODE>
+				<CODE>2009</CODE>
+			</DEFAULTCODES>
+		</FILTER>
+			
+		<FILTER>
+			<FILTERTYPE>AGGREGATION_TYPE</FILTERTYPE>
+			<CODE label="Average">AVG</CODE>
+		</FILTER>	
+	</FILTERS>
+	<RESOURCES>
+		<DEFAULT>
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<TITLE>
+					<E>Producer price indices in selected country (USD)</E>
+					<S>Índices del precio al productor en el país seleccionado</S>
+					<F>Indice de prix à la production dans le pays sélectionné (USD)</F>
+				</TITLE>
+				<SIZE>
+					<WIDTH>800</WIDTH>
+					<HEIGHT>330</HEIGHT>
+				</SIZE>
+				<DATEQUERY>
+					<MAXDATELIMIT>2009</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> -->
+					<TIMESPAN type="year">10</TIMESPAN>
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+ 						<SELECT lang="true">I.ItemName</SELECT>	
+						<SELECT>D.Year</SELECT>		
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Prices">PI</DOMAIN>
+						</DOMAINS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Producer price index (USD)'>5539</ELEMENTLIST>
+						</ELEMENTSLIST>	
+						<AREAS>
+							<AREA label="Argentina">9</AREA>	
+						</AREAS> 	
+						<ITEMS>
+							<ITEM label="Rice">1714</ITEM>
+							<ITEM label="Rice">1732</ITEM>
+							<ITEM label="Rice">1735</ITEM>
+							<ITEM label="Rice">1738</ITEM>
+							<ITEM label="Rice">1753</ITEM>
+							<ITEM label="Rice">1783</ITEM>
+							<ITEM label="Rice">1765</ITEM>
+						</ITEMS>					
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD>D.Year</FIELD>
+					</SORT>			
+				</BASEQUERY>					
+			</RESOURCE>
+		</DEFAULT>			
+	</RESOURCES>
+</VIEW>

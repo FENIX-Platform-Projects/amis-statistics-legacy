@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/fenix/!svn/ver/7617/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/adam/server/fpmis/utils
+END
+ADAMFPMISXMLParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/fenix/!svn/ver/7617/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/adam/server/fpmis/utils/ADAMFPMISXMLParser.java
+END
+FPMISXMLConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/fenix/!svn/ver/7617/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/adam/server/fpmis/utils/FPMISXMLConstants.java
+END

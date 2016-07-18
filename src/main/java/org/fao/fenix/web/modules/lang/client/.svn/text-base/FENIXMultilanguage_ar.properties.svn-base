@@ -1,0 +1,1327 @@
+giewsWorkstation	محطة العمل المبكر
+ok	طيب
+apply	تطبق
+open	فتح
+cancel	إلغاء
+stop	توقف
+clear	واضح
+title	اسم
+name	اسم
+type	نوع
+category	خصائص
+dateModified	تاريخ التعديل
+region	المنطقة الجغرافية
+keywords	كلمات مفتاحية
+descriptiveKeywords	كلمات وصفية
+add	أضف
+close	أغلق
+save	حفظ
+saveAs	حفظ باسم
+featureNotAvailableYet	*** الميزة غير متوفرة بعد ***
+id	معرف
+cut	قطع
+copy	نسخة
+paste	لصق
+rename	إعادة تسمية
+metadataEditor	الفوقية محرر
+metadata	البيانات الوصفية
+viewMetadata	عرض البيانات الوصفية
+editMetadata	تحرير البيانات الوصفية
+delete	حذف
+addDataset	إضافة مجموعة بيانات
+selectDataset	حدد مجموعة بيانات
+newUpload	تحميل مجموعة بيانات
+upload	تحميل
+createNew	خلق جديد
+load	حمل
+width	عرض
+height	ارتفاع
+preview	معاينة
+pleaseWait	يرجى الانتظار
+saving	إنقاذ
+loading	تحميل
+edit	عدل
+alert	إنذار
+updateSuccessful	وكان التحديث الناجحة!
+updateUnsuccessful	وقال إن البيانات لم ترفعها بنجاح.
+updateCSUsuccessful	وكان نظام الترميز لم ترفعها بنجاح.
+error	خطأ
+saveCompleted	حفظ المنجزة
+updateCompleted	تحديث المنجزة
+deleteCompleted	حذف المنجزة
+deleteSuccessful	وحذف بنجاح!
+datasetUploaderForm	نموذج البيانات رافع
+datasetUploaderCause	السبب المحتمل : مجموعة بيانات مع هذا المفتاح (المصدر periodTypeCode layerCode refGeoUnit patternType المنطقة) موجود بالفعل. لا يمكنك تحديث هذه البيانات وأنتم ليست مالكة لهذا المورد.
+datasetFile	ملف البيانات
+metadataFile	ملف البيانات الوصفية
+codesFile	رموز ملف
+mappingFile	ملف رسم الخرائط
+required	مطلوب
+resourceType	نوع المورد
+file	ملف
+associatedMetadataFile	البيانات الوصفية المرتبطة ملف
+associatedSourceMetadataFile	البيانات الوصفية المرتبطة ملف المصدر
+associatedDestinationMetadataFile	البيانات الوصفية المرتبطة الملف الوجهة
+codingSystem	نظام الترميز
+information	معلومات
+delimiterExplanation	محدد كما تستخدم للفصل بين الحقول في الملف الذي تم تحميله
+uploadPolicyExplanation	تجاهل تحديث أو قيمة الكتابة فوق القيمة ، في حال حقول البيانات الرئيسية موجودة بالفعل في قاعدة البيانات
+remarks	ملاحظات
+fileDelimiter	ملف محدد
+uploadSuccessful	وكان تحميل ناجح!
+uploadUnsuccessful	وكان تحميل غير الناجحة.
+ShapeFile	شكل ملف
+ShapeFileUploaderForm	شكل ملف رافع نموذج
+FinalShapeForm	الشكل النهائي ملف نموذج
+GeotiffUploaderForm	GeoTiff رافع نموذج
+Geotiff	GeoTiff
+ExternalGraphicUploaderForm	نموذج مخطط خارجي رافع
+ExternalGraphic	ExternalGraphic
+SldUploaderForm	الحزب الديمقراطي اليساري رافع نموذج
+SldFile	ملف الحزب الديمقراطي اليساري
+process	عملية
+noDataset	الملف المحدد لا البيانات
+errorSelectDataset	الرجاء اختيار ملف البيانات
+noMetadata	الملف المحدد لا الفوقية الملف
+errorSelectMetadata	الرجاء تحديد التعريف الخاص بك
+successful	ناجح
+welcome	ترحيب
+about	حول
+gettingStarted	الابتداء
+quickStartGuide	دليل البدء السريع
+helpOnline	مساعدة على الانترنت
+tutorials	دروس خصوصية
+openProject	فتح مشروع
+openMap	فتح خريطة
+search	بحث
+empty	فارغ
+country	بلد
+getMetadataTemplate	الحصول على البيانات الوصفية قالب
+overwrite	الكتابة
+ignore	تجاهل
+replace	استبدل
+uploadPolicy	تحميل سياسة
+badDatasetExtension	البيانات لم يكن الملف في شكل كسف. أو لا يحتوي على '. كسف' في اسمها. يرجى التحقق من ملف البيانات.
+badMetadataExtension	الفوقية الملف ليس في شكل أكس أم أل. أو لا تحتوي على '_metadata.xml' في اسمها. يرجى مراجعة ملف التعريف الخاص بك.
+source	مصدر
+periodTypeCode	الفترة نوع
+browserAlert	كنت تستخدم انترنت اكسبلورر 6 أو ما شابه ذلك. يتم عرضها بشكل أفضل محطة العمل باستخدام إنترنت إكسبلورر 7 / 8 وفايرفوكس 3. قد تكون بعض الصفحات لا تعرض بشكل صحيح.
+fontSize	حجم الخط
+color	اللون
+position	موقف
+yes	نعم
+no	لا
+numericValue	القيمة الرقمية
+textValue	مؤهل
+date	تاريخ
+indicator	مؤشر
+measurementUnit	وحدة القياس
+changeBanner	تغيير الشعار
+leftImage	ترك ملف الصورة
+rightImage	ملف الصورة الصحيحة
+chart	خريطة
+barChart	شريط
+areaChart	منطقة
+barLineChart	شريط / الخط
+coneChart	مخروط
+lineChart	خط
+pieChart	فطيرة
+pyramidChart	هرم
+scatterChart	تبعثر
+tubeChart	أنبوب
+chartType	حدد نوع التخطيط
+chartWizard	رسوم بيانية
+selectData	حدد البيانات
+formatChart	تنسيق التخطيط
+axisX	حدد المحور العاشر
+axisY	حدد محور ص
+axisXValues	تحديد قيم س
+axisYValues	تحديد قيم ص
+otherDim	الأبعاد الأخرى
+chartTitle	لقب
+chartSize	الرسم البياني الحجم (مقصف)
+dimension	بعد
+flipAxis	الوجه المحور
+legend	أسطورة
+showLegend	وتظهر الأيقونات
+position	موقف
+disposition	ترتيب
+XAxisTile	(س) محور العنوان
+YAxisTile	(ص) المحور العنوان
+showLabels	وتظهر تسميات
+rotateLabels	تدوير تسميات
+chartViewer	التخطيط عارض
+datasetList	قائمة البيانات
+selectChartAxis	حدد محور التخطيط
+selectDimValues	حدد البعد القيم
+label	التسميات
+zoomIn	تكبير
+zoomOut	التصغير
+background	خلفية
+template	قالب
+reportWizard	تقرير
+addResourceToReport	أي نوع من الموارد هل تريد ان تضيف؟
+chooseResource	اختيار الموارد
+resourceList	قائمة الموارد
+blankReport	تقرير فارغ
+moveUp	تحريك للأعلى
+moveDown	تحريك للأسفل
+space	الفضاء
+horizontalBar	قضيب أفقي
+nextnext	التالي
+back	ظهر
+stretchHorizonatal	امتداد أفقي
+stretchVertical	امتداد عمودي
+stretchHorVer	امتداد أفقي وعمودي
+scale	جدول
+size	حجم
+visible	مرئي
+axes	محاور
+creatingChart	إنشاء تخطيط
+updatingChart	تحديث التخطيط
+creatingReport	إنشاء تقرير
+retrievingData	استرجاع البيانات
+ccbs	CCBS
+ccbsTool	CCBS أداة
+table	طاولة
+parameters	معلمات
+selectAdate	حدد تاريخ
+exportInPDF	التصدير في قوات الدفاع الشعبي
+exportInExcel	تصدير في إكسل
+share	حصة من الموارد مختارة (ق)
+download	تنزيل الموارد مختارة (ق)
+viewCommunicationResourceMetadata	عرض البيانات الوصفية الاتصالات الموارد
+viewNetwork	عرض الشبكة
+info	معلومات
+pleaseLogin	من أجل تحميل مورد تحتاج إلى أن يكون دخولك. الرجاء الدخول.
+pleaseLoginShare	من أجل مشاركة الموارد تحتاج إلى أن يكون دخولك. الرجاء الدخول.
+localId	الهوية المحلية
+digest	هضم
+host	مضيف
+hostLabel	المضيف تسمية
+group	مجموعة
+privilege	امتياز
+communicationModuleSettings	إعدادات الاتصال الوحدة
+parametersSet	تم تعيين المعلمات الاتصالات وحدة نمطية.
+setParameters	تعيين معلمات
+communicationResourceHasBeenDeleted	تم حذف الاتصال من الموارد. يرجى تحديث النشرة المصورة.
+resourceHasBeenShared	وقد تقاسم الموارد.
+resourceHasBeenDownloaded	تم تحميلها من الموارد. الرجاء تحديث الخاص بك الموارد المحلية 'علامة التبويب.
+communicationModule	الاتصال الوحدة
+remoteResources	بعيد الموارد
+localResources	الموارد المحلية
+dataset	حزمة بيانات
+controller	تحكم
+controls	ضوابط
+localSearch	البحث المحلي
+remoteSearch	البحث عن بعد
+afterDownload	بعد تنزيل
+downloadAndDoNothing	تنزيل والقيام بأي شيء
+downloadAndOpenAsTable	تحميل وفتح باسم الجدول
+downloadAndOpenAsChart	تحميل وفتح والتخطيط
+networkMonitor	مراقب شبكة الاتصال
+addNode	إضافة عقدة
+showNodeInfo	وتظهر عقدة معلومات
+downloadingFromNode	تحميله من عقدة
+loadingTable	تحميل الجدول...
+loadingChart	تحميل معالج التخطيطات...
+refresh	تحديث
+sharingResource	تقاسم الموارد (ق)...
+sharingResourceWithId	تقاسم الموارد مع معرف
+sharingToPeer	تبادل للند
+thisNodeSeemsToBeOffAreYouSureYouWantToAddIt	هذه العقدة يبدو أن الخروج ، هل أنت متأكد من أنك تريد إضافته؟
+confirmYourChoice	تأكيد اختيارك
+invalidUrl	عنوان غير صالح
+allFieldsAreRequired	جميع الحقول مطلوبة
+nodeHasBeenAdded	وقد أضاف عقدة
+searchProducedNoResults	أنتجت البحث أية نتائج.
+dcmtImporter	Dcmt مستورد
+codeSystem	نظام الترميز
+codes	مدونات
+mapping	رسم الخرائط
+mappedCodes	تعيين رموز
+browse	تصفح
+classImport	استيراد التصنيف
+added	وأضاف
+failedImporting	فشل الاستيراد
+classification	تصنيف
+imporT	استيراد
+searchBy	البحث عن طريق
+search	بحث
+in	في
+ConvertInto	تحويل إلى
+findConvert	البحث
+code	رمز
+label	ملصق
+langCode	لانج
+description	وصف
+commodities	السلع
+resultList	نتيجة قائمة
+elements	العناصر
+element	عنصر
+attribute	السمة
+attributes	سمات
+excluding	ما عدا
+createCode	Dcmt قانون الخالق
+saveToFile	حفظ إلى ملف
+saveToDb	حفظ لديسيبل
+removeCode	إزالة قانون
+to	إلى
+excludingToolTip	يستبعد العناصر المختارة مع خصائصها
+searchDcmt	البحث Dcmt قانون
+resultedTree	أدى شجرة
+resultedDcmtCode	أدى قانون Dcmt
+delimiter	الفاصل
+createNewElement	إنشاء عنصر جديد
+createNewAttribute	إنشاء سمة جديدة
+mapped	تعيين
+confirm	حفظ إلى قاعدة بيانات؟
+explonatoryNote	مذكرة تفسيرية
+structure	هيكل
+searchCode	البحث مدونة
+createDcmtCode	قانون إنشاء Dcmt
+all	جميع
+retrivingCodes	استرجاع رموز
+badFormat	والمدونة في تنسيق فاسدة
+codingUploader	نظام الترميز رافع
+codingMappingUploader	رسم الخرائط رافع
+codingSystemSource	نظام الترميز ضمني
+codingSystemDestination	ترميز نظام التوقيت الصيفي
+badHierarchy	هرمية التضارب مع
+badCode	اقترح قانون
+codingFindConvert	البحث عن رموز
+codingsystemFile	نظام تشفير الملفات
+metadataFile	ملف البيانات الوصفية
+category	خصائص
+uploadingCodes	تحميل رموز
+hierarchyUploader	ترميز رافع نظام التسلسل الهرمي
+codesUploader	نظام الترميز رافع
+mappingUploader	نظام الترميز تعيينات رافع
+addItems	إضافة عناصر
+newItemsAdded	إضافة بنود جديدة
+selectedItemsAddedToList	لقد تمت إضافة العنصر المحدد (ق) إلى قائمة
+title	معلومات الأمن الغذائي لاتخاذ القرار
+country	بلد
+dates	مواعيد
+language	لغة
+createECReport	إنشاء تقرير المفوضية الأوروبية
+specialCountryBriefHaiti	موجز خاص عن زلزال هايتي
+source	مصدر
+keyMessages	مفتاح الرسائل
+background	خلفية
+economicIndicators	المؤشرات الاقتصادية
+totalPopulation	مجموع السكان
+populationGrowthRate	معدل النمو السكاني
+gniPerCapita	الدخل القومي الإجمالي للفرد الواحد ، حزب الشعب الباكستاني $
+populationBelow1D	كسب السكان أقل من 1 $ في اليوم الواحد تعادل القوة الشرائية
+ruralPopulation	سكان الريف
+agricultureValueAdded	الزراعة ، القيمة المضافة (٪ من الناتج المحلي الإجمالي)
+foodConsuption	الغذاء Consuption
+undernourishedPopulation	السكان يعانون من سوء التغذية
+cerealShare	حصة الحبوب في مجموع استهلاك الطاقة الغذائية
+meatShare	اللحوم حصة في إجمالي استهلاك الطاقة الغذائية
+topFiveCropProductions	أعلى خمسة المحاصيل للإنتاج
+metricTonnes	متري طن
+crop	محصول
+sugarCane	قصب السكر
+cassava	الكسافا
+bananas	موز
+maize	الذرة
+emergencySituation	حالة الطوارئ
+foodSituation	حالة الأغذية
+tradeFlow	تدفق التجارة وحركة الناس Dispaced
+agricultureAndFAOResponse	الزراعة واستجابة منظمة الأغذية والزراعة
+governmentPolicies	سياسات الحكومة
+contacts	لمزيد من المعلومات ، يرجى الاتصال
+website	الموقع
+poweredBy	تعمل بالطاقة من جانب
+info1	ويتم تمويل ربط المعلومات واتخاذ القرار لتحسين الأمن الغذائي من قبل برنامج
+info2	الاتحاد الأوروبي وتنفذه منظمة الأغذية والزراعة للأمم المتحدة.
+importDataFrom	استيراد بيانات من
+to	إلى
+esokoPricesImporter	Esoko أسعار المستورد
+systemIsQueryingEsoko	نظام الاستعلام Esoko لجلب البيانات الخاصة بك
+pleaseWait	يرجى الانتظار...
+info	معلومات
+error	خطأ
+warning	تحذير
+dataSuccessfullyImported	بيانات استيرادها بنجاح
+pleaseSelectACountryFromTheList	الرجاء اختيار البلد من قائمة
+moveTheSlider	حرك مربع التمرير لتغيير الوقت الفاصل
+importPrices	أسعار الاستيراد
+closeWindow	إغلاق النافذة
+afghanistan	أفغانستان
+benin	بنين
+burkinaFaso	بوركينا فاسو
+cameroon	الكاميرون
+elSalvador	السلفادور
+gambia	غامبيا
+ghana	غانا
+guinea	غينيا
+guineaBissau	غينيا بيساو
+honduras	هندوراس
+ivoryCoast	ساحل العاج
+kenya	كينيا
+madagascar	مدغشقر
+malawi	ملاوي
+mali	مالي
+mozambique	موزامبيق
+niger	النيجر
+rwanda	رواندا
+senegal	السنغال
+sierraLeone	سيراليون
+southAfrica	جنوب أفريقيا
+sudan	سودان
+tanzania	تنزانيا
+togo	توغو
+uganda	أوغندا
+vietnam	فيتنام
+step_a_suggestion	ويدعم كل تنسيقات إكسل وكسف هذا الايداع. إذا لم يكن لديك ملف التعريف صالحة في شكل أكس أم أل هذه الأداة سوف دليل لكم من خلال استيراد البيانات الخاصة بك في بضع خطوات سهلة.
+step_b_suggestion	هذه هي رؤوس من البيانات الخاصة بك. الرجاء إقران نوع البيانات إلى كل واحد منهم ، ونظام الترميز ، إذا لزم الأمر.
+step_c_suggestion	يرجى تقديم بيانات المصدر وأخذ العينات تردد (يومية أو شهرية أو...).
+step_d_suggestion	هذه هي قائمة من قواعد البيانات الموجودة بالفعل في الديسيبل التي تتطابق مع البيانات الخاصة بك هيكل ، ومصدر وتردد أخذ العينات البيانات مقسمة حسب الفئة. يمكنك ان تختار إما لإلحاق البيانات الخاصة بك إلى القائمة من خلال اختيار واحد من دخول الطاولة ، أو لتخزين المعلومات الخاصة بك في الهيكل الجديد.
+step_e_suggestion	وقد تم استيراد بياناتك بنجاح في النظام. يمكنك الآن تصور أو تصديره في أشكال مختلفة.
+step_m_suggestion	يرجى ملء الحقول أدناه الفوقية. وسوف تستخدم هذه المعلومات من قبل مستكشف الموارد لتنفيذ عمليات البحث. (الخانات إلزامية في أحمر).
+step_mu_suggestion	ليتم تطبيقها الرجاء تعيين وحدة القياس (على سبيل المثال دولار) ، لهذه البيانات ورأس أعماله (العملة على سبيل المثال). الرجاء إضافة رأس لكمية الممثلة في هذه البيانات (مثل السعر) أيضا.
+datasetUploader	تحميل مجموعة البيانات (إكسل أو كسف)
+step_a_button	1. تحميل
+step_b_button	2. المعايير
+step_c_button	3. مصدر
+step_d_button	4. استيراد
+ignoreTooltip	ترك القيم الموجودة على النظام من أجل الإدخالات الصراع
+overwriteTooltip	الكتابة فوق القيم الموجودة في النظام من أجل الإدخالات الصراع
+pleaseSelect	يرجى تحديد.
+codeList_step_a_suggestion	إذا لم يكن لديك ملف التعريف صالحة في شكل أكس أم أل هذه الأداة سوف دليل لكم من خلال الاستيراد من قائمة التعليمات البرمجية في بضع خطوات سهلة.
+codeList_step_b_suggestion	يرجى تقديم العنوان ، وقائمة رموز نوع (السلع ، الجغرافية ، المؤشر) وصفا موجزا لقائمة المدونة الخاصة بك.
+codeListUploader	رمز قائمة رافع
+description	وصف
+step_service_message_suggestion	عاد النظام الرسالة التالية :
+codeListSuccess	وقد تم الرفع البيانات الخاصة بك بنجاح ، يمكنك الآن إغلاق هذا الإطار.
+sendToProject	أرسل إلى المشروع
+sendToReport	أرسل إلى تقرير
+sendToPDF	إرسال لقوات الدفاع الشعبي
+export	تصدير
+sendToExcel	إرسال لإكسل
+sendToPowerPoint	أرسل إلى باور بوينت
+print	طباعة
+undo	تراجع
+viewMetadata	عرض البيانات الوصفية
+security	أمن
+help	مساعدة
+changeIndexParameters	معلمات تغيير مؤشر
+resetChanges	إعادة تعيين التغييرات
+updateRows	تحديث الصفوف المختارة
+saveDataset	انقاذ مجموعة بيانات
+gaulCodeSelector	قانون فرنسي محدد
+gaulLastSelection	اختيار آخر
+gaulNoneSelectedYet	اختيار لا شيء بعد
+gaulWorld	عالم
+gaulCode	منطقة
+gaulCodeNotAvailable	قانون فرنسي غير متوفرة
+hsCodeSelector	النظام المنسق قانون محدد
+hsLastSelection	اختيار آخر
+hsNoneSelectedYet	اختيار لا شيء بعد
+hsCode	رمز النظام المنسق
+hsCodeNotAvailable	رمز النظام المنسق غير متوفرة
+gaulLabel	منطقة
+commodityLabel	سلعة
+priceTypeLabel	السعر
+measurementUnitLabel	وحدة القياس
+transportLabel	نقل
+dataSourceLabel	مصدر البيانات
+accesTypeLabel	وصول
+select	حدد
+parameters	معلمات
+dataEntry	إدخال البيانات
+dailyData	البيانات اليومية
+weeklyData	البيانات الأسبوعية
+monthlyData	البيانات الشهرية
+annualData	البيانات السنوية
+january	يناير
+february	فبراير
+march	مارس
+april	نيسان
+may	قد
+june	يونيو
+july	يوليو
+august	أغسطس
+september	سبتمبر
+october	تشرين الأول
+november	تشرين الثاني
+december	ديسمبر
+monday	يوم الاثنين
+tuesday	الثلاثاء
+wednesday	الأربعاء
+thursday	الخميس
+friday	الجمعة
+saturday	السبت
+sunday	الأحد
+collectionYear	جمع السنة
+collectionDay	جمع اليوم
+fpiTool	أداة مؤشر اسعار المواد الغذائية
+avg	متوسط
+indexCalculator	مؤشر حاسبة
+basePriceStartYear	قاعدة السعر من السنة
+basePriceEndYear	قاعدة السعر إلى السنة
+indexStartYear	من القيم
+indexEndYear	إلى القيم
+baseQuantity	قاعدة الكمية
+indexType	مؤشر
+subIndexType	مؤشر الفرعية
+wholesalePrice	بالجملة
+consumerPrice	مستهلك
+producerPrice	منتج
+retailPrice	بيع بالتجزئة
+inputPrice	مساهمة
+internationalPrice	دولي
+laspeyres	اسبيريس
+paasche	باش
+fischer	فيشر
+indexTableHeader1	التاريخ
+indexTableHeader2	قاعدة الأسعار
+indexTableHeader3	الأسعار
+indexTableHeader4	الرئيسية
+calculate	حساب
+clearTable	جدولا واضحا
+result	النتائج
+removeRow	إزالة صف
+information	معلومات
+thereIsNoDataMatchingYourSearchParameters	لا توجد بيانات المعلمات التي تتوافق مع البحث
+wheatPriceMonthlyWeighted	القمح المرجح السعر الشهري
+maizePriceMonthlyWeighted	الذرة المرجح السعر الشهري
+barleyPriceMonthlyWeighted	الشعير الموزون السعر الشهري
+ricePriceMonthlyWeighted	الأرز المرجح السعر الشهري
+worldExportWeightsGrainsTotal	العالم تصدير الحبوب مجموع الأوزان
+worldExportWeightsCoarseGrainsMaize	الأوزان تصدير الحبوب الخشنة الذرة العالمية
+worldExportWeightsCoarseGrainsBarley	الأوزان تصدير الحبوب الخشنة العالمي الشعير
+grainsPriceIndex	مؤشر اسعار الحبوب
+coarseGrainsPriceIndex	الحبوب الخشنة مؤشر السعر
+cerealsPriceIndex	مؤشر اسعار الحبوب
+cerealsIndex	مؤشر الحبوب
+updateTable	تحديث الجدول
+wheatFixedAggregate	القمح الإجمالية الثابتة
+maizeFixedAggregate	الذرة الكلي الثابتة
+barleyFixedAggregate	الشعير تجميع الثابتة
+riceFixedAggregate	الأرز تجميع الثابتة
+grainsFixedAggregate	تجميع الحبوب الثابتة
+coarseGrainsFixedAggregate	الحبوب الخشنة الثابتة الإجمالية
+coarseGrainsMaizeFixedAggregate	الذرة الثابتة تجميع الحبوب الخشنة
+coarseGrainsBarleyFixedAggregate	الحبوب الخشنة الشعير الثابتة الإجمالية
+wheatFixedWeight	القمح وزن ثابت
+barleyFixedWeight	الشعير وزن ثابت
+maizeFixedWeight	الذرة وزن ثابت
+riceFixedWeight	الأرز وزن ثابت
+wheatDenominator	القاسم المشترك القمح
+maizeDenominator	القاسم المشترك الذرة
+barleyDenominator	القاسم المشترك الشعير
+riceDenominator	القاسم المشترك الأرز
+grainsDenominator	القاسم المشترك الحبوب
+coarseGrainsMaizeDenominator	الحبوب الخشنة الذرة القاسم المشترك
+coarseGrainsBarleyDenominator	الحبوب الخشنة والشعير والقاسم المشترك
+coarseGrainsDenominator	الحبوب الخشنة القاسم المشترك
+coarseGrainsBarleyFixedWeight	الحبوب الخشنة الشعير وزن ثابت
+date	تاريخ
+foodPriceIndex	مؤشر اسعار المواد الغذائية
+meatPriceIndex	مؤشر اسعار اللحوم
+dairyPriceIndex	مؤشر أسعار الألبان
+ricePriceIndex	مؤشر أسعار الأرز
+oilsPriceIndex	مؤشر اسعار الزيوت
+softOilsPriceIndex	مؤشر أسعار الزيوت الناعمة
+edibleOilsPriceIndex	مؤشر سعر الزيوت الصالحة للأكل
+sugarPriceIndex	مؤشر اسعار السكر
+monthly	شهريا
+annual	سنوي
+timePeriod	الفترة الزمنية
+datasetType	نوع البيانات
+accessType	وصول نوع
+measurementUnit	وحدة القياس
+dataSource	مصدر البيانات
+transportType	نوع النقل
+market	سوق
+month	شهر
+year	عام
+currency	عملة
+publicAccess	جمهور
+privateAccess	خاص
+sharedAccess	مشترك
+land	أرض
+air	هواء
+sea	بحر
+isCurrency	هي العملة؟
+isVisible	واضح؟
+showExistingData	إظهار البيانات الموجودة
+highQualityIndicaIndex	ارتفاع مؤشر الجودة هندية
+lowQualityIndicaIndex	انخفاض مؤشر نوعية هندية
+japonicaIndex	Japonica فهرس
+aromaticIndex	مؤشر العطرية
+riceIndex	مؤشر الأرز
+poultryPriceIndex	الدواجن السعر المرجح
+pigPriceIndex	خنزير السعر المرجح
+bovinePriceIndex	الأبقار السعر المرجح
+ovinePriceIndex	الأغنام السعر المرجح
+wheatPriceIndex	القمح السعر المرجح
+mealsPriceIndex	مؤشر اسعار وجبات الطعام
+feedPriceIndex	مؤشر أسعار الأعلاف
+calculatingIndex	حساب مؤشر
+wheatIndex	مؤشر القمح
+mapView	عرض خريطة
+newsView	أخبار
+layers	طبقات
+pleaseSelectACountry	الرجاء اختيار بلد
+pleaseSelectAWMSServer	اختيار موفر طبقة
+pleaseSelectALayer	يرجى تحديد طبقة
+pleaseSelectAMap	يرجى تحديد الفئة
+areaOfInterest	مجال الاهتمام
+showAll	وتظهر جميع
+hideAll	إخفاء الكل
+removeAll	إزالة جميع
+removeLayer	إزالة طبقة
+featureInfo	ميزة المعلومات
+moveLayerUp	تحرك لأعلى طبقة
+moveLayerDown	تحرك طبقة أسفل
+legend	أسطورة
+addLayer	إضافة طبقة
+controller	خريطة مدير
+availableResources	البيانات المتاحة
+openResource	فتح الموارد
+title	لقب
+resourceType	نوع المورد
+abstractAbstract	تجريدي
+dateLastUpdate	تاريخ اخر تحديث
+source	مصدر
+provider	مزود
+keywords	كلمات مفتاحية
+category	خصائص
+refreshAllNews	تحديث جميع الأخبار
+exportMap	خريطة تصدير
+exporting	تصدير
+retrievingWMSinfo	استرداد الطبقات خادم WMS
+serverDown	WMS الملقم باستمرار
+selectAprovince	الرجاء اختيار قسم
+exportImage	تصدير صورة
+cropCalendar	المحاصيل التقويم
+toolName	هايتي الأمن الغذائي في حالات الطوارئ أداة
+exportAsImage	تصدير وصورة
+zoomToCountry	التكبير إلى الدولة
+contact	نقطة الاتصال
+zoomToLayer	التكبير لطبقة أحدث
+hotlink	انقر للحصول على البيانات
+currentMapView	عرض خريطة الحالي
+showHideLegend	عرض أسطورة إخفاء /
+showHideLayer	وتظهر طبقة إخفاء /
+layerOpacitySlider	طبقة التعتيم المنزلق
+baseLayerCannotBeMoved	يمكن للقاعدة طبقة لا يمكن نقل
+baseLayerCannotBeRemoved	يمكن للقاعدة طبقة لا يمكن إزالتها
+featureInfoInstructions	انقر على طبقة ، ثم على الخريطة لعرض تفاصيل الموقع في لوحة المعلومات ميزة أدناه
+baseLayer	قاعدة طبقة
+viewMetadata	عرض البيانات الوصفية
+englishVersion	الإنجليزية
+frenchVersion	français
+mapsGallery	خريطة المعرض
+selectACategory	حدد فئة
+selectAMap	حدد الخريطة
+exportPDFMap	خريطة تصدير الشعبي
+smallScreen	الشاشة الصغيرة (800 × 600)
+mediumScreen	شاشة المتوسط (1024 X 768)
+bigScreen	شاشة كبيرة (1280 X 650)
+contactUs	اتصل بنا
+widthAndLanguage	عرض واللغة
+acknowledgement	ونود أن نشكر المنظمات التالية لمساهماتها
+poweredBy	مدعوم من قبل محطة العمل المبكر في إطار منظمة الأغذية والزراعة للمعلومات الأمن الغذائي المفوضية الأوروبية لاتخاذ القرارات برنامج ، تم تطويره بالاشتراك مع منظمة الأغذية والزراعة للأراضي والمياه شعبة
+helpOnline	كتيب
+listOflayers	حدد الطبقات
+ndvi	النباتات مؤشر تشمل الدليل الموحد
+countryBoundaries	حدود البلاد
+selectAdate	تحديد تاريخ
+layersLegend	أساطير من الطبقات
+chartTitle	أحوال النباتات المقدرة (المساحة الكلية من قبل الإدارات)
+ndvi_va	النباتات مؤشر تشمل الدليل الموحد لل-- الفرق مع متوسط
+agro_land	الرئيسية الأراضي الزراعية
+exportReport	تقرير تصدير
+yAxisMeasurementUnit	في منطقة كيلومتر مربع
+loadingChartData	تحميل الرسم البياني
+gaul1	الإدارات
+gaul1cities	إدارات المدن
+createIPCWorkflow	إنشاء سير العمل التصنيف الدولي للبراءات
+startIPC	بدء التصنيف الدولي للبراءات
+createNewWorkflow	إنشاء سير العمل الجديدة التصنيف الدولي للبراءات من أجل :
+geographicArea	المنطقة الجغرافية
+referenceLayer	المرجع طبقة
+pleaseSelect	الرجاء الإختيار
+GAUL0	حدود البلاد
+GAUL1	الإدارية المستوى 1
+GAUL2	الإدارية المستوى 2
+GAUL3	الإدارية المستوى 3
+ipcWorkflow	التصنيف الدولي للبراءات سير العمل
+ipcWorkflows	التصنيف الدولي للبراءات مهام سير العمل
+createIPCReport	إنشاء تقرير التصنيف الدولي للبراءات
+selectGeographicArea	تحديد المنطقة الجغرافية
+selectWorkflow	حدد سير العمل
+createReport	إنشاء تقرير
+showIPCWorkflows	عرض سير العمل التصنيف الدولي للبراءات
+showIPCWorkflowsFor	سير العمل لإظهار التصنيف الدولي للبراءات
+IPC	المرحلة متكاملة للأمن الغذائي التصنيف
+noWorkflowMessage	لا توجد مسارات. لإنشاء سير عمل جديد الرجاء الضغط على الزر.
+createWorkflow	إنشاء سير العمل
+noWorkflowToCreateReportMessage	لا توجد أية مهام سير العمل لإنشاء تقرير من. لإنشاء سير عمل جديد الرجاء الضغط على الزر.
+creatingNewWorkflow	إنشاء سير العمل الجديدة
+savingWorkflow	إنقاذ سير العمل
+workflowSaved	سير العمل المحفوظة
+areYouSure	هل أنت متأكد؟
+noSelectedProvinces	هناك لم يتم تحديد المحافظات
+openingWorkflow	افتتاح سير العمل
+file	ملف
+newNew	جديد
+project	مشروع
+map	خارطة
+text	نص
+openText	نص
+newText	نص
+createText	خلق
+createTextGroup	إنشاء نص الفريق
+textGroup	نص الفريق
+chart	رسم بياني 
+report	تقرير
+latex	اللثي تقرير
+dataset	مجموعة البيانات
+about	حول
+login	تسجيل الدخول
+logout	خروج
+open	فتح
+codingSystem	نظام الترميز
+table	جدول
+view	رأي
+projectManager	مدير المشروع
+resourceExplorer	مستكشف المصادر
+toolbox	صندوق الأدوات
+welcomePage	صفحة ترحيب
+tools	أدوات
+foodPriceIndex	مؤشر اسعار المواد الغذائية
+countryProfiles	الملامح القطرية
+french = FranÃ§ais
+spanish = EspaÃ±ol
+chinese = ä¸­æ
+russian = Ð ÑÑÑÐºÐ¸Ð¹
+bengali = à¦¬à¦¾à¦à¦²à¦¾
+armenian = Õ°Õ¡Õµ
+maori = MÄori
+arabic = Ø§ÙØ¹Ø±Ø¨ÙØ©
+giews	النظام العالمي
+giewsCropCalendars	التقاويم المبكر المحاصيل
+giewsEarlyWarning	النظام العالمي للإنذار المبكر
+openLatestUnfavourableProspectsTable	فتح جدول آخر الآفاق غير المواتية
+openLatestCountriesInCrisisTable	فتح آخر في بلدان الأزمة الجدول
+showExportLatestMapsAndTables	إظهار / تصدير أحدث الخرائط والجداول
+dcmt	DCMT
+findCode	العثور على مدونة
+dcmtCodesCreator	DCMT رموز الخالق
+olap	جداول متعددة
+olapTool	الجدول أداة متعددة الأبعاد
+ecReports	المفوضية الأوروبية تقارير
+ecCountryBriefs	موجز الاخبار المفوضية الأوروبية القطرية
+ecHaitiReports	المفوضية الأوروبية تقرير هايتي
+queryBuilder	منشئ
+dataManagement	إدارة البيانات
+uploadData	تحميل البيانات
+uploadDataset	تحميل مجموعة بيانات (كسف)
+uploadCodingSystem	تحميل نظام الترميز
+uploadShape	تحميل شكل طبقة
+uploadRaster	تحميل طبقة النقطية
+uploadImage	تحميل صورة
+metadataEditor	الفوقية محرر
+datasetMetadataEditor	البيانات الفوقية محرر
+codingSystemMetadataEditor	محرر نظام ترميز البيانات الوصفية
+codingMappingUploader	الترميز تعيين رافع
+codingHierarchyUploader	ترميز التسلسل الهرمي للرافع
+informationeXchange	تبادل المعلومات
+informationeXchangeURL	تبادل المعلومات رابط
+xImporter	س للمستورد
+informationeXchangeTool	تبادل المعلومات أداة
+rss	آر إس إس
+createDatasetRSSLight	إنشاء مجموعة بيانات آر إس إس (سريع)
+createDatasetRSSHeavy	إنشاء مجموعة بيانات آر إس إس (كاملة)
+createTextRSS	آر إس إس إنشاء نص
+createRasterRSS	آر إس إس إنشاء النقطية
+createVectorRSS	آر إس إس إنشاء المتجهات
+settings	إعدادات
+informationeXchangeURL	تبادل المعلومات رابط
+administration	إدارة
+security	أمن
+userManager	إدارة المستخدمين
+groupManager	مجموعة إدارة
+permissionManager	إذن إدارة
+maps	خرائط
+runLayerImporter	تشغيل طبقة مستورد
+runGeoTIFFHarvester	تشغيل GeoTIFF الحاصدة
+reRunGSSynch	إعادة تشغيل GSSynch
+giewsMaps	النظام العالمي الخرائط
+giewsCountryProjects	مشاريع المبكر القطرية
+harvestGIEWSCharts	الحصاد المبكر رسوم بيانية
+backup	دعم
+backupDB	النسخ الاحتياطي الديسيبل
+restoreDB	استعادة الديسيبل
+importDefaultResources	موارد الاستيراد الافتراضي
+importDefaultLayers	طبقات استيراد الافتراضي
+importDefaultCodingSystems	استيراد نظم الترميز الافتراضي
+countryCerealBalanceSheets	CCBS -- البلد رصيد الحبوب صفائح
+integratedPhaseClassification	التصنيف -- التصنيف المتكامل المرحلة
+ipcWorkflow	التصنيف الدولي للبراءات سير العمل
+ipcReports	تقارير التصنيف
+developersArea	المطورين المنطقة
+ecNews	المفوضية الأوروبية أخبار
+help	مساعدة
+esoko	Esoko أسعار المستورد
+fieldClimate	FieldClimate مستورد
+quickStartGuide	دليل البدء السريع
+helpOnline	مساعدة
+giewsWorkstationPortal	بوابة محطة العمل المبكر
+forum	منتدى
+wiki	ويكي
+exportShapefile	شكل ملف تصدير
+language	لغة
+excelImporter	تحميل مجموعة البيانات (إكسل أو كسف)
+bangladeshReport	تقرير بنغلاديش
+uploadSLD	تحميل الحزب الديمقراطي اليساري
+changeBanner	تغيير الشعار
+metadata	البيانات الوصفية
+saveMetadata	تحديثات حفظ البيانات الوصفية
+undoChanges	التغييرات تراجع
+commaSeparatedKeywords	يجب أن يتم فصل كل كلمة رئيسية بفاصلة
+formatDate	من فضلك أدخل التاريخ كما س س س س ملم ، دد
+linkedResources	ربط الموارد
+metadataTitle	لقب
+metadataAbstract	تجريدي
+metadataKeywords	كلمات مفتاحية
+metadataCategories	تصنيف الموارد
+metadataProvider	مزود
+metadataSource	مصدر
+metadataContact	نقطة الاتصال
+metadataRegion	منطقة
+metadataStartDate	تاريخ البدء
+metadataEndDate	نهاية التاريخ
+metadataDateLastUpdate	تاريخ آخر تعديل
+metadataPeriodTypeCode	تواتر البيانات
+metadataSharingCode	تقاسم سياسة
+metadataCode	رمز
+metadataClickToEdit	انقر للتحرير
+abstractAbstract	تجريدي
+keywords	كلمات مفتاحية
+provider	مزود
+source	مصدر
+contact	نقطة الاتصال
+startDate	تاريخ البدء
+endDate	نهاية التاريخ
+dateLastUpdate	تاريخ آخر تعديل
+periodTypeCode	تواتر البيانات
+sharingCode	تقاسم سياسة
+currency	عملة
+measurementOfUnit	وحدة القياس
+precision	دقة
+fillMissingRequiredFields	يرجى ملء الحقول المطلوبة مفقودة
+optional	اختياري
+requiredField	حقل مطلوب
+all	جميع
+requiredFieldsMissing	الحقول المطلوبة مفقودة
+categories	الفئات
+layerCodeSet	المرتبطة طبقة
+resourceCreatedSuccessfully	تم إنشاء المورد بنجاح!
+metadataForm	نموذج البيانات الوصفية
+refGeoUnit	مرجع الوحدة الجغرافية
+layerCode	طبقة قانون
+metadataEditorFieldsDescriptions	عرض البيانات الوصفية الميدانية وصف محرر
+stepOne	محرر الفوقية يمكن إنشاء بيانات التعريف. أكس الملفات التي يجب أن تكون مرتبطة إلى قواعد البيانات وطبقات عند تحميلها في محطة العمل.
+
+قائمة البيانات الخاصة بك إذا بالفعل تحديد البيانات من نوع محدد مسبقا في محطة العمل أو حدد "إنشاء جديد" لإنشاء مجموعة بيانات قالب جديد. [الحقول في الحمراء إلزامية]
+stepTwo	تحديد مفاتيح البيانات (وهذه هي السمات التي تميز مجموعة البيانات من قواعد البيانات الأخرى من نفس النوع التي يمكن تحميلها بالفعل في محطة العمل). الحقول [في الحمراء إلزامية]
+stepThree	أدخل معلومات حول البيانات في مجالات أدناه (مع تحوم الماوس فوق خانات لعرض التعاريف الميدان). هذه المعلومات اللازمة من أجل ضمان نجاح إدارة وتبادل البيانات في محطة العمل. [الحقول في الحمراء إلزامية]
+stepFour	تحرير عمود أو تحديد تعريفات في مجالات أدناه (تملأ الحقول وسوف في تلقائيا إذا كان لديك اختيار نوع البيانات المعرفة مسبقا). الحقول [في الحمراء إلزامية]
+tooltipabstractAbstract	وصفا موجزا لمحتوى البيانات / الموارد (ق)
+tooltiptitle	الاسم الذي يعرف البيانات / الموارد
+tooltipkeywords	أي الكلمات الرئيسية ذات الصلة لمحتوى البيانات / الموارد
+tooltipprovider	تنظيم إنتاج البيانات / الموارد
+tooltipsource	ويصف مصدر المنظمة (المنظمات) التي تنتج من البيانات الخام التي يتم ترجمة البيانات / الموارد.
+tooltipcontact	تفاصيل الاتصال (أي المنظمة ، عنوان البريد الإلكتروني ورقم / أو الهاتف.) الشخص (ق) ومنظمات (ق) المرتبطة البيانات / الموارد
+tooltipstartDate	في اليوم الأول من الفترة الزمنية التي تغطيها البيانات / الموارد
+tooltipendDate	في اليوم الأخير من الفترة الزمنية التي تغطيها البيانات / الموارد
+tooltipsharingCode	مستوى الأمان المخصصة لمجموعة البيانات / الموارد من قبل المالك الموارد (أي عامة أو خاصة أو مشتركة)
+tooltipprecision	عدد الأرقام العشرية المستخدمة للتعبير عن قيم البيانات
+tooltiprefGeoUnit	نوع من الميزات الجغرافية (مثل المدن والمناطق والطرق ، وغيرها) أن البيانات / المورد يشير إلى
+tooltiplayerCode	مجموعة تحتوي على شفرة ميزة (على سبيل المثال gaul0) المحددة في البيانات أو التي يستند طبقة
+tooltipcode	المستخدمة لإجراءات التلقائي فقط
+tooltipcategory	الموضوع الرئيسي للمجموعة البيانات / الموارد
+tooltipregion	البلد / المنطقة التي توفرت بيانات / المورد يشير إلى
+fillMandatoryFields	يرجى ملء جميع الحقول إلزامية.
+getMetadataArchive	تحميل البيانات الوصفية
+addColumn	إضافة عمود
+defineAtLeastOneColumn	يرجى تحديد ما لا يقل عن عمود واحد.
+header	رأس
+dataType	نوع البيانات
+addOption	إضافة خيار
+removeColumn	إزالة عمود
+optionName	اسم الخيار
+optionValue	خيار القيمة
+region	منطقة
+removeOption	إزالة الخيار
+createNewTemplate	إنشاء قالب جديد
+getExistingTemplate	احصل على قالب موجود
+templateName	اسم القالب
+existingTemplate	القائمة قالب
+sourceRegion	منطقة
+periodicity	تواترها
+datasetType	نوع البيانات
+generalInformation	معلومات عامة
+columnDefinition	أعمدة التعريف
+updateFailed	فشل تحديث بيانات التعريف لأنك لست صاحب هذا المورد.
+codingType	نوع الترميز
+codingName	ترميز الاسم
+chart	خريطة
+pleaseWait	يرجى الانتظار
+loading	تحميل
+info	معلومات
+filter	مرشح
+elements	العناصر
+pleaseSelectADataset	يرجى تحديد مجموعة بيانات
+pleaseSelectADimension	يرجى تحديد البعد
+dataSource	مصدر البيانات
+showLowerLevel	تظهر انخفاض مستوى
+showUpperLevel	وتظهر أعلى مستوى
+aggregateSubLevel	إجمالي الفرعية المستوى
+dimensions	الأبعاد
+values	القيم
+row	الصفوف
+subRow	شبه الصفوف (اختياري)
+column	أعمدة
+subColumn	الفرعي أعمدة (اختياري)
+dimensionToPlot	البعد لمؤامرة
+value	قيمة
+aggregationFunction	تجميع وظيفة
+sum	مجموع
+average	متوسط
+frequency	تردد
+minimum	الحد الأدنى
+maximum	أقصى
+addFilter	إضافة تصفية
+removeFilter	إزالة تصفية
+mapFilter	خريطة تصفية
+pleaseSelect	يرجى التحديد.
+geoDimension	البعد الجيو
+selectFilters	اختيار مرشحات
+createMap	إنشاء خريطة
+projectDataOnMap	بيانات المشروع على خريطة
+singleDataset	مجموعة بيانات واحدة
+multidimensionalTable	جدول متعدد الأبعاد
+controller	تحكم
+filters	مرشحات
+reset	إعادة تعيين
+showFlatData	إظهار البيانات مسطح
+createTable	إنشاء جدول
+exportPdf	تصدير الشعبي
+createMultidimensionalTable	إنشاء جدول متعدد الأبعاد
+createChart	إنشاء تخطيط
+multidimensionalTableTool	الجدول أداة متعددة الأبعاد
+settings	إعدادات
+showSingleElements	عرض عناصر واحدة
+showTotals	عرض المجاميع
+barChart	شريط القوائم
+lineChart	خط الرسم البياني
+pieChart	الرسم البياني
+singleElements	احد عناصر
+isValidUserSelection	تأكد من القيم التي اخترتها على الأعمدة والصفوف ، ثم في أعمدة الفرعية ، وأخيرا في صفوف الفرعية.
+urlInterceptorInfo	البيانات متاحة الآن في إدارة المشروع على يمينك. التصور والتحليل وظائف يمكن الوصول إليها عن طريق النقر بزر الماوس الأيمن على مجموعة البيانات.
+fsatmisHints	خ م ATMIS تلميحات.
+useFlashCharts	استخدام الرسوم البيانية فلاش
+projectManager	مدير المشروع
+untitled	بلا عنوان
+removeFromProjectManager	إزالة من مدير المشروع
+removeFromProject	إزالة من المشروع
+addResources	أضف الموارد
+createNewProject	إنشاء مشروع جديد
+loadProject	تحميل المشروع
+copyTo	نسخة ل..
+untitledProject	بدون عنوان المشروع
+projectsCannotBeAdded	لا يمكن أن تكون المشاريع وكمورد للمشروع
+resourceSuccessfullyAdded	وكانت الموارد وأضاف بنجاح
+removeProjectFromManager	إزالة المشروع من مدير المشروع
+deleteResourceFromProject	حذف الموارد من المشروع
+removeResourceFromProject	إزالة الموارد من المشروع
+hideResource	إخفاء الموارد
+showAllHiddenResources	عرض جميع الموارد المخفية
+queryBuilder	منشئ
+introTextPanelOne	الأداة منشئ يسمح لك لخلق وتنفيذ استعلامات على واحد أو أكثر قواعد البيانات في محطة العمل.
+introTextPanelTwo	
+clickToSelectDatasets	انقر لتحديد مجموعات البيانات
+checkBoxInstruction	من الجدول ، وانقر على مربع الاختيار لde-select/select مجموعة البيانات. انقر على زر التالي بعد إجراء التحديدات.
+selectedDatasets	اختيار مجموعات البيانات
+next	التالي
+previous	سابق
+equals	يساوي
+notEqualTo	لا يساوي (≠)
+isNull	باطل
+inList	في قائمة
+notInList	ليست في قائمة
+startsWith	يبدأ
+contains	يحتوي
+doesNotStartWith	لا يبدأ مع
+doesNotContain	لا يحتوي
+isLessThan	أقل من (<)
+isLessThanOrEqualTo	أقل من أو يساوي (≤)
+isGreaterThan	أكبر من (>)
+isGreaterThanOrEqualTo	أكبر من أو يساوي (≥)
+like	مثل
+in	في
+between	ومن بين
+isAfter	وبعد
+isBefore	المعروض
+alphabet	ABCDEFGHIJKLMNOPQRSTUVWXYZ
+selectRecordsWhereFollowingConditionsApply	حدد المحاضر حيث تطبيق الشروط التالية :
+clickToAddCondition	انقر لإضافة شرط جديد
+view	رأي
+enterNumber	أدخل رقم
+enterText	أدخل النص
+enterSelectDate	أدخل أو حدد موعد
+and	و
+or	أو
+deleted	حذف
+selectAFavouriteToDelete	الرجاء اختيار المفضل لحذف.
+saveAs	حفظ ك...
+savedAsFavourite	كما انقذ المفضلة
+pleaseSelect	يرجى التحديد.
+estimatedRainfallReport	يقدر تقرير هطول الأمطار
+sysBusy	نظام الاستعلام عن قاعدة بيانات لتوليد التقرير الخاص بك. قد تستغرق هذه العملية عدة دقائق.
+pleaseWait	يرجى الانتظار...
+estimatedRainfallMm	يقدر معدل سقوط الأمطار (ملم)
+from	من
+to	إلى
+pleaseSelectCountry	الرجاء اختيار بلد
+pleaseSelectRegion	الرجاء تحديد المنطقة
+noRegionFound	لم يتم العثور على المنطقة.
+loadAndCreate	تحميل المفضلة وإنشاء تقرير
+load	تحميل المفضلة
+create	إنشاء تقرير
+deleteFavourite	حذف المفضلة
+favourite	المفضلة
+options	خيارات
+output	إنتاج
+template	قالب
+standard	معيار
+giewsCB	موجز المبكر القطرية
+cumulateValues	بالجمع القيم
+showAverage	متوسط
+showTable	طاولة
+showChart	خريطة
+showMap	إذاعة أوروبا الحرة
+region	منطقة
+period	فترة
+option	خيار
+favourites	المفضلة
+userSelection	اختيار المستخدم
+saveUpdate	حفظ / تحديث
+rainfallTool	الأمطار أداة
+removeSelection	إزالة الاختيار
+removeAll	إزالة جميع
+compareWithYear	مقارنة مع السنة
+controller	تحكم
+rainfallReport	يقدر تقرير هطول الأمطار
+quickStart	بداية سريعة
+ndvi	تشمل الدليل الموحد
+showGeneralClimate	المناخ العام
+resourceExplorerWindowHeader	الموارد اكسبلورر
+catalogue	كتالوج
+search	بحث
+reset	إعادة تعيين
+searchFor	بحث 
+projects	المشاريع
+dataViews	طرق عرض البيانات
+reports	تقارير
+text	النصوص
+mapLayers	خريطة الطبقات
+codingSystem	نظام الترميز
+codingSystems	نظم الترميز
+datasets	قواعد البيانات
+searchMyProjects	بحثي مشاريع
+pagerStart	العودة إلى الصفحة الأولى
+pagerBack	الصفحة السابقة
+pagerForward	الصفحة التالية
+pagerEnd	الذهاب إلى الصفحة الأخيرة
+up	فوق
+addToMyProjects	أضف إلى بلدي المشاريع
+moveToProject	الانتقال إلى المشروع
+copyToProject	نسخة إلى المشروع
+duplicateProject	مكررة المشروع
+export	تصدير
+exportAsCSV	تصدير وكسف
+undo	تراجع
+delete	حذف
+fields	الحقول
+runQuickSearch	تشغيل البحث السريع
+findOnMap	العثور على الخريطة
+noneSelected	بلا تحديد
+selectCategories	حدد الفئات
+lookIn	بحث في
+findNode	البحث عن العقدة
+myWorkstation	بلدي محطة العمل
+thisNode	هذه العقدة (ق)
+thisGroup	هذه المجموعة
+giewsNetwork	شبكة النظام العالمي
+advancedOptions	خيارات متقدمة
+selectAdvancedOptions	حدد خيارات متقدمة
+sortColumn	انقر فوق رأس العمود لفرز
+duplicate	مكرر
+openAsChart	كما فتح على تخطيط
+openAsMap	فتح باعتبارها خريطة
+openAsTable	فتح كجدول
+openAs	فتح على النحو التالي :
+vectorLayer	ناقلات طبقة
+rasterLayer	النقطية طبقة
+layerType	طبقة نوع
+addResourceToProject	الموارد إضافة إلى مشروع
+layers	طبقات
+externalLayers	الطبقات الخارجية
+update	التحديث
+selectPeer	حدد الزملاء
+refresh	تحديث
+hostLabel	المضيف
+oGroup	مجموعة
+privilege	امتياز
+shareResource	حصة من الموارد
+downloadResource	حمل الموارد
+reportURL	عنوان التقرير
+toolbox	الأدوات
+loadOrCreateNew	جديد
+loadProject	تحميل المشروع
+removeFromProject	إزالة من المشروع
+copyTo	نسخة ل..
+start	| <
+end	> |
+next	>
+previous	<
+chart	رسوم بيانية
+table	الجداول
+map	خرائط
+items	البنود
+from	من
+to	إلى
+pages	صفحات
+pattern	بيانات الموضوع
+patterns	بيانات الموضوعات
+confirmResourceDelete	تأكيد الموارد حذف
+areYouSureDeleteResource	هل أنت متأكد أنك تريد حذف الموارد (ق)؟
+scopeNode	هذه العقدة
+scopeNetwork	شبكة النظام العالمي
+reportTB	تقرير
+textTB	نص
+chartTB	خريطة
+tableTB	طاولة
+mapTB	خريطة
+uploadingDataset	تحميل مجموعة بيانات
+orderBy	ترتيب حسب
+chartAnalysis	تحليل الرسم البياني
+tableAnalysis	جدول تحليل
+viewEdit	عرض / تحرير
+associateDataset	البيانات المساعد لتخطيط
+datasetAssociated	ارتبط والبيانات
+resourceConnected	وهناك موارد أخرى متصلة
+updateChart	تحديث التخطيط
+areYouSureUpdateChart	هل أنت متأكد أنك تريد تحديث الرسم البياني؟
+textGroup	نص الفريق
+textGroups	مجموعات نص
+olap	جدول متعدد الأبعاد
+changeLayerStyle	تغيير نمط طبقة
+changeLayerStyleSuccessful	وقد تغير نمط طبقة
+statisticalAnalysis	التحليل الإحصائي
+descriptiveStatistics	الإحصاء الوصفي
+mean	متوسط
+correlationTest	اختبار ارتباط
+correlation	ارتباط
+standardDeviation	الانحراف المعياري
+variationCoefficient	معامل الاختلاف
+max	أقصى
+min	الحد الأدنى
+median	متوسط
+tests	اختبارات
+indices	الأرقام القياسية
+giniIndex	مؤشر جيني
+description	وصف
+availableSeries	تتوفر سلسلة
+availableOptions	الخيارات المتاحة
+close	أغلق
+calculate	حساب
+plot	مؤامرة
+groupBy	المجموعة بواسطة
+variableOfInterest	متغير الفائدة
+valuesOfInterest	قيم الفوائد
+variableOfInterestDescription	حدد المتغير هنا اهتمامك. توسيع 'متغيرات اخرى قسم' إذا كنت بحاجة إلى إضافة بعض القيود.
+pleaseSelectADimension	حدد بعدا
+correlationMatrix	مصفوفة الارتباط
+loadingMessage	آر ملقم الحوسبة نتائجك ، يرجى الانتظار.
+availablePlots	مؤامرات متاحة
+pleaseSelectAtLeastOneVariableOfInterest	الرجاء اختيار واحد على الأقل قيمة لمتغير الفائدة
+matrixOfScatterplots	مصفوفة من مؤامرات مبعثر
+summary	ملخص
+username	اسم المستخدم
+enterUsername	أدخل اسم المستخدم
+password	كلمة السر
+enterPassword	أدخل كلمة المرور
+loginWindowHeading	تسجيل الدخول إلى محطة العمل
+login	تسجيل الدخول
+youreIn	كنت في
+youreNotIn	أنت لست وقعت في
+isLoggedIn	وقعت في!
+UsernameNotFoundException	ولا يعرف هذا المستخدم من قبل محطة عمل ، اطلب من مدير البرنامج الخاص للحصول على حساب
+BadCredentialsException	كلمة السر غير صحيحة
+AuthenticationException	اسم المستخدم و / أو كلمة السر غير صحيحة
+generalServerProblem	هناك مشكلة مع الاتصال مع الملقم
+logout	تسجيل الخروج
+welcome	ترحيب
+addUser	إضافة مستخدم
+deleteUser	حذف المستخدم
+role	دور (ق)
+firstName	أول اسم
+lastName	اسم العائلة
+noUsersFound	لم يتم العثور على المستخدمين
+userManagerWindowHeading	إدارة المستخدمين
+hasRoleUser	المستخدم
+hasRoleAdmin	مشرف
+hasRoleFpi	ف بي آي)
+hasRoleCcbs	ccbs
+hasRoleIpc	التصنيف الدولي للبراءات
+language	لغة
+english	الإنجليزية
+spanish	الأسبانية
+userAdded	وأضاف العضو!
+allFieldsMustBeFilled	يجب تعبئة جميع الحقول
+usernameAlreadyExists	اسم المستخدم موجود بالفعل ، واختيار اسم مستخدم آخر المستخدم
+selectAtLeastOneRole	تحديد دور واحد على الأقل
+usersFound	العثور على المستخدمين
+dontDeleteAdmin	لا يمكنك حذف المشرف على آخر! أولا إضافة واحدة جديدة قبل حذف هذا واحد.
+userCantBeDeleted	لا يمكن للمستخدم أن تحذف لأن المستخدم هو صاحب واحد أو أكثر من الموارد. اسأل المستخدم لحذف كل ما له / لها الموارد
+goToPage	انتقل الى صفحة
+page	صفحة
+dataset	مجموعة البيانات
+table	طاولة
+tableView	عرض الجدول
+tableSaved	الجدول المحفوظة
+tableSuccessfullySaved	حفظ الجدول بنجاح
+datasetDimensions	أبعاد مجموعة بيانات
+refresh	تحديث
+filterResult	تصفية النتيجة
+value	قيمة
+date	تاريخ
+deleteRow	حذف صف
+insertRow	اضافة الى وجود صف
+copyRow	اختيار نسخ الصف
+pleaseSelect	الرجاء الإختيار
+selectedValues	اختيار القيم
+datasetValues	قيم البيانات
+selectedCriteriaForFiltering	اختيار معايير الترشيح
+addSelectedValuesToFilter	إضافة إلى تصفية القيم المختارة
+and	و
+or	أو
+datasetFilter	تصفية البيانات
+loadTable	تحميل الجدول
+loadingTable	تحميل الجدول
+clearFilter	تصفية واضحة
+exportingTable	تصدير الجدول
+exporting	تصدير
+pleaseFillRequiredFields	يرجى ملء الحقول المطلوبة. قد يكون في عداد المفقودين حقل عمود مخفي.
+pleaseSelectRowToDelete	يرجى تحديد الصف (ق) لحذف
+pleaseSelectRowToCopy	يرجى تحديد الصف (ق) لنسخ
+deleteWarning	هل أنت متأكد أنك تريد حذف بشكل دائم في الصف (ق)؟
+confirmDelete	تأكيد حذف
+missingFields	الحقول في عداد المفقودين
+switchToViewMode	التبديل إلى عرض الوضع
+switchToEditMode	التبديل إلى وضع تحرير
+viewMode	عرض الوضع
+editMode	وضع تحرير
+code	مدونات
+label	التسميات
+codelabel	الرموز والعلامات
+rightClickToAddNewItem	فوق الحق في إضافة عنصر جديد
+addNewItem	إضافة عنصر جديد
+backColors	تسليط الضوء على لون
+black	أسود
+blue	أزرق
+bold	تبديل بولد
+color	اللون
+createLink	إنشاء رابط
+createLoadText	إنشاء أو تحميل النص
+editText	تحرير النص
+enterTitle	أدخل العنوان
+exportPDF	التصدير الى قوات الدفاع الشعبي
+font	الخط
+foreColors	لون الخط
+green	أخضر
+hr	إدراج خط أفقي
+indent	المسافة البادئة اليمين
+insertImage	إدراج صورة
+italic	تبديل مائل
+justifyCenter	مركز
+justifyLeft	اليسار ضبط
+justifyRight	الحق ضبط
+large	كبير
+linkToResource	ربط الموارد
+medium	متوسط
+newText	لاحظ
+normal	طبيعي
+ol	أمر إدراج قائمة
+outdent	المسافة البادئة اليمنى
+pleaseEnterTitle	الرجاء إدخال عنوان لهذا النص
+print	طباعة
+red	أحمر
+referenceDate	مرجع التاريخ
+removeFormat	إزالة التنسيق
+removeLink	إزالة وصلة
+save	حفظ
+saveAs	حفظ باسم
+saveAsResource	وحفظ الموارد
+size	حجم
+small	صغير
+strikeThrough	تبديل يتوسطه
+subscript	تبديل منخفض
+superscript	تبديل مرتفع
+textEditor	نص محرر
+ul	إدراج قائمة غير مرتبة
+underline	تبديل تسطير
+warning	رسالة تحذير
+white	أبيض
+xlarge	اكس كبيرة
+xsmall	س الصغيرة
+xxlarge	العشرون المتجول
+xxsmall	العشرون الصغيرة
+yellow	أصفر
+setReferenceDate	تعيين مرجع التاريخ
+highlightColor	تسليط الضوء على لون
+fontColor	لون الخط
+fontSize	حجم الخط
+textGroup	نص الفريق
+textList	نص قائمة
+addTextToGroup	إضافة نص إلى الفريق
+removeTextFromGroup	إزالة النص من مجموعة
+copyTextGroup	نسخ نص الفريق
+createCopyInstructions	إنشاء نسخة ، مع الإشارة التالية لتاريخ تعيين كل نص جديد
+
+renameText	إعادة تسمية النص
+copyComplete	نسخة كاملة
+renameComplete	إعادة تسمية كاملة
+renameSuccessful	إعادة تسمية الناجحة
+textGroupInProjectManager	خلق النص في المجموعة مدير المشروع
+copyFailed	نسخة فشل
+renameFailed	إعادة تسمية فشل
+noTextsSelected	ولم ترد أي نصوص مختارة
+saveTextGroup	حفظ نص الفريق
+deleteText	حذف نص
+mapTabItem	خريطة
+tableTabItem	طاولة
+chartTabItem	خريطة
+country	بلد
+crop	محصول
+season	الموسم
+cropStage	المحاصيل المرحلة
+startMonth	بداية الشهر
+startDek	بدء العقد
+endMonth	نهاية الشهر
+onlineTutorialsAndGuides تمارين علي الشبكة الدولية للمعلومات
+sldEditor SLD محرر  
+userGroup مجموعة المستخدمين للمحطة العالمية 
+image صورة
+endDek	نهاية العقد

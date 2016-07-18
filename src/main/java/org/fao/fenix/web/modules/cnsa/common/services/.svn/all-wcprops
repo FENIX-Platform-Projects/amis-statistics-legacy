@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/fenix/!svn/ver/6750/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/cnsa/common/services
+END
+CNSAServiceAsync.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/fenix/!svn/ver/6750/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/cnsa/common/services/CNSAServiceAsync.java
+END
+CNSAService.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/fenix/!svn/ver/6750/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/cnsa/common/services/CNSAService.java
+END
+CNSAServiceEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/fenix/!svn/ver/6648/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/cnsa/common/services/CNSAServiceEntry.java
+END

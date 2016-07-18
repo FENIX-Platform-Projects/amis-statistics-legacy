@@ -1,0 +1,256 @@
+package org.fao.fenix.web.modules.amis.client.view.menu;
+
+
+
+import com.google.gwt.user.client.ui.RootPanel;
+import com.google.gwt.user.client.ui.Widget;
+import org.fao.fenix.web.modules.amis.client.control.AMISLogInController;
+import org.fao.fenix.web.modules.amis.client.control.history.AMISHistoryController;
+import org.fao.fenix.web.modules.amis.client.control.menu.AMISMenuController;
+import org.fao.fenix.web.modules.amis.client.view.home.AMISHome;
+import org.fao.fenix.web.modules.amis.client.view.login.AMISLoginPanel;
+import org.fao.fenix.web.modules.amis.client.view.utils.layout.FormattingUtils;
+import org.fao.fenix.web.modules.amis.common.constants.AMISCurrentView;
+import org.fao.fenix.web.modules.amis.common.vo.CCBS;
+import org.fao.fenix.web.modules.core.client.utils.ClickHtml;
+
+import com.extjs.gxt.ui.client.event.Events;
+import com.extjs.gxt.ui.client.widget.ContentPanel;
+import com.extjs.gxt.ui.client.widget.HorizontalPanel;
+import com.extjs.gxt.ui.client.widget.button.IconButton;
+import com.google.gwt.user.client.ui.HTML;
+
+public class AMISMainMenu {
+
+
+	private ContentPanel panel;
+	private HorizontalPanel menuPanel;
+	
+	private ContentPanel panelLogIn;
+	private HorizontalPanel menuPanelLogIn;
+
+	public HorizontalPanel getMenuPanel() {
+		return menuPanel;
+	}
+
+
+
+	public AMISMainMenu() {
+		panel = new ContentPanel();
+		panel.setBodyBorder(false);
+		panel.setHeaderVisible(false);
+		panel.setBorders(false);
+		//panel.setStyleAttribute("margin-right", "3px");
+		menuPanel = new HorizontalPanel();
+		menuPanel.setHeight(35);
+		//menuPanel.setHeight(29);
+		menuPanel.setStyleAttribute("backgroundColor", "#DC3018");
+//		menuPanel.setWidth(1015);
+		menuPanel.setWidth(1030);
+		menuPanel.setBorders(false);
+		panelLogIn = new ContentPanel();
+		panelLogIn.setBorders(false);
+		panelLogIn.setBodyBorder(false);
+		panelLogIn.setHeaderVisible(false);
+		//panelLogIn.setStyleAttribute("margin-right", "3px");
+		menuPanelLogIn = new HorizontalPanel();
+		menuPanelLogIn.setHeight(35);
+		//menuPanel.setHeight(29);
+		menuPanelLogIn.setStyleAttribute("backgroundColor", "#DC3018");
+		//menuPanelLogIn.setStyleAttribute("margin-right", "3px");
+		//menuPanelLogIn.setBorders(true);
+		//menuPanelLogIn.setWidth(85);
+		menuPanelLogIn.setWidth(70);
+	}
+	
+
+
+//	public ContentPanel build() {
+//		menuPanel.add(buildPanel("AMIS Statistics Home", AMISCurrentView.HOME));
+//		menuPanel.add(buildPanel("VIEW &amp; COMPARE DATA", AMISCurrentView.COMPARE));
+//		menuPanel.add(buildPanel("DOWNLOAD DATA", AMISCurrentView.DOWNLOAD));
+//		menuPanel.add(buildPanel("INPUT DATA", AMISCurrentView.INPUT));
+//		menuPanel.add(buildPanel("STATISTICAL NOTES", AMISCurrentView.STATISTICALNOTES));
+//		menuPanel.add(buildHomePanel("AMIS Home"));
+//
+//		panel.add(menuPanel);
+//	    return panel;
+//	}
+	
+	public ContentPanel build() {
+		menuPanel.add(buildHomePanel("AMIS HOME"));
+		menuPanel.add(buildPanel("STATISTICS AT A GLANCE", AMISCurrentView.HOME));
+		//menuPanel.add(buildPanel("AT A GLANCE", AMISCurrentView.HOME));
+		menuPanel.add(buildPanel("VIEW &amp; COMPARE DATA", AMISCurrentView.COMPARE));
+		menuPanel.add(buildPanel("DOWNLOAD DATA", AMISCurrentView.DOWNLOAD));
+       // menuPanel.add(buildPanel("INPUT DATA", AMISCurrentView.INPUT));
+		menuPanel.add(buildPanel("STATISTICAL NOTES", AMISCurrentView.STATISTICALNOTES));
+		
+		
+		//menuPanel.add(new HTML("<div class=\"login\" id=\"USER_LOGIN\">	Log In </div>"));
+		//menuPanel.add(buildLoginPanel("Log In"));
+		//menuPanel.add(new HTML("PROVA!!!"));
+		panel.add(menuPanel);
+		
+	    return panel;
+	}
+
+    public void addInputMenuItem(){
+        menuPanel.insert(buildPanel("INPUT DATA", AMISCurrentView.INPUT), 4);
+        panel.layout();
+    }
+
+    public void removeInputMenuItem(){
+        menuPanel.remove(menuPanel.getItemByItemId(AMISCurrentView.INPUT.toString()));
+        panel.layout();
+    }
+
+	public ContentPanel buildLogin() {
+		menuPanelLogIn.add(buildLoginPanel("Log In", "login"));
+		panelLogIn.add(menuPanelLogIn);
+		
+	    return panelLogIn;
+	}
+	
+	private HorizontalPanel buildHomePanel(String title) {
+		HorizontalPanel p = new HorizontalPanel();
+		//p.add(FormattingUtils.addHSpace(100));
+		p.setData("base-style-name", "tab");
+//		p.addStyleName("tab-selected");
+		p.addStyleName("tab");
+		
+		ClickHtml html = new ClickHtml();
+		html.setHtml("<div class='main-menu-title-selected'>" + title + "</div>");
+		html.addListener(Events.OnClick,AMISMenuController.openAMISHome());
+		p.add(html);
+
+		return p;
+	}
+	
+	private HorizontalPanel buildPanel(String title, AMISCurrentView currentView) {
+		System.out.println("Amis main menu current view ........"+currentView);
+		HorizontalPanel p = new HorizontalPanel();
+		p.setId(currentView.name());
+		p.setData("base-style-name", "tab");
+		
+		//set default HOME as selected
+		if(p.getId().equals(AMISCurrentView.HOME.name()))
+			p.addStyleName("tab-selected");
+		else
+			p.addStyleName("tab");
+
+
+		ClickHtml html = new ClickHtml();
+		html.setId(currentView.name());
+		html.setHtml("<div>" + title + "</div>");
+		
+		html.addListener(Events.OnClick, AMISHistoryController.setHistoryItem(currentView));
+
+
+		p.add(html);
+
+		return p;
+	}
+	
+	private HorizontalPanel buildLoginPanel(String title, String style) {
+	//	System.out.println("Amis main menu current view ........"+currentView);
+		HorizontalPanel p = new HorizontalPanel();
+		p.setData("base-style-name", "tab");
+		p.addStyleName("tab");
+//		//set default HOME as selected
+//		if(p.getId().equals(AMISCurrentView.HOME.name()))
+//			p.addStyleName("tab-selected");
+//		else
+//			p.addStyleName("tab");
+
+
+		//ClickHtml html = new ClickHtml();
+		//html.setHtml("<div>" + title + "</div>");
+		//HTML html = new HTML("<div class=\"login\" id=\"USER_LOGIN\">	Log In </div>");
+//		html.addListener(Events.OnClick, AMISHistoryController.setHistoryItem(currentView));
+		
+		 ClickHtml clickHtml = new ClickHtml();
+		 clickHtml.setId("USER_LOGIN");
+		 clickHtml.setHtml(title);
+		// clickHtml.setStyleName(style);
+		 clickHtml.addListener(Events.OnClick, AMISLogInController.buildLoginPanel(AMISHome.mainMenu));		
+		// AMISHome.buildAndReplaceElement("USER_LOGIN_MENU", AMISLogInController.buildLoginPanel(mainMenu), "login");
+		p.add(clickHtml);
+
+		return p;
+	}
+	
+	
+	private HorizontalPanel buildPanelOriginal(String title, AMISCurrentView currentView) {
+		HorizontalPanel p = new HorizontalPanel();
+		p.setId(currentView.name());
+		p.setData("base-style-name", "tab");
+		
+
+		//p.setHeight(50);
+
+
+		//set default HOME as selected
+		if(p.getId().equals(AMISCurrentView.HOME.name()))
+			p.addStyleName("tab-selected");
+		else
+			p.addStyleName("tab");
+
+
+		IconButton icon = new IconButton("arrow-down_disabled");
+		ClickHtml html = new ClickHtml();
+		html.setId(currentView.name());
+		
+		if(p.getId().equals(AMISCurrentView.HOME.name()))
+			html.setHtml("<div class='main-menu-title-selected'>" + title + "</div>");
+		else
+			html.setHtml("<div class='main-menu-title'>" + title + "</div>");
+			
+		
+		html.addListener(Events.OnClick,AMISMenuController.openView(currentView, this));
+
+
+		p.add(html);
+
+		return p;
+	}
+
+
+	private HorizontalPanel addSpacing() {
+		HorizontalPanel p = new HorizontalPanel();
+		p.setWidth(5);
+		return p;
+	}
+
+
+
+	public HorizontalPanel getMenuPanelLogIn() {
+		return menuPanelLogIn;
+	}
+
+
+
+	public void setMenuPanelLogIn(HorizontalPanel menuPanelLogIn) {
+		this.menuPanelLogIn = menuPanelLogIn;
+	}
+
+
+
+	public void setMenuPanel(HorizontalPanel menuPanel) {
+		this.menuPanel = menuPanel;
+	}
+
+
+
+	public ContentPanel getPanelLogIn() {
+		return panelLogIn;
+	}
+
+
+
+	public void setPanelLogIn(ContentPanel panelLogIn) {
+		this.panelLogIn = panelLogIn;
+	}
+
+
+}

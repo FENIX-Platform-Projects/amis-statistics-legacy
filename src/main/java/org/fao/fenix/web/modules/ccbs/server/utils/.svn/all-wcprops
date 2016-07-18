@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/fenix/!svn/ver/6749/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ccbs/server/utils
+END
+LocalTimeSeries.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/fenix/!svn/ver/6749/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ccbs/server/utils/LocalTimeSeries.java
+END
+LocalDBAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/fenix/!svn/ver/6749/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ccbs/server/utils/LocalDBAdapter.java
+END
+FileUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/fenix/!svn/ver/6749/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ccbs/server/utils/FileUtils.java
+END

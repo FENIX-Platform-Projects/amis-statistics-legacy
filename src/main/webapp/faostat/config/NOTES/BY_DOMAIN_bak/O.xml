@@ -1,0 +1,147 @@
+﻿<NOTES type="Population">
+<NOTE type="Introduction">
+<E>&lt;b&gt;Click in the tree &lt;/b&gt; to access the download page of the &lt;b&gt;agricultural production
+sub-domains.&lt;/b&gt;&lt;/b&gt; The agricultural production domain covers:&lt;br/&gt;&lt;br/&gt;
+
+&lt;ul class='bullet-list'&gt;
+&lt;li&gt;Quantity produced&lt;/li&gt;
+&lt;li&gt;Producer price&lt;/li&gt;
+&lt;li&gt;Value at farmgate (forthcoming)&lt;/li&gt;
+&lt;li&gt;Area harvested&lt;/li&gt;
+&lt;li&gt;Yield per hectare&lt;/li&gt;
+&lt;/ul&gt;
+</E>
+<F>&lt;b&gt;Click in the tree &lt;/b&gt; to access the download page of the &lt;b&gt;agricultural production
+sub-domains.&lt;/b&gt;&lt;/b&gt; Le domaine de la production agricole couvre:&lt;br/&gt;&lt;br/&gt;
+
+&lt;ul class='bullet-list'&gt;
+&lt;li&gt;Quantité produite&lt;/li&gt;
+&lt;li&gt;Prix à la production&lt;/li&gt;
+&lt;li&gt;Prix à l'exploitation (prochainement)&lt;/li&gt;
+&lt;li&gt;Superficie récoltée&lt;/li&gt;
+&lt;li&gt;Rendement par hectare&lt;/li&gt;
+&lt;/ul&gt;
+</F>
+<S>&lt;b&gt;Click in the tree &lt;/b&gt; to access the download page of the &lt;b&gt;agricultural production
+sub-domains.&lt;/b&gt;&lt;/b&gt; El ámbito de producción agrícola cubre:&lt;br/&gt;&lt;br/&gt;
+
+&lt;ul class='bullet-list'&gt;
+&lt;li&gt;Cantidad producida&lt;/li&gt;
+&lt;li&gt;Precios al productor&lt;/li&gt;
+&lt;li&gt;Valor a la puerta de la explotación (próximamente)&lt;/li&gt;
+&lt;li&gt;Área de cosecha&lt;/li&gt;
+&lt;li&gt;Rendimiento por hectárea&lt;/li&gt;
+&lt;/ul&gt;
+</S>
+</NOTE>
+<NOTE type="Description">
+<TITLE><E>PIN: Agricultural Production Indices</E>
+<F>PIN: Indices de Production Agricole</F>
+<S>PIN: Índices de Producción Agrícola</S>
+</TITLE>
+<E>The FAO indices of agricultural production show the relative level of the aggregate volume of agricultural production for each year in comparison with the base period 1999-2001. They are based on the sum of price-weighted quantities of different agricultural commodities produced after deductions of quantities used as seed and feed weighted in a similar manner. The resulting aggregate represents, therefore, disposable production for any use except as seed and feed. &lt;br/&gt;&lt;br/&gt;
+
+All the indices at the country, regional and world levels are calculated by the Laspeyres formula. Production quantities of each commodity are weighted by 1999-2001 average international commodity prices and summed for each year. To obtain the index, the aggregate for a given year is divided by the average aggregate for the base period 1999-2001. &lt;br/&gt;&lt;br/&gt;
+
+Since the FAO indices are based on the concept of agriculture as a single enterprise, amounts of seed and feed are subtracted from the production data to avoid double counting them, once in the production data and once with the crops or livestock produced from them. Deductions for seed (in the case of eggs, for hatching) and for livestock and poultry feed apply to both domestically produced and imported commodities. They cover only primary agricultural products destined to animal feed (e.g. maize, potatoes, milk, etc.). Processed and semi-processed feed items such as bran, oilcakes, meals and molasses have been completely excluded from the calculations at all stages. &lt;br/&gt;&lt;br/&gt;
+
+It should be noted that when calculating indices of agricultural, food and nonfood production, all intermediate primary inputs of agricultural origin are deducted. However, for indices of any other commodity group, only inputs originating from within the same group are deducted; thus, only seed is removed from the group “crops” and from all crop subgroups, such as cereals, oil crops, etc.; and both feed and seed originating from within the livestock sector (e.g. milk feed, hatching eggs) are removed from the group “livestock products”. For the main two livestock subgroups, namely, meat and milk, only feed originating from the respective subgroup is removed. &lt;br/&gt;&lt;br/&gt;
+
+The”international commodity prices” are used in order to avoid the use of exchange rates for obtaining continental and world aggregates, and also to improve and facilitate international comparative analysis of productivity at the national level. These” international prices”, expressed in so-called”international dollars”, are derived using a Geary-Khamis formula for the agricultural sector. This method assigns a single “price” to each commodity. For example, one metric ton of wheat has the same price regardless of the country where it was produced. The currency unit in which the prices are expressed has no influence on the indices published. &lt;br/&gt;&lt;br/&gt;
+
+The commodities covered in the computation of indices of agricultural production are all crops and livestock products originating in each country. Practically all products are covered, with the main exception of fodder crops. The category of food production includes commodities that are considered edible and that contain nutrients. Accordingly, coffee and tea are excluded along with inedible commodities because, although edible, they have practically no nutritive value. &lt;br/&gt;&lt;br/&gt;
+
+Indices for meat production are computed based on data for production from indigenous animals, which takes account of the meat equivalent of exported live animals but excludes the meat equivalent of imported live animals. For index purposes, annual changes in livestock and poultry numbers or in their average live weight are not taken into account. &lt;br/&gt;&lt;br/&gt;
+
+The indices are calculated from production data presented on a calendar year basis. &lt;br/&gt;&lt;br/&gt;
+
+The FAO indices may differ from those produced by the countries themselves because of differences in concepts of production, coverage, weights, time reference of data and methods of calculation.
+</E>
+<F>Les indices FAO de production agricole montrent le niveau relatif du volume global de production agricole pour chaque année en comparaison avec la période de base 1999-2001. Ils sont basés sur la somme des quantités des prix pondérés des différents produits agricoles produits après déduction des quantités utilisées pour les semences et l'alimentation animale pondérées de la même façon. L'agrégat résultant représente, donc, la production disponible pour n'importe quelle utilisation exceptés les semences et l'alimentation animale.&lt;br/&gt;&lt;br/&gt;
+
+Tous les indices, à niveau national, régional et mondial sont calculés par la formule Laspeyres. Les quantités de production de chaque produit sont pondérées par la moyenne des prix internationaux des produits pour la période de base 1999-2001 et additionnées pour chaque année. Pour obtenir l'indice, l'agrégat pour une année donnée est divisé par l'agrégat moyen pour la période de base 1999-2001.  &lt;br/&gt;&lt;br/&gt;
+
+Puisque les indices FAO sont basés sur le concept d'une agriculture considérée comme une simple entreprise, les quantités de semences et d'alimentation animales sont soustraites des données de production pour éviter de les compter deux fois, une fois dans les données de production et une fois avec les cultures ou l'élevage venant d'eux. La déduction pour les semences (dans le cas d'oeufs, pour couver) et pour l'élevage et l'alimentation des volailles s'applique aux produits importés comme aux produits exportés. Ils couvrent seulement les produits agricoles primaires destinés à l'alimentation animale (ex: le maïs, les pommes de terre, le lait, etc). Les produits transformés ou semi-transformés destinés à l'alimentation animale comme le son, les tourteaux, les farines animales et la mélasse ont été complètement exclus des calculs à toutes les étapes.&lt;br/&gt;&lt;br/&gt;
+  
+Il est à noter que lors du calcul des indices de production agricole, alimentaire et non-alimentaire, tous les apports intermédiaires d'origine agricole sont déduits. Cependant, pour les indices des autres groupes de produits, seuls les apports dont l'origine se trouve au sein du même groupe sont déduit; ainsi, seulement les semences sont ôtées du groupe "Cultures" et de tous les sous-groupes de cultures, comme les céréales, les cultures oléagineuses, etc; et l'alimentation animale ainsi que les semences provenant du secteur de l'élevage (ex: le lait, les oeufs à couver) sont enlevées du groupe "des produits de l'élevage". Pour les deux sous-groupes de produits de l'élevage, à savoir, la viande et le lait, seuls les produits destinés à l'alimentation animale provenant du même sous-groupe ont été enlevés.&lt;br/&gt;&lt;br/&gt;
+
+"Les prix internationaux des produits" sont utilisés pour éviter l'utilisation de taux de change pour obtenir des aggrégats continentaux et mondiaux et aussi pour améliorer et faciliter l'analyse comparative internationale de la productivité au niveau national. Ces "prix internationaux", exprimé en prétendus "dollars internationaux", sont obtenus en utilisant une formule Geary-Khamis pour le secteur agricole. Cette méthode assigne un simple "prix" à chaque produit. Par exemple, une tonne de blé a le même prix indépendamment du pays où il a été produit. L'unité monétaire dans laquelle les prix sont exprimés n'a aucune influence sur les indices publiés.  &lt;br/&gt;&lt;br/&gt;
+
+Les produits couverts par le calcul des indices de production agricole sont tous les produits des cultures et de l'élevage originaires de chaque pays. Pratiquement tous les produits sont couverts, à l'exception du  fourrage. La catégorie de production alimentaire inclut les produits que l'on considère comestibles et qui contiennent des substances nutritives. En conséquence, le café et le thé sont exclus comme les autres produits non comestibles parce que, bien que comestibles, ils n'ont pratiquement aucune valeur nutritive.&lt;br/&gt;&lt;br/&gt;  
+
+Les indices de production de viande sont calculés à partir des données de production d'animaux indigènes, qui tiennent compte de l'équivalent en viande d'animaux vivants exporté, mais exclut l'équivalent en viande d'animaux vivants importé. En vue des calculs d'indices, les changements annuels du nombres d'animaux et de volaille ou de leur poids vivant moyen ne sont pas pris en compte.&lt;br/&gt;&lt;br/&gt;
+  
+Les indices sont calculés de données de production présentées sur une base d'année civile.  &lt;br/&gt;&lt;br/&gt;
+
+Les indices FAO peuvent différer de ceux produits par les pays eux-mêmes en raison des différences des concepts de production, de couverture, de poids, de référence de temps des données et des methodes de calcul.
+</F>
+<S>
+Los índices FAO de producción agrícola muestran el nivel relativo del volumen global de producción agrícola cada año en comparación con el período de base 1999-2001. Están basados en la suma de las cantidades de los precios ponderados de los diferentes productos agrícolas producidos después de deducción de las cantidades utilizadas para los semillas y la alimentación de los animales ponderadas del mismo modo. El agregado resultante representa, pues, la producción disponible para cualquier utilización exceptuados los semillas y la alimentación de los animales.&lt;br/&gt;&lt;br/&gt;
+
+Todos los índices, a nivel nacional, regional y mundial son calculados por la fórmula Laspeyres. Las cantidades de producción de cada producto son ponderadas por la media de los precios internacionales de los productos para el período de base 1999-2001 y sumadas cada año. Para obtener el indice, el agregado por un año dado está dividido por el agregado medio para el período de base 1999-2001.   &lt;br/&gt;&lt;br/&gt;
+
+Ya que el indicio FAO está basado en el concepto de una agricultura considerada como una empresa simple, las cantidades de semillas y de alimentación de los animales son sustraídas de los datos de producción para evitar contarlas dos veces, una vez en los datos de producción y una vez con las culturas o la ganadería que vienen de ellos. La deducción para los semillas (en el caso de huevos, que hay que incubar) y para la ganaderia y la alimentación de las aves se aplica a los productos importados como a los productos exportados. Cubren solamente los productos agrícolas primarios destinados a la alimentación animal (ex: el maíz, las patatas, la leche, etc).  Los productos transformados o semitransformados destinados a la alimentación de los animales como el sonido, las hogazas, las harinas animales y la melaza han sidocompletamente excluidos de los cálculos a todas las etapas.&lt;br/&gt;&lt;br/&gt;
+
+Es necesario anotar que en el momento del cálculo de los índices de producción agrícola, alimentaria y no alimentaria, todas las aportaciones intermediarias de origen agrícola son deducidas. Sin embargo, para los índices de otros grupos de productos, sólo las aportaciones cuyo origen se encuentra en el seno del mismo grupo son deducidas; así, solamente los semillas son deducidas por el grupo " Cultivos"  y por todos subgrupos de cultivos, como los cereales, las culturas oleaginosas, etc; y la alimentación de los animales así como las semillas que provienen del sector de la ganadería (ex: la leche, los huevos que hay que incubar) son deducidos del grupo "productos de la ganadería ". Para ambos subgrupos de productos de la ganadería, a saber, la carne y la leche, sólo los productos destinados a la alimentación animal que proviene del mismo subgrupo han sido deducidos.&lt;br/&gt;&lt;br/&gt;
+
+"Los precios internacionales de los productos " son utilizados para evitar la utilización de tipo de cambio para conseguir aggrégats continental y mundial y también para mejorar y facilitar el análisis comparativo internacional de la productividad al nivel nacional. Estos "precios internacionales ", expresados en  pretendidos "dólares internacionales ", son obtenidos utilizando una fórmula Geary-Khamis para el sector agrícola. Este método asigna un "precio" simple a cada producto. Por ejemplo, una tonelada de trigo tiene el mismo precio independientemente del país dónde ha sido producido. La unidad monetaria en la cual los precios son expresados  no tiene ninguna influencia sobre los índices publicados.  &lt;br/&gt;&lt;br/&gt; 
+
+Los productos cubiertos por el cálculo de los índices de producción agrícola son todos los productos de las culturas y de la ganadería oriundos de cada país. Prácticamente todos los productos son cubiertos, a excepción del forraje. La categoría de producción alimentaria incluye los productos que se consideran comestibles y que contienen sustancias nutritivas. En consecuencia, el café y el té son excluidos como otros productos no comestibles porque, aunque comestibles, prácticamente no tienen ningún valor nutritivo.   &lt;br/&gt;&lt;br/&gt;
+
+Los índices de producción de carne son calculados a partir de los datos de producción de animales indígenas, que tienen en cuenta el equivalente en carne de animales vivos exportado, pero excluye el equivalente en carne de animales vivos importado. Con vistas a los cálculos de índices, los cambios anuales de números de animales y de aves o de su peso medio en vivo no son tomados en consideración.&lt;br/&gt;&lt;br/&gt;
+
+Los índices son calculados por datos de producción presentados sobre una base de año civil.   &lt;br/&gt;&lt;br/&gt;
+
+El indicio FAO puede diferir de los producidos por los países mismos debido a las diferencias de los conceptos de producción, de cobertura, de peso, de referencia del tiempo de los datos y el methodes de calculo.
+</S>
+</NOTE>
+<NOTE type="Description">
+<TITLE><E>Value of Agricultural Production</E>
+<F>Valeur de la Production Agricole</F>
+<S>Valor de la Producción Agrícola</S>
+</TITLE>
+<E>Value of gross production has been compiled by multiplying gross production in physical terms by output prices at farm gate. Thus, value of production measures production in monetary terms at the farm gate level. Since intermediate uses within the agricultural sector (seed and feed) have not been subtracted from production data, this value of production aggregate refers to the notion of "gross production".&lt;br/&gt;&lt;br/&gt;
+
+Value of gross production is provided in both current and constant terms and is expressed in US dollars and Standard Local Currency (SLC). The &lt;b&gt;current&lt;/b&gt; value of production measures value in the prices relating to the period being measured. Thus, it represents the market value of food and agricultural products at the time they were produced. Knowing this figure is helpful in understanding exactly what was happening within a given economy at that point in time. Often, this information can help explain economic trends that emerged in later periods and why they took place. Value of production in &lt;b&gt;constant&lt;/b&gt; terms is derived using the average prices of a selected year or years, known as the base period. Constant price series can be used to show how the quantity or volume of products has changed, and are often referred to as volume measures. The ratio of the current and constant price series gives a measure of price movements.&lt;br/&gt;&lt;br/&gt;
+
+US dollar figures for value of gross production are converted from local currencies using official exchange rates as prevailing in the respective years. The SLC of a country is the local currency prevailing in the  &lt;b&gt;latest&lt;/b&gt; year. Expressing data series in one uniform currency is useful because it avoids the influence of revaluation in local currency, if any, on value of production.&lt;br/&gt;&lt;br/&gt;
+
+Please note that livestock value of production is measured in terms of indigenous meat.
+</E>
+<F>La valeur de la production brute est calculée en multipliant la production brute « physique » par les prix à la production à la sortie de l'exploitation. La valeur de la production mesure donc la production en termes monétaires au niveau de l'exploitation. Comme les intrants intermédiaires utilisés dans le secteur agricole (semences et alimentation animale) ne sont pas déduits des données de production, la valeur de la production agrégée fait référence à la notion de « production brute ».&lt;br/&gt;&lt;br/&gt;
+
+La valeur de la production brute est donnée à la fois en termes courants et en termes constants, et elle est exprimée en USD et en monnaie locale standard (SLC). La valeur &lt;b&gt;courante&lt;/b&gt; de la production mesure la valeur aux prix de la période considérée. Elle représente donc la valeur marchande des produits alimentaires et agricoles au moment de leur production. C'est une donnée très utile pour comprendre exactement la situation dans une économie donnée à ce moment-là. Souvent, cette information peut aider à expliquer des tendances économiques survenues ultérieurement et à en comprendre les raisons. La valeur de la production exprimée en termes  &lt;b&gt;constants&lt;/b&gt; est calculée à partir des prix moyens enregistrés au cours d'une ou de plusieurs années données, appelées « période de base ». Les séries de prix constants sont utiles pour mettre en évidence des variations de la production en termes de quantité ou de volume et sont souvent désignées par l'expression « mesures de volume ». Le rapport entre les séries de prix courants et les séries de prix constants donne la mesure des variations de prix.&lt;br/&gt;&lt;br/&gt;
+
+La valeur de la production brute en USD est obtenue en convertissant en USD le montant exprimé en monnaie locale moyennant le taux de change officiel en vigueur pendant la période visée. La monnaie locale standard ou SLC d'un pays est la monnaie locale ayant cours pendant l'année  &lt;b&gt;la plus récente&lt;/b&gt;. Il est particulièrement utile d’exprimer les valeurs dans un système monétaire uniforme car cela permet d'éviter l'influence de la réévaluation en monnaie locale, le cas échéant, sur la valeur de la production.&lt;br/&gt;&lt;br/&gt;
+
+Veuillez noter que la valeur de production de l'élevage est mesurée en termes de viande indigène.
+</F>
+<S>El valor de la producción bruta se ha compilado multiplicando la producción bruta en términos físicos por los precios de los productos a puerta de finca. Por tanto, el valor de la producción mide la misma en términos monetarios en la puerta de la finca. Puesto que no se han deducido de los datos de producción los usos intermedios en el sector agrícola (semillas y piensos), este valor del conjunto de la producción hace referencia a la noción de "producción bruta".&lt;br/&gt;&lt;br/&gt;
+
+El valor de la producción bruta se facilita en términos corrientes y constantes y se expresa en dólares EE.UU. y en moneda local estandarizada (MLE). El valor &lt;b&gt;corriente&lt;/b&gt; de la producción mide el valor en los precios en relación con el período que se está midiendo. Por tanto, representa el valor de mercado de los alimentos y los productos agrícolas en el momento de su producción. Conocer este dato ayuda a comprender exactamente lo que estaba ocurriendo en una economía determinada en ese momento. A menudo, esta información puede ayudar a explicar las tendencias económicas que surgieron en períodos posteriores y por qué surgieron. El valor de la producción en términos &lt;b&gt;constantes&lt;/b&gt; se deriva utilizando los precios medios de un año o años determinados, que se conoce como período de base. Las series de precios constantes pueden utilizarse para mostrar de qué manera la cantidad o el volumen de los productos han cambiado y a menudo se denominan medidas de volumen. La razón de las series de precios corrientes y constantes da una medida de los movimientos de precios.&lt;br/&gt;&lt;br/&gt;
+
+Los datos en dólares EE.UU. correspondientes al valor de la producción bruta se convierten a partir de las monedas locales mediante los tipos oficiales de cambio vigentes en los años respectivos. La MLE de un país es la moneda local que circuló en el &lt;b&gt;último&lt;/b&gt; año. La expresión del valor en una moneda uniforme es particularmente útil porque evita la influencia de la revalorización en moneda local, si llega el caso, sobre el valor de la producción.&lt;br/&gt;&lt;br/&gt;
+
+Tenga en cuenta que el valor de producción de la ganadería es medido en términos de carne indígena.
+</S>
+</NOTE>
+<NOTEGROUP type="Please Note">
+ <TITLE><E>Please Note</E></TITLE>
+ <NOTE type="General">
+<E>Users may note that a new methodology for imputing non-reported/missing Production domain data has been implemented this year. The methodology has been applied to data from 1990 onwards and data imputed using this methodology is flagged by the symbol 'Im'. 
+</E>
+<F>Les utilisateurs sont priés de prendre note qu’une nouvelle méthodologie d’imputation de données non-déclarées ou mancantes a été adoptée. Cette méthodologie a été appliquée aux données à partir de 1990 et les données imputées en suivant cette methodologie sont indiquées par le symbole 'Im'.
+</F>
+<S>Los usuarios deben notar que este año se ha implementado una nueva metodología en la imputación de datos no reportados o ausentes correspondientes al dominio Producción. La metodología ha sido aplicada a los datos del año 1990 y de los años subsiguientes. Los datos imputados usando la nueva metodología están marcados con el símbolo 'Im'.
+</S>
+</NOTE>
+<NOTE type="General">
+<E>Aggregates are the sum of available data. For some item aggregates, conversion factors are applied to values when calculating totals. Please see item Metadata for the factors.
+</E>
+<F>Les agrégats sont la somme des données disponibles. Pour certains agrégats d'items, des facteurs de conversion sont appliqués aux valeurs lors du calcul des totaux. Veuillez consulter les métadonnées pour connaître ces facteurs.
+</F>
+<S>Los agregados son la suma de los datos disponibles. Para algunos grupos de items, factores de conversión se aplican a los valores en el cálculo de los totales. Por favor, consulte los metadatos para estos factores.
+</S>
+</NOTE>
+</NOTEGROUP>
+</NOTES>

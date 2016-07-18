@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+				http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+				http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd">
+	<!--
+		This one is a controller that behaves just like a simple Spring controller and needs to be mapped to URLs the same way
+		any other Spring controller is mapped. This would in most cases be the SimpleUrlHandlerMapping.
+	-->
+	<bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="mappings">
+			<map>
+				<entry key="/aquastatService" value-ref="aquastatService" />
+				<entry key="/adamService" value-ref="adamService" />
+				<entry key="/bangladeshService" value-ref="bangladeshService" />
+				<entry key="/reService" value-ref="reService" />
+				<entry key="/tableService" value-ref="tableService" />
+				<entry key="/udtableService" value-ref="udtableService" />
+				<entry key="/fpiService" value-ref="fpiService" />
+				<entry key="/birtService" value-ref="birtService" />
+				<entry key="/textService" value-ref="textService" />
+				<entry key="/userService" value-ref="userService" />
+				<entry key="/metadataService" value-ref="metadataService" />
+				<entry key="/mapService" value-ref="mapService" />
+				<entry key="/projectManagerService" value-ref="projectManagerService" />
+				<entry key="/communicationService" value-ref="communicationService" />
+				<entry key="/ipcService" value-ref="ipcService" />
+				<entry key="/ipcxmlService" value-ref="ipcxmlService" />
+				<entry key="/haitiService" value-ref="haitiService" />
+				<entry key="/consoleService" value-ref="consoleService" />
+				<entry key="/codingService" value-ref="codingService" />
+				<entry key="/rainfallService" value-ref="rainfallService" />
+				<entry key="/olapService" value-ref="olapService" />
+				<entry key="/wcctService" value-ref="wcctService" />
+				<entry key="/giewsService" value-ref="giewsService" />
+				<entry key="/fsatmisService" value-ref="fsatmisService" />
+				<entry key="/ccbsService" value-ref="ccbsService" />
+				<entry key="/ofcChartService" value-ref="ofcChartService" />
+				<entry key="/ecService" value-ref="ecService" />
+				<entry key="/xService" value-ref="xService" />
+				<entry key="/queryBuilderService" value-ref="queryBuilderService" />
+				<entry key="/latexService" value-ref="latexService" />
+			    <entry key="/vennService" value-ref="vennService" />
+			    <entry key="/excelImporterService" value-ref="excelImporterService" />
+			    <entry key="/esokoService" value-ref="esokoService" />
+			    <entry key="/fcService" value-ref="fcService" />
+			    <entry key="/cnsaService" value-ref="cnsaService" />
+			    <entry key="/rService" value-ref="rService" />
+			    <entry key="/haitiCNSAToolService" value-ref="haitiCNSAToolService" />
+			    <entry key="/sifsiaService" value-ref="sifsiaService" />
+			    <entry key="/dataMapperService" value-ref="dataMapperService" />
+			    <entry key="/sldEditorService" value-ref="sldEditorService" />
+			    <entry key="/faoStatService" value-ref="faoStatService" />
+			    <entry key="/fewsnetService" value-ref="fewsnetService" />
+			    <entry key="/chartDesignerService" value-ref="chartDesignerService" />
+			    <entry key="/imfService" value-ref="imfService" />
+			    <entry key="/dataViewerService" value-ref="dataViewerService" />
+			    <entry key="/tinyMCEService" value-ref="tinyMCEService" />
+			    <entry key="/amisService" value-ref="amisService" />
+			    <entry key="/cpfService" value-ref="cpfService" />
+			    <entry key="/olapViewerService" value-ref="olapViewerService" />
+			    
+			</map>
+		</property>
+	</bean>
+</beans>

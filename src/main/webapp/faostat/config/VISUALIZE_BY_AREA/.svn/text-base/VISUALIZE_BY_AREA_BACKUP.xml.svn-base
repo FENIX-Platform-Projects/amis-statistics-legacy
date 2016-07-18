@@ -1,0 +1,335 @@
+<VIEW type="Browse By Area">
+	<FILTERS>
+	</FILTERS>
+	<RESOURCES>
+		<DEFAULT>
+			<RESOURCE>
+				<RESOURCETYPE>TABLE</RESOURCETYPE>
+				<OUTPUTTYPE>HTML</OUTPUTTYPE>
+				<TITLE>
+					<E>Land Resources</E>
+				</TITLE>
+				<IMAGESIZE>
+				        <SMALL>
+						<WIDTH>500</WIDTH>
+						<HEIGHT>300</HEIGHT>
+					</SMALL>
+					<BIG>
+						<WIDTH>450</WIDTH>
+						<HEIGHT>250</HEIGHT>
+					</BIG>
+				</IMAGESIZE>
+				<DATEQUERY>
+					<MAX>D.Year</MAX>  <!-- RUN a MAX(D.Year) query and use this value in the data QUERY -->
+			        </DATEQUERY>
+		          	<BASEQUERY>
+					<SELECTS>		       
+						<SELECT lang="true">I.ItemName</SELECT>	
+						<SELECT>D.Value</SELECT>
+						<SELECT lang="true">E.UnitName</SELECT>	
+						<!-- <SELECT>(CONVERT(varchar, CONVERT(money, D.Value), 1) + ' ' + E.UnitName+FAOSTATConstants.faostatLanguage)</SELECT>	-->
+					</SELECTS>
+					<FROMS>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</FROMS>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Land">RL</DOMAIN>	
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Country area">6600</ITEM>
+							<ITEM label="Agricultural area">6610</ITEM>
+							<ITEM label="Forest area">6661</ITEM>
+						</ITEMS>
+						<ELEMENTS>
+							<ELEMENT label='Area'>5110</ELEMENT>
+						</ELEMENTS>						
+					</WHERE>
+					<!-- <SORT>
+					    <FIELD type="aggregation">D.Value</FIELD>
+					</SORT> -->
+				</BASEQUERY>
+			</RESOURCE>
+
+<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>PIE</OUTPUTTYPE>
+				<TITLE>
+					<E>Land Use</E>
+				</TITLE>
+				<IMAGESIZE>
+					<SMALL>
+						<WIDTH>530</WIDTH>
+						<HEIGHT>250</HEIGHT>
+					</SMALL>
+					<BIG>
+						<WIDTH>450</WIDTH>
+						<HEIGHT>250</HEIGHT>
+					</BIG>
+				</IMAGESIZE>
+				<DATEQUERY>
+					<MAX>D.Year</MAX> 
+				</DATEQUERY>
+				<BASEQUERY>
+					<SELECTS>
+						<SELECT>I.ItemCode</SELECT>	
+						<SELECT lang="true">I.ItemName</SELECT>					
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Land">RL</DOMAIN>	
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Arable land (code 6621)">6621</ITEM>							<ITEM label="Permanent crops (code 6650)">6650</ITEM>
+							<ITEM label="Permanent meadows and pastures (code 6655)">6655</ITEM>							<ITEM label="Forest area (code 6661)">6661</ITEM>
+							<ITEM label="Other land (code 6670)">6670</ITEM>
+						</ITEMS>
+						<ELEMENTS>
+							<ELEMENT label='Area'>5110</ELEMENT>
+						</ELEMENTS>												
+					</WHERE>
+					<SORT>
+						<FIELD type="aggregation">D.Value</FIELD>
+					</SORT>	
+				</BASEQUERY>					
+			</RESOURCE>
+
+			<!--<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>PIE</OUTPUTTYPE>
+				<TITLE>
+					<E>Land Use</E>
+				</TITLE>
+				<IMAGESIZE>
+					<SMALL>
+						<WIDTH>530</WIDTH>
+						<HEIGHT>250</HEIGHT>
+					</SMALL>
+					<BIG>
+						<WIDTH>450</WIDTH>
+						<HEIGHT>250</HEIGHT>
+					</BIG>
+				</IMAGESIZE>
+				<DATEQUERY>
+					<MAX>D.Year</MAX> 
+				</DATEQUERY>
+				<CALCULATIONQUERY>
+					<TYPE>SUBTRACT</TYPE> 
+					<RESULTLABEL>Other Land</RESULTLABEL> 
+					<PARAMETERS>
+						<FILTERCOLUMN>Item</FILTERCOLUMN>
+						<MINUEND>
+								<CODE label="Land area">6601</CODE>
+						</MINUEND>
+						<SUBTRAHEND>
+								<CODE label="Arable Land">6621</CODE>
+								<CODE label="Permanent meadows and pastures">6655</CODE>
+						</SUBTRAHEND>
+					</PARAMETERS>
+				</CALCULATIONQUERY>
+				<BASEQUERY>
+					<SELECTS>
+						<SELECT>I.ItemCode</SELECT>	
+						<SELECT lang="true">I.ItemName</SELECT>					
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Land">RL</DOMAIN>	
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Arable Land">6621</ITEM>
+							<ITEM label="Permanent meadows and pastures">6655</ITEM>
+						</ITEMS>
+						<ELEMENTS>
+							<ELEMENT label='Area'>5110</ELEMENT>
+						</ELEMENTS>												
+					</WHERE>
+					<SORT>
+						<FIELD type="aggregation">D.Value</FIELD>
+					</SORT>	
+				</BASEQUERY>					
+			</RESOURCE>-->
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>BAR_WITH_CATEGORIES</OUTPUTTYPE>
+				<TITLE>
+					<E>Cereal Production</E>
+				</TITLE>
+				<IMAGESIZE>
+					<SMALL>
+						<WIDTH>750</WIDTH>
+						<HEIGHT>270</HEIGHT>
+					</SMALL>
+					<BIG>
+						<WIDTH>450</WIDTH>
+						<HEIGHT>250</HEIGHT>
+					</BIG>
+				</IMAGESIZE>
+				<DATEQUERY>
+					<MAX>D.Year</MAX>  <!-- RUN a MAX(D.Year) query and use this value in the data QUERY -->
+					<TIMESPAN type="year">10</TIMESPAN>
+				</DATEQUERY>
+				<BASEQUERY>
+					<SELECTS>		       
+						<SELECT lang="true">I.ItemName</SELECT>
+						<SELECT>D.Year</SELECT>
+					</SELECTS>
+					<FROMS>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</FROMS>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Crops">QC</DOMAIN>
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Cereals, Total">1717</ITEM>
+							<ITEM label="Rice, paddy">27</ITEM>
+							<ITEM label="Wheat">15</ITEM>
+						</ITEMS>
+						<ELEMENTS>
+							<ELEMENT label='Production'>5510</ELEMENT>
+						</ELEMENTS>				
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">I.ItemName</FIELD>
+						<FIELD>D.Year</FIELD>
+					</SORT>				             
+				 </BASEQUERY>
+			</RESOURCE>
+			
+			
+
+
+			<RESOURCE>			
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<TITLE>
+					<E>Livestock Primary Production</E>
+				</TITLE>
+				<IMAGESIZE>
+				        <SMALL>
+						<WIDTH>750</WIDTH>
+						<HEIGHT>270</HEIGHT>
+					</SMALL>
+					<BIG>
+						<WIDTH>450</WIDTH>
+						<HEIGHT>250</HEIGHT>
+					</BIG>
+				</IMAGESIZE>
+				<DATEQUERY>
+					<MAX>D.Year</MAX>  <!-- RUN a MAX(D.Year) query and use this value in the data QUERY -->
+					<TIMESPAN type="year">10</TIMESPAN>
+				</DATEQUERY>
+				<BASEQUERY>					 
+					<SELECTS>		       
+						<SELECT lang="true">I.ItemName</SELECT>
+						<SELECT>D.Year</SELECT>
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Livestock Primary">QL</DOMAIN>
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Eggs Primary">1783</ITEM>
+							<ITEM label="Beef and Buffalo Meat">1806</ITEM>
+							<ITEM label="Sheep and Goat Meat">1807</ITEM>
+							<ITEM label="Poultry Meat">1808</ITEM>
+						</ITEMS>
+						<ELEMENTS>
+							<ELEMENT label='Production'>5510</ELEMENT>
+						</ELEMENTS>						
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">I.ItemName</FIELD>
+						<FIELD>D.Year</FIELD>
+					</SORT>				             
+				 </BASEQUERY>					
+			</RESOURCE>
+			
+			<RESOURCE>			
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<TITLE>
+					<E>PIN</E>
+				</TITLE>
+				<IMAGESIZE>
+				        <SMALL>
+						<WIDTH>750</WIDTH>
+						<HEIGHT>270</HEIGHT>
+					</SMALL>
+					<BIG>
+						<WIDTH>450</WIDTH>
+						<HEIGHT>250</HEIGHT>
+					</BIG>
+				</IMAGESIZE>
+				<DATEQUERY>
+					<MAX>D.Year</MAX>  <!-- RUN a MAX(D.Year) query and use this value in the data QUERY -->
+					<TIMESPAN type="year">10</TIMESPAN>
+				</DATEQUERY>
+				<BASEQUERY>					 
+					<SELECTS>		       
+						<SELECT lang="true">I.ItemName</SELECT>
+						<SELECT>D.Year</SELECT>
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="PIN">QI</DOMAIN>
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Cereal, Total">1717</ITEM>
+							<ITEM label="Agriculture">2051</ITEM>
+							<ITEM label="Food">2054</ITEM>
+							<ITEM label="Non Food">2057</ITEM> 
+						</ITEMS>
+						<ELEMENTS>
+							<ELEMENT label='Net per capita'>438</ELEMENT>
+						</ELEMENTS>						
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">I.ItemName</FIELD>
+						<FIELD>D.Year</FIELD>
+					</SORT>				             
+				 </BASEQUERY>					
+			</RESOURCE>
+			
+
+			
+		</DEFAULT>			
+	</RESOURCES>
+</VIEW>

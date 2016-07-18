@@ -1,0 +1,168 @@
+package org.fao.fenix.web.modules.amis.client.control.history;
+
+import org.fao.fenix.web.modules.amis.client.history.AMISHistory;
+import org.fao.fenix.web.modules.amis.client.view.input.AMISInput;
+import org.fao.fenix.web.modules.amis.common.constants.AMISCurrentView;
+
+import com.extjs.gxt.ui.client.event.ComponentEvent;
+import com.extjs.gxt.ui.client.event.Listener;
+import com.extjs.gxt.ui.client.event.MessageBoxEvent;
+import com.extjs.gxt.ui.client.widget.MessageBox;
+import com.extjs.gxt.ui.client.widget.button.Button;
+import com.google.gwt.user.client.History;
+import com.google.gwt.user.client.ui.RootPanel;
+
+public class AMISHistoryController {
+	
+//	public static Listener<ComponentEvent> setHistoryItem(final AMISCurrentView currentView) {
+//		return new Listener<ComponentEvent>() {
+//			public void handleEvent(ComponentEvent ce) {
+//
+//				setPreviousHistoryToken(History.getToken());
+//
+//				if((currentView!=null)&&(!(currentView.toString().equals(AMISCurrentView.INPUT.toString()))))
+//				{
+//					if(AMISInput.openedCbsTool)
+//					{
+//						System.out.println("The tool is opened "+AMISInput.openedCbsTool);
+//
+//						final Listener<MessageBoxEvent> l = new Listener<MessageBoxEvent>() {
+//						    public void handleEvent(MessageBoxEvent ce) {
+//						       Button btn = ce.getButtonClicked();
+//						       //Info.display("MessageBox", "The '{0}' button was pressed", btn.getText());
+//						       if((btn!=null)&&(btn.getText().equalsIgnoreCase("YES")))
+//						       {
+//						    	   AMISInput.openedCbsTool = false;
+//						    		if (RootPanel.get("CLOSE_CBS_TOOL").getWidgetCount() > 0)
+//										RootPanel.get("CLOSE_CBS_TOOL").remove(RootPanel.get("CLOSE_CBS_TOOL").getWidget(0));
+//						    	   setHistoryAnchor(currentView);
+//						       }
+//						    }
+//						    };
+//
+//						MessageBox.confirm("Confirm", "You are changing view without closing the CBS Tool. Any modification will be lost. Are you sure you want to do this?", l);
+//					}
+//					else
+//					{
+//						//Call the view
+//						setHistoryAnchor(currentView);
+//					}
+//				}
+//				else
+//				{
+//					//Call the view
+//					setHistoryAnchor(currentView);
+//				}
+//
+//			 // setHistoryAnchor(currentView);
+//			}
+//		};
+//	}
+
+    public static Listener<ComponentEvent> setHistoryItem(final AMISCurrentView currentView) {
+        return new Listener<ComponentEvent>() {
+            public void handleEvent(ComponentEvent ce) {
+
+                setPreviousHistoryToken(History.getToken());
+
+                if((currentView!=null)&&(!(currentView.toString().equals(AMISCurrentView.INPUT.toString()))))
+                {
+                    if(AMISInput.openedCbsTool)
+                    {
+                        System.out.println("The tool is opened "+AMISInput.openedCbsTool);
+
+                        if((AMISInput.action!=null)&&(AMISInput.action.equals("CBS_POPULATION_IFRAME")))
+                        {
+                            AMISInput.openedCbsTool = false;
+                            if (RootPanel.get("CLOSE_CBS_TOOL").getWidgetCount() > 0)
+                                RootPanel.get("CLOSE_CBS_TOOL").remove(RootPanel.get("CLOSE_CBS_TOOL").getWidget(0));
+                            setHistoryAnchor(currentView);
+                        }
+                        else
+                        {
+                            final Listener<MessageBoxEvent> l = new Listener<MessageBoxEvent>() {
+                            public void handleEvent(MessageBoxEvent ce) {
+                                Button btn = ce.getButtonClicked();
+                                //Info.display("MessageBox", "The '{0}' button was pressed", btn.getText());
+                                if((btn!=null)&&(btn.getText().equalsIgnoreCase("YES")))
+                                {
+                                    AMISInput.openedCbsTool = false;
+                                    if (RootPanel.get("CLOSE_CBS_TOOL").getWidgetCount() > 0)
+                                        RootPanel.get("CLOSE_CBS_TOOL").remove(RootPanel.get("CLOSE_CBS_TOOL").getWidget(0));
+                                    setHistoryAnchor(currentView);
+                                }
+                            }
+                            };
+
+                            MessageBox.confirm("Confirm", "You are changing view without closing the CBS Tool. Any modification will be lost. Are you sure you want to do this?", l);
+
+                        }
+                    }
+                    else
+                    {
+                        //Call the view
+                        setHistoryAnchor(currentView);
+                    }
+                }
+                else
+                {
+                    //Call the view
+                    setHistoryAnchor(currentView);
+                }
+
+                // setHistoryAnchor(currentView);
+            }
+        };
+    }
+	
+	private static void setPreviousHistoryToken(String token) {
+		AMISHistory.previousHistoryToken = token;		
+	}
+
+	/**
+	 * 
+	 * This method sets the History Anchor for the selected view
+	 * 
+	 * 
+	 * @param currentView
+	 * @return 
+	 * @return
+	 */
+	
+	public static void setHistoryAnchor(final AMISCurrentView currentView) {
+		System.out.println("AMISHistoryController setHistoryAnchor - currentView: " + currentView.toString());
+
+		switch (currentView) {
+		case HOME:
+			History.newItem(AMISCurrentView.HOME.name()); 
+			break;
+		case COMPARE:
+			History.newItem(AMISCurrentView.COMPARE.name()); 
+			break;
+		case COMPARE_DATASOURCES:
+			History.newItem(AMISCurrentView.COMPARE_DATASOURCES.name()); 
+			break;
+		case COMPARE_ACTIVITY_TRACKING:
+			History.newItem(AMISCurrentView.COMPARE_ACTIVITY_TRACKING.name()); 
+			break;	
+		case DOWNLOAD:
+			History.newItem(AMISCurrentView.DOWNLOAD.name()); 
+			break;
+        case DOWNLOAD_STANDARD:
+             History.newItem(AMISCurrentView.DOWNLOAD_STANDARD.name());
+             break;
+        case DOWNLOAD_FULL_BALANCE:
+             History.newItem(AMISCurrentView.DOWNLOAD_FULL_BALANCE.name());
+             break;
+		case INPUT:
+			History.newItem(AMISCurrentView.INPUT.name()); 
+		     break;
+		case STATISTICALNOTES:
+			History.newItem(AMISCurrentView.STATISTICALNOTES.name()); 
+	      	break;
+		default:
+			break;
+		}
+	}
+
+}

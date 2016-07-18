@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Layer
+END
+FixedZoomLevels.js
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Layer/FixedZoomLevels.js
+END
+TileCache.js
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Layer/TileCache.js
+END
+Text.js
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Layer/Text.js
+END
+HTTPRequest.js
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Layer/HTTPRequest.js
+END
+GML.js
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Layer/GML.js
+END
+Grid.js
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Layer/Grid.js
+END
+KaMap.js
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Layer/KaMap.js
+END
+WFS.js
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Layer/WFS.js
+END
+MultiMap.js
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Layer/MultiMap.js
+END
+Vector.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Layer/Vector.js
+END
+EventPane.js
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Layer/EventPane.js
+END
+GeoRSS.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Layer/GeoRSS.js
+END
+Yahoo.js
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Layer/Yahoo.js
+END
+MapGuide.js
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Layer/MapGuide.js
+END
+MapServer.js
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Layer/MapServer.js
+END
+VirtualEarth.js
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Layer/VirtualEarth.js
+END
+WMS.js
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Layer/WMS.js
+END
+SphericalMercator.js
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Layer/SphericalMercator.js
+END
+KaMapCache.js
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Layer/KaMapCache.js
+END
+PointTrack.js
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Layer/PointTrack.js
+END
+Image.js
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Layer/Image.js
+END
+WorldWind.js
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Layer/WorldWind.js
+END
+TMS.js
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Layer/TMS.js
+END
+Markers.js
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Layer/Markers.js
+END
+Google.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Layer/Google.js
+END
+Boxes.js
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Layer/Boxes.js
+END

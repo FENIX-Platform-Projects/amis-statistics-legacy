@@ -1,0 +1,29 @@
+<layer type="shp">
+  <title>World populated places</title>
+  <abstract>Generated from world_populatedplaces -- Shapefile Layer 'world_populatedplaces::world_populated_places'</abstract>
+  <source country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</source>
+  <provider country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</provider>
+  <region />
+  <categories />
+  <sharingcode>Public</sharingcode>
+  <featuretype>
+    <title>World populated places</title>
+    <abstract>Generated from world_populatedplaces</abstract>
+    <defaultstyle>world_populatedplaces</defaultstyle>
+    <bbox>
+      <srs>4326</srs>
+      <minx>-176.2</minx>
+      <maxx>179.38</maxx>
+      <miny>-54.8</miny>
+      <maxy>78.21</maxy>
+    </bbox>
+    <layername>world_populated_places</layername>
+    <datastore>
+      <name>world_populatedplaces</name>
+      <namespace>fenix</namespace>
+    </datastore>
+  </featuretype>
+  <!--Data dumped from geoserver at:-->
+  <!--REST url: http://ldvapp07.fao.org:8032/geoserverDev-->
+  <!--WMS url: http://ldvapp07.fao.org:8032/geoserverDev/wms?-->
+</layer>

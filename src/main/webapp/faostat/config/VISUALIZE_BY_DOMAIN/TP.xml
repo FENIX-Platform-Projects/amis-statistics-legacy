@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<VIEW type="Browse By TP - Trade - Crops and livestock" >
+	<TITLE>
+		<E>Trade - crops and livestock</E>
+		<S>Comercio - cultivos y ganadería</S>
+		<F>Commerce - cultures et l élevage</F>
+	</TITLE>
+	<FILTERS>
+		<FILTER width="150px">
+			<FILTERTYPE>ITEMS</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE label="RICE">27</CODE>
+			</DEFAULTCODES>
+		</FILTER>
+		<FILTER>
+			<FILTERTYPE>COUNTRIES</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE label="Argentina">9</CODE>
+			</DEFAULTCODES> 
+		</FILTER>
+		<FILTER>
+			<FILTERTYPE>TIMERANGE</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE>1990</CODE>
+				<CODE>2009</CODE>
+			</DEFAULTCODES>
+		</FILTER>
+			
+		<FILTER>
+			<FILTERTYPE>AGGREGATION_TYPE</FILTERTYPE>
+			<CODE label="Average">AVG</CODE>
+		</FILTER>	
+	</FILTERS>
+
+	<RESOURCES>
+		<DEFAULT>
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<TITLE>
+<E>Exports of selected country</E>
+  <S>Exportaciones del país seleccionado</S>
+  <F>Exportations du pays sélectionné</F>
+				</TITLE>
+				<SIZE>
+					<WIDTH>800</WIDTH>
+					<HEIGHT>330</HEIGHT>
+				</SIZE>
+			
+				<DATEQUERY>
+					<MAXDATELIMIT>2009</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> -->
+					<TIMESPAN type="year">19</TIMESPAN>
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+ 						<SELECT lang="true">I.ItemName</SELECT>	
+						<SELECT>D.Year</SELECT>		
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Trade-crops and livestock">TP</DOMAIN>
+						</DOMAINS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Exports (quantity)'>2910</ELEMENTLIST>
+						</ELEMENTSLIST>	
+						<AREAS>
+							<AREA label="Argentina">9</AREA>	
+						</AREAS> 	
+						<ITEMS>
+							<ITEM label='Rice, paddy'>27</ITEM>
+						</ITEMS>					
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD>D.Year</FIELD>
+					</SORT>			
+				</BASEQUERY>					
+			</RESOURCE>
+			
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<TITLE>
+<E>Imports of selected countries</E>
+  <S>Importaciones de países seleccionados</S>
+  <F>Les importations de pays sélectionnés</F>
+				</TITLE>
+				<SIZE>
+					<WIDTH>800</WIDTH>
+					<HEIGHT>330</HEIGHT>
+				</SIZE>
+			
+				<DATEQUERY>
+					<MAXDATELIMIT>2009</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> -->
+					<TIMESPAN type="year">19</TIMESPAN>
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+ 						<SELECT lang="true">I.ItemName</SELECT>	
+						<SELECT>D.Year</SELECT>		
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Trade-crops and livestock">TP</DOMAIN>
+						</DOMAINS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Imports (quantity)'>2610</ELEMENTLIST>
+						</ELEMENTSLIST>	
+						<AREAS>
+							<AREA label="Argentina">9</AREA>	
+						</AREAS> 	
+						<ITEMS>
+							<ITEM label='Rice, paddy'>27</ITEM>
+						</ITEMS>					
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD>D.Year</FIELD>
+					</SORT>			
+				</BASEQUERY>					
+			</RESOURCE>
+			
+			
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>BAR_WITH_CATEGORIES</OUTPUTTYPE>
+				<TITLE>
+<E>Exports of top 5 exporters</E>
+  <S>Exportaciones de los 5 principales exportadores</S>
+  <F>Les exportations des 5 meilleurs exportateurs</F>
+				</TITLE>
+				<APPLICABLE_FILTERS>
+					<APPLY_ALL_FILTERS_EXCEPT_AREAS>true</APPLY_ALL_FILTERS_EXCEPT_AREAS>
+				</APPLICABLE_FILTERS>
+				<!-- <DATEQUERY>
+					<MAX>D.Year</MAX>  
+				</DATEQUERY>-->
+				<BASEQUERY>
+					
+					<SELECTS>
+ 						<SELECT lang="true">I.ItemName</SELECT>	
+						<SELECT lang="true">A.AreaName</SELECT>		
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Trade-crops and livestock">TP</DOMAIN>	
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Rice">27</ITEM>
+						</ITEMS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Export'>2910</ELEMENTLIST>
+						</ELEMENTSLIST>
+						<YEARS>
+							<YEAR>2009</YEAR>
+						</YEARS>
+					</WHERE>
+					<SORT>
+						<FIELD type="aggregation">D.Value</FIELD>
+					</SORT>	
+			
+					<NESTEDLIMIT field="D.AreaCode">5</NESTEDLIMIT>
+					
+				</BASEQUERY>					
+			</RESOURCE>
+			
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>BAR_WITH_CATEGORIES</OUTPUTTYPE>
+				<TITLE>
+<E>Imports of top 5 importers</E>
+  <S>Importaciones de los 5 principales importadores</S>
+  <F>Importations  des 5 meilleurs importateurs</F>
+				</TITLE>
+				<APPLICABLE_FILTERS>
+					<APPLY_ALL_FILTERS_EXCEPT_AREAS>true</APPLY_ALL_FILTERS_EXCEPT_AREAS>
+				</APPLICABLE_FILTERS>
+				<!-- <DATEQUERY>
+					<MAX>D.Year</MAX>
+				</DATEQUERY>-->
+				<BASEQUERY>
+					
+					<SELECTS>
+ 						<SELECT lang="true">I.ItemName</SELECT>	
+						<SELECT lang="true">A.AreaName</SELECT>		
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Trade-crops and livestock">TP</DOMAIN>	
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Rice">27</ITEM>
+						</ITEMS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='import'>2610</ELEMENTLIST>
+						</ELEMENTSLIST>
+						<YEARS>
+							<YEAR>2009</YEAR>
+						</YEARS>
+					</WHERE>
+					<SORT>
+						<FIELD type="aggregation">D.Value</FIELD>
+					</SORT>	
+			
+					<NESTEDLIMIT field="D.AreaCode">5</NESTEDLIMIT>
+					
+				</BASEQUERY>					
+			</RESOURCE>  
+		</DEFAULT>	
+	</RESOURCES>
+</VIEW>

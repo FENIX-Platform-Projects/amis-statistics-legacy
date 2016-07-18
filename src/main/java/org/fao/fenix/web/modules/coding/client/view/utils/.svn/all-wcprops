@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/fenix/!svn/ver/6751/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/coding/client/view/utils
+END
+TableItemBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/fenix/!svn/ver/6406/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/coding/client/view/utils/TableItemBuilder.java
+END
+CodingPager.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/fenix/!svn/ver/6751/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/coding/client/view/utils/CodingPager.java
+END
+TableHeadersBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/fenix/!svn/ver/6751/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/coding/client/view/utils/TableHeadersBuilder.java
+END
+GridItemBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/fenix/!svn/ver/6406/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/coding/client/view/utils/GridItemBuilder.java
+END

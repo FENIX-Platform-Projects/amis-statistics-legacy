@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/fenix/!svn/ver/6590/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/esoko/common/services
+END
+EsokoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/fenix/!svn/ver/6590/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/esoko/common/services/EsokoService.java
+END
+EsokoServiceAsync.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/fenix/!svn/ver/6590/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/esoko/common/services/EsokoServiceAsync.java
+END
+EsokoServiceEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/fenix/!svn/ver/6581/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/esoko/common/services/EsokoServiceEntry.java
+END

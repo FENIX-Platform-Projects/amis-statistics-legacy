@@ -1,0 +1,325 @@
+<VIEW type="VIew Top 20" >
+	
+	<QUESTIONS>
+		<QUESTION>
+			<TITLE>
+<E>Food and Agricultural commodities production</E>
+  <S>Producción de productos alimentarios y agrícolas</S>
+  <F>Alimentation et production agricole</F>
+			</TITLE>
+			<SUBTITLE>
+<E>subtitle</E>
+  <S>subtítulo</S>
+  <F>sous - titre</F>
+			</SUBTITLE>
+			<DESCRIPTION>
+<E>description</E>
+  <S>descripción</S>
+  <F>description</F>
+			</DESCRIPTION>
+			<INFOS>
+				<INFO>
+					<TITLE>
+<E>Commodities by regions</E>
+  <S>Productos por Regiones</S>
+  <F>Produits par regions</F>
+					</TITLE>
+					<SUBTITLE>
+<E>subtitle</E>
+  <S>subtítulo</S>
+  <F>sous - titre</F>
+					</SUBTITLE>
+					<DESCRIPTION>
+<E>description</E>
+  <S>descripción</S>
+  <F>description</F>
+					</DESCRIPTION>
+					<FILENAME>commodities_by_regions</FILENAME>
+				</INFO>
+
+
+				<INFO>
+					<TITLE>
+<E>Commodities by country</E>
+  <S>Productos por país</S>
+  <F>Produits par pays</F>
+					</TITLE>
+					<SUBTITLE>
+<E>subtitle</E>
+  <S>subtítulo</S>
+  <F>sous - titre</F>
+					</SUBTITLE>
+					<DESCRIPTION>
+<E>description</E>
+  <S>descripción</S>
+  <F>description</F>
+					</DESCRIPTION>
+					<FILENAME>commodities_by_country</FILENAME>
+				</INFO>
+
+				<INFO>
+					<TITLE>
+<E>Countries by commodity</E>
+  <S>Países por producto</S>
+  <F>Pays par produits</F>
+					</TITLE>
+					<SUBTITLE>
+<E>subtitle</E>
+  <S>subtítulo</S>
+  <F>sous - titre</F>
+					</SUBTITLE>
+					<DESCRIPTION>
+<E>description</E>
+  <S>descripción</S>
+  <F>description</F>
+					</DESCRIPTION>
+					<FILENAME>countries_by_commodity</FILENAME>
+				</INFO>
+			</INFOS>
+	
+		</QUESTION>
+
+		<QUESTION>
+			<TITLE>
+<E>Imports</E>
+  <S>Importaciones</S>
+  <F>Importations</F>
+			</TITLE>
+			<SUBTITLE>
+<E>subtitle</E>
+  <S>subtítulo</S>
+  <F>sous - titre</F>
+			</SUBTITLE>
+			<DESCRIPTION>
+<E>description</E>
+  <S>descripción</S>
+  <F>description</F>
+			</DESCRIPTION>
+			<INFOS>
+
+				<INFO>
+					<TITLE>
+<E>Commodities by regions</E>
+  <S>Productos por Regiones</S>
+  <F>Produits par regions</F>
+					</TITLE>
+					<SUBTITLE>
+<E>subtitle</E>
+  <S>subtítulo</S>
+  <F>sous - titre</F>
+					</SUBTITLE>
+					<DESCRIPTION>
+<E>description</E>
+  <S>descripción</S>
+  <F>description</F>
+					</DESCRIPTION>
+					<FILENAME>commodities_by_regions_imports</FILENAME>
+				</INFO>
+
+
+				<INFO>
+					<TITLE>
+<E>Commodities by country</E>
+  <S>Productos por país</S>
+  <F>Produits par pays</F>
+					</TITLE>
+					<SUBTITLE>
+<E>subtitle</E>
+  <S>subtítulo</S>
+  <F>sous - titre</F>
+					</SUBTITLE>
+					<DESCRIPTION>
+<E>description</E>
+  <S>descripción</S>
+  <F>description</F>
+					</DESCRIPTION>
+					<FILENAME>commodities_by_country_imports</FILENAME>
+				</INFO>
+
+				<!--<INFO>
+					<TITLE>
+<E>Countries by commodity</E>
+  <S>Países por producto</S>
+  <F>Pays par produits</F>
+					</TITLE>
+					<SUBTITLE>
+<E>subtitle</E>
+  <S>subtítulo</S>
+  <F>sous - titre</F>
+					</SUBTITLE>
+					<DESCRIPTION>
+<E>description</E>
+  <S>descripción</S>
+  <F>description</F>
+					</DESCRIPTION>
+					<FILENAME>countries_by_commodity_imports</FILENAME>
+				</INFO> -->
+
+
+				<INFO>
+					<TITLE>
+<E>Major commodities importers</E>
+  <S>Mayores importadores de productos</S>
+  <F>Principaux importateurs de produits</F>
+					</TITLE>
+					<SUBTITLE>
+<E>subtitle</E>
+  <S>subtítulo</S>
+  <F>sous - titre</F>
+					</SUBTITLE>
+					<DESCRIPTION>
+<E>description</E>
+  <S>descripción</S>
+  <F>description</F>
+					</DESCRIPTION>
+					<FILENAME>major_commodities_imports</FILENAME>
+				</INFO>
+
+			</INFOS>
+	
+		</QUESTION>
+
+
+		<QUESTION>
+			<TITLE>
+<E>Exports</E>
+  <S>Exportaciones</S>
+  <F>Exportations</F>
+			</TITLE>
+			<SUBTITLE>
+<E>subtitle</E>
+  <S>subtítulo</S>
+  <F>sous - titre</F>
+			</SUBTITLE>
+			<DESCRIPTION>
+<E>description</E>
+  <S>descripción</S>
+  <F>description</F>
+			</DESCRIPTION>
+			<INFOS>
+
+				<INFO>
+					<TITLE>
+<E>Commodities by regions</E>
+  <S>Productos por Regiones</S>
+  <F>Produits par regions</F>
+					</TITLE>
+					<SUBTITLE>
+<E>subtitle</E>
+  <S>subtítulo</S>
+  <F>sous - titre</F>
+					</SUBTITLE>
+					<DESCRIPTION>
+<E>description</E>
+  <S>descripción</S>
+  <F>description</F>
+					</DESCRIPTION>
+					<FILENAME>commodities_by_regions_exports</FILENAME>
+				</INFO>
+
+				<INFO>
+					<TITLE>
+<E>Commodities by country</E>
+  <S>Productos por país</S>
+  <F>Produits par pays</F>
+					</TITLE>
+					<SUBTITLE>
+<E>subtitle</E>
+  <S>subtítulo</S>
+  <F>sous - titre</F>
+					</SUBTITLE>
+					<DESCRIPTION>
+<E>description</E>
+  <S>descripción</S>
+  <F>description</F>
+					</DESCRIPTION>
+					<FILENAME>commodities_by_country_exports</FILENAME>
+				</INFO>
+
+				<INFO>
+					<TITLE>
+<E>Major commodities exporters</E>
+  <S>Mayores exportadores de productos</S>
+  <F>Principaux exportateurs des produits</F>
+					</TITLE>
+					<SUBTITLE>
+<E>subtitle</E>
+  <S>subtítulo</S>
+  <F>sous - titre</F>
+					</SUBTITLE>
+					<DESCRIPTION>
+<E>description</E>
+  <S>descripción</S>
+  <F>description</F>
+					</DESCRIPTION>
+					<FILENAME>major_commodities_exports</FILENAME>
+				</INFO>
+
+			</INFOS>
+	
+		</QUESTION>
+
+		<!-- <QUESTION>
+			<TITLE>
+<E>Trade</E>
+  <S>Comercio</S>
+  <F>Commerce</F>
+			</TITLE>
+			<SUBTITLE>
+<E>subtitle</E>
+  <S>subtítulo</S>
+  <F>sous - titre</F>
+			</SUBTITLE>
+			<DESCRIPTION>
+<E>description</E>
+  <S>descripción</S>
+  <F>description</F>
+			</DESCRIPTION>
+			<INFOS>
+				<INFO>
+					<TITLE>
+<E>Import by country</E>
+  <S>Importación por país</S>
+  <F>Importations par pays</F>
+					</TITLE>
+					<SUBTITLE>
+<E>subtitle</E>
+  <S>subtítulo</S>
+  <F>sous - titre</F>
+					</SUBTITLE>
+					<DESCRIPTION>
+<E>description</E>
+  <S>descripción</S>
+  <F>description</F>
+					</DESCRIPTION>
+					<FILENAME>trade_commodities_by_country</FILENAME>
+				</INFO>
+
+				<INFO>
+					<TITLE>
+<E>Countries by commodity</E>
+  <S>Países por producto</S>
+  <F>Pays par produits</F>
+					</TITLE>
+					<SUBTITLE>
+<E>subtitle</E>
+  <S>subtítulo</S>
+  <F>sous - titre</F>
+					</SUBTITLE>
+					<DESCRIPTION>
+<E>description</E>
+  <S>descripción</S>
+  <F>description</F>
+					</DESCRIPTION>
+					<FILENAME>trade_countries_by_commodity</FILENAME>
+				</INFO>
+
+			</INFOS>
+	
+		</QUESTION> -->
+
+
+
+	</QUESTIONS>
+
+</VIEW>

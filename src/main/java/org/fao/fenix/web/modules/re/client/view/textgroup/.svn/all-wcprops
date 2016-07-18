@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/fenix/!svn/ver/7078/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/textgroup
+END
+SearchParametersTextGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/fenix/!svn/ver/6412/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/textgroup/SearchParametersTextGroup.java
+END
+CatalogueContextMenuTextGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/fenix/!svn/ver/7078/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/textgroup/CatalogueContextMenuTextGroup.java
+END
+CatalogueTextGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/textgroup/CatalogueTextGroup.java
+END
+CataloguePagerTextGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/fenix/!svn/ver/6412/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/textgroup/CataloguePagerTextGroup.java
+END
+ResourceExplorerTextGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/textgroup/ResourceExplorerTextGroup.java
+END

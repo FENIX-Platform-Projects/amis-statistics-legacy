@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/fenix/!svn/ver/9462/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/common/vo
+END
+DWCodesModelData.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/fenix/!svn/ver/8805/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/common/vo/DWCodesModelData.java
+END
+DataViewerDBVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/fenix/!svn/ver/7724/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/common/vo/DataViewerDBVO.java
+END
+BulkDownloadVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/fenix/!svn/ver/8954/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/common/vo/BulkDownloadVO.java
+END

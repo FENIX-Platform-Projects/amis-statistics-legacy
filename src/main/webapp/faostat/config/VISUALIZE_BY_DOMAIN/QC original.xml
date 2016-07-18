@@ -1,0 +1,362 @@
+<VIEW type="Browse By QC - Pooduction Domain - Crops" >
+
+	<TITLE>
+					<E>Production - crops </E>
+	</TITLE>
+
+	<FILTERS>
+		<FILTER>
+			<FILTERTYPE>ITEMS</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE label="RICE">27</CODE>
+			</DEFAULTCODES>
+		</FILTER>
+		<FILTER>
+			<FILTERTYPE multiselection="true" >AREAS_WORLD</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE label="Wolrd">5000</CODE>
+			</DEFAULTCODES> 
+		</FILTER>
+		<FILTER>
+			<FILTERTYPE>TIMERANGE</FILTERTYPE>
+			<!-- TODO: last available and timerange?-->
+		</FILTER>
+			
+		<FILTER>
+			<FILTERTYPE>AGGREGATION_TYPE</FILTERTYPE>
+			<CODE label="Average">AVG</CODE>
+		</FILTER>	
+	</FILTERS>
+
+	<RESOURCES>
+		<DEFAULT>
+			<RESOURCE>	
+				<RESOURCETYPE>MAP</RESOURCETYPE>
+				<OUTPUTTYPE>MAP</OUTPUTTYPE>
+				<TITLE>
+					<E>Producers (tonnes)</E>
+				</TITLE>
+				<DATEQUERY>
+					<MAX>D.Year</MAX> <!--  RUN a MAX(D.Year) query and use this value in the data QUERY -->
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+						<SELECT>D.AreaCode</SELECT>	
+					
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Production">QC</DOMAIN>	
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Rice">27</ITEM>
+						</ITEMS>
+						<ELEMENTS>
+							<ELEMENT label='Production'>5510</ELEMENT>
+						</ELEMENTS>								
+					</WHERE>
+	
+					<SORT>
+						<FIELD type="aggregation">D.Value</FIELD>
+					</SORT>	
+		
+				</BASEQUERY>					
+			</RESOURCE>
+
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>BAR_WITH_CATEGORIES</OUTPUTTYPE>
+				<TITLE>
+					<E>Production of top 5 producers</E>
+				</TITLE>
+				<DATEQUERY>
+					<MAX>D.Year</MAX>  <!-- RUN a MAX(D.Year) query and use this value in the data QUERY -->
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+						<!--<SELECT lang="true">I.ItemName</SELECT>-->
+ 						<SELECT lang="true">I.ItemName</SELECT>	
+						<SELECT lang="true">A.AreaName</SELECT>		
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Production">QC</DOMAIN>	
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Rice">27</ITEM>
+						</ITEMS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Production'>2510</ELEMENTLIST>
+						</ELEMENTSLIST>
+					</WHERE>
+					<SORT>
+						<FIELD type="aggregation">D.Value</FIELD>
+					</SORT>	
+			
+					<NESTEDLIMIT field="D.AreaCode">5</NESTEDLIMIT>
+					
+				</BASEQUERY>					
+			</RESOURCE>
+
+
+
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>BAR_WITH_CATEGORIES</OUTPUTTYPE>
+				<TITLE>
+					<E>Countries delivering the 5 highest yields</E>
+				</TITLE>
+								<DATEQUERY>
+					<MAX>D.Year</MAX> <!--  RUN a MAX(D.Year) query and use this value in the data QUERY -->
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+							<!-- <SELECT lang="true">I.ItemName</SELECT>-->
+ 						<SELECT lang="true">I.ItemName</SELECT>	
+						<SELECT lang="true">A.AreaName</SELECT>	
+<!-- <SELECT lang="true">I.ItemName</SELECT>		-->
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Production">QC</DOMAIN>	
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Rice">27</ITEM>
+						</ITEMS>
+						<ELEMENTS>
+							<ELEMENT label='Yield'>5419</ELEMENT>
+						</ELEMENTS>								
+					</WHERE>
+					<SORT>
+						<FIELD type="aggregation">D.Value</FIELD>
+					</SORT>	
+
+					<NESTEDLIMIT field="D.AreaCode">5</NESTEDLIMIT>
+				</BASEQUERY>					
+			</RESOURCE>
+
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>BAR_WITH_CATEGORIES</OUTPUTTYPE>
+				<TITLE>
+					<E>Top 5 seeds producers</E>
+				</TITLE>
+				<DATEQUERY>
+					<MAX>D.Year</MAX>  <!-- RUN a MAX(D.Year) query and use this value in the data QUERY -->
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+ 						<SELECT lang="true">I.ItemName</SELECT>	
+						<SELECT lang="true">A.AreaName</SELECT>	
+<!-- <SELECT lang="true">I.ItemName</SELECT>		-->
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Production">QC</DOMAIN>	
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Rice">27</ITEM>
+						</ITEMS>
+						<ELEMENTS>
+							<ELEMENT label='Seeds'>5525</ELEMENT>
+						</ELEMENTS>								
+					</WHERE>
+					<SORT>
+						<FIELD type="aggregation">D.Value</FIELD>
+					</SORT>	
+
+					<NESTEDLIMIT field="D.AreaCode">5</NESTEDLIMIT>
+				</BASEQUERY>					
+			</RESOURCE>
+
+
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>PIE</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>360</WIDTH>
+					<HEIGHT>250</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>Production share by region</E>
+				</TITLE>
+				<APPLICABLE_FILTERS>
+					<APPLY_ALL_FILTERS_EXCEPT_AREAS>true</APPLY_ALL_FILTERS_EXCEPT_AREAS>
+				</APPLICABLE_FILTERS>
+				<DATEQUERY>
+					<MAX>D.Year</MAX>  <!-- RUN a MAX(D.Year) query and use this value in the data QUERY -->
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+						<SELECT>D.AreaCode</SELECT>	
+						<SELECT lang="true">A.AreaName</SELECT>
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Live Animals">QC</DOMAIN>	
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Rice">27</ITEM>
+						</ITEMS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Stocks'>2510</ELEMENTLIST>
+						</ELEMENTSLIST>	
+						<AREAS>
+							<AREA label="Africa">5100</AREA>	
+							<AREA label="Europa">5400</AREA>	
+							<AREA label="America">5200</AREA>	
+							<AREA label="Asia">5300</AREA>
+							<AREA label="Oceania">5500</AREA>
+						</AREAS> 							
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">A.AreaName</FIELD>
+					</SORT>	
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>
+				</BASEQUERY>							
+			</RESOURCE>
+
+
+
+
+			
+			
+	<!--		<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>BAR_WITH_CATEGORIES</OUTPUTTYPE>
+				<TITLE>
+					<E>Worst 5 yields</E>
+				</TITLE>
+				
+				<DATEQUERY>
+					<MAX>D.Year</MAX> 
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+ 						<SELECT lang="true">I.ItemName</SELECT>	
+						<SELECT lang="true">A.AreaName</SELECT>	
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Production">QC</DOMAIN>	
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Rice">27</ITEM>
+						</ITEMS>
+						<ELEMENTS>
+							<ELEMENT label='Yield'>5419</ELEMENT>
+						</ELEMENTS>								
+					</WHERE>
+					<SORT type="ASC">
+						<FIELD type="aggregation">D.Value</FIELD>
+					</SORT>	
+
+					<NESTEDLIMIT field="D.AreaCode">5</NESTEDLIMIT>
+				</BASEQUERY>					
+			</RESOURCE>	-->
+
+
+
+
+			<!-- <RESOURCE>			
+				<RESOURCETYPE>TABLE</RESOURCETYPE>
+ 				<OUTPUTTYPE>TABLE</OUTPUTTYPE>
+
+				<TITLE>
+					<E>Growth Rate of Production Crops</E>
+				</TITLE>
+				<DATEQUERY>
+					<MAX>D.Year</MAX>  
+					<TIMESPAN type="year">9</TIMESPAN>
+				</DATEQUERY>
+				<CALCULATIONQUERY>
+					<TYPE>GROWTH_RATE</TYPE> 
+				</CALCULATIONQUERY> 
+				<BASEQUERY>
+					
+					<SELECTS>
+ 						<SELECT lang="true">I.ItemName</SELECT>	
+						<SELECT lang="true">A.AreaName</SELECT>		
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Production">QC</DOMAIN>	
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Rice">27</ITEM>
+						</ITEMS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Production'>2510</ELEMENTLIST>
+						</ELEMENTSLIST>
+					</WHERE>
+					<SORT>
+						<FIELD type="aggregation">D.Value</FIELD>
+					</SORT>	
+			
+					<NESTEDLIMIT field="D.AreaCode">7</NESTEDLIMIT>
+					
+				</BASEQUERY>				
+			</RESOURCE> -->
+	
+
+		</DEFAULT>	
+
+		
+	</RESOURCES>
+</VIEW>

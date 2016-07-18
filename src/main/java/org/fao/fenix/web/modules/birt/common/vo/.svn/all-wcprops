@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/fenix/!svn/ver/7153/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/common/vo
+END
+FormatChartVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/fenix/!svn/ver/7153/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/common/vo/FormatChartVo.java
+END
+ChartBeanValues.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/fenix/!svn/ver/6748/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/common/vo/ChartBeanValues.java
+END
+ChartBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/fenix/!svn/ver/6405/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/common/vo/ChartBean.java
+END
+ReportVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/fenix/!svn/ver/6748/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/common/vo/ReportVo.java
+END
+ChartWizardBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/fenix/!svn/ver/7111/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/common/vo/ChartWizardBean.java
+END
+DateVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/fenix/!svn/ver/6748/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/common/vo/DateVo.java
+END
+ChartBirtBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/fenix/!svn/ver/6405/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/common/vo/ChartBirtBean.java
+END
+YSerieBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/fenix/!svn/ver/6748/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/common/vo/YSerieBean.java
+END
+FormatType.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/fenix/!svn/ver/6748/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/common/vo/FormatType.java
+END

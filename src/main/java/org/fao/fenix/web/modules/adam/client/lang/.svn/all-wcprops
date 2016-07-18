@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/fenix/!svn/ver/10363/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/adam/client/lang
+END
+ADAMLanguageConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/fenix/!svn/ver/10340/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/adam/client/lang/ADAMLanguageConstants.java
+END
+ADAMLanguage.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/fenix/!svn/ver/8281/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/adam/client/lang/ADAMLanguage.java
+END
+ADAMLanguageConstants_es.properties
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/fenix/!svn/ver/10359/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/adam/client/lang/ADAMLanguageConstants_es.properties
+END
+ADAMLanguageConstants_fr.properties
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/fenix/!svn/ver/10363/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/adam/client/lang/ADAMLanguageConstants_fr.properties
+END

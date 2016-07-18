@@ -1,0 +1,3 @@
+Mean = mean(x, trim = 0, na.rm = FALSE)
+Mode = mode(x)
+Standard Deviation = sd(x, na.rm = FALSE)

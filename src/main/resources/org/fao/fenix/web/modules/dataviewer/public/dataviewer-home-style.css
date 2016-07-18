@@ -1,0 +1,25 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+	font-family:verdana;
+
+}
+
+body{
+	margin:0;
+	padding:0
+	height:100%; /* this is the key! */
+	color:#000000;  
+	background-color:#ffffff;
+	font-family: verdana;
+}
+
+#centerColumn { 	
+	margin:0 auto;
+	width:1100px;
+	text-align:left;
+	vertical-align: middle;	
+	background-color:#ffffff;
+}
+	

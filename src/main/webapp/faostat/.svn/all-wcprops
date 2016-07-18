@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/fenix/!svn/ver/9508/trunk/fenix-web/src/main/webapp/faostat
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/fenix/!svn/ver/7191/trunk/fenix-web/src/main/webapp/faostat/readme.txt
+END
+FAOStatProductionLivestockProcessed_metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/fenix/!svn/ver/7385/trunk/fenix-web/src/main/webapp/faostat/FAOStatProductionLivestockProcessed_metadata.xml
+END
+FAOStatProductionCrops_metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/fenix/!svn/ver/7385/trunk/fenix-web/src/main/webapp/faostat/FAOStatProductionCrops_metadata.xml
+END
+FAOSTAT_Geoconvertion_table.csv
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/fenix/!svn/ver/9259/trunk/fenix-web/src/main/webapp/faostat/FAOSTAT_Geoconvertion_table.csv
+END
+FAOSTAT_Geoconvertion_table.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/fenix/!svn/ver/9259/trunk/fenix-web/src/main/webapp/faostat/FAOSTAT_Geoconvertion_table.xml
+END
+FAOStatProductionCropsProcessed_metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/fenix/!svn/ver/7385/trunk/fenix-web/src/main/webapp/faostat/FAOStatProductionCropsProcessed_metadata.xml
+END
+FAOStatProductionLiveAnimals_metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/fenix/!svn/ver/7385/trunk/fenix-web/src/main/webapp/faostat/FAOStatProductionLiveAnimals_metadata.xml
+END
+FAOStatProductionProduction_metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/fenix/!svn/ver/7296/trunk/fenix-web/src/main/webapp/faostat/FAOStatProductionProduction_metadata.xml
+END
+FAOStatProductionLivestokPrimary_metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/fenix/!svn/ver/7385/trunk/fenix-web/src/main/webapp/faostat/FAOStatProductionLivestokPrimary_metadata.xml
+END

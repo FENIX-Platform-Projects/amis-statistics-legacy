@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+
+.info {
+	background: transparent url(images/information.png) no-repeat center
+		center;
+}
+
+.email {
+	background: transparent url(images/email.png) no-repeat center center;
+}
+
+a:visited {
+    color: #1D317E;
+}

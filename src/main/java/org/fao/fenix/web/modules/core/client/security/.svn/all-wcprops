@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/fenix/!svn/ver/7081/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/client/security
+END
+LoginView.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/fenix/!svn/ver/6752/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/client/security/LoginView.java
+END
+UserPropertiesWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/fenix/!svn/ver/6878/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/client/security/UserPropertiesWindow.java
+END
+IPCSecurity.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/fenix/!svn/ver/6407/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/client/security/IPCSecurity.java
+END
+FenixGoupListController.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/fenix/!svn/ver/6407/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/client/security/FenixGoupListController.java
+END
+UserPropertiesController.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/fenix/!svn/ver/6878/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/client/security/UserPropertiesController.java
+END
+FenixUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/fenix/!svn/ver/6407/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/client/security/FenixUser.java
+END
+UserPropertiesPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/fenix/!svn/ver/6878/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/client/security/UserPropertiesPanel.java
+END
+LoginController.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/fenix/!svn/ver/7081/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/client/security/LoginController.java
+END
+FenixRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/fenix/!svn/ver/6407/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/client/security/FenixRole.java
+END
+FenixStringValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/fenix/!svn/ver/6407/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/client/security/FenixStringValidator.java
+END
+FenixUserListController.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/fenix/!svn/ver/6407/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/client/security/FenixUserListController.java
+END
+FenixSecurityConstant.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/fenix/!svn/ver/6407/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/client/security/FenixSecurityConstant.java
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/fenix/!svn/ver/7224/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/control/textgroup
+END
+CatalogueContextMenuTextGroupController.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/fenix/!svn/ver/6412/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/control/textgroup/CatalogueContextMenuTextGroupController.java
+END
+CatalogueTextGroupController.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/fenix/!svn/ver/7224/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/control/textgroup/CatalogueTextGroupController.java
+END
+CataloguePagerTextGroupController.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/fenix/!svn/ver/6412/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/control/textgroup/CataloguePagerTextGroupController.java
+END

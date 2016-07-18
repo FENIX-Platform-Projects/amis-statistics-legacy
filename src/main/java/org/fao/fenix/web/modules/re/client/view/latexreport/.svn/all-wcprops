@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/fenix/!svn/ver/7323/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/latexreport
+END
+CatalogueLatexReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/fenix/!svn/ver/7040/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/latexreport/CatalogueLatexReport.java
+END
+CataloguePagerLatexReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/fenix/!svn/ver/7040/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/latexreport/CataloguePagerLatexReport.java
+END
+ResourceExplorerLatexReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/fenix/!svn/ver/7040/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/latexreport/ResourceExplorerLatexReport.java
+END
+SearchParametersLatexReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/fenix/!svn/ver/7040/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/latexreport/SearchParametersLatexReport.java
+END
+CatalogueContextMenuLatexReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/fenix/!svn/ver/7323/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/latexreport/CatalogueContextMenuLatexReport.java
+END

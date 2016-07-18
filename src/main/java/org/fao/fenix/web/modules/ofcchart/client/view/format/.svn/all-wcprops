@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/fenix/!svn/ver/6891/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ofcchart/client/view/format
+END
+OfcFormatChart.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/fenix/!svn/ver/6891/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ofcchart/client/view/format/OfcFormatChart.java
+END
+TabAxes.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/fenix/!svn/ver/6891/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ofcchart/client/view/format/TabAxes.java
+END
+TabLegSer.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/fenix/!svn/ver/6891/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ofcchart/client/view/format/TabLegSer.java
+END
+TabChartArea.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/fenix/!svn/ver/6891/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ofcchart/client/view/format/TabChartArea.java
+END
+TabTitle.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/fenix/!svn/ver/6891/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ofcchart/client/view/format/TabTitle.java
+END

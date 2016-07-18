@@ -1,0 +1,29 @@
+<layer type="shp">
+  <title>World roads trail</title>
+  <abstract>Generated from world_roadstrail -- Shapefile Layer 'world_roadstrail::world_roads_trail'</abstract>
+  <source country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</source>
+  <provider country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</provider>
+  <region />
+  <categories />
+  <sharingcode>Public</sharingcode>
+  <featuretype>
+    <title>World roads trail</title>
+    <abstract>Generated from world_roadstrail</abstract>
+    <defaultstyle>world_roadtrail</defaultstyle>
+    <bbox>
+      <srs>4326</srs>
+      <minx>-182.615478515625</minx>
+      <maxx>180.0</maxx>
+      <miny>-54.888023376464844</miny>
+      <maxy>77.22398376464844</maxy>
+    </bbox>
+    <layername>world_roads_trail</layername>
+    <datastore>
+      <name>world_roadstrail</name>
+      <namespace>fenix</namespace>
+    </datastore>
+  </featuretype>
+  <!--Data dumped from geoserver at:-->
+  <!--REST url: http://ldvapp07.fao.org:8032/geoserverDev-->
+  <!--WMS url: http://ldvapp07.fao.org:8032/geoserverDev/wms?-->
+</layer>

@@ -1,0 +1,29 @@
+<layer type="shp">
+  <title>Kenya Rainfall Distribution</title>
+  <abstract>Generated from KeniaRFDistr -- Shapefile Layer 'KeniaRFDistr::kenya_rainfall_distribution'</abstract>
+  <source country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</source>
+  <provider country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</provider>
+  <region>133</region>
+  <categories />
+  <sharingcode>Public</sharingcode>
+  <featuretype>
+    <title>Kenya Rainfall Distribution</title>
+    <abstract>Generated from KeniaRFDistr</abstract>
+    <defaultstyle>polygon</defaultstyle>
+    <bbox>
+      <srs>4326</srs>
+      <minx>33.92665100097656</minx>
+      <maxx>41.8909797668457</maxx>
+      <miny>-4.692590236663818</miny>
+      <maxy>5.022772789001465</maxy>
+    </bbox>
+    <layername>kenya_rainfall_distribution</layername>
+    <datastore>
+      <name>KenyaRFDistr</name>
+      <namespace>fenix</namespace>
+    </datastore>
+  </featuretype>
+  <!--Data dumped from geoserver at:-->
+  <!--REST url: http://ldvapp07.fao.org:8032/geoserverDev-->
+  <!--WMS url: http://ldvapp07.fao.org:8032/geoserverDev/wms?-->
+</layer>

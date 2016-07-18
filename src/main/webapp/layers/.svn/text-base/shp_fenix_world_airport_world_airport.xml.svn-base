@@ -1,0 +1,29 @@
+<layer type="shp">
+  <title>World Airports</title>
+  <abstract>Generated from world_airport -- Shapefile Layer 'world_airport::world_airport'</abstract>
+  <source country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</source>
+  <provider country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</provider>
+  <region />
+  <categories />
+  <sharingcode>Public</sharingcode>
+  <featuretype>
+    <title>World Airports</title>
+    <abstract>Generated from world_airport</abstract>
+    <defaultstyle>world_airport</defaultstyle>
+    <bbox>
+      <srs>4326</srs>
+      <minx>-179.3040008544922</minx>
+      <maxx>179.2790069580078</maxx>
+      <miny>-54.91699981689453</miny>
+      <maxy>81.15799713134766</maxy>
+    </bbox>
+    <layername>world_airport</layername>
+    <datastore>
+      <name>world_airport</name>
+      <namespace>fenix</namespace>
+    </datastore>
+  </featuretype>
+  <!--Data dumped from geoserver at:-->
+  <!--REST url: http://ldvapp07.fao.org:8032/geoserverDev-->
+  <!--WMS url: http://ldvapp07.fao.org:8032/geoserverDev/wms?-->
+</layer>

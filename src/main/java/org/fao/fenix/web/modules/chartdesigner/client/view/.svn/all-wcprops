@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/fenix/!svn/ver/8897/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/client/view
+END
+ChartDesignerManualWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/fenix/!svn/ver/7706/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/client/view/ChartDesignerManualWindow.java
+END
+ChartDesignerPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/fenix/!svn/ver/7824/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/client/view/ChartDesignerPanel.java
+END
+ChartDesignerReminder.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/fenix/!svn/ver/8222/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/client/view/ChartDesignerReminder.java
+END
+ChartTypeModelData.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/fenix/!svn/ver/7532/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/client/view/ChartTypeModelData.java
+END
+ChartDesignerWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/fenix/!svn/ver/8222/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/client/view/ChartDesignerWindow.java
+END
+ChartDesignerDatasourceFieldSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/fenix/!svn/ver/7936/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/client/view/ChartDesignerDatasourceFieldSet.java
+END
+DescriptorModelData.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/fenix/!svn/ver/7532/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/client/view/DescriptorModelData.java
+END
+ChartDesignerExportToHTMLWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/fenix/!svn/ver/7731/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/client/view/ChartDesignerExportToHTMLWindow.java
+END
+ChartDesignerToolbar.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/fenix/!svn/ver/7824/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/client/view/ChartDesignerToolbar.java
+END

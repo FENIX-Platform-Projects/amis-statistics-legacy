@@ -1,0 +1,183 @@
+<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" version="1.0.0" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<NamedLayer>
+		<Name>ipc_risk_phase</Name>
+		<UserStyle>
+			<Title>IPC risk phase</Title>
+			<Abstract>IPC risk phase - Used on IPC daatasets joined with GAUL1</Abstract>
+			<FeatureTypeStyle>
+				<Rule>
+					<Name>current</Name>
+					<Title>Current situation</Title>
+					<ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>quantity</ogc:PropertyName>
+							<ogc:Literal>1</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<PolygonSymbolizer>
+
+						<Fill>
+							<GraphicFill>
+								<Graphic>
+									<Mark>
+										<WellKnownName>hatch</WellKnownName>
+										<Stroke>
+											<CssParameter name="stroke">#3300CC</CssParameter>
+										</Stroke>
+										<!--
+										<Fill>
+											<CssParameter name="fill">#3300CC</CssParameter>
+											<CssParameter name="fill-opacity">1.0</CssParameter>
+										</Fill>
+										-->
+									</Mark>
+									<Size>10</Size>
+									<Rotation>0</Rotation>
+								</Graphic>
+							</GraphicFill>
+						</Fill>
+
+						<Stroke>
+							<CssParameter name="stroke">#000000</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+
+				<Rule>
+					<Name>imminent</Name>
+					<Title>Imminent situation</Title>
+					<ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>quantity</ogc:PropertyName>
+							<ogc:Literal>2</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<PolygonSymbolizer>
+
+						<Fill>
+							<GraphicFill>
+								<Graphic>
+									<Mark>
+										<WellKnownName>hatch</WellKnownName>
+										<Fill>
+											<CssParameter name="fill">#CC00CC</CssParameter>
+											<CssParameter name="fill-opacity">1.0</CssParameter>
+										</Fill>
+									</Mark>
+									<Size>8</Size>
+									<Rotation>0</Rotation>
+								</Graphic>
+							</GraphicFill>
+						</Fill>
+
+
+						<Stroke>
+							<CssParameter name="stroke">#000000</CssParameter>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+
+				<Rule>
+					<Name>alert</Name>
+					<Title>Alert/Early Warning</Title>
+					<ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>quantity</ogc:PropertyName>
+							<ogc:Literal>3</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<PolygonSymbolizer>
+						<Fill>
+							<GraphicFill>
+								<Graphic>
+									<Mark>
+										<WellKnownName>circle</WellKnownName>
+										<Stroke>
+											<CssParameter name="stroke">#000000</CssParameter>
+										</Stroke>
+									</Mark>
+									<Size>6</Size>
+									<Rotation>0</Rotation>
+								</Graphic>
+							</GraphicFill>
+						</Fill>
+						<Stroke>
+							<CssParameter name="stroke">#000000</CssParameter>
+							<CssParameter name="stroke-opacity">butt</CssParameter>
+							<CssParameter name="stroke-width"/>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+
+
+				<Rule>
+					<Name>moderate</Name>
+					<Title>Moderate risk/Early Warning</Title>
+					<ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>quantity</ogc:PropertyName>
+							<ogc:Literal>4</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<PolygonSymbolizer>
+
+						<Fill>
+							<GraphicFill>
+								<Graphic>
+									<Mark>
+										<WellKnownName>hatch</WellKnownName>
+										<Fill>
+											<CssParameter name="fill">#000000</CssParameter>
+											<CssParameter name="fill-opacity">1.0</CssParameter>
+										</Fill>
+									</Mark>
+									<Size>10</Size>
+									<Rotation>1.570796326794896619</Rotation>
+								</Graphic>
+							</GraphicFill>
+						</Fill>
+						<Stroke>
+							<CssParameter name="stroke">#000000</CssParameter>
+							<CssParameter name="stroke-opacity">butt</CssParameter>
+							<CssParameter name="stroke-width"/>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+
+				<Rule>
+					<Name>high</Name>
+					<Title>High risk/Early Warning</Title>
+					<ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>quantity</ogc:PropertyName>
+							<ogc:Literal>5</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
+					<PolygonSymbolizer>
+						<Fill>
+							<GraphicFill>
+								<Graphic>
+									<Mark>
+										<WellKnownName>hatch</WellKnownName>
+										<Fill>
+											<CssParameter name="fill">#000000</CssParameter>
+											<CssParameter name="fill-opacity">1.0</CssParameter>
+										</Fill>
+									</Mark>
+									<Size>10</Size>
+									<Rotation>0</Rotation>
+								</Graphic>
+							</GraphicFill>
+						</Fill>
+						<Stroke>
+							<CssParameter name="stroke">#000000</CssParameter>
+							<CssParameter name="stroke-opacity">butt</CssParameter>
+							<CssParameter name="stroke-width"/>
+						</Stroke>
+					</PolygonSymbolizer>
+				</Rule>
+
+			</FeatureTypeStyle>
+		</UserStyle>
+	</NamedLayer>
+</StyledLayerDescriptor>

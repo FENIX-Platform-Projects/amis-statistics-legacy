@@ -1,0 +1,1 @@
+This folder will holds OLAP tables for external web sites.

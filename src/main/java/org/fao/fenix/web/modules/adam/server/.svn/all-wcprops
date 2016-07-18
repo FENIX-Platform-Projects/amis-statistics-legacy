@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/fenix/!svn/ver/9484/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/adam/server
+END
+CreateADAMReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/fenix/!svn/ver/7265/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/adam/server/CreateADAMReport.java
+END
+ADAMLinkUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/fenix/!svn/ver/6928/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/adam/server/ADAMLinkUtils.java
+END
+ADAMServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/fenix/!svn/ver/10380/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/adam/server/ADAMServiceImpl.java
+END
+ADAMQueryBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/fenix/!svn/ver/10340/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/adam/server/ADAMQueryBuilder.java
+END
+ADAMTableUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/fenix/!svn/ver/11148/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/adam/server/ADAMTableUtils.java
+END
+ADAMFPMISRequests.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/fenix/!svn/ver/7595/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/adam/server/ADAMFPMISRequests.java
+END

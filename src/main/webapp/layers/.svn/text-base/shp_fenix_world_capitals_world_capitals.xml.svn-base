@@ -1,0 +1,29 @@
+<layer type="shp">
+  <title>World Capitals</title>
+  <abstract>Generated from world_capitals -- Shapefile Layer 'world_capitals::world_capitals'</abstract>
+  <source country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</source>
+  <provider country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</provider>
+  <region />
+  <categories />
+  <sharingcode>Public</sharingcode>
+  <featuretype>
+    <title>World Capitals</title>
+    <abstract>Generated from world_capitals</abstract>
+    <defaultstyle>world_capitals</defaultstyle>
+    <bbox>
+      <srs>4326</srs>
+      <minx>-176.14</minx>
+      <maxx>178.43</maxx>
+      <miny>-51.7</miny>
+      <maxy>78.21</maxy>
+    </bbox>
+    <layername>world_capitals</layername>
+    <datastore>
+      <name>world_capitals</name>
+      <namespace>fenix</namespace>
+    </datastore>
+  </featuretype>
+  <!--Data dumped from geoserver at:-->
+  <!--REST url: http://ldvapp07.fao.org:8032/geoserverDev-->
+  <!--WMS url: http://ldvapp07.fao.org:8032/geoserverDev/wms?-->
+</layer>

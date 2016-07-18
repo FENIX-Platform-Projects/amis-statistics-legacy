@@ -1,0 +1,29 @@
+<layer type="shp">           
+  <title>Rainfall Stations</title>
+  <abstract>Global Terrain Station - NOAA. Global coverage. Geographic Projection WGS84</abstract> 
+  <source country="0" contact="Info-GIEWS-Workstation@fao.org">NOAA</source>
+  <provider country="0" contact="Info-GIEWS-Workstation@fao.org">FAO GIEWS</provider>
+  <region>0</region> 
+  <categories>004</categories> 
+  <sharingcode>Public</sharingcode> 
+  <code>layer_world_station</code>
+
+  <featuretype>
+    <title>Rainfall Stations</title>
+    <abstract>Generated from world_water_bodies</abstract>
+    <defaultstyle>world_station</defaultstyle>
+    <bbox>
+      <srs>4326</srs>
+      <minx>-179.98</minx>
+      <maxx>179.75</maxx>
+      <miny>-90</miny>
+      <maxy>83.63</maxy>
+    </bbox>
+    <layername>world_station</layername>
+    <datastore>
+      <name>world_station</name>
+      <namespace>fenix</namespace>
+    </datastore>
+  </featuretype>
+
+</layer>

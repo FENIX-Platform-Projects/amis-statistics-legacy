@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/fenix/!svn/ver/10545/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/server/utils
+END
+AMISHtmlUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/fenix/!svn/ver/9711/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/server/utils/AMISHtmlUtils.java
+END
+AMISFaostatUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/fenix/!svn/ver/8459/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/server/utils/AMISFaostatUtils.java
+END
+AMISUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/fenix/!svn/ver/10545/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/server/utils/AMISUtils.java
+END

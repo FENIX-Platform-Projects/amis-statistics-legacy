@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/fenix/!svn/ver/9141/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/x/server
+END
+XServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/fenix/!svn/ver/9141/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/x/server/XServiceImpl.java
+END
+XImporterServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/fenix/!svn/ver/6842/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/x/server/XImporterServlet.java
+END

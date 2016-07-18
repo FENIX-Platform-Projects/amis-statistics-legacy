@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/fenix/!svn/ver/7815/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/edi/server
+END
+FAOStatServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/fenix/!svn/ver/7815/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/edi/server/FAOStatServiceImpl.java
+END
+FEWSNETServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/fenix/!svn/ver/7234/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/edi/server/FEWSNETServiceImpl.java
+END

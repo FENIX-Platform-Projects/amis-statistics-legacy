@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NOTES>
+	
+	<DESCRIPTION>
+		<E>/Q/Description_E.html</E>
+		<F>/Q/Description_F.html</F>
+		<S>/Q/Description_S.html</S>
+	</DESCRIPTION>
+	
+	<PLEASENOTE>
+		<E>/Q/PleaseNote_E.html</E>
+		<F>/Q/PleaseNote_F.html</F>
+		<S>/Q/PleaseNote_S.html</S>
+	</PLEASENOTE>
+	
+	<!--
+	<DISCLAIMER>
+		<E>/COMMONS/GeneralDisclaimer_E.html</E>
+		<F>/COMMONS/GeneralDisclaimer_F.html</F>
+		<S>/COMMONS/GeneralDisclaimer_S.html</S>
+	</DISCLAIMER>
+	-->
+	
+</NOTES>

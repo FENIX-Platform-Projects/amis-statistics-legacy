@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<VIEW type="Browse By  I - Investment" >
+	<TITLE>
+		<E>Investment</E>
+		<S>Inversión</S>
+		<F>Investissement</F>
+	</TITLE>
+
+	<FILTERS>
+		<FILTER>
+			<FILTERTYPE>TIMERANGE</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE>1992</CODE>
+				<CODE>2009</CODE>
+			</DEFAULTCODES> 
+		</FILTER>
+
+		<FILTER>
+			<FILTERTYPE>AGGREGATION_TYPE</FILTERTYPE>
+			<CODE label="Average">AVG</CODE>
+		</FILTER>	
+	</FILTERS>
+
+	<RESOURCES>
+		<DEFAULT>
+		
+			<RESOURCE>			
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>880</WIDTH>
+					<HEIGHT>330</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>Global machinery stock (agricultural tractors, total)</E>
+					<S>Reserva mundial de maquinarias (tractores agrícolas, total)</S>
+					<F>Stock mondial de machines agricoles (tracteurs, total)</F>
+				</TITLE>
+			
+				<DATEQUERY>
+					<MAXDATELIMIT>2009</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> -->
+					<TIMESPAN type="year">17</TIMESPAN>
+				</DATEQUERY>
+
+				<BASEQUERY>					 
+					<SELECTS>		       
+						<SELECT lang="true">E.ElementName</SELECT>
+						<SELECT>D.Year</SELECT>
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Machinery">RM</DOMAIN>
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Agricultural tractors, total">2455009</ITEM>
+						</ITEMS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Import Value'>2620</ELEMENTLIST>
+							<ELEMENTLIST label='Export Value'>2920</ELEMENTLIST>
+							<ELEMENTLIST label='Import quantity'>2610</ELEMENTLIST>
+							<ELEMENTLIST label='Export quantity'>2910</ELEMENTLIST>
+							<ELEMENTLIST label='In use'>5116</ELEMENTLIST>
+						</ELEMENTSLIST>							
+					<AREAS>
+						<AREA label="Afghanista">5000</AREA>	
+					</AREAS> 
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD>D.Year</FIELD>
+					</SORT>	
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>
+	             
+				 </BASEQUERY>					
+			</RESOURCE>
+		
+		
+			<RESOURCE>			
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>STACKED</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>350</WIDTH>
+					<HEIGHT>330</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>Composition of capital stock by region</E>
+					<S>Composición de la reserva de capital por región</S>
+					<F>Composition du stock de capital par région</F>
+				</TITLE>
+				
+				
+				<DATEQUERY>
+					<MAXDATELIMIT>2007</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> -->
+					<TIMESPAN type="year">15</TIMESPAN>
+				</DATEQUERY>
+
+				<BASEQUERY>					 
+					<SELECTS>	
+						<SELECT lang="true">I.ItemName</SELECT>
+						<SELECT lang="true">A.AreaName</SELECT>
+						
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Land">CS</DOMAIN>	
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Land development">23006</ITEM>
+							<ITEM label="Livestock (fixed assets)">23007</ITEM>
+							<ITEM label="Livestock (inventory)">23008</ITEM>
+							<ITEM label="Machinery and eq">23009</ITEM>
+							<ITEM label="Plantation crops">23010</ITEM>
+							<ITEM label="Structures for livestock">23011</ITEM>							
+						</ITEMS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Gross capital stock'>6115</ELEMENTLIST>
+						</ELEMENTSLIST>						
+						<AREAS>
+							<AREA label="Africa">5100</AREA>	
+							<AREA label="Europa">5400</AREA>	
+							<AREA label="America">5200</AREA>	
+							<AREA label="Asia">5300</AREA>
+							<AREA label="Oceania">5500</AREA>
+						</AREAS> 
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">A.AreaName</FIELD>
+					</SORT>	
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>			
+	             
+				 </BASEQUERY>					
+			</RESOURCE>
+
+			<RESOURCE>			
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>STACKED</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>510</WIDTH>
+					<HEIGHT>330</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>Composition of capital stock by region</E>
+					<S>Composición de la reserva de capital por región</S>
+					<F>Composition du stock de capital par région</F>
+				</TITLE>
+				
+				
+				<DATEQUERY>
+					<MAXDATELIMIT>2007</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> -->
+					<TIMESPAN type="year">15</TIMESPAN>
+				</DATEQUERY>
+
+				<BASEQUERY>					 
+					<SELECTS>	
+						<SELECT lang="true">A.AreaName</SELECT>
+						<SELECT lang="true">I.ItemName</SELECT>
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Land">CS</DOMAIN>	
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Land development">23006</ITEM>
+							<ITEM label="Livestock (fixed assets)">23007</ITEM>
+							<ITEM label="Livestock (inventory)">23008</ITEM>
+							<ITEM label="Machinery and eq">23009</ITEM>
+							<ITEM label="Plantation crops">23010</ITEM>
+							<ITEM label="Structures for livestock">23011</ITEM>							
+						</ITEMS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Gross capital stock'>6115</ELEMENTLIST>
+						</ELEMENTSLIST>						
+						<AREAS>
+							<AREA label="Africa">5100</AREA>	
+							<AREA label="Europa">5400</AREA>	
+							<AREA label="America">5200</AREA>	
+							<AREA label="Asia">5300</AREA>
+							<AREA label="Oceania">5500</AREA>
+						</AREAS> 
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">A.AreaName</FIELD>
+					</SORT>	
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>			
+	             
+				 </BASEQUERY>					
+			</RESOURCE>
+		</DEFAULT>	
+	</RESOURCES>
+</VIEW>

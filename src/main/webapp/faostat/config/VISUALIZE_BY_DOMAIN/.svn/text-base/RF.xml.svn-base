@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<VIEW type="Browse By RF - Fertilizers" >
+	<TITLE>
+		<E>Resources - fertilizers </E>
+		<S>Recursos - fertilizantes</S>
+		<F>Ressources - engrais</F>
+	</TITLE>
+	<RESOURCES>
+		<DEFAULT>
+
+
+		<RESOURCE>			
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>880</WIDTH>
+					<HEIGHT>330</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>World consumption in nutrients</E>
+					<S>Consumo mundial de nutrientes</S>
+					<F>La consommation mondiale en nutriments</F>
+				</TITLE>
+				<APPLICABLE_FILTERS>
+					<NOT_APPLY_FILTERS>true</NOT_APPLY_FILTERS>
+				</APPLICABLE_FILTERS>
+
+				<BASEQUERY>					 
+					<SELECTS>		       
+						<SELECT lang="true">I.ItemName</SELECT>
+						<SELECT>D.Year</SELECT>
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Fertilizers">RF</DOMAIN>
+						</DOMAINS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Consumption in nutrients'>5155</ELEMENTLIST>
+						</ELEMENTSLIST>	
+						<ITEMS>
+							<ITEM label='Nitrogen Fertilizers (N total nutrients)'>3102</ITEM>
+							<ITEM label='Phosphate Fertilizers (P205 total nutrients)'>3103</ITEM>
+							<ITEM label='Potash Fertilizers (K20 total nutrients)'>3104</ITEM>
+						</ITEMS>	
+						<YEARS>
+							<YEAR>2002</YEAR>
+							<YEAR>2003</YEAR>
+							<YEAR>2004</YEAR>
+							<YEAR>2005</YEAR>
+							<YEAR>2006</YEAR>
+							<YEAR>2007</YEAR>
+							<YEAR>2008</YEAR>
+							<YEAR>2009</YEAR>
+						</YEARS>									
+						<AREAS>
+							<AREA label="Wolrd">5000</AREA>	
+						</AREAS> 
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">I.ItemName</FIELD>
+					</SORT>	
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>			
+	             
+				 </BASEQUERY>					
+			</RESOURCE>
+
+
+			<RESOURCE>			
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>880</WIDTH>
+					<HEIGHT>330</HEIGHT>
+				</SIZE>
+				<TITLE>
+<E>World consumption in nutrients (total)</E>
+  <S>Consumo mundial de nutrientes (total)</S>
+  <F>La consommation mondiale en nutriments (total)</F>
+				</TITLE>
+				<AGGREGATIONTYPE>SUM</AGGREGATIONTYPE>
+				<APPLICABLE_FILTERS>
+					<NOT_APPLY_FILTERS>true</NOT_APPLY_FILTERS>
+				</APPLICABLE_FILTERS>
+
+				<BASEQUERY>					 
+					<SELECTS>		       
+						<SELECT lang="true">E.ElementName</SELECT>
+						<SELECT>D.Year</SELECT>
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Fertilizers">RF</DOMAIN>
+						</DOMAINS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Consumption in nutrients'>5155</ELEMENTLIST>
+						</ELEMENTSLIST>	
+						<ITEMS>
+							<ITEM label='Nitrogen Fertilizers (N total nutrients)'>3102</ITEM>
+							<ITEM label='Phosphate Fertilizers (P205 total nutrients)'>3103</ITEM>
+							<ITEM label='Potash Fertilizers (K20 total nutrients)'>3104</ITEM>
+						</ITEMS>	
+						<YEARS>
+							<YEAR>2002</YEAR>
+							<YEAR>2003</YEAR>
+							<YEAR>2004</YEAR>
+							<YEAR>2005</YEAR>
+							<YEAR>2006</YEAR>
+							<YEAR>2007</YEAR>
+							<YEAR>2008</YEAR>
+							<YEAR>2009</YEAR>
+						</YEARS>									
+						<AREAS>
+							<AREA label="Wolrd">5000</AREA>	
+						</AREAS> 
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">E.ElementName</FIELD>
+					</SORT>	
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>			
+	             
+				 </BASEQUERY>					
+			</RESOURCE>
+
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>BAR_WITH_CATEGORIES</OUTPUTTYPE>
+				<TITLE>
+<E>Consumption of top 10 consumers </E>
+  <S>Consumo de los 10 principales consumadores</S>
+  <F>Consommation des 10 principaux consommateurs</F>
+				</TITLE>
+				<APPLICABLE_FILTERS>
+					<NOT_APPLY_FILTERS>true</NOT_APPLY_FILTERS>
+				</APPLICABLE_FILTERS>
+				<AGGREGATIONTYPE>SUM</AGGREGATIONTYPE>
+				<SIZE>
+					<WIDTH>880</WIDTH>
+					<HEIGHT>220</HEIGHT>
+				</SIZE>
+				<CALCULATIONQUERY>
+					<TYPE>AVERAGE_OVER_TIME</TYPE> 
+				</CALCULATIONQUERY> 
+				<BASEQUERY>
+					
+					<SELECTS>
+ 						<SELECT lang="true">E.ElementName</SELECT>	
+						<SELECT lang="true">A.AreaName</SELECT>		
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Fertilizers">RF</DOMAIN>
+						</DOMAINS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Consumption in nutrients'>5155</ELEMENTLIST>
+						</ELEMENTSLIST>	
+						<ITEMS>
+							<ITEM label='Nitrogen Fertilizers (N total nutrients)'>3102</ITEM>
+							<ITEM label='Phosphate Fertilizers (P205 total nutrients)'>3103</ITEM>
+							<ITEM label='Potash Fertilizers (K20 total nutrients)'>3104</ITEM>
+						</ITEMS>	
+						<YEARS>
+							<YEAR>2002</YEAR>
+							<YEAR>2003</YEAR>
+							<YEAR>2004</YEAR>
+							<YEAR>2005</YEAR>
+						</YEARS>				
+					</WHERE>
+					
+					<SORT>
+						<FIELD type="aggregation">D.Value</FIELD>
+					</SORT>	
+			
+					<NESTEDLIMIT field="D.AreaCode">10</NESTEDLIMIT>
+					
+				</BASEQUERY>					
+			</RESOURCE>
+
+
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>BAR_WITH_CATEGORIES</OUTPUTTYPE>
+				<TITLE>
+<E>Consumption of top 10 consumers </E>
+  <S>Consumo de los 10 principales consumadores</S>
+  <F>Consommation des 10 principaux consommateurs</F>
+				</TITLE>
+				<APPLICABLE_FILTERS>
+					<NOT_APPLY_FILTERS>true</NOT_APPLY_FILTERS>
+				</APPLICABLE_FILTERS>
+				<SIZE>
+					<WIDTH>880</WIDTH>
+					<HEIGHT>220</HEIGHT>
+				</SIZE>
+				<CALCULATIONQUERY>
+					<TYPE>AVERAGE_OVER_TIME</TYPE> 
+				</CALCULATIONQUERY> 
+				<AGGREGATIONTYPE>SUM</AGGREGATIONTYPE>
+				<BASEQUERY>
+					
+					<SELECTS>
+ 						<SELECT lang="true">E.ElementName</SELECT>	
+						<SELECT lang="true">A.AreaName</SELECT>		
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Fertilizers">RF</DOMAIN>
+						</DOMAINS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Consumption in nutrients'>5155</ELEMENTLIST>
+						</ELEMENTSLIST>	
+						<ITEMS>
+							<ITEM label='Nitrogen Fertilizers (N total nutrients)'>3102</ITEM>
+							<ITEM label='Phosphate Fertilizers (P205 total nutrients)'>3103</ITEM>
+							<ITEM label='Potash Fertilizers (K20 total nutrients)'>3104</ITEM>
+						</ITEMS>	
+						<YEARS>
+							<YEAR>2006</YEAR>
+							<YEAR>2007</YEAR>
+							<YEAR>2008</YEAR>
+							<YEAR>2009</YEAR>
+						</YEARS>				
+					</WHERE>
+					
+					<SORT>
+						<FIELD type="aggregation">D.Value</FIELD>
+					</SORT>	
+			
+					<NESTEDLIMIT field="D.AreaCode">10</NESTEDLIMIT>
+					
+				</BASEQUERY>					
+			</RESOURCE>
+		</DEFAULT>	
+	</RESOURCES>
+</VIEW>

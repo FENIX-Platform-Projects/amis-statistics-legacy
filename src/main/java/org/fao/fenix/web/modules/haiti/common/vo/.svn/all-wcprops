@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/fenix/!svn/ver/7156/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/haiti/common/vo
+END
+FeatureInfoModelData.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/fenix/!svn/ver/6409/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/haiti/common/vo/FeatureInfoModelData.java
+END
+LayerVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/fenix/!svn/ver/7156/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/haiti/common/vo/LayerVO.java
+END
+WMSModelData.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/fenix/!svn/ver/6409/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/haiti/common/vo/WMSModelData.java
+END

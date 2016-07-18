@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<VIEW type="Browse By QI - Production - Production Indexes" >
+	<TITLE>
+		<E>Production values</E>
+		<S>Valores de producción</S>
+		<F>Valeurs de production</F>
+	</TITLE>
+	<FILTERS>
+		<FILTER width="155px">
+			<FILTERTYPE>ITEMS</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE label="Agricultural (PIN)">2051</CODE>
+			</DEFAULTCODES>
+		</FILTER>
+		<FILTER width="155px">
+			<FILTERTYPE>COUNTRIES</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE label="Afghanistan">2</CODE>
+			</DEFAULTCODES> 
+		</FILTER>
+		<FILTER>
+			<FILTERTYPE>TIMERANGE</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE>1992</CODE>
+				<CODE>2010</CODE>
+			</DEFAULTCODES>
+		</FILTER>
+			
+		<FILTER>
+			<FILTERTYPE>AGGREGATION_TYPE</FILTERTYPE>
+			<CODE label="Average">AVG</CODE>
+		</FILTER>	
+	</FILTERS>
+	<RESOURCES>
+		<DEFAULT>
+
+			<RESOURCE>	
+				<RESOURCETYPE>MAP</RESOURCETYPE>
+				<OUTPUTTYPE>MAP</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>880</WIDTH>
+					<HEIGHT>330</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>Net production value (constant 2004-2006 1000 I$) by country</E>
+					<S>Valor neto de producción (constante 2004-2006 1000 I$) por país</S>
+					<F>Valeur de la production nette (constant  2004  2006 1000 I $) par pays</F>
+				</TITLE>
+				<APPLICABLE_FILTERS>
+					<APPLY_ALL_FILTERS_EXCEPT_AREAS>true</APPLY_ALL_FILTERS_EXCEPT_AREAS>
+				</APPLICABLE_FILTERS>
+				<DATEQUERY>
+					<MAXDATELIMIT>2010</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> -->
+					<TIMESPAN type="year">18</TIMESPAN>	
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+						<SELECT>D.AreaCode</SELECT>	
+						<SELECT lang="true">A.AreaName</SELECT>					
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Value of agricultural production">QV</DOMAIN>
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Agricultural, PIN">2051</ITEM>
+						</ITEMS>
+						<ELEMENTS>
+							<ELEMENT label='Net Production value'>154</ELEMENT>
+						</ELEMENTS>
+					</WHERE>
+				</BASEQUERY>					
+			</RESOURCE>
+		
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<TITLE>
+					<E>Value of commodity in selected country</E>
+					<S>Valor del producto en el país seleccionado</S>
+					<F>Valeur des  produits dans le pays choisi</F>
+				</TITLE>
+				<SIZE>
+					<WIDTH>880</WIDTH>
+					<HEIGHT>330</HEIGHT>
+				</SIZE>
+				<DATEQUERY>
+					<MAXDATELIMIT>2010</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> -->
+					<TIMESPAN type="year">18</TIMESPAN>				
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+						<SELECT lang="true">A.AreaName</SELECT>	
+						<SELECT>D.Year</SELECT>			
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="value of agricultural production">QV</DOMAIN>	
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Agricultural, PIN">2051</ITEM>
+						</ITEMS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Net Production value'>154</ELEMENTLIST>
+						</ELEMENTSLIST>	
+                       				 <AREAS>
+							<AREA label="Afghanistan">2</AREA>
+						</AREAS>						
+					</WHERE>
+					<SORT type="ASC">
+						<FIELD>D.Year</FIELD>
+					</SORT>	
+			
+					<NESTEDLIMIT field="D.AreaCode">5</NESTEDLIMIT>
+					<NESTEDSORT type="DESC">
+						<FIELD type="aggregation">D.Value</FIELD>
+					</NESTEDSORT>	
+					
+				</BASEQUERY>					
+			</RESOURCE>
+			
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<TITLE>
+					<E>Net production index by region (base 2004-2006)</E>
+					<S>Índice de producción neto por región (base 2004-2006)</S>
+					<F>Indice de la production nette par région (base 2004-2006)</F>
+				</TITLE>
+				<APPLICABLE_FILTERS>
+					<APPLY_ALL_FILTERS_EXCEPT_AREAS>true</APPLY_ALL_FILTERS_EXCEPT_AREAS>
+				</APPLICABLE_FILTERS>
+				<SIZE>
+					<WIDTH>420</WIDTH>
+					<HEIGHT>330</HEIGHT>
+				</SIZE>
+				<DATEQUERY>
+					<MAXDATELIMIT>2010</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> -->
+					<TIMESPAN type="year">18</TIMESPAN>			
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+						<SELECT lang="true">A.AreaName</SELECT>	
+						<SELECT>D.Year</SELECT>			
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="PIN">QV</DOMAIN>
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Agricultural, PIN">2051</ITEM>
+						</ITEMS>
+						<ELEMENTS>
+							<ELEMENT label='Net Production'>154</ELEMENT>
+						</ELEMENTS>
+						 <AREAS>
+
+							<AREA label="Africa">5100</AREA>	
+							<AREA label="Europa">5400</AREA>	
+							<AREA label="America">5200</AREA>	
+							<AREA label="Asia">5300</AREA>
+							<AREA label="Oceania">5500</AREA>
+						</AREAS>
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">A.AreaName</FIELD>
+					</SORT>	
+
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>
+					
+				</BASEQUERY>					
+			</RESOURCE>
+
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>BAR_WITH_CATEGORIES</OUTPUTTYPE>
+				<TITLE>
+					<E>Net production index growth rate by region (base 2004-2006)</E>
+					<S>Tasa de crecimiento del Índice de producción neto por región (2004-2006)</S>
+					<F>Taux net de croissance de l index de  production par région (base 2004-2006)</F>
+				</TITLE>
+				<APPLICABLE_FILTERS>
+					<APPLY_ALL_FILTERS_EXCEPT_AREAS>true</APPLY_ALL_FILTERS_EXCEPT_AREAS>
+				</APPLICABLE_FILTERS>
+				<SIZE>
+					<WIDTH>420</WIDTH>
+					<HEIGHT>330</HEIGHT>
+				</SIZE>
+				<DATEQUERY>
+					<MAXDATELIMIT>2010</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> -->
+					<TIMESPAN type="year">18</TIMESPAN>				
+				</DATEQUERY>
+				<CALCULATIONQUERY>
+					<TYPE>ANNUAL_GROWTH_RATE_LEAST_SQUARE</TYPE> 
+				</CALCULATIONQUERY> 
+				<BASEQUERY>
+					
+					<SELECTS>				
+						<SELECT lang="true">E.ElementName</SELECT>	
+						<SELECT lang="true">A.AreaName</SELECT>	
+						<SELECT>D.Year</SELECT>		
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="PIN">QV</DOMAIN>
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Agricultural, PIN">2051</ITEM>
+						</ITEMS>
+						<ELEMENTS>
+							<ELEMENT label='Net Production'>154</ELEMENT>
+						</ELEMENTS>
+						 <AREAS>
+
+							<AREA label="Africa">5100</AREA>	
+							<AREA label="Europa">5400</AREA>	
+							<AREA label="America">5200</AREA>	
+							<AREA label="Asia">5300</AREA>
+							<AREA label="Oceania">5500</AREA>
+						</AREAS>
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">A.AreaName</FIELD>
+					</SORT>	
+
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>
+					
+				</BASEQUERY>					
+			</RESOURCE>
+		</DEFAULT>	
+	</RESOURCES>
+</VIEW>

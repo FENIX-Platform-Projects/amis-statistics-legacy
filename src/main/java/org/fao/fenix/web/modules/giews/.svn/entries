@@ -1,0 +1,71 @@
+9
+
+dir
+9508
+https://joinup.ec.europa.eu/svn/fenix/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/giews
+https://joinup.ec.europa.eu/svn/fenix
+
+
+
+2010-08-20T09:34:14.266272Z
+6755
+kalimaha
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+8049af31-f9ff-4023-afbb-8bc685b739a6
+
+GIEWS.gwt.xml
+file
+
+
+
+
+2012-05-04T10:27:58.000000Z
+e60b3783677e1cca31e9d37069cd9bf1
+2010-04-22T21:12:49.485089Z
+6409
+kalimaha
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+880
+
+client
+dir
+
+common
+dir
+
+server
+dir
+

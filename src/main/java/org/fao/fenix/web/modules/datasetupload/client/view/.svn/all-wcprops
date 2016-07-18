@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/fenix/!svn/ver/6905/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/datasetupload/client/view
+END
+DatasetUploaderView.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/fenix/!svn/ver/6753/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/datasetupload/client/view/DatasetUploaderView.java
+END
+JointLoginUploaderPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/fenix/!svn/ver/6905/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/datasetupload/client/view/JointLoginUploaderPanel.java
+END
+DatasetUploaderWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/fenix/!svn/ver/6753/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/datasetupload/client/view/DatasetUploaderWindow.java
+END

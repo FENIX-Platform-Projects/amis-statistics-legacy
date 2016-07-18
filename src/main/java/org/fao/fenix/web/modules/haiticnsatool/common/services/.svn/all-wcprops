@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/fenix/!svn/ver/6756/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/haiticnsatool/common/services
+END
+HaitiCNSAToolService.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/fenix/!svn/ver/6756/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/haiticnsatool/common/services/HaitiCNSAToolService.java
+END
+HaitiCNSAToolServiceAsync.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/fenix/!svn/ver/6756/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/haiticnsatool/common/services/HaitiCNSAToolServiceAsync.java
+END
+HaitiCNSAToolServiceEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/fenix/!svn/ver/6698/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/haiticnsatool/common/services/HaitiCNSAToolServiceEntry.java
+END

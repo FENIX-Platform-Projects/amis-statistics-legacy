@@ -1,0 +1,29 @@
+<layer type="shp">
+  <title>Kenya Rainstations 1991-1996</title>
+  <abstract>Generated from KenyaRainStat9196 -- Shapefile Layer 'KenyaRainStat9196::kenya_rainstations1991-1996'</abstract>
+  <source country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</source>
+  <provider country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</provider>
+  <region>133</region>
+  <categories />
+  <sharingcode>Public</sharingcode>
+  <featuretype>
+    <title>Kenya Rainstations 1991-1996</title>
+    <abstract>Generated from KenyaRainStat9196</abstract>
+    <defaultstyle>point</defaultstyle>
+    <bbox>
+      <srs>4326</srs>
+      <minx>35.799943655311566</minx>
+      <maxx>37.39997185655229</maxx>
+      <miny>-1.299880137593462</miny>
+      <maxy>0.29997234571350523</maxy>
+    </bbox>
+    <layername>kenya_rainstations1991-1996</layername>
+    <datastore>
+      <name>KenyaRainStat9196</name>
+      <namespace>fenix</namespace>
+    </datastore>
+  </featuretype>
+  <!--Data dumped from geoserver at:-->
+  <!--REST url: http://ldvapp07.fao.org:8032/geoserverDev-->
+  <!--WMS url: http://ldvapp07.fao.org:8032/geoserverDev/wms?-->
+</layer>

@@ -1,0 +1,29 @@
+<layer type="shp">
+  <title>Kenya Lakes</title>
+  <abstract>Generated from KenyaLakes -- Shapefile Layer 'KenyaLakes::kenya_lakes'</abstract>
+  <source country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</source>
+  <provider country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</provider>
+  <region>133</region>
+  <categories />
+  <sharingcode>Public</sharingcode>
+  <featuretype>
+    <title>Kenya Lakes</title>
+    <abstract>Generated from KenyaLakes</abstract>
+    <defaultstyle>cite_lakes</defaultstyle>
+    <bbox>
+      <srs>4326</srs>
+      <minx>33.92665100097656</minx>
+      <maxx>36.71813201904297</maxx>
+      <miny>-2.009453296661377</miny>
+      <maxy>4.626191139221191</maxy>
+    </bbox>
+    <layername>kenya_lakes</layername>
+    <datastore>
+      <name>KenyaLakes</name>
+      <namespace>fenix</namespace>
+    </datastore>
+  </featuretype>
+  <!--Data dumped from geoserver at:-->
+  <!--REST url: http://ldvapp07.fao.org:8032/geoserverDev-->
+  <!--WMS url: http://ldvapp07.fao.org:8032/geoserverDev/wms?-->
+</layer>

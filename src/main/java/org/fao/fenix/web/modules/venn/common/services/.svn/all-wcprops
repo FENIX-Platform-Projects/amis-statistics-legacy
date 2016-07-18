@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/fenix/!svn/ver/9137/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/venn/common/services
+END
+VennServiceEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/fenix/!svn/ver/6449/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/venn/common/services/VennServiceEntry.java
+END
+VennServiceAsync.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/fenix/!svn/ver/9137/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/venn/common/services/VennServiceAsync.java
+END
+VennService.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/fenix/!svn/ver/9137/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/venn/common/services/VennService.java
+END
+VennUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/venn/common/services/VennUtils.java
+END

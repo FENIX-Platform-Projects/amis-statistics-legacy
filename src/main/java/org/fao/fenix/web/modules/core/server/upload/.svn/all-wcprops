@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/fenix/!svn/ver/7706/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/server/upload
+END
+UpdateChartServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/fenix/!svn/ver/7671/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/server/upload/UpdateChartServlet.java
+END
+UploadInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/fenix/!svn/ver/6407/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/server/upload/UploadInfo.java
+END
+SingleShapeFileUploadServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/fenix/!svn/ver/7077/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/server/upload/SingleShapeFileUploadServlet.java
+END
+SingleExternalGraphicUploadServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/fenix/!svn/ver/7077/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/server/upload/SingleExternalGraphicUploadServlet.java
+END
+RasterLayerPersister.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/fenix/!svn/ver/6817/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/server/upload/RasterLayerPersister.java
+END
+CodeListUploaderServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/fenix/!svn/ver/6949/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/server/upload/CodeListUploaderServlet.java
+END
+SLDUploaderServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/fenix/!svn/ver/7077/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/server/upload/SLDUploaderServlet.java
+END
+ShpFeatureLayerPersister.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/fenix/!svn/ver/7077/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/server/upload/ShpFeatureLayerPersister.java
+END
+ChangeBannerServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/fenix/!svn/ver/6745/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/server/upload/ChangeBannerServlet.java
+END
+SingleGeotiffUploadServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/fenix/!svn/ver/7234/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/server/upload/SingleGeotiffUploadServlet.java
+END
+SingleSLDSaveServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/fenix/!svn/ver/6407/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/server/upload/SingleSLDSaveServlet.java
+END
+MonitoredDiskFileItemFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/fenix/!svn/ver/6407/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/server/upload/MonitoredDiskFileItemFactory.java
+END
+MonitoredDiskFileItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/fenix/!svn/ver/6407/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/server/upload/MonitoredDiskFileItem.java
+END
+ShapeFilePersister.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/fenix/!svn/ver/7076/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/server/upload/ShapeFilePersister.java
+END
+SingleGeotiffStoreServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/fenix/!svn/ver/6910/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/server/upload/SingleGeotiffStoreServlet.java
+END
+SingleSLDUploadServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/fenix/!svn/ver/7077/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/server/upload/SingleSLDUploadServlet.java
+END
+CodingMappingUploadServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/fenix/!svn/ver/6407/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/server/upload/CodingMappingUploadServlet.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/fenix/!svn/ver/6407/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/server/upload/package.html
+END
+MultipleDatasetUploadServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/fenix/!svn/ver/6407/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/server/upload/MultipleDatasetUploadServlet.java
+END
+CodingUploadServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/fenix/!svn/ver/6746/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/server/upload/CodingUploadServlet.java
+END
+MonitoredOutputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/fenix/!svn/ver/6407/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/server/upload/MonitoredOutputStream.java
+END
+CodingHierarchyUploadServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/fenix/!svn/ver/6407/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/server/upload/CodingHierarchyUploadServlet.java
+END
+SingleShapeFileStoreServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/fenix/!svn/ver/7077/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/server/upload/SingleShapeFileStoreServlet.java
+END
+UploadMonitor.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/fenix/!svn/ver/6407/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/server/upload/UploadMonitor.java
+END
+OutputStreamListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/fenix/!svn/ver/6407/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/server/upload/OutputStreamListener.java
+END
+UploadListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/fenix/!svn/ver/6407/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/server/upload/UploadListener.java
+END
+SingleDatasetUploadServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/fenix/!svn/ver/7706/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/server/upload/SingleDatasetUploadServlet.java
+END
+LayerUploadServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/fenix/!svn/ver/6407/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/server/upload/LayerUploadServlet.java
+END
+SingleImageUploadServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/fenix/!svn/ver/6949/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/server/upload/SingleImageUploadServlet.java
+END

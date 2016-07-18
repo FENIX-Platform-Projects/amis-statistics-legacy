@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/fenix/!svn/ver/7465/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/common/vo
+END
+FenixSearchParameters.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/fenix/!svn/ver/6412/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/common/vo/FenixSearchParameters.java
+END
+ResourceChildModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/fenix/!svn/ver/6469/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/common/vo/ResourceChildModel.java
+END
+ResourceType.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/fenix/!svn/ver/7465/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/common/vo/ResourceType.java
+END
+ResourceParentModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/fenix/!svn/ver/6412/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/common/vo/ResourceParentModel.java
+END

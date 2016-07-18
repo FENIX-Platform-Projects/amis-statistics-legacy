@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/fenix/!svn/ver/6891/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ofcchart/client/view/wizard
+END
+OfcQuantityDimension.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/fenix/!svn/ver/6891/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ofcchart/client/view/wizard/OfcQuantityDimension.java
+END
+OfcChartWizard.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/fenix/!svn/ver/6891/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ofcchart/client/view/wizard/OfcChartWizard.java
+END
+OfcChartType.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/fenix/!svn/ver/6891/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ofcchart/client/view/wizard/OfcChartType.java
+END
+OfcFormatChart.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/fenix/!svn/ver/6891/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ofcchart/client/view/wizard/OfcFormatChart.java
+END
+OfcAxisPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/fenix/!svn/ver/6891/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ofcchart/client/view/wizard/OfcAxisPanel.java
+END
+OfcSelectOptions.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/fenix/!svn/ver/6891/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ofcchart/client/view/wizard/OfcSelectOptions.java
+END
+OfcSelectOtherDimensions.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/fenix/!svn/ver/6891/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ofcchart/client/view/wizard/OfcSelectOtherDimensions.java
+END
+OfcOtherDimensionsPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/fenix/!svn/ver/6891/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ofcchart/client/view/wizard/OfcOtherDimensionsPanel.java
+END
+OfcSelectData.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/fenix/!svn/ver/6891/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ofcchart/client/view/wizard/OfcSelectData.java
+END
+OfcSelectYAxis.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/fenix/!svn/ver/6891/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ofcchart/client/view/wizard/OfcSelectYAxis.java
+END
+OfcSelectXAxis.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/fenix/!svn/ver/6891/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ofcchart/client/view/wizard/OfcSelectXAxis.java
+END

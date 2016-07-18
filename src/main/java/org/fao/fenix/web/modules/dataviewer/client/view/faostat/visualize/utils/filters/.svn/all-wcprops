@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/fenix/!svn/ver/9438/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/visualize/utils/filters
+END
+FAOSTATVisualizeAggregationType.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/fenix/!svn/ver/9204/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/visualize/utils/filters/FAOSTATVisualizeAggregationType.java
+END
+FAOSTATVisualizeFilters.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/fenix/!svn/ver/7913/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/visualize/utils/filters/FAOSTATVisualizeFilters.java
+END
+FAOSTATVisualizeMultiselectionSelectedItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/svn/fenix/!svn/ver/7845/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/visualize/utils/filters/FAOSTATVisualizeMultiselectionSelectedItem.java
+END
+FAOSTATVisualizeAggregatedAreasFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/svn/fenix/!svn/ver/10058/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/visualize/utils/filters/FAOSTATVisualizeAggregatedAreasFilter.java
+END
+FAOSTATVisualizeTimerangeFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/fenix/!svn/ver/9438/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/visualize/utils/filters/FAOSTATVisualizeTimerangeFilter.java
+END
+FAOSTATVisualizeMultiselectionFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/svn/fenix/!svn/ver/8805/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/visualize/utils/filters/FAOSTATVisualizeMultiselectionFilter.java
+END
+FAOSTATVisualizeFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/fenix/!svn/ver/10058/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/visualize/utils/filters/FAOSTATVisualizeFilter.java
+END
+FAOSTATVisualizeCompareItemFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svn/fenix/!svn/ver/8611/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/visualize/utils/filters/FAOSTATVisualizeCompareItemFilter.java
+END
+FAOSTATVisualizeCompareFilters.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/fenix/!svn/ver/8611/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/visualize/utils/filters/FAOSTATVisualizeCompareFilters.java
+END
+FAOSTATVisualizeMultiselectionItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svn/fenix/!svn/ver/7845/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/visualize/utils/filters/FAOSTATVisualizeMultiselectionItem.java
+END

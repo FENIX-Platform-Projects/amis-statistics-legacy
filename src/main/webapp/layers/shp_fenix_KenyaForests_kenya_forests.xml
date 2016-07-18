@@ -1,0 +1,29 @@
+<layer type="shp">
+  <title>Kenya Forests</title>
+  <abstract>Generated from KenyaForests -- Shapefile Layer 'KenyaForests::kenya_forests'</abstract>
+  <source country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</source>
+  <provider country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</provider>
+  <region>133</region>
+  <categories />
+  <sharingcode>Public</sharingcode>
+  <featuretype>
+    <title>Kenya Forests</title>
+    <abstract>Generated from KenyaForests</abstract>
+    <defaultstyle>polygon</defaultstyle>
+    <bbox>
+      <srs>4326</srs>
+      <minx>34.46766662597656</minx>
+      <maxx>41.5047492980957</maxx>
+      <miny>-3.6795387268066406</miny>
+      <maxy>2.8075199127197266</maxy>
+    </bbox>
+    <layername>kenya_forests</layername>
+    <datastore>
+      <name>KenyaForests</name>
+      <namespace>fenix</namespace>
+    </datastore>
+  </featuretype>
+  <!--Data dumped from geoserver at:-->
+  <!--REST url: http://ldvapp07.fao.org:8032/geoserverDev-->
+  <!--WMS url: http://ldvapp07.fao.org:8032/geoserverDev/wms?-->
+</layer>

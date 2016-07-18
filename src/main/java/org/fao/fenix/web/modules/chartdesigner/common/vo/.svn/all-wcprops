@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/fenix/!svn/ver/8896/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/common/vo
+END
+ChartDesignerParametersVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/fenix/!svn/ver/8896/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/common/vo/ChartDesignerParametersVO.java
+END
+ChartDesignerEnum.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/fenix/!svn/ver/7613/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/common/vo/ChartDesignerEnum.java
+END
+ChartDesignerFilterVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/fenix/!svn/ver/7296/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/common/vo/ChartDesignerFilterVO.java
+END
+ChartDesignerHighlightVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/fenix/!svn/ver/7910/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/common/vo/ChartDesignerHighlightVO.java
+END
+ChartDesignerYAxisParametersVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/fenix/!svn/ver/7904/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/common/vo/ChartDesignerYAxisParametersVO.java
+END

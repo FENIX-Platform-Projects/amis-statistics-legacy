@@ -1,0 +1,321 @@
+home 	ACCUEIL
+browseData 	EXPLORER Données
+downloadData 	TELECHARGER Données
+compareData 	COMPARER Données
+searchData 	RECHERCHER Données
+methodsAndStandards 	METODES &amp; STANDARDS
+faostatAnalysis 	ANALYSE
+byDomain	Par Domaine
+byCountryRegion	Par Pays/Régions
+byTopic	Par Sujet
+rankings Classements
+latestUpdatedDomains Derniers Domaines Mis à jour
+releaseCalendar Calendrier de Publication
+events Evénements
+top20	TOP20
+area	Zone géographique
+item	Produit
+element	Élément
+fromYear	Depuis l'année
+toYear	A l’année
+aggregation	Agrégation
+average	Moyenne
+sum	Somme
+choose	Choisissez
+pleaseMakeASelection	Sélectionnez
+compareWith	Comparer avec
+parameters	Paramètres
+showHide	montrer/cacher
+show	Montrer
+hide	Cacher
+noAdditionalInformation	Pas d'informations additionnelles
+information	Information
+selected	Sélectionné
+apply	Appliquer
+cancel	Annuler
+selectAll	Sélec. tout 
+deselectAll	De-sélec. tout
+clearAll	Tout nettoyer
+multiselection	Multi sélection
+listOfItems	Liste des articles
+currentSelectedItems	Articles actuellement sélectionnés
+export	Exporter
+exportToExcel	Exporter vers Excel
+exportToCSV	Exporter en CSV
+viewTables	Voir les tables
+compareAreas	Comparer les zones géographique
+pleaseSelectTheAreasYouWouldLikeToCompare	Sélectionnez les zones géographique que vous voulez comparer
+pleaseSelect	Sélectionnez
+areaSelection	Sélection de la zone géographique
+currentSelections	Actuellement sélectionnés
+allAreas	Toute les zones géographiques
+selectADomain	Sélectionner un domaine
+selectFromYear	Sélectionner l'année initiale
+itemsElements	Articles/éléments
+subDomain	Sous-Domaine
+selectMoreItemsElements	Sélectionnez plus d'Articles/Éléments
+selectedAreas	Zones géographiques sélectionnées
+clearAreaSelections	Nettoyer la sélection de zone géographique
+showComparison	Montrer les comparaisons
+selectedAreasYearsWithNoDataAreNotShownInTheChart	Les zones géographiques/années sans données ne sont pas montrées dans le graphique
+clickOnTheCountriesRegionsYouWantToCompare	Cliquez sur les pays/régions que vous voulez comparer
+elementItemSelector	Sélecteur d’éléments et d'Articles
+selectElementAndAssociatedItems	Sélectionnez l'élément et les articles associés
+byElement	Par élément
+selectElement	Sélectionner un élément
+selectItems	Sélectionner un(des) Article(s)
+items	Articles
+elements Éléments
+years	Années
+domains	Domaines
+elementsList	Liste d’éléments
+selectionError	Erreur de sélection
+pleaseSelectAtLeastOneArea	Sélectionnez au moins 1 zone/pays
+pleaseSelectAtLeastOneYear	Sélectionnez  au moins 1 année
+pleaseSelectAtLeastOneItem	Sélectionnez  au moins 1 article
+pleaseSelectAtLeastOneElement	Sélectionnez au moins un élément
+creatingTables	Créations des tables
+exporting	Exportation
+pleaseWait	Merci de patienter
+loading	Chargement
+tableSampleMaxRows	
+classificationOf	Classification de
+classificationDefinition	Conformément au rôle  leader  de la FAO dans la classification des activités et produits agricoles, et pour faciliter la comparabilité internationale des données et l'échange, FAOSTAT a standardisé sa liste de produits
+standardUnitsSymbolsUsedInFAOSTAT	Unités standard et les symboles utilisés dans FAOSTAT
+currencyTableTitle	Tableau des devises: Chaque pays, les noms de la monnaie et codes de devises ISO sont pour la période 1991-2008
+currencyTableDefinition	Ce tableau complète l'information sur les prix à la production en monnaie locale. Les utilisateurs peuvent suivre la devise dans laquelle les prix sont étiquetés chaque année par la «Première année» et les colonnes «L'année dernière,« alors que les séries de FAOSTAT dans la norme monnaies locales (SLC) donnent des prix exprimés dans une monnaie de référence unique pendant toute la période. Les taux de conversion entre les monnaies anciennes et nouvelles sont donnés ci-dessous pour information.
+abbreviationList	Liste des abréviations
+glossaryList	Liste du Glossaire
+searchingFAOSTAT	Recherche FAOSTAT
+retrievingResults	Accéder aux résultats
+resultsFor	résultats pour
+totalResults	résultats finaux
+noItemsFound	Pas d'articles trouvés
+noElementsFound	Pas d'éléments trouvés
+download	Télécharger
+downloadingData	Téléchargement des données
+overview	Aperçu
+selectDate	Sélectionner la date
+dateSelectionWrong	La date sélectionnée est erronée
+noCodesHaveBeenSelected	Pas de codes sélectionnés
+itemfaocode	Code FAO article
+itemhspluscode	Code HS+ article
+itemnamee	Nom de l'article
+definitione	Définition
+abbreviatione	Abréviation
+titlee	Titre
+faocountrycode	Code Pays FAO
+countrynamee	Nom du Pays
+isocurrencycode	Code ISO de la devise
+currencynames	Nom de la devise
+firstyearintofaostat	Première année dans FAOSTAT
+lastyearintofaostate	Dernière année dans FAOSTAT
+conversionrates	Taux de conversion
+conversionoldnewcurrency	Les taux de conversion entre l'ancienne et la nouvelle monnaie
+commentse	Commentaires
+sourcese	Sources
+ITEMS	Articles
+COUNTRIES	Pays
+ELEMENTS	Éléments
+AREAS_WORLD	Zone géographique
+YEARS	Années
+TIMERANGE	Intervalle de temps
+SORTING	Tri
+abbrevs	Abréviations
+units	Unités
+classifications	Classifications
+glossary	Glossaire
+localCurrency	Devise locale
+downloadOptions	Option de téléchargement
+thousandSeparator	Séparateur milliers
+decimalNumbers	Nombres décimaux
+decimalPlaces	Décimale
+none	Aucun
+comma	virgule
+period	point
+space	espace
+includeFlagsInDownload	Inclure les indicateurs dans le téléchargement
+showFlags	Montrer les indicateurs
+includeCodesInDownload	Inclure les codes dans le téléchargement
+showCodes	Montrer les Codes
+includeUnitsInDownload	Inclure les unités dans le téléchargement
+showUnits	Montrer les unités
+includeNullValuesInDownload	Inclure les valeurs nulles dans le téléchargement
+showNullValues	Montrer les valeurs nulles
+areas	Zone géographique
+countries	Pays
+areasFAO	Zone géographique FAO
+all	Tout
+itemsAggregated	articles agrégés
+table	Table
+outputOptions	Options de sortie
+pivotTable	Table Pivot
+rows	Lignes
+subRows	Sous lignes
+columns	Colonnes
+createTablesBy	Créer les tables par
+viewMore	Voir plus
+advancedSearch	Recherche avancée
+pleaseSelectToFilterResults	Sélectionnez pour filtrer les résultats
+downloadAll	Télécharger tout
+showAllDomains	Voir tout les domaines
+close	Fermer
+first	Premier
+previous	précédent
+next	suivant
+dataPreview	Aperçu des données
+egRice	ex : Riz
+search	Recherche
+viewByItem	Voir par article
+viewByElement	Voir par élément
+noResultsAvailableForSearch	Pas de résultats disponible pour cette recherche
+noDataAvailableForCurrentSelection	Pas de données disponible pour la sélection courante
+noDataAvailable	Pas de données disponible
+additionalInformation	Informations complémentaires
+exportVisibleResources	Exporter les sources visibles
+clickToLoadOtherTables	Cliquer pour charger les autres tables
+browseBy	Parcourir par
+regions	Régions
+byContinent	par continent
+byRegion	par région
+byCountry	par pays
+selectACountry	Sélectionner un pays
+topics	Sujets
+other	autres
+growthRate	Taux de croissance
+itemCodes	Codes articles
+itemCode	Code Article
+year	Années
+country	Pays
+countryCodes	Code Pays
+flagDisclaimer	Données non-officielles | [] = données officielles | F = estimation de la FAO | Im = données de la FAO basée sur la méthodologie d'imputation
+faoStatDivision	Division statistique de la FAO
+mapDisclaimer	Les appellations employées et la présentation des informations produits n'impliquent pas l'expression d'une opinion quelconque de la part de l'Organisation pour l'alimentation et l'agriculture des Nations Unies (FAO) concernant le statut juridique ou le développement de tout pays, territoire, ville ou zones ou de leurs autorités, ni quant au tracé de leurs frontières ou limites. La mention de'entreprises ou de produits de fabricants, qu'ils soient ou non  brevetés, n'implique pas que ceux-ci ont été agréés ou recommandés par la FAO, de préférence à d'autres de nature analogue qui ne sont pas mentionnés. <br> Les opinions exprimées dans cette publication sont celles de(s)( l')auteur (s) et ne reflètent pas nécessairement les vues de la FAO.
+commodityBalances	équilibre des produits
+foodSupply	Disponibilité alimentaire
+population	Population
+prices	Prix
+agriculturalProductionPriceIndices	Indice des prix de la production agricole
+priceArchives	Archives Prix
+production	Production
+pin	PIN : Indices de production agricole
+valueOfAgriculturalProduction	Valeur de la production agricole
+resources	Ressources
+fertilizers	Engrais
+fertilizersTradeValue	Valeur commercial des engrais
+fertilizersArchive	Archives engrais
+landUse	utilisation des terres
+pesticidesTrade	commerce des pesticides
+pesticidesConsumption	consommation des pesticides
+trade	commerce
+tin	TIN : Indice de commerce
+defaultLabel	Texte manquant
+capitalStock	Formation de capital
+foodBalanceSheets	Bilans alimentaires
+forestry	Forêts
+machinery	Machines agricoles
+defaultLabel	Texte manquant
+availableFunctions	Fonctions disponibles
+univariate	Statistiques uni-variées
+multivariate	Statistiques multivariées
+linear_regression	régression Linéaire
+max	Maximum
+mean	moyenne
+median	médiane
+mode	Mode
+min	Minimum
+quantiles	quantiles
+quantile	quantiles
+sd	écart type
+summary	récapitulatif
+var	Variance
+cor	Matrice de corrélation
+cov	matrice de covariance
+lm	régression Linéaire
+welcomeTitle	Bienvenue dans la section Analyse de FAOSTAT
+welcomeText	FAOSTAT fournit des séries chronologiques et de données transversales relatives à l'alimentation et l'agriculture pour quelque 200 pays. La version nationale de FAOSTAT, CountrySTAT, est développé et mis en œuvre dans un certain nombre de pays cibles, principalement en Afrique sub-saharienne. <br> Cliquez sur la fonction de votre intérêt de commencer à travailler avec elle.
+database	Base de données
+domain	Domaine
+group	Groupe
+country	Pays
+item	Item
+element	Élément
+all	Tout
+pleaseSelect	Sélectionnez
+showResults	Voir les résultats
+clearSelection	Nettoyer la sélection
+results	Résultats
+addVariable	Ajouter une variable
+removeVariable	Enlever une variable
+or	OU
+dependentVariable	variable dépendante
+independentVariable	variable indépendante
+variable	Variable
+variables	Variables
+information	Information
+warning	Attention
+error	Erreur
+pleaseSelectDatabase	Sélectionnez une base de données
+pleaseSelectGroup	Sélectionnez un Groupe
+pleaseSelectDomain	Sélectionnez un Domaine
+pleaseSelectCountry	Sélectionnez un Pays
+pleaseSelectItem	Sélectionnez un Article
+pleaseSelectElement	Sélectionnez un élément
+pleaseSelectYear	Sélectionnez une année
+pleaseSelectExportFormat	Sélectionnez le format d'export
+elementHasBeenRepeatedPleaseRedefineTheElementSelection	Les éléments ont été répétés, redéfinissez votre sélection d’éléments
+parameters	Paramètres
+from	De
+to	A
+function	Fonctions
+currentFunction	Fonction actuelle
+exportResults	Exporter les résultats
+exportData	Exporter les données
+csv	CSV
+excel	Excel
+html	HTML
+xml	XML
+typeToFilter	Type à filtrer
+egGroup	ex : Production
+egDomain	ex: Cultures
+egCountry	ex : Iran
+egItem	ex : Blé
+egElement	ex : rendement
+columns	Colonnes
+rows	Lignes
+subRows1	Sous-Lignes
+subRows2	Sous-lignes 2
+output	Sortie
+water Eau
+acronym Acronyme
+abbreviation Abréviation
+definition Définition
+title Titre
+sources Sources
+itemname Nom de l'article
+methodology Méthodologie
+note Note
+coverage Couverture
+references Références
+dataSourcesAndCollection Sources de données et collecte
+estimation Estimation
+relatedConcepts Concepts associés
+selectAMethodologyBelowToViewDetails Sélectionnez une méthodologie ci-dessous, pour afficher les détails.
+specialGroups Groupes spéciaux
+economicAreas Zone économiques
+feedback Envoyer un comentaire
+chartDislaimer M = Million, K = millier
+fsbStyle Style BA
+E Anglais
+F Français
+S Espagnol
+water Eau
+downloadStandard Téléchargement standard
+downloadBulk Téléchargements Totaux
+ELEMENTS_LIST Element
+group Groupe
+domain Domaine
+rotterdamConventionPesticides Pesticides soumis à la Convention de Rotterdam
+tableSampleMaxRows Example de table: maximum de lignes affichées
+value Valeur
+flag Symbole

@@ -1,0 +1,11 @@
+package org.fao.fenix.web.modules.designer.common.vo;
+
+import com.google.gwt.user.client.rpc.IsSerializable;
+
+public enum DesignerConstants implements IsSerializable {
+
+	PORTRAIT, LANDSCAPE, REPORT, PAGE, BOX, NUMERIC, STRING, BOOLEAN, START_PIXEL, END_PIXEL, ABOVE, BELOW, CAPTION,
+	TIMES, ARIAL, COURIER, SERIF, TINY, SMALL, NORMALSIZE, MEDIUM, LARGE, XLARGE, XXLARGE,
+	CAPTION_FONTFAMILY, CAPTION_SIZE, CAPTION_COLOR, CAPTION_POSITION, BOX_LINE_COLOR, BOX_BACKGROUND_COLOR, TABLE_SIZE;
+	
+}

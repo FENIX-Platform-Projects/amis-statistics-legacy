@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/fenix/!svn/ver/6406/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/coding/client/view/vo
+END
+DcmtCodeVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/fenix/!svn/ver/6406/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/coding/client/view/vo/DcmtCodeVo.java
+END
+DcmtStructureVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/fenix/!svn/ver/6406/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/coding/client/view/vo/DcmtStructureVo.java
+END
+DcmtCodingCreatorMD.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/fenix/!svn/ver/6406/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/coding/client/view/vo/DcmtCodingCreatorMD.java
+END

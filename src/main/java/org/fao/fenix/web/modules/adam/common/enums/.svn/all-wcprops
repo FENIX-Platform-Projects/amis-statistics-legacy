@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/fenix/!svn/ver/11148/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/adam/common/enums
+END
+ADAMCurrentVIEW.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/fenix/!svn/ver/10340/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/adam/common/enums/ADAMCurrentVIEW.java
+END
+ADAMSelectedDataset.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/fenix/!svn/ver/9788/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/adam/common/enums/ADAMSelectedDataset.java
+END
+ADAMBoxContent.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/fenix/!svn/ver/10207/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/adam/common/enums/ADAMBoxContent.java
+END
+ADAMBoxColors.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/fenix/!svn/ver/7050/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/adam/common/enums/ADAMBoxColors.java
+END
+ADAMURLParameters.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/fenix/!svn/ver/11148/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/adam/common/enums/ADAMURLParameters.java
+END
+ADAMAnalyseVIEW.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/fenix/!svn/ver/10340/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/adam/common/enums/ADAMAnalyseVIEW.java
+END

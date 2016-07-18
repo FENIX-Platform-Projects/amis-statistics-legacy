@@ -1,0 +1,25 @@
+<!-- BODY TEXT SECTION -->
+<br/><br/>
+<div class='text'>
+Fertilizer prices paid by farmers are shown in local currency per metric tonne of plant nutrients (N, P2O5 and K2O) for straight fertilizers and per metric tonne of product for mixed and complex fertilizers. They generally refer to bagged fertilizers. Prices are shown with subsidies deducted wherever possible. Caution should be exercised in intercountry comparisons since pricing points, price policies, credit arrangements, etc. are not uniform.
+<br/><br/> 
+<i>Element References</i>
+<br/><br/>
+51 Production MT
+Quantity, in metric tonnes, of plant nutrient for domestic use in agriculture.
+<br/><br/>
+61 Imports MT
+Quantity of Fertilizers in metric tons of plant nutrient imported by a country.
+<br/><br/>
+91 Exports MT
+Quantity of Fertilizers equivalent in metric tons of plant nutrient exported by a country.
+<br/><br/>
+151 Consumption MT
+Quantity of Fertilizer in metric tons of plant nutrient consumed in agriculture by a country.
+<br/><br/>
+171 Farmer Price LC/MT
+Fertilizer prices paid by farmers are shown in local currency per metric ton (LC/MT) of plant nutrients (N, P2O5 and K2O); wherever possible prices are shown with subsidies deducted. 
+<br/><br/>
+Please find a table of National Currencies and the Country Notes in the <b>Please Note</b> section below.
+<br /><br /><br />
+</div>

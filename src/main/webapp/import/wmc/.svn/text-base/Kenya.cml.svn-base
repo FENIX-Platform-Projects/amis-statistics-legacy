@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ViewContext id="fenix_sample_kenya_map" version="1.1.0"
+    xmlns="http://www.opengeospatial.net/context"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:wmc="http://www.opengis.net/context"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.opengis.net/context http://schemas.opengis.net/context/1.0.0/context.xsd">
+
+   <General>
+      <Title>Kenya sample map</Title>
+	  <BoundingBox SRS="EPSG:4326" 
+            minx="32.66542" miny="-5.44317"
+			maxx="43.05575" maxy="6.33542" />
+   </General>
+
+   <LayerList>
+      <Layer queryable="true" hidden="false">
+         <Name>fenix:bluemarble</Name>
+         <Title>World</Title>
+
+         <Server service="OGC:WMS" version="1.1.1" title="My GeoServer WMS">
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" 
+	    	xlink:href="http://ldvapp07.fao.org:8032/geoserver/wms?"/>
+         </Server>
+
+         <Abstract>Full world image</Abstract>
+      </Layer>
+
+      <Layer queryable="true" hidden="false">
+         <Name>fenix:gaul0</Name>
+         <Title>GAUL0 - Administrative boundaries Level 0</Title>
+
+         <Server service="OGC:WMS" version="1.1.1" title="My GeoServer WMS">
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" 
+	    	xlink:type="simple" xlink:href="http://ldvapp07.fao.org:8032/geoserver/wms?"/>
+         </Server>
+      </Layer>
+
+      <Layer queryable="true" hidden="true">
+         <Name>fenix:kenya_landuse</Name>
+         <Title>Kenya Land Use</Title>
+
+         <Server service="OGC:WMS" version="1.1.1" title="My GeoServer WMS">
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" 
+	    	xlink:href="http://ldvapp07.fao.org:8032/geoserver/wms?"/>
+         </Server>
+
+         <Abstract>Generated from KenyaLandUse</Abstract>
+      </Layer>
+
+      <Layer queryable="true" hidden="false">
+         <Name>fenix:kenya_lakes</Name>
+         <Title>Kenya Lakes</Title>
+
+         <Server service="OGC:WMS" version="1.1.1" title="My GeoServer WMS">
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" 
+	    	xlink:type="simple" xlink:href="http://ldvapp07.fao.org:8032/geoserver/wms?"/>
+         </Server>
+
+         <Abstract>Generated from KenyaLakes</Abstract>
+      </Layer>
+
+      <Layer queryable="true" hidden="false">
+         <Name>fenix:zlayer_kenya_1</Name>
+         <Title>Kenya GAUL1</Title>
+
+         <Server service="OGC:WMS" version="1.1.1" title="My GeoServer WMS">
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" 
+	    	xlink:href="http://ldvapp07.fao.org:8032/geoserver/wms?"/>
+         </Server>
+
+         <Abstract>Generated from fenixDB</Abstract>
+      </Layer>
+
+      <Layer queryable="true" hidden="false">
+         <Name>fenix:zlayer_kenya_2</Name>
+         <Title>Kenya GAUL2</Title>
+
+         <Server service="OGC:WMS" version="1.1.1" title="My GeoServer WMS">
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" 
+	    	xlink:href="http://ldvapp07.fao.org:8032/geoserver/wms?"/>
+         </Server>
+
+         <Abstract>Generated from fenixDB</Abstract>
+      </Layer>
+
+      <Layer queryable="true" hidden="true">
+         <Name>fenix:zlayer_kenya_3</Name>
+         <Title>Kenya GAUL3</Title>
+
+         <Server service="OGC:WMS" version="1.1.1" title="My GeoServer WMS">
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://ldvapp07.fao.org:8032/geoserver/wms?"/>
+         </Server>
+
+         <Abstract>Generated from fenixDB</Abstract>
+      </Layer>
+
+      <Layer queryable="true" hidden="true">
+         <Name>fenix:zlayer_kenya_4</Name>
+         <Title>Kenya GAUL4</Title>
+
+         <Server service="OGC:WMS" version="1.1.1" title="My GeoServer WMS">
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" 
+	    xlink:href="http://ldvapp07.fao.org:8032/geoserver/wms?"/>
+         </Server>
+
+         <Abstract>Generated from fenixDB</Abstract>
+      </Layer>
+
+      <Layer queryable="true" hidden="true">
+         <Name>fenix:zlayer_kenya_5</Name>
+         <Title>Kenya GAUL5</Title>
+
+         <Server service="OGC:WMS" version="1.1.1" title="My GeoServer WMS">
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" 
+	    xlink:href="http://ldvapp07.fao.org:8032/geoserver/wms?"/>
+         </Server>
+
+         <Abstract>Generated from fenixDB</Abstract>
+      </Layer>
+
+      <Layer queryable="true" hidden="false">
+         <Name>fenix:kenya_major_towns</Name>
+         <Title>Kenia Major Towns</Title>
+
+         <Server service="OGC:WMS" version="1.1.1" title="My GeoServer WMS">
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" 
+	    xlink:href="http://ldvapp07.fao.org:8032/geoserver/wms?"/>
+         </Server>
+
+         <Abstract>Generated from KenyaTowns</Abstract>
+      </Layer>
+
+      <Layer queryable="true" hidden="false">
+         <Name>fenix:maize</Name>
+         <Title>Kenya Maize Production</Title>
+
+         <Server service="OGC:WMS" version="1.1.1" title="My GeoServer WMS">
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" 
+	    xlink:href="http://ldvapp07.fao.org:8032/geoserver/wms?"/>
+         </Server>
+
+         <Abstract>Generated from KenyaPMaize</Abstract>
+      </Layer>
+
+      <Layer queryable="true" hidden="false">
+         <Name>fenix:wheat</Name>
+         <Title>Kenya Wheat Production</Title>
+
+         <Server service="OGC:WMS" version="1.1.1" title="My GeoServer WMS">
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" 
+	    xlink:href="http://ldvapp07.fao.org:8032/geoserver/wms?"/>
+         </Server>
+
+         <Abstract>Generated from KenyaPWheat</Abstract>
+      </Layer>
+
+      <Layer queryable="true" hidden="false">
+         <Name>fenix:kenya_protected_areas</Name>
+         <Title>Kenya Protected Areas</Title>
+
+         <Server service="OGC:WMS" version="1.1.1" title="My GeoServer WMS">
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" 
+	    xlink:href="http://ldvapp07.fao.org:8032/geoserver/wms?"/>
+         </Server>
+
+         <Abstract>Generated from KenyaProtectedAreas</Abstract>
+      </Layer>
+   </LayerList>
+</ViewContext>

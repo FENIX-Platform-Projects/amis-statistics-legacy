@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/fenix/!svn/ver/6891/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ofcchart/common/services
+END
+OfcChartServiceEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/fenix/!svn/ver/6891/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ofcchart/common/services/OfcChartServiceEntry.java
+END
+OfcChartServiceAsync.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/fenix/!svn/ver/6891/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ofcchart/common/services/OfcChartServiceAsync.java
+END
+OfcChartService.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/fenix/!svn/ver/6891/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ofcchart/common/services/OfcChartService.java
+END

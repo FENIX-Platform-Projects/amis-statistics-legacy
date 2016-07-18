@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/fenix/!svn/ver/11367/trunk/fenix-web/src/main/resources/org/fao/fenix/web/modules/amis/public/amis-market-monitor/js/util
+END
+xdr.js
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/fenix/!svn/ver/11149/trunk/fenix-web/src/main/resources/org/fao/fenix/web/modules/amis/public/amis-market-monitor/js/util/xdr.js
+END
+head.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/fenix/!svn/ver/10864/trunk/fenix-web/src/main/resources/org/fao/fenix/web/modules/amis/public/amis-market-monitor/js/util/head.min.js
+END
+jQuery.XDomainRequest.js
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/fenix/!svn/ver/11367/trunk/fenix-web/src/main/resources/org/fao/fenix/web/modules/amis/public/amis-market-monitor/js/util/jQuery.XDomainRequest.js
+END
+json3.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/fenix/!svn/ver/10864/trunk/fenix-web/src/main/resources/org/fao/fenix/web/modules/amis/public/amis-market-monitor/js/util/json3.min.js
+END
+Ensure.js
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/fenix/!svn/ver/10864/trunk/fenix-web/src/main/resources/org/fao/fenix/web/modules/amis/public/amis-market-monitor/js/util/Ensure.js
+END

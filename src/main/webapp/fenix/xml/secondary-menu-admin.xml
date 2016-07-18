@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu-bar>
+	<first-level name="language" command="language" iconStyle="language">
+		<second-level name="english" command="english" iconStyle="english"/>
+<!--		<second-level name="french" command="french" iconStyle="french"/>-->
+		<second-level name="arabic" command="arabic" iconStyle="arabic"/>
+	</first-level>
+	<first-level name="about" command="about" iconStyle="info"/>
+	<first-level name="login" command="login" iconStyle="key"/>
+	<first-level name="logout" command="logout" iconStyle="logout"/>
+</menu-bar>

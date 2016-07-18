@@ -1,0 +1,5 @@
+Problems with Override annotation?
+Set Java compiler level to 1.6 or above
+
+Problems with org.w3c.dom.Element missing methods?
+Properties > Java Build Path > Order and Export > move "JRE System Libraries" to the first position.

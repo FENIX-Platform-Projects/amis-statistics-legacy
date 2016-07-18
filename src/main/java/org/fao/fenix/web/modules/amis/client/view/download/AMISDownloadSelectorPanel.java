@@ -1,0 +1,426 @@
+package org.fao.fenix.web.modules.amis.client.view.download;
+
+import java.util.*;
+
+import com.extjs.gxt.ui.client.event.Events;
+import com.extjs.gxt.ui.client.widget.button.ToggleButton;
+import org.fao.fenix.web.modules.amis.client.control.AMISController;
+import org.fao.fenix.web.modules.amis.client.control.download.AMISDownloadController;
+import org.fao.fenix.web.modules.amis.client.control.download.AMISFoodBalanceDownloadController;
+import org.fao.fenix.web.modules.amis.client.view.utils.layout.FormattingUtils;
+import org.fao.fenix.web.modules.amis.client.view.utils.layout.LoadingPanel;
+import org.fao.fenix.web.modules.amis.common.constants.AMISConstants;
+import org.fao.fenix.web.modules.amis.common.constants.AMISCurrentDatasetView;
+import org.fao.fenix.web.modules.amis.common.model.AMISCodesModelData;
+import org.fao.fenix.web.modules.amis.common.vo.AMISConstantsVO;
+import org.fao.fenix.web.modules.amis.common.vo.AMISQueryVO;
+
+import com.extjs.gxt.ui.client.Style.Scroll;
+import com.extjs.gxt.ui.client.store.ListStore;
+import com.extjs.gxt.ui.client.widget.ContentPanel;
+import com.extjs.gxt.ui.client.widget.HorizontalPanel;
+import com.extjs.gxt.ui.client.widget.Html;
+import com.extjs.gxt.ui.client.widget.ListView;
+import com.extjs.gxt.ui.client.widget.button.Button;
+import org.fao.fenix.web.modules.core.client.utils.ClickHtml;
+
+public class AMISDownloadSelectorPanel {
+	
+	
+	ContentPanel panel;
+	
+	public ListStore<AMISCodesModelData> store;
+	
+	public ListView<AMISCodesModelData> list;
+	
+	String title;
+
+	public String selectionType;
+
+	public AMISDownloadSelectorPanel() {
+		panel = new ContentPanel();
+		panel.setHeaderVisible(false);
+		panel.setBodyBorder(false);
+		panel.setAutoHeight(true);
+		panel.setScrollMode(Scroll.NONE);
+		
+		/** Tree **/
+		store = new ListStore<AMISCodesModelData>();
+		list = new ListView<AMISCodesModelData>();
+
+		list.setStore(store);
+		list.setDisplayProperty("label");
+
+	}
+
+    protected AMISQueryVO setQVOParameters(AMISCodesModelData domainFilter, Boolean isTotalAndList){
+
+        Map<String, String> selectedDatasets = new LinkedHashMap<String, String>();
+        selectedDatasets.clear();
+
+        /** TODO: move it...**/
+        AMISQueryVO qvo =  new AMISQueryVO();
+        qvo.setOutput(AMISConstants.CODING_SYSTEM.toString());
+        qvo.setTypeOfOutput(selectionType);
+
+        if(domainFilter.getLabel().equals("FAOSTAT"))
+        {
+            qvo.setSelectedDataset(AMISConstants.FAOSTAT.toString());
+
+            selectedDatasets.put(AMISConstants.FAOSTAT.toString(), AMISConstants.FAOSTAT.toString());
+            qvo.setDatabases(selectedDatasets);
+
+            AMISController.setCurrentDatasetView(AMISCurrentDatasetView.FAOSTAT);
+        }
+        else if((domainFilter.getLabel().equals("PSD"))||(domainFilter.getLabel().equals("USDA-PSD")))
+        {
+            qvo.setSelectedDataset(AMISConstants.PSD.toString());
+
+            selectedDatasets.put(AMISConstants.PSD.toString(), AMISConstants.PSD.toString());
+            qvo.setDatabases(selectedDatasets);
+
+            AMISController.setCurrentDatasetView(AMISCurrentDatasetView.PSD);
+        }
+        else if(domainFilter.getLabel().equals("IGC"))
+        {
+            qvo.setSelectedDataset(AMISConstants.IGC.toString());
+
+            selectedDatasets.put(AMISConstants.IGC.toString(), AMISConstants.IGC.toString());
+            qvo.setDatabases(selectedDatasets);
+
+            AMISController.setCurrentDatasetView(AMISCurrentDatasetView.IGC);
+        }
+//        else if((domainFilter.getLabel().equals("CBS"))||(domainFilter.getLabel().equals("FAO-CBS")))
+        else if((domainFilter.getLabel().equals("CBS"))||(domainFilter.getLabel().equals("FAO-AMIS")))
+        {
+            qvo.setSelectedDataset(AMISConstants.CBS.toString());
+
+            selectedDatasets.put(AMISConstants.CBS.toString(), AMISConstants.CBS.toString());
+            qvo.setDatabases(selectedDatasets);
+
+            AMISController.setCurrentDatasetView(AMISCurrentDatasetView.CBS);
+        }
+        if(domainFilter.getLabel().equals("AMIS"))
+        {
+            qvo.setSelectedDataset(AMISConstants.AMIS.toString());
+
+            selectedDatasets.put(AMISConstants.AMIS.toString(), AMISConstants.AMIS.toString());
+            qvo.setDatabases(selectedDatasets);
+
+            AMISController.setCurrentDatasetView(AMISCurrentDatasetView.AMIS);
+        }
+        if(domainFilter.getLabel().equals("NATIONAL"))
+        {
+            qvo.setSelectedDataset(AMISConstants.NATIONAL.toString());
+
+            selectedDatasets.put(AMISConstants.NATIONAL.toString(), AMISConstants.NATIONAL.toString());
+            qvo.setDatabases(selectedDatasets);
+
+            AMISController.setCurrentDatasetView(AMISCurrentDatasetView.NATIONAL);
+        }
+
+        List<String> froms = new ArrayList<String>();
+        if(qvo.getFroms().isEmpty() && !AMISController.getCurrentDatasetView().equals(AMISCurrentDatasetView.FAOSTAT)) {
+            //froms.add(AMISController.getTableNameForDataset(AMISCurrentDatasetView.AMIS)+" D");
+            froms.add("amis_all_datasources D" ); // combined data sources view
+            froms.add(AMISController.getTableNameForCodingSystem(AMISConstants.AMIS.toString()+"_ELEMENTS")+" E");
+        }
+        else
+        {
+            //For Faostat
+            froms.add("Data D");
+            froms.add("Element E");
+            froms.add("Area A");
+            froms.add("Item I");
+            froms.add("DomainArea DA");
+        }
+        qvo.setFroms(froms);
+
+        System.out.println("AmisDownloadSelector Function: build Text:qvo.getFroms() *"+qvo.getFroms()+"*");
+        AMISConstantsVO.setLanguageSettings(qvo);
+        qvo.setDomains(buildDomain(domainFilter));
+        qvo.setGetTotalAndList(isTotalAndList);
+        qvo.setCodeList(domainFilter.getCodeList());
+
+       return qvo;
+    }
+
+
+    protected AMISQueryVO setQVOParameters(AMISDownload download, String defaultDatabase, Boolean isTotalAndList){
+
+        //Map<String, String> selectedDatasets = new LinkedHashMap<String, String>();
+       // selectedDatasets.clear();
+
+        /** TODO: move it...**/
+        AMISQueryVO qvo =  new AMISQueryVO();
+        qvo.setOutput(AMISConstants.CODING_SYSTEM.toString());
+        qvo.setTypeOfOutput(selectionType);
+
+        if(download.getSelectedDatasources()!=null && download.getSelectedDatasources().size() > 0) {
+                Map<String, String> databases = new HashMap<String, String>();
+                databases.clear();
+
+                for(AMISCodesModelData source:  download.getSelectedDatasources()){
+                    databases.put(source.getCode(), source.getCode());
+                }
+
+                //AMISController.setCurrentDatasetView(null);
+                qvo.setSelectedDataset(null);
+
+                System.out.println("setQVO databases = "+databases);
+                qvo.setDatabases(databases);
+                qvo.setDomains(databases);
+        } else {
+             qvo.setSelectedDataset(defaultDatabase);
+             Map<String, String> databases = new HashMap<String, String>();
+             databases.put(defaultDatabase, defaultDatabase);
+
+             qvo.setDatabases(databases);
+             qvo.setDomains(databases);
+        }
+
+        List<String> froms = new ArrayList<String>();
+        if(qvo.getFroms().isEmpty() && !AMISController.getCurrentDatasetView().equals(AMISCurrentDatasetView.FAOSTAT)) {
+            //froms.add(AMISController.getTableNameForDataset(AMISCurrentDatasetView.AMIS)+" D");
+            froms.add("amis_all_datasources D" ); // combined data sources view
+            froms.add(AMISController.getTableNameForCodingSystem(AMISConstants.AMIS.toString()+"_ELEMENTS")+" E");
+        }
+        else
+        {
+            //For Faostat
+            froms.add("Data D");
+            froms.add("Element E");
+            froms.add("Area A");
+            froms.add("Item I");
+            froms.add("DomainArea DA");
+        }
+        qvo.setFroms(froms);
+
+        System.out.println("AmisDownloadSelector Function: build Text:qvo.getFroms() *"+qvo.getFroms()+"*");
+        AMISConstantsVO.setLanguageSettings(qvo);
+        qvo.setGetTotalAndList(isTotalAndList);
+        //qvo.setCodeList(domainFilter.getCodeList());
+
+        return qvo;
+    }
+
+
+
+
+    public ContentPanel build(AMISDownload download, AMISCodesModelData domainFilter, String title, String selectionType, Boolean isTotalAndList, Boolean addSelectAll, String width, String height) {
+        this.selectionType = selectionType;
+
+        if ( title != null ) {
+            this.title = title;
+            panel.add(addTitle(title));
+        }
+
+        list.setWidth(width);
+        list.setHeight(height);
+        list.setTemplate(getTemplate());
+
+        AMISQueryVO qvo = setQVOParameters( domainFilter,  isTotalAndList);
+
+        panel.add(new LoadingPanel().buildPanel("Loading", width, height, true));
+
+        if((selectionType!=null)&&(selectionType.equals(AMISConstants.AMIS_PRODUCTS.toString())))
+        {
+            qvo.setTotalFlag(true);
+        }
+        AMISDownloadController.getSelectors(this, qvo, selectionType, addSelectAll, download);
+
+       return panel;
+    }
+
+
+
+
+    public ContentPanel build(AMISDownload download, String defaultDomain, String title, String selectionType, Boolean isTotalAndList, Boolean addSelectAll, String width, String height) {
+        this.selectionType = selectionType;
+
+        if ( title != null ) {
+            this.title = title;
+            panel.add(addTitle(title));
+        }
+
+        list.setWidth(width);
+        list.setHeight(height);
+        list.setTemplate(getTemplate());
+
+        AMISQueryVO qvo = setQVOParameters(download, defaultDomain, isTotalAndList);
+
+        panel.add(new LoadingPanel().buildPanel("Loading", width, height, true));
+
+        if((selectionType!=null)&&(selectionType.equals(AMISConstants.AMIS_PRODUCTS.toString())))
+        {
+            qvo.setTotalFlag(true);
+        }
+        AMISDownloadController.getSelectors(this, qvo, selectionType, addSelectAll, download);
+
+        return panel;
+    }
+
+
+
+	/**public ContentPanel build(AMISCodesModelData domainFilter, String title, String selectionType, Boolean isTotalAndList, Boolean addSelectAll, String width, String height) {
+		this.selectionType = selectionType;
+		
+		if ( title != null ) {
+			this.title = title;
+			panel.add(addTitle(title));
+		}
+		
+		list.setWidth(width);
+		list.setHeight(height);
+		list.setTemplate(getTemplate());
+		
+		AMISQueryVO qvo =  new AMISQueryVO();
+		qvo.setOutput(AMISConstants.CODING_SYSTEM.toString());
+		qvo.setTypeOfOutput(selectionType);
+
+		if(domainFilter.getLabel().equals("FAOSTAT"))
+		{
+			qvo.setSelectedDataset(AMISConstants.FAOSTAT.toString());
+			AMISController.setCurrentDatasetView(AMISCurrentDatasetView.FAOSTAT);
+		}
+		else if((domainFilter.getLabel().equals("PSD"))||(domainFilter.getLabel().equals("USDA-PSD")))
+		{
+			qvo.setSelectedDataset(AMISConstants.PSD.toString());
+			AMISController.setCurrentDatasetView(AMISCurrentDatasetView.PSD);
+		}
+		else if(domainFilter.getLabel().equals("IGC"))
+		{
+			qvo.setSelectedDataset(AMISConstants.IGC.toString());
+			AMISController.setCurrentDatasetView(AMISCurrentDatasetView.IGC);
+		}
+		else if((domainFilter.getLabel().equals("CBS"))||(domainFilter.getLabel().equals("FAO-CBS")))
+		{
+			qvo.setSelectedDataset(AMISConstants.CBS.toString());
+			AMISController.setCurrentDatasetView(AMISCurrentDatasetView.CBS);
+		}
+		if(domainFilter.getLabel().equals("AMIS"))
+		{
+			qvo.setSelectedDataset(AMISConstants.AMIS.toString());
+			AMISController.setCurrentDatasetView(AMISCurrentDatasetView.AMIS);
+		}
+		if(domainFilter.getLabel().equals("NATIONAL"))
+		{
+			qvo.setSelectedDataset(AMISConstants.NATIONAL.toString());
+			AMISController.setCurrentDatasetView(AMISCurrentDatasetView.NATIONAL);
+		}
+		
+		List<String> froms = new ArrayList<String>();
+		if(qvo.getFroms().isEmpty() && !AMISController.getCurrentDatasetView().equals(AMISCurrentDatasetView.FAOSTAT)) {
+			//froms.add(AMISController.getTableNameForDataset(AMISCurrentDatasetView.AMIS)+" D");	
+			froms.add("amis_all_datasources D" ); // combined data sources view
+			froms.add(AMISController.getTableNameForCodingSystem(AMISConstants.AMIS.toString()+"_ELEMENTS")+" E");			
+		}
+		else
+		{
+			//For Faostat
+			froms.add("Data D");
+			froms.add("Element E");
+			froms.add("Area A");
+			froms.add("Item I");
+			froms.add("DomainArea DA");
+		}
+		qvo.setFroms(froms);		
+		
+		System.out.println("AmisDownloadSelector Function: build Text:qvo.getFroms() *"+qvo.getFroms()+"*");
+		AMISConstantsVO.setLanguageSettings(qvo);		
+		qvo.setDomains(buildDomain(domainFilter));
+		qvo.setGetTotalAndList(isTotalAndList);
+		qvo.setCodeList(domainFilter.getCodeList());
+		
+		
+		panel.add(new LoadingPanel().buildPanel("Loading", width, height, true));
+
+		AMISDownloadController.getSelectors(this, qvo, selectionType, addSelectAll);
+
+		
+		
+		return panel;
+	}  **/
+	
+	public HorizontalPanel buildSelectAllPanel() {
+		HorizontalPanel p = new HorizontalPanel();
+		
+		Button selectAll = new Button("Select All");
+		selectAll.setIconStyle("addIcon");
+		
+		Button deselectAll = new Button("Deselect All");
+		deselectAll.setIconStyle("deleteObj");
+		
+		p.add(selectAll);
+		p.add(FormattingUtils.addHSpace(5));
+		p.add(deselectAll);
+
+		// listeners
+		
+		selectAll.addSelectionListener(AMISController.selectAll(list));
+		
+		deselectAll.addSelectionListener(AMISController.deselectAll(list));
+
+		
+		return p;
+	}
+
+	
+	private HashMap<String, String> buildDomain(AMISCodesModelData domainFilter) {
+		HashMap<String, String> domain = new HashMap<String, String>();
+		domain.put(domainFilter.getCode(), domainFilter.getLabel());
+		
+		return domain;
+	}
+	
+	public HorizontalPanel addTitle(String title) {
+		HorizontalPanel p = new HorizontalPanel();
+		p.addStyleName("download_tab_selected");
+		Html html = new Html();
+		html.setHtml("<div class='download_tab_title'>" + title + "</div>");
+		p.add(html);
+		return p;
+
+//		return new Html("<div class='content-title'>" + title + "</div>");
+	}
+	
+	public void addList() {
+        System.out.println("BBBBBBB AMISDownloadSelectorPanel: addList list = "+list);
+
+		panel.add(list);
+	}
+
+	public ContentPanel getPanel() {
+		return panel;
+	}
+
+	public ListStore<AMISCodesModelData> getStore() {
+		return store;
+	}
+
+	public ListView<AMISCodesModelData> getList() {
+		return list;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public String getSelectionType() {
+		return selectionType;
+	}
+
+
+
+	
+	
+	public native static String getTemplate() /*-{
+	 return  [ 
+	    '<tpl for=".">', 
+	    '<div class="x-view-item" qtip="{label}" qtitle="">{label}</div>', 
+	    '</tpl>' 
+	    ].join(""); 
+	  }-*/;
+
+
+}

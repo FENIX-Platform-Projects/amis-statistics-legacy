@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/fenix/!svn/ver/9192/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/client/view/inputccbs
+END
+PageDecoration.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/fenix/!svn/ver/8906/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/client/view/inputccbs/PageDecoration.java
+END
+TestCbsFlag.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/fenix/!svn/ver/8982/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/client/view/inputccbs/TestCbsFlag.java
+END
+ProductionFormField.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/fenix/!svn/ver/8697/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/client/view/inputccbs/ProductionFormField.java
+END
+BookPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/fenix/!svn/ver/8697/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/client/view/inputccbs/BookPanel.java
+END
+MonthForecast.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/fenix/!svn/ver/8541/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/client/view/inputccbs/MonthForecast.java
+END
+OtherUsesFormField.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/fenix/!svn/ver/8857/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/client/view/inputccbs/OtherUsesFormField.java
+END
+TestMonthForecast.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/fenix/!svn/ver/9126/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/client/view/inputccbs/TestMonthForecast.java
+END
+CCBSParametersPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/fenix/!svn/ver/9192/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/client/view/inputccbs/CCBSParametersPanel.java
+END
+SpecificRowWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/fenix/!svn/ver/9066/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/client/view/inputccbs/SpecificRowWindow.java
+END
+CcbsShowCbsInformationWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/fenix/!svn/ver/9115/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/client/view/inputccbs/CcbsShowCbsInformationWindow.java
+END
+PagePanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/fenix/!svn/ver/9192/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/client/view/inputccbs/PagePanel.java
+END
+CbsFlags.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/fenix/!svn/ver/8982/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/client/view/inputccbs/CbsFlags.java
+END
+PagePanelVariables.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/fenix/!svn/ver/9066/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/client/view/inputccbs/PagePanelVariables.java
+END
+CCBSWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/fenix/!svn/ver/9171/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/client/view/inputccbs/CCBSWindow.java
+END

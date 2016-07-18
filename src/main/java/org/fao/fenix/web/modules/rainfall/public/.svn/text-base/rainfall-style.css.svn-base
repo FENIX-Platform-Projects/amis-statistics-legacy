@@ -1,0 +1,1409 @@
+@CHARSET "UTF-8";
+
+/* GWT Fenix Widgets START HERE */
+
+.simpleText{
+	
+	font-weight:bold;
+	font-size: 12px;
+	
+}	
+
+/* GWT Fenix Widgets END HERE */
+
+
+
+/* GWT WIDGETS START HERE. This is the official link: http://code.google.com/webtoolkit/documentation/com.google.gwt.doc.DeveloperGuide.UserInterface.html#WidgetGallery */
+
+
+.gwt-HTML {
+	font-size:12px;
+}
+
+/* Button. */
+.gwt-Button {
+	
+}
+
+/* Radio button. */
+.gwt-RadioButton {
+	
+}
+
+/* Push button. */
+.gwt-PushButton-up {
+	
+}
+
+.gwt-PushButton-down {
+	
+}
+
+.gwt-PushButton-up-hovering {
+	
+}
+
+.gwt-PushButton-down-hovering {
+	
+}
+
+.gwt-PushButton-up-disabled {
+	
+}
+
+.gwt-PushButton-down-disabled {
+	
+}
+
+/* Toggle Button. */
+.gwt-ToggleButton-up {
+	
+}
+
+.gwt-ToggleButton-down {
+	
+}
+
+.gwt-ToggleButton-up-hovering {
+	
+}
+
+.gwt-ToggleButton-down-hovering {
+	
+}
+
+.gwt-ToggleButton-up-disabled {
+	
+}
+
+.gwt-ToggleButton-down-disabled {
+	
+}
+
+/* Check Box. */
+.gwt-CheckBox {
+	
+}
+
+/* Text Box. */
+.gwt-TextBox {
+	
+}
+
+/* Read-only Text Box. */
+.gwt-TextBox-readonly {
+	
+}
+
+/* Password Text Box. */
+.gwt-PasswordTextBox {
+	
+}
+
+/* Read-only Password Box. */
+.gwt-PasswordTextBox-readonly {
+	
+}
+
+/* Text Area Text Box. */
+.gwt-TextArea {
+	
+}
+
+/* Read-only Text Area Box. */
+.gwt-TextArea-readonly {
+	
+}
+
+/* Hyperlink. */
+.gwt-Hyperlink {
+	
+}
+
+/* List Box. */
+.gwt-ListBox {
+	
+}
+
+/* Menubar. */
+.gwt-MenuBar {
+	background-color: #d0dded;
+	color: #15428B;
+	cursor: default;
+	font-family: Verdana, arial, sans-serif;
+	font-size: 12px;
+}
+
+/* Menubar item. */
+.gwt-MenuBar .gwt-MenuItem {
+	background-color: #d0dded;
+	padding: 1px 4px 1px 4px;
+	color: #15428B;
+	font-size: 12px;
+	cursor: default;
+}
+
+/* Menubar selected item. */
+.gwt-MenuBar .gwt-MenuItem-selected {
+	background-color: #15428B;
+	color: #FFFFFF;
+	cursor: default;
+	font-size: 12px;
+	/*padding: 3;*/
+}
+
+/* Tab bar. */
+.gwt-TabBar {
+	
+}
+
+/* Left edge of the Tab bar. */
+.gwt-TabBar .gwt-TabBarFirst {
+	
+}
+
+/* Right edge of the tab bar. */
+.gwt-TabBar .gwt-TabBarRest {
+	
+}
+
+/* Non-selected tabs of the bar. */
+.gwt-TabBar .gwt-TabBarItem {
+	
+}
+
+/* Selected tab of the bar. */
+.gwt-TabBar .gwt-TabBarItem-selected {
+	
+}
+
+/* Dialog box, outside. */
+.gwt-DialogBox {
+	
+}
+
+/* Dialog box, caption. */
+.gwt-DialogBox .Caption {
+	
+}
+
+/* Stack panel. */
+.gwt-StackPanel {
+	cursor: default;
+}
+
+/* Stack panel, non-selected items. */
+.gwt-StackPanel .gwt-StackPanelItem {
+	cursor: default;
+	background-color: #A8C2CE;
+	color: white;
+}
+
+/* Stack panel, selected, items. */
+.gwt-StackPanel .gwt-StackPanelItem-selected {
+	background-color: #A8C2CE;
+	color: white;
+	font-weight: bold;
+	cursor: default;
+}
+
+/* Tab panel. */
+.gwt-TabPanel {
+	
+}
+
+/* Panel contained into the Tab. */
+.gwt-TabPanelBottom {
+	
+}
+
+/* Rich text area. (text editor) */
+.gwt-RichTextArea {
+	background-color: white;
+	cursor: default;
+}
+
+/* Suggest box. */
+.gwt-SuggestBox {
+	
+}
+
+/* Suggest box pop-up. */
+.gwt-SuggestBoxPopup {
+	
+}
+
+/* Non-selected suggestion into the suggest box. */
+.gwt-SuggestBoxPopup .item-selected {
+	
+}
+
+/********************************** TREE ****************************************/
+.tree-folder {
+	background: url(images/project.png) no-repeat -1px -1px;
+}
+
+.tree-folder-open {
+	background: url(re-images/open_folder.png) no-repeat -1px -1px;
+}
+
+.my-tree {
+	cursor: default;
+	width: auto;
+}
+
+.my-treeitem table,.my-treeitem table td {
+	-moz-outline: none;
+	-moz-user-focus: normal;
+}
+
+.my-treeitem td {
+	height: 19px;
+}
+
+.my-tree-indent {
+	line-height: 1px;
+	font-size: 1px;
+}
+
+.my-tree-joint div {
+	width: 15px;
+	height: 19px;
+	line-height: 1px;
+	font-size: 1px;
+}
+
+.my-tree-left,.my-tree-left div,.my-tree-right {
+	line-height: 1px;
+	font-size: 1px;
+	width: 3px;
+}
+
+.my-tree-check div {
+	width: 17px;
+	height: 19px;
+	line-height: 1px;
+	font-size: 1px;
+	display: block;
+}
+
+.my-tree-icon div {
+	width: 16px;
+	height: 16px;
+	position: relative;
+	top: 1px;
+	cursor: pointer;
+}
+
+.my-ie .my-tree-icon {
+	padding-top: 2px;
+}
+
+.my-ie .my-tree-icon div {
+	position: static;
+}
+
+.my-tree-item-text span {
+	font-family: arial, tahoma, helvetica, sans-serif;
+	font-size: 12px;
+	white-space: nowrap;
+	padding-left: 3px;
+	padding-right: 3px;
+	display: block;
+	height: 15px;
+	cursor: pointer;
+}
+
+.my-tree-loading .my-tree-item-text span {
+	font-style: italic;
+}
+
+/********************************** GWT TREE ****************************************/
+.gwt-Tree {
+	cursor: default;
+}
+
+.gwt-Tree .gwt-TreeItem {
+	cursor: default;
+}
+
+.gwt-Tree .gwt-TreeItem-selected {
+	cursor: default;
+}
+
+
+/********************************** EXPAND BAR ****************************************/
+.my-expand-bar {
+	border: 1px solid #99BBE8;
+	border-top: none;
+}
+
+.my-expand-item {
+	cursor: default;
+}
+
+.my-expand-item-hdr {
+	height: 22px;
+	width: 100%;
+	background: transparent url(images/default/expandbar/expand-item-bg.gif)
+		repeat-x;
+	border-bottom: 1px solid #99BBE8;
+}
+
+.my-expand-item-hdr-ml div {
+	width: 16px;
+}
+
+.my-expand-item-hdr-c {
+	padding-left: 4px;
+	width: 100%;
+}
+
+.my-expand-item-hdr-mr {
+	padding-top: 2px;
+}
+
+.my-expand-item-noborder .my-expand-item-hdr {
+	border-bottom: 1px solid #D9E7F8;
+}
+
+.my-expand-item-hdr-l div,.my-expand-item-hdr-r div {
+	width: 5px;
+}
+
+.my-expand-item-hdr-text {
+	color: #222222;
+	font-weight: normal;
+}
+
+/********************************** WINDOWS ****************************************/
+.gwm-default-FrameCaption {
+	width: 100%;
+	font-weight: bold;
+	color: #CA1616;
+	font-size: 10px;
+}
+
+.gwm-default-Frame-TopBar {
+	width: 100%;
+	cursor: move;
+}
+
+.gwm-default-DialogOverlay {
+	background-color: #85BBEF;
+	filter: alpha(opacity =                   90);
+	-moz-opacity: 0.9;
+	opacity: 0.9;
+}
+
+.gwm-default-ActionOverlay {
+	background-color: #85BBEF;
+	filter: alpha(opacity =                   15);
+	-moz-opacity: 0.15;
+	opacity: 0.15;
+}
+
+.gwm-default-Frame-OutlineDrag {
+	background-color: #85BBEF;
+	filter: alpha(opacity =                   60);
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+}
+
+.gwm-default-FrameContent {
+	overflow: auto;
+	color: #000;
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 10px;
+	background: #FDFDFD;
+}
+
+.gwm-default-DeskTop-MinimizedFrameBar {
+	float: left;
+}
+
+/********************************** MINIMIZED TOPBAR ****************************************/
+.gwm-default-Frame-TopBar-minimized {
+	background: transparent url(default/t.gif) repeat-x 0 0;
+	background: #4a8ed6;
+	padding: 5px;
+	border: 1px solid #8F9ACA;
+	font-weight: bold;
+	color: #FFFFFF;
+	font-size: 10px;
+}
+
+.gwm-default-Frame-TopBar-RestoreButton {
+	width: 14px;
+	height: 12px;
+	background: transparent url(default/restore-btn.gif) no-repeat 0 center;
+	background-color: #CCCCCC;
+	cursor: pointer;
+}
+
+/***********************************  BORDERS  **********************************************/
+.gwm-default-FrameBorder-tl {
+	background: url(default/tl.gif) no-repeat top left;
+	width: 4px;
+	height: 26px;
+}
+
+.gwm-default-FrameBorder-t {
+	background: transparent url(default/t.gif) repeat-x 0 0;
+	height: 21px;
+}
+
+.gwm-default-FrameBorder-tr {
+	background: transparent url(default/tr.gif) no-repeat top right;
+	width: 4px;
+	height: 26px;
+}
+
+.gwm-default-FrameBorder-l {
+	background: transparent url(default/l.gif) repeat-y;
+	width: 4px;
+	background-color: white;
+}
+
+.gwm-default-FrameBorder-r {
+	background: transparent url(default/r.gif) repeat-y top right;
+	width: 4px;
+	background-color: white;
+}
+
+.gwm-default-FrameBorder-bl {
+	background: transparent url(default/bl.gif) no-repeat 0 0;
+	width: 4px;
+	height: 5px;
+	font-size: 0px;
+}
+
+.gwm-default-FrameBorder-b {
+	background: transparent url(default/b.gif) repeat-x 0 0;
+	height: 4px;
+	font-size: 0px;
+	width: 100%;
+}
+
+.gwm-default-FrameBorder-br {
+	background: transparent url(default/br.gif) no-repeat top right;
+	width: 4px;
+	height: 10px;
+	font-size: 0px;
+	cursor: se-resize;
+}
+
+.gwm-default-Frame-ResizeButton {
+	background: transparent url(default/resize-btn.gif) no-repeat top right;
+	width: 4px;
+	height: 4px;
+	font-size: 0px;
+}
+
+/************************************* BUTTONS ********************************/
+.gwm-default-Frame-TopBar-CloseButton {
+	width: 12px;
+	height: 14px;
+	margin-left: 5px;
+	background: transparent url(default/close-btn.gif) no-repeat center
+		center;
+	cursor: pointer;
+}
+
+.gwm-default-Frame-TopBar-CloseButton-active {
+	width: 12px;
+	height: 14px;
+	margin-left: 5px;
+	background: transparent url(default/close-btn-on.gif) no-repeat center
+		center;
+	cursor: pointer;
+}
+
+.gwm-default-Frame-TopBar-MinimizeButton {
+	width: 12px;
+	height: 14px;
+	margin-left: 5px;
+	background: transparent url(default/min-btn.gif) no-repeat center center
+		;
+	cursor: pointer;
+}
+
+.gwm-default-Frame-TopBar-MinimizeButton-active {
+	width: 12px;
+	height: 14px;
+	margin-left: 5px;
+	background: transparent url(default/min-btn-on.gif) no-repeat center
+		center;
+	cursor: pointer;
+}
+
+.gwm-default-Frame-TopBar-MaximizeButton {
+	width: 12px;
+	height: 14px;
+	margin-left: 5px;
+	background: transparent url(default/max-btn.gif) no-repeat center center
+		;
+	cursor: pointer;
+}
+
+.gwm-default-Frame-TopBar-MaximizeButton-active {
+	width: 12px;
+	height: 14px;
+	margin-left: 5px;
+	background: transparent url(default/max-btn-on.gif) no-repeat center
+		center;
+	cursor: pointer;
+}
+
+/**************************************   DESKTOP **************************/
+.gwm-default-GDesktopPane {
+	background-image: url("default/desktop-bg.jpg");
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+.gwm-default-GDesktopPane-FrameContainer {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+.gwm-default-GDesktopPane-TaskBar {
+	background-color: #EFEFFF;
+	filter: alpha(opacity =                   80);
+	-moz-opacity: 0.8;
+	opacity: 0.8;
+	height: 30px;
+	align-text: left;
+}
+
+/* Selected suggestion into the suggest box. */
+.gwt-SuggestBoxPopup .item-selected {
+	
+}
+
+/*********************** Toolbar Icons *************************************/
+
+.save {
+	background: transparent url(images/save.gif) no-repeat center center;
+}
+
+.saveAs {
+	background: transparent url(images/save_as.png) no-repeat center center;
+}
+
+.sendToProject {
+	background: transparent url(images/send_to_project.png) no-repeat center center;
+}
+
+.sendToReport {
+	background: transparent url(images/send_to_report.png) no-repeat center center;
+}
+
+.export {
+	background: transparent url(images/export.png) no-repeat center center;
+}
+
+.sendToPdf {
+	background: transparent url(images/send_to_pdf.png) no-repeat center center;
+}
+
+.sendToExcel {
+	background: transparent url(images/send_to_excel.png) no-repeat center center;
+}
+
+.sendToPowerPoint {
+	background: transparent url(images/send_to_powerpoint.png) no-repeat center center;
+}
+
+.print {
+	background: transparent url(images/print.png) no-repeat center center;
+}
+
+.undo {
+	background: transparent url(images/undo.png) no-repeat center center;
+}
+
+.delete {
+	background: transparent url(images/delete.png) no-repeat center center;
+}
+
+.viewMetadata {
+	background: transparent url(images/view_metadata.png) no-repeat center center;
+}
+
+.security {
+	background: transparent url(images/security.png) no-repeat center center;
+}
+
+.help {
+	background: transparent url(images/help.png) no-repeat center center;
+}
+
+/****************************************************** MAP BUTTONS ******************************************/
+
+
+.mapLayers {
+	background: transparent url(re-images/map_layers.png) no-repeat center center;
+}
+
+.mapDimensions {
+	background: transparent url(images/funnel_plus.gif) no-repeat center center;
+}
+
+.mapAddLayer {
+	background: transparent url(map-images/add_layer.png) no-repeat center center;
+}
+
+.mapJoint {
+	background: transparent url(map-images/joint.png) no-repeat center center;
+}
+
+.mapJoin {
+	background: transparent url(map-images/join_dataset.png) no-repeat center center;
+}
+
+.mapPan {
+	background: transparent url(map-images/pan.png) no-repeat center center;
+}
+.mapZoomIn {
+	background: transparent url(map-images/zoom_in.png) no-repeat center center;
+}
+.mapZoomOut {
+	background: transparent url(map-images/zoom_out.png) no-repeat center center;
+}
+
+.mapViewMetadata {
+	background: transparent url(map-images/view_metadata.png) no-repeat center center;
+}
+
+.mapViewLegend {
+	background: transparent url(map-images/legend.png) no-repeat center center;
+}
+
+.mapLayerUp {
+	background: transparent url(images/arrow-up.gif) no-repeat center center;
+}
+
+.mapLayerDown {
+	background: transparent url(images/arrow-down.gif) no-repeat center center;
+}
+
+.mapLayerToggle {
+	background: transparent url(images/layers.png) no-repeat center center;
+}
+
+.mapIdentify {
+	background: transparent url(map-images/identify.png) no-repeat center center;
+}
+
+
+.map_ll_external {
+	background: transparent url(map-images/map.png) no-repeat center center;
+}
+
+.map_ll_vect {
+	background: transparent url(map-images/layer.png) no-repeat center center;
+}
+
+
+
+
+.mapSaveBtn {
+	background: transparent url(images/save.gif) no-repeat center center;
+}
+
+.mapPrintBtn {
+	background: transparent url(images/print.gif) no-repeat center center;
+}
+
+.mapFavouritesBtn {
+	background: transparent url(images/favourites.gif) no-repeat center
+		center;
+}
+
+.mapExportBtn {
+	background: transparent url(images/export_as_image.gif) no-repeat center
+		center;
+}
+
+.mapReportBtn {
+	background: transparent url(images/reports.gif) no-repeat center center;
+}
+
+.mapAddDataset {
+	background: transparent url(images/table_add.png) no-repeat center
+		center;
+}
+
+.mapRemoveDataset {
+	background: transparent url(images/table_delete.png) no-repeat center
+		center;
+}
+
+.tableSaveAs {
+	background: transparent url(images/table_save.png) no-repeat center
+		center;
+}
+
+.deleteTableRow {
+	background: transparent url(images/table_row_delete.png) no-repeat center center;
+}
+
+.insertTableRow {
+	background: transparent url(images/table_row_insert.png) no-repeat center center;
+}
+
+.copyTableRow {
+	background: transparent url(images/table_row_copy.png) no-repeat center center;
+}
+
+.tableRowUpdate {
+	background: transparent url(images/table_row_update.png) no-repeat center center;
+}
+
+.editTable {
+	background: transparent url(images/table_edit.png) no-repeat center center;
+}
+
+/****************************************************** BIRT Templates ******************************************/
+.showHidePar {
+	background: transparent url(images/details.gif) no-repeat center
+		center;
+}
+
+.templateBlank {
+	background: transparent url(birt-images/template/addResource.png) no-repeat center
+		center;
+}
+
+.templateMap {
+	background: transparent url(birt-images/template/map.png) no-repeat center
+		center;
+}
+
+.templateChart {
+	background: transparent url(birt-images/template/chart.png) no-repeat center
+		center;
+}
+
+.templateLargeTable {
+	background: transparent url(birt-images/template/large_table.png) no-repeat center
+		center;
+}
+
+.templateLargeText {
+	background: transparent url(birt-images/template/large_text.png) no-repeat center
+		center;
+}
+
+.templateSmallTable {
+	background: transparent url(birt-images/template/small_table.png) no-repeat center
+		center;
+}
+
+.templateSmallText {
+	background: transparent url(birt-images/template/small_text.png) no-repeat center
+		center;
+}
+
+/****************************************************** BIRT BUTTONS ******************************************/
+.addDataset {
+	background: transparent url(images/dataset_add.png) no-repeat center
+		center;
+}
+
+.arrow-up {
+	background: transparent url(images/arrow-up.gif) no-repeat center
+		center;
+}
+
+.arrow-down {
+	background: transparent url(images/arrow-down.gif) no-repeat center
+		center;
+}
+
+.deleteObj {
+	background: transparent url(re-images/delete.png) no-repeat center
+		center;
+}
+
+.legendBirt {
+	background: transparent url(birt-images/legend.png) no-repeat center
+		center;
+}
+
+.scale {
+	background: transparent url(birt-images/doubleAxis.png) no-repeat center
+		center;
+}
+
+.chartEdit {
+	background: transparent url(birt-images/chart_edit.png) no-repeat center
+		center;
+}
+
+.zoomInBirt {
+	background: transparent url(birt-images/zoom_in.png) no-repeat center
+		center;
+}
+
+.zoomOutBirt {
+	background: transparent url(birt-images/zoom_out.png) no-repeat center
+		center;
+}
+
+.labelBirt {
+	background: transparent url(birt-images/label.png) no-repeat center
+		center;
+}
+
+.reportEdit {
+	background: transparent url(birt-images/report_edit.png) no-repeat center
+		center;
+}
+
+.pdfIcon {
+	background: transparent url(images/pdfIcon.gif) no-repeat center
+		center;
+}
+
+.textIcon {
+	background: transparent url(images/text.gif) no-repeat center
+		center;
+}
+
+.noteIcon {
+	background: transparent url(birt-images/note.png) no-repeat center
+		center;
+}
+
+.xlsIcon {
+	background: transparent url(images/xlsIcon.gif) no-repeat center
+		center;
+}
+
+.pptIcon {
+	background: transparent url(images/pptIcon.jpg) no-repeat center
+		center;
+}
+
+.docIcon {
+	background: transparent url(images/WordIcon.jpg) no-repeat center
+		center;
+}
+.doubleAxis {
+	background: transparent url(birt-images/doubleAxis.png) no-repeat center
+		center;
+}
+
+.saveAsChart {
+	background: transparent url(images/chart_save.png) no-repeat center
+		center;
+}
+
+.saveAsReport {
+	background: transparent url(images/report_save.png) no-repeat center
+		center;
+}
+
+/****************************** COMMUNICATION **************************/
+.stopThread {
+	background: transparent url(images/server_delete.png) no-repeat center center;
+}
+
+.startThread {
+	background: transparent url(images/server_go.png) no-repeat center center;
+}
+
+/****************************** WORKSPACE ******************************/
+.workspaceMap {
+	background: transparent url(images/map.png) no-repeat center center;
+}
+
+.geoIcon {
+	background: transparent url(rainfall-images/geoIcon.png) no-repeat center center;
+}
+
+.workspaceChart {
+	background: transparent url(images/chart_bar.png) no-repeat center
+		center;
+}
+
+.workspaceTable {
+	background: transparent url(images/table.png) no-repeat center center;
+}
+
+.workspaceReport {
+	background: transparent url(images/reports.png) no-repeat center center;
+}
+
+.workspaceLayer {
+	background: transparent url(images/layers.png) no-repeat center center;
+}
+
+.workspaceBookmark {
+	background: transparent url(images/book_add.png) no-repeat center center
+		;
+}
+
+/****************************************************** SHADOW ******************************************/
+.my-shadow .my-shadow-mc {
+	background: transparent none repeat scroll 0%;
+}
+
+.my-shadow .my-shadow-mr {
+	background: transparent none repeat scroll 0%;
+}
+
+.my-shadow .my-shadow-ml {
+	background: transparent none repeat scroll 0%;
+}
+
+.my-shadow .my-shadow-tc {
+	background: transparent none repeat scroll 0%;
+}
+
+.my-shadow .my-shadow-tr {
+	background: transparent none repeat scroll 0%;
+}
+
+.my-shadow .my-shadow-tl {
+	background: transparent none repeat scroll 0%;
+}
+
+.my-shadow .my-shadow-bl {
+	background: transparent none repeat scroll 0%;
+}
+
+.my-shadow .my-shadow-br {
+	background: transparent none repeat scroll 0%;
+}
+
+.my-shadow .my-shadow-bc {
+	background: transparent none repeat scroll 0%;
+}
+
+/********** MyGWT SHELL **********/
+.my-dialog-status {
+  font-weight: bold;
+  height: 28px;
+  vertical-align: middle;
+}
+
+.my-dialog-status-ml {
+  width: 20px;
+}
+
+.my-dialog-status-ml div {
+  width: 16px;
+}
+
+.my-dialog-status-c {
+  padding-left: 2px;
+  color: #403F3F;
+}
+
+.my-shell {
+  position: absolute;
+}
+
+.my-shell-hdr {
+  width: 100%;
+  height: 27px;
+  cursor: move;
+}
+
+.my-shell-hdr-text {
+  color:white;
+  font:bold 11px tahoma,arial,verdana,sans-serif;
+  padding-left: 6px;
+}
+
+.my-shell-hdr-l {
+  background: transparent url(images/default/window/left-corners_act.png) no-repeat 0 0;
+}
+
+.my-shell-hdr-l div {
+  width: 6px;
+}
+
+.my-shell-hdr-c {
+  width: 100%;
+  background: transparent url(images/default/window/top-bottom_act.png) repeat-x 0 0;
+}
+
+.my-shell-hdr-ml,.my-shell-hdr-mr {
+  background: transparent url(images/default/window/top-bottom_act.png) repeat-x 0 0;
+}
+
+.my-shell-hdr-r {
+  background: transparent url(images/default/window/right-corners_act.png) no-repeat right 0;
+}
+
+.my-shell-hdr-r div {
+  width: 6px;
+}
+
+.my-shell-body {
+
+}
+
+.my-shell-body-ml {
+  background: transparent url(images/default/window/left-right_act.png) repeat-y 0 0;
+}
+
+.my-shell-body-mr {
+  background: transparent url(images/default/window/left-right_act.png) repeat-y right 0;
+}
+
+.my-shell-body-mc {
+  vertical-align: top;
+  border:1px solid #99bbe8;
+  background:#dfe8f6;
+}
+
+.my-shell-plain .my-shell-body-mc {
+  border: none;
+  background: none; 
+}
+
+.my-shell-plain .my-shell-body-mc {
+  border: none;
+  background:#C4D8F2 none repeat scroll 0%;
+}
+
+.my-shell-body-ml div,.my-shell-body-mr div {
+  width: 6px;
+}
+
+.my-shell-body-bl {
+  background: transparent url(images/default/window/left-corners_act.png) no-repeat 0 bottom;
+}
+
+.my-shell-body-bc {
+  background: transparent url(images/default/window/top-bottom_act.png) repeat-x 0 bottom;
+}
+
+.my-shell-body-br {
+  background: transparent url(images/default/window/right-corners_act.png) no-repeat right bottom;
+}
+
+.my-shell-body-bl div {
+  line-height: 1px;
+  font-size: 1px;
+  height: 6px;
+}
+
+.my-mbox-icon {
+  padding-left: 20px;
+}
+
+.my-mbox-text {
+  font-size: 12px;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+/* ******************************* */
+/* ********** RE IMAGES ********** */
+/* ******************************* */
+/*
+the name below is repeated
+.reSearchButton {
+	background: transparent url(re-images/folder_explore.png) no-repeat center center;
+}
+*/
+
+.adv_options_button{
+	background: transparent url(re-images/adv_options_button.png) no-repeat center center;
+}
+
+.reDataButton {
+	background: transparent url(re-images/application_form_magnify.png) no-repeat center center;
+}
+
+.reTextButton {
+	background: transparent url(re-images/page_white_magnify.png) no-repeat center center;
+}
+
+.reDataViewButton {
+	background: transparent url(re-images/search_dataviews.png) no-repeat center center;
+}
+
+.reReportsButton {
+	background: transparent url(re-images/search_reports.png) no-repeat center center;
+}
+
+.reMapLayersButton {
+	background: transparent url(re-images/search_layers.png) no-repeat center center;
+}
+
+.reMyProjectsButton {
+	background: transparent url(re-images/search_myprojects.png) no-repeat center center;
+}
+
+.reMyProjectsOnButton {
+	background: transparent url(re-images/user.png) no-repeat center center;
+}
+
+.reMyProjectsOffButton {
+	background: transparent url(re-images/user.png) no-repeat center center;
+}
+
+.reProjectUpButton {
+	background: transparent url(re-images/folder_up.png) no-repeat center center;
+}
+
+.reAddToMyProjectsButton {
+	background: transparent url(re-images/add_to_MyProjects.png) no-repeat center center;
+}
+
+.reMoveToProjectButton {
+	background: transparent url(re-images/move_to_project.png) no-repeat center center;
+}
+
+.reCopyToProjectButton {
+	background: transparent url(re-images/copy_to_project.png) no-repeat center center;
+}
+
+.reDuplicateProjectButton {
+	background: transparent url(re-images/duplicate_project.png) no-repeat center center;
+}
+
+.reExportButton {
+	background: transparent url(re-images/export.png) no-repeat center center;
+}
+
+.reUndoButton {
+	background: transparent url(re-images/undo.png) no-repeat center center;
+}
+
+.reDeleteButton {
+	background: transparent url(re-images/delete.png) no-repeat center center;
+}
+
+.reFieldsButton {
+	background: transparent url(re-images/table.png) no-repeat center center;
+}
+
+.reSearchButton {
+	background: transparent url(re-images/search.png) no-repeat center center;
+}
+
+.reSearchProjectButton {
+	background: transparent url(re-images/folder_explore.png) no-repeat center center;
+}
+
+.reMetadataIcon {
+	background: transparent url(re-images/RE2MetadataIcon.png) no-repeat center center;
+}
+
+.textEditBtn {
+	background: transparent url(re-images/text_edit.png) no-repeat center center;
+}
+
+.pmOpenResource {
+	background: transparent url(re-images/open_folder.png) no-repeat center center;
+}
+
+.my-tree-icon {
+	background: url(images/folder.png) no-repeat -1px -1px;
+}
+
+.pmRemoveProject {
+	background: transparent url(re-images/pm_remove_project.png) no-repeat center center;
+}
+
+.pmDeleteFromProject {
+	background: transparent url(re-images/pm_delete_from_project.png) no-repeat center center;
+}
+
+.pmDeleteProject {
+	background: transparent url(re-images/pm_delete_project.png) no-repeat center center;
+}
+
+.pmNewProject {
+	background: transparent url(re-images/new_project.png) no-repeat center center;
+}
+
+.pmOpenProject {
+	background: transparent url(re-images/pm_open_project.png) no-repeat center center;
+}
+
+.pmAddToProject {
+	background: transparent url(re-images/pm_add_to_project.png) no-repeat center center;
+}
+
+.pmLoadProject {
+	background: transparent url(images/folder_add.png) no-repeat center center;
+}
+
+/****************************** METADATA ******************************/
+
+.metadataEditButton {
+	background: transparent url(images/metadata_edit.png) no-repeat center center;
+}
+
+.pmRenameProject {
+	background: transparent url(re-images/rename.gif) no-repeat center center;
+}
+
+.pmSaveProject {
+	background: transparent url(images/save.gif) no-repeat center center;
+}
+/****************************** TOOLBOX ******************************/
+.ccbsToolbox {
+	background: transparent url(toolBox-images/ccbsToolbox.png) no-repeat center center;
+}
+.ipcToolbox {
+	background: transparent url(toolBox-images/ipcToolbox.png) no-repeat center center;
+}
+.projectToolbox {
+	background: transparent url(toolBox-images/projectToolbox.png) no-repeat center center;
+}
+.mapToolbox {
+	background: transparent url(toolBox-images/mapToolbox.png) no-repeat center center;
+}
+.tableToolbox {
+	background: transparent url(toolBox-images/tableToolbox.png) no-repeat center center;
+}
+.chartToolbox {
+	background: transparent url(toolBox-images/chartToolbox.png) no-repeat center center;
+}
+.textToolbox {
+	background: transparent url(toolBox-images/textToolbox.png) no-repeat center center;
+}
+.reportToolbox {
+	background: transparent url(toolBox-images/reportToolbox.png) no-repeat center center;
+}
+.searchToolbox {
+	background: transparent url(toolBox-images/searchToolbox.png) no-repeat center center;
+}
+.separatorToolbox {
+	background: transparent url(toolBox-images/separatorToolbox.png) no-repeat center center;
+}
+.uploadToolbox {
+	background: transparent url(toolBox-images/uploadToolbox.png) no-repeat center center;
+}
+
+
+/****************************** RESOURCE TYPE ICONS ******************************/
+
+.projectIcon {
+	background: transparent url(images/project.png) no-repeat center center;
+}
+
+.textResourceIcon {
+	background: transparent url(images/text.png) no-repeat center center;
+}
+
+.mapIcon {
+	background: transparent url(images/mapIcon.png) no-repeat center center;
+}
+
+.chartIcon {
+	background: transparent url(images/chart.png) no-repeat center center;
+}
+
+.tableIcon {
+	background: transparent url(images/table.png) no-repeat center center;
+}
+
+.reportIcon {
+	background: transparent url(images/report.png) no-repeat center center;
+}
+
+.layerIcon {
+	background: transparent url(images/layer.png) no-repeat center center;
+}
+
+.datasetIcon {
+	background: transparent url(images/dataset.png) no-repeat center center;
+}
+
+.dataViewIcon {
+	background: transparent url(images/views.png) no-repeat center center;
+}
+
+.patternIcon {
+	background: transparent url(images/views.png) no-repeat center center;
+}
+
+.user_suit {
+  background-image: url(images/user_suit.png) !important;
+}
+
+.user_green {
+  background-image: url(images/user_green.png) !important;
+}
+
+.user_group {
+  background-image: url(images/user_group.png) !important;
+}
+
+.user_group_all {
+  background-image: url(images/user-group-all.png) !important;
+}
+
+.user_red {
+  background-image: url(images/user_red.png) !important;
+}
+
+.people {
+  background-image: url(images/people.png) !important;
+}
+
+.defaultResourceIcon {
+  background: transparent url(images/default_resource.png) no-repeat center center;
+}
+
+.codingSystemIcon {
+  background: transparent url(images/coding_system.png) no-repeat center center;
+}
+
+
+/****************************** RESOURCE TYPE ICONS ******************************/
+
+.projectIcon {
+	background: transparent url(images/project.png) no-repeat center center;
+}
+
+.textResourceIcon {
+	background: transparent url(images/text.png) no-repeat center center;
+}
+
+
+/****************************** WELCOME PAGE ******************************/
+.mapIconLarge {
+	background: transparent url(images/map32x32.gif) no-repeat center center;
+}
+
+.projectIconLarge {
+	background: transparent url(images/project32x32.gif) no-repeat center center;
+}
+
+.searchIconLarge {
+	background: transparent url(images/explorer32x32.gif) no-repeat center center;
+}
+
+
+.my-datalist {
+  <!--background-color: #dfe8f6; -->
+  background-color: white;
+}
+
+.my-bg {
+     background-color: #dfe8f6;
+   <!--background-color: white; -->
+   background: #dfe8f6;
+}
+
+.my-tree-notchecked  {
+	background:url("gxt/tree/notchecked.gif") no-repeat center center;
+}
+
+.my-tree-checked  {
+	background:url("gxt/tree/checked.gif") no-repeat center center;
+}

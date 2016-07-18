@@ -1,0 +1,1 @@
+This folder will holds OLAP charts for the FS-ATMIS tool.

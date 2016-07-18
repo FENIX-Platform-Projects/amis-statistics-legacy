@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/client/view/sldeditor
+END
+SldToolBar.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/fenix/!svn/ver/6410/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/client/view/sldeditor/SldToolBar.java
+END
+SymbolOperation.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/client/view/sldeditor/SymbolOperation.java
+END
+LineSymbolizerForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/fenix/!svn/ver/6527/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/client/view/sldeditor/LineSymbolizerForm.java
+END
+SldClassifier.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/client/view/sldeditor/SldClassifier.java
+END
+ExternalGraphicFileUploader.gwt.xml
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/fenix/!svn/ver/6410/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/client/view/sldeditor/ExternalGraphicFileUploader.gwt.xml
+END
+PointSymbolizerForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/fenix/!svn/ver/6527/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/client/view/sldeditor/PointSymbolizerForm.java
+END
+SLDSave.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/fenix/!svn/ver/6410/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/client/view/sldeditor/SLDSave.java
+END
+ColorMapEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/client/view/sldeditor/ColorMapEditor.java
+END
+OperationManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/fenix/!svn/ver/6527/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/client/view/sldeditor/OperationManager.java
+END
+SymbolizersForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/client/view/sldeditor/SymbolizersForm.java
+END
+UniqueValueClassifier.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/client/view/sldeditor/UniqueValueClassifier.java
+END
+Styler.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/client/view/sldeditor/Styler.java
+END
+LayerMetadata.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/fenix/!svn/ver/6410/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/client/view/sldeditor/LayerMetadata.java
+END
+ColorMapForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/client/view/sldeditor/ColorMapForm.java
+END
+AbstractSymbolizerForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/fenix/!svn/ver/6410/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/client/view/sldeditor/AbstractSymbolizerForm.java
+END
+LegendEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/client/view/sldeditor/LegendEditor.java
+END
+ColorMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/fenix/!svn/ver/6410/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/client/view/sldeditor/ColorMap.java
+END
+PolygonSymbolizerForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/fenix/!svn/ver/6559/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/client/view/sldeditor/PolygonSymbolizerForm.java
+END
+SLDLoad.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/client/view/sldeditor/SLDLoad.java
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/text/client/control
+END
+TextEditorToolbarController.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/fenix/!svn/ver/6559/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/text/client/control/TextEditorToolbarController.java
+END
+SaveText.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/text/client/control/SaveText.java
+END
+TextEditorController.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/fenix/!svn/ver/6559/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/text/client/control/TextEditorController.java
+END

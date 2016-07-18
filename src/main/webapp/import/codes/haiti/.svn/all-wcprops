@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/fenix/!svn/ver/6402/trunk/fenix-web/src/main/webapp/import/codes/haiti
+END
+HaitiFeatureTypes.csv
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/fenix/!svn/ver/6402/trunk/fenix-web/src/main/webapp/import/codes/haiti/HaitiFeatureTypes.csv
+END
+WMSServers_metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/fenix/!svn/ver/6402/trunk/fenix-web/src/main/webapp/import/codes/haiti/WMSServers_metadata.xml
+END
+WMSServers.csv
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/fenix/!svn/ver/6402/trunk/fenix-web/src/main/webapp/import/codes/haiti/WMSServers.csv
+END
+HaitiFeatureTypes_metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/fenix/!svn/ver/6402/trunk/fenix-web/src/main/webapp/import/codes/haiti/HaitiFeatureTypes_metadata.xml
+END

@@ -1,0 +1,15 @@
+<layer type="db">
+  <title>Kenya GAUL0</title>
+  <abstract>Kenya's Global Administrative Unit Layer Level 0</abstract>
+  <provider>UN FAO</provider>
+  <source>UN FAO</source>
+  <contact>GIEWS Workstation - FAO</contact>
+  <region />
+  <categories />
+  <sharingcode>Public</sharingcode>
+  <geomcolumn>the_geom</geomcolumn>
+  <joincolumn>adm0_code</joincolumn>
+  <featurecodeset>gaul0</featurecodeset>
+  <tablename>kenya0</tablename>
+</layer>
+

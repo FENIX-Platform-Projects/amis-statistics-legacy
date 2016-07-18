@@ -1,0 +1,63 @@
+﻿<NOTES type="Food Consumption">
+<NOTE type="Introduction">
+<E>&lt;b&gt;Click in the tree &lt;/b&gt; to access the download page of the &lt;b&gt;food consumption
+sub-domains.&lt;/b&gt;&lt;/b&gt; The food consumption domain covers:&lt;br/&gt;&lt;br/&gt;
+
+&lt;ul class='bullet-list'&gt;
+&lt;li&gt;Fat supply&lt;/li&gt;
+&lt;li&gt;Food supply&lt;/li&gt;
+&lt;li&gt;Food supply quantity&lt;/li&gt;
+&lt;li&gt;Protein supply quantity&lt;/li&gt;
+&lt;/ul&gt;
+</E>
+<F>&lt;b&gt;Click in the tree &lt;/b&gt; to access the download page of the &lt;b&gt;food consumption
+sub-domains.&lt;/b&gt;&lt;/b&gt; The food consumption domain covers:&lt;br/&gt;&lt;br/&gt;
+
+&lt;ul class='bullet-list'&gt;
+&lt;li&gt;Fat supply&lt;/li&gt;
+&lt;li&gt;Food supply&lt;/li&gt;
+&lt;li&gt;Food supply quantity&lt;/li&gt;
+&lt;li&gt;Protein supply quantity&lt;/li&gt;
+&lt;/ul&gt;
+</F>
+<S>&lt;b&gt;Click in the tree &lt;/b&gt; to access the download page of the &lt;b&gt;food consumption
+sub-domains.&lt;/b&gt;&lt;/b&gt; The food consumption domain covers:&lt;br/&gt;&lt;br/&gt;
+
+&lt;ul class='bullet-list'&gt;
+&lt;li&gt;Fat supply&lt;/li&gt;
+&lt;li&gt;Food supply&lt;/li&gt;
+&lt;li&gt;Food supply quantity&lt;/li&gt;
+&lt;li&gt;Protein supply quantity&lt;/li&gt;
+&lt;/ul&gt;
+</S>
+</NOTE>
+<NOTE type="Description">
+<E>A food balance sheet presents a comprehensive picture of the pattern of a country's food supply during a specified reference period. The food balance sheet shows for each food item i.e. each primary commodity availablity for human consumption which corresponds to the sources of supply and its utilisation. The total quantity of foodstuffs produced in a country added to the total quantity imported and adjusted to any change in stocks that may have occurred since the beginning of the reference period gives the supply available during that period. On the utilisation side a distinction is made between the quantities exported, fed to livestock + used for seed,  losses during storage and transportation, and food supplies available for human consumption. The per capita supply of each such food item available for human consumption is then obtained by dividing the respective quantity by the related data on the population actually partaking in it. Data on per capita food supplies are expressed in terms of quantity and by applying appropriate food composition factors for all primary and processed products also in terms of dietary energy value, protein and fat content.
+</E>
+<F>Un bilan alimentaire fournit une image complète de l'offre alimentaire d'un pays pour une certaine période. Un bilan alimentaire montre pour chaque aliment (pour chaque produit primaire ) la quantité potentiellement disponible pour l'alimentation humaine. Pour un pays donné, la somme de la quantité totale des aliments produite et de la quantité importée, une fois ajustée des variations des stocks qui se sont produites au cours de la période de référence, donne l'approvisionnement disponible pendant cette période. Du côté de l'utilisation, une distinction est faite entre les quantités exportées, les aliments pour le bétail + les semences,  les utilisations industrielles diverses, les pertes au cours du stockage et du transport, et les approvisionnements alimentaires disponibles pour la consommation humaine. La disponibilité par tête d'un produit alimentaire disponible pour la consommation humaine est alors obtenu en divisant la quantité en question par les données appropriées de population.
+Les données sur la disponibilité alimentaire par tête sont exprimées en quantité, ainsi qu'en valeur énergie, en teneur en protéines et en graisses (en appliquant des facteurs de composition appropriés pour tous les produits de base et transformés).
+</F>
+<S>
+Una hoja de balance de alimentos presenta una extensiva imagen del modelo del suministro alimenticio del país durante un período de referencia especificado. La hoja de balance de alimentos muestra para cada ítem alimentario por ej: cada producto primario la potencial disponibilidad para el consumo humano que corresponden con las fuentes de suministro y su utilización. La cantidad total de comestibles producidos en un país sumado al total de la cantidad importada y ajustada a cualquier cambio en las existencias que pudieron ocurrir desde el comienzo del período de referencia, da el suministro disponible durante ese período. Desde el punto de vista de la utilización se hace una distinción entre las cantidades exportadas, dadas como alimento al ganado, usadas para sembrado,puestas para manufactura de uso alimenticio y otros usos, pérdidas durante el almacenaje y el transporte, y suministros alimenticios disponibles para el consumo humano. El suministro per cápita de cada uno de los ítems disponibles para el consumo humano es entonces obtenido dividiendo la cantidad respectiva por los datos correspondientes de la población involucrada. Los datos del suministro alimenticio son expresados en términos de cantidad y aplicando apropiados factores de composición alimenticia para todos los productos primarios y procesados también se expresan en términos de valores energia y contenidos de proteínas y grasas. 
+</S>
+</NOTE>
+<NOTEGROUP type="Please Note">
+ <TITLE><E>Please Note</E></TITLE>
+ <NOTE type="General">
+<E>Due to insufficient data at this time some countries are omitted. It is hoped that as additional information is provided to our statisticians, we will be able to update these too. 
+</E>
+<F>En raison d'une actuelle insuffisance de données, certains pays ont été omis. Nous espérons que des données supplémentaires seront apportées à nos statisticiens et que nous pourrons ainsi mettre à jour ces pays. 
+</F>
+<S>Debido a una actual insuficiencia de datos, algunos países han sido omitidos. Esperamos que datos suplementarios sean aportados a nuestros estadistas y que podamos así poner al día estos países. 
+</S>
+</NOTE>
+<NOTE type="General">
+<E>Users are informed that, in some cases, the unbalance is due to the rounding or aggregation algorithm.
+</E>
+<F>Pour ce qui concerne les Bilans alimentaires (BA), les utilisateurs sont informés que, dans certains cas, les bilans négatifs sont dus à l'algorithme d'arrondissement ou d'aggrégation. 
+</F>
+<S>Se les informa a los usuarios que el desequilibrio que se observa en algunos casos en la HBA de los productos básicos y el balance de los productos se debe al redondeo o al algoritmo de agregación.
+</S>
+</NOTE>
+</NOTEGROUP>
+</NOTES>

@@ -1,0 +1,81 @@
+package org.fao.fenix.web.modules.amis.common.services;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.fao.fenix.web.modules.amis.common.constants.AMISCurrentView;
+import org.fao.fenix.web.modules.amis.common.model.AMISCodesModelData;
+import org.fao.fenix.web.modules.amis.common.vo.AMISQueryVO;
+import org.fao.fenix.web.modules.amis.common.vo.AMISResultVO;
+import org.fao.fenix.web.modules.amis.common.vo.AMISSettingsVO;
+import org.fao.fenix.web.modules.amis.common.vo.Book;
+import org.fao.fenix.web.modules.amis.common.vo.ClientCbsDatasetResult;
+import org.fao.fenix.web.modules.core.common.exception.FenixGWTException;
+import org.springframework.security.annotation.Secured;
+
+import com.google.gwt.user.client.rpc.AsyncCallback;
+import com.google.gwt.user.client.rpc.RemoteService;
+
+public interface AMISService extends RemoteService {
+
+	public AMISResultVO askAMIS(AMISQueryVO qvo) throws FenixGWTException;
+	
+	public AMISSettingsVO getAMISQueryVOs(AMISCurrentView currentView, String filename) throws FenixGWTException;
+
+	public String export(AMISResultVO rvo);
+	
+	public List<AMISResultVO> getDatasetProperties(AMISQueryVO qvo) throws FenixGWTException;
+	
+	@Secured( { "IS_AUTHENTICATED_ANONYMOUSLY", "ROLE_USER" })
+	public Integer populateCCBS();
+
+	@Secured( { "IS_AUTHENTICATED_ANONYMOUSLY", "ROLE_USER" })
+	public Book getCCBSData(AMISQueryVO qvo, List<String> years, int numberFirstYearsToShow, String lastMonthCombo, String oneElementName, List<HashMap<String, String>> monthForecastToQuery);
+	
+	@Secured( { "IS_AUTHENTICATED_ANONYMOUSLY", "ROLE_USER" })
+	public List<ClientCbsDatasetResult> getCBSSubElementsData(AMISQueryVO qvo, List<String> years, String lastMonthCombo, int numberFirstYearsToShow, String oneElementName, List<HashMap<String, String>> monthForecastToQuery);
+
+	@Secured( { "IS_AUTHENTICATED_ANONYMOUSLY", "ROLE_USER" })
+	public List<HashMap<String, String>> getDataFromAnElement(AMISQueryVO qvo, String oneElementName, String lastMonthMarketingyear);
+	
+	@Secured( { "IS_AUTHENTICATED_ANONYMOUSLY", "ROLE_USER" })
+	public AMISResultVO getYearsWithTheBestMonthForForecast(AMISQueryVO qvo, List<HashMap<String, String>> monthForecastToQuery) throws FenixGWTException;
+
+	public List<AMISCodesModelData> findGroupsOfUser(String username);
+	
+	public Map<Long, AMISCodesModelData> getAllCustomDatasets();
+	
+	public AMISResultVO checkCountryData(AMISQueryVO qvo, boolean fill);
+	
+	public AMISResultVO checkCountryDataForLoadingWindow(AMISQueryVO qvo);
+	
+	public Boolean fillCountryData(AMISQueryVO qvo);
+	
+	public AMISResultVO getYearsForComboBox(AMISQueryVO qvo);
+	
+	public Boolean saveGridCcbsTool(String amisCountryDataset, List<HashMap<String, String>> listForProdAndOtherUsesForm, int numColumns);
+	
+	public AMISResultVO getCountryInformation(AMISQueryVO qvo, List<String> commodityCodesCbs);
+//	public Boolean saveGridCcbsTool(ClientCbsDatasetResult listForProdAndOtherUsesForm[]);
+	
+	//	@Secured( { "IS_AUTHENTICATED_ANONYMOUSLY", "ROLE_USER" })
+//	public String[] getCCBSGaulCodes();
+//
+//	@Secured( { "IS_AUTHENTICATED_ANONYMOUSLY", "ROLE_USER" })
+//	public String[] getGaulNames(String gaulCodes[]);
+	
+	public String sendRegistrationEMail(Map<String, String> formFields) throws FenixGWTException ;
+	
+	public HashMap<String, HashMap<String , String>> getOpeningClosingStocksForYear(AMISQueryVO qvo, String oneElementName, String lastMonthMarketingyear);
+
+	public String getCBSURL();
+	
+	public String getCBSMONTHSURL();
+
+    public String getCBSInputToolUrl();
+
+    public String getPopulationURL();
+	
+	public List<HashMap<String, String>> createOlapTable(AMISQueryVO qvo, String userRole, String userCountryCode);
+}

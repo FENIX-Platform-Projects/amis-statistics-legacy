@@ -1,0 +1,233 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/fenix/!svn/ver/7191/trunk/fenix-web/src/main/webapp/import/codes
+END
+Arabic_English HS.csv
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/fenix/!svn/ver/6758/trunk/fenix-web/src/main/webapp/import/codes/Arabic_English%20HS.csv
+END
+Aquastat_metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/fenix/!svn/ver/6402/trunk/fenix-web/src/main/webapp/import/codes/Aquastat_metadata.xml
+END
+Aquastat.csv
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/fenix/!svn/ver/6402/trunk/fenix-web/src/main/webapp/import/codes/Aquastat.csv
+END
+GAUL_LABELS_metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/fenix/!svn/ver/6402/trunk/fenix-web/src/main/webapp/import/codes/GAUL_LABELS_metadata.xml
+END
+HS_metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/fenix/!svn/ver/6402/trunk/fenix-web/src/main/webapp/import/codes/HS_metadata.xml
+END
+FAOStatItems.csv
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/fenix/!svn/ver/7177/trunk/fenix-web/src/main/webapp/import/codes/FAOStatItems.csv
+END
+FAOSTATDomains_metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/fenix/!svn/ver/7191/trunk/fenix-web/src/main/webapp/import/codes/FAOSTATDomains_metadata.xml
+END
+RSSConfiguration_metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/fenix/!svn/ver/6402/trunk/fenix-web/src/main/webapp/import/codes/RSSConfiguration_metadata.xml
+END
+GAUL0_without_area_disputed.csv
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/fenix/!svn/ver/7058/trunk/fenix-web/src/main/webapp/import/codes/GAUL0_without_area_disputed.csv
+END
+Categories.csv
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/fenix/!svn/ver/6402/trunk/fenix-web/src/main/webapp/import/codes/Categories.csv
+END
+LangCodesFao.csv
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/fenix/!svn/ver/6402/trunk/fenix-web/src/main/webapp/import/codes/LangCodesFao.csv
+END
+FAOStatAreas.csv
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/fenix/!svn/ver/7177/trunk/fenix-web/src/main/webapp/import/codes/FAOStatAreas.csv
+END
+FAOStatElements.csv
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/fenix/!svn/ver/7177/trunk/fenix-web/src/main/webapp/import/codes/FAOStatElements.csv
+END
+GAUL1_metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/fenix/!svn/ver/6402/trunk/fenix-web/src/main/webapp/import/codes/GAUL1_metadata.xml
+END
+FAOStatFlags.csv
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/fenix/!svn/ver/7177/trunk/fenix-web/src/main/webapp/import/codes/FAOStatFlags.csv
+END
+AQUASTAT_GAUL.csv
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/fenix/!svn/ver/6402/trunk/fenix-web/src/main/webapp/import/codes/AQUASTAT_GAUL.csv
+END
+FAOSTATAreas_metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/fenix/!svn/ver/7191/trunk/fenix-web/src/main/webapp/import/codes/FAOSTATAreas_metadata.xml
+END
+FPINotes.csv
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/fenix/!svn/ver/6402/trunk/fenix-web/src/main/webapp/import/codes/FPINotes.csv
+END
+FAOSTATItems_metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/fenix/!svn/ver/7191/trunk/fenix-web/src/main/webapp/import/codes/FAOSTATItems_metadata.xml
+END
+GAUL_WITH_CONTINENTS.csv
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/fenix/!svn/ver/6968/trunk/fenix-web/src/main/webapp/import/codes/GAUL_WITH_CONTINENTS.csv
+END
+gaul0_continent_metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/fenix/!svn/ver/6402/trunk/fenix-web/src/main/webapp/import/codes/gaul0_continent_metadata.xml
+END
+HS.csv
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/fenix/!svn/ver/6402/trunk/fenix-web/src/main/webapp/import/codes/HS.csv
+END
+GAUL_LABELS.csv
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/fenix/!svn/ver/6713/trunk/fenix-web/src/main/webapp/import/codes/GAUL_LABELS.csv
+END
+gaul0_continent.csv
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/fenix/!svn/ver/6402/trunk/fenix-web/src/main/webapp/import/codes/gaul0_continent.csv
+END
+GAUL_WITH_CONTINENTS_metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/fenix/!svn/ver/6968/trunk/fenix-web/src/main/webapp/import/codes/GAUL_WITH_CONTINENTS_metadata.xml
+END
+FAOStatGroups.csv
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/fenix/!svn/ver/7177/trunk/fenix-web/src/main/webapp/import/codes/FAOStatGroups.csv
+END
+FPINotes_metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/fenix/!svn/ver/6402/trunk/fenix-web/src/main/webapp/import/codes/FPINotes_metadata.xml
+END
+AQUASTAT_GAUL_metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/fenix/!svn/ver/6402/trunk/fenix-web/src/main/webapp/import/codes/AQUASTAT_GAUL_metadata.xml
+END
+GAUL0.csv
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/fenix/!svn/ver/6730/trunk/fenix-web/src/main/webapp/import/codes/GAUL0.csv
+END
+FAOSTATElements_metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/fenix/!svn/ver/7191/trunk/fenix-web/src/main/webapp/import/codes/FAOSTATElements_metadata.xml
+END
+GAUL1.csv
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/fenix/!svn/ver/6729/trunk/fenix-web/src/main/webapp/import/codes/GAUL1.csv
+END
+GAUL0_metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/fenix/!svn/ver/6402/trunk/fenix-web/src/main/webapp/import/codes/GAUL0_metadata.xml
+END
+FAOSTATFlags_metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/fenix/!svn/ver/7191/trunk/fenix-web/src/main/webapp/import/codes/FAOSTATFlags_metadata.xml
+END
+Categories_metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/fenix/!svn/ver/6402/trunk/fenix-web/src/main/webapp/import/codes/Categories_metadata.xml
+END
+LangCodesFao_metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/fenix/!svn/ver/6402/trunk/fenix-web/src/main/webapp/import/codes/LangCodesFao_metadata.xml
+END
+FAOSTATGroups_metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/fenix/!svn/ver/7191/trunk/fenix-web/src/main/webapp/import/codes/FAOSTATGroups_metadata.xml
+END
+RSSConfiguration.csv
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/fenix/!svn/ver/6402/trunk/fenix-web/src/main/webapp/import/codes/RSSConfiguration.csv
+END
+FAOStatDomains.csv
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/fenix/!svn/ver/7177/trunk/fenix-web/src/main/webapp/import/codes/FAOStatDomains.csv
+END

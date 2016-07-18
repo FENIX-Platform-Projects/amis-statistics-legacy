@@ -1,0 +1,29 @@
+<layer type="shp">
+  <title>Kenya Wheat Production</title>
+  <abstract>Generated from KenyaPWheat -- Shapefile Layer 'KenyaPWheat::wheat'</abstract>
+  <source country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</source>
+  <provider country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</provider>
+  <region>133</region>
+  <categories />
+  <sharingcode>Public</sharingcode>
+  <featuretype>
+    <title>Kenya Wheat Production</title>
+    <abstract>Generated from KenyaPWheat</abstract>
+    <defaultstyle>kenya_wheat</defaultstyle>
+    <bbox>
+      <srs>4326</srs>
+      <minx>35.07038</minx>
+      <maxx>37.233621</maxx>
+      <miny>-1.553189</miny>
+      <maxy>0.322213</maxy>
+    </bbox>
+    <layername>wheat</layername>
+    <datastore>
+      <name>KenyaPWheat</name>
+      <namespace>fenix</namespace>
+    </datastore>
+  </featuretype>
+  <!--Data dumped from geoserver at:-->
+  <!--REST url: http://ldvapp07.fao.org:8032/geoserverDev-->
+  <!--WMS url: http://ldvapp07.fao.org:8032/geoserverDev/wms?-->
+</layer>

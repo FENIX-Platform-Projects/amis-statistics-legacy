@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/fenix/!svn/ver/7668/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/common/services
+END
+MapServiceEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/fenix/!svn/ver/6410/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/common/services/MapServiceEntry.java
+END
+MapService.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/fenix/!svn/ver/7668/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/common/services/MapService.java
+END
+MapServiceAsync.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/fenix/!svn/ver/7668/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/common/services/MapServiceAsync.java
+END

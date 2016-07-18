@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NOTES>
+	
+	<DESCRIPTION>
+		<E>/R/Description_E.html</E>
+		<F>/R/Description_F.html</F>
+		<S>/R/Description_S.html</S>
+	</DESCRIPTION>
+	
+	<!-- 
+	<PLEASENOTE>
+		<E>/R/PleaseNote_E.html</E>
+		<F>/R/PleaseNote_F.html</F>
+		<S>/R/PleaseNote_S.html</S>
+	</PLEASENOTE>
+	 -->
+	
+	<!--
+	<DISCLAIMER>
+		<E>/COMMONS/GeneralDisclaimer_E.html</E>
+		<F>/COMMONS/GeneralDisclaimer_F.html</F>
+		<S>/COMMONS/GeneralDisclaimer_S.html</S>
+	</DISCLAIMER>
+	-->
+	
+</NOTES>

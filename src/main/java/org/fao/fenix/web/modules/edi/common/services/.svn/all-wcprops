@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/fenix/!svn/ver/7234/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/edi/common/services
+END
+FAOStatServiceAsync.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/fenix/!svn/ver/7191/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/edi/common/services/FAOStatServiceAsync.java
+END
+FEWSNETServiceEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/fenix/!svn/ver/7234/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/edi/common/services/FEWSNETServiceEntry.java
+END
+FAOStatService.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/fenix/!svn/ver/7191/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/edi/common/services/FAOStatService.java
+END
+FEWSNETServiceAsync.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/fenix/!svn/ver/7234/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/edi/common/services/FEWSNETServiceAsync.java
+END
+FAOStatServiceEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/fenix/!svn/ver/7185/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/edi/common/services/FAOStatServiceEntry.java
+END
+FEWSNETService.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/fenix/!svn/ver/7234/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/edi/common/services/FEWSNETService.java
+END

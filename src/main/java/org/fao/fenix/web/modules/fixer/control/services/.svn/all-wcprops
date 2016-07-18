@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/fenix/!svn/ver/6754/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/fixer/control/services
+END
+FixerServiceEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/fenix/!svn/ver/6408/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/fixer/control/services/FixerServiceEntry.java
+END
+FixerServiceAsync.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/fenix/!svn/ver/6754/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/fixer/control/services/FixerServiceAsync.java
+END
+FixerService.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/fenix/!svn/ver/6408/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/fixer/control/services/FixerService.java
+END

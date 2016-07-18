@@ -1,0 +1,166 @@
+<metadata>
+	<type>BudgetMonitoringDataset</type>
+	<title>Budget Monitoring</title>
+	<abstractAbstract>Budget Monitoring</abstractAbstract>
+	<keywords>budget, monitoring</keywords>
+	<provider country="0" contact="Info-GIEWS-Workstation@fao.org">FAO GIEWS</provider>
+	<source country="0" contact="Info-GIEWS-Workstation@fao.org">FAO</source>
+	<region>0</region>
+	<startDate>2000-01-01</startDate>
+	<endDate>2008-12-31</endDate>
+	<dateLastUpdate>2009-05-14</dateLastUpdate>
+	<periodTypeCode>monthly</periodTypeCode>
+	<sharingCode>PublicAndDownload</sharingCode>
+	<refGeoUnit>Country Boundary</refGeoUnit>
+	<layerCodeSet>gaul0</layerCodeSet>
+	<precision>0</precision>
+	<categories>005</categories>
+	<code>budget</code>
+	<descriptors>
+		<descriptor key="true">
+			<header>Geographic Area</header>
+			<contentDescriptor>text</contentDescriptor>
+			<options>
+				<option>
+					<name>Geographic</name>
+					<value>GAUL</value>
+					<region>0</region>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="true">
+			<header>Donor</header>
+			<contentDescriptor>text</contentDescriptor>
+			<options>
+				<option>
+					<name>Indicator</name>
+					<value>AgencyCode</value>
+					<region>0</region>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="true">
+			<header>Date</header>
+			<contentDescriptor>date</contentDescriptor>
+		</descriptor>
+		<descriptor key="true">
+			<header>Main Intervention</header>
+			<contentDescriptor>text</contentDescriptor>
+			<options>
+				<option>
+					<name>Indicator</name>
+					<value>InterventionCode</value>
+					<region>0</region>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="true">
+			<header>Sub Intervention</header>
+			<contentDescriptor>text</contentDescriptor>
+			<options>
+				<option>
+					<name>Indicator</name>
+					<value>InterventionCode</value>
+					<region>0</region>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor>
+			<header>Budget</header>
+			<contentDescriptor>quantity</contentDescriptor>
+		</descriptor>
+		<descriptor key="true">
+			<header>Currency</header>
+			<contentDescriptor>text</contentDescriptor>
+		</descriptor>
+		<descriptor key="true">
+			<header>DAC Code</header>
+			<contentDescriptor>text</contentDescriptor>
+			<options>
+				<option>
+					<name>Indicator</name>
+					<value>DAC</value>
+					<region>0</region>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="true">
+			<header>Food Security</header>
+			<contentDescriptor>text</contentDescriptor>
+			<options>
+				<option>
+					<name>Indicator</name>
+					<value>FoodSecurityCode</value>
+					<region>0</region>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="true">
+			<header>Donor Priority</header>
+			<contentDescriptor>text</contentDescriptor>
+		</descriptor>
+		<descriptor key="true">
+			<header>Country Priority</header>
+			<contentDescriptor>text</contentDescriptor>
+		</descriptor>
+		<descriptor key="true">
+			<header>Budget Type</header>
+			<contentDescriptor>text</contentDescriptor>
+			<options>
+				<option>
+					<name>Indicator</name>
+					<value>BudgetTypeCode</value>
+					<region>0</region>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="true">
+			<header>Activity Type</header>
+			<contentDescriptor>text</contentDescriptor>
+			<options>
+				<option>
+					<name>Indicator</name>
+					<value>ActivityTypeCode</value>
+					<region>0</region>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="true">
+			<header>Assistance Type</header>
+			<contentDescriptor>text</contentDescriptor>
+			<options>
+				<option>
+					<name>Indicator</name>
+					<value>AssistanceTypeCode</value>
+					<region>0</region>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="true">
+			<header>Notes</header>
+			<contentDescriptor>text</contentDescriptor>
+		</descriptor>
+		<descriptor key="true">
+			<header>Implementing Agency</header>
+			<contentDescriptor>text</contentDescriptor>
+			<options>
+				<option>
+					<name>Indicator</name>
+					<value>AgencyCode</value>
+					<region>0</region>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="true">
+			<header>Target Beneficiaries</header>
+			<contentDescriptor>text</contentDescriptor>
+			<options>
+				<option>
+					<name>Indicator</name>
+					<value>AgencyCode</value>
+					<region>0</region>
+				</option>
+			</options>
+		</descriptor>
+	</descriptors>
+</metadata>

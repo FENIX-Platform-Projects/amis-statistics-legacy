@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/fenix/!svn/ver/6891/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ofcchart/client/view/chart
+END
+OfcLineChart.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/fenix/!svn/ver/6891/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ofcchart/client/view/chart/OfcLineChart.java
+END
+OfcPieChart.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/fenix/!svn/ver/6891/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ofcchart/client/view/chart/OfcPieChart.java
+END
+OfcBarChart.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/fenix/!svn/ver/6891/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ofcchart/client/view/chart/OfcBarChart.java
+END

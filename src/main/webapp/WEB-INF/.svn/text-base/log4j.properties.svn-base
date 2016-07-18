@@ -1,0 +1,13 @@
+# SET LEVELS AND APPENDERS
+log4j.rootLogger=INFO, CONSOLE, FILE
+
+# CONSOLE APPENDER
+log4j.appender.CONSOLE=org.apache.log4j.ConsoleAppender
+log4j.appender.CONSOLE.layout=org.apache.log4j.PatternLayout
+log4j.appender.CONSOLE.layout.ConversionPattern=%d | %-20C{1} | %-15M | %3L | %m %n
+
+# FILE APPENDER
+log4j.appender.FILE=org.apache.log4j.DailyRollingFileAppender
+log4j.appender.FILE.File=${webapp.root}/src/main/resources/fenix-web.log
+log4j.appender.FILE.DatePattern=.yyyyMMdd
+log4j.appender.FILE.layout=org.apache.log4j.HTMLLayout

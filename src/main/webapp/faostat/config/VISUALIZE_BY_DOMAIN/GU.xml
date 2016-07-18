@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<VIEW type="Browse By GU - Manure applied to soils">
+
+	<TITLE>
+		<E>GHG Agriculture</E>
+		<S>GHG Agriculture</S>
+		<F>GHG Agriculture</F>
+	</TITLE>
+
+	<FILTERS>
+
+		<FILTER width="140px">
+			<FILTERTYPE>ITEMS</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE label="All Animals" domain='GU'>1755</CODE>
+			</DEFAULTCODES>
+		</FILTER>
+		
+		<FILTER width="140px">
+			<FILTERTYPE>COUNTRIES_AREAS</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE label="World">5000</CODE>
+			</DEFAULTCODES> 
+		</FILTER>
+
+		<FILTER type="CODING_SYSTEM">
+			<FILTERTYPE>TIMERANGE</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE>1990</CODE>
+				<CODE>2010</CODE>
+			</DEFAULTCODES>
+		</FILTER>
+
+		<FILTER type="CODING_SYSTEM">
+			<FILTERTYPE>AGGREGATION_TYPE</FILTERTYPE>
+			<CODE label="Average">AVG</CODE>
+		</FILTER>
+
+	</FILTERS>
+
+	<RESOURCES>
+
+		<DEFAULT>
+
+			<RESOURCE>
+				<RESOURCETYPE>MAP</RESOURCETYPE>
+				<OUTPUTTYPE>MAP</OUTPUTTYPE>
+				<MAPOPTIONS>
+					<MAPOPTION type="colorramp">YlOrRd</MAPOPTION>
+					<MAPOPTION type="intervals">8</MAPOPTION>
+					<MAPOPTION type="classification">equalarea</MAPOPTION>
+				</MAPOPTIONS>
+				<SIZE>
+					<WIDTH>880</WIDTH>
+					<HEIGHT>325</HEIGHT>
+				</SIZE>
+				<APPLICABLE_FILTERS>
+					<APPLY_ALL_FILTERS_EXCEPT_AREAS>true</APPLY_ALL_FILTERS_EXCEPT_AREAS>
+				</APPLICABLE_FILTERS>
+				<DATEQUERY>
+					<MAXDATELIMIT>2010</MAXDATELIMIT>
+					<TIMESPAN type="year">20</TIMESPAN>
+				</DATEQUERY>
+				<TITLE>
+					<E>Emissions by country (CO2 equivalent)</E>
+					<S>Emissions by country (CO2 equivalent)</S>
+					<F>Emissions by country (CO2 equivalent)</F>
+				</TITLE>
+				<APPLICABLE_FILTERS>
+					<APPLY_ALL_FILTERS_EXCEPT_AREAS>true</APPLY_ALL_FILTERS_EXCEPT_AREAS>
+				</APPLICABLE_FILTERS>
+				<BASEQUERY>
+					<SELECTS>
+						<SELECT>A.AreaCode</SELECT>	
+						<SELECT lang="true">A.AreaName</SELECT>	
+					</SELECTS>
+					<TABLES>
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Manure applied to soils">GU</DOMAIN>
+						</DOMAINS>
+
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='CH4 Emissions'>7231</ELEMENTLIST>
+						</ELEMENTSLIST>
+						<ITEMS>
+							<ITEM label="All Animals">1755</ITEM>
+						</ITEMS>
+					</WHERE>
+
+				</BASEQUERY>
+			</RESOURCE>
+
+			<RESOURCE>
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>580</WIDTH>
+					<HEIGHT>330</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>Emissions (CO2 equivalent)</E>
+					<S>Emissions (CO2 equivalent)</S>
+					<F>Emissions (CO2 equivalent)</F>
+				</TITLE>
+				<DATEQUERY>
+					<MAXDATELIMIT>2010</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> -->
+					<TIMESPAN type="year">20</TIMESPAN>
+				</DATEQUERY>
+
+				<BASEQUERY>
+					<SELECTS>
+						<SELECT lang="true">A.AreaName</SELECT>
+						<SELECT>D.Year</SELECT>
+					</SELECTS>
+					<TABLES>
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Manure applied to soils">GU</DOMAIN>
+						</DOMAINS>
+
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='CH4 Emissions'>7231</ELEMENTLIST>
+						</ELEMENTSLIST>
+						<ITEMS>
+							<ITEM label="All Animals">1755</ITEM>
+						</ITEMS>
+						<AREAS>
+							<AREA label="World">5000</AREA>
+							<AREA label="Annex I">5848</AREA>
+							<AREA label="Annex II">5849</AREA>
+						</AREAS>
+					</WHERE>
+					<SORT type="ASC">
+						<FIELD lang="true">A.AreaName</FIELD>
+					</SORT>
+					<REGIONAL_LEVEL>true</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>true</COUNTRY_LEVEL>
+				</BASEQUERY>
+			</RESOURCE>
+
+			<RESOURCE>			
+				<RESOURCETYPE>TABLE</RESOURCETYPE>
+ 				<OUTPUTTYPE>HTML</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>250</WIDTH>
+					<HEIGHT>300</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>Emissions growth rate by continent</E>
+					<S>Emissions growth rate by continent</S>
+					<F>Emissions growth rate by continent</F>
+				</TITLE>
+				<APPLICABLE_FILTERS>
+					<APPLY_ALL_FILTERS_EXCEPT_AREAS>true</APPLY_ALL_FILTERS_EXCEPT_AREAS>
+				</APPLICABLE_FILTERS>
+				<DATEQUERY>
+					<MAXDATELIMIT>2010</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> -->
+					<TIMESPAN type="year">20</TIMESPAN>
+				</DATEQUERY>
+				<CALCULATIONQUERY>
+					<TYPE>ANNUAL_GROWTH_RATE_LEAST_SQUARE</TYPE> 
+				</CALCULATIONQUERY> 
+				<BASEQUERY>					 
+					<SELECTS>		       
+						<SELECT lang="true">E.ElementName</SELECT>
+						<SELECT lang="true">A.AreaName</SELECT>
+						<SELECT>D.Year</SELECT>
+					</SELECTS>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Manure applied to soils">GU</DOMAIN>
+						</DOMAINS>
+
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='CH4 Emissions'>7231</ELEMENTLIST>
+						</ELEMENTSLIST>
+						<ITEMS>
+							<ITEM label="All Animals">1755</ITEM>
+						</ITEMS>
+						<AREAS>
+							<AREA label="Africa">5100</AREA>
+							<AREA label="Europa">5400</AREA>
+							<AREA label="America">5200</AREA>
+							<AREA label="Asia">5300</AREA>
+							<AREA label="Oceania">5500</AREA>
+						</AREAS>
+					</WHERE>
+					<SORT type="ASC">
+						<FIELD lang="true">A.AreaName</FIELD>
+					</SORT>
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>			
+	             
+				 </BASEQUERY>					
+			</RESOURCE>
+
+			<RESOURCE>
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>PIE</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>420</WIDTH>
+					<HEIGHT>300</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>Emissions by continent</E>
+					<S>Emissions by continent</S>
+					<F>Emissions by continent</F>
+				</TITLE>
+				<APPLICABLE_FILTERS>
+					<APPLY_ALL_FILTERS_EXCEPT_AREAS>true</APPLY_ALL_FILTERS_EXCEPT_AREAS>
+				</APPLICABLE_FILTERS>
+				<DATEQUERY>
+					<MAXDATELIMIT>2010</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> -->
+					<TIMESPAN type="year">20</TIMESPAN>
+				</DATEQUERY>
+				<BASEQUERY>
+
+					<SELECTS>
+						<SELECT>D.AreaCode</SELECT>
+						<SELECT lang="true">A.AreaName</SELECT>
+					</SELECTS>
+					<TABLES>
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Manure applied to soils">GU</DOMAIN>
+						</DOMAINS>
+
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='CH4 Emissions'>7231</ELEMENTLIST>
+						</ELEMENTSLIST>
+						<ITEMS>
+							<ITEM label="All Animals">1755</ITEM>
+						</ITEMS>
+						<AREAS>
+							<AREA label="Africa">5100</AREA>
+							<AREA label="Europa">5400</AREA>
+							<AREA label="America">5200</AREA>
+							<AREA label="Asia">5300</AREA>
+							<AREA label="Oceania">5500</AREA>
+						</AREAS>
+					</WHERE>
+					<SORT type="ASC">
+						<FIELD lang="true">A.AreaName</FIELD>
+					</SORT>
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>
+				</BASEQUERY>
+			</RESOURCE>
+
+<RESOURCE>
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>PIE</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>440</WIDTH>
+					<HEIGHT>300</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>Emissions by animal</E>
+					<S>Emissions by animal</S>
+					<F>Emissions by animal</F>
+				</TITLE>
+				<APPLICABLE_FILTERS>
+					<APPLY_ALL_FILTERS_EXCEPT_ITEMS>true</APPLY_ALL_FILTERS_EXCEPT_ITEMS>
+				</APPLICABLE_FILTERS>
+				<DATEQUERY>
+					<MAXDATELIMIT>2010</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> -->
+					<TIMESPAN type="year">20</TIMESPAN>
+				</DATEQUERY>
+				<BASEQUERY>
+					<SUMOTHERS>5</SUMOTHERS>
+					<SELECTS>
+						<SELECT>D.ItemCode</SELECT>
+						<SELECT lang="true">I.ItemName</SELECT>
+					</SELECTS>
+					<TABLES>
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Manure applied to soils">GU</DOMAIN>
+						</DOMAINS>
+
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='CH4 Emissions'>7231</ELEMENTLIST>
+						</ELEMENTSLIST>
+						<ITEMS>
+							<ITEM label="Buffaloes">946</ITEM>
+							<ITEM label="Chickens">1057</ITEM>
+							<ITEM label="Dairy cattle">960</ITEM>
+							<ITEM label="Ducks">1068</ITEM>
+							<ITEM label="Goats">1016</ITEM>
+							<ITEM label="Non-Dairy cattle">961</ITEM>
+							<ITEM label="Pigs">1034</ITEM>
+							<ITEM label="Non-Dairy cattle">961</ITEM>
+							<ITEM label="Sheep">976</ITEM>
+							<ITEM label="Turkeys">1079</ITEM>
+						</ITEMS>
+						<AREAS>
+							<AREA label="World">5000</AREA>
+						</AREAS>
+					</WHERE>
+					<SORT type="DESC">
+						<FIELD type="aggregation">D.Value</FIELD>
+					</SORT>	
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>TRUE</COUNTRY_LEVEL>
+				</BASEQUERY>
+			</RESOURCE>
+
+
+		<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>BAR_WITH_CATEGORIES</OUTPUTTYPE>
+				<TITLE>
+					<E>Top 10 emitters (CO2 equivalent)</E>
+					<S>Top 10 emitters (CO2 equivalent)</S>
+					<F>Top 10 emitters (CO2 equivalent)</F>
+				</TITLE>
+				<APPLICABLE_FILTERS>
+					<APPLY_ALL_FILTERS_EXCEPT_AREAS>true</APPLY_ALL_FILTERS_EXCEPT_AREAS>
+				</APPLICABLE_FILTERS>
+				<SIZE>
+					<WIDTH>880</WIDTH>
+					<HEIGHT>250</HEIGHT>
+				</SIZE>
+				<DATEQUERY>
+					<MAXDATELIMIT>2010</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> -->
+					<TIMESPAN type="year">20</TIMESPAN>			
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+						<SELECT lang="true">E.ElementName</SELECT>	
+						<SELECT lang="true">A.AreaName</SELECT>	
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Manure applied to soils">GU</DOMAIN>
+						</DOMAINS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='CH4 Emissions'>7231</ELEMENTLIST>
+						</ELEMENTSLIST>
+						<ITEMS>
+							<ITEM label="All Animals">1755</ITEM>
+						</ITEMS>
+						<AREASBLACKLIST>
+								<AREABLACKLIST>41</AREABLACKLIST>
+								<AREABLACKLIST>228</AREABLACKLIST>
+						</AREASBLACKLIST>
+					</WHERE>
+					<SORT type="DESC">
+						<FIELD type="aggregation">D.Value</FIELD>
+					</SORT>	
+			
+					<NESTEDLIMIT field="D.AreaCode">10</NESTEDLIMIT>
+					<NESTEDSORT type="DESC">
+						<FIELD type="aggregation">D.Value</FIELD>
+					</NESTEDSORT>
+
+					
+				</BASEQUERY>					
+			</RESOURCE>
+
+		</DEFAULT>
+
+	</RESOURCES>
+
+</VIEW>

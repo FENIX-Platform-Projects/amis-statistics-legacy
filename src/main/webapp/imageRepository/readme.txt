@@ -1,0 +1,1 @@
+This folder contains all the images that the users upload into fenix.

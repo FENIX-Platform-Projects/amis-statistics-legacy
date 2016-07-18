@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/fenix/!svn/ver/7234/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/edi/client/control
+END
+FEWSNETController.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/fenix/!svn/ver/7234/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/edi/client/control/FEWSNETController.java
+END
+EDIController.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/fenix/!svn/ver/7234/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/edi/client/control/EDIController.java
+END
+FAOStatController.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/fenix/!svn/ver/7191/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/edi/client/control/FAOStatController.java
+END

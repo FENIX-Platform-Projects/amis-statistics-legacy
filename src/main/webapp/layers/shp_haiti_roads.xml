@@ -1,0 +1,33 @@
+<layer type="shp">
+  <title>Haiti Roads</title>
+  <abstract></abstract>
+  <source country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</source>
+  <provider country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</provider>
+  <region>108</region>
+  <categories />
+  <sharingcode>Public</sharingcode>
+  <featuretype>
+    <title>Haiti Roads</title>
+    <abstract>Haiti Roads</abstract>
+    <defaultstyle>haiti_roads</defaultstyle>
+    <bbox>
+      <srs>4326</srs>
+      <minx>-74.464878</minx>
+      <maxx>-71.6100215</maxx>
+      <miny>17.9102759</miny>
+      <maxy>20.019985</maxy>
+    </bbox>
+    <layername>haiti_roads</layername>
+    <datastore>
+      <name>haiti_roads</name>
+      <namespace>fenix</namespace>
+    </datastore>    <datastore>
+      <name>haiti_roads</name>
+      <namespace>fenix</namespace>
+    </datastore>
+    
+  </featuretype>
+  <!--Data dumped from geoserver at:-->
+  <!--REST url: http://ldvapp07.fao.org:8032/geoserverDev-->
+  <!--WMS url: http://ldvapp07.fao.org:8032/geoserverDev/wms?-->
+</layer>

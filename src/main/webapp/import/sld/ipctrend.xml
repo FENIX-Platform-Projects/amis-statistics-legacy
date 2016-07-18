@@ -1,0 +1,126 @@
+
+<StyledLayerDescriptor
+    version="1.0.0"
+    xmlns="http://www.opengis.net/sld"
+    xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <NamedLayer>
+        <Name>ipc_risk_phase</Name>
+        <UserStyle>
+            <Title>IPC risk phase</Title>
+            <Abstract>IPC risk phase - Used on IPC daatasets joined with GAUL1</Abstract>
+            <FeatureTypeStyle>
+
+                <Rule>
+                    <Name>improving</Name>
+                    <Title>Improving</Title>
+                    <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+                        <ogc:PropertyIsEqualTo>
+                            <ogc:PropertyName>quantity</ogc:PropertyName>
+                            <ogc:Literal>1</ogc:Literal>
+                        </ogc:PropertyIsEqualTo>
+                    </ogc:Filter>
+
+                    <PointSymbolizer>
+                        <Graphic>
+                            <Mark>
+                                <WellKnownName>arrow</WellKnownName>
+                                <Stroke>
+                                    <CssParameter name="stroke">#000000</CssParameter>
+                                    <CssParameter name="stroke-width">2</CssParameter>
+                                    <CssParameter name="stroke-linecap">butt</CssParameter>
+                                    <CssParameter name="stroke-linejoin">mitre</CssParameter>
+                                </Stroke>
+                            </Mark>
+                            <Size>15</Size>
+                            <Rotation>-90</Rotation>
+                        </Graphic>
+                    </PointSymbolizer>
+                </Rule>
+
+                <Rule>
+                    <Name>nochange</Name>
+                    <Title>No change</Title>
+                    <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+                        <ogc:PropertyIsEqualTo>
+                            <ogc:PropertyName>quantity</ogc:PropertyName>
+                            <ogc:Literal>2</ogc:Literal>
+                        </ogc:PropertyIsEqualTo>
+                    </ogc:Filter>
+
+                    <PointSymbolizer>
+                        <Graphic>
+                            <Mark>
+                                <WellKnownName>square</WellKnownName>
+                                <Stroke>
+                                    <CssParameter name="stroke">#000000</CssParameter>
+                                    <CssParameter name="stroke-width">2</CssParameter>
+                                    <CssParameter name="stroke-linecap">butt</CssParameter>
+                                    <CssParameter name="stroke-linejoin">mitre</CssParameter>
+                                </Stroke>
+                            </Mark>
+                            <Size>15</Size>
+                            <Rotation>-90</Rotation>
+                        </Graphic>
+                    </PointSymbolizer>
+                </Rule>
+
+                <Rule>
+                    <Name>mixed</Name>
+                    <Title>Mixed situation</Title>
+                    <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+                        <ogc:PropertyIsEqualTo>
+                            <ogc:PropertyName>quantity</ogc:PropertyName>
+                            <ogc:Literal>3</ogc:Literal>
+                        </ogc:PropertyIsEqualTo>
+                    </ogc:Filter>
+
+                    <PointSymbolizer>
+                        <Graphic>
+                            <Mark>
+                                <WellKnownName>circle</WellKnownName>
+                                <Stroke>
+                                    <CssParameter name="stroke">#000000</CssParameter>
+                                    <CssParameter name="stroke-width">2</CssParameter>
+                                    <CssParameter name="stroke-linecap">butt</CssParameter>
+                                    <CssParameter name="stroke-linejoin">mitre</CssParameter>
+                                </Stroke>
+                            </Mark>
+                            <Size>16</Size>
+                            <Rotation>90</Rotation>
+                        </Graphic>
+                    </PointSymbolizer>
+                </Rule>
+
+                <Rule>
+                    <Name>worsening</Name>
+                    <Title>Worsening</Title>
+                    <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+                        <ogc:PropertyIsEqualTo>
+                            <ogc:PropertyName>quantity</ogc:PropertyName>
+                            <ogc:Literal>4</ogc:Literal>
+                        </ogc:PropertyIsEqualTo>
+                    </ogc:Filter>
+
+                    <PointSymbolizer>
+                        <Graphic>
+                            <Mark>
+                                <WellKnownName>arrow</WellKnownName>
+                                <Stroke>
+                                    <CssParameter name="stroke">#000000</CssParameter>
+                                    <CssParameter name="stroke-width">2</CssParameter>
+                                    <CssParameter name="stroke-linecap">butt</CssParameter>
+                                    <CssParameter name="stroke-linejoin">mitre</CssParameter>
+                                </Stroke>
+                            </Mark>
+                            <Size>15</Size>
+                            <Rotation>90</Rotation>
+                        </Graphic>
+                    </PointSymbolizer>
+                </Rule>
+
+            </FeatureTypeStyle>
+        </UserStyle>
+    </NamedLayer>
+</StyledLayerDescriptor>

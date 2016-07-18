@@ -1,0 +1,520 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+	font-family:verdana;
+
+}
+
+body{
+	margin:0;
+	padding:0;
+	color:#000000;  
+	background-color:#d7d6d4;
+	font-family: arial, verdana;
+}
+
+#centerColumn { 	
+	margin:0 auto;
+	padding:0;
+	width:1100px;
+	text-align:left;
+	vertical-align: middle;	
+	background-color:#d7d6d4;
+}
+
+
+/*** BANNER ***/
+
+#header {
+        width:100%;
+	height:120px;
+	background-color:#fff;
+	background-image:  url(amis-images/banner.png);
+	background-repeat:no-repeat;
+}
+
+
+.left-logo {
+    cursor:pointer;
+    float:left;
+    margin-top:10px;
+    margin-left:40px;
+}
+
+div.login  {
+    font-size: 11px;
+    font-weight:bold;
+    color: #2E58A4;
+    float:right;
+    margin-top:10px;
+    margin-right:20px;
+    cursor:pointer;
+}
+
+div.login:hover  {
+    font-size: 11px;
+    font-weight:bold;
+    color: #2E58A4;
+    float:right;
+    margin-top:10px;
+    margin-right:20px;
+    cursor:pointer;
+    text-decoration:underline;
+}
+
+
+/* MAIN MENU BAR */
+
+
+div#MENU
+{
+	width:100%;
+	background:#dc3018;
+        height:34px;
+       
+}
+
+.tab {	
+	background: #dc3018;
+	text-decoration: none;
+        padding-top: 10px;
+        padding-left: 15px;
+	padding-right: 20px;
+	padding-bottom: 3px;
+	cursor: hand;
+ 	cursor: pointer;
+ 	text-align: center;
+ 	font-weight:normal;
+	font-family: arial,verdana;
+	font-size:0.85em;
+	color: #FFFFFF;
+
+}
+
+
+
+.tab:hover {
+	background: #dc3018;
+	text-decoration: none;	
+        padding-top: 10px;
+        padding-left: 15px;
+	padding-right: 20px;
+	cursor: hand;
+ 	cursor: pointer;
+ 	font-weight:normal;
+	font-family: arial,verdana;
+	font-size:0.85em;
+        color: #FFFFFF;
+
+}
+
+.tab-selected {
+	background: #dc3018;
+	text-decoration: none;
+        padding-top: 10px;
+        padding-left: 15px;
+	padding-right: 20px;
+	cursor: hand;
+ 	cursor: pointer;
+ 	font-weight:normal;
+	font-family: arial,verdana;
+	font-size:0.85em;
+	color: #d6d6d4;
+        padding-bottom: 3px;
+}
+
+
+.submenu {	
+	background: #FFFFFF;
+	text-decoration: none;
+        padding-top: 10px;
+        padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 3px;
+	cursor: hand;
+ 	cursor: pointer;
+ 	text-align: center;
+ 	font-weight:normal;
+	font-family: arial,verdana;
+	font-size:13px;
+	color: #275CA2;
+
+}
+
+
+
+.submenu:hover {
+	background: #FFFFFF;
+	text-decoration: underline;	
+        padding-top: 10px;
+        padding-left: 10px;
+	padding-right: 10px;
+	cursor: hand;
+ 	cursor: pointer;
+ 	font-weight:normal;
+	font-family: arial,verdana;
+	font-size:13px;
+        color: #275CA2;
+
+}
+
+.submenu-selected {
+	background: #FFFFFF;
+	text-decoration: underline;
+        padding-top: 10px;
+        padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 3px;
+	cursor: hand;
+ 	cursor: pointer;
+ 	font-weight:bold;
+	font-family: arial,verdana;
+	font-size:13px;
+	color: #275CA2;
+ 
+}
+
+
+.submenu-separator {	
+	background: #FFFFFF;
+	text-decoration: none;
+        padding-top: 10px;
+        padding-bottom: 3px;
+	text-align: center;
+ 	font-weight:normal;
+	font-family: arial,verdana;
+	font-size:13px;
+	color: #275CA2;
+}
+
+
+
+/* PAGE CONTAINER */
+
+#central_container
+	{
+	height:100%;
+	background:#eaeaea;
+	width:100%;
+	}
+
+
+/* WELCOME */
+
+#top_box_container { 	
+	margin:0 auto;
+	padding:0;
+	/*width:1050px;*/
+	background-color:#ffffff;
+	height:85px;
+	}
+
+.amis_title{
+	color:#dc3018;
+	font-size:16px;
+	font-weight:bold;
+	line-height:1.3em;
+	font-family:arial;
+	margin-left: 2em;
+	}
+
+.amis_text{
+	color:#323133;
+	font-size:12px;
+	font-style:normal;
+	font-family:Verdana;
+	text-align:justify;
+	/*margin:1.2em;*/
+	padding-left: 1.2em;
+      padding-right: 1.2em;
+      padding-bottom: 1.2em;
+	line-height:1.7em;
+}
+
+#separation2	
+	{
+	height:10px;
+	background:#FFFFFF;
+	}
+	
+#greyseparation	
+	{
+	height:5px;
+	background:#d7d6d4;
+	}
+	
+
+
+	
+/*end WELCOME  */
+
+	
+/* INTERACTIVE MAP */
+
+
+#first_corner	
+	{
+	height:27px;
+	background: #154179;
+/*	width:1102px;*/
+	}
+	
+	
+.interactive_map_title{
+font-family: verdana;
+font-variant:normal;
+font-weight:bold;
+font-size:13px;
+color:#ffffff;
+margin-left:30px;
+line-height:2.3em;
+	}
+	
+.interactive_map_subtitle{
+font-family: verdana;
+font-style:italic;
+font-size:12px;
+color:#ffffff;
+line-height:2.3em;
+	}
+	
+#interactive_map
+	{
+	/*height:440px;
+	width:1100px;*/
+	background:#ffffff;
+	border-bottom:solid 1px #FFF;
+	border-left:solid 1px #FFF;
+	border-right:solid 1px #FFF;
+        /*padding-left:20px;*/
+	/*margin-top:20px;*/
+	}
+
+#background_map {
+ 	background:url("amis-images/map-images/WORLD.png") no-repeat;
+}
+
+
+
+
+#WORLD_MAP {
+	/** background:url("amis-images/map-images/WORLD.png") no-repeat;**/
+	background-color: transparent !important;
+	background: transparent !important;
+}
+
+.map
+	{
+	 background:url("amis-images/map-images/WORLD.png") no-repeat !important;
+
+	}
+	
+
+.area, .area:hover {
+    cursor: hand;
+    cursor: pointer;
+}
+
+#legend {
+	margin-top:5px;
+        margin-left:5px; 
+	background-color:#ffffff;
+}	
+	
+	
+.legend_text {
+	font-family: verdana;
+	font-size:12px;
+	color:#323133;
+}
+
+.back_title {
+    font-family:verdana;
+    font-size:13px;
+    font-weight:bold;
+    color:#154179;
+}
+
+.back_text {
+    font-family:verdana;
+    font-size:13px;
+    color:#154179;
+}
+
+.back_text:hover {
+    color:#154179;
+    cursor: hand;
+    cursor: pointer;
+}
+
+.blueArrowIcon {
+	background: transparent url(amis-images/blue_arrow.png) no-repeat center center;
+}
+
+
+
+ 
+     
+/* end INTERACTIVE MAP */	
+
+/* DATASET TAB CONTENT */
+.general_title {
+	color:#154179;
+	font-size:15px;
+	font-weight:bold;
+	font-family:arial;
+	/*font-variant:small-caps;
+	padding-left: 2em;*/
+	padding: 5px;
+	}
+	
+.table_top_panel {
+    color:#ffffff;
+	font-size:12px;
+	font-weight:bold;
+	font-family:arial;
+	background:#DC3018;
+	padding:6px;
+}
+
+
+.chart_title {
+	font-size: 12px;
+	font-weight: bold;
+	color: #ffffff;	
+}
+
+
+.chart_top_panel {
+        color:#ffffff;
+	font-size:12px;
+	font-weight:bold;
+	font-family:arial;
+	background:#154179;
+	padding:6px;
+}
+	
+	
+.chart_title {
+	font-size: 12px;
+	font-weight: bold;
+	color: #ffffff;	
+}
+		
+		
+/*** FOOTER ***/		
+#footer { 	
+        margin-top: 20px;
+	padding:0;
+	width:1100px;
+	background-color:#154179;
+	height:30px;
+	}
+
+#footer a { 	
+	color:#ffffff;
+	font-family: verdana;
+	font-size:12px;
+        text-decoration:none;
+	}
+	
+	
+#footer a:visited {
+	color:#ffffff; 	
+	}
+
+#footer a:hover { 	
+	color:#ffffff;
+	text-decoration:underline;
+	}	
+
+#footer_contents_left {
+	width:750px;
+	float:left;
+	margin-top:5px;
+	padding-left:2em;
+
+	}
+	
+#footer_contents_right { 
+float:right;
+width:300px;
+margin-top:5px;
+
+	}	
+
+#statistics_link_contents_right { 
+float:right;
+width:300px;
+margin-top:5px;
+
+	}	
+
+/** DATASET SELECTION **/
+
+
+.dataset_tab_selected {
+/**	color: #fff;
+	background: #5bc151;
+	text-decoration: none;
+	padding: 3px;
+	padding-left: 4px;
+	padding-right: 4px;
+	font-size: 11px;
+	font-weight: bold;
+**/
+
+background:url(amis-images/selected_tab.png) no-repeat;
+background-color:#d7d6d4;
+	float:left;
+width:120px;
+height:35px;
+margin-top:10px;
+padding-left:20px;
+        cursor: pointer;
+font-family: arial;
+font-size:15px;
+font-weight:bold;
+color:#ffffff;
+line-height:2.4em;
+
+}
+
+.dataset_tab_unselected {
+	/**color: #51626f;
+	background: #efefef;
+	text-decoration: none;
+	padding: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 11px;
+	font-weight: bold;
+	cursor: pointer;**/
+background:url(amis-images/unselected_tab.png) no-repeat;
+	float:left;
+width:120px;
+	background-color:#d7d6d4;
+height:35px;
+margin-top:10px;
+padding-left:20px;
+cursor: pointer;
+font-family: arial;
+font-size:15px;
+color:#ffffff;
+font-weight:bold;
+line-height:2.4em;
+}
+
+
+/**.dataset_tab_unselected:hover {
+	color: #fff;
+	background: #5bc151;
+}**/
+
+
+.bg_transparent {
+	background-color: transparent !important;
+	background: transparent !important;
+}
+		

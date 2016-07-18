@@ -1,0 +1,146 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://fenixapps.fao.org/wrepo/service/support"></script>
+<script src="http://statistics.amis-outlook.org/data/amis-market-monitor/fnx_amis_market_monitor_charts.js" type="text/javascript"></script>
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+
+
+</head>
+<body>
+<style>
+#ie-box { display: none; } /* this goes in your main stylesheet */
+</style>
+<!--[if lte IE 8]>
+<style>
+/* Internet Explorer Warning Message */
+#ie-box {  display: block; position: absolute; height: 100%; width: 100%; z-index: 100;}
+#ie-warning-overlay { background: #000; height: 100%; width: 100%; overflow: hidden; position: fixed; z-index: 110 }
+#ie-warning-wrap { border: solid 4px #F8B624;  background: #FFF;  position: absolute; z-index: 120; height: 300px; width: 500px; left: 50%; top: 50%; margin-top: -150px; margin-left: -250px }
+#ie-warning-wrap #ie-warning-msg { font-family: Arial, Helvetica, sans-serif; font-size: 12px; padding: 10px 15px 15px 15px; position: relative; text-align: left }
+#ie-warning-wrap #ie-warning-msg h3 { padding: 5px; color: #fff; background-color: #4A7E57 }
+#ie-warning-wrap a.close { z-index: 150; font-family: Arial, Helvetica, sans-serif; font-size: 10px; font-weight:bold; position: absolute; bottom: 15px; right: 15px; text-decoration: underline }
+#ie-warning-wrap #ie-warning-msg p { margin-bottom: 15px }
+#ie-warning-wrap a,
+#ie-warning-wrap a:visited { color: #4A7E57 }
+#ie-warning-wrap #ie-warning-msg ol li span { font-style: italic; color: #4A7E57 }
+.transparent { /* IE 8 */
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 5-7 */
+filter: alpha(opacity=50); /* Netscape */
+-moz-opacity: 0.5; /* Safari 1.x */
+-khtml-opacity: 0.5; /* Good browsers */
+opacity: 0.5 }
+.opaque { /* IE 8 */
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; /* IE 5-7 */
+filter: alpha(opacity=100); /* Netscape */
+-moz-opacity: 1; /* Safari 1.x */
+-khtml-opacity: 1; /* Good browsers */
+opacity:1 }
+</style>
+
+
+<div id="ie-box">
+<div id="ie-warning-overlay" class="transparent"></div>
+<div id="ie-warning-wrap" class="opaque">  <a href="#" class="close">close this window</a>
+<div id="ie-warning-msg">
+<p>Your browser does not support certain features on this website. In order to view the charts, please update your browser:</p>
+<ul>
+<li>Internet Explorer 9: <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home" target="_blank">Download from Microsoft</a></li>
+<li>Mozilla Firefox: <a href="http://www.mozilla.org/en-US/firefox/new/" target="_blank">Download from Mozilla</a></li>
+<li>Google Chrome: <a href="https://www.google.com/chrome" target="_blank">Download from Google</a></li>
+<li>Safari: <a href="http://support.apple.com/downloads/#safari" target="_blank">Download from Apple</a> </li>
+</ul>
+<p>If you wish to continue without updating your browser, you may do so but please be aware that certain features will not function properly</p>
+</div>
+</div>
+</div>
+<![endif]-->
+<script>
+
+/* Add Close function for IE Modal */
+$('.close').bind('click',function(e){
+e.preventDefault();
+$('#ie-box').fadeOut('slow');
+});
+
+</script>
+<div>
+<b>AMIS Indicator/Market Monitor Charts Preview</b>
+<br/><br/>
+Please click on one of the links below, to load the respective charts: <br/>
+<ul>
+<li><a href="http://statistics.amis-outlook.org/data/amis-market-monitor/html/prices/en/prices.html"  target="_blank">Prices/Volatility</a></li>
+<li><a href="http://statistics.amis-outlook.org/data/amis-market-monitor/html/other-indicators/en/other.html"  target="_blank">Energy/Other Market Indicators</a></li>
+<li><a href="http://statistics.amis-outlook.org/data/amis-market-monitor/html/stocks/en/stocks.html"  target="_blank">Stocks-to-use</a></li>
+</ul>
+</li>
+
+<div>
+<div></div>
+</div>
+<div id="amis_mm_stu_charts_container">
+<!--<table id = "amis_mm_stu_charts" border="0">
+<tr>  <td id="1"><p>&nbsp;</p><div id="amis_mm_stu_chart_1" style="width: 450px; height: 320px; "></div></td>
+      <td id="5"><p>&nbsp;</p><div id="amis_mm_stu_chart_5" style="width: 450px; height: 320px; "></div></td>
+</tr>
+<tr>
+   <td id="4"><p>&nbsp;</p><div id="amis_mm_stu_chart_4" style="width: 450px; height: 320px; "></div></td>
+   <td id="6"><p>&nbsp;</p><div id="amis_mm_stu_chart_6" style="width: 450px; height: 320px; "></div></td>
+</tr>
+</table>
+-->
+<table id="amis_mm_stu_charts" border="0">
+<tbody>
+<tr>
+<td id="1">
+<div id="amis_mm_stu_chart_1" style="width: 370px; height: 320px;">
+</div>
+</td>
+<td id="5">
+<div id="amis_mm_stu_chart_5" style="width: 370px; height: 320px; ">
+</td>
+</tr>
+<tr>
+<td id="4">
+<div id="amis_mm_stu_chart_4" style="width: 370px; height: 320px; ">
+</td>
+<td id="6">
+<div id="amis_mm_stu_chart_6" style="width: 370px; height: 320px; ">
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</div>
+
+ <!--[if lte IE 8]>
+    <script type="text/javascript"
+     src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+
+    <style>
+     .chromeFrameInstallDefaultStyle {
+       width: 100%; /* default is 800px */
+       border: 5px solid blue;
+     }
+    </style>
+
+    <div id="prompt">
+    <p> Without IE </p>
+     //if IE without GCF, prompt goes here
+    </div>
+
+    <script>
+     // The conditional ensures that this code will only execute in IE,
+     // Therefore we can use the IE-specific attachEvent without worry
+     window.attachEvent("onload", function() {
+       CFInstall.check({
+         mode: "inline", // the default
+         node: "prompt"
+       });
+     });
+    </script>
+  <![endif]-->
+</body>
+</html>

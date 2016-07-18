@@ -1,0 +1,29 @@
+<layer type="rst">
+	<title>Haiti Coverage 250k</title>
+	<abstract>Haiti Coverage 250k -- Raster Layer '108_Haiti_250k::Haiti_250k'
+	</abstract>
+	<source country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</source>
+	<provider country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO
+	</provider>
+	<region />
+	<categories />
+	<sharingcode>Public</sharingcode>
+	<code>layer_108_Haiti_250k</code>
+	<coverage>
+		<layername>Haiti_250k</layername>
+		<bbox>
+			<srs>EPSG:4326</srs>
+			<minx>-75.08</minx>
+			<maxx>-71.99</maxx>
+			<miny>18.00</miny>
+			<maxy>20.10</maxy>
+		</bbox>
+		<defaultstyle>raster</defaultstyle>
+		<label>Haiti Coverage 250k</label>
+		<description>Haiti Coverage 250k</description>
+		<coveragestore>
+			<namespace>fenix</namespace>
+			<name>108_Haiti_250k</name>
+		</coveragestore>
+	</coverage>
+</layer>

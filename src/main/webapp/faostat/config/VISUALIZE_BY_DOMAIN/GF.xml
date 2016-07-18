@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<VIEW type="Browse By Q - Production">
+
+	<TITLE>
+		<E>GHG Agriculture</E>
+		<S>GHG Agriculture</S>
+		<F>GHG Agriculture</F>
+	</TITLE>
+
+	<FILTERS>
+
+		<FILTER width="140px">
+			<FILTERTYPE>ITEMS</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE label="Net forest change" domain='GF'>6750</CODE>
+			</DEFAULTCODES>
+		</FILTER>
+		
+		<FILTER width="140px">
+			<FILTERTYPE>COUNTRIES_AREAS</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE label="World">5000</CODE>
+			</DEFAULTCODES> 
+		</FILTER>
+
+		<FILTER type="CODING_SYSTEM">
+			<FILTERTYPE>TIMERANGE</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE>1990</CODE>
+				<CODE>2010</CODE>
+			</DEFAULTCODES>
+		</FILTER>
+
+		<FILTER type="CODING_SYSTEM">
+			<FILTERTYPE>AGGREGATION_TYPE</FILTERTYPE>
+			<CODE label="Average">AVG</CODE>
+		</FILTER>
+
+	</FILTERS>
+
+	<RESOURCES>
+
+		<DEFAULT>
+
+			<RESOURCE>
+				<RESOURCETYPE>MAP</RESOURCETYPE>
+				<OUTPUTTYPE>MAP</OUTPUTTYPE>
+				<MAPOPTIONS>
+					<MAPOPTION type="ranges">-20000,-10000,-1,1,10000,100000</MAPOPTION>
+					<MAPOPTION type="classification">custom</MAPOPTION>
+					<MAPOPTION type="colors">004529,238B45,74C476,E1E1E1,FFD34A,FF9400,DE0000</MAPOPTION>
+				</MAPOPTIONS>
+				<USECUSTOMCOLORS>TRUE</USECUSTOMCOLORS>
+				<SIZE>
+					<WIDTH>880</WIDTH>
+					<HEIGHT>325</HEIGHT>
+				</SIZE>
+				<DATEQUERY>
+					<MAXDATELIMIT>2010</MAXDATELIMIT>
+					<TIMESPAN type="year">20</TIMESPAN>
+				</DATEQUERY>
+				<TITLE>
+					<E>Net emissions/removal by country (CO2 equivalent)</E>
+					<S>Net emissions/removal by country (CO2 equivalent)</S>
+					<F>Net emissions/removal by country (CO2 equivalent)</F>
+				</TITLE>
+				<APPLICABLE_FILTERS>
+					<APPLY_ALL_FILTERS_EXCEPT_AREAS>true</APPLY_ALL_FILTERS_EXCEPT_AREAS>
+				</APPLICABLE_FILTERS>
+				<BASEQUERY>
+					<SELECTS>
+						<SELECT>A.AreaCode</SELECT>	
+						<SELECT lang="true">A.AreaName</SELECT>	
+					</SELECTS>
+					<SHOWNULL>TRUE</SHOWNULL>
+					<TABLES>
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>
+					</TABLES>
+					<WHERE>
+						<!-- <VALUE>
+							<GREATERTHAN>0</GREATERTHAN>
+						</VALUE>-->
+						<DOMAINS>
+							<DOMAIN label="Forest Land">GF</DOMAIN>
+						</DOMAINS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Net emissions/removal'>7217</ELEMENTLIST>
+						</ELEMENTSLIST>
+						<ITEMS>
+							<ITEM label="Net forest change">6750</ITEM>
+						</ITEMS>
+					</WHERE>
+
+				</BASEQUERY>
+			</RESOURCE>
+
+		<RESOURCE>
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>PIE</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>520</WIDTH>
+					<HEIGHT>350</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>Net emissions/removal by source continent</E>
+					<S>Net emissions/removal by source continent</S>
+					<F>Net emissions/removal by source continent</F>
+				</TITLE>
+				<!--
+				<FOOTNOTE>
+					<E><![CDATA[Positive values only are shown by this chart.]]></E>
+				</FOOTNOTE>
+				-->
+				<APPLICABLE_FILTERS>
+					<APPLY_ALL_FILTERS_EXCEPT_AREAS>true</APPLY_ALL_FILTERS_EXCEPT_AREAS>
+				</APPLICABLE_FILTERS>
+				<DATEQUERY>
+					<MAXDATELIMIT>2010</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> -->
+					<TIMESPAN type="year">20</TIMESPAN>
+				</DATEQUERY>
+				<BASEQUERY>
+
+					<SELECTS>
+						<SELECT>D.AreaCode</SELECT>
+						<SELECT lang="true">A.AreaName</SELECT>
+					</SELECTS>
+					<TABLES>
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>
+					</TABLES>
+					<WHERE>
+						<VALUE>
+							<GREATERTHANOREQUALSTO>0</GREATERTHANOREQUALSTO>
+						</VALUE>
+						<DOMAINS>
+							<DOMAIN label="Forest Land">GF</DOMAIN>
+						</DOMAINS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Net emissions/removal'>7217</ELEMENTLIST>
+						</ELEMENTSLIST>
+						<ITEMS>
+							<ITEM label="Net forest change">6750</ITEM>
+						</ITEMS>
+						<AREAS>
+							<AREA label="Africa">5100</AREA>
+							<AREA label="Europa">5400</AREA>
+							<AREA label="America">5200</AREA>
+							<AREA label="Asia">5300</AREA>
+							<AREA label="Oceania">5500</AREA>
+						</AREAS>
+					</WHERE>
+					<SORT type="ASC">
+						<FIELD lang="true">A.AreaName</FIELD>
+					</SORT>
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>
+				</BASEQUERY>
+			</RESOURCE>
+			
+			<RESOURCE>			
+				<RESOURCETYPE>TABLE</RESOURCETYPE>
+ 				<OUTPUTTYPE>HTML</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>250</WIDTH>
+					<HEIGHT>300</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>Net emissions/removal growth rate by source continent</E>
+					<S>Net emissions/removal growth rate by source continent</S>
+					<F>Net emissions/removal growth rate by source continent</F>
+				</TITLE>
+				<APPLICABLE_FILTERS>
+					<APPLY_ALL_FILTERS_EXCEPT_AREAS>true</APPLY_ALL_FILTERS_EXCEPT_AREAS>
+				</APPLICABLE_FILTERS>
+				<DATEQUERY>
+					<MAXDATELIMIT>2010</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> -->
+					<TIMESPAN type="year">20</TIMESPAN>
+				</DATEQUERY>
+				<CALCULATIONQUERY>
+					<TYPE>ANNUAL_GROWTH_RATE_LEAST_SQUARE</TYPE> 
+				</CALCULATIONQUERY> 
+				<BASEQUERY>					 
+					<SELECTS>		       
+						<SELECT lang="true">E.ElementName</SELECT>
+						<SELECT lang="true">A.AreaName</SELECT>
+						<SELECT>D.Year</SELECT>
+					</SELECTS>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Agricultural Soils">GF</DOMAIN>
+						</DOMAINS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Net emissions/removal'>7217</ELEMENTLIST>
+						</ELEMENTSLIST>
+						<ITEMS>
+							<ITEM label="Net forest change">6750</ITEM>
+						</ITEMS>
+						<AREAS>
+							<AREA label="Africa">5100</AREA>
+							<AREA label="America">5200</AREA>
+							<AREA label="Asia">5300</AREA>
+							<AREA label="Oceania">5500</AREA>
+						</AREAS>
+					</WHERE>
+					<SORT type="ASC">
+						<FIELD lang="true">A.AreaName</FIELD>
+					</SORT>
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>			
+	             
+				 </BASEQUERY>					
+			</RESOURCE>
+
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>BAR_WITH_CATEGORIES</OUTPUTTYPE>
+				<TITLE>
+					<E>Top 10 source countries (CO2 equivalent)</E>
+					<S>Top 10 source countries (CO2 equivalent)</S>
+					<F>Top 10 source countries (CO2 equivalent)</F>
+				</TITLE>
+				<APPLICABLE_FILTERS>
+					<APPLY_ALL_FILTERS_EXCEPT_AREAS>true</APPLY_ALL_FILTERS_EXCEPT_AREAS>
+				</APPLICABLE_FILTERS>
+				<SIZE>
+					<WIDTH>880</WIDTH>
+					<HEIGHT>250</HEIGHT>
+				</SIZE>
+				<DATEQUERY>
+					<MAXDATELIMIT>2010</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> -->
+					<TIMESPAN type="year">20</TIMESPAN>			
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+						<SELECT lang="true">E.ElementName</SELECT>	
+						<SELECT lang="true">A.AreaName</SELECT>	
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Agricultural Soils">GF</DOMAIN>
+						</DOMAINS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='CH4 Emissions'>7217</ELEMENTLIST>
+						</ELEMENTSLIST>
+						<ITEMS>
+							<ITEM label="All Animals">6750</ITEM>
+						</ITEMS>
+						<AREASBLACKLIST>
+								<AREABLACKLIST>41</AREABLACKLIST>
+								<AREABLACKLIST>228</AREABLACKLIST>
+							</AREASBLACKLIST>
+					</WHERE>
+					<SORT type="DESC">
+						<FIELD type="aggregation">D.Value</FIELD>
+					</SORT>	
+			
+					<NESTEDLIMIT field="D.AreaCode">10</NESTEDLIMIT>
+					<NESTEDSORT type="DESC">
+						<FIELD type="aggregation">D.Value</FIELD>
+					</NESTEDSORT>
+
+					
+				</BASEQUERY>					
+			</RESOURCE>
+			
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>BAR_WITH_CATEGORIES</OUTPUTTYPE>
+				<TITLE>
+					<E>Top 10 sink countries (CO2 equivalent)</E>
+					<S>Top 10 sink countries (CO2 equivalent)</S>
+					<F>Top 10 sink countries (CO2 equivalent)</F>
+				</TITLE>
+				<APPLICABLE_FILTERS>
+					<APPLY_ALL_FILTERS_EXCEPT_AREAS>true</APPLY_ALL_FILTERS_EXCEPT_AREAS>
+				</APPLICABLE_FILTERS>
+				<SIZE>
+					<WIDTH>880</WIDTH>
+					<HEIGHT>250</HEIGHT>
+				</SIZE>
+				<DATEQUERY>
+					<MAXDATELIMIT>2010</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> -->
+					<TIMESPAN type="year">20</TIMESPAN>			
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+						<SELECT lang="true">E.ElementName</SELECT>	
+						<SELECT lang="true">A.AreaName</SELECT>	
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Agricultural Soils">GF</DOMAIN>
+						</DOMAINS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='CH4 Emissions'>7217</ELEMENTLIST>
+						</ELEMENTSLIST>
+						<ITEMS>
+							<ITEM label="All Animals">6750</ITEM>
+						</ITEMS>
+						<AREASBLACKLIST>
+								<AREABLACKLIST>41</AREABLACKLIST>
+								<AREABLACKLIST>228</AREABLACKLIST>
+							</AREASBLACKLIST>
+					</WHERE>
+					<SORT type="ASC">
+						<FIELD type="aggregation">D.Value</FIELD>
+					</SORT>	
+			
+					<NESTEDLIMIT field="D.AreaCode">10</NESTEDLIMIT>
+					<NESTEDSORT type="ASC">
+						<FIELD type="aggregation">D.Value</FIELD>
+					</NESTEDSORT>
+				</BASEQUERY>					
+			</RESOURCE>
+		</DEFAULT>
+	</RESOURCES>
+</VIEW>

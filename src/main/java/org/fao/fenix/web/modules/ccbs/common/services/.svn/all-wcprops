@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/fenix/!svn/ver/6749/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ccbs/common/services
+END
+CCBSServiceEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/fenix/!svn/ver/6406/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ccbs/common/services/CCBSServiceEntry.java
+END
+CCBSServiceAsync.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/fenix/!svn/ver/6749/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ccbs/common/services/CCBSServiceAsync.java
+END
+CCBSService.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/fenix/!svn/ver/6749/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ccbs/common/services/CCBSService.java
+END

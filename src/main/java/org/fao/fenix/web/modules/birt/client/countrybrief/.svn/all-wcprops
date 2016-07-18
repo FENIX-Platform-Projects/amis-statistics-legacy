@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/fenix/!svn/ver/6747/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/client/countrybrief
+END
+CountryBriefController.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/fenix/!svn/ver/6747/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/client/countrybrief/CountryBriefController.java
+END
+CountryBriefCountries.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/fenix/!svn/ver/6405/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/client/countrybrief/CountryBriefCountries.java
+END
+ProvincesController.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/fenix/!svn/ver/6747/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/client/countrybrief/ProvincesController.java
+END
+CBToolBar.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/fenix/!svn/ver/6405/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/client/countrybrief/CBToolBar.java
+END
+CountryBriefView.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/fenix/!svn/ver/6747/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/client/countrybrief/CountryBriefView.java
+END
+ReportView.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/fenix/!svn/ver/6405/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/client/countrybrief/ReportView.java
+END
+ProvincesView.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/fenix/!svn/ver/6747/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/client/countrybrief/ProvincesView.java
+END

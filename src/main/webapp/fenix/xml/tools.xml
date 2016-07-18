@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tools>
+
+	<!-- Products -->
+	<tool name="ccbsTool"
+		  description="chartDesignerDescription"
+		  category="products"
+		  command="ccbsTool"
+		  iconStyle="dockbar-images/chart-icon.png" 
+		  removeForInstaller="false" />
+	<tool name="chartDesigner"
+		  description="chartDesignerDescription"
+		  category="products"
+		  command="chartDesigner"
+		  iconStyle="dockbar-images/chart-icon.png" 
+		  removeForInstaller="false" />
+	<tool name="tinyMCEReport"
+		  description="tinyMCEReportDescription"
+		  category="products"
+		  command="tinyMCEReport"
+		  iconStyle="dockbar-images/report-icon.png" 
+		  removeForInstaller="false" />
+	<tool name="olap"
+		  description="olapDescription"
+		  category="products"
+		  command="newOlap"
+		  iconStyle="dockbar-images/table-icon.png" 
+		  removeForInstaller="false" />
+	<tool name="dataset"
+		  description="datasetDescription"
+		  category="products"
+		  command="openDataset"
+		  iconStyle="dockbar-images/datasets-icon-160.png" 
+		  removeForInstaller="false" />
+	<tool name="image"
+		  description="imageDescription"
+		  category="products"
+		  command="openImage"
+		  iconStyle="dockbar-images/default-icon.png" 
+		  removeForInstaller="false" />
+	<tool name="statisticalTool"
+		  description="statisticalToolDescription"
+		  category="products"
+		  command="statisticalTool"
+		  iconStyle="dockbar-images/default-icon.png" 
+		  removeForInstaller="false" />
+	<tool name="ecReports"
+		  description="chartDesignerDescription"
+		  category="products"
+		  command="ecReports"
+		  iconStyle="dockbar-images/default-icon.png" 
+		  removeForInstaller="false" />
+
+	<tool name="text"
+		  description="chartDesignerDescription"
+		  category="products"
+		  command="openText"
+		  iconStyle="dockbar-images/default-icon.png" 
+		  removeForInstaller="false" />
+
+	<tool name="textGroup"
+		  description="chartDesignerDescription"
+		  category="products"
+		  command="openTextGroup"
+		  iconStyle="dockbar-images/default-icon.png" 
+		  removeForInstaller="false" />
+	
+	<!-- Data Management -->
+	<tool name="excelImporter"
+		  description="excelImporterDescription"
+		  category="dataManagement"
+		  command="excelImporter"
+		  iconStyle="dockbar-images/upload-icon.png" 
+		  removeForInstaller="false" />
+	<tool name="uploadCodingSystem"
+		  description="uploadCodingSystemDescription"
+		  category="dataManagement"
+		  command="codingUploader"
+		  iconStyle="dockbar-images/default-icon.png" 
+		  removeForInstaller="false" />
+	<tool name="uploadShape"
+		  description="uploadShapeDescription"
+		  category="dataManagement"
+		  command="uploadGWTShapeFile"
+		  iconStyle="dockbar-images/default-icon.png" 
+		  removeForInstaller="false" />
+	<tool name="uploadImage"
+		  description="uploadImageDescription"
+		  category="dataManagement"
+		  command="uploadImage"
+		  iconStyle="dockbar-images/default-icon.png" 
+		  removeForInstaller="false" />
+	
+	<!-- Security -->
+	<tool name="login"
+		  description="loginDescription"
+		  category="security"
+		  command="login"
+		  iconStyle="dockbar-images/signin-icon.png" 
+		  removeForInstaller="false" />
+	<tool name="logout"
+		  description="logoutDescription"
+		  category="security"
+		  command="logout"
+		  iconStyle="dockbar-images/signin-icon.png" 
+		  removeForInstaller="false" />
+	
+	<!-- Administration -->
+	<tool name="recreateCharts"
+		  description="recreateChartsDescription"
+		  category="administration"
+		  command="recreateCharts"
+		  iconStyle="dockbar-images/default-icon.png" 
+		  removeForInstaller="false" />
+	<tool name="userManager"
+		  description="userManagerDescription"
+		  category="administration"
+		  command="userManager"
+		  iconStyle="dockbar-images/default-icon.png" 
+		  removeForInstaller="false" />
+	<tool name="groupManager"
+		  description="groupManagerDescription"
+		  category="administration"
+		  command="groupManager"
+		  iconStyle="dockbar-images/default-icon.png" 
+		  removeForInstaller="false" />
+	<tool name="permissionManager"
+		  description="permissionManagerDescription"
+		  category="administration"
+		  command="permissionManager"
+		  iconStyle="dockbar-images/default-icon.png" 
+		  removeForInstaller="false" />
+	<tool name="userProperties"
+		  description="userPropertiesDescription"
+		  category="administration"
+		  command="userProperties"
+		  iconStyle="dockbar-images/default-icon.png" 
+		  removeForInstaller="false" />
+		  
+	<!-- Utils -->
+	<tool name="resourceExplorer"
+		  description="resourceExplorerDescription"
+		  category="utils"
+		  command="openAll"
+		  iconStyle="dockbar-images/re-icon.png" 
+		  removeForInstaller="false" />
+	<tool name="findCode"
+		  description="findCodeDescription"
+		  category="utils"
+		  command="codingFindConvert"
+		  iconStyle="dockbar-images/default-icon.png" 
+		  removeForInstaller="false" />
+		  
+</tools>

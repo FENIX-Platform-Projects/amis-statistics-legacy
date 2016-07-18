@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/fenix/!svn/ver/6395/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/aquastat/common/services
+END
+AquastatServiceEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/fenix/!svn/ver/6395/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/aquastat/common/services/AquastatServiceEntry.java
+END
+AquastatServiceAsync.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/fenix/!svn/ver/6395/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/aquastat/common/services/AquastatServiceAsync.java
+END
+AquastatService.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/fenix/!svn/ver/6395/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/aquastat/common/services/AquastatService.java
+END

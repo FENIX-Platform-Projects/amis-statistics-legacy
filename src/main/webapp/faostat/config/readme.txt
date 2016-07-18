@@ -1,0 +1,1 @@
+This folder contains the XML configuration files for each "Visualize By" View

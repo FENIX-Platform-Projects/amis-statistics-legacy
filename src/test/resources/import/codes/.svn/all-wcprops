@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/fenix/!svn/ver/6398/trunk/fenix-web/src/test/resources/import/codes
+END
+GAUL_metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/fenix/!svn/ver/6398/trunk/fenix-web/src/test/resources/import/codes/GAUL_metadata.xml
+END
+GAUL0.csv
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/fenix/!svn/ver/6398/trunk/fenix-web/src/test/resources/import/codes/GAUL0.csv
+END
+GAUL1.csv
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/fenix/!svn/ver/6398/trunk/fenix-web/src/test/resources/import/codes/GAUL1.csv
+END

@@ -1,0 +1,19 @@
+<metadata>
+	<type>Indicator</type>
+	<title>HaitiFeatureTypes</title>
+	<abstractAbstract>Pre-defined Feature Types to be used by the Haiti Agricultural Emergency Tool of the GIEWS Workstation</abstractAbstract>
+	<keywords>Haiti, Feature, Type</keywords>
+	<provider country="0" contact="Info-GIEWS-Workstation@fao.org">UN FAO</provider>
+	<source country="0" contact="Info-GIEWS-Workstation@fao.org">UN FAO</source>
+	<region>0</region>
+	<startDate></startDate>
+	<endDate></endDate>
+	<dateLastUpdate></dateLastUpdate>
+	<periodTypeCode></periodTypeCode>
+	<sharingCode>Public</sharingCode>
+	<refGeoUnit></refGeoUnit>
+	<layerCodeSet></layerCodeSet>
+	<precision></precision>
+	<categories></categories>
+	<code></code>
+</metadata>

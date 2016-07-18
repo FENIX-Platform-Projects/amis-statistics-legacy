@@ -1,0 +1,29 @@
+<layer type="shp">
+  <title>Kenya Roads</title>
+  <abstract>Generated from KenyaRoads -- Shapefile Layer 'KenyaRoads::kenya_roads'</abstract>
+  <source country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</source>
+  <provider country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</provider>
+  <region>133</region>
+  <categories />
+  <sharingcode>Public</sharingcode>
+  <featuretype>
+    <title>Kenya Roads</title>
+    <abstract>Generated from KenyaRoads</abstract>
+    <defaultstyle>roads</defaultstyle>
+    <bbox>
+      <srs>4326</srs>
+      <minx>33.97957229614258</minx>
+      <maxx>41.911163330078125</maxx>
+      <miny>-4.63598108291626</miny>
+      <maxy>4.939201354980469</maxy>
+    </bbox>
+    <layername>kenya_roads</layername>
+    <datastore>
+      <name>KenyaRoads</name>
+      <namespace>fenix</namespace>
+    </datastore>
+  </featuretype>
+  <!--Data dumped from geoserver at:-->
+  <!--REST url: http://ldvapp07.fao.org:8032/geoserverDev-->
+  <!--WMS url: http://ldvapp07.fao.org:8032/geoserverDev/wms?-->
+</layer>

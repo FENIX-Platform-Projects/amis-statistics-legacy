@@ -1,0 +1,79 @@
+@CHARSET "UTF-8";
+
+.title {
+	font-family: verdana;
+	font-size: 10pt;
+	color: #094463;
+	font-weight: bold;
+}
+
+.text {
+	text-align: justify;
+	font-family: verdana;
+	font-size: 8pt;
+}
+
+.bullet-list li {
+    background: url("blue_circle_bullet.png") no-repeat scroll 0 4px transparent;
+    line-height: 1.2em;
+    list-style: none outside none;
+    margin: 0.4em 0;
+    padding: 0 0 0 15px;
+}
+
+#hor-minimalist-a {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border-collapse: collapse;
+	font-family: 'Lucida Sans Unicode','Lucida Grande',Sans-Serif;
+	font-size: 12px;
+	margin: 20px;
+	text-align: left;
+	width: 480px;
+}
+
+#hor-minimalist-a th {
+	border-bottom: 2px solid #6678B1;
+	color: #003399;
+	font-size: 14px;
+	font-weight: normal;
+	padding: 10px 8px;
+}
+
+#hor-minimalist-a td {
+	color: #666699;
+	padding: 9px 8px 0;
+}
+
+#hor-minimalist-a tbody tr:hover td {
+	color: #000099;
+}
+
+#hor-minimalist-b {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border-collapse: collapse;
+	font-family: 'Lucida Sans Unicode','Lucida Grande',Sans-Serif;
+	font-size: 12px;
+	margin: 20px;
+	text-align: left;
+	width: 480px;
+}
+
+#hor-minimalist-b th {
+	border-bottom: 2px solid #6678B1;
+	color: #003399;
+	font-size: 14px;
+	font-weight: normal;
+	padding: 10px 8px;
+	cursor: pointer;
+}
+
+#hor-minimalist-b td {
+	border-bottom: 1px solid #CCCCCC;
+	color: #666699;
+	padding: 6px 8px;
+}
+
+#hor-minimalist-b tbody tr:hover td {
+	color: #000099;
+	cursor: pointer;
+}

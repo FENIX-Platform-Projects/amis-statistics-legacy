@@ -1,0 +1,34 @@
+<root>
+	<category category='Agriculture and Farming' >
+		<pdf file='AEZ' label='Agroecological Zones'/>
+		<pdf file='land_cover' label='Land Cover Use'/>
+	</category>	
+	<category category='Crop Calendar'>
+		<pdf file='crop_commonbeans_first_sowing_season' label='Common Beans first sowing season'/>
+		<pdf file='crop_commonbeans_second_sowing_season' label='Common Beans second sowing season'/>
+		<pdf file='crop_cowpea_first_sowing_season' label='Cowpea first sowing season'/>
+		<pdf file='crop_cowpea_second_sowing_season' label='Cowpea second sowing season'/>
+		<pdf file='crop_maize_first_sowing_season' label='Maize first sowing season'/>
+		<pdf file='crop_maize_second_sowing_season' label='Maize second sowing season'/>
+		<pdf file='crop_rice_first_sowing_season' label='Rice first sowing season'/>
+		<pdf file='crop_rice_second_sowing_season' label='Rice second sowing season'/>
+		<pdf file='crop_sorghum_first_sowing_season' label='Sorghum first sowing season'/>
+		<pdf file='crop_sorghum_second_sowing_season' label='Sorghum second sowing season'/>
+	</category>
+		<category category='Food Security and Poverty'>
+		<pdf file='livelihood_zones' label='Livelihood zones'/>
+		<pdf file='annnual_food_needs_cov_by_consump_owncrops' label='Percent of Poor Households Annual Food Needs Covered by Consumption of Own Crops'/>
+		<pdf file='annnual_food_needs_covered_by_casual_labour' label='Percent of Poor Households Annual Food Needs Covered by Casual Labour'/>
+		<pdf file='annual_food_needs_cov_by_income_from_sale_own_livestock' label='Percent of Poor Households Annual Income from the Sale of Own Livestock Products'/>
+		<pdf file='annual_food_needs_cov_by_own_crop_sales' label='Percent of Poor Households Annual Food Needs Covered by Own Crop Sales'/>
+		<pdf file='annual_food_needs_cov_by_purchases' label='Percent of Poor Households Annual Food Needs Covered by Purchases'/>
+		<pdf file='percentage_of_moderate_stunting_among_children_under_five' label='Percentage of moderate stunting among children under five'/>	
+		<pdf file='percentage_of_moderate_wasting_among_children_under_five' label='Percentage of moderate wasting among children under five'/>	
+		<pdf file='percentage_of_severe_stunting_among_children_under_five' label='Percentage of severe stunting among children under five'/>
+<pdf file='percentage_of_severe_wasting_among_children_under_five' label='Percentage of severe wasting among children under five'/>
+	</category>
+	<category category='Society, Culture and Demography'>
+		<pdf file='population_estimates_2003' label='Population Distribution (Year 2003)'/>
+		<pdf file='total_population_year2003' label='Total Population (Year 2003)'/>
+	</category>
+</root>

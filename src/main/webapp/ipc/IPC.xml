@@ -1,0 +1,370 @@
+<ipc>
+	<module level="1">
+		<freeText name="Crude Mortality Rate" code="FT-00">
+			<rangeCode></rangeCode>
+			<rangeLabel></rangeLabel>
+			<exactValue></exactValue>
+			<levelCode></levelCode>
+			<levelLabel></levelLabel>
+			<bulletPoints>
+				<bulletPoint>
+					<text></text>
+					<directEvidence>false</directEvidence>
+				</bulletPoint>
+			</bulletPoints>
+		</freeText>
+			<freeText name="Acute Malnutrition" code="FT-01">
+				<rangeCode></rangeCode>
+				<rangeLabel></rangeLabel>
+				<exactValue></exactValue>
+				<levelCode></levelCode>
+				<levelLabel></levelLabel>
+				<bulletPoints>
+					<bulletPoint>
+						<text></text>
+						<directEvidence>false</directEvidence>
+					</bulletPoint>
+				</bulletPoints>
+			</freeText>
+			<freeText name="Disease" code="FT-02">
+				<rangeCode></rangeCode>
+				<rangeLabel></rangeLabel>
+				<exactValue>0</exactValue>
+				<levelCode></levelCode>
+				<levelLabel></levelLabel>
+				<bulletPoints>
+					<bulletPoint>
+						<text></text>
+						<directEvidence>false</directEvidence>
+					</bulletPoint>
+				</bulletPoints>
+			</freeText>
+			<freeText name="Food Access / Availability" code="FT-03">
+				<rangeCode></rangeCode>
+				<rangeLabel></rangeLabel>
+				<exactValue>0</exactValue>
+				<levelCode></levelCode>
+				<levelLabel></levelLabel>
+				<bulletPoints>
+					<bulletPoint>
+						<text></text>
+						<directEvidence>false</directEvidence>
+					</bulletPoint>
+				</bulletPoints>
+			</freeText>
+			<freeText name="Dietary diversity" code="FT-04">
+				<rangeCode></rangeCode>
+				<rangeLabel></rangeLabel>
+				<exactValue>0</exactValue>
+				<levelCode></levelCode>
+				<levelLabel></levelLabel>
+				<bulletPoints>
+					<bulletPoint>
+						<text></text>
+						<directEvidence>false</directEvidence>
+					</bulletPoint>
+				</bulletPoints>
+			</freeText>
+			<freeText name="Water access / availability" code="FT-05">
+				<rangeCode></rangeCode>
+				<rangeLabel></rangeLabel>
+				<exactValue>0</exactValue>
+				<levelCode></levelCode>
+				<levelLabel></levelLabel>
+				<bulletPoints>
+					<bulletPoint>
+						<text></text>
+						<directEvidence>false</directEvidence>
+					</bulletPoint>
+				</bulletPoints>
+			</freeText>
+			<freeText name="Destitution / Displacement" code="FT-06">
+				<rangeCode></rangeCode>
+				<rangeLabel></rangeLabel>
+				<exactValue>0</exactValue>
+				<levelCode></levelCode>
+				<levelLabel></levelLabel>
+				<bulletPoints>
+					<bulletPoint>
+						<text></text>
+						<directEvidence>false</directEvidence>
+					</bulletPoint>
+				</bulletPoints>
+			</freeText>
+			<freeText name="Civil Security" code="FT-07">
+				<rangeCode></rangeCode>
+				<rangeLabel></rangeLabel>
+				<exactValue>0</exactValue>
+				<levelCode></levelCode>
+				<levelLabel></levelLabel>
+				<bulletPoints>
+					<bulletPoint>
+						<text></text>
+						<directEvidence>false</directEvidence>
+					</bulletPoint>
+				</bulletPoints>
+			</freeText>
+			<freeText name="Coping" code="FT-08">
+				<rangeCode></rangeCode>
+				<rangeLabel></rangeLabel>
+				<exactValue>0</exactValue>
+				<levelCode></levelCode>
+				<levelLabel></levelLabel>
+				<bulletPoints>
+					<bulletPoint>
+						<text></text>
+						<directEvidence>false</directEvidence>
+					</bulletPoint>
+				</bulletPoints>
+			</freeText>
+			<freeText name="Structural Issues" code="FT-09">
+				<rangeCode></rangeCode>
+				<rangeLabel></rangeLabel>
+				<exactValue>0</exactValue>
+				<levelCode></levelCode>
+				<levelLabel></levelLabel>
+				<bulletPoints>
+					<bulletPoint>
+						<text></text>
+						<directEvidence>false</directEvidence>
+					</bulletPoint>
+				</bulletPoints>
+			</freeText>
+			<freeText name="Hazards" code="FT-10">
+				<rangeCode></rangeCode>
+				<rangeLabel></rangeLabel>
+				<exactValue>0</exactValue>
+				<levelCode></levelCode>
+				<levelLabel></levelLabel>
+				<bulletPoints>
+					<bulletPoint>
+						<text></text>
+						<directEvidence>false</directEvidence>
+					</bulletPoint>
+				</bulletPoints>
+			</freeText>
+			<freeText name="Livelihood Assets (5 capitals)" code="FT-11">
+				<rangeCode></rangeCode>
+				<rangeLabel></rangeLabel>
+				<exactValue>0</exactValue>
+				<levelCode></levelCode>
+				<levelLabel></levelLabel>
+				<bulletPoints>
+					<bulletPoint>
+						<text></text>
+						<directEvidence>false</directEvidence>
+					</bulletPoint>
+				</bulletPoints>
+			</freeText>
+	</module>
+	<module level="2">
+		<dropDown name="Projected Phase" code="DD-00">
+			<dropDownCode></dropDownCode>
+			<dropDownLabel></dropDownLabel>
+		</dropDown>
+		<freeText name="Evidence of Risk for Worsening Phase or Magnitude" code="FT-12">
+			<bulletPoints>
+				<bulletPoint>
+					<text></text>
+					<directEvidence>false</directEvidence>
+				</bulletPoint>
+			</bulletPoints>
+		</freeText>
+		<dropDown name="Risk Level" code="DD-01">
+			<dropDownCode></dropDownCode>
+			<dropDownLabel></dropDownLabel>
+		</dropDown>
+	</module>
+	<module level="3">
+		<dropDown name="Risk Level" code="DD-02">
+			<dropDownCode></dropDownCode>
+			<dropDownLabel></dropDownLabel>
+		</dropDown>
+		<dropDown name="Projected Trend" code="DD-03">
+			<dropDownCode></dropDownCode>
+			<dropDownLabel></dropDownLabel>
+		</dropDown>
+	<freeText name="Immediate Hazards" code="FT-13">
+				<bulletPoints>
+					<bulletPoint>
+						<text></text>
+						<directEvidence>false</directEvidence>
+					</bulletPoint>
+				</bulletPoints>
+			</freeText>
+			<freeText name="Direct Food Security Problem" code="FT-14">
+				<bulletPoints>
+					<bulletPoint>
+						<text></text>
+						<directEvidence>false</directEvidence>
+					</bulletPoint>
+				</bulletPoints>
+			</freeText>
+			<freeText name="Effect on Livelihood Strategies" code="FT-15">
+				<bulletPoints>
+					<bulletPoint>
+						<text></text>
+						<directEvidence>false</directEvidence>
+					</bulletPoint>
+				</bulletPoints>
+			</freeText>
+			<freeText name="Population Affected" code="FT-16">
+				<bulletPoints>
+					<bulletPoint>
+						<text></text>
+						<directEvidence>false</directEvidence>
+					</bulletPoint>
+				</bulletPoints>
+			</freeText>
+			<freeText name="Risk Factors to Monitor" code="FT-17">
+				<bulletPoints>
+					<bulletPoint>
+						<text></text>
+						<directEvidence>false</directEvidence>
+					</bulletPoint>
+				</bulletPoints>
+			</freeText>
+			<freeText name="Opportunities for Response" code="FT-18">
+				<bulletPoints>
+					<bulletPoint>
+						<text></text>
+						<directEvidence>false</directEvidence>
+					</bulletPoint>
+				</bulletPoints>
+			</freeText>
+	</module>
+	<module level="4">
+		<dropDown name="Current or Imminent Phase" code="DD-04">
+			<dropDownCode></dropDownCode>
+			<dropDownLabel></dropDownLabel>
+		</dropDown>
+		<freeText name="Underlying Causes" code="FT-19">
+			<bulletPoints>
+				<bulletPoint>
+					<text></text>
+					<directEvidence>false</directEvidence>
+				</bulletPoint>
+			</bulletPoints>
+		</freeText>
+		<freeText name="Physical Capital" code="FT-20">
+				<bulletPoints>
+					<bulletPoint>
+						<text></text>
+						<directEvidence>false</directEvidence>
+					</bulletPoint>
+				</bulletPoints>
+				<dropDown name="Projected Trend" code="DD-05">
+					<dropDownCode></dropDownCode>
+					<dropDownLabel></dropDownLabel>
+				</dropDown>
+				<freeText name="Action" code="FT-21">
+					<bulletPoints>
+						<bulletPoint>
+							<text></text>
+							<directEvidence>false</directEvidence>
+						</bulletPoint>
+					</bulletPoints>
+				</freeText>
+			</freeText>
+			<freeText name="Social Capital" code="FT-22">
+				<bulletPoints>
+					<bulletPoint>
+						<text></text>
+						<directEvidence>false</directEvidence>
+					</bulletPoint>
+				</bulletPoints>
+				<dropDown name="Projected Trend" code="DD-06">
+					<dropDownCode></dropDownCode>
+					<dropDownLabel></dropDownLabel>
+				</dropDown>
+				<freeText name="Action" code="FT-23">
+					<bulletPoints>
+						<bulletPoint>
+							<text></text>
+							<directEvidence>false</directEvidence>
+						</bulletPoint>
+					</bulletPoints>
+				</freeText>
+			</freeText>
+			<freeText name="Financial Capital" code="FT-24">
+				<bulletPoints>
+					<bulletPoint>
+						<text></text>
+						<directEvidence>false</directEvidence>
+					</bulletPoint>
+				</bulletPoints>
+				<dropDown name="Projected Trend" code="DD-07">
+					<dropDownCode></dropDownCode>
+					<dropDownLabel></dropDownLabel>
+				</dropDown>
+				<freeText name="Action" code="FT-25">
+					<bulletPoints>
+						<bulletPoint>
+							<text></text>
+							<directEvidence>false</directEvidence>
+						</bulletPoint>
+					</bulletPoints>
+				</freeText>
+			</freeText>
+			<freeText name="Natural Capital" code="FT-26">
+				<bulletPoints>
+					<bulletPoint>
+						<text></text>
+						<directEvidence>false</directEvidence>
+					</bulletPoint>
+				</bulletPoints>
+				<dropDown name="Projected Trend" code="DD-08">
+					<dropDownCode></dropDownCode>
+					<dropDownLabel></dropDownLabel>
+				</dropDown>
+				<freeText name="Action" code="FT-27">
+					<bulletPoints>
+						<bulletPoint>
+							<text></text>
+							<directEvidence>false</directEvidence>
+						</bulletPoint>
+					</bulletPoints>
+				</freeText>
+			</freeText>
+			<freeText name="Human Capital" code="FT-28">
+				<bulletPoints>
+					<bulletPoint>
+						<text></text>
+						<directEvidence>false</directEvidence>
+					</bulletPoint>
+				</bulletPoints>
+				<dropDown name="Projected Trend" code="DD-09">
+					<dropDownCode></dropDownCode>
+					<dropDownLabel></dropDownLabel>
+				</dropDown>
+				<freeText name="Action" code="FT-29">
+					<bulletPoints>
+						<bulletPoint>
+							<text></text>
+							<directEvidence>false</directEvidence>
+						</bulletPoint>
+					</bulletPoints>
+				</freeText>
+			</freeText>
+			<freeText name="Local Political Capital" code="FT-30">
+				<bulletPoints>
+					<bulletPoint>
+						<text></text>
+						<directEvidence>false</directEvidence>
+					</bulletPoint>
+				</bulletPoints>
+				<dropDown name="Projected Trend" code="DD-10">
+					<dropDownCode></dropDownCode>
+					<dropDownLabel></dropDownLabel>
+				</dropDown>
+				<freeText name="Action" code="FT-31">
+					<bulletPoints>
+						<bulletPoint>
+							<text></text>
+							<directEvidence>false</directEvidence>
+						</bulletPoint>
+					</bulletPoints>
+				</freeText>
+			</freeText>
+	</module>
+</ipc>

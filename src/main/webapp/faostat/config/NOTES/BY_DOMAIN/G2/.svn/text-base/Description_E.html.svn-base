@@ -1,0 +1,217 @@
+<div class='text'><br />
+The LULUCF domain in FAOSTAT includes:<br />
+<ul class='bullet-list'>
+	<li>LULUCF Total</li>
+	<li>Forest land</li>
+	<li>Cropland</li>
+	<li>Grassland</li>
+	<li>Wetlands</li>
+	<li>Settlements</li>
+	<li>Other land</li>
+</ul>
+<br />
+The FAOSTAT GHG-LULUCF database provide information for producing&nbsp;
+inventories for the land use, land-use change and forestry sectors.<br />
+<br />
+Changes in land-based carbon stocks and ecosystem function linked to&nbsp;
+anthropogenic activities such as deforestation, land-use change,&nbsp;
+management change, etc., determine emissions and removals of greenhouse&nbsp;
+gases that are reported by countries in the Intergovernmental Panel on&nbsp;
+Climate Change (IPCC) Land Use, Land-Use Change and Forestry (LULUCF)&nbsp;
+categories.<br />
+<br />
+Greenhouse gas fluxes in the LULUCF comprise both those associated with&nbsp;
+net changes in biomass and thus carbon (C) stocks over time and those&nbsp;
+computed as changes in gas flux rates to and from the atmosphere. In&nbsp;
+general, increases in total C stocks over time are equated with a net&nbsp;
+removal of carbon dioxide (CO<sub>2</sub>) from the atmosphere while&nbsp;
+decreases in total C stocks (less transfers to other pools such as&nbsp;
+harvested wood products) are equated with net CO<sub>2</sub> emissions.&nbsp;
+Significant CO<sub>2</sub> emissions are likewise associated to&nbsp;
+combustion of residues associated to given land use or land-use change&nbsp;
+practices. Non-CO<sub>2</sub> emissions are driven by changes in&nbsp;
+microbiological processes within soils and discarded and decaying&nbsp;
+organic material. <br />
+<br />
+The FAOSTAT GHG-LULUCF database reports activity data, emission factors&nbsp;
+and emissions relative to the six IPCC categories: Forest Land,&nbsp;
+Cropland, Grassland, Wetlands, Settlements, and Other Land, following&nbsp;
+IPCC guidelines. It is worth noting that IPCC and FAOSTAT differ in how&nbsp;
+the six land-use categories are defined (see table below). Importantly,&nbsp;
+wetlands ad settlements are not defined in the standard FAOSTAT land-use&nbsp;
+questionnaire, although recent efforts are under way to include&nbsp;
+reporting from these two land categories. <br />
+<br />
+<table border='1' bordercolor='#FFFFFF' cellpadding='2' cellspacing='0'>
+	<tr>
+		<td
+			style='background-color: #5BC151; color: #FFFFFF; text-align: center;'>
+		<b>Land-Use Category</b></td>
+		<td
+			style='background-color: #5BC151; color: #FFFFFF; text-align: center;'
+			width='45%'><b>IPCC</b></td>
+		<td
+			style='background-color: #5BC151; color: #FFFFFF; text-align: center;'
+			width='45%'><b>FAOSTAT</b></td>
+	</tr>
+	<tr>
+		<td
+			style='background-color: #5BC151; color: #FFFFFF; text-align: center;'>
+		<b>Forest<br />
+		Land</b></td>
+		<td style='padding: 10px;'>Forest Land includes all land with&nbsp;
+		woody vegetation consistent with thresholds used to define Forest Land&nbsp;
+		in the national greenhouse gas inventory. It also includes systems&nbsp;
+		with a vegetation structure that currently fall below, but in situ&nbsp;
+		could potentially reach the threshold values used by a country to&nbsp;
+		define the Forest Land category.</td>
+		<td style='padding: 10px;'>Forest area is the land spanning more&nbsp;
+		than 0.5 hectares with trees higher than 5 metres and a canopy cover&nbsp;
+		of more than 10 percent, or trees able to reach these thresholds in&nbsp;
+		situ (FRA). It does not include land that is predominantly under&nbsp;
+		agricultural or urban land use. Forest is determined both by the&nbsp;
+		presence of trees and the absence of other predominant land uses. The&nbsp;
+		trees should be able to reach a minimum height of 5 metres (m) in&nbsp;
+		situ. Areas under reforestation that have not yet reached but are&nbsp;
+		expected to reach a canopy cover of 10 percent and a tree height of 5&nbsp;
+		m are included, as are temporarily unstocked areas, resulting from&nbsp;
+		human intervention or natural causes, which are expected to&nbsp;
+		regenerate.</td>
+	</tr>
+	<tr>
+		<td
+			style='background-color: #5BC151; color: #FFFFFF; text-align: center;'>
+		<b>Cropland</b></td>
+		<td style='padding: 10px;'>Cropland includes arable and tillable&nbsp;
+		land, rice fields, and agroforestry systems where the vegetation&nbsp;
+		structure falls below the thresholds used for the Forest Land&nbsp;
+		category, and is not expected to exceed those thresholds at a later&nbsp;
+		time. Cropland includes all annual and perennial crops as well as&nbsp;
+		temporary fallow land (i.e., land set at rest for one or several years&nbsp;
+		before being cultivated again). Annual crops include cereals, oils&nbsp;
+		seeds, vegetables, root crops and forages. Perennial crops include&nbsp;
+		trees and shrubs, in combination with herbaceous crops (e.g.,&nbsp;
+		agroforestry) or as orchards, vineyards and plantations such as cocoa,&nbsp;
+		coffee, tea, oil palm, coconut, rubber trees, and bananas, except&nbsp;
+		where these lands meet the criteria for categorisation as Forest Land.&nbsp;
+		Arable land which is normally used for cultivation of annual crops but&nbsp;
+		which is temporarily used for forage crops or grazing as part of an&nbsp;
+		annual crop-pasture rotation (mixed system) is included under&nbsp;
+		cropland.</td>
+		<td style='padding: 10px;'>Arable land is the land under&nbsp;
+		temporary agricultural crops (multiple-cropped areas are counted only&nbsp;
+		once), temporary meadows for mowing or pasture, land under market and&nbsp;
+		kitchen gardens and land temporarily fallow (less than five years).&nbsp;
+		The abandoned land resulting from shifting cultivation is not included&nbsp;
+		in this category. Data for “Arable land” are not meant to indicate the&nbsp;
+		amount of land that is potentially cultivable. <br />
+		<br />
+		Permanent crops is the land cultivated with long-term crops which do&nbsp;
+		not have to be replanted for several years; land under trees and&nbsp;
+		shrubs producing flowers, such as roses and jasmine; and nurseries&nbsp;
+		(except those for forest trees, which should be classified under&nbsp;
+		"forest"). It includes agro-forestry systems, orchards, vineyards and&nbsp;
+		plantations such as cocoa, coffee, rubber, oil palm etc. Permanent&nbsp;
+		meadows and pastures are excluded from land under permanent crops.</td>
+	</tr>
+	<tr>
+		<td
+			style='background-color: #5BC151; color: #FFFFFF; text-align: center;'>
+		<b>Grassland</b></td>
+		<td style='padding: 10px;'>Grassland is defined as rangelands and&nbsp;
+		pasture land that are not considered Cropland. Grasslands are&nbsp;
+		generally dominated by perennial grasses but may include systems with&nbsp;
+		woody vegetation and other non-grass vegetation such as herbs and&nbsp;
+		brushes that fall below the thresholds used to define forests. They&nbsp;
+		may include agricultural and silvi-pastoral systems consistent with&nbsp;
+		national definitions. Grasslands vary greatly in their degree and&nbsp;
+		intensity of management, from extensively managed rangelands and&nbsp;
+		savannahs – where animal stocking rates and fire regimes are the main&nbsp;
+		management variables – to intensively managed (e.g., with&nbsp;
+		fertilization, irrigation, species changes) continuous pasture and hay&nbsp;
+		land. Grasslands generally have vegetation dominated by perennial&nbsp;
+		grasses, and grazing is the predominant land use.</td>
+		<td style='padding: 10px;'>Permanent meadows and pastures is the&nbsp;
+		land used permanently (five years or more) to grow herbaceous forage&nbsp;
+		crops. It includes: cultivated pasture and naturally grown, that is&nbsp;
+		the land not being controlled under permanent meadows and pastures&nbsp;
+		such as wild prairie or grazing land.</td>
+	</tr>
+	<tr>
+		<td
+			style='background-color: #5BC151; color: #FFFFFF; text-align: center;'>
+		<b>Wetlands</b></td>
+		<td style='padding: 10px;'>Wetlands include any land that is&nbsp;
+		covered or saturated by water for all or part of the year, and that&nbsp;
+		does not fall into the Forest Land, Cropland, or Grassland categories.&nbsp;
+		Managed wetlands will be restricted to wetlands where the water table&nbsp;
+		is artificially changed (e.g., drained or raised) or those created&nbsp;
+		through human activity (e.g., damming a river). Emissions from&nbsp;
+		unmanaged wetlands are not estimated.</td>
+		<td style='padding: 10px;'>Wetlands is any land that is covered&nbsp;
+		or saturated by water for all or part of the year, and that does not&nbsp;
+		fall into the Agricultural area or Forest area categories.</td>
+	</tr>
+	<tr>
+		<td
+			style='background-color: #5BC151; color: #FFFFFF; text-align: center;'>
+		<b>Settlements</b></td>
+		<td style='padding: 10px;'>Settlements include all developed land&nbsp;
+		-- i.e., residential, transportation, commercial, and production&nbsp;
+		(commercial, manufacturing) infrastructure of any size, unless it is&nbsp;
+		already included under other land-use categories. The land-use&nbsp;
+		category Settlements includes soils, herbaceous perennial vegetation&nbsp;
+		such as turf grass and garden plants, trees in rural settlements,&nbsp;
+		homestead gardens and urban areas. Examples of settlements include&nbsp;
+		land along streets, in residential (rural and urban) and commercial&nbsp;
+		lawns, in public and private gardens, in golf courses and athletic&nbsp;
+		fields, and in parks, provided such land is functionally or&nbsp;
+		administratively associated with particular cities, villages or other&nbsp;
+		settlement types and is not accounted for in another land-use&nbsp;
+		category.</td>
+		<td style='padding: 10px;'>Settlements is any developed land,&nbsp;
+		i.e., residential, transportation, commercial, not included in the&nbsp;
+		Agricultural area and Forest area categories. The land-use category&nbsp;
+		"Settlements" includes land in rural settlements and urban areas.&nbsp;
+		Examples of settlements include land along streets, in residential&nbsp;
+		(rural and urban) and commercial lawns, in public and private gardens,&nbsp;
+		in golf courses and athletic fields, and in parks, provided such land&nbsp;
+		is functionally or administratively associated with particular cities,&nbsp;
+		villages or other settlement types.</td>
+	</tr>
+	<tr>
+		<td
+			style='background-color: #5BC151; color: #FFFFFF; text-align: center;'>
+		<b>Other<br />
+		Land</b></td>
+		<td style='padding: 10px;'>Other Land to include bare soil, rock,&nbsp;
+		ice, and all land areas that do not fall into any of the other five&nbsp;
+		land-use categories.</td>
+		<td style='padding: 10px;'>Other land is the land not classified&nbsp;
+		as Agricultural land and Forest area. It includes built-up and related&nbsp;
+		land, barren land, other wooded land, etc.</td>
+	</tr>
+</table>
+<br />
+<br />
+When reporting emissions from land, countries distinguish—as per IPCC&nbsp;
+guidelines—between land areas remaining in the same category –and land&nbsp;
+areas converted from one category to another. In the former, reported&nbsp;
+emissions or removals are those relative to land use (LU) activities,&nbsp;
+such as forestry or pasture management practices, etc.; in the latter,&nbsp;
+reported emissions or removals are those associated to land-use change&nbsp;
+(LUC) practices, such as deforestation, conservation, etc. <br />
+<br />
+The LULUCF section has unique characteristics with respect to developing&nbsp;
+inventory methods. There are many processes leading to emissions and&nbsp;
+removals of greenhouse gases, which can be widely dispersed in space and&nbsp;
+highly variable in time. Furthermore, the factors governing emissions&nbsp;
+and removals can be both natural and anthropogenic (direct and indirect)&nbsp;
+in nature, so that it can be difficult to clearly distinguish among&nbsp;
+causal factors. While recognizing this complexity, the IPCC guidelines&nbsp;
+followed herein attempt to prescribe rules for developing inventories in&nbsp;
+practical, relatively easy steps that countries can follow, resulting in&nbsp;
+databases that are relevant as well as operational, i.e., easily&nbsp;
+revisable and updated at regular time intervals. <br />
+<br />
+</div>

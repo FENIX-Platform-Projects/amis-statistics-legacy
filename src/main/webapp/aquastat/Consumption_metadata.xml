@@ -1,0 +1,56 @@
+<metadata>
+<type>AquastatWaterConsumptionDataset</type>
+<periodTypeCode>yearly</periodTypeCode>
+<abstractAbstract>AQUASTAT Water Consumption</abstractAbstract>
+<keywords>AQUASTAT Water Consumption</keywords>
+<provider country="0" contact="amit.kohli@fao.org">AQUASTAT</provider>
+<region>0</region>
+<startDate>1963-01-01</startDate>
+<endDate>2007-12-31</endDate>
+<dateLastUpdate>2009-02-23</dateLastUpdate>
+<sharingCode>Public</sharingCode>
+<source country="0" contact="amit.kohli@fao.org">AQUASTAT</source>
+<categories>027</categories>
+<title>AQUASTAT Water Consumption</title>
+<code>AQUASTAT_WATER_CONSUMPTION</code>
+<descriptors>
+	<descriptor key="true">
+		<header>Year</header>
+		<contentDescriptor>date</contentDescriptor>
+	</descriptor>
+	<descriptor>
+		<header>Value</header>
+		<contentDescriptor>quantity</contentDescriptor>
+	</descriptor>
+	<descriptor key="true">
+		<header>Measurement Unit</header>
+		<contentDescriptor>measurementUnit</contentDescriptor>
+	</descriptor>
+	<descriptor key="true">
+		<header>Indicator</header>
+		<contentDescriptor>firstIndicator</contentDescriptor>
+		<options>
+			<option>
+				<name>Indicator</name>
+				<value>Aquastat</value>
+				<region>0</region>
+			</option>
+		</options>
+	</descriptor>
+	<descriptor key="true">
+		<header>Geographic Area</header>
+		<contentDescriptor>featureCode</contentDescriptor>
+		<options>
+			<option>
+				<name>Geographic</name>
+				<value>GAUL</value>
+				<region>0</region>
+			</option>
+		</options>
+	</descriptor>
+	<descriptor key="true">
+		<header>Group</header>
+		<contentDescriptor>secondIndicator</contentDescriptor>
+	</descriptor>
+</descriptors>
+</metadata>

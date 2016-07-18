@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/fenix/!svn/ver/12796/trunk/fenix-web/src/main/resources/org/fao/fenix/web/modules/amis/public/amis-market-monitor
+END
+indexes.txt
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/fenix/!svn/ver/10864/trunk/fenix-web/src/main/resources/org/fao/fenix/web/modules/amis/public/amis-market-monitor/indexes.txt
+END
+fnx_amis_market_monitor_charts.js
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/fenix/!svn/ver/12795/trunk/fenix-web/src/main/resources/org/fao/fenix/web/modules/amis/public/amis-market-monitor/fnx_amis_market_monitor_charts.js
+END
+fnx_amis_market_monitor_charts_last.js
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/fenix/!svn/ver/12795/trunk/fenix-web/src/main/resources/org/fao/fenix/web/modules/amis/public/amis-market-monitor/fnx_amis_market_monitor_charts_last.js
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/fenix/!svn/ver/10864/trunk/fenix-web/src/main/resources/org/fao/fenix/web/modules/amis/public/amis-market-monitor/index.html
+END
+amis_market_monitor_charts_trial.js
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/fenix/!svn/ver/12786/trunk/fenix-web/src/main/resources/org/fao/fenix/web/modules/amis/public/amis-market-monitor/amis_market_monitor_charts_trial.js
+END

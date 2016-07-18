@@ -1,0 +1,9 @@
+<root>
+	<preset title='World Boundaries'>
+		<layers>
+			<layer title='World GAUL0 (DB)' id='30733188'/>
+			<layer title='World GAUL1 (DB)' id='34245395'/>
+			<layer title='World GAUL2 (DB)' id='34245394'/>
+		</layers>
+	</preset>
+</root>

@@ -1,0 +1,8 @@
+<root>
+	<country title='Haiti' code='108'>
+		<dates>
+			<date stringDate='January 2010' referenceDate='01-02-2010'/>
+			<date stringDate='February 2010' referenceDate='01-03-2010'/>
+		</dates>
+	</country>
+</root>

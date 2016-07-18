@@ -1,0 +1,898 @@
+<VIEW type="Which region produce more food" >
+
+	<RESOURCES>
+		<DEFAULT>
+
+			<!-- Production of cereals -->
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>490</WIDTH>
+					<HEIGHT>300</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>Cereal, Total - Production</E>
+				</TITLE>
+				<DATEQUERY>					<MAX>D.Year</MAX> 
+					<TIMESPAN type="year">39</TIMESPAN>
+				</DATEQUERY>
+				<BASEQUERY>
+					<SELECTS>
+
+						<SELECT lang="true">A.AreaName</SELECT>	
+						<SELECT>D.Year</SELECT>	
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Production">QC</DOMAIN>	
+						</DOMAINS>
+						<AREAS>
+							<AREA label="Africa">5100</AREA>	
+							<AREA label="Europa">5400</AREA>	
+							<AREA label="America">5200</AREA>	
+							<AREA label="Asia">5300</AREA>	
+							<AREA label="Oceania">5500</AREA>
+							<AREA label="World">5000</AREA>
+						</AREAS>
+						<ELEMENTS>
+							<ELEMENT label='Production'>5510</ELEMENT>
+						</ELEMENTS>	
+						<ITEMS>
+							<ITEM label="Cereals, Total" domain='QC'>1717</ITEM>
+						</ITEMS>							
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">A.AreaName</FIELD>
+					</SORT>		
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>	
+
+				</BASEQUERY>					
+			</RESOURCE>
+
+			<!-- Production of cereals PIE -->
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>PIE</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>370</WIDTH>
+					<HEIGHT>250</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>Cereal, Total - Production</E>
+				</TITLE>
+				<DATEQUERY>
+					<MAX>D.Year</MAX> 
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+						<SELECT>D.AreaCode</SELECT>	`
+						<SELECT lang="true">A.AreaName</SELECT>	
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Production">QC</DOMAIN>	
+						</DOMAINS>
+						<AREAS>
+							<AREA label="Africa">5100</AREA>	
+							<AREA label="Europa">5400</AREA>	
+							<AREA label="America">5200</AREA>	
+							<AREA label="Asia">5300</AREA>	
+							<AREA label="Oceania">5500</AREA>
+						</AREAS>
+						<ELEMENTS>
+							<ELEMENT label='Production'>5510</ELEMENT>
+						</ELEMENTS>
+						<ITEMS>
+							<ITEM label="Cereals, Total" domain='QC'>1717</ITEM>
+						</ITEMS>							
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">A.AreaName</FIELD>
+					</SORT>	
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>		
+		
+				</BASEQUERY>					
+			</RESOURCE>
+
+
+			<!-- Production of cereals growth rate -->
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+ 				 <OUTPUTTYPE>BAR_WITH_CATEGORIES</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>420</WIDTH>
+					<HEIGHT>200</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>Cereal, Total - Production Growth Rate</E>
+				</TITLE>
+				<CALCULATIONQUERY>
+					<TYPE>GROWTH_RATE</TYPE> 
+				</CALCULATIONQUERY> 
+				<DATEQUERY>					<MAX>D.Year</MAX> 
+					<TIMESPAN type="year">19</TIMESPAN>
+				</DATEQUERY>
+				<BASEQUERY>
+					<SELECTS>
+						<SELECT lang="true">I.ItemName</SELECT>	
+						<SELECT lang="true">A.AreaName</SELECT>	
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Production">QC</DOMAIN>	
+						</DOMAINS>
+						<AREAS>
+							<AREA label="Africa">5100</AREA>	
+							<AREA label="Europa">5400</AREA>	
+							<AREA label="America">5200</AREA>	
+							<AREA label="Asia">5300</AREA>	
+							<AREA label="Oceania">5500</AREA>
+							<AREA label="World">5000</AREA>
+						</AREAS>
+						<ELEMENTS>
+							<ELEMENT label='Production'>5510</ELEMENT>
+						</ELEMENTS>	
+						<ITEMS>
+							<ITEM label="Cereals, Total" domain='QC'>1717</ITEM>
+						</ITEMS>							
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">A.AreaName</FIELD>
+					</SORT>		
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>	
+
+				</BASEQUERY>					
+			</RESOURCE>
+
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+ 				 <OUTPUTTYPE>BAR_WITH_CATEGORIES</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>420</WIDTH>
+					<HEIGHT>200</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>Cereal, Total - Production Growth Rate</E>
+				</TITLE>
+				<CALCULATIONQUERY>
+					<TYPE>GROWTH_RATE</TYPE> 
+				</CALCULATIONQUERY> 
+				<DATEQUERY>					<MAX>D.Year</MAX> 
+					<TIMESPAN type="year">9</TIMESPAN>
+				</DATEQUERY>
+				<BASEQUERY>
+					<SELECTS>
+						<SELECT lang="true">I.ItemName</SELECT>	
+						<SELECT lang="true">A.AreaName</SELECT>	
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Production">QC</DOMAIN>	
+						</DOMAINS>
+						<AREAS>
+							<AREA label="Africa">5100</AREA>	
+							<AREA label="Europa">5400</AREA>	
+							<AREA label="America">5200</AREA>	
+							<AREA label="Asia">5300</AREA>	
+							<AREA label="Oceania">5500</AREA>
+							<AREA label="World">5000</AREA>
+						</AREAS>
+						<ELEMENTS>
+							<ELEMENT label='Production'>5510</ELEMENT>
+						</ELEMENTS>	
+						<ITEMS>
+							<ITEM label="Cereals, Total" domain='QC'>1717</ITEM>
+						</ITEMS>							
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">A.AreaName</FIELD>
+					</SORT>		
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>	
+
+				</BASEQUERY>					
+			</RESOURCE>
+
+
+			<!-- Area Harvested years -->
+			<RESOURCE>			
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+ 				 <OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>500</WIDTH>
+					<HEIGHT>230</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>Cereals, Total - Yield</E>
+				</TITLE>
+				 <DATEQUERY>					<MAX>D.Year</MAX> 
+					<TIMESPAN type="year">39</TIMESPAN>
+				</DATEQUERY>
+				<BASEQUERY>					 
+					<SELECTS>		       
+						
+						<SELECT lang="true">A.AreaName</SELECT>
+						<SELECT>D.Year</SELECT>
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Production">QC</DOMAIN>
+						</DOMAINS>
+						<ELEMENTSLIST>
+							<!-- <ELEMENTLIST label='Area Harvested'>2312</ELEMENTLIST>  -->
+ 							<ELEMENTLIST label='Yield'>2413</ELEMENTLIST> 
+						</ELEMENTSLIST>				
+						<AREAS>
+							<AREA label="Africa">5100</AREA>	
+							<AREA label="Europa">5400</AREA>	
+							<AREA label="America">5200</AREA>	
+							<AREA label="Asia">5300</AREA>	
+							<AREA label="Oceania">5500</AREA>
+							<AREA label="World">5000</AREA>
+						</AREAS> 
+						<!-- <YEARS>
+							<YEAR>1970</YEAR>
+							 <YEAR>1975</YEAR> 
+							<YEAR>1980</YEAR>
+							<YEAR>1985</YEAR>
+							<YEAR>1990</YEAR>
+							<YEAR>1995</YEAR>
+							<YEAR>2000</YEAR>
+							<YEAR>2005</YEAR>
+							<YEAR>2009</YEAR>
+						</YEARS> -->
+						<ITEMS>
+							<ITEM label="Cereal, Total">1717</ITEM>
+						</ITEMS>
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">A.AreaName</FIELD>
+					</SORT>	
+
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>			
+	             
+				 </BASEQUERY>		
+			</RESOURCE> 
+			
+
+			<!-- Area Harvested Growth Rate -->	
+			<!-- <RESOURCE>			
+				<RESOURCETYPE>TABLE</RESOURCETYPE>
+ 				 <OUTPUTTYPE>TABLE</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>300</WIDTH>
+				</SIZE>
+				<TITLE>
+					<E>Cereals, Total - Growth Rate</E>
+				</TITLE>
+				<DATEQUERY>					<MAX>D.Year</MAX> 
+					<TIMESPAN type="year">39</TIMESPAN>
+				</DATEQUERY>
+			<CALCULATIONQUERY>
+					<TYPE>GROWTH_RATE</TYPE> 
+				</CALCULATIONQUERY> 
+				<BASEQUERY>					 
+					<SELECTS>		       
+						<SELECT lang="true">E.ElementName</SELECT>
+						<SELECT lang="true">A.AreaName</SELECT>
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Production">QC</DOMAIN>
+						</DOMAINS>
+						<ELEMENTSLIST>
+ 							<ELEMENTLIST label='Yield'>2413</ELEMENTLIST> 
+						</ELEMENTSLIST>				
+						<AREAS>
+							<AREA label="Africa">5100</AREA>	
+							<AREA label="Europa">5400</AREA>	
+							<AREA label="America">5200</AREA>	
+							<AREA label="Asia">5300</AREA>	
+							<AREA label="Oceania">5500</AREA>
+							<AREA label="World">5000</AREA>
+						</AREAS> 
+						<ITEMS>
+							<ITEM label="Cereal, Total">1717</ITEM>
+						</ITEMS>
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">A.AreaName</FIELD>
+					</SORT>	
+
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>			
+	             
+				 </BASEQUERY>				
+			</RESOURCE> -->
+
+			<!-- Harvest PIE -->
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>PIE</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>350</WIDTH>
+					<HEIGHT>250</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>Cereal, Total - Area Harvested</E>
+				</TITLE>
+				<DATEQUERY>
+					<MAX>D.Year</MAX>
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+						<SELECT>D.AreaCode</SELECT>	`
+						<SELECT lang="true">A.AreaName</SELECT>	
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Production">QC</DOMAIN>	
+						</DOMAINS>
+						<AREAS>
+							<AREA label="Africa">5100</AREA>
+							<AREA label="Asia">5300</AREA>		
+							<AREA label="Europa">5400</AREA>	
+							<AREA label="America">5200</AREA>	
+							<AREA label="Oceania">5500</AREA>
+						</AREAS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Area Harvested'>2312</ELEMENTLIST>  
+						</ELEMENTSLIST>									
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">A.AreaName</FIELD>
+					</SORT>	
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>		
+		
+				</BASEQUERY>					
+			</RESOURCE> 
+
+			<!-- Harvest PIE
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>PIE</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>370</WIDTH>
+					<HEIGHT>250</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>Harvest</E>
+				</TITLE>
+				<DATEQUERY>
+					<MAX>D.Year</MAX>
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+						<SELECT>D.AreaCode</SELECT>	`
+						<SELECT lang="true">A.AreaName</SELECT>	
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Production">QC</DOMAIN>	
+						</DOMAINS>
+						<AREAS>
+							<AREA label="Africa">5100</AREA>	
+							<AREA label="Europa">5400</AREA>	
+							<AREA label="America">5200</AREA>	
+							<AREA label="Asia">5300</AREA>	
+						</AREAS>
+						<ELEMENTS>
+							<ELEMENT label='Harvest'>5312</ELEMENT>
+						</ELEMENTS>								
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">A.AreaName</FIELD>
+					</SORT>	
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>		
+		
+				</BASEQUERY>					
+			</RESOURCE> -->
+
+			<!-- Harvest 
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>490</WIDTH>
+					<HEIGHT>250</HEIGHT>
+				</SIZE>
+
+				<TITLE>
+					<E>Harvest</E>
+				</TITLE>
+				<DATEQUERY>					<MAX>D.Year</MAX>
+					<TIMESPAN type="year">39</TIMESPAN>
+				</DATEQUERY>
+				<BASEQUERY>
+					<SELECTS>
+
+						<SELECT lang="true">A.AreaName</SELECT>	
+						<SELECT>D.Year</SELECT>	
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Production">QC</DOMAIN>	
+						</DOMAINS>
+						<AREAS>
+							<AREA label="Africa">5100</AREA>	
+							<AREA label="Europa">5400</AREA>	
+							<AREA label="America">5200</AREA>	
+							<AREA label="Asia">5300</AREA>	
+							<AREA label="Oceania">5500</AREA>
+						</AREAS>
+						<ELEMENTS>
+							<ELEMENT label='Harvest'>5312</ELEMENT>
+						</ELEMENTS>								
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">A.AreaName</FIELD>
+					</SORT>		
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>	
+
+				</BASEQUERY>					
+			</RESOURCE> -->
+			
+	
+
+			<!-- Yield PIE 
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>PIE</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>370</WIDTH>
+					<HEIGHT>250</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>Yield</E>
+				</TITLE>
+				<DATEQUERY>
+					<MAX>D.Year</MAX>
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+						<SELECT>D.AreaCode</SELECT>	`
+						<SELECT lang="true">A.AreaName</SELECT>	
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Production">QC</DOMAIN>	
+						</DOMAINS>
+						<AREAS>
+							<AREA label="Africa">5100</AREA>	
+							<AREA label="Europa">5400</AREA>	
+							<AREA label="America">5200</AREA>	
+							<AREA label="Asia">5300</AREA>	
+							<AREA label="Oceania">5500</AREA>
+						</AREAS>
+						<ELEMENTS>
+							<ELEMENT label='Yield'>5419</ELEMENT>
+						</ELEMENTS>								
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">A.AreaName</FIELD>
+					</SORT>		
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>	
+		
+				</BASEQUERY>					
+			</RESOURCE> -->
+
+		<!-- Yield
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>490</WIDTH>
+					<HEIGHT>250</HEIGHT>
+				</SIZE>
+
+				<TITLE>
+					<E>Yield</E>
+				</TITLE>
+				<DATEQUERY>					<MAX>D.Year</MAX> 
+					<TIMESPAN type="year">19</TIMESPAN>
+				</DATEQUERY>
+				<BASEQUERY>
+					<SELECTS>
+
+						<SELECT lang="true">A.AreaName</SELECT>	
+						<SELECT>D.Year</SELECT>	
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Production">QC</DOMAIN>	
+						</DOMAINS>
+						<AREAS>
+							<AREA label="Africa">5100</AREA>	
+							<AREA label="Europa">5400</AREA>	
+							<AREA label="America">5200</AREA>	
+							<AREA label="Asia">5300</AREA>	
+							<AREA label="Oceania">5500</AREA>
+						</AREAS>
+						<ELEMENTS>
+							<ELEMENT label='Yield'>5419</ELEMENT>
+						</ELEMENTS>								
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">A.AreaName</FIELD>
+					</SORT>	
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>		
+
+				</BASEQUERY>					
+			</RESOURCE> -->
+
+			
+			<!-- Production PIE 
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>PIE</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>370</WIDTH>
+					<HEIGHT>250</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>Cereal, Total - Production</E>
+				</TITLE>
+				<DATEQUERY>
+					<MAX>D.Year</MAX> 
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+						<SELECT>D.AreaCode</SELECT>	`
+						<SELECT lang="true">A.AreaName</SELECT>	
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Production">QC</DOMAIN>	
+						</DOMAINS>
+						<AREAS>
+							<AREA label="Africa">5100</AREA>	
+							<AREA label="Europa">5400</AREA>	
+							<AREA label="America">5200</AREA>	
+							<AREA label="Asia">5300</AREA>	
+							<AREA label="Oceania">5500</AREA>
+						</AREAS>
+						<ELEMENTS>
+							<ELEMENT label='Production'>5510</ELEMENT>
+						</ELEMENTS>
+						<ITEMS>
+							<ITEM label="Cereals, Total" domain='QC'>1717</ITEM>
+						</ITEMS>							
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">A.AreaName</FIELD>
+					</SORT>	
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>		
+		
+				</BASEQUERY>					
+			</RESOURCE> -->
+
+			<!-- Production 
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>490</WIDTH>
+					<HEIGHT>250</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>Production</E>
+				</TITLE>
+				<DATEQUERY>					<MAX>D.Year</MAX> 
+					<TIMESPAN type="year">39</TIMESPAN>
+				</DATEQUERY>
+				<BASEQUERY>
+					<SELECTS>
+
+						<SELECT lang="true">A.AreaName</SELECT>	
+						<SELECT>D.Year</SELECT>	
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Production">QC</DOMAIN>	
+						</DOMAINS>
+						<AREAS>
+							<AREA label="Africa">5100</AREA>	
+							<AREA label="Europa">5400</AREA>	
+							<AREA label="America">5200</AREA>	
+							<AREA label="Asia">5300</AREA>	
+							<AREA label="Oceania">5500</AREA>
+						</AREAS>
+						<ELEMENTS>
+							<ELEMENT label='Production'>5510</ELEMENT>
+						</ELEMENTS>								
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">A.AreaName</FIELD>
+					</SORT>		
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>	
+
+				</BASEQUERY>					
+			</RESOURCE> -->
+
+			
+
+			<!-- Growth Rate Harvest
+			<RESOURCE>			
+				<RESOURCETYPE>TABLE</RESOURCETYPE>
+ 				<OUTPUTTYPE>TABLE</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>250</WIDTH>
+				</SIZE>
+				<TITLE>
+					<E>Harvest Growth Rate</E>
+				</TITLE>
+				<DATEQUERY>
+					<MAX>D.Year</MAX>
+					<TIMESPAN type="year">9</TIMESPAN>
+				</DATEQUERY>
+				<CALCULATIONQUERY>
+					<TYPE>GROWTH_RATE</TYPE> 
+				</CALCULATIONQUERY> 
+				<BASEQUERY>
+					
+					<SELECTS>
+						<SELECT lang="true">E.ElementName</SELECT>	
+						<SELECT lang="true">A.AreaName</SELECT>	
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Production">QC</DOMAIN>	
+						</DOMAINS>
+						<AREAS>
+							<AREA label="Africa">5100</AREA>	
+							<AREA label="Europa">5400</AREA>	
+							<AREA label="America">5200</AREA>	
+							<AREA label="Asia">5300</AREA>	
+							<AREA label="Oceania">5500</AREA>
+							<AREA label="World">5000</AREA>	
+						</AREAS>
+						<ELEMENTS>
+							<ELEMENT label='Harvest'>5312</ELEMENT>
+						</ELEMENTS>								
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">A.AreaName</FIELD>
+					</SORT>	
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>		
+		
+				</BASEQUERY>						
+			</RESOURCE> -->
+
+			<!-- Growth Rate Yield 
+			<RESOURCE>			
+				<RESOURCETYPE>TABLE</RESOURCETYPE>
+ 				<OUTPUTTYPE>TABLE</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>250</WIDTH>
+				</SIZE>
+				<TITLE>
+					<E>Yield Growth Rate</E>
+				</TITLE>
+				<DATEQUERY>
+					<MAX>D.Year</MAX> 
+					<TIMESPAN type="year">9</TIMESPAN>
+				</DATEQUERY>
+				<CALCULATIONQUERY>
+					<TYPE>GROWTH_RATE</TYPE> 
+				</CALCULATIONQUERY> 
+				<BASEQUERY>
+					
+					<SELECTS>
+						<SELECT lang="true">E.ElementName</SELECT>	
+						<SELECT lang="true">A.AreaName</SELECT>	
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Production">QC</DOMAIN>	
+						</DOMAINS>
+						<AREAS>
+							<AREA label="Africa">5100</AREA>	
+							<AREA label="Europa">5400</AREA>	
+							<AREA label="America">5200</AREA>	
+							<AREA label="Asia">5300</AREA>	
+							<AREA label="Oceania">5500</AREA>
+							<AREA label="World">5000</AREA>	
+						</AREAS>
+						<ELEMENTS>
+							<ELEMENT label='Yield'>5419</ELEMENT>
+						</ELEMENTS>								
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">A.AreaName</FIELD>
+					</SORT>	
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>		
+		
+				</BASEQUERY>						
+			</RESOURCE> -->
+
+			<!-- Growth Rate Production 
+			<RESOURCE>			
+				<RESOURCETYPE>TABLE</RESOURCETYPE>
+ 				<OUTPUTTYPE>TABLE</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>250</WIDTH>
+				</SIZE>
+				<TITLE>
+					<E>Production Growth Rate</E>
+				</TITLE>
+				<DATEQUERY>
+					<MAX>D.Year</MAX>
+					<TIMESPAN type="year">9</TIMESPAN>
+				</DATEQUERY>
+				<CALCULATIONQUERY>
+					<TYPE>GROWTH_RATE</TYPE> 
+				</CALCULATIONQUERY> 
+				<BASEQUERY>
+					
+					<SELECTS>
+						<SELECT lang="true">E.ElementName</SELECT>	
+						<SELECT lang="true">A.AreaName</SELECT>	
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Production">QC</DOMAIN>	
+						</DOMAINS>
+						<AREAS>
+							<AREA label="Africa">5100</AREA>	
+							<AREA label="Europa">5400</AREA>	
+							<AREA label="America">5200</AREA>	
+							<AREA label="Asia">5300</AREA>	
+							<AREA label="Oceania">5500</AREA>
+							<AREA label="World">5000</AREA>	
+						</AREAS>
+						<ELEMENTS>
+							<ELEMENT label='Production'>5510</ELEMENT>
+						</ELEMENTS>								
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">A.AreaName</FIELD>
+					</SORT>	
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>		
+		
+				</BASEQUERY>						
+			</RESOURCE> -->
+
+			
+			
+
+			
+
+			
+		</DEFAULT>	
+
+
+	</RESOURCES>
+
+</VIEW>

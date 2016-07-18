@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/fenix/!svn/ver/9496/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/download/pivot
+END
+FAOSTATDownloadOutputType.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/fenix/!svn/ver/9496/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/download/pivot/FAOSTATDownloadOutputType.java
+END
+FAOSTATDownloadPivotSelectionPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/fenix/!svn/ver/9496/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/download/pivot/FAOSTATDownloadPivotSelectionPanel.java
+END
+FAOSTATDownloadTablePanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/fenix/!svn/ver/8611/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/download/pivot/FAOSTATDownloadTablePanel.java
+END
+FAOSTATDownloadFlatTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/fenix/!svn/ver/8947/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/download/pivot/FAOSTATDownloadFlatTable.java
+END
+FAOSTATDownloadPivotDimension.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/fenix/!svn/ver/8611/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/download/pivot/FAOSTATDownloadPivotDimension.java
+END
+FAOSTATDownloadPivotDimensionList.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/fenix/!svn/ver/8805/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/download/pivot/FAOSTATDownloadPivotDimensionList.java
+END
+FAOSTATdownloadPivotAxisPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/fenix/!svn/ver/9496/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/download/pivot/FAOSTATdownloadPivotAxisPanel.java
+END

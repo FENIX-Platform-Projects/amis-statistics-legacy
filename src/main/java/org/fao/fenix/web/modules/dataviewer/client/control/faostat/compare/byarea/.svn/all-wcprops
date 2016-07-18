@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/fenix/!svn/ver/9320/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/control/faostat/compare/byarea
+END
+FAOSTATCompareSelectorPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/fenix/!svn/ver/9320/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/control/faostat/compare/byarea/FAOSTATCompareSelectorPanel.java
+END
+FAOSTATAreasPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/fenix/!svn/ver/9320/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/control/faostat/compare/byarea/FAOSTATAreasPanel.java
+END
+FAOSTATCompareByArea.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/fenix/!svn/ver/9320/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/control/faostat/compare/byarea/FAOSTATCompareByArea.java
+END

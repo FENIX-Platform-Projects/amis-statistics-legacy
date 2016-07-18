@@ -1,0 +1,296 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+<meta name="description" content="AMIS Statistics">
+<meta name="keywords" content="">
+<title>AMIS Agricultural Management Information System Statistics</title>
+<link rel="stylesheet" type="text/css" href="resources/css/gxt-all.css">
+
+<link rel="shortcut icon" href="http://typo3.fao.org/fileadmin/templates/AMIS/images/amis_icon.ico"/>
+
+<script type='text/javascript' src='data.nocache.js'></script>
+<link rel="stylesheet" href="amis-style.css" type="text/css" />
+<link rel="stylesheet" href="amis-home-style.css" type="text/css" />
+<!--<link rel="stylesheet" href="style.css" type="text/css" />-->
+
+<!-- For HighCharts support (upgraded so no conflict with the AMIS Tracking Tool, which uses JQuery 1.9.1)-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> -->
+
+<script type="text/javascript" src="http://code.highcharts.com/highcharts.js"></script>
+<!-- <script type="text/javascript" src="highcharts/js/highcharts.src.js"></script>-->
+<!-- ENDOF For HighCharts support -->
+
+<!-- Adapter for integration with gxt -->
+<script type="text/javascript" src="highcharts/js/gxt-adapter.js"></script>
+
+<script type="text/javascript" src="highcharts/js/modules/exporting.js"></script>
+<!--<script type="text/javascript" src="oat28/oat/loader.js"></script>-->
+<!--<script type="text/javascript" src="pivot.js"></script>-->
+
+<!-- AMIS monitoring Tool START -->
+	   <link rel="stylesheet" href="amis-activity-monitoring-js/js/external/jqwidgets/2.7/styles/jqx.base.css" type="text/css" />
+
+	   		<!-- Internal Resources -->
+	   		<link rel="stylesheet"  href="amis-activity-monitoring-js/css/amis-tracking-style.css" type="text/css" />
+
+	   		<!-- JQWidgets -->
+	   		<script type="text/javascript" src="amis-activity-monitoring-js/js/external/jqwidgets/2.7/jqxcore.js"></script>
+	       	<script type="text/javascript" src="amis-activity-monitoring-js/js/external/jqwidgets/2.7/jqxscrollbar.js"></script>
+	   		<script type="text/javascript" src="amis-activity-monitoring-js/js/external/jqwidgets/2.7/jqxlistbox.js"></script>
+	   		<script type="text/javascript" src="amis-activity-monitoring-js/js/external/jqwidgets/2.7/jqxcheckbox.js"></script>
+
+	   		<script type="text/javascript" src="amis-activity-monitoring-js/js/external/jqwidgets/2.7/jqxpanel.js"></script>
+	   		<script type="text/javascript" src="amis-activity-monitoring-js/js/external/jqwidgets/2.7/jqxbuttongroup.js"></script>
+	   		<script type="text/javascript" src="amis-activity-monitoring-js/js/external/jqwidgets/2.7/jqxradiobutton.js"></script>
+	   		<script type="text/javascript" src="amis-activity-monitoring-js/js/external/jqwidgets/2.7/jqxbuttons.js"></script>
+
+	   		<script type="text/javascript" src="amis-activity-monitoring-js/js/external/jqwidgets/2.7/jqxdropdownlist.js"></script>
+	   		<script type="text/javascript" src="amis-activity-monitoring-js/js/external/jqwidgets/2.7/jqxdata.js"></script>
+	   		<script type="text/javascript" src="amis-activity-monitoring-js/js/external/jqwidgets/2.7/jqxswitchbutton.js"></script>
+	   		<script type="text/javascript" src="amis-activity-monitoring-js/js/external/jqwidgets/2.7/jqxcombobox.js"></script>
+
+	   		 <script type="text/javascript" src="amis-activity-monitoring-js/js/external/jqwidgets/2.7/jqxdatetimeinput.js"></script>
+	           <script type="text/javascript" src="amis-activity-monitoring-js/js/external/jqwidgets/2.7/jqxcalendar.js"></script>
+	           <script type="text/javascript" src="amis-activity-monitoring-js/js/external/jqwidgets/2.7/jqxtooltip.js"></script>
+	           <script type="text/javascript" src="amis-activity-monitoring-js/js/external/jqwidgets/2.7/globalization/jquery.global.js"></script>
+
+	   		 <!-- AMIS External JS Resources -->
+	   		<script type="text/javascript" src="amis-activity-monitoring-js/js/external/browser.detect.min.js"></script>
+	           <script type="text/javascript" src="amis-activity-monitoring-js/js/external/hash.map.min.js"></script>
+	           <!-- Base64 Copyright (c) 2010 Nick Galbreath http://code.google.com/p/stringencoders/source/browse/#svn/trunk/javascript-->
+	           <script type="text/javascript" src="amis-activity-monitoring-js/js/external/base64.min.js"></script>
+	           <script type="text/javascript" src="amis-activity-monitoring-js/js/external/jquery.xdomain.min.js"></script>
+
+	   	    <!-- AMIS Internal JS Resources -->
+	   		<script type="text/javascript" src="amis-activity-monitoring-js/js/amis-gui-tracking-min.js"></script>
+	   	    <script type="text/javascript" src="amis-activity-monitoring-js/js/amis-submit-tracking-min.js"></script>
+	   	    <script type="text/javascript" src="amis-activity-monitoring-js/js/amis-querybuilder-tracking-min.js"></script>
+	   	    <script type="text/javascript" src="amis-activity-monitoring-js/js/amis-chartbuilder-tracking-min.js"></script>
+
+	   	    <!-- AMIS Internal JS Utils -->
+	   	    <script type="text/javascript" src="amis-activity-monitoring-js/js/utils/amis-date-utils-tracking-min.js"></script>
+
+           <!-- CALL TO EMBED AMIS TRACKING  -->
+	   	    <script type="text/javascript" src="amis-activity-tracking.js"></script>
+
+	     <script type="text/javascript">
+	   window.SESSION_COOKIE_NAME = 'null';
+</script>
+
+
+<!-- AMIS monitoring Tool END -->
+	   
+<script type="text/javascript">
+
+var regionID = "";
+
+var countryFile = "";
+
+var countryID = "";
+
+var countryLabel = "";
+
+function setRegionID(current, e) {
+
+	window.regionID = current;
+	//alert("regionID: " + window.regionID);
+
+
+}
+
+function cleanRegionID(current, e) {
+
+	alert("cleanRegionID");
+
+	window.regionID = "";
+	window.countryFile = "";
+	window.countryID = "";
+	window.countryLabel = "";
+	//alert("cleanRegionID: " + window.regionID);
+}
+
+function setCountryID(filename, countryID, countryLabel, e) {
+
+	window.countryFile = filename;
+	window.countryID = countryID;
+	window.countryLabel = countryLabel;
+
+	//alert("regionID: " + window.regionID);
+
+}
+
+function cleanCountryID(current, e) {
+
+	alert("cleanCountryID");
+
+	window.countryFile = "";
+	window.countryID = "";
+	window.countryLabel = "";
+
+}
+
+
+ function unhide(divID) {
+  var item = document.getElementById(divID);
+  if (item) {
+  item.className=(item.className=='hidden')?'unhidden':'hidden';
+  }
+  }
+
+
+</script>
+
+<style>
+html,body{margin:0;padding:0}
+body{
+
+font: 100.01% "Trebuchet MS",Arial,sans-serif
+font-size:.9em;
+
+}
+
+.hidden { display: none; }
+ .unhidden { display: block; }
+
+/**Needed for Highcharts otherwise In IE 8 (see meta tag above) the X-AXIS and Y-AXIS labels appear distorted and are unreadable**/
+.highcharts-container span {
+background-color: #ffffff;
+}
+
+</style>
+<script type="text/javascript">
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-29854753-1']); //AMIS
+//_gaq.push(['_setAccount', 'UA-27957799-1']); //testing only NOT AMIS's
+_gaq.push(['_trackPageview']);
+
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+
+</head>
+<body>
+
+
+<div id="centerColumn">
+         <div id="header">
+		<div class="logo">
+			<div id="AMIS-LOGO"><img src="amis-images/amis_logo.png" title="AMIS Statistics Home" class="left-logo"></img></div>
+		</div>
+<!--		<div class="login" id="USER_LOGIN">-->
+<!--			Log In-->
+<!--		</div>-->
+		</div>
+<!--<div style='width: 800px; white-space: nowrap;'>		-->
+<!--	<div style='float: left;' id="MENU"></div>-->
+<!--	<div style='float: right;' id="USER_LOGIN"></div>-->
+<!--</div>-->
+
+<!--<table border='1'>-->
+<!--    <tr>-->
+<!--       <td><div id="MENU"></div></td>-->
+<!--       <td><div id="USER_LOGIN"></div></td>-->
+<!--   </tr>-->
+<!--</table> -->
+<!--<table id = "MENU_TABLE" style = "border-collapse: collapse;">-->
+<!--    <tr>-->
+<!--       <td><div id="MENU"></div></td>-->
+<!--       <td><div id="USER_LOGIN_MENU" style:valign="TOP" align="RIGHT"></div></td>-->
+<!--   </tr>-->
+<!--</table> -->
+
+<table id = "MENU_TABLE" style = "border-collapse: collapse; background-color: #DC3018;">
+    <tr>
+       <td><div id="MENU" style="margin-top: -1px;"></div></td>
+<!--        <td><div id="USER_LOGIN_MENU" style:valign="CENTER" align="RIGHT"></div></td>-->
+        <td><div id="USER_LOGIN_MENU" style="margin-top: 4px;"></div></td>
+   </tr>
+</table>
+<table id ="SUB_MENU_TABLE" style ="background-color:#FFFFFF;" width="100%">
+    <tr>
+         <td><div id="SUB_MENU_COMPARE" style="margin-top: -1px;"></div>
+             <div id="SUB_MENU_DOWNLOAD" style="margin-top: -1px;"></div>
+         </td>
+        <td><div id="USER_LOGIN_WELCOME" style="margin-top: 4px;"></div></td>
+   </tr>
+</table>
+
+<!-- <div id="USER_LOGIN_WELCOME"></div>-->
+<div id="CLOSE_CBS_TOOL"></div>
+<div id="MAIN_CONTENT"></div>
+
+<div id="OLAP_IFRAME" style="padding-left:10px;background-color:#FFFFFF; "></div>
+<div id="OLAP_IFRAME_NO_ELEMENTS" style="background-color:#FFFFFF; padding-left: 12px";></div>
+<div id="COMPARE_NOTES" style="background-color:#FFFFFF; padding-left: 12px";></div>
+<div id="HOME_CONTENT">
+<div id="separation2"></div>
+
+<div id="top_box_container">
+<!-- <p class="amis_title">Welcome</p> -->
+<!--<p class="amis_text"><b>AMIS Statistics</b> gives access to the latest data on production, trade, utilization and ending season stocks for the commodities currently covered by AMIS (currently wheat, maize, rice and soybeans) from multiple databases (for now:  FAOSTAT, FAO CBS and USDA PSD).<br/></p>-->
+<!--<p class="amis_text">On this <b>Home Page</b>, users can retrieve only basic data (summary tables). <b>View</b> and <b>Compare</b> allows access to more detailed data.<br/></p>-->
+<p class="amis_text"><b>Statistics at a Glance</b> provides summary tables of the main data items currently covered by AMIS. There are production, supply, utilization, trade and closing stocks. Please select a country on the world map below and specify your request by selecting one of the four AMIS crops: wheat, maize, rice, or soybeans. Alternatively, you can display aggregate values for total cereals and coarse grains.</p>
+    <!--<p class="amis_text">Rice balances for 2000-2003 are being reconstructed and will become available in a few days.</p>-->
+</div><!--//end #top box container//-->
+
+<!--<div id="separation2"></div>-->
+
+<div id="first_corner">  <!--//here the rounded corner//-->
+
+<span class="interactive_map_title"><img src="amis-images/white_double_arrows.png"> INTERACTIVE WORLD MAP</span>
+<span class="interactive_map_subtitle">(Click on a country to view a market summary)</span>
+<span class="interactive_map_subtitle"><a href="javascript:unhide('interactive_map');" style="float:right; color:white; padding-right:5px;">Click to Collapse/Expand Map</a></span>
+</div>
+
+<div id="interactive_map">
+	 <div id="background_map">
+		<div class="map" id="WORLD_MAP"></div>
+	</div>
+</div>
+
+<!-- <div id="legend">
+	<table width="500" height="5" border="0">
+	  <tr>
+	    <td width="20" bgcolor="#518cc5">&nbsp;</td>
+	    <td width="166" class="legend_text">&nbsp;G20 Countries</td>
+	    <td width="20" bgcolor="#e6a524">&nbsp;</td>
+	    <td width="476" class="legend_text">&nbsp;Invited Member Countries</td>
+	  </tr>
+	</table>
+</div> -->
+
+<div id="greyseparation"></div>
+<div id="DATASET_CONTENT"></div>
+
+</div>
+
+    <div id="footer">
+     <div id="footer_contents_left">
+<span class="footer"><a class="footer-link" href="http://www.amis-outlook.org/home/en/" target="_blank">AMIS HOME</a></span></div>
+    <div id="footer_contents_right"><span class="footer"><a class="footer-link" href="http://www.fao.org/corp/copyright/en/" target="_blank">Copyright &copy; 2011 AMIS. All rights reserved</a></span></div>
+
+
+</div> <!--//end #footer//-->
+
+
+    </div>
+  <!--//end #central_container//-->
+
+
+<!-- Required for History -->
+<iframe src="javascript:''" id="__gwt_historyFrame" style="width:0;height:0;border:0"></iframe>
+
+ <!--<iframe style='display: none;' src='pivot.html' width='100%' height='500px' name="OLAP" id="amisOLAP"></iframe>-->
+
+</body></html>

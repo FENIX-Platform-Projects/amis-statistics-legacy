@@ -1,0 +1,147 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+<html lang="en-gb"> 
+<head> 
+  <title>FPMU Workstation - Dhaka, Bangladesh</title> 
+  <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"> 
+  <meta name="description" content="A demonstration of the Mac-style dock function"> 
+  <script type="text/javascript" src="MacStyleDock.compressed.js"></script> 
+  <style type="text/css"> 
+ 
+    #dockContainer{
+      display    : table;
+      margin     : 0 auto;
+      text-align : center;    /* fixes IE bug */
+    }
+ 
+    #dockContainer > div{
+      display : inline-block; /* fixes IE bug */
+    }
+ 
+    #dockContainer > div{
+      display : inline;       /* fixes IE bug */
+    }
+ 
+    #dockContainer > div{
+      display       : table-cell;
+      text-align    : left;
+      background    : url('dock-centre-80.png') repeat-x 0 129px;
+      border-bottom : 2px solid rgb(220,220,200);
+    }
+ 
+    #dockContainer > div > div{
+      background : url('dock-right-80.png') no-repeat right 129px;
+    }
+ 
+    #dockContainer > div > div > div{
+      background : url('dock-left-80.png') no-repeat left 129px;
+      height     : 176px;
+      overflow   : hidden;
+      padding    : 0 20px;
+    }
+ 
+  </style> 
+  
+  <style>
+.dropcap:first-letter{
+float:left;
+color:black;
+font-size:250%;
+}
+</style>
+      
+ </head> 
+<body>
+ <table width="100%" style="background-color: #9FCA1B;">
+ 	<tr>
+ 	<td>
+ 	<img src="FENIX_BANNER.png"/>
+ 	<td>
+ 	<td align="right">
+ 	<img src="FAO_UE_BANNER.png"/>
+ 	<td>
+ 	</tr>
+ </table>
+ 
+<div style="position: absolute; left: 48%; top: 40%; " class="dropcap">Hello</div>
+ 
+ <div style="width: 99%; position: absolute; top: 78%;">
+ <table align="center">
+ <tr>
+ <td>
+  <div id="dockContainer"><div><div><div id="dock"></div></div></div></div> 
+ </td>
+ </tr>
+ </table>
+ </div>
+ 
+ 
+  <script type="text/javascript"> 
+ 
+    function createDockParameters(name){
+      return [
+          {
+            name:      're-icon-',
+            extension: '.png',
+            sizes:     [80, 160],
+            onclick:   function(){
+                         alert('Browse the Catalogue.');
+                       }
+          },
+          {
+            name:      'map-icon-',
+            extension: '.png',
+            sizes:     [80, 160],
+            onclick:   function(){
+                         alert('Create a New Table.');
+                       }
+          },
+          {
+            name:      'chart-icon-',
+            extension: '.png',
+            sizes:     [80, 160],
+            onclick:   function(){
+                         alert('Create a New Report.');
+                       }
+          },
+          {
+            name:      'table-icon-',
+            extension: '.png',
+            sizes:     [80, 160],
+            onclick:   function(){
+                         alert('Create a New Chart.');
+                       }
+          },
+          {
+            name:      'report-icon-',
+            extension: '.png',
+            sizes:     [80, 160],
+            onclick:   function(){
+                         alert('Create a New Chart.');
+                       }
+          },
+          {
+            name:      'favourites-icon-',
+            extension: '.png',
+            sizes:     [80, 160],
+            onclick:   function(){
+                         alert('Create a New Chart.');
+                       }
+          }
+        ];
+    }
+ 
+    var dock = new MacStyleDock(
+        document.getElementById('dock'),
+        (window.XMLHttpRequest
+            ? createDockParameters('mac-icon-')
+            : createDockParameters('mac-icon-solid-')),
+        80,
+        160,
+        2);
+ 
+  </script> 
+  
+ 
+</body> 
+</html> 

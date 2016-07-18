@@ -1,0 +1,19 @@
+<metadata>
+	<type>Indicator</type>
+	<title>EsokoPriceType</title>
+	<abstractAbstract>Esoko Price Type Coding System</abstractAbstract>
+	<keywords>esoko, price, type</keywords>
+	<provider country="0" contact="andrea@busylab.com">Esoko</provider>
+	<source country="0" contact="andrea@busylab.com">Esoko</source>
+	<region>0</region>
+	<startDate></startDate>
+	<endDate></endDate>
+	<dateLastUpdate></dateLastUpdate>
+	<periodTypeCode></periodTypeCode>
+	<sharingCode>Public</sharingCode>
+	<refGeoUnit></refGeoUnit>
+	<layerCodeSet></layerCodeSet>
+	<precision></precision>
+	<categories></categories>
+	<code></code>
+</metadata>

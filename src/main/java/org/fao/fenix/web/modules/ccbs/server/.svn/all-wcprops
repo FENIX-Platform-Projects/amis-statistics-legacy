@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/fenix/!svn/ver/6749/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ccbs/server
+END
+TimeSeries.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/fenix/!svn/ver/6749/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ccbs/server/TimeSeries.java
+END
+CCBSServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/fenix/!svn/ver/6749/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ccbs/server/CCBSServiceImpl.java
+END
+FenixCCBSTimeSeries.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/fenix/!svn/ver/6749/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ccbs/server/FenixCCBSTimeSeries.java
+END
+FenixCCBSDBAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/fenix/!svn/ver/6749/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ccbs/server/FenixCCBSDBAdapter.java
+END
+DBAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/fenix/!svn/ver/6406/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ccbs/server/DBAdapter.java
+END

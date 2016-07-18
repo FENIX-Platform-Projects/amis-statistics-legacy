@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/fenix/!svn/ver/8285/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/client/view
+END
+OLBBoxRetriever.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/fenix/!svn/ver/6410/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/client/view/OLBBoxRetriever.java
+END
+GetFeatureInfoWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/fenix/!svn/ver/7668/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/client/view/GetFeatureInfoWindow.java
+END
+MapPanelControls.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/client/view/MapPanelControls.java
+END
+DimensionPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/fenix/!svn/ver/6793/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/client/view/DimensionPanel.java
+END
+Legend.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/fenix/!svn/ver/6410/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/client/view/Legend.java
+END
+MapWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/fenix/!svn/ver/7191/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/client/view/MapWindow.java
+END
+FeatureInfoGrid.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/fenix/!svn/ver/7668/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/client/view/FeatureInfoGrid.java
+END
+MapPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/fenix/!svn/ver/8285/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/client/view/MapPanel.java
+END
+MapPanel_newFeatures.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/client/view/MapPanel_newFeatures.java
+END
+LayerListPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/fenix/!svn/ver/7014/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/client/view/LayerListPanel.java
+END
+LayerListControls.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/fenix/!svn/ver/7012/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/client/view/LayerListControls.java
+END
+NativeOLCalls.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/fenix/!svn/ver/7257/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/map/client/view/NativeOLCalls.java
+END

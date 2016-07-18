@@ -1,0 +1,28 @@
+package org.fao.fenix.web.modules.core.common.vo.highcharts;
+
+public enum HighChartParametersConstants  {
+	
+	// CHART
+	// xy, x ,y
+	ZOOM_TYPE,
+	
+	// TOOLTIP
+	CROSSHAIRS, SHARED,
+	
+	// X_AXIS
+	X_STAGGERLINES, X_FONTSIZE, X_ROTATION, X_Y_DISTANCE,
+	
+	// Y_AXIS
+	Y_FONTSIZE, Y_END_OF_TICK,
+	
+	// LEGEND
+	LEGEND_LINEHEIGHT, LEGEND_SYMBOLPADDING, LEGEND_SYMBOLWIDTH,
+	
+	
+	// PLOTOPTIONS
+	SERIE_MARKER_ENABLED, SERIE_MARKER_STATES_HOVER_ENABLED,
+	
+	CURSOR;
+	
+	
+}

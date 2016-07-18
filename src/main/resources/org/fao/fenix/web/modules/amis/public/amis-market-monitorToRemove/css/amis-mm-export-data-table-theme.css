@@ -1,0 +1,26 @@
+#amis-mm-export-data-table
+{
+border-collapse:collapse;
+align:center;
+border: 1px solid black;
+}
+
+#amis-mm-export-data-table th, #amis-mm-export-data-table td
+{
+border: 1px solid black;
+}
+
+#amis-mm-export-data-table tr td
+{
+ background: #D5E1DD;
+}
+
+.amis-mm-export-data-table-header {
+ background: #FFFFFF;
+ color: #000000;
+}
+
+.amis-mm-export-data-table-column {
+  background: #74A6BD;
+  color: #FFFFFF;
+}

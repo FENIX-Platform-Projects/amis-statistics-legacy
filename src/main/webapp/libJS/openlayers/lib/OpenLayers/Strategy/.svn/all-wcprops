@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Strategy
+END
+Fixed.js
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Strategy/Fixed.js
+END
+Paging.js
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Strategy/Paging.js
+END
+Cluster.js
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Strategy/Cluster.js
+END
+BBOX.js
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Strategy/BBOX.js
+END

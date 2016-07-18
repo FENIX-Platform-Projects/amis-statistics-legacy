@@ -1,0 +1,29 @@
+<layer type="shp">
+  <title>Kenya River Basins</title>
+  <abstract>Generated from KenyaRiverBasins -- Shapefile Layer 'KenyaRiverBasins::kenya_riverbasins'</abstract>
+  <source country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</source>
+  <provider country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</provider>
+  <region>133</region>
+  <categories />
+  <sharingcode>Public</sharingcode>
+  <featuretype>
+    <title>Kenya River Basins</title>
+    <abstract>Generated from KenyaRiverBasins</abstract>
+    <defaultstyle>polygon</defaultstyle>
+    <bbox>
+      <srs>4326</srs>
+      <minx>33.94977951049805</minx>
+      <maxx>41.89845275878906</maxx>
+      <miny>-4.683566093444824</miny>
+      <maxy>5.435789108276367</maxy>
+    </bbox>
+    <layername>kenya_riverbasins</layername>
+    <datastore>
+      <name>KenyaRiverBasins</name>
+      <namespace>fenix</namespace>
+    </datastore>
+  </featuretype>
+  <!--Data dumped from geoserver at:-->
+  <!--REST url: http://ldvapp07.fao.org:8032/geoserverDev-->
+  <!--WMS url: http://ldvapp07.fao.org:8032/geoserverDev/wms?-->
+</layer>

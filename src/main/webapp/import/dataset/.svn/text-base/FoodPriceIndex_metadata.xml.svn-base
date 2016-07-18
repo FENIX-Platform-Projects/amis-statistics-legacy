@@ -1,0 +1,41 @@
+<metadata>
+	<type>FoodPriceIndex</type>
+	<title>FAO Food Price Index</title>
+	<abstractAbstract>FAO Food Price Index</abstractAbstract>
+	<keywords>food, price, index</keywords>
+	<provider country="0" contact="Info-GIEWS-Workstation@fao.org">FAO GIEWS</provider>
+	<source country="0" contact="Info-GIEWS-Workstation@fao.org">FAO</source>
+	<region>0</region>
+	<startDate>1990-01-01</startDate>
+	<endDate>2009-12-31</endDate>
+	<dateLastUpdate>2008-09-03</dateLastUpdate>
+	<periodTypeCode>monthly</periodTypeCode>
+	<sharingCode>Public</sharingCode>
+	<refGeoUnit>Country Boundary</refGeoUnit>
+	<layerCodeSet>gaul0</layerCodeSet>
+	<precision>0</precision>
+	<categories>economy</categories>
+	<code>fpi</code>
+	<descriptors>
+		<descriptor key="true">
+			<header>Date</header>
+			<contentDescriptor>date</contentDescriptor>
+		</descriptor>
+		<descriptor key="true">
+			<header>Index Code</header>
+			<contentDescriptor>indicator</contentDescriptor>
+		</descriptor>
+		<descriptor>
+			<header>Value</header>
+			<contentDescriptor>quantity</contentDescriptor>
+		</descriptor>
+		<descriptor key="true">
+			<header>Base Date From</header>
+			<contentDescriptor>baseDateFrom</contentDescriptor>
+		</descriptor>
+		<descriptor key="true">
+			<header>Base Date To</header>
+			<contentDescriptor>baseDateTo</contentDescriptor>
+		</descriptor>
+	</descriptors>
+</metadata>

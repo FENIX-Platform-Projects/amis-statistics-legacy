@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/qb/common/vo
+END
+DimensionVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/fenix/!svn/ver/6411/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/qb/common/vo/DimensionVO.java
+END
+DimensionItemVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/qb/common/vo/DimensionItemVO.java
+END
+DatasetVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/qb/common/vo/DatasetVO.java
+END

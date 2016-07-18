@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/fenix/!svn/ver/7863/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/qb/client/control
+END
+ItemSelectorController.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/qb/client/control/ItemSelectorController.java
+END
+PanelOneController.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/fenix/!svn/ver/7863/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/qb/client/control/PanelOneController.java
+END
+PanelThreeController.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/qb/client/control/PanelThreeController.java
+END
+PanelTwoController.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/qb/client/control/PanelTwoController.java
+END

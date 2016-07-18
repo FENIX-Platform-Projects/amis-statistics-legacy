@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/fenix/!svn/ver/7191/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/client/view/chart/viewer
+END
+ChartViewer.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/fenix/!svn/ver/7191/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/client/view/chart/viewer/ChartViewer.java
+END
+ChartToolBar.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/fenix/!svn/ver/6747/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/client/view/chart/viewer/ChartToolBar.java
+END
+SideBar.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/fenix/!svn/ver/6747/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/client/view/chart/viewer/SideBar.java
+END
+ChartUpdater.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/fenix/!svn/ver/6747/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/client/view/chart/viewer/ChartUpdater.java
+END
+UpdateChart.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/fenix/!svn/ver/6747/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/client/view/chart/viewer/UpdateChart.java
+END

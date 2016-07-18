@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/fenix/!svn/ver/9450/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/selection
+END
+FAOSTATMultipleSelectionPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/fenix/!svn/ver/9450/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/selection/FAOSTATMultipleSelectionPanel.java
+END
+MultipleSelectionPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/fenix/!svn/ver/9438/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/selection/MultipleSelectionPanel.java
+END
+FAOSTATVisualizeParameters.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/fenix/!svn/ver/9153/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/selection/FAOSTATVisualizeParameters.java
+END

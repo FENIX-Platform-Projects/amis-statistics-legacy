@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	$X1, ... , $Xn are the input vectors
+	$O1, ... , $Om are the options described in the <optionCode> tag
+ -->
+<functions>
+
+	<!-- SUMMARY -->
+	<function command="summary">
+		<name>Summary</name>
+		<description>Provides a summary of the main statistics for selected values: 1) Mean, 2) Median, 3) Standard Deviation, 4) Coefficient of Variation, 5) Maximum, 6) Minimum, 7) 0%, 8) 25%, 9) 50%, 10) 75%, 11) 100%</description>
+		<inputs>1</inputs>
+		<repeat repeatRows="11">TRUE</repeat>
+		<rformula>A[i,j] = switch(i, mean(M[,j]), median(M[,j]), sd(M[,j]), sd(M[,j])/mean(M[,j]), max(M[,j]), min(M[,j]), quantile(M[,j], na.rm=TRUE)[1], quantile(M[,j], na.rm=TRUE)[2], quantile(M[,j], na.rm=TRUE)[3], quantile(M[,j], na.rm=TRUE)[4], quantile(M[,j], na.rm=TRUE)[5] );</rformula>
+		<outputs>
+			<output>
+				<outputType>TABLE</outputType>
+				<outputName>Mean</outputName>
+				<outputIndex>0</outputIndex>
+				<repeatRows>11</repeatRows>
+			</output>
+		</outputs>
+		<plots>	
+			<plot>
+				<name>Boxplot</name>
+				<description>Produce box-and-whisker plot(s) of the given (grouped) values.</description>
+				<rformula>boxplot(R, main = $O1)</rformula>
+				<repeat>FALSE</repeat>
+				<options>
+					<option>
+						<optionCode>$O1</optionCode>
+						<optionName>Chart Title</optionName>
+						<optionDescription>Set the general title for the matrix.</optionDescription>
+						<defaultValue>Boxplot</defaultValue>
+					</option>
+				</options>
+			</plot>
+		</plots>
+	</function>
+	
+	<!-- MEAN -->
+	<function command="mean">
+		<name>Mean</name>
+		<description>Generic function for the (trimmed) arithmetic mean.</description>
+		<inputs>1</inputs>
+		<rformula>colMeans(M, na.rm = $O1)</rformula>
+		<options>
+			<option>
+				<optionCode>$O1</optionCode>
+				<optionName>na.rm</optionName>
+				<optionDescription>Logical. Should missing values (including 'NaN') be omitted from the calculations?</optionDescription>
+				<defaultValue>TRUE</defaultValue>
+				<optionValues>
+					<optionValue>TRUE</optionValue>
+					<optionValue>FALSE</optionValue>
+				</optionValues>
+			</option>
+		</options>
+		<outputs>
+			<output>
+				<outputType>MATRIX</outputType>
+				<squareMatrix>FALSE</squareMatrix>
+				<outputName>mean</outputName>
+				<outputIndex>0</outputIndex>
+			</output>
+		</outputs>
+		<plots>	
+			<plot>
+				<name>Boxplot</name>
+				<description>Produce box-and-whisker plot(s) of the given (grouped) values.</description>
+				<rformula>boxplot(M, main = $O1)</rformula>
+				<repeat>FALSE</repeat>
+				<options>
+					<option>
+						<optionCode>$O1</optionCode>
+						<optionName>Chart Title</optionName>
+						<optionDescription>Set the general title for the matrix.</optionDescription>
+						<defaultValue>Boxplot</defaultValue>
+					</option>
+				</options>
+			</plot>
+		</plots>
+	</function>
+	
+	<!-- STANDARD DEVIATION -->
+	<function command="standardDeviation">
+		<name>Standard Deviation</name>
+		<description>This function computes the standard deviation of the input. If ‘na.rm’ is ‘TRUE’ then missing values are removed before computation proceeds.  If the input is a matrix or a data frame, a vector of the standard deviation of the columns is returned.</description>
+		<inputs>1</inputs>
+		<rformula>sd(M, na.rm = $O1)</rformula>
+		<options>
+			<option>
+				<optionCode>$O1</optionCode>
+				<optionName>na.rm</optionName>
+				<optionDescription>Logical. Should missing values (including 'NaN') be omitted from the calculations?</optionDescription>
+				<defaultValue>TRUE</defaultValue>
+				<optionValues>
+					<optionValue>TRUE</optionValue>
+					<optionValue>FALSE</optionValue>
+				</optionValues>
+			</option>
+		</options>
+		<outputs>
+			<output>
+				<outputType>MATRIX</outputType>
+				<squareMatrix>FALSE</squareMatrix>
+				<outputName>standardDeviation</outputName>
+				<outputIndex>0</outputIndex>
+			</output>
+		</outputs>
+		<plots>	
+			<plot>
+				<name>Boxplot</name>
+				<description>Produce box-and-whisker plot(s) of the given (grouped) values.</description>
+				<rformula>boxplot(M, main = $O1)</rformula>
+				<repeat>FALSE</repeat>
+				<options>
+					<option>
+						<optionCode>$O1</optionCode>
+						<optionName>Chart Title</optionName>
+						<optionDescription>Set the general title for the matrix.</optionDescription>
+						<defaultValue>Boxplot</defaultValue>
+					</option>
+				</options>
+			</plot>
+		</plots>
+	</function>
+	
+	<!-- CORRELATION -->
+	<function command="correlation">
+		<name>Correlation</name>
+		<description>Compute the correlation matrix of the input.</description>
+		<inputs>1</inputs>
+		<rformula>cor(M, use = $O1, method = $O2)</rformula>
+		<options>
+			<option>
+				<optionCode>$O1</optionCode>
+				<optionName>Use</optionName>
+				<optionDescription>An optional character string giving a method for computing covariances in the presence of missing values.</optionDescription>
+				<defaultValue>everything</defaultValue>
+				<optionValues>
+					<optionValue>everything</optionValue>
+					<optionValue>all.obs</optionValue>
+					<optionValue>complete.obs</optionValue>
+					<optionValue>na.or.complete</optionValue>
+					<optionValue>pairwise.complete.obs</optionValue>
+				</optionValues>
+			</option>
+			<option>
+				<optionCode>$O2</optionCode>
+				<optionName>Method</optionName>
+				<optionDescription>A character string indicating which correlation coefficient is to be computed.</optionDescription>
+				<defaultValue>pearson</defaultValue>
+				<optionValues>
+					<optionValue>pearson</optionValue>
+					<optionValue>kendall</optionValue>
+					<optionValue>spearman</optionValue>
+				</optionValues>
+			</option>
+		</options>
+		<outputs>
+			<output>
+				<outputType>MATRIX</outputType>
+				<squareMatrix>TRUE</squareMatrix>
+				<outputName>correlationMatrix</outputName>
+				<outputIndex>0</outputIndex>
+			</output>
+		</outputs>
+		<plots>
+			<plot>
+				<name>Matrix of Scatter Plots</name>
+				<description>A matrix of scatterplots is produced.</description>
+				<rformula>pairs(M, main = $O1, xlim=c(-1,1), ylim=c(-1,1))</rformula>
+				<repeat>FALSE</repeat>
+				<options>
+					<option>
+						<optionCode>$O1</optionCode>
+						<optionName>Chart Title</optionName>
+						<optionDescription>Set the general title for the matrix.</optionDescription>
+						<defaultValue>Matrix of Scatter Plots</defaultValue>
+					</option>
+				</options>
+			</plot>
+			<plot>
+				<name>Frequency VS Density</name>
+				<description>A matrix of 'Frequency VS Density' plots is produced.</description>
+				<rformula>hist(M[,i], xlab='Range of Values', ylim=c(0,1), freq=FALSE, main=c(colnames(M)[i]), col=rgb(211, 225, 239, maxColorValue=255)); lines(density(M[,i], na.rm=TRUE), col=rgb(255,0,0,maxColorValue=255), lwd=2);</rformula>
+				<repeat>TRUE</repeat>
+			</plot>
+		</plots>
+	</function>
+	
+	<!-- CORRELATION TEST -->
+	<function command="correlationTest">
+		<name>Correlation Test</name>
+		<description>Test for association between paired samples, using one of Pearson's product moment correlation coefficient, Kendall's tau or Spearman's rho.</description>
+		<inputs>2</inputs>
+		<rformula>cor.test(~ M[,1] + M[,2], alternative = $O1, method = $O2, exact = $O3, conf.level = $O4, continuity = $O4)</rformula>
+		<options>
+			<option>
+				<optionCode>$O1</optionCode>
+				<optionName>Alternative</optionName>
+				<optionDescription>indicates the alternative hypothesis and must be one of 'two.sided', 'greater' or "less". 'greater' corresponds to positive association, 'less' to negative association.</optionDescription>
+				<defaultValue>two.sided</defaultValue>
+				<optionValues>
+					<optionValue>two.sided</optionValue>
+					<optionValue>less</optionValue>
+					<optionValue>greater</optionValue>
+				</optionValues>
+			</option>
+			<option>
+				<optionCode>$O2</optionCode>
+				<optionName>Method</optionName>
+				<optionDescription>a character string indicating which correlation coefficient is to be used for the test.</optionDescription>
+				<defaultValue>pearson</defaultValue>
+				<optionValues>
+					<optionValue>pearson</optionValue>
+					<optionValue>kendall</optionValue>
+					<optionValue>spearman</optionValue>
+				</optionValues>
+			</option>
+			<option>
+				<optionCode>$O3</optionCode>
+				<optionName>Exact</optionName>
+				<optionDescription>a logical indicating whether an exact p-value should be computed.  Used for Kendall's tau and Spearman's rho.</optionDescription>
+				<defaultValue>NULL</defaultValue>
+			</option>
+			<option>
+				<optionCode>$O4</optionCode>
+				<optionName>Confidence Level</optionName>
+				<optionDescription>confidence level for the returned confidence interval. Currently only used for the Pearson product moment correlation coefficient if there are at least 4 complete pairs of observations.</optionDescription>
+				<defaultValue>0.95</defaultValue>
+			</option>
+			<option>
+				<optionCode>$O5</optionCode>
+				<optionName>Continuity</optionName>
+				<optionDescription>logical: if true, a continuity correction is used for Kendall's tau and Spearman's rho when not computed exactly.</optionDescription>
+				<defaultValue>FALSE</defaultValue>
+				<optionValues>
+					<optionValue>FALSE</optionValue>
+					<optionValue>TRUE</optionValue>
+				</optionValues>
+			</option>
+		</options>
+		<outputs>
+			<output>
+				<outputType>SINGLE_VALUE</outputType>
+				<outputName>t</outputName>
+				<outputIndex>0</outputIndex>
+			</output>
+			<output>
+				<outputType>SINGLE_VALUE</outputType>
+				<outputName>df</outputName>
+				<outputIndex>1</outputIndex>
+			</output>
+			<output>
+				<outputType>SINGLE_VALUE</outputType>
+				<outputName>p-value</outputName>
+				<outputIndex>2</outputIndex>
+			</output>
+			<output>
+				<outputType>SINGLE_VALUE</outputType>
+				<outputName>Correlation</outputName>
+				<outputIndex>3</outputIndex>
+			</output>
+<!--			<output>-->
+<!--				<outputType>MATRIX</outputType>-->
+<!--				<outputName>Confidence Interval</outputName>-->
+<!--				<outputIndex>8</outputIndex>-->
+<!--			</output>-->
+		</outputs>
+	</function>
+	
+</functions>

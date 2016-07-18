@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/fenix/!svn/ver/7569/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/coding/common/services
+END
+CodingService.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/fenix/!svn/ver/7566/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/coding/common/services/CodingService.java
+END
+CodingServiceEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/fenix/!svn/ver/6406/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/coding/common/services/CodingServiceEntry.java
+END
+CodingServiceAsync.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/fenix/!svn/ver/7569/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/coding/common/services/CodingServiceAsync.java
+END

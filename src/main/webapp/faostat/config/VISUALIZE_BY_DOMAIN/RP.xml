@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<VIEW type="Browse By RP - Pesticides (consumption) " >
+	<TITLE>
+		<E>Resources - Pesticides </E>
+		<S>Recursos - Plaguicidas</S>
+		<F>Ressources - Pesticides</F>
+	</TITLE>
+	 <FILTERS>
+
+		<FILTER width="300px" type="CODING_SYSTEM">
+			<FILTERTYPE>COUNTRIES</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE label="Austria">11</CODE>
+			</DEFAULTCODES>
+		</FILTER>
+		
+		<FILTER>
+			<FILTERTYPE>TIMERANGE</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE>1992</CODE>
+				<CODE>2010</CODE>
+			</DEFAULTCODES>
+		</FILTER>
+
+	</FILTERS> 
+	<RESOURCES>
+		<DEFAULT>
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<TITLE>
+					<E>Pesticides consumption in selected country</E>
+					<S>Consumo de plaguicidas en el país seleccionado</S>
+					<F>Consommation de pesticides dans le pays sélectioné</F>
+				</TITLE>
+				<FOOTNOTE>
+					<E><![CDATA[<b>Data are expressed in formulated products.</b><br><b>Country:</b> Algeria, Bahamas, Bangladesh, Bhutan, Cyprus, Fiji, Jamaica, Mauritius, Mexico, Montenegro, Occupied Palestinian Territory, Panama, Republic of Korea, Serbia and Montenegro, Slovakia, Syrian Arab Republic, Trinidad and Tobago]]></E>
+				</FOOTNOTE>
+				<SIZE>
+					<WIDTH>880</WIDTH>
+					<HEIGHT>330</HEIGHT>
+				</SIZE>
+				<DATEQUERY>
+					<MAXDATELIMIT>2010</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> -->
+					<TIMESPAN type="year">18</TIMESPAN>			
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+ 						<SELECT lang="true">I.ItemName</SELECT>	
+						<SELECT>D.Year</SELECT>		
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Pesticides">RP</DOMAIN>
+						</DOMAINS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label=''>5161</ELEMENTLIST>
+						</ELEMENTSLIST>	
+						<ITEMS>
+							<ITEM label="Insecticides">1309</ITEM>
+							<ITEM label="Herbicides">1320</ITEM>
+							<ITEM label="Fungicides Bactericides">1331</ITEM>
+						</ITEMS>
+						<AREAS>
+							<AREA label="Austria">11</AREA>	
+						</AREAS> 						
+					</WHERE>
+					<SORT type="ASC">
+						<FIELD>D.Year</FIELD>
+					</SORT>	
+			
+					
+				</BASEQUERY>					
+			</RESOURCE>
+		</DEFAULT>	
+	</RESOURCES>
+</VIEW>

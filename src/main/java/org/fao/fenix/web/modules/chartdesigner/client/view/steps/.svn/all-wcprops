@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/fenix/!svn/ver/8897/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/client/view/steps
+END
+HighlightPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/fenix/!svn/ver/7731/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/client/view/steps/HighlightPanel.java
+END
+ChartDesignerStepPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/fenix/!svn/ver/7824/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/client/view/steps/ChartDesignerStepPanel.java
+END
+ChartAxisTabPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/fenix/!svn/ver/7824/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/client/view/steps/ChartAxisTabPanel.java
+END
+LookAndFeelTabPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/fenix/!svn/ver/7824/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/client/view/steps/LookAndFeelTabPanel.java
+END
+ChartTypePanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/fenix/!svn/ver/7936/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/client/view/steps/ChartTypePanel.java
+END
+AxisFormatPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/fenix/!svn/ver/7639/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/client/view/steps/AxisFormatPanel.java
+END
+XAxisPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/fenix/!svn/ver/7296/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/client/view/steps/XAxisPanel.java
+END
+YAxisPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/fenix/!svn/ver/7296/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/client/view/steps/YAxisPanel.java
+END
+LookAndFeelTabItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/fenix/!svn/ver/8897/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/client/view/steps/LookAndFeelTabItem.java
+END
+LookAndFeelPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/fenix/!svn/ver/7627/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/client/view/steps/LookAndFeelPanel.java
+END
+ChartPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/fenix/!svn/ver/7706/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/client/view/steps/ChartPanel.java
+END
+ChartAxisPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/fenix/!svn/ver/8222/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/client/view/steps/ChartAxisPanel.java
+END
+PlotDimensionPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/fenix/!svn/ver/7808/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/client/view/steps/PlotDimensionPanel.java
+END
+DatasourcePanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/fenix/!svn/ver/7936/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/client/view/steps/DatasourcePanel.java
+END
+ManualPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/fenix/!svn/ver/7706/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/client/view/steps/ManualPanel.java
+END
+SeriesFormatPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/fenix/!svn/ver/7613/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/client/view/steps/SeriesFormatPanel.java
+END
+DataFrequencyPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/fenix/!svn/ver/7296/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/client/view/steps/DataFrequencyPanel.java
+END
+RPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/fenix/!svn/ver/7824/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/client/view/steps/RPanel.java
+END

@@ -1,0 +1,1 @@
+This folder will hold Workstation's RSS.

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/fenix/!svn/ver/9115/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/client/lang
+END
+AMISLanguage.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/fenix/!svn/ver/8083/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/client/lang/AMISLanguage.java
+END
+AMISLanguageConstants_fr.properties
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/fenix/!svn/ver/8083/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/client/lang/AMISLanguageConstants_fr.properties
+END
+AMISLanguageConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/fenix/!svn/ver/9115/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/client/lang/AMISLanguageConstants.java
+END

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ViewContext id="fenix_sample_world_map" version="1.1.0"
+    xmlns="http://www.opengeospatial.net/context"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:wmc="http://www.opengis.net/context"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.opengis.net/context http://schemas.opengis.net/context/1.0.0/context.xsd">
+
+   <General>
+      <Title>Sample world map @localhost</Title>
+      <BoundingBox SRS="EPSG:4326" minx="-80.0" miny="-80.0" maxx="150.0" maxy="50.0"/>
+   </General>
+
+   <LayerList>
+      <Layer queryable="true" hidden="false">
+         <Name>fenix:bluemarble</Name>
+         <Title>World</Title>
+
+         <Server service="OGC:WMS" version="1.1.1" title="My GeoServer WMS">
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" 
+	    xlink:href="http://localhost:8080/geoserver/wms?"/>
+         </Server>
+
+         <Abstract>Full world image</Abstract>
+      </Layer>
+
+      <Layer queryable="true" hidden="false">
+         <Name>fenix:gaul0</Name>
+         <Title>GAUL0 - Administrative boundaries Level 0</Title>
+
+         <Server service="OGC:WMS" version="1.1.1" title="My GeoServer WMS">
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" 
+	    xlink:href="http://localhost:8080/geoserver/wms?"/>
+         </Server>
+
+         <Abstract>Generated from fenixDB</Abstract>
+      </Layer>
+
+      <Layer queryable="true" hidden="false">
+         <Name>fenix:world_water_bodies</Name>
+         <Title>World water bodies</Title>
+
+         <Server service="OGC:WMS" version="1.1.1" title="My GeoServer WMS">
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" 
+	    xlink:href="http://localhost:8080/geoserver/wms?"/>
+         </Server>
+
+         <Abstract>Generated from world_water_bodies</Abstract>
+      </Layer>
+
+      <Layer queryable="true" hidden="true">
+         <Name>fenix:world_capitals</Name>
+         <Title>World Capitals</Title>
+
+         <Server service="OGC:WMS" version="1.1.1" title="My GeoServer WMS">
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" 
+	    xlink:href="http://localhost:8080/geoserver/wms?"/>
+         </Server>
+
+         <Abstract>Generated from world_capitals</Abstract>
+      </Layer>
+
+      <Layer queryable="true" hidden="true">
+         <Name>fenix:world_populated_places</Name>
+         <Title>World populated places</Title>
+
+         <Server service="OGC:WMS" version="1.1.1" title="My GeoServer WMS">
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" 
+	    xlink:href="http://localhost:8080/geoserver/wms?"/>
+         </Server>
+
+         <Abstract>Generated from world_populatedplaces</Abstract>
+      </Layer>
+
+      <Layer queryable="true" hidden="false">
+         <Name>fenix:world_rivers</Name>
+         <Title>World rivers</Title>
+
+         <Server service="OGC:WMS" version="1.1.1" title="My GeoServer WMS">
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" 
+	    xlink:href="http://localhost:8080/geoserver/wms?"/>
+         </Server>
+
+         <Abstract>Generated from world_rivers</Abstract>
+      </Layer>
+
+      <Layer queryable="true" hidden="true">
+         <Name>fenix:world_volcano</Name>
+         <Title>World volcano</Title>
+
+         <Server service="OGC:WMS" version="1.1.1" title="My GeoServer WMS">
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" 
+	    xlink:href="http://localhost:8080/geoserver/wms?"/>
+         </Server>
+
+         <Abstract>Generated from world_volcano</Abstract>
+      </Layer>
+
+      <Layer queryable="true" hidden="false">
+         <Name>fenix:world_major_cities</Name>
+         <Title>World Major Cities</Title>
+
+         <Server service="OGC:WMS" version="1.1.1" title="My GeoServer WMS">
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" 
+	    xlink:href="http://localhost:8080/geoserver/wms?"/>
+         </Server>
+
+         <Abstract>Generated from world_mayorcities</Abstract>
+      </Layer>
+   </LayerList>
+</ViewContext>

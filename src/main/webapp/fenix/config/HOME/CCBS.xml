@@ -1,0 +1,253 @@
+<VIEW type="CCBS" >
+	<TITLE>
+		<E>Cereal Balance at a Glance</E>
+	</TITLE>
+	<DATASOURCE code="PSD">CCBS</DATASOURCE>
+	<FILTERS>		
+		<!-- <FILTER>
+			<FILTERTYPE multiselection="true">AMIS_COUNTRIES</FILTERTYPE>
+		</FILTER> -->
+		<FILTER>
+			<FILTERTYPE>AMIS_PRODUCTS</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE label="Cereals Total">2062</CODE>
+			</DEFAULTCODES>
+		</FILTER>			
+	</FILTERS>
+	<RESOURCES>
+		<DEFAULT>	
+		<RESOURCE>			<RESOURCETYPE>CEREAL_BALANCE_TABLE</RESOURCETYPE>
+												<OUTPUTTYPE>HTML</OUTPUTTYPE>
+												<TITLE>
+													<E>Market Summary</E>
+												</TITLE>
+												<SIZE>
+													<WIDTH>1080</WIDTH>
+													<HEIGHT>250</HEIGHT>
+												</SIZE> 
+												<DATEQUERY>
+													<MAX>year</MAX>  <!-- RUN a MAX(year) query and use this value in the data QUERY -->
+													<TIMESPAN type="year">10</TIMESPAN>
+													<TIMESPANQUERY>ROUND(CAST(extract(year from MAX(D.year)) AS NUMERIC), 0) - 10 as start_date, ROUND(CAST(extract(year from MAX(D.year)) AS NUMERIC), 0) as end_date</TIMESPANQUERY>
+												</DATEQUERY>
+												<BASEQUERY>
+													<SELECTS>
+														<SELECT>elementnamee</SELECT>	
+														<SELECT>ROUND(CAST(extract(year from D.year) AS NUMERIC), 0) AS year</SELECT>
+														<SELECT>to_char(D.value / 1000000, '99999999')</SELECT>
+													</SELECTS>
+													<WHERE>
+													<AREAS>
+													    <AREA label="World">341</AREA>
+													</AREAS>
+														<ITEMS>
+															<ITEM label="Cereals Total">2062</ITEM>
+														</ITEMS>
+														<ELEMENTS>
+														        <ELEMENT label='Production'>51</ELEMENT>
+															<ELEMENT label='Exports'>91</ELEMENT>
+															<ELEMENT label='Utilisation'>200</ELEMENT>
+															<ELEMENT label='Supply'>201</ELEMENT>
+															<ELEMENT label='Closing Stocks'>161</ELEMENT>														</ELEMENTS>								
+													</WHERE>
+		                                        <GROUPBYS>
+								<FIELD>D.year</FIELD>
+								<FIELD>E.elementnamee</FIELD>
+								<FIELD>D.value</FIELD>
+							</GROUPBYS>	
+							<SORT type="ASC">
+								<FIELD>year</FIELD>
+							</SORT>		
+						</BASEQUERY>			
+					</RESOURCE>
+		
+			<!-- Consumption and Production -->
+			 <RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIES</OUTPUTTYPE>
+				<TITLE>
+					<E>Utilisation and Production</E>
+				</TITLE>
+				<SIZE>
+					<WIDTH>521</WIDTH>
+					<HEIGHT>250</HEIGHT>
+				</SIZE>
+				<CALCULATIONQUERY>
+					<TYPE>PERCENTAGE_SHARE</TYPE> 
+					<PARAMETERS>
+						<FILTERCOLUMN>Area</FILTERCOLUMN>
+						<RESULTLABEL>Share</RESULTLABEL>
+						<DIVIDEND>
+							<CODE label="Argentina">9</CODE>
+							<CODE label="Australia">10</CODE>
+							<CODE label="Brazil">21</CODE>
+							<CODE label="Canada">33</CODE>
+							<CODE label="China (Mainland)">41</CODE>
+							<CODE label="Egypt">59</CODE>
+							<CODE label="India">100</CODE>
+							<CODE label="Indonesia">101</CODE>
+							<CODE label="Kazakhstan">108</CODE>
+							<CODE label="Japan">110</CODE>
+							<CODE label="Korea, Republic of">117</CODE>
+							<CODE label="Mexico">138</CODE>
+							<CODE label="Nigeria">159</CODE>
+							<CODE label="Philippines">171</CODE>
+							<CODE label="Russian Federation">185</CODE>
+							<CODE label="Saudi Arabia">194</CODE>
+							<CODE label="South Africa">202</CODE>
+							<CODE label="Thailand">216</CODE>
+							<CODE label="Turkey">223</CODE>
+							<CODE label="Ukraine">230</CODE>
+							<CODE label="United States of America">231</CODE>
+							<CODE label="Viet Nam">237</CODE>
+							<CODE label="EU 15/27">1017</CODE>
+						</DIVIDEND>
+						<DIVISOR>
+							<CODE label="World">341</CODE>
+							
+							
+						</DIVISOR>
+					</PARAMETERS>
+				</CALCULATIONQUERY> 
+				<BASEQUERY>
+					<SELECTS>
+						<SELECT>element</SELECT>	
+						<SELECT>ROUND(CAST(extract(year from D.year) AS NUMERIC), 0) AS year</SELECT>
+						<SELECT>ROUND((CAST(D.value AS NUMERIC)), 2)</SELECT>
+					</SELECTS>
+					<WHERE>					        
+					         <AREAS>
+						 	<AREA label="World">341</AREA>
+						 	
+						</AREAS>
+						<ITEMS>
+							<ITEM label="Cereals Total">2062</ITEM>
+						</ITEMS>
+						<ELEMENTS>
+							<ELEMENT label='Production'>51</ELEMENT>
+							<ELEMENT label='Utilisation'>200</ELEMENT>
+						</ELEMENTS>								
+					</WHERE>
+					<GROUPBYS>
+						<FIELD>D.year</FIELD>
+						<FIELD>D.element</FIELD>
+						<FIELD>D.value</FIELD>
+					</GROUPBYS>	
+					<SORT type="DESC">
+						<FIELD>D.year</FIELD>
+					</SORT>				
+				</BASEQUERY>					
+			</RESOURCE>
+			<!--<RESOURCE>	
+													<RESOURCETYPE>TABLE</RESOURCETYPE>
+													<OUTPUTTYPE>HTML</OUTPUTTYPE>
+													<TITLE>
+														<E>Cereal Balance at a glance</E>
+													</TITLE>
+													<SIZE>
+														<WIDTH>480</WIDTH>
+														<HEIGHT>250</HEIGHT>
+													</SIZE> 
+													<BASEQUERY>
+														<SELECTS>
+															<SELECT>product</SELECT>
+															<SELECT>element</SELECT>
+															<SELECT>ROUND(CAST(extract(year from year) AS NUMERIC), 0) AS year</SELECT>			
+														</SELECTS>
+														<WHERE>
+														 <AREAS>
+																				 	<AREA label="World">341</AREA>
+																				 	
+						</AREAS>
+															<ITEMS>
+																<ITEM label="Cereals Total">2062</ITEM>
+															</ITEMS>
+															<ELEMENTS>
+																<ELEMENT label='Production'>21</ELEMENT>
+																<ELEMENT label='Exports'>68</ELEMENT>
+																<ELEMENT label='Closing Stocks'>119</ELEMENT>
+																<ELEMENT label='Utilization (Domestic Use)'>60</ELEMENT>
+				
+															</ELEMENTS>								
+														</WHERE>
+														<SORT type="DESC">
+															<FIELD>year</FIELD>
+														</SORT>							
+													</BASEQUERY>					
+			</RESOURCE>-->
+			<RESOURCE>			<RESOURCETYPE>CHART</RESOURCETYPE>
+										<OUTPUTTYPE>TIMESERIES</OUTPUTTYPE>
+										<TITLE>
+											<E>Imports and Exports</E>
+										</TITLE>
+										<SIZE>
+											<WIDTH>521</WIDTH>
+											<HEIGHT>250</HEIGHT>
+										</SIZE> 
+										<BASEQUERY>
+											<SELECTS>
+												<SELECT>element</SELECT>	
+												<SELECT>ROUND(CAST(extract(year from D.year) AS NUMERIC), 0) AS year</SELECT>
+												<SELECT>ROUND((CAST(D.value AS NUMERIC)), 2)</SELECT>
+											</SELECTS>
+											<WHERE>
+											<AREAS>
+											    <AREA label="World">341</AREA>
+											</AREAS>
+												<ITEMS>
+													<ITEM label="Cereals Total">2062</ITEM>
+												</ITEMS>
+												<ELEMENTS>
+													<ELEMENT label='Import'>61</ELEMENT>
+													<ELEMENT label='Export'>91</ELEMENT>
+												</ELEMENTS>								
+											</WHERE>
+                                        <GROUPBYS>
+						<FIELD>D.year</FIELD>
+						<FIELD>D.element</FIELD>
+						<FIELD>D.value</FIELD>
+					</GROUPBYS>	
+					<SORT type="DESC">
+						<FIELD>year</FIELD>
+					</SORT>		
+				</BASEQUERY>			
+			</RESOURCE>
+			<!--<RESOURCE>	
+							<RESOURCETYPE>CHART</RESOURCETYPE>
+							<OUTPUTTYPE>TIMESERIES</OUTPUTTYPE>
+							<TITLE>
+								<E>Production</E>
+							</TITLE>
+							<SIZE>
+								<WIDTH>480</WIDTH>
+								<HEIGHT>250</HEIGHT>
+							</SIZE> 
+							<BASEQUERY>
+								<SELECTS>
+									<SELECT>element</SELECT>	
+									<SELECT>ROUND(CAST(extract(year from year) AS NUMERIC), 0) AS year</SELECT>			
+								</SELECTS>
+								<WHERE>
+								<AREAS>
+								    <AREA label="World">1018</AREA>
+								</AREAS>
+									<ITEMS>
+										<ITEM label="Cereals Total">2905</ITEM>
+									</ITEMS>
+									<ELEMENTS>
+										<ELEMENT label='Production'>21</ELEMENT>
+									</ELEMENTS>								
+								</WHERE>
+								 <GROUPBYS>
+						<FIELD>year</FIELD>
+						<FIELD>element</FIELD>
+					</GROUPBYS>	
+					<SORT type="DESC">
+						<FIELD>year</FIELD>
+					</SORT>								
+							</BASEQUERY>					
+			</RESOURCE>-->
+		</DEFAULT>	
+		
+	</RESOURCES>
+</VIEW>

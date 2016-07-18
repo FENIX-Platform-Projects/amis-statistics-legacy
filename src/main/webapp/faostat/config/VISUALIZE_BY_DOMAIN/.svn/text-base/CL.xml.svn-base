@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<VIEW type="Browse By CL - Food supply - Livestock and Fish Primary" >
+	<TITLE>
+		<E>Food supply - livestock and fish primary</E>
+		<S>Suministro de alimentos - ganadería y pesca primarios</S>
+		<F>Disponibilité alimentaire - le bétail et les poissons primaires</F>
+	</TITLE>
+	 <FILTERS>
+		<FILTER useCodingSystem="true" width="260px">
+			<FILTERTYPE>ITEMS</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE label="Meat, Total" domain='CL'>2943</CODE>
+			</DEFAULTCODES>
+		</FILTER>	
+		<FILTER>
+			<FILTERTYPE width="260px">COUNTRIES</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE label="India">100</CODE>
+			</DEFAULTCODES> 
+		</FILTER>
+		<FILTER type="CODING_SYSTEM">
+			<FILTERTYPE>TIMERANGE</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE>1992</CODE>
+				<CODE>2007</CODE>
+			</DEFAULTCODES>
+		</FILTER>
+	</FILTERS> 
+	
+	<RESOURCES>
+		<DEFAULT>
+			<RESOURCE>			
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>430</WIDTH>
+					<HEIGHT>220</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>Fat supply quantity in selected country</E>
+					<S>Cantidad de suministro de grasas en el país seleccionado</S>
+					<F>La quantité de disponibilité de matiéres grasses pour le pays sélectionné</F>
+				</TITLE>
+			
+				<DATEQUERY>
+					<MAXDATELIMIT>2007</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> -->
+					<TIMESPAN type="year">15</TIMESPAN>
+				</DATEQUERY>
+
+				<BASEQUERY>					 
+					<SELECTS>		       
+						<SELECT lang="true">E.ElementName</SELECT>
+						<SELECT>D.Year</SELECT>
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+
+							<DOMAIN label="Balance Livestock">CL</DOMAIN>
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Meat, Total">2943</ITEM>
+						</ITEMS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Fat supply quantity (g/capita/day)'>684</ELEMENTLIST> 
+						</ELEMENTSLIST>
+					
+						<AREAS>
+							<AREA label="India">100</AREA>	
+						</AREAS> 
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD>D.Year</FIELD>
+					</SORT>
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>TRUE</COUNTRY_LEVEL>			
+	             
+				 </BASEQUERY>					
+			</RESOURCE>
+
+
+			<RESOURCE>			
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>430</WIDTH>
+					<HEIGHT>220</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>Protein supply quantity in selected country</E>
+					<S>Cantidad de suministro de proteínas en el país seleccionado</S>
+					<F>La quantité de disponibilité de protéines pour le pays sélectionné</F>
+				</TITLE>
+			
+				<DATEQUERY>
+					<MAXDATELIMIT>2007</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> -->
+					<TIMESPAN type="year">15</TIMESPAN>
+				</DATEQUERY>
+
+				<BASEQUERY>					 
+					<SELECTS>		       
+						<SELECT lang="true">E.ElementName</SELECT>
+						<SELECT>D.Year</SELECT>
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+
+							<DOMAIN label="Balance Livestock">CL</DOMAIN>
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Meat, Total">2943</ITEM>
+						</ITEMS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Protein supply quantity (g/capita/day)'>674</ELEMENTLIST> 
+						</ELEMENTSLIST>
+					
+						<AREAS>
+							<AREA label="India">100</AREA>	
+						</AREAS> 
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD>D.Year</FIELD>
+					</SORT>
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>TRUE</COUNTRY_LEVEL>
+	             
+				 </BASEQUERY>					
+			</RESOURCE>
+
+			<RESOURCE>			
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>430</WIDTH>
+					<HEIGHT>220</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>Food supply quantity in selected country (kg/capita/yr)</E>
+					<S>Cantidad de suministro de alimentos en el país seleccionado (kg/persona/año)</S>
+					<F>Quantité de la disponibilité alimentaire dans le pays sélectionné (kg / habitant / an)</F>
+				</TITLE>
+			
+				<DATEQUERY>
+					<MAXDATELIMIT>2007</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> -->
+					<TIMESPAN type="year">15</TIMESPAN>
+				</DATEQUERY>
+
+				<BASEQUERY>					 
+					<SELECTS>		       
+						<SELECT lang="true">E.ElementName</SELECT>
+						<SELECT>D.Year</SELECT>
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+
+							<DOMAIN label="Balance Livestock">CL</DOMAIN>
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Meat, Total">2943</ITEM>
+						</ITEMS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Food supply quantity (kg/capita/yr)'>645</ELEMENTLIST> 
+						</ELEMENTSLIST>
+					
+						<AREAS>
+							<AREA label="India">100</AREA>	
+						</AREAS> 
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD>D.Year</FIELD>
+					</SORT>
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>TRUE</COUNTRY_LEVEL>	
+	             
+				 </BASEQUERY>					
+			</RESOURCE>
+
+
+			<RESOURCE>			
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>430</WIDTH>
+					<HEIGHT>220</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>Food supply quantity in selected country (tonnes)</E>
+					<S>Cantidad de suministro de alimentos en el país seleccionado (toneladas)</S>
+					<F>Quantité de la disponibilité alimentaire dans le pays choisi (tonnes)</F>
+				</TITLE>
+			
+				<DATEQUERY>
+					<MAXDATELIMIT>2007</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> -->
+					<TIMESPAN type="year">15</TIMESPAN>
+				</DATEQUERY>
+
+				<BASEQUERY>					 
+					<SELECTS>		       
+						<SELECT lang="true">E.ElementName</SELECT>
+						<SELECT>D.Year</SELECT>
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+
+							<DOMAIN label="Balance Livestock">CL</DOMAIN>
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Meat, Total">2943</ITEM>
+						</ITEMS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Food supply quantity (tonnes)'>641</ELEMENTLIST> 
+						</ELEMENTSLIST>
+						<AREAS>
+							<AREA label="India">100</AREA>	
+						</AREAS> 
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD>D.Year</FIELD>
+					</SORT>
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>TRUE</COUNTRY_LEVEL>			
+	             
+				 </BASEQUERY>					
+			</RESOURCE>
+		</DEFAULT>	
+	</RESOURCES>
+</VIEW>

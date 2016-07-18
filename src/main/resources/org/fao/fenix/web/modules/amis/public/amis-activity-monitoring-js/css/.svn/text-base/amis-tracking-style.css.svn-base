@@ -1,0 +1,93 @@
+html,body{
+	margin:0;padding:0
+}
+
+body{
+	margin:0;
+	padding:0
+	height:100%; /* this is the key! */
+	color:#000000;  
+	background-color:#FFFFFF;
+	font-family: verdana;
+}
+
+.tracking_text {
+	color:#154179;
+	font-size:12px;
+	font-weight:bold;
+	font-family:Verdana;
+	padding-bottom:10px;
+}
+
+
+.tracking_tab {
+	color: #fff;
+    background: #154179;
+	text-decoration: none;
+	padding: 3px;
+	padding-left: 4px;
+	padding-right: 4px;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.tracking_tab_label {
+    color: #000;
+    text-decoration: none;
+	padding: 5px 5px 5px 20px;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.tracking_intro_text {
+	color:#666666;
+	font-family:Verdana;
+	font-size: 12px;
+	font-style:normal;
+	line-height:1.7em;
+	text-align: justify;
+}
+
+
+.show_data_button {
+  	background: transparent url(../images/show_icon.png) no-repeat center center;
+    color:#33528C;
+}
+
+.select_all_button {
+  	background: transparent url(../images/select_icon.png) no-repeat center center;
+    color:#333333;
+}
+
+.clear_all_button {
+  	background: transparent url(../images/clear_icon.png) no-repeat center center;
+    color:#333333;
+}
+
+.show_data_button, .select_all_button, .clear_all_button {
+    float: left; 
+    margin: 4px;
+    font-size: 11px;
+    font-family: arial, tahoma,verdana, helvetica;
+    font-weight:bold;
+    vertical-align:middle; 
+    text-align:left;
+    background-position: left;
+}
+
+#analytics-bar-chart-top-panel, #analytics-time-chart-top-panel {
+	background: #154179;
+	color: #FFFFFF;
+	align:center;
+	font-family: verdana;
+	font-size: 12px;
+	font-weight: bold;
+	height:25px;
+	padding-top:10px;
+	padding-left:10px;
+	
+}
+#analytics-bar-chart, #analytics-time-chart {
+	border: 1px solid #DDDDDD;
+}
+

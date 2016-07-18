@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/fenix/!svn/ver/8819/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/cpf/common/vo
+END
+CPFResultVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/fenix/!svn/ver/8819/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/cpf/common/vo/CPFResultVO.java
+END
+CPFQueryVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/fenix/!svn/ver/8819/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/cpf/common/vo/CPFQueryVO.java
+END
+CPFQueryVOBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/fenix/!svn/ver/8819/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/cpf/common/vo/CPFQueryVOBuilder.java
+END

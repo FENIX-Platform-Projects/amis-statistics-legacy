@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/fenix/!svn/ver/9484/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/adam/common/vo
+END
+ADAMConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/fenix/!svn/ver/10380/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/adam/common/vo/ADAMConstants.java
+END
+ADAMReportBeanVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/fenix/!svn/ver/7358/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/adam/common/vo/ADAMReportBeanVO.java
+END
+ADAMDonorProfileVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/fenix/!svn/ver/9546/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/adam/common/vo/ADAMDonorProfileVO.java
+END
+ADAMColorConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/fenix/!svn/ver/7292/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/adam/common/vo/ADAMColorConstants.java
+END
+ADAMResultVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/fenix/!svn/ver/10380/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/adam/common/vo/ADAMResultVO.java
+END
+ADAMQueryVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/fenix/!svn/ver/10235/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/adam/common/vo/ADAMQueryVO.java
+END
+ADAMDonorChannelOfCooperationVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/fenix/!svn/ver/7886/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/adam/common/vo/ADAMDonorChannelOfCooperationVO.java
+END
+ADAMDonorMatrixVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/fenix/!svn/ver/7677/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/adam/common/vo/ADAMDonorMatrixVO.java
+END

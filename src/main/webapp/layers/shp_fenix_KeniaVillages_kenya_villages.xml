@@ -1,0 +1,29 @@
+<layer type="shp">
+  <title>Kenya Villages</title>
+  <abstract>Generated from KeniaVillages -- Shapefile Layer 'KeniaVillages::kenya_villages'</abstract>
+  <source country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</source>
+  <provider country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</provider>
+  <region>133</region>
+  <categories />
+  <sharingcode>Public</sharingcode>
+  <featuretype>
+    <title>Kenya Villages</title>
+    <abstract>Generated from KeniaVillages</abstract>
+    <defaultstyle>point</defaultstyle>
+    <bbox>
+      <srs>4326</srs>
+      <minx>33.91999816894531</minx>
+      <maxx>41.869998931884766</maxx>
+      <miny>-4.650000095367432</miny>
+      <maxy>4.880000114440918</maxy>
+    </bbox>
+    <layername>kenya_villages</layername>
+    <datastore>
+      <name>KenyaVillages</name>
+      <namespace>fenix</namespace>
+    </datastore>
+  </featuretype>
+  <!--Data dumped from geoserver at:-->
+  <!--REST url: http://ldvapp07.fao.org:8032/geoserverDev-->
+  <!--WMS url: http://ldvapp07.fao.org:8032/geoserverDev/wms?-->
+</layer>

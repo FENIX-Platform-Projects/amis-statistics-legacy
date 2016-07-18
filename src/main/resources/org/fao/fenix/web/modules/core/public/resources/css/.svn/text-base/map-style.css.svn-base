@@ -1,0 +1,247 @@
+
+.mapLayers {
+	background: transparent url(re-images/map_layers.png) no-repeat center center;
+}
+
+.mapDimensions {
+	background: transparent url(images/funnel_plus.gif) no-repeat center center;
+}
+
+.mapAddLayer {
+	background: transparent url(map-images/add_layer.png) no-repeat center center;
+}
+
+.mapJoint {
+	background: transparent url(map-images/joint.png) no-repeat center center;
+}
+
+.mapJoin {
+	background: transparent url(map-images/join_dataset.png) no-repeat center center;
+}
+
+.mapPan {
+	background: transparent url(map-images/pan.png) no-repeat center center;
+}
+.mapZoomIn {
+	background: transparent url(map-images/zoom_in.png) no-repeat center center;
+}
+.mapZoomOut {
+	background: transparent url(map-images/zoom_out.png) no-repeat center center;
+}
+
+.mapZoomToCountry {
+	background: transparent url(map-images/zoom_country.png) no-repeat center center;
+}
+
+.mapViewMetadata {
+	background: transparent url(map-images/view_metadata.png) no-repeat center center;
+}
+
+.mapViewLegend {
+	background: transparent url(map-images/legend.png) no-repeat center center;
+}
+
+.mapLayerUp {
+	background: transparent url(images/arrow-up.gif) no-repeat center center;
+}
+
+.mapLayerDown {
+	background: transparent url(images/arrow-down.gif) no-repeat center center;
+}
+
+.mapLayerToggle {
+	background: transparent url(images/layers.png) no-repeat center center;
+}
+
+.mapIdentify {
+	background: transparent url(map-images/identify.png) no-repeat center center;
+}
+
+.mapLayerOpacityInc {
+	background: transparent url(map-images/transpinc.png) no-repeat center center;
+}
+
+.mapLayerOpacityDec {
+	background: transparent url(map-images/transpdec.png) no-repeat center center;
+}
+
+
+.mapExportAsImage {
+	background: transparent url(map-images/export_map.png) no-repeat center center;
+}
+
+.mapExportAsPdf {
+	background: transparent url(map-images/export_as_pdf.gif) no-repeat center center;
+}
+
+.mapExportAsWmc {
+	background: transparent url(map-images/export_as_wmc.png) no-repeat center center;
+}
+
+
+.map_ll_external {
+	background: transparent url(map-images/map.png) no-repeat center center;
+}
+
+.map_ll_vect {
+	background: transparent url(map-images/layer.png) no-repeat center center;
+}
+
+.map_vector {
+	background: transparent url(map-images/vector.png) no-repeat center center;
+}
+
+.map_raster {
+	background: transparent url(map-images/raster.png) no-repeat center center;
+}
+.map_point {
+	background: transparent url(map-images/point.png) no-repeat center center;
+}
+.map_line {
+	background: transparent url(map-images/layer.png) no-repeat center center;
+}
+
+
+.mapSaveBtn {
+	background: transparent url(images/save.gif) no-repeat center center;
+}
+
+.mapPrintBtn {
+	background: transparent url(images/print.gif) no-repeat center center;
+}
+
+.mapFavouritesBtn {
+	background: transparent url(images/favourites.gif) no-repeat center
+		center;
+}
+
+.mapExportBtn {
+	background: transparent url(images/export_as_image.gif) no-repeat center
+		center;
+}
+
+.mapReportBtn {
+	background: transparent url(images/reports.gif) no-repeat center center;
+}
+
+.mapAddDataset {
+	background: transparent url(images/table_add.png) no-repeat center
+		center;
+}
+
+.mapRemoveDataset {
+	background: transparent url(images/table_delete.png) no-repeat center
+		center;
+}
+
+.mapZoomToLayer {
+	background: transparent url(map-images/zoom_to_layer.png) no-repeat center center;
+}
+
+/* Navigation Toolbar Control */
+.olControlNavToolbar {
+                float:right;
+			    right: 0px;
+			    height: 30px;
+    			width: 50px;
+}
+
+.olControlNavToolbar div {
+		   display:block;
+		   width:  28px;
+		   height: 28px;
+		   top: 10px;
+		   position: relative;
+}
+
+.olControlNavToolbar .olControlZoomBoxItemInactive {
+    background-color: transparent;
+    background-image:url(map-images/zoom.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border:solid;
+    border-width:1px;
+    border-color:#00008B; */dark blue */
+ 
+}
+
+.olControlNavToolbar .olControlZoomBoxItemActive { 
+  background-image: url(map-images/zoom.png);
+  background-color: #00008B; */dark blue */
+  background-repeat: no-repeat;
+  background-position: center center;
+  border:solid;
+  border-width:1px;
+  border-color:#00008B; */dark blue */
+}
+
+.olControlNavToolbar .olControlNavigationItemInactive {
+    background-color: transparent;
+    background-image: url(map-images/pan.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border:solid;
+    border-width:1px;
+    border-color:#00008B; */dark blue */
+}
+
+.olControlNavToolbar .olControlNavigationItemActive { 
+  background-image: url(map-images/pan.png);
+  background-color: #00008B; */dark blue */
+  background-repeat: no-repeat;
+  background-position: center center;
+  border:solid;
+  border-width:1px;
+  border-color:#00008B; */dark blue */
+}
+
+
+.olControlNavToolbar .olControlSelectBoxItemInactive {
+    background-color: transparent;
+    background-image:url(map-images/select_features.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border:solid;
+    border-width:1px;
+    border-color:#00008B; */dark blue */
+}
+
+.olControlNavToolbar .olControlSelectBoxItemActive { 
+  background-image: url(map-images/select_features.png);
+  background-repeat: no-repeat;
+  background-position: center center; 
+  border:solid;
+  border-width:1px;
+  background-color: #00008B; */dark blue */     
+  border-color:#00008B; */dark blue */ 
+}
+
+.olControlNavToolbar .olControlSelectBoxResetItemInactive {
+    background-color: transparent;
+    background-image:url(map-images/clear_selected_features.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border:solid;
+    border-width:1px;
+    border-color:#00008B; */dark blue */
+}
+
+.olControlNavToolbar .olControlSelectBoxResetItemActive {
+    background-color: #00008B; */dark blue */
+    background-image:url(map-images/clear_selected_features.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border:solid;
+    border-width:1px;
+    border-color:#00008B; */dark blue */
+}
+
+.mapZoomToLayer {
+	background: transparent url(map-images/zoom_to_layer.png) no-repeat center center;
+}
+
+/* This one is a workaround for a problem risen in OL after the GWT170/GXT201 upgrade.
+   Without this, the map won't be displayed at all. */
+.olMap {
+    height:100%;
+}

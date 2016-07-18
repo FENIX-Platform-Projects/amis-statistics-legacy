@@ -1,0 +1,12 @@
+[
+                {
+                    "label": "Comparing & Viewing Data",
+                    "code": "VIEWING"
+                }, {
+                   "label": "Downloading Data",
+                    "code": "DOWNLOADING"
+                }, {
+                   "label": "Modifying Data",
+                    "code": "MODIFYING"
+                }
+                ]

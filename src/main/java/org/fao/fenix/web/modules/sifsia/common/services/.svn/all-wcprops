@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/fenix/!svn/ver/6791/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/sifsia/common/services
+END
+SifsiaService.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/fenix/!svn/ver/6791/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/sifsia/common/services/SifsiaService.java
+END
+SifsiaServiceEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/fenix/!svn/ver/6791/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/sifsia/common/services/SifsiaServiceEntry.java
+END
+SifsiaServiceAsync.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/fenix/!svn/ver/6791/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/sifsia/common/services/SifsiaServiceAsync.java
+END

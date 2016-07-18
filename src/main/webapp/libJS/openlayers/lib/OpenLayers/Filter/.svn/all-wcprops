@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Filter
+END
+Spatial.js
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Filter/Spatial.js
+END
+FeatureId.js
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Filter/FeatureId.js
+END
+Comparison.js
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Filter/Comparison.js
+END
+Logical.js
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Filter/Logical.js
+END

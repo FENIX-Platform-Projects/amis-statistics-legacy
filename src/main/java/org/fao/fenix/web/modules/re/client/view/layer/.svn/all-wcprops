@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/fenix/!svn/ver/7078/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/layer
+END
+SearchParametersLayer.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/fenix/!svn/ver/6412/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/layer/SearchParametersLayer.java
+END
+CatalogueContextMenuLayer.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/fenix/!svn/ver/7078/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/layer/CatalogueContextMenuLayer.java
+END
+CatalogueLayer.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/layer/CatalogueLayer.java
+END
+CataloguePagerLayer.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/fenix/!svn/ver/6412/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/layer/CataloguePagerLayer.java
+END
+ResourceExplorerLayer.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/fenix/!svn/ver/7018/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/layer/ResourceExplorerLayer.java
+END

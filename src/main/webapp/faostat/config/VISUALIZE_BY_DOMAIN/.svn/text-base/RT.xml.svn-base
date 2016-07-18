@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<VIEW type="Browse By RT - Pesticides (trade)" >
+	<TITLE>
+		<E>Resources - pesticides (trade) </E>
+		<S>Recursos - plaguicidas (comercio)</S>
+		<F>Ressources - les pesticides (commerce)</F>
+	</TITLE>
+	<RESOURCES>
+		<DEFAULT>
+			<RESOURCE>
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>BAR_WITH_CATEGORIES</OUTPUTTYPE>
+				<TITLE>
+<E>Top 10 importing countries – Hazarous pesticides</E>
+  <S>10 principales países en el comercio de plaguicidas - Plaguicidas peligrosos</S>
+  <F>TOP 10 des pays pour le commerce de pesticides - Pesticides dangereux</F>
+				</TITLE>
+				<IMAGESIZE>
+				        <SIZE>
+						<WIDTH>750</WIDTH>
+						<HEIGHT>290</HEIGHT>
+					</SIZE>
+				</IMAGESIZE>
+
+
+				<JOINQUERY>
+					
+					<JOINCOLUMN>AreaCode</JOINCOLUMN>
+					<SORT type="DESC">
+						<FIELD>Q1.Value</FIELD>
+					</SORT>
+				
+					<LIMIT field="D.AreaCode">10</LIMIT>
+
+					<SELECTS>
+						<SELECT lang="true">Q1.AreaName</SELECT>
+						<SELECT>Q1.Year</SELECT>
+						<SELECT lang="true">Q1.UnitName</SELECT>	
+						<SELECT>Q1.Value</SELECT>
+						<SELECT>Q2.Year</SELECT>
+						<SELECT lang="true">Q2.UnitName</SELECT>
+						<SELECT>Q2.Value</SELECT>
+						<SELECT>Q3.Year</SELECT>
+						<SELECT lang="true">Q3.UnitName</SELECT>
+						<SELECT>Q3.Value</SELECT>
+					</SELECTS>
+		
+					<BASEQUERIES>
+						<BASEQUERY>
+					
+							<SELECTS>
+		 						<SELECT>D.Year</SELECT>	
+		 						<SELECT>D.AreaCode</SELECT>	
+								<SELECT lang="true">A.AreaName</SELECT>	
+								<SELECT lang="true">E.UnitName</SELECT>		
+								<SELECT>D.Value</SELECT>		
+							</SELECTS>
+							<TABLES>		       
+								<FROM>Data</FROM>
+								<FROM>Element</FROM>
+								<FROM>Area</FROM>
+								<FROM>Item</FROM>
+							</TABLES>
+							<WHERE>
+								<DOMAINS>
+									<DOMAIN label="Pesticides Trade">RT</DOMAIN>
+								</DOMAINS>
+								<ITEMS>
+									<ITEM label="Hazardous">1442</ITEM>
+								</ITEMS>
+								<ELEMENTSLIST>
+									<ELEMENTLIST label='Import Value'>2620</ELEMENTLIST>
+								</ELEMENTSLIST>		
+								<YEARS>
+									<YEAR>2007</YEAR>
+								</YEARS>					
+							</WHERE>
+						</BASEQUERY>		
+
+
+						<BASEQUERY>
+					
+							<SELECTS>
+		 						<SELECT>D.Year</SELECT>	
+		 						<SELECT>D.AreaCode</SELECT>	
+								<SELECT lang="true">A.AreaName</SELECT>	
+								<SELECT lang="true">E.UnitName</SELECT>		
+								<SELECT>D.Value</SELECT>		
+							</SELECTS>
+							<TABLES>		       
+								<FROM>Data</FROM>
+								<FROM>Element</FROM>
+								<FROM>Area</FROM>
+								<FROM>Item</FROM>
+							</TABLES>
+							<WHERE>
+								<DOMAINS>
+									<DOMAIN label="Pesticides Trade">RT</DOMAIN>
+								</DOMAINS>
+								<ITEMS>
+									<ITEM label="Hazardous">1442</ITEM>
+								</ITEMS>
+								<ELEMENTSLIST>
+									<ELEMENTLIST label='Import Value'>2620</ELEMENTLIST>
+								</ELEMENTSLIST>		
+								<YEARS>
+									<YEAR>2008</YEAR>
+								</YEARS>					
+							</WHERE>
+						</BASEQUERY>
+
+						<BASEQUERY>
+					
+							<SELECTS>
+		 						<SELECT>D.Year</SELECT>	
+		 						<SELECT>D.AreaCode</SELECT>	
+								<SELECT lang="true">A.AreaName</SELECT>	
+								<SELECT lang="true">E.UnitName</SELECT>		
+								<SELECT>D.Value</SELECT>		
+							</SELECTS>
+							<TABLES>		       
+								<FROM>Data</FROM>
+								<FROM>Element</FROM>
+								<FROM>Area</FROM>
+								<FROM>Item</FROM>
+							</TABLES>
+							<WHERE>
+								<DOMAINS>
+									<DOMAIN label="Pesticides Trade">RT</DOMAIN>
+								</DOMAINS>
+								<ITEMS>
+									<ITEM label="Hazardous">1442</ITEM>
+								</ITEMS>
+								<ELEMENTSLIST>
+									<ELEMENTLIST label='Import Value'>2620</ELEMENTLIST>
+								</ELEMENTSLIST>		
+								<YEARS>
+									<YEAR>2009</YEAR>
+								</YEARS>					
+							</WHERE>
+						</BASEQUERY>						
+				</BASEQUERIES>
+				</JOINQUERY>
+			</RESOURCE>
+		</DEFAULT>	
+	</RESOURCES>
+</VIEW>

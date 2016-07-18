@@ -1,0 +1,80 @@
+﻿<NOTES type="Commodity Balances">
+<NOTE type="Introduction">
+<E>&lt;b&gt;Click in the tree &lt;/b&gt; to access the download page of the &lt;b&gt;commodity balances
+sub-domains.&lt;/b&gt;&lt;/b&gt; The commodity balances domain covers:&lt;br/&gt;&lt;br/&gt;
+
+&lt;ul class='bullet-list'&gt;
+&lt;li&gt;Production&lt;/li&gt;
+&lt;li&gt;Trade&lt;/li&gt;
+&lt;li&gt;Feed and Seed&lt;/li&gt;
+&lt;li&gt;Waste<br/>
+&lt;li&gt;Other utilisation&lt;/li&gt;
+&lt;li&gt;Consumption&lt;/li&gt;
+&lt;/ul&gt;
+</E>
+<F>&lt;b&gt;Click in the tree &lt;/b&gt; to access the download page of the &lt;b&gt;commodity balances
+sub-domains.&lt;/b&gt;&lt;/b&gt;  The commodity balances domain covers:&lt;br/&gt;&lt;br/&gt;
+
+&lt;ul class='bullet-list'&gt;
+&lt;li&gt;Production&lt;/li&gt;
+&lt;li&gt;Commerce&lt;/li&gt;
+&lt;li&gt;Alimentation du bétail et semences&lt;/li&gt;
+&lt;li&gt;Pertes&lt;/li&gt;
+&lt;li&gt;Autres utilisations&lt;/li&gt;
+&lt;li&gt;Consommation&lt;/li&gt;
+&lt;/ul&gt;
+</F>
+<S>&lt;b&gt;Click in the tree &lt;/b&gt; to access the download page of the &lt;b&gt;commodity balances
+sub-domains.&lt;/b&gt;&lt;/b&gt; The commodity balances domain covers:&lt;br/&gt;&lt;br/&gt; 
+
+&lt;ul class='bullet-list'&gt;
+&lt;li&gt;Producción&lt;/li&gt;
+&lt;li&gt;Comercio&lt;/li&gt;
+&lt;li&gt;Pienso y Semilla&lt;/li&gt;
+&lt;li&gt;Pérdida&lt;/li&gt;
+&lt;li&gt;Otra Utilización&lt;/li&gt;
+&lt;li&gt;Consumo&lt;/li&gt;
+&lt;/ul&gt;
+</S>
+</NOTE>
+<NOTE type="Description">
+<E>Commodity balances show balances of food and agricultural commodities in a standardized form. The scope of standardization is to present these data in a less detailed form for a selected number of commodities without causing any significant loss of the basic variables monitoring the agricultural sector. The selected commodities include the equivalents of their derived products falling in the same commodity group, but exclude the equivalents of by-products and derived commodities, which through processing, change their nature and become part of different commodity groups. &lt;br/&gt;&lt;br/&gt;  
+
+&lt;b&gt;Commodity coverage&lt;/b&gt; &lt;br/&gt;&lt;br/&gt; 
+
+The commodity list in this domain has been generally confined to primary commodities - except for sugar, oils and fats and beverages. Whenever possible trade in processed commodities is expressed in the originating primary commodity equivalent. Rice is expressed in milled equivalent.
+</E>
+<F>Les équilibres des produits agricoles et alimentaires sont montrés sous une forme standardisée. La standardisation présente ces données sous une forme moins détaillée pour un nombre restreint de produits sans causer de perte significative des variables de base contrôlant le secteur agricole. Les produits choisis incluent les équivalents de leurs produits dérivés tombant dans le même groupe de marchandises, mais excluent les équivalents de leurs sous-produits et de leurs produits dérivés qui,  par transformation, changent de nature et deviennent partie de groupes de produits différents.&lt;br/&gt;&lt;br/&gt;  
+
+&lt;b&gt;Couverture&lt;/b&gt; &lt;br/&gt;&lt;br/&gt; 
+
+La liste de produits dans ce domaine a été généralement limitée aux produits primaires  - à part le sucre, les huiles et les graisses et les boissons. Autant que possible, le commerce des produits transformés est exprimé en équivalent primaire dans le produit dont ils dérivent. Le riz est exprimé dans l'équivalent blanchi.
+</F>
+<S>
+Los equilibrios de los productos agrícolas y alimentarios son mostrados en una forma standardizada. La standardización presenta estos datos en una forma menos detallada para un número limitado de productos sin causar pérdida significativa de las variables de base que controlan el sector agrícola. Los productos escogidos incluyan los equivalentes de sus productos derivados que caen en el mismo grupo de productos, pero excluyen los equivalentes de sus subproductos y de sus productos derivados que, por transformación, cambian de naturaleza y se vuelven partida de grupos de productos diferentes.&lt;br/&gt;&lt;br/&gt; 
+
+&lt;b&gt;Cobertura/b&gt; &lt;br/&gt;&lt;br/&gt;  
+
+La lista de productos en este dominio ha sido generalmente  limitada a los productos primarios - a parte del azúcar, de los aceites y grasas y de las bebidas. En lo posible, el comercio de los productos transformados es expresado en equivalente primario en el producto del que derivan. El arroz es en el equivalente elaborado.
+</S>
+</NOTE>
+<NOTEGROUP type="Please Note">
+ <TITLE><E>Please Note</E></TITLE>
+ <NOTE type="General">
+<E>A number of commodity/item aggregates have been included to offer synthetic information. Some of these are included with the aim of simplifying the extraction of all component commodities.
+</E>
+<F>Un certain nombre d'agrégats de produits ont été inclus pour offrir des informations synthétiques. Certains d'entre eux sont inclus dans le but de simplifier l'extraction de toutes les produits composants.
+</F>
+<S> Un cierto número de agregados de productos ha sido incluido para ofrecer informaciones sintéticas. Algunos dellos son incluidos con el fin de simplificar la extracción de todos producidos componentes. 
+</S>
+</NOTE>
+<NOTE type="General">
+<E>Data shown in the item aggregates represent the sum of the component commodities as presented in this domain (standardized form).
+</E>
+<F>Les données montrées dans les agrégats de produits représentent la somme des produits composants comme présenté dans ce domaine (forme standardisée).
+</F>
+<S>Los datos mostrados en los agregados de productos representan la suma de los productos componentes como presentado en este dominio (forma standardizada).
+</S>
+</NOTE>
+</NOTEGROUP>
+</NOTES>

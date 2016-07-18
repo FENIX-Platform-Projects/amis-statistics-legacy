@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/fenix/!svn/ver/7078/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/map
+END
+ResourceExplorerMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/fenix/!svn/ver/6918/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/map/ResourceExplorerMap.java
+END
+SearchParametersMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/fenix/!svn/ver/6412/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/map/SearchParametersMap.java
+END
+CatalogueContextMenuMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/fenix/!svn/ver/7078/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/map/CatalogueContextMenuMap.java
+END
+CatalogueMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/map/CatalogueMap.java
+END
+CataloguePagerMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/fenix/!svn/ver/6412/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/map/CataloguePagerMap.java
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/fenix/!svn/ver/12786/trunk/fenix-web/src/main/resources/org/fao/fenix/web/modules/amis/public/amis-market-monitor/jsp
+END
+amis-mm-other-indicators.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/fenix/!svn/ver/12783/trunk/fenix-web/src/main/resources/org/fao/fenix/web/modules/amis/public/amis-market-monitor/jsp/amis-mm-other-indicators.jsp
+END
+amis-mm-est-prices.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/fenix/!svn/ver/12783/trunk/fenix-web/src/main/resources/org/fao/fenix/web/modules/amis/public/amis-market-monitor/jsp/amis-mm-est-prices.jsp
+END
+amis-mm-json-data-export.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/fenix/!svn/ver/10864/trunk/fenix-web/src/main/resources/org/fao/fenix/web/modules/amis/public/amis-market-monitor/jsp/amis-mm-json-data-export.jsp
+END
+amis-mm-stocks-and-ratios.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/fenix/!svn/ver/12783/trunk/fenix-web/src/main/resources/org/fao/fenix/web/modules/amis/public/amis-market-monitor/jsp/amis-mm-stocks-and-ratios.jsp
+END
+amis-mm-compare-data-export.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/fenix/!svn/ver/12105/trunk/fenix-web/src/main/resources/org/fao/fenix/web/modules/amis/public/amis-market-monitor/jsp/amis-mm-compare-data-export.jsp
+END
+amis-mm-est-data-export.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/fenix/!svn/ver/12105/trunk/fenix-web/src/main/resources/org/fao/fenix/web/modules/amis/public/amis-market-monitor/jsp/amis-mm-est-data-export.jsp
+END
+amis-mm-compare-est-prices.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/fenix/!svn/ver/12783/trunk/fenix-web/src/main/resources/org/fao/fenix/web/modules/amis/public/amis-market-monitor/jsp/amis-mm-compare-est-prices.jsp
+END
+amis-mm-data-export.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/fenix/!svn/ver/12786/trunk/fenix-web/src/main/resources/org/fao/fenix/web/modules/amis/public/amis-market-monitor/jsp/amis-mm-data-export.jsp
+END
+amis-mm-compare-indicators.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/fenix/!svn/ver/12783/trunk/fenix-web/src/main/resources/org/fao/fenix/web/modules/amis/public/amis-market-monitor/jsp/amis-mm-compare-indicators.jsp
+END
+amis-mm-est-compare-data-export.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/fenix/!svn/ver/12105/trunk/fenix-web/src/main/resources/org/fao/fenix/web/modules/amis/public/amis-market-monitor/jsp/amis-mm-est-compare-data-export.jsp
+END

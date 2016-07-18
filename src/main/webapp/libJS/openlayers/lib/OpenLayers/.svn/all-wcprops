@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers
+END
+Format.js
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Format.js
+END
+Console.js
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Console.js
+END
+Feature.js
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Feature.js
+END
+Strategy.js
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Strategy.js
+END
+Geometry.js
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Geometry.js
+END
+Layer.js
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Layer.js
+END
+Style.js
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Style.js
+END
+Projection.js
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Projection.js
+END
+Request.js
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Request.js
+END
+Lang.js
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Lang.js
+END
+Tile.js
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Tile.js
+END
+Popup.js
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Popup.js
+END
+StyleMap.js
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/StyleMap.js
+END
+Tween.js
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Tween.js
+END
+Handler.js
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Handler.js
+END
+BaseTypes.js
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/BaseTypes.js
+END
+SingleFile.js
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/SingleFile.js
+END
+Renderer.js
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Renderer.js
+END
+Util.js
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Util.js
+END
+Ajax.js
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Ajax.js
+END
+Control.js
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Control.js
+END
+Map.js
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Map.js
+END
+Rule.js
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Rule.js
+END
+Marker.js
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Marker.js
+END
+Events.js
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Events.js
+END
+Icon.js
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Icon.js
+END
+Filter.js
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Filter.js
+END
+Protocol.js
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/fenix/!svn/ver/6400/trunk/fenix-web/src/main/webapp/libJS/openlayers/lib/OpenLayers/Protocol.js
+END

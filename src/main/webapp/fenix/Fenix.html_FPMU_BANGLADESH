@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="description" content="FPMU Workstation">
+<meta name="keywords"
+	content="FAO food security early warning price production developing country countries information exchange agriculture gis mapping tool">
+<!--<title>FPMU Workstation - Bangladesh</title>-->
+<title>FPMU Workstation</title>
+<script src='http://static.ak.fbcdn.net/connect.php/js/FB.Share'
+	type='text/javascript'></script>
+<script type="text/javascript"
+	src="http://platform.twitter.com/widgets.js"></script>
+<script type="text/javascript">
+(function() {
+var s = document.createElement('SCRIPT'), s1 = document.getElementsByTagName('SCRIPT')[0];
+s.type = 'text/javascript';
+s.async = true;
+s.src = 'http://widgets.digg.com/buttons.js';
+s1.parentNode.insertBefore(s, s1);
+})();
+</script>
+<script type="text/javascript" language='javascript'
+	src='resources/flash/swfobject.js'></script>
+
+<script type="text/javascript">
+(function(){
+  if (window.addEventListener)
+  {
+    window.addEventListener("load", nascondi_loading_screen, false);
+  }else{
+    window.attachEvent("onload", nascondi_loading_screen);
+  }
+})();
+function mostra_loading_screen()
+{
+  document.getElementById("loading_screen").style.display = 'block';
+}
+function nascondi_loading_screen()
+{
+  document.getElementById("loading_screen").style.display = 'none';
+}
+</script>
+
+<link rel="stylesheet" type="text/css" href="resources/css/gxt-all.css">
+
+<style type="text/css">
+.title {
+	font-size: 15px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-align: left;
+}
+
+#loading_screen {
+	display: none;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	color: blue;
+	text-align: center;
+	padding-top: 100px;
+	opacity: 0.5;
+	filter: alpha(opacity = 50);
+}
+</style>
+<link REL="SHORTCUT ICON" HREF="favicon.ico">
+
+<link rel="stylesheet"
+	href="../libJS/openlayers/theme/default/style.css" type="text/css" />
+<link rel="stylesheet" href="map-style.css" type="text/css" />
+
+<style type="text/css">
+.save-icon {
+	background: url("images/save.gif") no-repeat center left !important;
+}
+
+.load-icon {
+	background: url("images/export.png") no-repeat center left !important;
+}
+
+.sldToolbarItemIcon {
+	background: url("images/menu-show.gif") no-repeat center left !important
+		;
+}
+
+.addEntry {
+	background: url("images/add.gif") no-repeat center left !important;
+}
+
+.removeEntry {
+	background: url("images/delete.gif") no-repeat center left !important;
+}
+</style>
+
+<script type='text/javascript' src='fenix.nocache.js'></script>
+
+<!-- Load OpenLayer Stuff -->
+<script type="text/javascript"
+	src="../libJS/openlayers/lib/OpenLayers.js"></script>
+
+<!-- colorPicker -->
+<!-- script type='text/javascript' src="../libJS/GeoSolutions/flooble_colorPicker.js"></script -->
+
+<!-- JSON Parser -->
+<script type='text/javascript' src="../libJS/GeoSolutions/json2.js"></script>
+<!-- JSON Parser End -->
+
+<!-- SLD Creator-->
+<!-- script type='text/javascript' src="../libJS/GeoSolutions/SLD_builder.js"></script -->
+<!-- SLD Creator End -->
+
+<!-- fenix js lib-->
+<script type='text/javascript' src='../libJS/fenixJs/gwt2olUtils.js'></script>
+</head>
+<body class="xtheme-aero">
+
+<!-- LOADING -->
+<div id="loading_screen"><!-- <h1>Loading<img src="loading.gif"/>
+	</h1> -->
+<div style="font-size: 21px; font-weight: bold; color: #1D4589;">Workstation
+is loading, please wait...</div>
+<br>
+<div style="font-size: 25px; font-weight: bold; color: #1D4589;">Loading
+&nbsp <img src="loading.gif" /></div>
+
+</div>
+<script type="text/javascript">
+mostra_loading_screen();
+</script>
+
+<!-- TOP BANNER -->
+<div id="banner" style="background-color: #A1CC16;"></div>
+
+<!-- MENU -->
+<div id="topMenu" style="background-color: #D0DDED;"></div>
+<div id="menu" style="background-color: #D0DDED;"></div>
+
+<table width="100%" border="0">
+	<tr>
+		<td>
+		<div
+			style="font-family: Verdana, arial, sans-serif; font-size: 10px; font-weight: bold; color: #15428B;"
+			align="right" id="loginMessage"></div>
+		</td>
+	</tr>
+</table>
+
+
+<div id="leaf" style="position: absolute; bottom: 0; right: 0;" />
+<div id="logo" style="position: absolute; bottom: 0; left: 0;" />
+<div id="loading" style="position: absolute; bottom: 0;" />
+</body>
+</html>

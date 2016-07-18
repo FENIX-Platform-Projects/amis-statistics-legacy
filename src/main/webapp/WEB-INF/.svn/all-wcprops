@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/fenix/!svn/ver/9251/trunk/fenix-web/src/main/webapp/WEB-INF
+END
+jrun.web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/fenix/!svn/ver/6398/trunk/fenix-web/src/main/webapp/WEB-INF/jrun.web.xml
+END
+exporter-servlet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/fenix/!svn/ver/8932/trunk/fenix-web/src/main/webapp/WEB-INF/exporter-servlet.xml
+END
+devel.properties
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/fenix/!svn/ver/12066/trunk/fenix-web/src/main/webapp/WEB-INF/devel.properties
+END
+devel_DEPLOY.properties
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/fenix/!svn/ver/7427/trunk/fenix-web/src/main/webapp/WEB-INF/devel_DEPLOY.properties
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/fenix/!svn/ver/7904/trunk/fenix-web/src/main/webapp/WEB-INF/log4j.properties
+END
+applicationContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/fenix/!svn/ver/12141/trunk/fenix-web/src/main/webapp/WEB-INF/applicationContext.xml
+END
+nodeSettings.properties
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/fenix/!svn/ver/8853/trunk/fenix-web/src/main/webapp/WEB-INF/nodeSettings.properties
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/fenix/!svn/ver/8784/trunk/fenix-web/src/main/webapp/WEB-INF/web.xml
+END
+server-config.wsdd
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/fenix/!svn/ver/6398/trunk/fenix-web/src/main/webapp/WEB-INF/server-config.wsdd
+END
+viewer.properties
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/fenix/!svn/ver/6398/trunk/fenix-web/src/main/webapp/WEB-INF/viewer.properties
+END

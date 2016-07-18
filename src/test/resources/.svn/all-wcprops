@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/fenix/!svn/ver/8797/trunk/fenix-web/src/test/resources
+END
+fenix-web-test.properties
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/fenix/!svn/ver/8797/trunk/fenix-web/src/test/resources/fenix-web-test.properties
+END
+applicationContext-test.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/fenix/!svn/ver/8797/trunk/fenix-web/src/test/resources/applicationContext-test.xml
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ipc/common/services
+END
+IPCXMLService.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ipc/common/services/IPCXMLService.java
+END
+IPCService.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/fenix/!svn/ver/6409/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ipc/common/services/IPCService.java
+END
+IPCServiceEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/fenix/!svn/ver/6409/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ipc/common/services/IPCServiceEntry.java
+END
+IPCXMLServiceEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/fenix/!svn/ver/6409/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ipc/common/services/IPCXMLServiceEntry.java
+END
+IPCServiceAsync.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/fenix/!svn/ver/6409/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ipc/common/services/IPCServiceAsync.java
+END
+IPCXMLServiceAsync.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/ipc/common/services/IPCXMLServiceAsync.java
+END

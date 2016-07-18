@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/fenix/!svn/ver/6754/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/fpi/client/view/dataentry
+END
+DailyDataEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/fenix/!svn/ver/6408/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/fpi/client/view/dataentry/DailyDataEntry.java
+END
+MonthlyDataEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/fenix/!svn/ver/6408/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/fpi/client/view/dataentry/MonthlyDataEntry.java
+END
+FPIDataEntryPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/fenix/!svn/ver/6754/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/fpi/client/view/dataentry/FPIDataEntryPanel.java
+END
+FPIDataEntryWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/fenix/!svn/ver/6754/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/fpi/client/view/dataentry/FPIDataEntryWindow.java
+END
+WeeklyDataEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/fenix/!svn/ver/6754/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/fpi/client/view/dataentry/WeeklyDataEntry.java
+END
+FPIDataEntryParametersPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/fenix/!svn/ver/6754/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/fpi/client/view/dataentry/FPIDataEntryParametersPanel.java
+END

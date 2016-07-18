@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/fenix/!svn/ver/6969/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/table/common/vo
+END
+DimensionBeanVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/table/common/vo/DimensionBeanVO.java
+END
+TableFilterVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/fenix/!svn/ver/6969/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/table/common/vo/TableFilterVO.java
+END
+TableVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/table/common/vo/TableVO.java
+END
+TableHeaderVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/fenix/!svn/ver/6413/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/table/common/vo/TableHeaderVO.java
+END

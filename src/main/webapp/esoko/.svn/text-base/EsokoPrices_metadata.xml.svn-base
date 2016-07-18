@@ -1,0 +1,77 @@
+<metadata>
+	<type>EsokoPricesDataset</type>
+	<periodTypeCode>daily</periodTypeCode>
+	<abstractAbstract>Market prices in Northern Sudan collected through the Esoko application.</abstractAbstract>
+	<keywords>esoko, market, prices, wholesale, retail, off-lorry, northern, sudan</keywords>
+	<provider country="0" contact="andrea@busylab.com">Esoko</provider>
+	<region>40764</region>
+	<startDate>2006-01-01</startDate>
+	<endDate>2010-05-31</endDate>
+	<dateLastUpdate>2010-05-01</dateLastUpdate>
+	<sharingCode>Public</sharingCode>
+	<source country="0" contact="sadig.elamin@fao.org">SIFSIA</source>
+	<categories>027</categories>
+	<title>Market Prices in Northern Sudan</title>
+	<code>ESOKO_PRICES</code>
+	<descriptors>
+		<descriptor key="true">
+			<header>Date</header>
+			<contentDescriptor>date</contentDescriptor>
+		</descriptor>
+		<descriptor>
+			<header>Price</header>
+			<contentDescriptor>quantity</contentDescriptor>
+		</descriptor>
+		<descriptor key="true">
+			<header>Measurement Unit</header>
+			<contentDescriptor>measurementUnit</contentDescriptor>
+			<option>
+				<name>Indicator</name>
+				<value>EsokoMeasurementUnit</value>
+				<region>0</region>
+			</option>
+		</descriptor>
+		<descriptor key="true">
+			<header>Commodity</header>
+			<contentDescriptor>commodityCode</contentDescriptor>
+			<options>
+				<option>
+					<name>Commodity</name>
+					<value>EsokoCommodities</value>
+					<region>0</region>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="true">
+			<header>Location</header>
+			<contentDescriptor>featureCode</contentDescriptor>
+			<options>
+				<option>
+					<name>Geographic</name>
+					<value>EsokoLocations</value>
+					<region>0</region>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="true">
+			<header>Country</header>
+			<contentDescriptor>firstIndicator</contentDescriptor>
+			<options>
+				<option>
+					<name>Geographic</name>
+					<value>EsokoLocations</value>
+					<region>0</region>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="true">
+			<header>Type</header>
+			<contentDescriptor>secondIndicator</contentDescriptor>
+			<option>
+				<name>Indicator</name>
+				<value>EsokoPriceType</value>
+				<region>0</region>
+			</option>
+		</descriptor>
+	</descriptors>
+</metadata>

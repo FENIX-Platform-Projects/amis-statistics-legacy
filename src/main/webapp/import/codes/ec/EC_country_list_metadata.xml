@@ -1,0 +1,30 @@
+<metadata>
+<type>Other</type>
+<periodTypeCode></periodTypeCode>
+<abstractAbstract></abstractAbstract>
+<keywords></keywords>
+<provider></provider>
+<region>0</region>
+<startDate>2009-12-03</startDate>
+<endDate>2009-12-03</endDate>
+<dateLastUpdate>2009-12-03</dateLastUpdate>
+<sharingCode>Public</sharingCode>
+<source></source>
+<categories></categories>
+<title>EC Countries</title>
+<code></code>
+<descriptors>
+	<descriptor>
+		<header>Code</header>
+		<contentDescriptor>text</contentDescriptor>
+	</descriptor>
+	<descriptor>
+		<header>Label</header>
+		<contentDescriptor>text</contentDescriptor>
+	</descriptor>
+	<descriptor>
+		<header>Langcode</header>
+		<contentDescriptor>text</contentDescriptor>
+	</descriptor>
+</descriptors>
+</metadata>

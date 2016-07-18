@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/fenix/!svn/ver/8897/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/client/control/menu
+END
+FenixMenuBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/fenix/!svn/ver/7234/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/client/control/menu/FenixMenuBuilder.java
+END
+FenixSelectionPool.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/fenix/!svn/ver/8897/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/client/control/menu/FenixSelectionPool.java
+END
+FenixCommandPool.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/fenix/!svn/ver/8852/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/client/control/menu/FenixCommandPool.java
+END
+FenixMenuController.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/fenix/!svn/ver/6407/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/client/control/menu/FenixMenuController.java
+END
+FenixMenuView.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/fenix/!svn/ver/6407/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/core/client/control/menu/FenixMenuView.java
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/qb/common/services
+END
+QueryBuilderServiceEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/fenix/!svn/ver/6411/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/qb/common/services/QueryBuilderServiceEntry.java
+END
+QueryBuilderServiceAsync.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/qb/common/services/QueryBuilderServiceAsync.java
+END
+QueryBuilderService.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/qb/common/services/QueryBuilderService.java
+END

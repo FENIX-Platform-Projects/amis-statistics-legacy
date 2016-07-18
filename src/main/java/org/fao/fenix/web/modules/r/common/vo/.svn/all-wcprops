@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/fenix/!svn/ver/6691/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/r/common/vo
+END
+ROptionVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/fenix/!svn/ver/6672/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/r/common/vo/ROptionVO.java
+END
+RException.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/fenix/!svn/ver/6672/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/r/common/vo/RException.java
+END
+RPlotVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/fenix/!svn/ver/6672/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/r/common/vo/RPlotVO.java
+END
+ROutputVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/fenix/!svn/ver/6691/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/r/common/vo/ROutputVO.java
+END
+RUserSettingsVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/fenix/!svn/ver/6672/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/r/common/vo/RUserSettingsVO.java
+END
+RResultVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/fenix/!svn/ver/6672/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/r/common/vo/RResultVO.java
+END
+RFunctionVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/fenix/!svn/ver/6691/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/r/common/vo/RFunctionVO.java
+END

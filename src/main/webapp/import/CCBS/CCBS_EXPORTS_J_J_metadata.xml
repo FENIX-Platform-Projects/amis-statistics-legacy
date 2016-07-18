@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<type>CCBSDatasetJJExports</type>
+	<title>CCBS J J Exports</title>
+	<abstractAbstract></abstractAbstract>
+	<keywords>ccbs</keywords>
+	<provider country="0" contact="Info-GIEWS-Workstation@fao.org">FAO GIEWS</provider>
+	<source country="0" contact="Info-GIEWS-Workstation@fao.org">FAO</source>
+	<region>0</region>
+	<startDate>1978-01-01</startDate>
+	<endDate>2009-01-01</endDate>
+	<dateLastUpdate>2009-01-01</dateLastUpdate>
+	<periodTypeCode>yearly</periodTypeCode>
+	<sharingCode>Public</sharingCode>
+	<refGeoUnit>Country Boundaries</refGeoUnit>
+	<featureCodeSet>GAUL0</featureCodeSet>
+	<precision>0</precision>
+	<categories>023</categories>
+	<code>CCBSDatasetJJExports</code>
+	<descriptors>
+		<descriptor key="true">
+			<header>Country</header>
+			<contentDescriptor>featureCode</contentDescriptor>
+			<options>
+				<option>
+					<name>Geographic</name>
+					<value>GAUL 2009</value>
+					<region>0</region>
+				</option>
+				<option>
+					<name>featureCodeSet</name>
+					<value>GAUL0</value>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="true">
+			<header>Commodity</header>
+			<contentDescriptor>commodityCode</contentDescriptor>
+			<options>
+				<option>
+					<name>Commodity</name>
+					<value>HS</value>
+					<region>0</region>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor>
+			<header>Value</header>
+			<contentDescriptor>quantity</contentDescriptor>
+		</descriptor>
+		<descriptor key="true">
+			<header>Measurement Unit</header>
+			<contentDescriptor>measurementUnit</contentDescriptor>
+		</descriptor>
+		<descriptor>
+			<header>Annotation</header>
+			<contentDescriptor>firstIndicator</contentDescriptor>
+		</descriptor>
+		<descriptor key="true">
+			<header>Year</header>
+			<contentDescriptor>date</contentDescriptor>
+		</descriptor>
+	</descriptors>
+</metadata>

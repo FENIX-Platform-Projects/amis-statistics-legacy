@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/fenix/!svn/ver/8896/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/olap/common/vo
+END
+OLAPParametersVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/fenix/!svn/ver/8896/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/olap/common/vo/OLAPParametersVo.java
+END
+OLAPFilterVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/fenix/!svn/ver/6411/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/olap/common/vo/OLAPFilterVo.java
+END
+DescriptorViewVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/fenix/!svn/ver/6411/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/olap/common/vo/DescriptorViewVO.java
+END
+ResourceViewVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/fenix/!svn/ver/6411/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/olap/common/vo/ResourceViewVO.java
+END
+OLAPChartBeanVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/fenix/!svn/ver/6411/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/olap/common/vo/OLAPChartBeanVO.java
+END
+UniqueValueVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/fenix/!svn/ver/7574/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/olap/common/vo/UniqueValueVO.java
+END
+OLAPChartResultVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/fenix/!svn/ver/6411/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/olap/common/vo/OLAPChartResultVo.java
+END
+ResourceViewSettingVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/fenix/!svn/ver/7037/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/olap/common/vo/ResourceViewSettingVO.java
+END

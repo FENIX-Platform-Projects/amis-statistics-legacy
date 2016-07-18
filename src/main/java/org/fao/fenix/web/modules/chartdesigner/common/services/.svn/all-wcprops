@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/fenix/!svn/ver/7769/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/common/services
+END
+ChartDesignerServiceAsync.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/fenix/!svn/ver/7769/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/common/services/ChartDesignerServiceAsync.java
+END
+ChartDesignerService.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/fenix/!svn/ver/7769/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/common/services/ChartDesignerService.java
+END
+ChartDesignerServiceEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/fenix/!svn/ver/7532/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner/common/services/ChartDesignerServiceEntry.java
+END

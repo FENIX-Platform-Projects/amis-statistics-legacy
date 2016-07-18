@@ -1,0 +1,71 @@
+9
+
+dir
+9508
+https://joinup.ec.europa.eu/svn/fenix/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/chartdesigner
+https://joinup.ec.europa.eu/svn/fenix
+
+
+
+2012-01-10T03:45:09.565159Z
+8897
+Manik
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+8049af31-f9ff-4023-afbb-8bc685b739a6
+
+ChartDesigner.gwt.xml
+file
+
+
+
+
+2012-05-04T10:28:01.000000Z
+5c0deb8a19a92609205f6c1312b8ebc6
+2010-12-13T12:38:36.424119Z
+7157
+kalimaha
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+719
+
+client
+dir
+
+common
+dir
+
+server
+dir
+

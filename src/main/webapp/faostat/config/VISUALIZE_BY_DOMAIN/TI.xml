@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<VIEW type="Browse By TI - Trade - Indices" >
+	<TITLE>
+		<E>Trade - indices</E>
+		<S>Comercio - Índices</S>
+		<F>Commerce -  indices</F>
+	</TITLE>
+	<FILTERS>
+		<FILTER width="150px">
+			<FILTERTYPE>ITEMS</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE label="Food, excl. fish">1982</CODE>
+			</DEFAULTCODES>
+		</FILTER>
+		<FILTER>
+			<FILTERTYPE width="250px">COUNTRIES</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE label="Afghanistan">2</CODE>
+			</DEFAULTCODES> 
+		</FILTER>
+		<FILTER>
+			<FILTERTYPE>TIMERANGE</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE>1990</CODE>
+				<CODE>2009</CODE>
+			</DEFAULTCODES>
+		</FILTER>
+	</FILTERS>
+
+	<RESOURCES>
+		<DEFAULT>
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<TITLE>
+					<E>Export indices for selected country (2004-2006 = 100)</E>
+					<S>Índices de exportación para el país seleccionado (2004-2006 = 100)</S>
+					<F>Indices d'exportation pour les pays sélectionnés (2004-2006 = 100)</F>
+				</TITLE>
+				<SIZE>
+					<WIDTH>800</WIDTH>
+					<HEIGHT>330</HEIGHT>
+				</SIZE>
+			
+				<DATEQUERY>
+					<MAXDATELIMIT>2009</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> -->
+					<TIMESPAN type="year">19</TIMESPAN>
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+ 						<SELECT lang="true">E.ElementName</SELECT>	
+						<SELECT>D.Year</SELECT>		
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Trade indices">TI</DOMAIN>
+						</DOMAINS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Export Value Index (2004-2006 = 100)'>492</ELEMENTLIST>
+							<ELEMENTLIST label='Export Unit/Value Index (2004-2006 = 100)'>494</ELEMENTLIST>
+							<ELEMENTLIST label='Export Quantity Index (2004-2006 = 100)'>495</ELEMENTLIST>
+						</ELEMENTSLIST>	
+						<AREAS>
+							<AREA label="Afghanistan">2</AREA>	
+						</AREAS> 	
+						<ITEMS>
+							<ITEM label='Food, excl. fish'>1982</ITEM>
+						</ITEMS>					
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD>D.Year</FIELD>
+					</SORT>			
+				</BASEQUERY>					
+			</RESOURCE>
+			
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<TITLE>
+<E>Import indices for selected countries (2004-2006 = 100)</E>
+  <S>Índices de importación para el país seleccionado (2004-2006 = 100)</S>
+  <F>Indices d'importation pour les pays sélectionnés (2004-2006 = 100)</F>
+				</TITLE>
+				<SIZE>
+					<WIDTH>800</WIDTH>
+					<HEIGHT>330</HEIGHT>
+				</SIZE>
+			
+				<DATEQUERY>
+					<MAXDATELIMIT>2009</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> -->
+					<TIMESPAN type="year">19</TIMESPAN>
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+ 						<SELECT lang="true">E.ElementName</SELECT>	
+						<SELECT>D.Year</SELECT>		
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Trade indices">TI</DOMAIN>
+						</DOMAINS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Import Value Index (2004-2006 = 100)'>462</ELEMENTLIST>
+							<ELEMENTLIST label='Import Unit/Value Index (2004-2006 = 100)'>464</ELEMENTLIST>
+							<ELEMENTLIST label='Import quantity Index (2004-2006 = 100)'>465</ELEMENTLIST>
+						</ELEMENTSLIST>	
+						<AREAS>
+							<AREA label="Afghanistan">2</AREA>	
+						</AREAS> 	
+						<ITEMS>
+							<ITEM label='Food, excl. fish'>1982</ITEM>
+						</ITEMS>					
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD>D.Year</FIELD>
+					</SORT>			
+				</BASEQUERY>					
+			</RESOURCE>
+		</DEFAULT>	
+	</RESOURCES>
+</VIEW>

@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+				http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+				http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+
+    <!-- Configurer that replaces ${...} placeholders with values from a properties file -->
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="location">
+            <value>/WEB-INF/devel.properties</value>
+        </property>
+    </bean>
+
+    <!-- =============================================================== -->
+    <!-- === DB Settings                                                 -->
+    <!-- =============================================================== -->
+
+    <bean id="fenixFakeDataSource" class="org.fao.fenix.core.persistence.FenixFakeDataSource">
+        <property name="driverClassName" value="org.postgresql.Driver" />
+        <property name="url" value="jdbc:postgresql://localhost/fenix?user=fenix&amp;password=Qwaszx&amp;" />
+        <!--  <property name="wmsUrl" value="http://${serverip}:${port}/geoserver/wms" /> -->
+        <property name="username" value="${jdbc.username}" />
+        <property name="password" value="${jdbc.password}" />
+        <property name="path2uploadedLayers" value="${fenixFakeDataSource.path2uploadedLayers}" />
+    </bean>
+
+    <!-- Definition of PostgreSQL datasource -->
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="org.postgresql.Driver" />
+        <property name="url" value="jdbc:postgresql://localhost/fenix?user=fenix&amp;password=Qwaszx&amp;" />
+        <!-- <property name="username" value="${jdbc.username}" />
+        <property name="password" value="${jdbc.password}" /> -->
+    </bean>
+
+    <bean id="persistenceUnitManager" class="org.springframework.orm.jpa.persistenceunit.DefaultPersistenceUnitManager">
+        <property name="persistenceXmlLocations">
+            <!--see also http://forum.springframework.org/showthread.php?t=52232  -->
+            <list>
+                <value>classpath:META-INF/fenix-core-persistence.xml</value>
+            </list>
+        </property>
+
+        <!-- if no datasource is specified, use this one -->
+        <property name="defaultDataSource" ref="dataSource" />
+    </bean>
+    <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+
+        <!-- JPA EntityManagerFactory for PostegreSQL -->
+        <property name="jpaVendorAdapter">
+            <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+                <property name="database" value="POSTGRESQL" />
+                <property name="databasePlatform" value="org.hibernate.dialect.PostgreSQLDialect" />
+                <property name="showSql" value="false" />
+                <property name="generateDdl" value="true" />
+            </bean>
+        </property>
+
+        <!-- THIS ENTRY HAS TO BE REMOVED WHEN IN PRODUCTION -->
+        <!--		<property name="jpaPropertyMap">-->
+        <!--                    <map>-->
+        <!--				<entry key="hibernate.hbm2ddl.auto" value="create-drop" />-->
+        <!--                    </map>-->
+        <!--		</property>-->
+
+        <property name="persistenceUnitManager" ref="persistenceUnitManager" />
+    </bean>
+
+    <!-- Transaction manager for a single JPA EntityManagerFactory (alternative to JTA) -->
+    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="entityManagerFactory" />
+    </bean>
+
+    <!-- Instruct Spring to retrieve and apply @AspectJ aspects          -->
+    <!-- which are defined as beans in this context (such as the         -->
+    <!-- UsageLogAspect below). -->
+    <aop:aspectj-autoproxy />
+    <!-- Instruct Spring to perform declarative transaction management   -->
+    <!-- automatically on annotated classes.                             -->
+    <tx:annotation-driven />
+    <!-- PostProcessors to perform resource injection according to the   -->
+    <!-- JPA specification (@PersistenceContext, @PersistenceUnit).      -->
+    <bean class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor" />
+    <!-- PostProcessors to perform exception translation on @Repository  -->
+    <!-- classes (from native exceptions such as JPA                     -->
+    <!-- PersistenceExceptions to Spring's DataAccessException hierarchy)-->
+    <bean class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor" />
+
+    <!-- =================================================================== -->
+    <!-- === Low-level (jdbc) procedures                                     -->
+    <!-- =================================================================== -->
+
+    <!--
+        THIS ENTRY HAS TO BE REMOVED WHEN IN PRODUCTION This bean will remove all the existing views done on Datasets' content
+        and on ProjectedData. It has to be run *before* the JPA initialization, or some tables cannot be properly
+        updated/removed. See also the dependency set in JPA EMF
+    -->
+    <!--	<bean id="viewDropper" class="org.fao.fenix.core.persistence.utils.ViewDropper" init-method="run">-->
+    <!--		<property name="dataSource" ref="dataSource" />-->
+    <!--	</bean>-->
+    <bean id="dbTableInfo" class="org.fao.fenix.core.persistence.utils.DBTableInfo">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+    <bean id="dbTableContent" class="org.fao.fenix.core.persistence.utils.DBTableContent">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+
+    <bean id="fenixConfig" class="org.fao.fenix.web.modules.core.server.utils.FenixWebConfig">
+        <!-- fenixDir config-->
+        <constructor-arg value="/" />
+    </bean>
+    <bean id="setting" class="org.fao.fenix.web.modules.core.server.utils.Setting">
+        <!-- fenixDir config-->
+    </bean>
+
+
+    <!-- =================================================================== -->
+    <!-- === DAOs                                                            -->
+    <!-- =================================================================== -->
+    <!--                                                                     -->
+    <!--   Note on DAOs:                                                                             -->
+    <!--     Methods will automatically be transactional due to @Transactional.                      -->
+    <!--     EntityManager will be auto-injected into fields annotated with @PersistenceContext.     -->
+    <!--     EntityManagerFactory will be auto-injected into fields annotated with @PersistenceUnit. -->
+    <!--     PersistenceExceptions will be auto-translated due to @Repository.                       -->
+
+    <bean id="aquastatDao" class="org.fao.fenix.core.persistence.aquastat.AquastatDao"/>
+    <bean id="crisisDao" class="org.fao.fenix.core.persistence.crisis.CrisisDao">
+        <property name="codecDao" ref="codecDao" />
+    </bean>
+    <bean id="chartDao" class="org.fao.fenix.core.persistence.perspective.ChartDao">
+    </bean>
+    <bean id="codecDao" class="org.fao.fenix.core.persistence.CodecDao">
+        <property name="saveDao" ref="saveDao" />
+        <property name="saveUniqueDao" ref="saveUniqueDao" />
+        <property name="findDao" ref="findDao" />
+    </bean>
+    <bean id="cnsaDao" class="org.fao.fenix.core.persistence.cnsa.CNSADao">
+        <property name="codecDao" ref="codecDao" />
+        <property name="gwtConnector" ref="gwtConnector" />
+        <property name="datasetDao" ref="datasetDao" />
+        <property name="uniqueValuesDao" ref="uniqueValuesDao" />
+    </bean>
+    <bean id="rDao" class="org.fao.fenix.core.r.RDao"/>
+    <bean id="datasetDao" class="org.fao.fenix.core.persistence.DatasetDao">
+        <property name="gwtConnector" ref="gwtConnector" />
+        <property name="sqlQueryBuilder" ref="sqlQueryBuilder" />
+        <property name="coreDao" ref="datasetCoreDao"/>
+        <property name="flexDao" ref="datasetFlexDao"/>
+        <property name="customDatasetDao" ref="customDatasetDao"/>
+    </bean>
+    <bean id="datasetCoreDao" class="org.fao.fenix.core.persistence.DatasetCoreDao"/>
+    <bean id="datasetFlexDao" class="org.fao.fenix.core.persistence.DatasetFlexDao"/>
+
+    <bean id="dataviewDao" class="org.fao.fenix.core.persistence.perspective.DataViewDao">
+    </bean>
+    <bean id="deleteDao" class="org.fao.fenix.core.persistence.DeleteDao" />
+    <bean id="fenixDomainUserDao" class="org.fao.fenix.core.persistence.perspective.FenixDomainUserDao"></bean>
+    <bean id="fenixGaulDao" class="org.fao.fenix.core.persistence.coding.FenixGaulDao"></bean>
+    <bean id="findDao" class="org.fao.fenix.core.persistence.FindDao">
+        <property name="entityManagerFactory" ref="entityManagerFactory" />
+    </bean>
+    <bean id="fsatmisDao" class="org.fao.fenix.core.persistence.fsatmis.FsatmisDao">
+        <property name="udtableConnector" ref="udtableConnector" />
+    </bean>
+    <bean id="geoServerDao" class="org.fao.fenix.core.persistence.map.geoserver.GeoServerDao">
+        <property name="dbTableInfo" ref="dbTableInfo" />
+        <property name="dbTableContent" ref="dbTableContent" />
+    </bean>
+    <bean id="geoViewDao" class="org.fao.fenix.core.persistence.map.GeoViewDao" />
+    <bean id="hsDao" class="org.fao.fenix.core.persistence.coding.HSDao"></bean>
+    <bean id="udtableDao" class="org.fao.fenix.core.persistence.udtable.UDTableDao">
+        <property name="gwtConnector" ref="gwtConnector" />
+        <property name="codecDao" ref="codecDao" />
+        <property name="udtableConnector" ref="udtableConnector" />
+        <property name="datasetDao" ref="datasetDao" />
+    </bean>
+    <bean id="internalWMSLayerDao" class="org.fao.fenix.core.persistence.map.layer.InternalWMSLayerDao">
+    </bean>
+    <bean id="ipcDao" class="org.fao.fenix.core.persistence.IPCReport.IPCDao">
+        <property name="deleteDao" ref="deleteDao" />
+        <property name="updateDao" ref="updateDao" />
+        <property name="mapDao" ref="mapDao"/>
+        <property name="datasetDao" ref="datasetDao"/>
+        <property name="fenixDomainUserDao" ref="fenixDomainUserDao"/>
+        <property name="saveDao" ref="saveDao" />
+    </bean>
+    <bean id="isfpDao" class="org.fao.fenix.core.persistence.isfp.ISFPDao">
+        <property name="codecDao" ref="codecDao" />
+    </bean>
+    <bean id="mapDao" class="org.fao.fenix.core.persistence.perspective.MapDao">
+    </bean>
+    <bean id="metadataDao" class="org.fao.fenix.core.persistence.MetadataDao">
+        <property name="saveUniqueDao" ref="saveUniqueDao" />
+    </bean>
+    <bean id="projectDao" class="org.fao.fenix.core.persistence.perspective.ProjectDao">
+    </bean>
+    <bean id="projectedDataDao" class="org.fao.fenix.core.persistence.map.ProjectedDataDao">
+    </bean>
+    <bean id="projectedDataMetadao" class="org.fao.fenix.map.geoserver.ProjectedDataMetadao">
+        <property name="projectedDataDao" ref="projectedDataDao" />
+        <property name="wmsMapProviderDao" ref="wmsMapProviderDao" />
+    </bean>
+    <bean id="rainfallDao" class="org.fao.fenix.core.persistence.rainfall.RainfallDao">
+        <constructor-arg value="/rainfallConfiguration" />
+    </bean>
+    <bean id="reportDao" class="org.fao.fenix.core.persistence.perspective.ReportDao">
+    </bean>
+    <bean id="resourceDao" class="org.fao.fenix.core.persistence.ResourceDao">
+        <property name="coreDao" ref="datasetCoreDao"/>
+        <property name="customDatasetDao" ref="customDatasetDao"/>
+    </bean>
+    <bean id="saveDao" class="org.fao.fenix.core.persistence.SaveDao">
+        <property name="datasetDao" ref="datasetDao" />
+    </bean>
+    <bean id="saveUniqueDao" class="org.fao.fenix.core.persistence.SaveUniqueDao">
+        <property name="saveDao" ref="saveDao" />
+    </bean>
+    <bean id="searchDao" class="org.fao.fenix.core.persistence.search.SearchDao"></bean>
+    <bean id="tableDao" class="org.fao.fenix.core.persistence.perspective.TableDao">
+    </bean>
+    <bean id="textDao" class="org.fao.fenix.core.persistence.perspective.TextDao">
+    </bean>
+    <bean id="textGroupDao" class="org.fao.fenix.core.persistence.perspective.TextGroupDao"/>
+    <bean id="updateDao" class="org.fao.fenix.core.persistence.UpdateDao" />
+    <bean id="viewDao" class="org.fao.fenix.core.persistence.perspective.ViewDao">
+        <property name="codecDao" ref="codecDao" />
+    </bean>
+    <bean id="wcctDao" class="org.fao.fenix.core.persistence.wcct.WCCTDao">
+    </bean>
+    <bean id="wmsMapProviderDao" class="org.fao.fenix.core.persistence.map.WMSMapProviderDao">
+        <property name="tableInfo" ref="dbTableInfo"/>
+    </bean>
+    <bean id="wmsServerDao" class="org.fao.fenix.core.persistence.map.external.WMSServerDao" />
+    <bean id="queryBuilderDao" class="org.fao.fenix.core.persistence.querybuilder.QueryBuilderDao">
+        <property name="codecDao" ref="codecDao" />
+        <property name="gwtConnector" ref="gwtConnector" />
+        <property name="uniqueValuesDao" ref="uniqueValuesDao" />
+    </bean>
+    <bean id="vennDao" class="org.fao.fenix.core.persistence.venn.VennDao">
+        <property name="codecDao" ref="codecDao" />
+        <property name="datasetDao" ref="datasetDao" />
+        <property name="gwtConnector" ref="gwtConnector" />
+    </bean>
+    <bean id="chartDesignerDao" class="org.fao.fenix.core.persistence.chartdesigner.ChartDesignerDao"/>
+    <!-- =================================================================== -->
+    <!-- ===                                                                 -->
+    <!-- =================================================================== -->
+
+    <bean id="domain2VoConverter" class="org.fao.fenix.web.modules.re.server.Domain2VoConverter">
+        <property name="fenixPermissionManager" ref="fenixPermissionManager" />
+        <property name="meDao" ref="meDao" />
+    </bean>
+    <bean id="appender" class="org.fao.fenix.core.persistence.Appender">
+        <property name="findDao" ref="findDao" />
+        <property name="saveDao" ref="saveDao" />
+        <property name="saveUniqueDao" ref="saveUniqueDao" />
+        <property name="deleteDao" ref="deleteDao" />
+        <property name="updateDao" ref="updateDao" />
+        <property name="datasetDao" ref="datasetDao" />
+    </bean>
+    <bean id="appenderFlex" class="org.fao.fenix.core.persistence.AppenderFlex">
+        <property name="datasetDao" ref="datasetDao" />
+    </bean>
+    <bean id="customDatasetManager" class="org.fao.fenix.core.persistence.CustomDatasetManager">
+        <property name="customDatasetJDBC" ref="customDatasetJDBC" />
+        <property name="customDatasetDao" ref="customDatasetDao" />
+        <property name="findDao" ref="findDao" />
+        <property name="saveDao" ref="saveDao" />
+    </bean>
+    <bean id="customDatasetJDBC" class="org.fao.fenix.core.persistence.CustomDatasetJDBC">
+        <property name="DB_USERNAME" value="${jdbc.username}" />
+        <property name="DB_PASSWORD" value="${jdbc.password}" />
+        <property name="DB_URL" value="jdbc:postgresql://localhost/${jdbc.dbname}" />
+    </bean>
+    <bean id="customDatasetDao" class="org.fao.fenix.core.persistence.CustomDatasetDao"/>
+    <bean id="olapUpdater" class="org.fao.fenix.core.olap.OLAPUpdater" init-method="createOlapHtmls">
+        <property name="resourceViewDao" ref="resourceViewDao" />
+        <property name="olapDao" ref="olapDao" />
+        <property name="mtSaver" ref="mtSaver" />
+        <constructor-arg value="/OLAP" />
+    </bean>
+    <bean id="fenixImageStartupCreator" class="org.fao.fenix.core.utils.FENIXImageStartupCreator" init-method="recreateImages">
+        <property name="findDao" ref="findDao" />
+        <constructor-arg value="/exportObject" />
+    </bean>
+    <bean id="datasetImporter" class="org.fao.fenix.core.utils.DatasetImporter">
+        <property name="saveDao" ref="saveDao" />
+        <property name="saveUniqueDao" ref="saveUniqueDao" />
+        <property name="appender" ref="appender" />
+        <property name="datasetDao" ref="datasetDao" />
+        <property name="uniqueValuesDao" ref="uniqueValuesDao" />
+        <property name="ghostAppender" ref="ghostAppender" />
+        <property name="customDatasetManager" ref="customDatasetManager" />
+        <property name="olapUpdater" ref="olapUpdater" />
+    </bean>
+    <bean id="textImporter" class="org.fao.fenix.core.utils.TextImporter">
+        <property name="textDao" ref="textDao" />
+        <property name="saveUniqueDao" ref="saveUniqueDao" />
+    </bean>
+    <bean id="dcmtImporter" class="org.fao.fenix.core.utils.DcmtImporter">
+        <property name="saveDao" ref="saveDao" />
+        <property name="saveUniqueDao" ref="saveUniqueDao" />
+        <property name="findDao" ref="findDao" />
+        <property name="codecDao" ref="codecDao" />
+        <property name="deleteDao" ref="deleteDao" />
+        <property name="updateDao" ref="updateDao" />
+        <property name="uniqueValuesDao" ref="uniqueValuesDao" />
+        <property name="fenixPermissionManager" ref="fenixPermissionManager" />
+    </bean>
+
+    <bean id="populateCoding" class="org.fao.fenix.core.persistence.coding.PopulateCoding">
+        <property name="dcmtImporter" ref="dcmtImporter" />
+        <property name="dcmtTranslator" ref="dcmtTranslator" />
+        <property name="codecDao" ref="codecDao" />
+    </bean>
+    <bean id="codeListImporter" class="org.fao.fenix.core.utils.CodeListImporter">
+        <property name="bootCodingImporter" ref="bootCodingImporter" />
+    </bean>
+    <bean id="uniqueValuesDao" class="org.fao.fenix.core.persistence.UniqueValuesDao">
+        <property name="gwtConnector" ref="gwtConnector" />
+        <property name="saveDao" ref="saveDao" />
+        <property name="findDao" ref="findDao" />
+        <property name="datasetDao" ref="datasetDao" />
+        <property name="codecDao" ref="codecDao" />
+        <property name="deleteDao" ref="deleteDao" />
+        <property name="updateDao" ref="updateDao" />
+    </bean>
+    <!-- THIS ENTRY HAS TO BE REMOVED WHEN IN PRODUCTION -->
+    <bean id="bootDatasetImporter" class="org.fao.fenix.core.utils.BootDatasetImporter">
+        <!--	<bean id="bootDatasetImporter" class="org.fao.fenix.core.utils.BootDatasetImporter">-->
+        <property name="datasetImporter" ref="datasetImporter" />
+        <constructor-arg value="/import/dataset" />
+    </bean>
+    <!-- THIS ENTRY HAS TO BE REMOVED WHEN IN PRODUCTION -->
+    <bean id="bootTextImporter" class="org.fao.fenix.core.utils.BootTextImporter">
+        <!--	<bean id="bootTextImporter" class="org.fao.fenix.core.utils.BootTextImporter">-->
+        <property name="textImporter" ref="textImporter" />
+        <constructor-arg value="/import/text" />
+    </bean>
+    <!-- THIS ENTRY HAS TO BE REMOVED WHEN IN PRODUCTION -->
+    <!-- <bean id="bootCodingImporter" class="org.fao.fenix.core.utils.BootCodingImporter" lazy-init="false" init-method="importBoot"
+        depends-on="persister">
+        <property name="dcmtImporter" ref="dcmtImporter" />
+        <constructor-arg value="/import/codes" />
+    </bean> -->
+    <bean id="bootCodingImporter" class="org.fao.fenix.core.utils.BootCodingImporter">
+        <property name="dcmtImporter" ref="dcmtImporter"/>
+        <constructor-arg value="/import/codes"/>
+    </bean>
+
+    <bean id="gwtConnector" class="org.fao.fenix.core.connection.GwtConnector" />
+    <bean id="meDao" class="org.fao.fenix.core.persistence.MEDao" />
+    <bean id="olapDao" class="org.fao.fenix.core.persistence.olap.OLAPDao">
+        <property name="codecDao" ref="codecDao" />
+        <property name="flexDao" ref="datasetFlexDao"/>
+        <property name="resourceViewDao" ref="resourceViewDao" />
+    </bean>
+    <bean id="olapJdbc" class="org.fao.fenix.core.persistence.olap.OLAPJDBC">
+        <property name="DB_USERNAME" value="${jdbc.username}" />
+        <property name="DB_PASSWORD" value="${jdbc.password}" />
+        <property name="DB_URL" value="jdbc:postgresql://localhost/${jdbc.dbname}" />
+    </bean>
+    <bean id="bangladeshDao" class="org.fao.fenix.core.persistence.bangladesh.BangladeshDao">
+        <property name="codecDao" ref="codecDao" />
+        <property name="gwtConnector" ref="gwtConnector" />
+    </bean>
+    <bean id="ecDao" class="org.fao.fenix.core.persistence.ec.ECDao">
+        <property name="codecDao" ref="codecDao" />
+        <property name="gwtConnector" ref="gwtConnector" />
+    </bean>
+    <bean id="ofcChartDao" class="org.fao.fenix.core.persistence.ofcchart.OfcChartDao">
+        <property name="codecDao" ref="codecDao" />
+        <property name="gwtConnector" ref="gwtConnector" />
+        <property name="uniqueValuesDao" ref="uniqueValuesDao" />
+    </bean>
+    <bean id="metadataFactory" class="org.fao.fenix.core.persistence.file.MetadataFactory">
+        <constructor-arg value="/exportObject" />
+    </bean>
+    <bean id="csvFactory" class="org.fao.fenix.core.persistence.file.CsvFactory">
+        <!-- This is needed for the MetadataEditor. -->
+        <constructor-arg value="/exportObject" />
+        <property name="findDao" ref="findDao" />
+        <property name="gwtConnector" ref="gwtConnector" />
+        <property name="textDao" ref="textDao" />
+        <property name="datasetDao" ref="datasetDao" />
+        <property name="path" value="/exportObject" />
+    </bean>
+    <bean id="fileFactory" class="org.fao.fenix.core.persistence.file.FileFactory">
+        <constructor-arg value="/exportObject" />
+        <property name="csvFactory" ref="csvFactory" />
+        <property name="metadataFactory" ref="metadataFactory" />
+    </bean>
+    <bean id="backupUtils" class="org.fao.fenix.core.utils.BackupUtils">
+        <property name="csvFactory" ref="csvFactory" />
+        <property name="findDao" ref="findDao" />
+        <property name="metadataFactory" ref="metadataFactory" />
+        <property name="bootDatasetImporter" ref="bootDatasetImporter" />
+        <property name="bootTextImporter" ref="bootTextImporter" />
+        <property name="path" value="${backup.directory}" />
+    </bean>
+    <bean id="datasetUtils" class="org.fao.fenix.core.persistence.utils.DatasetUtils"></bean>
+    <bean id="sqlQueryBuilder" class="org.fao.fenix.core.persistence.utils.SQLQueryBuilder"/>
+    <bean id="dcmtTranslator" class="org.fao.fenix.core.utils.DcmtTranslator">
+        <property name="findDao" ref="findDao" />
+        <property name="codecDao" ref="codecDao" />
+        <property name="dcmtHeuristicsApi" ref="dcmtHeuristicsApi" />
+    </bean>
+
+    <bean id="dcmtHeuristicsApi" class="org.fao.fenix.core.utils.DcmtHeuristicsApi">
+    </bean>
+
+    <bean id="tableExcel" class="org.fao.fenix.web.modules.table.server.TableExcel">
+    </bean>
+
+    <bean id="amisSupplyDemandExcel" class="org.fao.fenix.web.modules.amis.server.supplydemand.AMISSupplyDemandExcel">
+    </bean>
+
+    <!-- THIS ENTRY HAS TO BE REMOVED WHEN IN PRODUCTION -->
+    <!--	<bean id="persister" class="org.fao.fenix.core.utils.Persister" lazy-init="false" init-method="databasePopulateAll">-->
+    <!--		<property name="fenixGaulDao" ref="fenixGaulDao" />-->
+    <!--		<property name="hsDao" ref="hsDao" />-->
+    <!--		<property name="communicationDao" ref="communicationDao" />-->
+    <!--		<property name="textDao" ref="textDao" />-->
+    <!--		<property name="datasetDao" ref="datasetDao" />-->
+    <!--		<property name="populateCoding" ref="populateCoding" />-->
+    <!--		<constructor-arg value="/import/codes" />-->
+    <!--	</bean>-->
+
+    <!-- =================================================================== -->
+    <!-- === INDEX related beans                                             -->
+    <!-- =================================================================== -->
+
+    <bean id="indexCalculatorRedux" class="org.fao.fenix.core.persistence.index.IndexCalculatorRedux" />
+    <bean id="indexCalculator" class="org.fao.fenix.core.persistence.index.IndexCalculator">
+        <property name="indexCalculatorRedux" ref="indexCalculatorRedux" />
+    </bean>
+    <bean id="indexParametersCalculator" class="org.fao.fenix.core.persistence.index.IndexParametersCalculator">
+        <property name="indexCalculatorRedux" ref="indexCalculatorRedux" />
+        <property name="indexCalculator" ref="indexCalculator" />
+    </bean>
+    <bean id="fpiExcel" class="org.fao.fenix.web.modules.fpi.server.FPIExcel">
+        <property name="codecDao" ref="codecDao" />
+    </bean>
+
+    <!-- =================================================================== -->
+    <!-- === LAYER related beans                                               -->
+    <!-- =================================================================== -->
+    <!-- Reference to the embedded geoserver -->
+    <bean id="geoserver" class="org.fao.fenix.core.domain.map.geoserver.GeoServer">
+        <!-- This is the address geoserver is seen from the outside world. -->
+        <property name="wmsUrl" value="http://${serverip}:${port}/geoserver/wms" />
+        <!-- Use only geoservers installed on localhost in restUrl:                      -->
+        <!-- failing to do so may lead to undesired update to non-local geoservers.-->
+        <property name="restUrl" value="http://localhost:${port}/geoserver" />
+        <property name="username" value="${geoserver.username}" />
+        <property name="password" value="${geoserver.password}" />
+    </bean>
+
+    <bean id="layerGaulUtils" class="org.fao.fenix.core.persistence.utils.LayerGaulUtils">
+        <property name="wmsMapProviderDao" ref="wmsMapProviderDao" />
+    </bean>
+
+    <bean id="dbdatastore" class="org.fao.fenix.core.domain.map.geoserver.DataStore">
+        <!-- This datastore name MUST be already present in GS -->
+        <property name="name" value="fenixDB" />
+        <!-- This datastore namespace MUST be already present in GS -->
+        <property name="nameSpace" value="fenix" />
+        <property name="geoServer" ref="geoserver" />
+    </bean>
+
+    <!-- Insert into fenix the metadata related to the layers preloaded into GS -->
+    <!-- Replaces the obsoleted GeoserverImporter procedure                     -->
+    <bean id="gsLayerSynch"
+          class="org.fao.fenix.web.modules.core.server.utils.map.GSLayerSynchronizerWrapper"
+          lazy-init="false"
+          init-method="run">
+
+        <constructor-arg value="/layers" />
+
+        <property name="defaultGeoserver" ref="geoserver" />
+        <property name="wmsMapProviderDao" ref="wmsMapProviderDao" />
+        <property name="geoServerDao" ref="geoServerDao" />
+
+        <property name="threadedStartDelay" value="15" />
+
+    </bean>
+
+    <!-- Insert styles into GS -->
+    <bean id="styleImporter" class="org.fao.fenix.web.modules.core.server.utils.map.SLDImporterWrapper" lazy-init="false" init-method="run">
+        <constructor-arg value="/" /> <!-- Don't change this line: it will set the base webapp dir -->
+
+        <property name="defaultGeoserver" ref="geoserver" />
+        <property name="threadedStartDelay" value="10" />
+
+        <!-- Directories that will be scanned for layers to be imported. -->
+        <!-- * A directory starting with a "/" is absolute (relative to the filesystem root) - for UN*X-like systems -->
+        <!-- * A directory having a ":" in second position is absolute (relative to the filesystem root) - for WIN systems -->
+        <!-- * A directory not included in preceding cases is relative to the webapp root -->
+        <property name="dataDirs">
+            <list>
+                <value>import/sld</value>
+            </list>
+        </property>
+    </bean>
+
+    <!-- Insert (SHP->DB) layers into fenix and into GS -->
+    <bean id="layerImporter"
+          class="org.fao.fenix.web.modules.core.server.utils.map.LayerImporterWrapper"
+          lazy-init="false"
+          init-method="run">
+        <constructor-arg value="/" /> <!-- Don't change this line: it will set the base webapp dir -->
+
+        <property name="defaultGeoserver" ref="geoserver" />
+        <property name="defaultDataStore" ref="dbdatastore" />
+        <property name="fenixFakeDataSource" ref="fenixFakeDataSource" />
+
+        <property name="wmsMapProviderDao" ref="wmsMapProviderDao" />
+        <property name="geoServerDao" ref="geoServerDao" />
+
+        <property name="threadedStartDelay" value="25" />
+
+        <!-- Directories that will be scanned for layers to be imported. -->
+        <!-- * A directory starting with a "/" is absolute (relative to the filesystem root) - for UN*X-like systems -->
+        <!-- * A directory having a ":" in second position is absolute (relative to the filesystem root) - for WIN systems -->
+        <!-- * A directory not included in preceding cases is relative to the webapp root -->
+        <property name="dataDirs">
+            <list>
+                <value>import/layer</value>
+                <value>${layerimporter.customdir}</value>
+            </list>
+        </property>
+
+
+        <property name="dbJdbcUrl" value="jdbc:postgresql://localhost/fenix?user=fenix&amp;password=Qwaszx&amp;" />
+        <property name="dbUsername" value="${jdbc.username}" />
+        <property name="dbPassword" value="${jdbc.password}" />
+
+    </bean>
+
+    <!-- Insert GeoTiff layers into fenix and into GS -->
+    <bean id="geotiffHarvester"
+          class="org.fao.fenix.web.modules.core.server.utils.map.GeoTiffHarvesterWrapper"
+          lazy-init="false"
+          init-method="run">
+
+        <property name="defaultGeoserver" ref="geoserver" />
+        <property name="geoserverDao" ref="geoServerDao" />
+        <property name="wmsMapProviderDao" ref="wmsMapProviderDao" />
+
+        <property name="enabled" value="${geotiffharvester.enabled}" />
+        <property name="threadedStartDelay" value="30" />
+
+        <property name="bootDir" value="${geotiffharvester.bootdir}" />
+
+
+
+    </bean>
+
+    <!-- =================================================================== -->
+    <!-- === MAP related beans                                               -->
+    <!-- =================================================================== -->
+
+    <!-- Parser for WMC documents. Referenced in WMCImporter -->
+    <bean id="wmcParser" class="org.fao.geonet.lib.wmc.util.WMCParser">
+        <!-- if lenientParsing is true, we'll have a loose namespace check -->
+        <property name="lenientParsing" value="true" />
+    </bean>
+
+    <!-- Will import into Fenix the maps specified in the given directory as WMC documents -->
+    <bean id="WMCImporter" class="org.fao.fenix.web.modules.core.server.utils.MapPreloader" lazy-init="false"
+          init-method="run">
+        <property name="parser" ref="wmcParser" />
+        <property name="wmsMapProviderDao" ref="wmsMapProviderDao" />
+        <property name="mapDao" ref="mapDao" />
+        <constructor-arg value="/import/wmc" />
+    </bean>
+
+    <bean id="currentLayerUpdater" class="org.fao.fenix.core.persistence.map.updater.CurrentLayerUpdater">
+        <property name="wmsMapProviderDao" ref="wmsMapProviderDao" />
+    </bean>
+
+    <bean id="cropCalendarMapBuilder" class="org.fao.fenix.map.custom.CropCalendarMapBuilder">
+        <property name="datasetDao" ref="datasetDao" />
+        <property name="geoViewDao" ref="geoViewDao" />
+        <property name="mapDao" ref="mapDao" />
+        <property name="projectedDataMetadao" ref="projectedDataMetadao" />
+        <property name="projectedDataDao" ref="projectedDataDao" />
+        <property name="wmsMapProviderDao" ref="wmsMapProviderDao" />
+    </bean>
+
+    <!--
+        Import into FENIX the external layers published by the given WMS server
+    -->
+    <!--
+        <bean id="WMSHarvester" class="org.fao.fenix.web.utils.WMSPreharvester" lazy-init="false" init-method="harvest">
+        <property name="wmsServerDao" ref="wmsServerDao" /> <constructor-arg value="/wmsservers.xml" /> </bean>
+    -->
+
+    <!-- #Configure which modules will be running in this instance of Fenix -->
+    <bean id="fenixModuleConfiguration" class="org.fao.fenix.core.modules.framework.FenixModuleConfiguration">
+        <property name="ccbsIsRunning" value="${ccbs.is.running}" />
+        <property name="fpiIsRunning" value="${fpi.is.running}" />
+        <property name="ipcIsRunning" value="${ipc.is.running}" />
+    </bean>
+
+    <bean id="aquastatConnector" class="org.fao.fenix.core.persistence.aquastat.AquastatConnector">
+        <property name="codecDao" ref="codecDao" />
+        <property name="aquastatUsername" value="${aquastat.username}" />
+        <property name="aquastatPassword" value="${aquastat.password}" />
+        <property name="aquastatUrl" value="${aquastat.url}" />
+    </bean>
+    <bean id="aquastatLib" class="org.fao.fenix.web.modules.aquastat.server.AquastatLib">
+        <property name="aquastatDao" ref="aquastatDao" />
+        <property name="aquastatConnector" ref="aquastatConnector" />
+        <property name="datasetImporter" ref="datasetImporter" />
+        <constructor-arg value="/aquastatCharts" />
+    </bean>
+    <bean id="cropMaps" class="org.fao.fenix.web.modules.birt.server.utils.CountryBriefTemplate.CropMaps">
+        <property name="codecDao" ref="codecDao" />
+        <property name="layerGaulUtils" ref="layerGaulUtils" />
+        <property name="wmsMapProviderDao" ref="wmsMapProviderDao" />
+    </bean>
+    <bean id="importESTPriceDatabase" class="org.fao.fenix.core.persistence.estpricedatabase.ImportESTPriceDatabase"
+          init-method="run">
+        <property name="enabled" value="${ESTPriceDatabaseImporter}" />
+        <property name="datasetImporter" ref="datasetImporter" />
+        <property name="codecDao" ref="codecDao" />
+    </bean>
+    <bean id="udtableConnector" class="org.fao.fenix.core.persistence.udtable.UDTableConnector">
+        <property name="codecDao" ref="codecDao" />
+    </bean>
+    <bean id="rainfallUtils" class="org.fao.fenix.web.modules.rainfall.server.RainfallUtils">
+        <property name="wmsMapProviderDao" ref="wmsMapProviderDao" />
+        <property name="layerGaulUtils" ref="layerGaulUtils" />
+    </bean>
+
+    <bean id="cacheStatsDumper" class="org.fao.fenix.core.persistence.utils.CacheStatsDumper"/>
+
+    <bean id="ghostAppender" class="org.fao.fenix.core.ghost.GhostAppender">
+        <property name="codecDao" ref="codecDao" />
+        <property name="ghostDao" ref="ghostDao" />
+    </bean>
+    <bean id="ghostDao" class="org.fao.fenix.core.persistence.ghost.GhostDao"/>
+
+    <!--	<bean id="chartUpdater" class="org.fao.fenix.web.modules.birt.server.utils.chart.ChartUpdater" init-method="run">-->
+    <bean id="chartUpdater" class="org.fao.fenix.web.modules.birt.server.utils.chart.ChartUpdater">
+        <property name="chartDao" ref="chartDao" />
+        <property name="dataviewDao" ref="dataviewDao" />
+        <property name="uniqueValuesDao" ref="uniqueValuesDao" />
+        <property name="codecDao" ref="codecDao" />
+        <property name="datasetDao" ref="datasetDao" />
+        <property name="gwtConnector" ref="gwtConnector" />
+        <property name="graphEngine" ref="graphEngine" />
+        <property name="saveUniqueDao" ref="saveUniqueDao" />
+        <property name="olapUpdater" ref="olapUpdater" />
+        <property name="resourceViewDao" ref="resourceViewDao" />
+        <property name="port" value="${port}" />
+    </bean>
+
+    <bean id="matchValue" class="org.fao.fenix.web.modules.birt.server.utils.MatchValue">
+        <property name="datasetDao" ref="datasetDao" />
+    </bean>
+    <bean id="graphEngine" class="org.fao.fenix.web.modules.birt.server.utils.GraphEngine">
+        <property name="matchValue" ref="matchValue" />
+    </bean>
+
+    <bean id="resourceViewDao" class="org.fao.fenix.core.persistence.resourceview.ResourceViewDao">
+        <property name="gwtConnector" ref="gwtConnector" />
+    </bean>
+
+    <bean id="latexUtils" class="org.fao.fenix.web.modules.latex.server.LatexUtils"/>
+
+    <bean id="esokoImporter" class="org.fao.fenix.core.esoko.EsokoImporter">
+        <constructor-arg value="/esoko" />
+        <property name="datasetImporter" ref="datasetImporter" />
+        <property name="dcmtImporter" ref="dcmtImporter" />
+        <property name="codecDao" ref="codecDao" />
+        <property name="findDao" ref="findDao" />
+        <property name="esokoParser" ref="esokoParser" />
+        <property name="esokoQueryBuilder" ref="esokoQueryBuilder" />
+    </bean>
+    <bean id="esokoQueryBuilder" class="org.fao.fenix.core.esoko.EsokoQueryBuilder">
+        <property name="baseURL" value="${esokoBaseURL}" />
+    </bean>
+    <bean id="esokoParser" class="org.fao.fenix.core.esoko.EsokoParser">
+        <property name="codecDao" ref="codecDao" />
+    </bean>
+
+    <bean id="cnsaExportExcel" class="org.fao.fenix.web.modules.cnsa.server.CNSAExportExcel"/>
+
+    <bean id="urlFinder" class="org.fao.fenix.web.modules.core.server.utils.UrlFinder" >
+        <constructor-arg value="/" />
+        <property name="serverip" value="${serverip}" />
+        <property name="port" value="${port}" />
+    </bean>
+
+    <bean id="fieldClimateConnector" class="org.fao.fenix.core.fieldclimate.FieldClimateConnector">
+        <property name="findDao" ref="findDao" />
+        <property name="datasetImporter" ref="datasetImporter" />
+        <constructor-arg value="/FieldClimate" />
+    </bean>
+
+    <bean id="rUtils" class="org.fao.fenix.core.r.RUtils">
+        <constructor-arg value="/R" />
+        <property name="rDao" ref="rDao" />
+    </bean>
+
+    <bean id="haitiChartUtils" class="org.fao.fenix.web.modules.haiticnsatool.server.HaitiChartUtils" >
+        <property name="cnsaDao" ref="cnsaDao" />
+    </bean>
+
+    <bean id="faoStatDao" class="org.fao.fenix.core.persistence.faostat.FAOStatDao"/>
+
+    <bean id="adamDao" class="org.fao.fenix.core.persistance.adam.ADAMDao">
+        <property name="resourceViewDao" ref="resourceViewDao" />
+        <property name="customDatasetJDBC" ref="customDatasetJDBC"/>
+        <property name="codecDao" ref="codecDao"/>
+    </bean>
+
+    <bean id="rStagingAreaManager" class="org.fao.fenix.core.r.RStagingAreaManager">
+        <property name="rDao" ref="rDao" />
+    </bean>
+
+    <bean id="emailReceiver" class="org.fao.fenix.core.email.EmailReceiver">
+        <property name="emailJDBCAgent" ref="emailJDBCAgent" />
+        <property name="emailSender" ref="emailSender" />
+        <property name="datasetImporter" ref="datasetImporter" />
+        <property name="textImporter" ref="textImporter" />
+        <property name="fenixDomainUserDao" ref="fenixDomainUserDao" />
+    </bean>
+    <bean id="emailJDBCAgent" class="org.fao.fenix.core.email.EmailJDBCAgent">
+        <property name="DB_USERNAME" value="${jdbc.username}" />
+        <property name="DB_PASSWORD" value="${jdbc.password}" />
+        <property name="DB_URL" value="jdbc:postgresql://localhost/${jdbc.dbname}" />
+    </bean>
+    <bean id="emailSender" class="org.fao.fenix.core.email.EmailSender">
+        <property name="SMTP_HOST" value="${email.smtp.host}" />
+        <property name="USERNAME" value="${email.username}" />
+        <property name="PASSWORD" value="${email.password}" />
+    </bean>
+
+    <bean id="latexBuilder" class="org.fao.fenix.web.modules.latex.server.LatexBuilder">
+        <property name="findDao" ref="findDao" />
+        <property name="wmsMapProviderDao" ref="wmsMapProviderDao" />
+        <property name="layerGaulUtils" ref="layerGaulUtils" />
+        <property name="codecDao" ref="codecDao" />
+        <property name="datasetDao" ref="datasetDao" />
+        <property name="urlFinder" ref="urlFinder" />
+        <property name="olapJdbc" ref="olapJdbc" />
+        <property name="resourceViewDao" ref="resourceViewDao" />
+        <property name="olapLatex" ref="olapLatex" />
+        <constructor-arg value="/exportObject" />
+    </bean>
+
+    <bean id="chartDesignerUtils" class="org.fao.fenix.core.utils.ChartDesignerUtils">
+        <property name="chartDesignerDao" ref="chartDesignerDao" />
+        <property name="rStagingAreaManager" ref="rStagingAreaManager" />
+    </bean>
+
+    <bean id="chartDesignUpdater" class="org.fao.fenix.web.modules.chartdesigner.server.ChartDesignUpdater">
+        <constructor-arg value="/exportObject" />
+        <property name="chartDesignerDao" ref="chartDesignerDao" />
+        <property name="chartDesignerUtils" ref="chartDesignerUtils" />
+    </bean>
+
+    <bean id="chartDesignerExporter" class="org.fao.fenix.core.utils.ChartDesignerExporter">
+        <property name="rStagingAreaManager" ref="rStagingAreaManager" />
+        <property name="csvFactory" ref="csvFactory" />
+    </bean>
+
+    <bean id="olapLatex" class="org.fao.fenix.core.olap.OLAPLaTeX">
+        <property name="olapDao" ref="olapDao" />
+        <property name="resourceViewDao" ref="resourceViewDao" />
+    </bean>
+
+    <bean id="imfDao" class="org.fao.fenix.core.persistence.imf.IMFDao"/>
+    <bean id="imfUtils" class="org.fao.fenix.core.utils.IMFUtils">
+        <property name="imfDao" ref="imfDao" />
+        <property name="emailSender" ref="emailSender" />
+    </bean>
+
+    <bean id="mtDao" class="org.fao.fenix.core.persistence.olap.MTDao"/>
+    <bean id="mtSaver" class="org.fao.fenix.core.utils.MTSaver">
+        <property name="mtDao" ref="mtDao" />
+        <property name="olapDao" ref="olapDao" />
+        <property name="olapUpdater" ref="olapUpdater" />
+        <property name="propertiesReader" ref="propertiesReader" />
+    </bean>
+
+    <bean id="propertiesReader" class="org.fao.fenix.core.utils.PropertiesReader">
+        <constructor-arg value="/WEB-INF" />
+    </bean>
+
+    <bean id="tinyMCEDao" class="org.fao.fenix.core.persistence.tinymce.TinyMCEDao"/>
+    <bean id="tinyMCEUtils" class="org.fao.fenix.core.utils.TinyMCEUtils">
+        <constructor-arg value="/exportObject" />
+        <constructor-arg value="/OLAP" />
+        <property name="tinyMCEDao" ref="tinyMCEDao" />
+        <property name="mtSaver" ref="mtSaver" />
+        <property name="chartDesignerUtils" ref="chartDesignerUtils" />
+        <property name="propertiesReader" ref="propertiesReader" />
+    </bean>
+
+    <bean id="welcomeDAO" class="org.fao.fenix.core.persistence.welcome.WelcomeDAO"/>
+
+    <bean id="welcomeUtils" class="org.fao.fenix.core.welcome.WelcomeUtils">
+        <property name="welcomeDAO" ref="welcomeDAO" />
+    </bean>
+
+    <bean id="statisticsDAO" class="org.fao.fenix.core.persistence.statistics.StatisticsDAO"/>
+
+    <bean id="statisticsUtils" class="org.fao.fenix.core.statistics.StatisticsUtils">
+        <property name="statisticsDAO" ref="statisticsDAO" />
+    </bean>
+
+    <bean id="amisDao" class="org.fao.fenix.core.persistence.amis.AMISDao"/>
+
+    <!-- STATISTICAL NOTES -->
+    <bean id="dom4jUtils" class="org.fao.fenix.web.modules.dataviewer.server.faostat.xml.DOM4JUtils">
+        <property name="ip" value="${serverip}" />
+        <property name="port" value="${port}" />
+    </bean>
+    <bean id="faostatNotesXMLParser" class="org.fao.fenix.web.modules.dataviewer.server.faostat.xml.FAOSTATNotesXMLParser">
+        <property name="dom4jUtils" ref="dom4jUtils" />
+    </bean>
+
+
+    <bean id="cpfDao" class="org.fao.fenix.core.persistence.cpf.CPFDao"/>
+
+    <bean id="dataServiceUtils" class="org.fao.fenix.web.modules.dataviewer.server.DataServiceUtils">
+        <property name="wdsIP" value="${wds.ip}" />
+        <property name="wdsPORT" value="${wds.port}" />
+        <property name="rIP" value="${r.ip}" />
+        <property name="rPORT" value="${r.port}" />
+        <property name="rGwtIP" value="${rGwt.ip}" />
+        <property name="rGwtPORT" value="${rGwt.port}" />
+    </bean>
+
+    <bean id="mapsServiceUtils" class="org.fao.fenix.web.modules.dataviewer.server.MapsServiceUtils">
+        <property name="mapsIP" value="${maps.ip}" />
+        <property name="mapsPORT" value="${maps.port}" />
+        <property name="faostatBaseURL" value="${maps.faostat.baseurl}" />
+    </bean>
+
+</beans>

@@ -1,0 +1,1 @@
+This folder contains the XML configuration file for the "Visualize By Topic" View

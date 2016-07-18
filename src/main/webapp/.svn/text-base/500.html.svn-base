@@ -1,0 +1,36 @@
+<html>
+
+	<head>
+	    <title>FENIX</title>
+	    <link href="axis2-web/css/axis-style.css" rel="stylesheet" type="text/css"/>
+	    <link rel='icon' type='image/png' href='fao.png'>
+  	</head>
+
+  	<body style="background-color: #5E8FC6;">
+  	
+  	<div style="height: 50px;" ></div>
+  	
+  	<table align="center" style="width: 800px; align: center; border: 3px solid #1D4589; background-color: #FFFFFF;">
+  		
+  		<tr>
+  			<td align="left" width="80%" style="font-family: sans-serif; font-weight: bold; color: #5E8FC6; font-size: 35pt;">FENIX Workstation</td>
+  			<td width="200px" align="right"><img src="FAOLogo.png" width="50" height="50" alt="FAO"/></td>
+  		</tr>
+  		
+  		<tr>
+  			<td colspan="3" style="font-family: sans-serif; text-align: left;">
+  				<br>An error has occurred, please try again later. We apologize for any inconvenience.<br><br> 
+  			</td>
+  		</tr>
+  		
+  		<tr>
+  			<td colspan="3" align="center">
+  				<a target="_blank" href="http://www.foodsec.org/workstation/">FENIX Portal</a>
+  			</td>
+  		</tr>
+  		
+  	</table>
+    
+  	</body>
+  	
+</html>

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/fenix/!svn/ver/9505/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/utils/boxmaker
+END
+FAOSTATBoxMakerPivotTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/fenix/!svn/ver/9505/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/utils/boxmaker/FAOSTATBoxMakerPivotTable.java
+END
+FAOSTATBoxMakerChart.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/fenix/!svn/ver/9307/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/utils/boxmaker/FAOSTATBoxMakerChart.java
+END
+FAOSTATBoxMakerFlatTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/fenix/!svn/ver/8662/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/utils/boxmaker/FAOSTATBoxMakerFlatTable.java
+END
+FAOSTATBoxMaker.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/fenix/!svn/ver/7780/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/utils/boxmaker/FAOSTATBoxMaker.java
+END

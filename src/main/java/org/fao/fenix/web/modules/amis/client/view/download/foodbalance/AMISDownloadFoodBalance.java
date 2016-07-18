@@ -1,0 +1,414 @@
+package org.fao.fenix.web.modules.amis.client.view.download.foodbalance;
+
+import com.extjs.gxt.ui.client.Style;
+import com.extjs.gxt.ui.client.event.Events;
+import com.extjs.gxt.ui.client.event.FieldEvent;
+import com.extjs.gxt.ui.client.event.Listener;
+import com.extjs.gxt.ui.client.widget.ContentPanel;
+import com.extjs.gxt.ui.client.widget.HorizontalPanel;
+import com.extjs.gxt.ui.client.widget.Html;
+import com.extjs.gxt.ui.client.widget.VerticalPanel;
+import com.extjs.gxt.ui.client.widget.button.Button;
+import com.extjs.gxt.ui.client.widget.form.*;
+import com.extjs.gxt.ui.client.widget.layout.FormLayout;
+import org.fao.fenix.web.modules.amis.client.control.AMISController;
+import org.fao.fenix.web.modules.amis.client.control.download.AMISDownloadController;
+import org.fao.fenix.web.modules.amis.client.control.download.AMISFoodBalanceDownloadController;
+import org.fao.fenix.web.modules.amis.client.view.download.*;
+import org.fao.fenix.web.modules.amis.client.view.download.table.AMISDownloadTablePanel;
+import org.fao.fenix.web.modules.amis.client.view.utils.layout.FormattingUtils;
+import org.fao.fenix.web.modules.amis.common.model.AMISCodesModelData;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class AMISDownloadFoodBalance extends AMISDownload {
+
+    ContentPanel panel;
+
+    ContentPanel optionsPanel;
+
+    ContentPanel domainsPanel;
+
+    ContentPanel datasourcesPanel;
+
+    ContentPanel selectionPanel;
+
+    ContentPanel buttonsPanel;
+
+
+    AMISDownloadTitlePanel titlePanel;
+
+    AMISDownloadTablePanel tablePanel;
+
+    AMISDownloadDomainPanel domains;
+
+
+    AMISDownloadSelectorDataSources datasources;
+
+
+    RadioGroup radioGroup;
+
+    Radio radioByCountry;
+
+    Radio radioByProduct;
+
+    Radio radioByDatasource;
+
+    FieldSet fieldSet = new FieldSet();
+
+
+
+    public AMISDownloadFoodBalance() {
+        System.out.println(" AMISDownloadFoodBalance Constructor AMISController.currentDatasetView = *"+ AMISController.currentDatasetView+ "*");
+        panel = new ContentPanel();
+        panel.setBodyBorder(false);
+        panel.setHeaderVisible(false);
+
+        optionsPanel = new ContentPanel();
+        optionsPanel.setHeaderVisible(false);
+        optionsPanel.setBodyBorder(false);
+        optionsPanel.setAutoHeight(true);
+        optionsPanel.setScrollMode(Style.Scroll.NONE);
+        optionsPanel.setStyleAttribute("padding-left", "20px");
+
+
+        domainsPanel = new ContentPanel();
+        domainsPanel.setBodyBorder(false);
+        domainsPanel.setHeaderVisible(false);
+
+        datasourcesPanel = new ContentPanel();
+        datasourcesPanel.setBodyBorder(false);
+        datasourcesPanel.setHeaderVisible(false);
+
+        selectionPanel = new ContentPanel();
+        selectionPanel.setAutoWidth(true);
+        selectionPanel.setAutoHeight(true);
+        selectionPanel.setBodyBorder(false);
+        selectionPanel.setHeaderVisible(false);
+
+        buttonsPanel = new ContentPanel();
+        buttonsPanel.setBodyBorder(false);
+        buttonsPanel.setHeaderVisible(false);
+
+        radioByDatasource = new Radio();
+        radioByCountry = new Radio();
+        radioByProduct = new Radio();
+
+        radioGroup = new RadioGroup();
+        radioGroup.setBorders(false);
+        radioGroup.setOrientation(Style.Orientation.VERTICAL);
+        radioGroup.add(radioByDatasource);
+        radioGroup.add(radioByCountry);
+        radioGroup.add(radioByProduct);
+
+
+        fieldSet.setBorders(false);
+        fieldSet.setHeading("Enable multiple selections on:");
+        FormLayout layout = new FormLayout();
+        layout.setLabelSeparator("");
+        layout.setLabelAlign(FormPanel.LabelAlign.LEFT);
+        layout.setLabelWidth(0);
+        layout.setLabelPad(0);
+        fieldSet.setLayout(layout);
+
+        fieldSet.add(radioGroup);
+
+
+        tablePanel = new AMISDownloadTablePanel();
+
+        domains = new AMISDownloadDomainPanel();
+
+        datasources = new AMISDownloadSelectorDataSources();
+
+        titlePanel = new AMISDownloadTitlePanel();
+    }
+
+    public ContentPanel build() {
+
+        panel.add(new Html(""));
+        panel.add(buildMainPanel());
+
+        panel.add(FormattingUtils.addVSpace(10));
+
+        panel.add(buildTablePanel());
+
+        return panel;
+    }
+
+
+
+    private VerticalPanel buildMainPanel(){
+        VerticalPanel mainHolder = new VerticalPanel();
+        HorizontalPanel p = new HorizontalPanel();
+        p.setSpacing(10);
+        p.add(buildOptions(this));
+        p.add(FormattingUtils.addHSpace(10));
+        p.add(datasourcesPanel);
+        p.add(selectionPanel);
+        mainHolder.add(p);
+        mainHolder.add(FormattingUtils.addVSpace(20));
+        mainHolder.add(addButtons());
+
+        return mainHolder;
+    }
+
+
+
+    public void buildSourcesSelector(AMISCodesModelData code){
+        datasourcesPanel.removeAll();
+
+        VerticalPanel p = new VerticalPanel();
+
+        HorizontalPanel h1 = new HorizontalPanel();
+        HorizontalPanel h2 = new HorizontalPanel();
+        VerticalPanel v1 = new VerticalPanel();
+        VerticalPanel v2 = new VerticalPanel();
+
+
+        System.out.println("@@@@@@@ buildSelectors code = "+code);
+
+        h1.add(buildDataSourcesSelector(code));
+
+        v1.add(h1);
+        v1.add(FormattingUtils.addVSpace(20));
+
+        h2.add(FormattingUtils.addHSpace(10));
+
+        h2.add(FormattingUtils.addHSpace(5));
+        v2.add(h2);
+
+        p.add(v1);
+        p.add(v2);
+        p.add(FormattingUtils.addVSpace(10));
+
+
+        datasourcesPanel.add(p);
+
+        datasourcesPanel.layout();
+    }
+
+    public void buildSelectors(AMISCodesModelData code){
+        selectionPanel.removeAll();
+        getSelectedDatasources().clear();
+
+        //default Data Source
+//        AMISCodesModelData defaultDataSource = new AMISCodesModelData("CBS","FAO-CBS");
+        AMISCodesModelData defaultDataSource = new AMISCodesModelData("CBS","FAO-AMIS");
+        getSelectedDatasources().add(defaultDataSource);
+
+        buildAreaItemsSelectorsPanel(code);
+    }
+
+    public void buildSelectors(List<AMISCodesModelData> datasources, AMISCodesModelData code){
+        selectionPanel.removeAll();
+        getSelectedDatasources().clear();
+
+        setSelectedDatasources(datasources);
+
+        buildAreaItemsSelectorsPanel(code);
+    }
+
+    private void buildAreaItemsSelectorsPanel(AMISCodesModelData code){
+        VerticalPanel p = new VerticalPanel();
+
+        HorizontalPanel h1 = new HorizontalPanel();
+        HorizontalPanel h2 = new HorizontalPanel();
+        VerticalPanel v1 = new VerticalPanel();
+        VerticalPanel v2 = new VerticalPanel();
+
+        System.out.println("@@@@@@@ buildSelectors code = "+code);
+
+        h1.add(buildCountriesSelector(code));
+        h1.add(buildItemsSelector(code));
+
+        v1.add(h1);
+        v1.add(FormattingUtils.addVSpace(20));
+
+        h2.add(FormattingUtils.addHSpace(10));
+
+        h2.add(FormattingUtils.addHSpace(5));
+        v2.add(h2);
+
+        p.add(v1);
+        p.add(v2);
+        p.add(FormattingUtils.addVSpace(10));
+
+       // p.add(addButtons(code));
+
+        selectionPanel.add(p);
+
+        selectionPanel.layout();
+    }
+
+    protected HorizontalPanel buildCountriesSelector(AMISCodesModelData code) {
+        HorizontalPanel p = new HorizontalPanel();
+        p.setSpacing(10);
+
+        System.out.println("@@@@@@@ buildCountriesSelector code = "+code.getCode());
+
+        if(code==null)   {
+            p.add(buildAreas());
+        }
+
+        else {
+            if(code.getCode().equals("COUNTRY"))
+                p.add(buildAreas());
+            else
+                p.add(buildAreasCombo());
+        }
+
+
+        return p;
+    }
+
+    protected HorizontalPanel buildDataSourcesSelector(AMISCodesModelData code) {
+        HorizontalPanel p = new HorizontalPanel();
+        p.setSpacing(10);
+
+        System.out.println("@@@@@@@ buildDataSourcesSelector code = "+code.getCode());
+
+        if(code==null)   {
+            p.add(buildDataSources());
+        }
+        else {
+            if(code.getCode().equals("DATASOURCE"))
+                p.add(buildDataSources());
+            else
+                p.add(buildDataSourcesCombo());
+        }
+
+
+        return p;
+    }
+
+    protected HorizontalPanel buildItemsSelector(AMISCodesModelData code) {
+        HorizontalPanel p = new HorizontalPanel();
+        p.setSpacing(10);
+
+        System.out.println("@@@@@@@ buildItemsSelector code = "+code);
+
+        if(code==null)   {
+            p.add(buildItemsCombo());
+        }
+        else {
+            if(code.getCode().equals("PRODUCT"))
+                p.add(buildItems());
+            else
+                p.add(buildItemsCombo());
+        }
+
+        return p;
+    }
+
+    public ContentPanel buildOptions(AMISDownloadFoodBalance download) {
+        optionsPanel.add(FormattingUtils.addVSpace(5));
+
+        addFieldSet();
+
+        AMISFoodBalanceDownloadController.getOptionsAgentRadio(download, "COUNTRY", radioByCountry, radioByProduct, radioByDatasource);
+
+        addRadioListeners(download);
+        return optionsPanel;
+    }
+
+    public void addFieldSet() {
+        optionsPanel.add(fieldSet);
+    }
+
+
+
+
+    private void addRadioListeners(final AMISDownloadFoodBalance download) {
+        radioByDatasource.addListener(Events.OnClick, new Listener<FieldEvent>() {
+
+            @Override
+            public void handleEvent(FieldEvent be) {
+                for(AMISCodesModelData selectedCode : AMISFoodBalanceDownloadController.radioOptionsList)
+                {
+                    if(selectedCode.getCode().equals(radioByDatasource.getId()))
+                    {
+                        AMISFoodBalanceDownloadController.selectedByOptionModel =  selectedCode;
+                        download.buildSourcesSelector(selectedCode);
+                        download.buildSelectors(selectedCode);
+
+                        download.getTablePanel().getTablesPanel().removeAll();
+                        download.getTitlePanel().getPanel().layout();
+                    }
+                }
+            }
+        });
+
+        radioByCountry.addListener(Events.OnClick, new Listener<FieldEvent>() {
+
+            @Override
+            public void handleEvent(FieldEvent be) {
+                 for(AMISCodesModelData selectedCode : AMISFoodBalanceDownloadController.radioOptionsList)
+                {
+                    if(selectedCode.getCode().equals(radioByCountry.getId()))
+                    {
+                        AMISFoodBalanceDownloadController.selectedByOptionModel =  selectedCode;
+
+                        download.buildSourcesSelector(selectedCode);
+                        download.buildSelectors(selectedCode);
+
+                        download.getTablePanel().getTablesPanel().removeAll();
+                        download.getTitlePanel().getPanel().layout();
+                    }
+                }
+            }
+        });
+
+        radioByProduct.addListener(Events.OnClick, new Listener<FieldEvent>() {
+            @Override
+            public void handleEvent(FieldEvent be) {
+                for(AMISCodesModelData selectedCode : AMISFoodBalanceDownloadController.radioOptionsList)
+                {
+                    if(selectedCode.getCode().equals(radioByProduct.getId()))
+                    {
+                        AMISFoodBalanceDownloadController.selectedByOptionModel =  selectedCode;
+                        download.buildSourcesSelector(selectedCode);
+                        download.buildSelectors(selectedCode);
+
+                        download.getTablePanel().getTablesPanel().removeAll();
+                        download.getTitlePanel().getPanel().layout();
+                    }
+                }
+            }
+        });
+
+
+
+    }
+
+
+    protected HorizontalPanel addButtons(AMISCodesModelData selectType, List<AMISCodesModelData> domainCodes) {
+
+        ArrayList<String> codeList = new ArrayList<String>();
+
+        AMISCodesModelData selectedDataSourceModel = null;
+        if(domainCodes.size() == 1){
+            selectedDataSourceModel = domainCodes.get(0);
+            codeList = selectedDataSourceModel.getCodeList();
+        }
+
+
+        HorizontalPanel p = new HorizontalPanel();
+        p.add(FormattingUtils.addHSpace(10));
+
+        String exportLabel = "Export to Excel";
+
+        exportButton = new Button(exportLabel);
+        exportButton.setIconStyle("sendToExcel");
+
+        exportButton.addSelectionListener(AMISDownloadController.exportCSV(this, codeList, selectedDataSourceModel.getLabel()));
+        p.add(exportButton);
+
+        p.add(FormattingUtils.addHSpace(10));
+
+        return p;
+    }
+
+
+}

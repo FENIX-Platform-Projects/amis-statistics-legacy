@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/fenix/!svn/ver/6749/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/server/utils/CountryBriefTemplate
+END
+CropLegend.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/fenix/!svn/ver/6405/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/server/utils/CountryBriefTemplate/CropLegend.java
+END
+CropMaps.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/fenix/!svn/ver/6678/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/server/utils/CountryBriefTemplate/CropMaps.java
+END
+RainfallCharts.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/fenix/!svn/ver/6405/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/server/utils/CountryBriefTemplate/RainfallCharts.java
+END
+CerealBalanceChart.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/fenix/!svn/ver/6749/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/birt/server/utils/CountryBriefTemplate/CerealBalanceChart.java
+END

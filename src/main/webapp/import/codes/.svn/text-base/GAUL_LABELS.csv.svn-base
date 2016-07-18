@@ -1,0 +1,3725 @@
+"code","label","langcode","explanatorynote"
+1,"Afghanistan","en","GAUL0"
+2,"Aksai Chin","en","GAUL0"
+3,"Albania","en","GAUL0"
+4,"Algeria","en","GAUL0"
+5,"American Samoa","en","GAUL0"
+7,"Andorra","en","GAUL0"
+8,"Angola","en","GAUL0"
+9,"Anguilla","en","GAUL0"
+10,"Antarctica","en","GAUL0"
+11,"Antigua and Barbuda","en","GAUL0"
+12,"Argentina","en","GAUL0"
+13,"Armenia","en","GAUL0"
+14,"Aruba","en","GAUL0"
+15,"Arunachal Pradesh","en","GAUL0"
+16,"Ashmore and Cartier Islands","en","GAUL0"
+17,"Australia","en","GAUL0"
+18,"Austria","en","GAUL0"
+19,"Azerbaijan","en","GAUL0"
+20,"Bahamas","en","GAUL0"
+21,"Bahrain","en","GAUL0"
+22,"Baker Island","en","GAUL0"
+23,"Bangladesh","en","GAUL0"
+24,"Barbados","en","GAUL0"
+25,"Bassas da India","en","GAUL0"
+26,"Belarus","en","GAUL0"
+27,"Belgium","en","GAUL0"
+28,"Belize","en","GAUL0"
+29,"Benin","en","GAUL0"
+30,"Bermuda","en","GAUL0"
+31,"Bhutan","en","GAUL0"
+32,"Bird Island","en","GAUL0"
+33,"Bolivia","en","GAUL0"
+34,"Bosnia and Herzegovina","en","GAUL0"
+35,"Botswana","en","GAUL0"
+36,"Bouvet Island","en","GAUL0"
+37,"Brazil","en","GAUL0"
+38,"British Indian Ocean Territory","en","GAUL0"
+39,"British Virgin Islands","en","GAUL0"
+40,"Brunei Darussalam","en","GAUL0"
+41,"Bulgaria","en","GAUL0"
+42,"Burkina Faso","en","GAUL0"
+43,"Burundi","en","GAUL0"
+44,"Cambodia","en","GAUL0"
+45,"Cameroon","en","GAUL0"
+46,"Canada","en","GAUL0"
+47,"Cape Verde","en","GAUL0"
+48,"Cayman Islands","en","GAUL0"
+49,"Central African Republic","en","GAUL0"
+50,"Chad","en","GAUL0"
+51,"Chile","en","GAUL0"
+52,"China/India","en","GAUL0"
+53,"China","en","GAUL0"
+54,"Christmas Island","en","GAUL0"
+55,"Clipperton Island","en","GAUL0"
+56,"Cocos (Keeling) Islands","en","GAUL0"
+57,"Colombia","en","GAUL0"
+58,"Comoros","en","GAUL0"
+59,"Congo","en","GAUL0"
+60,"Cook Islands","en","GAUL0"
+61,"Costa Rica","en","GAUL0"
+62,"Croatia","en","GAUL0"
+63,"Cuba","en","GAUL0"
+64,"Cyprus","en","GAUL0"
+65,"Czech Republic","en","GAUL0"
+66,"Cote d'Ivoire","en","GAUL0"
+67,"Dem People's Rep of Korea","en","GAUL0"
+68,"Democratic Republic of the Congo","en","GAUL0"
+69,"Denmark","en","GAUL0"
+70,"Djibouti","en","GAUL0"
+71,"Dominica","en","GAUL0"
+72,"Dominican Republic","en","GAUL0"
+73,"Ecuador","en","GAUL0"
+75,"El Salvador","en","GAUL0"
+76,"Equatorial Guinea","en","GAUL0"
+77,"Eritrea","en","GAUL0"
+78,"Estonia","en","GAUL0"
+79,"Ethiopia","en","GAUL0"
+80,"Europa Island","en","GAUL0"
+81,"Falkland Islands (Malvinas)","en","GAUL0"
+82,"Faroe Islands","en","GAUL0"
+83,"Fiji","en","GAUL0"
+84,"Finland","en","GAUL0"
+85,"France","en","GAUL0"
+86,"French Guiana","en","GAUL0"
+87,"French Polynesia","en","GAUL0"
+88,"French Southern and Antarctic Territories","en","GAUL0"
+89,"Gabon","en","GAUL0"
+90,"Gambia","en","GAUL0"
+91,"Gaza Strip","en","GAUL0"
+92,"Georgia","en","GAUL0"
+93,"Germany","en","GAUL0"
+94,"Ghana","en","GAUL0"
+95,"Gibraltar","en","GAUL0"
+96,"Glorioso Island","en","GAUL0"
+97,"Greece","en","GAUL0"
+98,"Greenland","en","GAUL0"
+99,"Grenada","en","GAUL0"
+100,"Guadeloupe","en","GAUL0"
+101,"Guam","en","GAUL0"
+103,"Guatemala","en","GAUL0"
+104,"Guernsey","en","GAUL0"
+105,"Guinea-Bissau","en","GAUL0"
+106,"Guinea","en","GAUL0"
+107,"Guyana","en","GAUL0"
+108,"Haiti","en","GAUL0"
+109,"Heard Island and McDonald Islands","en","GAUL0"
+110,"Holy See","en","GAUL0"
+111,"Honduras","en","GAUL0"
+112,"Howland Island","en","GAUL0"
+113,"Hungary","en","GAUL0"
+114,"Iceland","en","GAUL0"
+115,"India","en","GAUL0"
+116,"Indonesia","en","GAUL0"
+117,"Iran  (Islamic Republic of)","en","GAUL0"
+118,"Iraq","en","GAUL0"
+119,"Ireland","en","GAUL0"
+120,"Isle of Man","en","GAUL0"
+121,"Israel","en","GAUL0"
+122,"Italy","en","GAUL0"
+123,"Jamaica","en","GAUL0"
+126,"Japan","en","GAUL0"
+127,"Jarvis Island","en","GAUL0"
+128,"Jersey","en","GAUL0"
+129,"Johnston Atoll","en","GAUL0"
+130,"Jordan","en","GAUL0"
+131,"Juan de Nova Island","en","GAUL0"
+132,"Kazakhstan","en","GAUL0"
+133,"Kenya","en","GAUL0"
+134,"Kingman Reef","en","GAUL0"
+135,"Kiribati","en","GAUL0"
+136,"Kuril islands","en","GAUL0"
+137,"Kuwait","en","GAUL0"
+138,"Kyrgyzstan","en","GAUL0"
+139,"Lao People's Democratic Republic","en","GAUL0"
+140,"Latvia","en","GAUL0"
+141,"Lebanon","en","GAUL0"
+142,"Lesotho","en","GAUL0"
+143,"Liancourt Rock","en","GAUL0"
+144,"Liberia","en","GAUL0"
+145,"Libyan Arab Jamahiriya","en","GAUL0"
+146,"Liechtenstein","en","GAUL0"
+147,"Lithuania","en","GAUL0"
+148,"Luxembourg","en","GAUL0"
+149,"Macau","en","GAUL0"
+150,"Madagascar","en","GAUL0"
+151,"Madeira Islands","en","GAUL0"
+152,"Malawi","en","GAUL0"
+153,"Malaysia","en","GAUL0"
+154,"Maldives","en","GAUL0"
+155,"Mali","en","GAUL0"
+156,"Malta","en","GAUL0"
+157,"Marshall Islands","en","GAUL0"
+158,"Martinique","en","GAUL0"
+159,"Mauritania","en","GAUL0"
+160,"Mauritius","en","GAUL0"
+161,"Mayotte","en","GAUL0"
+162,"Mexico","en","GAUL0"
+163,"Micronesia (Federated States of)","en","GAUL0"
+164,"Midway Island","en","GAUL0"
+165,"Republic of Moldova","en","GAUL0"
+166,"Monaco","en","GAUL0"
+167,"Mongolia","en","GAUL0"
+168,"Montserrat","en","GAUL0"
+169,"Morocco","en","GAUL0"
+170,"Mozambique","en","GAUL0"
+171,"Myanmar","en","GAUL0"
+172,"Namibia","en","GAUL0"
+173,"Nauru","en","GAUL0"
+174,"Navassa Island","en","GAUL0"
+175,"Nepal","en","GAUL0"
+176,"Netherlands Antilles","en","GAUL0"
+177,"Netherlands","en","GAUL0"
+178,"New Caledonia","en","GAUL0"
+179,"New Zealand","en","GAUL0"
+180,"Nicaragua","en","GAUL0"
+181,"Niger","en","GAUL0"
+182,"Nigeria","en","GAUL0"
+183,"Niue","en","GAUL0"
+184,"Norfolk Island","en","GAUL0"
+185,"Northern Mariana Islands","en","GAUL0"
+186,"Norway","en","GAUL0"
+187,"Oman","en","GAUL0"
+188,"Pakistan","en","GAUL0"
+189,"Palauv","en","GAUL0"
+190,"Palmyra Atoll","en","GAUL0"
+191,"Panama","en","GAUL0"
+192,"Papua New Guinea","en","GAUL0"
+193,"Paracel Islands","en","GAUL0"
+194,"Paraguay","en","GAUL0"
+195,"Peru","en","GAUL0"
+196,"Philippines","en","GAUL0"
+197,"Pitcairn","en","GAUL0"
+198,"Poland","en","GAUL0"
+199,"Portugal","en","GAUL0"
+200,"Puerto Rico","en","GAUL0"
+201,"Qatar","en","GAUL0"
+202,"Republic of Korea","en","GAUL0"
+203,"Romania","en","GAUL0"
+204,"Russian Federation","en","GAUL0"
+205,"Rwanda","en","GAUL0"
+206,"Reunion","en","GAUL0"
+207,"Saint Helena","en","GAUL0"
+208,"Saint Kitts and Nevis","en","GAUL0"
+209,"Saint Lucia","en","GAUL0"
+210,"Saint Pierre et Miquelon","en","GAUL0"
+211,"Saint Vincent and the Grenadines","en","GAUL0"
+212,"Samoa","en","GAUL0"
+213,"San Marino","en","GAUL0"
+214,"Sao Tome and Principe","en","GAUL0"
+215,"Saudi Arabia","en","GAUL0"
+216,"Scarborough Reef","en","GAUL0"
+217,"Senegal","en","GAUL0"
+218,"Senkaku Islands","en","GAUL0"
+220,"Seychelles","en","GAUL0"
+221,"Sierra Leone","en","GAUL0"
+222,"Singapore","en","GAUL0"
+223,"Slovakia","en","GAUL0"
+224,"Slovenia","en","GAUL0"
+225,"Solomon Islands","en","GAUL0"
+226,"Somalia","en","GAUL0"
+227,"South Africa","en","GAUL0"
+228,"South Georgia and the South Sandwich Islands","en","GAUL0"
+229,"Spain","en","GAUL0"
+230,"Spratly Islands","en","GAUL0"
+231,"Sri Lanka","en","GAUL0"
+233,"Suriname","en","GAUL0"
+234,"Svalbard and Jan Mayen Islands","en","GAUL0"
+235,"Swaziland","en","GAUL0"
+236,"Sweden","en","GAUL0"
+237,"Switzerland","en","GAUL0"
+238,"Syrian Arab Republic","en","GAUL0"
+239,"Tajikistan","en","GAUL0"
+240,"Thailand","en","GAUL0"
+241,"The former Yugoslav Republic of Macedonia","en","GAUL0"
+242,"Timor-Leste","en","GAUL0"
+243,"Togo","en","GAUL0"
+244,"Tokelau","en","GAUL0"
+245,"Tonga","en","GAUL0"
+246,"Trinidad and Tobago","en","GAUL0"
+247,"Tromelin Island","en","GAUL0"
+248,"Tunisia","en","GAUL0"
+249,"Turkey","en","GAUL0"
+250,"Turkmenistan","en","GAUL0"
+251,"Turks and Caicos islands","en","GAUL0"
+252,"Tuvalu","en","GAUL0"
+253,"Uganda","en","GAUL0"
+254,"Ukraine","en","GAUL0"
+255,"United Arab Emirates","en","GAUL0"
+256,"U.K. of Great Britain and Northern Ireland","en","GAUL0"
+257,"United Republic of Tanzania","en","GAUL0"
+258,"United States Virgin Islands","en","GAUL0"
+259,"United States of America","en","GAUL0"
+260,"Uruguay","en","GAUL0"
+261,"Uzbekistan","en","GAUL0"
+262,"Vanuatu","en","GAUL0"
+263,"Venezuela","en","GAUL0"
+264,"Viet Nam","en","GAUL0"
+265,"Wake Island","en","GAUL0"
+266,"Wallis and Futuna","en","GAUL0"
+267,"West Bank","en","GAUL0"
+268,"Western Sahara","en","GAUL0"
+0,"World","en","GAUL0"
+269,"Yemen","en","GAUL0"
+270,"Zambia","en","GAUL0"
+271,"Zimbabwe","en","GAUL0"
+2647,"Montenegro","en","GAUL0"
+2648,"Serbia","en","GAUL0"
+33364,"Hong Kong","en","GAUL0"
+40760,"Hala'ib triangle","en","GAUL0"
+40762,"Ma'tan al-Sarra","en","GAUL0"
+40763,"Dhekelia and Akrotiri SBA","en","GAUL0"
+40764,"Sudan","en","GAUL0"
+40765,"Egypt","en","GAUL0"
+40781,"Jammu Kashmir","en","GAUL0"
+61013,"Ilemi triangle","en","GAUL0"
+74578,"Azores Islands","en","GAUL0"
+272,"Badakhshan","en",1
+300,"Takhar","en",1
+283,"Jawzjan","en",1
+275,"Balkh","en",1
+289,"Kunduz","en",1
+278,"Faryab","en",1
+298,"Samangan","en",1
+274,"Baghlan","en",1
+299,"Sari Pul","en",1
+273,"Badghis","en",1
+294,"Nuristan","en",1
+297,"Parwan","en",1
+282,"Hirat","en",1
+288,"Kunar","en",1
+276,"Bamyan","en",1
+280,"Ghor","en",1
+290,"Laghman","en",1
+286,"Kapisa","en",1
+284,"Kabul","en",1
+302,"Wardak","en",1
+292,"Nangarhar","en",1
+301,"Uruzgan","en",1
+291,"Logar","en",1
+296,"Paktya","en",1
+279,"Ghazni","en",1
+287,"Khost","en",1
+277,"Farah","en",1
+295,"Paktika","en",1
+281,"Hilmand","en",1
+303,"Zabul","en",1
+285,"Kandahar","en",1
+293,"Nimroz","en",1
+304,"Administrative unit not available","en",2
+326,"Malesi E Madhe","en",3
+339,"Tropoje","en",3
+335,"Shkoder","en",3
+315,"Has","en",3
+333,"Puke","en",3
+321,"Kukes","en",3
+329,"Mirdite","en",3
+323,"Lezhe","en",3
+309,"Diber","en",3
+328,"Mat","en",3
+322,"Kurbin","en",3
+306,"Bulqize","en",3
+319,"Kruje","en",3
+310,"Durres","en",3
+338,"Tirane","en",3
+324,"Librazhd","en",3
+311,"Elbasan","en",3
+316,"Kavaje","en",3
+330,"Peqin","en",3
+332,"Pogradec","en",3
+314,"Gramsh","en",3
+325,"Lushnje","en",3
+318,"Korce","en",3
+305,"Berat","en",3
+312,"Fier","en",3
+320,"Kucove","en",3
+336,"Skrapar","en",3
+340,"Vlore","en",3
+327,"Mallakaster","en",3
+308,"Devoll","en",3
+337,"Tepelene","en",3
+317,"Kolonje","en",3
+331,"Permet","en",3
+313,"Gjirokaster","en",3
+334,"Sarande","en",3
+307,"Delvine","en",3
+379,"Skikda","en",4
+345,"Annaba","en",4
+359,"El-Tarf","en",4
+363,"Jijel","en",4
+353,"Boumerdes","en",4
+387,"Tizi Ouzou","en",4
+348,"Bejaia","en",4
+344,"Alger","en",4
+385,"Tipaza","en",4
+361,"Guelma","en",4
+350,"Blida","en",4
+368,"Mila","en",4
+355,"Constantine","en",4
+352,"Bouira","en",4
+377,"Setif","en",4
+354,"Chlef","en",4
+367,"Medea","en",4
+380,"Souk-Ahras","en",4
+342,"Ain-Defla","en",4
+351,"Bordj Bou Arrer","en",4
+369,"Mostaganem","en",4
+375,"Relizane","en",4
+374,"Oum El Bouaghi","en",4
+370,"M'Sila","en",4
+386,"Tissemsilt","en",4
+382,"Tebessa","en",4
+346,"Batna","en",4
+356,"Djelfa","en",4
+366,"Mascara","en",4
+372,"Oran","en",4
+384,"Tiaret","en",4
+364,"Khenchela","en",4
+343,"Ain-Temouchent","en",4
+378,"Sidi Bel Abbes","en",4
+349,"Biskra","en",4
+388,"Tlemcen","en",4
+376,"Saida","en",4
+365,"Laghouat","en",4
+358,"El Oued","en",4
+357,"El Bayadh","en",4
+371,"Naama","en",4
+373,"Ouargla","en",4
+360,"Ghardaia","en",4
+347,"Bechar","en",4
+341,"Adrar","en",4
+362,"Illizi","en",4
+383,"Tindouf","en",4
+381,"Tamanrasset","en",4
+389,"Administrative unit not available","en",5
+396,"Ordino","en",7
+392,"Canillo","en",7
+395,"La Massana","en",7
+393,"Encamp","en",7
+394,"Escaldes-engordany","en",7
+391,"Andorra La Vella","en",7
+397,"Sant Julia De Loria","en",7
+401,"Cabinda","en",8
+415,"Zaire","en",8
+414,"Uige","en",8
+409,"Lunda Norte","en",8
+411,"Malanje","en",8
+398,"Bengo","en",8
+407,"Kuanza Norte","en",8
+410,"Lunda Sul","en",8
+408,"Luanda","en",8
+403,"Cuanza Sul","en",8
+400,"Bie","en",8
+412,"Moxico","en",8
+405,"Huambo","en",8
+399,"Benguela","en",8
+406,"Huila","en",8
+402,"Cuando Cubango","en",8
+404,"Cunene","en",8
+413,"Namibe","en",8
+423,"Name Unknown","en",9
+424,"Name Unknown","en",9
+425,"Name Unknown","en",9
+416,"Name Unknown","en",9
+417,"Name Unknown","en",9
+418,"Name Unknown","en",9
+419,"Name Unknown","en",9
+420,"Name Unknown","en",9
+421,"Name Unknown","en",9
+422,"Name Unknown","en",9
+426,"Administrative unit not available","en",10
+40206,"Barbuda","en",11
+40209,"St. John","en",11
+40208,"St. George","en",11
+40212,"St. Peter","en",11
+40210,"St. Mary","en",11
+40213,"St. Philip","en",11
+40211,"St. Paul","en",11
+40207,"Name Unknown","en",11
+438,"Jujuy","en",12
+445,"Salta","en",12
+437,"Formosa","en",12
+432,"Chaco","en",12
+431,"Catamarca","en",12
+442,"Misiones","en",12
+450,"Santiago Del Estero","en",12
+452,"Tucuman","en",12
+435,"Corrientes","en",12
+440,"La Rioja","en",12
+449,"Santa Fe","en",12
+446,"San Juan","en",12
+434,"Cordoba","en",12
+447,"San Luis","en",12
+441,"Mendoza","en",12
+436,"Entre Rios","en",12
+430,"Buenos Aires D.f.","en",12
+439,"La Pampa","en",12
+443,"Neuquen","en",12
+444,"Rio Negro","en",12
+429,"Buenos Aires","en",12
+433,"Chubut","en",12
+448,"Santa Cruz","en",12
+451,"Tierra Del Fuego","en",12
+462,"Tavush","en",13
+458,"Lori","en",13
+460,"Shirak","en",13
+453,"Aragatsotn","en",13
+457,"Kotayk","en",13
+456,"Gergharkunik","en",13
+455,"Armavir","en",13
+464,"Yerevan","en",13
+454,"Ararat","en",13
+463,"Vayots Dzor","en",13
+461,"Syunik","en",13
+465,"Administrative unit not available","en",14
+70036,"Administrative unit not available","en",15
+70037,"Administrative unit not available","en",15
+467,"Administrative unit not available","en",16
+477,"Western Australia","en",17
+471,"Northern Territory","en",17
+469,"Coral Sea Islands Territory","en",17
+474,"South Australia","en",17
+473,"Queensland","en",17
+476,"Victoria","en",17
+472,"Other Territories","en",17
+468,"Australian Capital Territory","en",17
+470,"New South Wales","en",17
+475,"Tasmania","en",17
+480,"Niederosterreich","en",18
+481,"Oberosterreich","en",18
+486,"Wien","en",18
+478,"Burgenland","en",18
+482,"Salzburg","en",18
+483,"Steiermark","en",18
+484,"Tirol","en",18
+485,"Vorarlberg","en",18
+479,"Karnten","en",18
+534,"Administrative unit not available","en",19
+499,"Belokany","en",19
+528,"Khatchmas","en",19
+558,"Zakatala","en",19
+520,"Gusar","en",19
+515,"Gakh","en",19
+530,"Kuba","en",19
+503,"Cheki","en",19
+490,"Akstafa","en",19
+507,"Divitchi","en",19
+543,"Ofuz","en",19
+551,"Siyasan","en",19
+554,"Tauz","en",19
+514,"Gabela","en",19
+549,"Samukh","en",19
+502,"Chamkhor","en",19
+522,"Ismaily","en",19
+533,"Administrative unit not available","en",19
+523,"Kazakh","en",19
+529,"Khyzy","en",19
+504,"Chemakha","en",19
+557,"Yvlakh","en",19
+518,"Geranboy","en",19
+527,"Khanlar","en",19
+524,"Kedabek","en",19
+491,"Aksu","en",19
+539,"Mingetchaur","en",19
+487,"Agdach","en",19
+519,"Gobustan","en",19
+516,"Gandja","en",19
+517,"Geoktchay","en",19
+512,"Evlakh","en",19
+552,"Sumgait","en",19
+493,"Apcheron","en",19
+506,"Dachkestan","en",19
+496,"Barda","en",19
+555,"Utchar","en",19
+532,"Kurdamir","en",19
+540,"Naftalan","en",19
+553,"Tartar","en",19
+459,"Nagorno-karabakh","en",19
+526,"Khadjikabul","en",19
+560,"Zardob","en",19
+525,"Kelbadjar","en",19
+489,"Agdjabedi","en",19
+488,"Agdam","en",19
+547,"Sabirobad","en",19
+521,"Imichli","en",19
+498,"Bejladjan","en",19
+492,"Ali Bajramly","en",19
+546,"Saatly","en",19
+535,"Latchin","en",19
+548,"Salyany","en",19
+495,"Baku","en",19
+505,"Cherur","en",19
+513,"Fizuli","en",19
+550,"Sederek","en",19
+500,"Bilesuvar","en",19
+501,"Chakhbuz","en",19
+497,"Bebek","en",19
+531,"Kubatly","en",19
+509,"Djebrail","en",19
+508,"Djalilabad","en",19
+510,"Djulfa","en",19
+544,"Ordubad","en",19
+541,"Nakhitchevan","en",19
+559,"Zangelan","en",19
+542,"Neftetchala","en",19
+538,"Masaly","en",19
+556,"Yardamly","en",19
+511,"Djulfa City","en",19
+545,"Ordubad City","en",19
+537,"Lerik","en",19
+536,"Lenkoran","en",19
+494,"Astara","en",19
+561,"Administrative unit not available","en",20
+569,"Muharraq","en",21
+565,"Hidd","en",21
+570,"Northern Region","en",21
+567,"Jidhafs","en",21
+562,"Central Region","en",21
+568,"Manama","en",21
+566,"Isa Town","en",21
+573,"Western Region","en",21
+572,"Sitra","en",21
+571,"Riffa","en",21
+563,"Hamad Town","en",21
+564,"Hawar Island","en",21
+574,"Administrative unit not available","en",22
+579,"Rajshahi","en",23
+580,"Sylhet","en",23
+577,"Dhaka","en",23
+575,"Barisal","en",23
+578,"Khulna","en",23
+576,"Chittagong","en",23
+587,"St. Lucy","en",24
+589,"St. Peter","en",24
+582,"St. Andrew","en",24
+584,"St. James","en",24
+586,"St. Joseph","en",24
+591,"St. Tomas","en",24
+585,"St. John","en",24
+590,"St. Phillip","en",24
+583,"St. George","en",24
+588,"St. Michael","en",24
+581,"Christ Church","en",24
+592,"Administrative unit not available","en",25
+599,"Vitebsk","en",26
+596,"Minsk","en",26
+595,"Grodno","en",26
+598,"Mogilev","en",26
+597,"Minsk City","en",26
+593,"Brest","en",26
+594,"Gomel","en",26
+601,"Vlaams Gewest","en",27
+600,"Region de Bruxelles-Capitale / Brussels Hoofdstedelijk Gewes","en",27
+602,"Region wallonne","en",27
+605,"Corozal","en",28
+606,"Orange Walk","en",28
+604,"Cayo","en",28
+603,"Belize","en",28
+607,"Stann Creek","en",28
+608,"Toledo","en",28
+609,"Alibori","en",29
+610,"Atakora","en",29
+612,"Borgou","en",29
+615,"Donga","en",29
+613,"Collines","en",29
+619,"Plateau","en",29
+620,"Zou","en",29
+614,"Couffo","en",29
+611,"Atlantique","en",29
+618,"Oueme","en",29
+617,"Mono","en",29
+616,"Littoral","en",29
+621,"Administrative unit not available","en",30
+625,"Gasa","en",31
+622,"Bumthang","en",31
+627,"Lhuentse","en",31
+640,"Wangdue-Phodrang","en",31
+636,"Trashi Yangtse","en",31
+635,"Thimphu","en",31
+631,"Punakha","en",31
+638,"Trongsa","en",31
+629,"Paro","en",31
+626,"Ha","en",31
+628,"Mongar","en",31
+637,"Trashigang","en",31
+641,"Zhemgang","en",31
+623,"Chhukha","en",31
+633,"Samtse","en",31
+624,"Dagana","en",31
+632,"Samdrup-Jonkha","en",31
+634,"Sarpang","en",31
+639,"Tsirang","en",31
+630,"Pemagatshel","en",31
+642,"Administrative unit not available","en",32
+648,"Pando","en",33
+40443,"Beni","en",33
+40446,"La Paz","en",33
+40449,"Santa Cruz","en",33
+40445,"Cochabamba","en",33
+40447,"Oruro","en",33
+40448,"Potosi","en",33
+40444,"Chuquisaca","en",33
+40450,"Tarija","en",33
+653,"Republika Srpska","en",34
+652,"Federacija Bosne I Hercegovine","en",34
+655,"Chobe","en",35
+660,"Ngamiland","en",35
+654,"Central","en",35
+661,"North East","en",35
+656,"Ghanzi","en",35
+659,"Kweneng","en",35
+657,"Kgalagadi","en",35
+658,"Kgatleng","en",35
+663,"Southern","en",35
+662,"South-East","en",35
+664,"Administrative unit not available","en",36
+687,"Roraima","en",37
+668,"Amazonas","en",37
+667,"Amapa","en",37
+678,"Para","en",37
+682,"Piaui","en",37
+670,"Ceara","en",37
+674,"Maranhao","en",37
+692,"Name Unknown","en",37
+684,"Rio Grande Do Norte","en",37
+691,"Tocantins","en",37
+679,"Paraiba","en",37
+665,"Acre","en",37
+675,"Mato Grosso","en",37
+686,"Rondonia","en",37
+666,"Alagoas","en",37
+681,"Pernambuco","en",37
+673,"Goias","en",37
+677,"Minas Gerais","en",37
+671,"Distrito Federal","en",37
+690,"Sergipe","en",37
+676,"Mato Grosso Do Sul","en",37
+672,"Espirito Santo","en",37
+669,"Bahia","en",37
+693,"Name Unknown","en",37
+694,"Name Unknown","en",37
+683,"Rio De Janeiro","en",37
+695,"Name Unknown","en",37
+689,"Sao Paulo","en",37
+680,"Parana","en",37
+688,"Santa Catarina","en",37
+685,"Rio Grande Do Sul","en",37
+696,"Administrative unit not available","en",38
+39503,"Anegada","en",39
+39507,"Virgin Gorda","en",39
+39506,"Tortola","en",39
+39504,"Jost van Dyke","en",39
+39505,"Other Islands","en",39
+699,"Brunei and Muara","en",40
+701,"Tutong","en",40
+700,"Temburong","en",40
+698,"Belait","en",40
+728,"Vidin","en",41
+719,"Silistra","en",41
+717,"Ruse","en",41
+704,"Dobrich","en",41
+716,"Razgrad","en",41
+711,"Montana","en",41
+729,"Vratca","en",41
+714,"Pleven","en",41
+718,"Shumen","en",41
+727,"Veliko Tarnovo","en",41
+726,"Varna","en",41
+725,"Targovishte","en",41
+710,"Lovech","en",41
+705,"Gabrovo","en",41
+722,"Sofia","en",41
+720,"Sliven","en",41
+703,"Burgas","en",41
+713,"Pernik","en",41
+723,"Sofia-city","en",41
+715,"Plovdiv","en",41
+724,"Stara Zagora","en",41
+707,"Jambol","en",41
+709,"Kustendil","en",41
+712,"Pazardzhik","en",41
+706,"Haskovo","en",41
+702,"Blagoevgrad","en",41
+721,"Smoljan","en",41
+708,"Kardzhali","en",41
+40287,"Sahel","en",42
+40285,"Nord","en",42
+40280,"Centre-nord","en",42
+40276,"Boucle Du Mouhoun","en",42
+40283,"Est","en",42
+40286,"Plateau Central","en",42
+40281,"Centre-ouest","en",42
+40278,"Centre","en",42
+40279,"Centre-est","en",42
+40282,"Centre-sud","en",42
+40284,"Hauts-bassins","en",42
+40288,"Sud-ouest","en",42
+40277,"Cascades","en",42
+40554,"Muyinga","en",43
+40551,"Kirundo","en",43
+40547,"Cibitoke","en",43
+40556,"Ngozi","en",43
+40550,"Kayanza","en",43
+40546,"Cankuzo","en",43
+40549,"Karuzi","en",43
+40542,"Bubanza","en",43
+40548,"Gitega","en",43
+40553,"Muramvya","en",43
+40558,"Ruyigi","en",43
+40544,"Bujumbura-Rural","en",43
+40555,"Mwaro","en",43
+40543,"Bujumbura-Mairie","en",43
+40545,"Bururi","en",43
+40557,"Rutana","en",43
+40552,"Makamba","en",43
+810,"Ratanak Kiri","en",44
+812,"Stung Treng","en",44
+804,"Oddar Meanchey","en",44
+807,"Preah Vihear","en",44
+791,"Banteay Meanchey","en",44
+811,"Siemreap","en",44
+792,"Battambang","en",44
+796,"Kampong Thom","en",44
+803,"Mondul Kiri","en",44
+801,"Kratie","en",44
+65290,"Area under National Administration 2","en",44
+805,"Pailin","en",44
+809,"Pursat","en",44
+794,"Kampong Chhnang","en",44
+793,"Kampong Cham","en",44
+795,"Kampong Speu","en",44
+798,"Kandal","en",44
+808,"Prey Veng","en",44
+806,"Phnom Penh","en",44
+813,"Svay Rieng","en",44
+814,"Takeo","en",44
+797,"Kampot","en",44
+799,"Koh Kong","en",44
+802,"Sihanoukville","en",44
+800,"Kep","en",44
+65289,"Area under National Administration 1","en",44
+818,"Extreme-Nord","en",45
+820,"Nord","en",45
+815,"Adamaoua","en",45
+821,"Nord-Ouest","en",45
+824,"Sud-Ouest","en",45
+822,"Ouest","en",45
+816,"Centre","en",45
+817,"Est","en",45
+823,"Sud","en",45
+819,"Littoral","en",45
+837,"Yukon Territory","en",46
+830,"Northwest Territories","en",46
+825,"Alberta","en",46
+836,"Saskatchewan","en",46
+827,"Manitoba","en",46
+832,"Nunavut","en",46
+826,"British Columbia","en",46
+829,"Newfoundland and Labrador","en",46
+834,"Prince Edward Island","en",46
+835,"Quebec","en",46
+828,"New Brunswick","en",46
+831,"Nova Scotia","en",46
+833,"Ontario","en",46
+849,"Santo Antao","en",47
+851,"Sao Vicente","en",47
+846,"Sal","en",47
+847,"Santa Luzia","en",47
+850,"Sao Nicolau","en",47
+842,"Ilheu Branco","en",47
+843,"Ilheu Raso","en",47
+838,"Boa Vista","en",47
+848,"Santiago","en",47
+844,"Maio","en",47
+841,"Fogo","en",47
+840,"Cima","en",47
+845,"Rombo","en",47
+839,"Brava","en",47
+68743,"Cayman Brac","en",48
+68744,"Little Cayman","en",48
+68742,"Grand Cayman","en",48
+868,"Vakaga","en",49
+853,"Bamingui-bangora","en",49
+856,"Hautte-kotto","en",49
+865,"Ouham","en",49
+861,"Nana Grebizi","en",49
+855,"Haut-mboumou","en",49
+866,"Ouham-pende","en",49
+864,"Ouaka","en",49
+862,"Nana Mambere","en",49
+860,"Mbomou","en",49
+857,"Kemo","en",49
+863,"Ombella-mpoko","en",49
+854,"Basse Kotto","en",49
+859,"Mambere-kadei","en",49
+858,"Lobaye","en",49
+67154,"Bangui","en",49
+867,"Sangha Mbaere","en",49
+12909,"Tibesti","en",50
+12907,"Borkou","en",50
+12908,"Ennedi","en",50
+12915,"Kanem","en",50
+12914,"Barl El Gazal","en",50
+12905,"Batha Ouest","en",50
+870,"Biltine","en",50
+12904,"Batha Est","en",50
+875,"Lac","en",50
+12927,"Ouaddai","en",50
+12926,"Assongha","en",50
+12912,"Hadjer Lamis","en",50
+12911,"Daraba","en",50
+873,"Guera","en",50
+12928,"Sila","en",50
+12910,"Baguirmi","en",50
+881,"Salamat","en",50
+12921,"Mayo-Boneye","en",50
+12924,"Lac Iro","en",50
+12923,"Barh Koh","en",50
+12930,"Tandjile Est","en",50
+12922,"Mayo-Dala","en",50
+12920,"Kabia","en",50
+12931,"Tandjile Ouest","en",50
+12925,"Mandoul","en",50
+876,"Logone Occidental","en",50
+12918,"Logone Oriental","en",50
+12919,"Mont De Lam","en",50
+895,"Tarapaca (i)","en",51
+883,"Antofagasta (ii)","en",51
+885,"Atacama (iii)","en",51
+888,"Coquimbo (iv)","en",51
+896,"Valparaiso (v)","en",51
+893,"Metropolitana (xiii)","en",51
+894,"Ocean Islands","en",51
+889,"Libertador (vi)","en",51
+892,"Maule (vii)","en",51
+884,"Araucania (ix)","en",51
+887,"Biobio (viii)","en",51
+890,"Los Lagos (x)","en",51
+886,"Aysen Del Gen.d.c. (xi)","en",51
+891,"Magallanes (xii)","en",51
+897,"Administrative unit not available","en",52
+908,"Heilongjiang Sheng","en",53
+917,"Nei Mongol Zizhiqu","en",53
+927,"Xinjiang Uygur Zizhiqu","en",53
+915,"Jilin Sheng","en",53
+902,"Gansu Sheng","en",53
+899,"Beijing Shi","en",53
+923,"Shanxi Sheng","en",53
+926,"Tianjin Shi","en",53
+920,"Shaanxi Sheng","en",53
+918,"Ningxia Huizu Zizhiqu","en",53
+919,"Qinghai Sheng","en",53
+930,"Zhejiang Sheng","en",53
+907,"Hebei Sheng","en",53
+916,"Liaoning Sheng","en",53
+928,"Xizang Zizhiqu","en",53
+909,"Henan Sheng","en",53
+921,"Shandong Sheng","en",53
+898,"Anhui Sheng","en",53
+924,"Sichuan Sheng","en",53
+911,"Hubei Sheng","en",53
+900,"Chongqing Shi","en",53
+913,"Jiangsu Sheng","en",53
+922,"Shanghai Shi","en",53
+912,"Hunan Sheng","en",53
+914,"Jiangxi Sheng","en",53
+929,"Yunnan Sheng","en",53
+905,"Guizhou Sheng","en",53
+925,"Taiwan Sheng","en",53
+904,"Guangxi Zhuangzu Zizhiqu","en",53
+901,"Fujian Sheng","en",53
+903,"Guangdong Sheng","en",53
+906,"Hainan Sheng","en",53
+931,"Administrative unit not available","en",54
+932,"Administrative unit not available","en",55
+933,"Administrative unit not available","en",56
+960,"San Andres Y Providencia","en",57
+950,"Guajira","en",57
+953,"Magdalena","en",57
+937,"Atlantico","en",57
+945,"Cesar","en",57
+938,"Bolivar","en",57
+962,"Sucre","en",57
+947,"Cordoba","en",57
+956,"Norte De Santander","en",57
+935,"Antioquia","en",57
+961,"Santander","en",57
+936,"Arauca","en",57
+939,"Boyaca","en",57
+966,"Vichada","en",57
+943,"Casanare","en",57
+948,"Cundinamarca","en",57
+941,"Caldas","en",57
+959,"Risaralda","en",57
+963,"Tolima","en",57
+964,"Valle Del Cauca","en",57
+954,"Meta","en",57
+958,"Quindio","en",57
+946,"Choco","en",57
+949,"Guainia","en",57
+940,"Buenaventura","en",57
+952,"Huila","en",57
+942,"Caqueta","en",57
+951,"Guaviare","en",57
+944,"Cauca","en",57
+965,"Vaupes","en",57
+955,"Narino","en",57
+957,"Putumayo","en",57
+934,"Amazonas","en",57
+969,"Ngazidja","en",58
+967,"Anjouan","en",58
+968,"Moheli","en",58
+975,"Likouala","en",59
+979,"Sangha","en",59
+972,"Cuvette Ovest","en",59
+971,"Cuvette","en",59
+977,"Plateaux","en",59
+976,"Niari","en",59
+974,"Lekoumou","en",59
+978,"Pool","en",59
+970,"Bouenza","en",59
+973,"Kouilou","en",59
+980,"Administrative unit not available","en",60
+981,"Alajuela","en",61
+985,"Limon","en",61
+983,"Guanacaste","en",61
+984,"Heredia","en",61
+987,"San Jose","en",61
+982,"Cartago","en",61
+986,"Puntarenas","en",61
+996,"Medimurje","en",62
+1004,"Varazdin","en",62
+993,"Koprivnica-krizevci","en",62
+994,"Krapina-zagorje","en",62
+988,"Bjelovar-bilogora","en",62
+1008,"Zagreb","en",62
+1005,"Virovitica-podravina","en",62
+990,"Grad Zagreb","en",62
+997,"Osijek-baranja","en",62
+992,"Karlovac","en",62
+1001,"Sisak-moslavina","en",62
+998,"Pozega-slavonija","en",62
+1006,"Vukovar-srijem","en",62
+1002,"Slavonski Brod-posav","en",62
+991,"Istra","en",62
+1007,"Zadar-knin","en",62
+995,"Lika-senj","en",62
+999,"Primorje-gorski Kota","en",62
+1003,"Split-dalmatija","en",62
+1000,"Sibenik","en",62
+989,"Dubrovnik-neretva","en",62
+1012,"Ciudad De La Habana","en",63
+1023,"Villa Clara","en",63
+1011,"Cienfuegos","en",63
+1017,"La Habana","en",63
+1020,"Pinar Del Rio","en",63
+1019,"Matanzas","en",63
+1016,"Isla De La Juventud","en",63
+1021,"Sancti Spiritus","en",63
+1010,"Ciego De Avila","en",63
+1015,"Holguin","en",63
+1014,"Guantanamo","en",63
+1022,"Santiago De Cuba","en",63
+1009,"Camaguey","en",63
+1018,"Las Tunas","en",63
+1013,"Granma","en",63
+1024,"Famgusta","en",64
+1025,"Kyrenia","en",64
+1028,"Nicosia","en",64
+1029,"Paphos","en",64
+1026,"Larnaca","en",64
+1027,"Limassol","en",64
+1033,"Severocesky","en",65
+1036,"Vychodocesky","en",65
+1035,"Stredocesky","en",65
+1037,"Zapadocesky","en",65
+1034,"Severomoravsky","en",65
+1032,"Praha","en",65
+1031,"Jihomoravsky","en",65
+1030,"Jihocesky","en",65
+1048,"Savanes","en",66
+1041,"Denguele","en",66
+1053,"Zanzan","en",66
+1051,"Vallee Du Bandama","en",66
+40697,"Worodougou","en",66
+40696,"Bafing","en",66
+40692,"18 Montagnes","en",66
+1047,"N'zi Comoe","en",66
+40694,"Haut-sassandra","en",66
+1045,"Marahoue","en",66
+1043,"Lacs","en",66
+1046,"Moyen Comoe","en",66
+40693,"Moyen-Cavally","en",66
+40695,"Fromager","en",66
+1039,"Agneby","en",66
+1044,"Lagunes","en",66
+1049,"Sud Bandama","en",66
+1050,"Sud Comoe","en",66
+1040,"Bas Sassandra","en",66
+1058,"Hamgyong-bukto","en",67
+1065,"Yanggang-do","en",67
+1054,"Chagang-do","en",67
+1064,"P'yongan-namdo","en",67
+1060,"P'yongan-bukto","en",67
+1056,"Kangwon-do","en",67
+1061,"P'yongyang-si","en",67
+1062,"Hamgyong-namdo","en",67
+1059,"Hwanghae-bukto","en",67
+1055,"Kaesong-si","en",67
+1063,"Hwanghae-namdo","en",67
+1075,"Province Orientale","en",68
+1068,"Equateur","en",68
+1074,"Nord-Kivu","en",68
+1073,"Maniema","en",68
+1066,"Bandundu","en",68
+1076,"Sud-Kivu","en",68
+1070,"Kasai-Oriental","en",68
+1069,"Kasai-Occidental","en",68
+1072,"Kinshasa","en",68
+1067,"Bas-Congo","en",68
+1071,"Katanga","en",68
+1083,"Nordjylland","en",69
+1092,"Viborg","en",69
+1090,"Vejle","en",69
+1091,"Vestsjaelland","en",69
+1085,"Ringkoebing","en",69
+1077,"Aarhus","en",69
+40858,"Roskilde","en",69
+40856,"Frederiksborg","en",69
+1079,"Frederiksberg","en",69
+40857,"Koebenhavn","en",69
+1088,"Storstroem","en",69
+1078,"Bornholm","en",69
+1084,"Ribe","en",69
+1087,"Soenderjylland","en",69
+1081,"Fyn","en",69
+1096,"Obock","en",70
+1097,"Tadjourah","en",70
+1094,"Dikhil","en",70
+1095,"Djibouti","en",70
+1093,"Ali Sabieh","en",70
+1098,"St. Andrew","en",71
+1101,"St. John","en",71
+1107,"St. Peter","en",71
+1099,"St. David","en",71
+1102,"St. Joseph","en",71
+1106,"St. Paul","en",71
+1100,"St. George","en",71
+1105,"St. Patrick","en",71
+1103,"St. Luke","en",71
+1104,"St. Mark","en",71
+1125,"Puerto Plata","en",72
+1122,"Monte Cristi","en",72
+1134,"Valverde","en",72
+1115,"Espaillat","en",72
+1121,"Maria Trinidad Sanches","en",72
+1132,"Santiago","en",72
+1111,"Dajabon","en",72
+1133,"Santiago Rodriguez","en",72
+1126,"Salcedo","en",72
+1113,"Duarte","en",72
+1120,"La Vega","en",72
+1127,"Samana","en",72
+1118,"Elias Pina","en",72
+1129,"San Juan","en",72
+1131,"Sanchez Ramirez","en",72
+36855,"Monsenor Nouel","en",72
+36854,"Hato Mayor","en",72
+36856,"Monte Plata","en",72
+1114,"El Seibo","en",72
+1117,"La Altagracia","en",72
+1130,"San Pedro de Macoris","en",72
+1128,"San Cristobal","en",72
+36857,"San José de Ocoa","en",72
+1112,"Santo Domingo","en",72
+1116,"Independencia","en",72
+1109,"Baoruco","en",72
+36858,"Distrito Nacional","en",72
+1124,"Peravia","en",72
+1110,"Barahona","en",72
+1108,"Azua","en",72
+1119,"La Romana","en",72
+1123,"Pedernales","en",72
+1138,"Carchi","en",73
+1145,"Imbabura","en",73
+1154,"Sucumbios","en",73
+1142,"Esmeraldas","en",73
+1157,"Zona No Delimtda","en",73
+1153,"Pichincha","en",73
+1150,"Napo","en",73
+1151,"Orellana","en",73
+1140,"Cotopaxi","en",73
+1147,"Los Rios","en",73
+1155,"Tungurahua","en",73
+1152,"Pastaza","en",73
+1136,"Bolivar","en",73
+1143,"Galapagos","en",73
+1139,"Chimborazo","en",73
+1148,"Manabi","en",73
+1137,"Canar","en",73
+1135,"Azuay","en",73
+1144,"Guayas","en",73
+1146,"Loja","en",73
+1156,"Zamora Chinchipe","en",73
+1141,"El Oro","en",73
+1149,"Morona Santiago","en",73
+1186,"Chalatenango","en",75
+1187,"Cuscatlan","en",75
+1188,"La Libertad","en",75
+1193,"San Salvador","en",75
+1195,"Santa Ana","en",75
+1185,"Cabanas","en",75
+1191,"Morazan","en",75
+1184,"Ahuachapan","en",75
+1192,"San Miguel","en",75
+1196,"Sonsonate","en",75
+1194,"San Vicente","en",75
+1197,"Usulutan","en",75
+1189,"La Paz","en",75
+1190,"La Union","en",75
+1199,"Bioko Norte","en",76
+1200,"Bioko Sur","en",76
+1202,"Kientem","en",76
+1201,"Centro Sur","en",76
+1204,"Welenzas","en",76
+1203,"Litoral","en",76
+1198,"Annobon","en",76
+1205,"Anseba","en",77
+1209,"Gash Barka","en",77
+1210,"Maekel","en",77
+1207,"Debub","en",77
+1206,"Archipelagos","en",77
+1211,"Semenawi Keih Bahri","en",77
+1208,"Debubawi Keih Bahri","en",77
+1217,"Laane-Virumaa","en",78
+1214,"Ida-Virumaa","en",78
+1212,"Harjumaa","en",78
+1215,"Jarvamaa","en",78
+1221,"Raplamaa","en",78
+1216,"Jogevamaa","en",78
+1218,"Laanemaa","en",78
+1213,"Hiiumaa","en",78
+1223,"Tartumaa","en",78
+1225,"Viljandimaa","en",78
+1220,"Polvamaa","en",78
+1224,"Valgamaa","en",78
+1219,"Parnumaa","en",78
+1226,"Vorumaa","en",78
+1222,"Saaremaa","en",78
+1237,"Tigray","en",79
+1228,"Afar","en",79
+1229,"Amhara","en",79
+47679,"Somali","en",79
+47678,"Oromia","en",79
+1231,"Dire Dawa","en",79
+1233,"Harari","en",79
+1227,"Addis Ababa","en",79
+1230,"Benishangul Gumuz","en",79
+1232,"Gambella","en",79
+1236,"SNNP","en",79
+1238,"Administrative unit not available","en",80
+1239,"Administrative unit not available","en",81
+1240,"Administrative unit not available","en",82
+40190,"Western","en",83
+40189,"Northern","en",83
+40187,"Central","en",83
+40188,"Eastern","en",83
+1244,"Lapland","en",84
+1245,"Oulu","en",84
+1247,"Western Finland","en",84
+1243,"Eastern Finland","en",84
+1246,"Southern Finland","en",84
+1242,"Aaland","en",84
+1265,"Nord-Pas-de-Calais","en",85
+1267,"Picardie","en",85
+1255,"Champagne-Ardenne","en",85
+1258,"Haute-Normandie","en",85
+1251,"Basse-Normandie","en",85
+1263,"Lorraine","en",85
+1259,"Ile-de-France","en",85
+1248,"Alsace","en",85
+1254,"Centre","en",85
+1252,"Bourgogne","en",85
+1253,"Bretagne","en",85
+1257,"Franche-Comte","en",85
+1250,"Auvergne","en",85
+1266,"Pays-de-la-Loire","en",85
+1270,"Rhone-Alpes","en",85
+1262,"Limousin","en",85
+1268,"Poitou-Charentes","en",85
+1260,"Languedoc-Rousillon","en",85
+1249,"Aquitaine","en",85
+1264,"Midi-Pyrenees","en",85
+1269,"Provence-Alpes-Cote-d'Azur","en",85
+1256,"Corse","en",85
+1272,"Saint-laurent-du-maroni","en",86
+1271,"Cayenne","en",86
+1273,"Administrative unit not available","en",87
+1274,"Administrative unit not available","en",88
+1283,"Woleu-Ntem","en",89
+1280,"Ogooue-Ivindo","en",89
+1281,"Ogooue-lolo","en",89
+1277,"Moyen-Ogooue","en",89
+1275,"Estuaire","en",89
+1276,"Haut-Ogooue","en",89
+1278,"Ngounie","en",89
+1282,"Ogooue-Maritime","en",89
+1279,"Nyanga","en",89
+1285,"Central River","en",90
+1288,"North Bank","en",90
+1289,"Upper River","en",90
+1287,"Lower River","en",90
+1286,"Kombo Saint Mary","en",90
+1284,"Banjul","en",90
+1290,"Western","en",90
+1293,"Jabalya","en",91
+1292,"Gaza","en",91
+1291,"Deir al Balah","en",91
+1294,"Khan Yunis","en",91
+1295,"Rafah","en",91
+1296,"Abkhazia Aut. Rep.","en",92
+1304,"Samergelo and Zemo (upper) Svaneti","en",92
+1303,"Racha-Lechkhumi and Kvemo (lower) Svaneti","en",92
+1302,"Mtskheta-Mtianeti","en",92
+1306,"Shida Kartli","en",92
+1299,"Imereti","en",92
+1300,"Kakheti","en",92
+1298,"Guria","en",92
+1305,"Samtskhe-Javakheti","en",92
+1297,"Adjara Aut. Rep.","en",92
+1301,"Kvemo Kartli","en",92
+1307,"Tbilisi","en",92
+1315,"Mecklenburg-Vorpommern","en",93
+1313,"Hamburg","en",93
+1322,"Schleswig-Holstein","en",93
+1316,"Niedersachsen","en",93
+1311,"Brandenburg","en",93
+1312,"Bremen","en",93
+1321,"Sachsen-Anhalt","en",93
+1310,"Berlin","en",93
+1317,"Nordrhein-Westfalen","en",93
+1320,"Sachsen","en",93
+1314,"Hessen","en",93
+1323,"Thueringen","en",93
+1318,"Rheinland-Pfalz","en",93
+1309,"Bayern","en",93
+1319,"Saarland","en",93
+1308,"Baden-Wuerttemberg","en",93
+1330,"Upper East","en",94
+1331,"Upper West","en",94
+1329,"Northern","en",94
+1325,"Brong Ahafo","en",94
+1332,"Volta","en",94
+1324,"Ashanti","en",94
+1327,"Eastern","en",94
+1333,"Western","en",94
+1326,"Central","en",94
+1328,"Greater Accra","en",94
+1334,"Administrative unit not available","en",95
+1335,"Administrative unit not available","en",96
+1339,"Dytiki Makedonia","en",97
+1336,"Anatoliki Makedonia Kai Thraki","en",97
+1341,"Ipeiros","en",97
+1347,"Thessalia","en",97
+1342,"Kentriki Makedonia","en",97
+1348,"Voreio Aigaio","en",97
+1346,"Sterea Ellada","en",97
+1338,"Dytiki Ellada","en",97
+1340,"Ionioi Nisoi","en",97
+1345,"Peloponnisos","en",97
+1337,"Attiki","en",97
+40766,"Notio Aigaio","en",97
+1343,"Kriti","en",97
+1351,"Vestgronland","en",98
+1349,"Nordgronland","en",98
+1350,"Ostgronland","en",98
+1357,"St. Patrick's","en",99
+1356,"St. Mark's","en",99
+1355,"St. John's","en",99
+1353,"St. Andrew's","en",99
+1354,"St. George's","en",99
+1352,"Name Unknown","en",99
+1358,"Administrative unit not available","en",100
+1359,"Administrative unit not available","en",101
+64837,"Peten","en",103
+64833,"Huehuetenango","en",103
+64834,"Quiche","en",103
+64836,"Alta Verapaz","en",103
+64838,"Izabal","en",103
+64832,"San Marcos","en",103
+64835,"Baja Verapaz","en",103
+64839,"Zacapa","en",103
+64828,"Totonicapan","en",103
+64829,"Quetzaltenango","en",103
+64822,"El Progreso","en",103
+64840,"Chiquimula","en",103
+64824,"Chimaltenango","en",103
+64821,"Guatemala","en",103
+64827,"Solola","en",103
+64841,"Jalapa","en",103
+64823,"Sacatepequez","en",103
+64831,"Retalhulehu","en",103
+64830,"Suchitepequez","en",103
+64842,"Jutiapa","en",103
+64825,"Escuintla","en",103
+64826,"Santa Rosa","en",103
+40222,"Alderney","en",104
+40234,"Vale","en",104
+40230,"Saint Sampson","en",104
+40223,"Castel","en",104
+40225,"Herm","en",104
+40229,"Saint Peter Port","en",104
+40226,"Saint Andrew","en",104
+40231,"Saint Saviour","en",104
+40227,"Saint Martin","en",104
+40232,"Sark","en",104
+40224,"Forest","en",104
+40233,"Torteval","en",104
+40228,"Saint Peter","en",104
+1393,"Tombali","en",105
+1390,"Oio","en",105
+1385,"Bafata","en",105
+1389,"Gabu","en",105
+1392,"Sector Autonomo De Bissau","en",105
+1388,"Cacheu","en",105
+1386,"Biombo","en",105
+1391,"Quinara","en",105
+1387,"Bolama/bijagos","en",105
+40703,"Kankan","en",106
+40706,"Mamou","en",106
+40702,"Faranah","en",106
+40700,"Boke","en",106
+40707,"N'Zerekore","en",106
+40701,"Conakry","en",106
+40704,"Kindia","en",106
+40705,"Labe","en",106
+1398,"Barima Waini (region N°1)","en",107
+1404,"Pomeroon/supenaam (region N°2","en",107
+1399,"Cuyuni/mazaruni (region N°7)","en",107
+1400,"Demerara Mahaica (region N°4)","en",107
+1403,"Mahaica Berbice (region N°5)","en",107
+1402,"Essequibo Islands/west Demerara (region N°3)","en",107
+1406,"Upper Demerara/berbice (region N°10)","en",107
+1401,"East Berbice/corentyne (region N°6)","en",107
+1405,"Potaro/siparuni (region N°8)","en",107
+1407,"Upper Takutu/upper Essequibo (region N°9)","en",107
+1414,"Nord-Ouest","en",108
+1412,"Nord","en",108
+1409,"L'Artibonite","en",108
+1413,"Nord-Est","en",108
+1410,"Centre","en",108
+1415,"Ouest","en",108
+72911,"Grand'Anse","en",108
+72912,"Nippes","en",108
+1416,"Sud","en",108
+1417,"Sud-Est","en",108
+1418,"Administrative unit not available","en",109
+1419,"Administrative unit not available","en",110
+1432,"Name Unknown","en",111
+1429,"Islas De Bahia","en",111
+1422,"Colon","en",111
+1427,"Gracias A Dios","en",111
+1420,"Atlantida","en",111
+1425,"Cortes","en",111
+1438,"Yoro","en",111
+1434,"Olancho","en",111
+1436,"Santa Barbara","en",111
+1424,"Copan","en",111
+1423,"Comayagua","en",111
+1426,"Francisco Morazan","en",111
+1431,"Lempira","en",111
+1433,"Ocotepeque","en",111
+1428,"Intibuca","en",111
+1430,"La Paz","en",111
+1435,"Paraiso","en",111
+1437,"Valle","en",111
+1421,"Choluteca","en",111
+1439,"Administrative unit not available","en",112
+1443,"Borsod-abauj-zemplen","en",113
+1455,"Szabolcs-szatmar-bereg","en",113
+1452,"Nograd","en",113
+1449,"Heves","en",113
+1453,"Pest","en",113
+1447,"Gyor-moson-sopron","en",113
+1448,"Hajdu-bihar","en",113
+1451,"Komarom-esztergom","en",113
+1450,"Jasz-nagykun-szolnok","en",113
+1444,"Budapest","en",113
+1446,"Fejer","en",113
+1458,"Veszprem","en",113
+1457,"Vas","en",113
+1442,"Bekes","en",113
+1440,"Bacs-kiskun","en",113
+1459,"Zala","en",113
+1454,"Somogy","en",113
+1456,"Tolna","en",113
+1445,"Csongrad","en",113
+1441,"Baranya","en",113
+1479,"Suour-pingeyjar","en",114
+1473,"Norour-pingeyjar","en",114
+1470,"Nordhurland Eystra","en",114
+1477,"Stranda","en",114
+1482,"Vestur-isafjaroar","en",114
+1471,"Norour-isafjaroar","en",114
+1475,"Skagafjaroar","en",114
+1480,"Vestur-baroastrandar","en",114
+1481,"Vestur-hunavatns","en",114
+1466,"Eyjafjaroar","en",114
+1472,"Norour-mùla","en",114
+1462,"Austur-hunavatns","en",114
+1461,"Austur-baroastrandar","en",114
+1478,"Suour-mùla","en",114
+1465,"Dala","en",114
+1476,"Snaefellsnes- Og Hna","en",114
+1483,"Vestur-skaftafells","en",114
+1469,"Myra","en",114
+1464,"Borgarfjaroar","en",114
+1468,"Kjosar","en",114
+1467,"Gullbringu","en",114
+1460,"Arnes","en",114
+1463,"Austur-skaftafells","en",114
+1474,"Rangárvalla","en",114
+1493,"Himachal Pradesh","en",115
+1505,"Punjab","en",115
+70082,"Uttarakhand","en",115
+1492,"Haryana","en",115
+70074,"Chandigarh","en",115
+70081,"Uttar Pradesh","en",115
+1506,"Rajasthan","en",115
+1489,"Delhi","en",115
+1507,"Sikkim","en",115
+1487,"Assam","en",115
+70073,"Bihar","en",115
+1511,"West Bengal","en",115
+1503,"Nagaland","en",115
+70072,"Arunachal Pradesh","en",115
+70079,"Madhya Pradesh","en",115
+1501,"Meghalaya","en",115
+1500,"Manipur","en",115
+70078,"Jharkhand","en",115
+1509,"Tripura","en",115
+1502,"Mizoram","en",115
+70075,"Chhattisgarh","en",115
+1491,"Gujarat","en",115
+70077,"Daman and Diu","en",115
+70076,"Dadra and Nagar Haveli","en",115
+1504,"Orissa","en",115
+1498,"Maharashtra","en",115
+1490,"Goa","en",115
+1508,"Tamil Nadu","en",115
+1485,"Andhra Pradesh","en",115
+1494,"Karnataka","en",115
+70080,"Puducherry","en",115
+1495,"Kerala","en",115
+1496,"Lakshadweep","en",115
+1484,"Andaman and Nicobar","en",115
+73621,"Sulawesi Utara","en",116
+1537,"Sumatera Utara","en",116
+1512,"Nangroe Aceh Darussalam","en",116
+1532,"Sulawesi Tengah","en",116
+1535,"Sumatera Barat","en",116
+73611,"Gorontalo","en",116
+73618,"Riau","en",116
+73614,"Kepulauan-riau","en",116
+73619,"Sulawesi Barat","en",116
+1518,"Jambi","en",116
+73622,"Sumatera Selatan","en",116
+73620,"Sulawesi Selatan","en",116
+1525,"Kalimantan Timur","en",116
+1533,"Sulawesi Tenggara","en",116
+1522,"Kalimantan Barat","en",116
+73609,"Bangka Belitung","en",116
+1524,"Kalimantan Tengah","en",116
+73616,"Maluku Utara","en",116
+73612,"Papua Barat","en",116
+1523,"Kalimantan Selatan","en",116
+1514,"Bengkulu","en",116
+73613,"Jawa Barat","en",116
+1516,"Dki Jakarta","en",116
+1526,"Lampung","en",116
+73610,"Banten","en",116
+1520,"Jawa Tengah","en",116
+1515,"Daerah Istimewa Yogyakarta","en",116
+73617,"Papua","en",116
+73615,"Maluku","en",116
+1521,"Jawa Timur","en",116
+1513,"Bali","en",116
+1528,"Nusatenggara Barat","en",116
+1529,"Nusatenggara Timur","en",116
+1561,"West Azarbayejan","en",117
+33110,"Ardebil","en",117
+1542,"East Azarbayejan","en",117
+1554,"Administrative unit not available","en",117
+1545,"Gilan","en",117
+1547,"Khorasan","en",117
+33111,"Golestan","en",117
+1558,"Semnan","en",117
+1563,"Zanjan","en",117
+1557,"Mazandaran","en",117
+33112,"Ghazvin","en",117
+1553,"Kordestan","en",117
+1560,"Tehran","en",117
+1546,"Hamedan","en",117
+1556,"Markazi","en",117
+1539,"Kermanshah","en",117
+33113,"Ghom","en",117
+1543,"Esfahan","en",117
+1555,"Lorestan","en",117
+1549,"Ilam","en",117
+1562,"Yazd","en",117
+1541,"Chaharmahal-o bakhtiyar","en",117
+1550,"Kerman","en",117
+1544,"Fars","en",117
+1552,"Kohgiluyeh va boyerahma","en",117
+1551,"Khuzestan","en",117
+1540,"Bushehr","en",117
+1548,"Hormozgan","en",117
+1559,"Sistan-o baluchestan","en",117
+1574,"Dahuk","en",118
+1569,"Arbil","en",118
+1578,"Ninevah","en",118
+1580,"As Sulaymaniyah","en",118
+1570,"Ta'meem","en",118
+1579,"Salaheldin","en",118
+1564,"Anbar","en",118
+1575,"Diala","en",118
+1572,"Baghdad","en",118
+1581,"Wasit","en",118
+1571,"Babil","en",118
+1577,"Missan","en",118
+1576,"Kerbala","en",118
+1567,"Qadisiyah","en",118
+1568,"Najaf","en",118
+1573,"Thiqar","en",118
+1566,"Muthanna","en",118
+1565,"Basrah","en",118
+1586,"Donegal","en",119
+1593,"Leitrim","en",119
+1599,"Monaghan","en",119
+1603,"Sligo","en",119
+1583,"Cavan","en",119
+1602,"Roscommon","en",119
+1596,"Louth","en",119
+1595,"Longford","en",119
+1598,"Meath","en",119
+1606,"Westmeath","en",119
+1597,"Mayo","en",119
+1590,"Kildare","en",119
+1601,"Offaly","en",119
+1587,"Dublin","en",119
+1608,"Wicklow","en",119
+1592,"Laois","en",119
+1604,"Tipperary","en",119
+1588,"Galway","en",119
+1582,"Carlow","en",119
+1591,"Kilkenny","en",119
+1607,"Wexford","en",119
+1594,"Limerick","en",119
+1584,"Clare","en",119
+1605,"Waterford","en",119
+1600,"Munster","en",119
+1589,"Kerry","en",119
+1585,"Cork","en",119
+61309,"Bride","en",120
+61305,"Andreas","en",120
+61313,"Jurby","en",120
+61315,"Lezayre","en",120
+61326,"Ramsey","en",120
+61307,"Ballaugh","en",120
+61319,"Maughold","en",120
+61320,"Michael","en",120
+61316,"Lonan","en",120
+61312,"German","en",120
+61308,"Braddan","en",120
+61314,"Laxey","en",120
+61323,"Peel","en",120
+61322,"Patrick","en",120
+61321,"Onchan","en",120
+61318,"Marown","en",120
+61311,"Douglas","en",120
+61328,"Santan","en",120
+61306,"Arbory","en",120
+61324,"Port Erin","en",120
+61325,"Port St.Mary","en",120
+61310,"Castletown","en",120
+61317,"Malew","en",120
+61327,"Rushen","en",120
+1613,"Northern","en",121
+1611,"Haifa","en",121
+1610,"Central District","en",121
+1615,"Tel Aviv","en",121
+1614,"Southern District","en",121
+1612,"Jerusalem","en",121
+1632,"Trentino-alto Adige","en",122
+1635,"Veneto","en",122
+1624,"Lombardia","en",122
+1627,"Piemonte","en",122
+1634,"Valle D'aosta","en",122
+1621,"Friuli-venezia Giulia","en",122
+1631,"Toscana","en",122
+1623,"Liguria","en",122
+1625,"Marche","en",122
+1620,"Emilia-romagna","en",122
+1633,"Umbria","en",122
+1616,"Abruzzi","en",122
+1626,"Molise","en",122
+1617,"Basilicata","en",122
+1622,"Lazio","en",122
+1619,"Campania","en",122
+1618,"Calabria","en",122
+1628,"Puglia","en",122
+1629,"Sardegna","en",122
+1630,"Sicilia","en",122
+1644,"Saint James","en",123
+1647,"Trelawny","en",123
+1641,"Saint Ann","en",123
+1637,"Hanover","en",123
+1645,"Saint Mary","en",123
+1648,"Westmoreland","en",123
+1639,"Portland","en",123
+1638,"Manchester","en",123
+1643,"Saint Elizabeth","en",123
+1636,"Clarendon","en",123
+1640,"Saint Andrew And Kingston","en",123
+1646,"Saint Thomas","en",123
+1642,"Saint Catherine","en",123
+1661,"Hokkaidoo","en",126
+1653,"Aomori","en",126
+1652,"Akita","en",126
+1665,"Iwate","en",126
+1695,"Yamagata","en",126
+1678,"Niigata","en",126
+1673,"Miyagi","en",126
+1657,"Hukusima","en",126
+1664,"Isikawa","en",126
+1688,"Totigi","en",126
+1659,"Gunma","en",126
+1675,"Nagano","en",126
+1692,"Toyama","en",126
+1663,"Ibaraki","en",126
+1658,"Gifu","en",126
+1655,"Hukui","en",126
+1684,"Saitama","en",126
+1693,"Tiba","en",126
+1697,"Yamanasi","en",126
+1690,"Tookyoo","en",126
+1685,"Siga","en",126
+1671,"Kyooto","en",126
+1691,"Tottori","en",126
+1668,"Kanagawa","en",126
+1686,"Simane","en",126
+1696,"Yamaguti","en",126
+1677,"Nara","en",126
+1651,"Aiti","en",126
+1682,"Oosaka","en",126
+1694,"Wakayama","en",126
+1680,"Okayama","en",126
+1689,"Tokusima","en",126
+1662,"Hyoogo","en",126
+1672,"Mie","en",126
+1666,"Kagawa","en",126
+1660,"Hirosima","en",126
+1656,"Hukuoka","en",126
+1683,"Saga","en",126
+1654,"Ehime","en",126
+1669,"Kooti","en",126
+1679,"Ooita","en",126
+1670,"Kumamoto","en",126
+1676,"Nagasaki","en",126
+1674,"Miyazaki","en",126
+1667,"Kagosima","en",126
+1687,"Sizuoka","en",126
+1681,"Okinawa","en",126
+1698,"Administrative unit not available","en",127
+40238,"Saint John","en",128
+40242,"Saint Ouen","en",128
+40245,"Trinity","en",128
+40241,"Saint Mary","en",128
+40240,"Saint Martin","en",128
+40239,"Saint Lawrence","en",128
+40243,"Saint Peter","en",128
+40244,"Saint Saviour","en",128
+40237,"Saint Helier","en",128
+40235,"Brelade","en",128
+40236,"Grouville","en",128
+40274,"Saint Clement","en",128
+1700,"Administrative unit not available","en",129
+1711,"Al Mafraq","en",130
+1707,"Irbid","en",130
+1701,"Ajloun","en",130
+1708,"Jarash","en",130
+1702,"Al Balqa","en",130
+1712,"Az Zarqa","en",130
+1705,"Amman","en",130
+1710,"Madaba","en",130
+65712,"Administrative unit not available","en",130
+1704,"Al Karak","en",130
+1709,"Ma'an","en",130
+1706,"At Tafilah","en",130
+1703,"Al Aqabah","en",130
+1713,"Administrative unit not available","en",131
+1726,"Severo-kazachstanskaya","en",132
+1720,"Kustanayskaya","en",132
+1725,"Pavlodarskaya","en",132
+1714,"Akmolinskaya","en",132
+1729,"Zapadno-kazachstanskaya","en",132
+1727,"Vostochno-kazachstanskaya","en",132
+1715,"Aktyubinskaya","en",132
+1719,"Karagandinskaya","en",132
+1721,"Kyzylordinskaya","en",132
+1716,"Almatinskaya","en",132
+1723,"Administrative unit not available","en",132
+1717,"Atyrauskaya","en",132
+1718,"Jambylslkaya","en",132
+1728,"Yujno-kazachstanskaya","en",132
+1724,"Mangistauskaya","en",132
+37157,"Almaty City area","en",132
+51331,"Rift Valley","en",133
+51327,"Eastern","en",133
+51329,"North Eastern","en",133
+51332,"Western","en",133
+51330,"Nyanza","en",133
+51325,"Central","en",133
+51328,"Nairobi","en",133
+51326,"Coast","en",133
+1738,"Administrative unit not available","en",134
+1739,"Administrative unit not available","en",135
+1740,"Administrative unit not available","en",136
+1743,"Al Jahrah","en",137
+1745,"Hawalli","en",137
+1744,"Al Kuwayt","en",137
+1741,"Al Farwaniyah","en",137
+1742,"Al Ahmadi","en",137
+1747,"Chuy","en",138
+1752,"Ysyk-kol","en",138
+1751,"Talas","en",138
+1749,"Naryn","en",138
+1748,"Jalal-abad","en",138
+1750,"Osh","en",138
+1746,"Batken","en",138
+1762,"Phongsali","en",139
+1760,"Louang-Namtha","en",139
+1761,"Oudomxai","en",139
+1759,"Louangphabang","en",139
+1757,"Houaphan","en",139
+1754,"Bokeo","en",139
+74347,"Xiangkhouang","en",139
+1765,"Xaignabouli","en",139
+74346,"Vientiane","en",139
+1755,"Bolikhamxai","en",139
+1768,"Vientiane capital","en",139
+1758,"Khammouan","en",139
+1764,"Savannakhet","en",139
+1763,"Salavan","en",139
+1766,"Xekong","en",139
+1756,"Champasak","en",139
+1753,"Attapu","en",139
+1795,"Valmieras","en",140
+1784,"Limbazu","en",140
+1794,"Valkas","en",140
+1792,"Talsu","en",140
+1796,"Ventspils","en",140
+1772,"Aluksnes","en",140
+1775,"Cesu","en",140
+1778,"Gulbenes","en",140
+1773,"Balvu","en",140
+1790,"Rigas","en",140
+1793,"Tukuma","en",140
+1782,"Kuldigas","en",140
+1786,"Madonas","en",140
+1787,"Ogres","en",140
+1783,"Liepajas","en",140
+1791,"Saldus","en",140
+1780,"Jelgavas","en",140
+1785,"Ludzas","en",140
+1789,"Rezeknes","en",140
+1771,"Aizkraukles","en",140
+1777,"Dobeles","en",140
+1774,"Bauskas","en",140
+1779,"Jekabpils","en",140
+1788,"Preilu","en",140
+1781,"Kraslavas","en",140
+1776,"Daugavpils","en",140
+1799,"Liban Nord","en",141
+1797,"Beqaa","en",141
+1801,"Mont Liban","en",141
+1798,"Beyrouth","en",141
+1800,"Liban Sud","en",141
+1802,"Nabatieh","en",141
+1804,"Butha Buthe","en",142
+1805,"Leribe","en",142
+1809,"Mokhotlong","en",142
+1803,"Berea","en",142
+1812,"Thaba Tseka","en",142
+1807,"Maseru","en",142
+1806,"Mafeteng","en",142
+1810,"Qacha's Nek","en",142
+1808,"Mohale's Hoek","en",142
+1811,"Quthing","en",142
+1813,"Administrative unit not available","en",143
+1821,"Lofa","en",144
+1816,"Gbarpolu","en",144
+1825,"Nimba","en",144
+1818,"Grand Cape Mount","en",144
+1815,"Bong","en",144
+1814,"Bomi","en",144
+1824,"Montserrado","en",144
+1822,"Margibi","en",144
+1817,"Grand Bassa","en",144
+1819,"Grand Gedeh","en",144
+1826,"Rivercess","en",144
+1828,"Sinoe","en",144
+1827,"River Ghee","en",144
+1820,"Grand Kru","en",144
+1823,"Maryland","en",144
+1845,"Nuqat Al Khams","en",145
+1832,"Al Jabal Al Akhdar","en",145
+1840,"Darnah","en",145
+1850,"Tripoli (tarabulus)","en",145
+1838,"Az Zawia (azzawiya)","en",145
+1831,"Al Fatah","en",145
+1834,"Al Khoms","en",145
+1830,"Al Aziziyah","en",145
+1849,"Tarhunah","en",145
+1839,"Banghazi","en",145
+1853,"Zeleitin (zliten)","en",145
+1843,"Misurata","en",145
+1841,"Ghadamis","en",145
+1842,"Gharyan","en",145
+1852,"Yafran (yefren)","en",145
+1851,"Tubruq (tobruk)","en",145
+1847,"Sawfajjin (sofuljeen)","en",145
+1829,"Ajdabiya (agedabia)","en",145
+1848,"Surt (sirte)","en",145
+1833,"Al Jufrah","en",145
+1836,"Ash Shati","en",145
+1837,"Awbari (ubari)","en",145
+1846,"Sabha","en",145
+1844,"Murzuq","en",145
+1835,"Al Kufrah","en",145
+1860,"Ruggell","en",146
+1862,"Schellenberg","en",146
+1857,"Mauren","en",146
+1855,"Eschen","en",146
+1856,"Gamprin","en",146
+1865,"Vaduz","en",146
+1859,"Planken","en",146
+1864,"Triesenberg","en",146
+1863,"Triesen","en",146
+1861,"Schaan","en",146
+1854,"Balzers","en",146
+1870,"Panevezio","en",147
+1873,"Telsiu","en",147
+1871,"Siauliu","en",147
+1874,"Utenos","en",147
+1868,"Klaipedos","en",147
+1872,"Taurages","en",147
+1867,"Kauno","en",147
+1875,"Vilniaus","en",147
+1869,"Marijampoles","en",147
+1866,"Alytaus","en",147
+1876,"Diekirch","en",148
+1877,"Grevenmacher","en",148
+1878,"Luxembourg","en",148
+1879,"Administrative unit not available","en",149
+41768,"Sava","en",150
+41762,"Diana","en",150
+41769,"Sofia","en",150
+41760,"Boeny","en",150
+41750,"Alaotra Mangoro","en",150
+41766,"Melaky","en",150
+41759,"Betsiboka","en",150
+41753,"Analanjirofo","en",150
+41752,"Analamanga","en",150
+41761,"Bongolava","en",150
+41758,"Atsinanana","en",150
+41765,"Itasy","en",150
+41770,"Vakinankaratra","en",150
+41751,"Amoron'i Mania","en",150
+41771,"Vatovavy Fitovinany","en",150
+41763,"Haute Matsiatra","en",150
+41767,"Menabe","en",150
+41764,"Ihorombe","en",150
+41757,"Atsimo Atsinanana","en",150
+41755,"Anosy","en",150
+41754,"Androy","en",150
+41756,"Atsimo Andrefana","en",150
+1887,"Ilha De Porto Santo (madeira)","en",151
+1886,"Ilha Da Madeira (madeira)","en",151
+1888,"Central Region","en",152
+1890,"Southern Region","en",152
+65268,"Area under National Administration","en",152
+1889,"Northern Region","en",152
+1899,"Perlis","en",153
+1893,"Kelantan","en",153
+1904,"Terengganu","en",153
+1892,"Kedah","en",153
+1900,"Pulau Pinang","en",153
+37336,"Labuan","en",153
+1901,"Sabah","en",153
+1898,"Perak","en",153
+1896,"Negeri Sembilan","en",153
+1894,"Kuala Lumpur","en",153
+1903,"Selangor","en",153
+1897,"Pahang","en",153
+1895,"Melaka","en",153
+1902,"Sarawak","en",153
+1891,"Johor","en",153
+1913,"Haa Alifu","en",154
+1914,"Haa Dhaalu","en",154
+1923,"Shaviyani","en",154
+1920,"Noonu","en",154
+1921,"Raa","en",154
+1917,"Lhaviyani","en",154
+1907,"Baa","en",154
+1918,"Male'","en",154
+1905,"Alifu Alifu","en",154
+1915,"Kaafu","en",154
+1925,"Vaavu","en",154
+1906,"Alifu Dhaalu","en",154
+1909,"Faafu","en",154
+1919,"Meemu","en",154
+1908,"Dhaalu","en",154
+1924,"Thaa","en",154
+1916,"Laamu","en",154
+1910,"Gaafu Alifu","en",154
+1911,"Gaafu Dhaalu","en",154
+1912,"Gnaviyani","en",154
+1922,"Seenu","en",154
+1934,"Tombouctou","en",155
+1929,"Kidal","en",155
+1927,"Gao","en",155
+1931,"Mopti","en",155
+1928,"Kayes","en",155
+1932,"Segou","en",155
+1930,"Koulikoro","en",155
+1933,"Sikasso","en",155
+1926,"Bamako","en",155
+1948,"Ghasri","en",156
+1946,"Gharb","en",156
+1998,"Zebbug (gozo)","en",156
+1994,"Xaghra","en",156
+1970,"Nadur","en",156
+1983,"San Lawrenz","en",156
+1956,"Kercem","en",156
+1979,"Rabat (victoria)","en",156
+1975,"Qala","en",156
+1995,"Xewkija","en",156
+1944,"Fontana","en",156
+1969,"Munxar","en",156
+1985,"Sannat","en",156
+1945,"Ghajnsielem","en",156
+1964,"Mellieha","en",156
+1984,"San Pawl Ii-bahar","en",156
+1971,"Naxxar","en",156
+1965,"Mgarr","en",156
+1973,"Pembroke","en",156
+1990,"Swieqi","en",156
+1947,"Gharghur","en",156
+1981,"San Giljan","en",156
+1966,"Mosta","en",156
+1982,"San Gwann","en",156
+1953,"Iklin","en",156
+1989,"Sliema","en",156
+1951,"Gzira","en",156
+1978,"Rabat (malta)","en",156
+1958,"Lija","en",156
+1938,"Birkirkara","en",156
+1968,"Msida","en",156
+1991,"Ta' Xbiex","en",156
+1993,"Valletta","en",156
+1936,"Balzan","en",156
+1935,"Attard","en",156
+1943,"Floriana","en",156
+1955,"Kalkara","en",156
+1974,"Pieta","en",156
+1987,"Santa Venera","en",156
+1937,"Birgu","en",156
+1952,"Hamrun","en",156
+1996,"Xghajra","en",156
+1954,"Isla","en",156
+1976,"Qormi","en",156
+1963,"Mdina","en",156
+1940,"Bormla","en",156
+1960,"Marsa","en",156
+1997,"Zabbar","en",156
+1972,"Paola","en",156
+1999,"Zebbug (malta)","en",156
+1961,"Marsascala","en",156
+1942,"Fgura","en",156
+1959,"Luqa","en",156
+1992,"Tarxien","en",156
+1941,"Dingli","en",156
+2000,"Zejtun","en",156
+1988,"Siggiewi","en",156
+1986,"Santa Lucija","en",156
+1949,"Ghaxaq","en",156
+1950,"Gudja","en",156
+1967,"Mqabba","en",156
+1962,"Marsaxlokk","en",156
+1957,"Kirkop","en",156
+1939,"Birzebbugia","en",156
+1980,"Safi","en",156
+1977,"Qrendi","en",156
+2001,"Zurrieq","en",156
+2002,"Administrative unit not available","en",157
+61300,"Saint-Pierre","en",158
+61297,"Fort-de-France","en",158
+61298,"La Trinite","en",158
+61299,"Le Marin","en",158
+2015,"Tiris Zemmour","en",159
+2004,"Adrar","en",159
+2010,"Hodh Ech Chargui","en",159
+2012,"Inchiri","en",159
+2014,"Tagant","en",159
+2007,"Dakhlet Nouadhibou","en",159
+2013,"Nouakchott","en",159
+2005,"Assaba","en",159
+2011,"Hodh El Gharbi","en",159
+2016,"Trarza","en",159
+2006,"Brakna","en",159
+2008,"Gorgol","en",159
+2009,"Guidimaka","en",159
+2025,"Riviere Du Rempart","en",160
+2022,"Pamplemousses","en",160
+2019,"Flacq","en",160
+2024,"Port Louis","en",160
+2018,"Black River","en",160
+2023,"Plaines Wilhems","en",160
+2021,"Moka","en",160
+2020,"Grand Port","en",160
+2026,"Savanne","en",160
+2017,"Administrative unit not available","en",160
+2027,"Administrative unit not available","en",161
+2033,"Chihuahua","en",162
+2034,"Coahuila","en",162
+2046,"Nuevo Leon","en",162
+2055,"Tamaulipas","en",162
+2037,"Durango","en",162
+2053,"Sonora","en",162
+2029,"Baja California","en",162
+2059,"Zacatecas","en",162
+2051,"San Luis Potosi","en",162
+2058,"Yucatan","en",162
+2057,"Veracruz","en",162
+2028,"Aguascalientes","en",162
+2038,"Guanajuato","en",162
+2049,"Queretaro","en",162
+2040,"Hidalgo","en",162
+2045,"Nayarit","en",162
+2048,"Puebla","en",162
+2043,"Michoacan","en",162
+2041,"Jalisco","en",162
+2042,"Mexico","en",162
+2056,"Tlaxcala","en",162
+2035,"Colima","en",162
+2036,"Distrito Federal","en",162
+2044,"Morelos","en",162
+2031,"Campeche","en",162
+2052,"Sinaloa","en",162
+2054,"Tabasco","en",162
+2030,"Baja California Sur","en",162
+2050,"Quintana Roo","en",162
+2039,"Guerrero","en",162
+2047,"Oaxaca","en",162
+2032,"Chiapas","en",162
+2060,"Administrative unit not available","en",163
+2061,"Administrative unit not available","en",164
+2067,"Edinet","en",165
+2071,"Soroca","en",165
+2066,"Dubasari","en",165
+2062,"Balti","en",165
+2070,"Orhei","en",165
+2073,"Ungheni","en",165
+2064,"Chisinau","en",165
+2069,"Lapusna","en",165
+2072,"Tighina","en",165
+2068,"Gagauzia","en",165
+2063,"Cahul","en",165
+2074,"Administrative unit not available","en",166
+2088,"Hovsgol","en",167
+2096,"Uvs","en",167
+2092,"Selenge","en",167
+2078,"Bulgan","en",167
+2081,"Dornod","en",167
+2076,"Bayan-Olgii","en",167
+2097,"Zavhan","en",167
+2080,"Darhan","en",167
+2086,"Hentii","en",167
+2079,"Darhai-Uul","en",167
+2075,"Arhangai","en",167
+2094,"Tov","en",167
+2090,"Orhon","en",167
+2087,"Hovd","en",167
+2095,"Ulaanbaatar","en",167
+2093,"Suhbaatar","en",167
+2085,"Govi-Altai","en",167
+2077,"Bayanhongor","en",167
+2091,"Ovorhangai","en",167
+2084,"Gobisumber","en",167
+2083,"Dundgov","en",167
+2082,"Dornogov","en",167
+2089,"Omnogov","en",167
+2101,"North","en",168
+2103,"Salem","en",168
+2100,"East","en",168
+2099,"Central","en",168
+2102,"Plymouth","en",168
+2104,"South","en",168
+2098,"Brodericks","en",168
+2108,"Nord Ouest","en",169
+2109,"Oriental","en",169
+2106,"Centre Nord","en",169
+2107,"Centre Sud","en",169
+2105,"Centre","en",169
+2111,"Tensift","en",169
+2110,"Sud","en",169
+2119,"Niassa","en",170
+2121,"Tete","en",170
+2122,"Zambezia","en",170
+2118,"Nampula","en",170
+2115,"Manica","en",170
+2120,"Sofala","en",170
+2113,"Gaza","en",170
+2114,"Inhambane","en",170
+2116,"Maputo","en",170
+2117,"Maputo (city)","en",170
+65246,"Area under National Administration","en",170
+2112,"Cabo Delgado","en",170
+2127,"Kachin","en",171
+2133,"Sagaing","en",171
+41775,"Shan (N)","en",171
+2125,"Chin","en",171
+2131,"Mandalay","en",171
+2130,"Magway","en",171
+41776,"Shan (S)","en",171
+41774,"Shan (E)","en",171
+2129,"Kayar","en",171
+2128,"Kayin","en",171
+41773,"Bago (W)","en",171
+2136,"Yangon","en",171
+2123,"Rakhine","en",171
+41772,"Bago (E)","en",171
+2135,"Taninthayi","en",171
+2132,"Mon","en",171
+2126,"Ayeyawaddy","en",171
+2143,"Kunene","en",172
+2146,"Omusati","en",172
+2141,"Kavango","en",172
+2144,"Ohangwena","en",172
+2137,"Caprivi","en",172
+2147,"Oshana","en",172
+2148,"Oshikoto","en",172
+2149,"Otjozondjupa","en",172
+2145,"Omaheke","en",172
+2138,"Erongo","en",172
+2142,"Khomas","en",172
+2139,"Hardap","en",172
+2140,"Karas","en",172
+2150,"Administrative unit not available","en",173
+2151,"Administrative unit not available","en",174
+2155,"Mid Western","en",175
+2154,"Far Western","en",175
+2156,"Western","en",175
+2152,"Central","en",175
+2153,"Eastern","en",175
+2157,"Administrative unit not available","en",176
+2162,"Groningen","en",177
+2158,"Drenthe","en",177
+2160,"Friesland","en",177
+2166,"Overijssel","en",177
+2159,"Flevoland","en",177
+2161,"Gelderland","en",177
+2165,"Noord-holland","en",177
+2169,"Zuid-holland","en",177
+2167,"Utrecht","en",177
+2163,"Limburg","en",177
+2168,"Zeeland","en",177
+2164,"Noord-brabant","en",177
+2170,"Administrative unit not available","en",178
+2177,"Northland","en",179
+2181,"Waikato","en",179
+2171,"Auckland","en",179
+2174,"East Cape","en",179
+2172,"Bay Of Plenty","en",179
+2182,"Wanganui-manawatu","en",179
+2180,"Taranaki","en",179
+2175,"Hawke's Bay","en",179
+2183,"Wellington","en",179
+2184,"Westland","en",179
+2176,"Nelson-marlborough","en",179
+2173,"Canterbury","en",179
+2178,"Otago","en",179
+2179,"Southland","en",179
+2193,"Jinotega","en",180
+2185,"Atlantico Norte","en",180
+2199,"Nueva Segovia","en",180
+2195,"Madriz","en",180
+2191,"Esteli","en",180
+2198,"Matagalpa","en",180
+2189,"Chinandega","en",180
+2194,"Leon","en",180
+2187,"Boaco","en",180
+2190,"Chontales","en",180
+2196,"Managua","en",180
+2192,"Granada","en",180
+2186,"Atlantico Sur","en",180
+2197,"Masaya","en",180
+2188,"Carazo","en",180
+2200,"Rio San Juan","en",180
+2201,"Rivas","en",180
+2202,"Agadez","en",181
+2207,"Tahoua","en",181
+2203,"Diffa","en",181
+2209,"Zinder","en",181
+2208,"Tillaberi","en",181
+2205,"Maradi","en",181
+2204,"Dosso","en",181
+2206,"Niamey","en",181
+65709,"Sokoto","en",182
+2216,"Borno","en",182
+2240,"Yobe","en",182
+2226,"Katsina","en",182
+65710,"Zamfara","en",182
+2227,"Kebbi","en",182
+2223,"Jigawa","en",182
+2225,"Kano","en",182
+65699,"Bauchi","en",182
+2224,"Kaduna","en",182
+2231,"Niger","en",182
+65704,"Gombe","en",182
+2211,"Adamawa","en",182
+65707,"Plateau","en",182
+2229,"Kwara","en",182
+2239,"Taraba","en",182
+2221,"FCT, Abuja","en",182
+65705,"Nassarawa","en",182
+2235,"Oyo","en",182
+2228,"Kogi","en",182
+2215,"Benue","en",182
+2234,"Osun","en",182
+65702,"Ekiti","en",182
+2232,"Ogun","en",182
+65706,"Ondo","en",182
+2219,"Edo","en",182
+65703,"Enugu","en",182
+2217,"Cross River","en",182
+65701,"Ebonyi","en",182
+2213,"Anambra","en",182
+2230,"Lagos","en",182
+2218,"Delta","en",182
+65698,"Abia","en",182
+2222,"Imo","en",182
+65708,"Rivers","en",182
+2212,"Akwa Ibom","en",182
+65700,"Bayelsa","en",182
+2241,"Administrative unit not available","en",183
+2242,"Administrative unit not available","en",184
+2243,"Administrative unit not available","en",185
+2260,"Troms","en",186
+2247,"Finnmark","en",186
+2252,"Nordland","en",186
+2251,"Nord-troendelag","en",186
+2257,"Soer-Troendelag","en",186
+2248,"Hedmark","en",186
+2254,"Oppland","en",186
+2250,"Moere Og Romsdal","en",186
+2258,"Sogn og Fjordane","en",186
+2259,"Telemark","en",186
+2255,"Oslo","en",186
+2244,"Akershus","en",186
+2246,"Buskerud","en",186
+2262,"Vestfold","en",186
+2249,"Hordaland","en",186
+2261,"Vest-Agder","en",186
+2253,"Oestfold","en",186
+2256,"Rogaland","en",186
+2245,"Aust-agder","en",186
+2269,"Musandam","en",187
+2271,"Name Unknown","en",187
+2265,"Al Batnah","en",187
+2266,"Al Dhahira","en",187
+2270,"Muscat","en",187
+2263,"A Dakhliya","en",187
+2267,"Al Wusta","en",187
+2264,"A Sharqiya","en",187
+2268,"Dhofar","en",187
+2275,"Nwfp","en",188
+2273,"Fata","en",188
+2274,"Islamabad","en",188
+2276,"Punjab","en",188
+2272,"Balochistan","en",188
+2277,"Sind","en",188
+2278,"Administrative unit not available","en",189
+2279,"Administrative unit not available","en",190
+2283,"Colon","en",191
+2280,"Bocas Del Toro","en",191
+2282,"Cocle","en",191
+2284,"Comarca De San Blas","en",191
+2289,"Veraguas","en",191
+2285,"Darien","en",191
+2288,"Panama","en",191
+2286,"Herrera","en",191
+2281,"Chiriqui","en",191
+2287,"Los Santos","en",191
+2298,"Manus","en",192
+2307,"West Sepik","en",192
+2293,"East Sepik","en",192
+2306,"West New Britain","en",192
+2302,"New Ireland","en",192
+2295,"Enga","en",192
+2308,"Western","en",192
+2305,"Southern Highlands","en",192
+2297,"Madang","en",192
+2309,"Western Highlands","en",192
+2292,"East New Britain","en",192
+2291,"Chimbu","en",192
+2294,"Eastern Highlands","en",192
+2304,"Northern Solomons","en",192
+2300,"Morobe","en",192
+2303,"Northern","en",192
+2296,"Gulf","en",192
+2301,"National Capital District","en",192
+2290,"Central","en",192
+2299,"Milne Bay","en",192
+73915,"Administrative unit not available","en",193
+2311,"Alto Paraguay","en",194
+2314,"Boqueron","en",194
+2326,"Presidente Hayes","en",194
+2313,"Amambay","en",194
+2319,"Concepcion","en",194
+2327,"San Pedro","en",194
+2317,"Canindeyu","en",194
+2315,"Caaguazu","en",194
+2312,"Alto Parana","en",194
+2320,"Cordillera","en",194
+2318,"Central","en",194
+2325,"Paraguari","en",194
+2316,"Caazapa","en",194
+2321,"Guaira","en",194
+2324,"Neembucu","en",194
+2322,"Itapua","en",194
+2323,"Misiones","en",194
+2343,"Loreto","en",195
+2328,"Amazonas","en",195
+2351,"Tumbes","en",195
+2333,"Cajamarca","en",195
+2349,"San Martin","en",195
+2347,"Piura","en",195
+2341,"Lambayeque","en",195
+2352,"Ucayali","en",195
+2340,"La Libertad","en",195
+2337,"Huanuco","en",195
+2329,"Ancash","en",195
+2346,"Pasco","en",195
+2344,"Madre De Dios","en",195
+2339,"Junin","en",195
+2335,"Cusco","en",195
+2334,"Callao, Provincia Constitucion","en",195
+2336,"Huancavelica","en",195
+2332,"Ayacucho","en",195
+2342,"Lima","en",195
+2348,"Puno","en",195
+2330,"Apurimac","en",195
+2331,"Arequipa","en",195
+2338,"Ica","en",195
+2345,"Moquegua","en",195
+2350,"Tacna","en",195
+2354,"Cordillera Administrative region (CAR)","en",196
+2357,"Region II (Cagayan Valley)","en",196
+2356,"Region I (Ilocos region)","en",196
+2355,"National Capital region (NCR)","en",196
+67165,"Region III (Central Luzon)","en",196
+67166,"Region IV-A (Calabarzon)","en",196
+2361,"Region V (Bicol region)","en",196
+2364,"Region VIII (Eastern Visayas)","en",196
+2362,"Region VI (Western Visayas)","en",196
+2363,"Region VII (Central Visayas)","en",196
+67160,"Region X (Northern Mindanao)","en",196
+2368,"Region XIII (Caraga)","en",196
+67167,"Region IV-B (Mimaropa)","en",196
+67159,"Region IX (Zamboanga Peninsula)","en",196
+67162,"Region XII (Soccsksargen)","en",196
+67161,"Region XI (Davao Region)","en",196
+67156,"Autonomous region in Muslim Mindanao (ARMM)","en",196
+2369,"Administrative unit not available","en",197
+2380,"Pomorskie","en",198
+2385,"Zachodnio-Pomorskie","en",198
+2383,"Warminsko-Mazurskie","en",198
+2379,"Podlaskie","en",198
+2371,"Kujawsko-Pomorskie","en",198
+2384,"Wielkopolskie","en",198
+2376,"Mazowieckie","en",198
+2374,"Lubuskie","en",198
+2372,"Lodzkie","en",198
+2373,"Lubeiskie","en",198
+2370,"Dolnoslaskie","en",198
+2382,"Swietokrzyskie","en",198
+2377,"Opolskie","en",198
+2381,"Slaskie","en",198
+2378,"Podkarpackie","en",198
+2375,"Malopolske","en",198
+2411,"Viana Do Castelo","en",199
+2389,"Braganca","en",199
+2412,"Vila Real","en",199
+2388,"Braga","en",199
+2408,"Porto","en",199
+2413,"Viseu","en",199
+2394,"Guarda","en",199
+2386,"Aveiro","en",199
+2391,"Coimbra","en",199
+2390,"Castelo Branco","en",199
+2405,"Leiria","en",199
+2409,"Santarem","en",199
+2407,"Portalegre","en",199
+2392,"Evora","en",199
+2406,"Lisboa","en",199
+2410,"Setubal","en",199
+2387,"Beja","en",199
+2393,"Faro","en",199
+2414,"Aguadilla","en",200
+2415,"Arecibo","en",200
+2421,"San Juan","en",200
+2416,"Bayamon","en",200
+2417,"Guayama","en",200
+2418,"Humacao","en",200
+2419,"Mayaguez","en",200
+2420,"Ponce","en",200
+2428,"Ash Shamal","en",201
+2423,"Al Ghuwayriyah","en",201
+2425,"Al Khawr","en",201
+2430,"Umm Salal","en",201
+2424,"Al Jumayliyah","en",201
+2427,"Ar Rayyan","en",201
+2422,"Ad Dawhah","en",201
+2426,"Al-wakrah","en",201
+2429,"Jarayan Al Batnah","en",201
+2443,"Seoul","en",202
+2437,"Kang-won-do","en",202
+2436,"Inchon","en",202
+2434,"Chungchongbuk-do","en",202
+2440,"Kyongsangbuk-do","en",202
+2439,"Kyonggi-do","en",202
+2445,"Taejon","en",202
+2435,"Chungchongnam-do","en",202
+2444,"Taegu","en",202
+2432,"Chollabuk-do","en",202
+2438,"Kwangju","en",202
+2442,"Pusan","en",202
+2441,"Kyongsangnam-do","en",202
+2433,"Chollanam-do","en",202
+2431,"Cheju-do","en",202
+2452,"Botosani","en",203
+2478,"Satu Mare","en",203
+2471,"Maramures","en",203
+2480,"Suceava","en",203
+2470,"Iasi","en",203
+2450,"Bihor","en",203
+2451,"Bistrita-nasaud","en",203
+2477,"Salaj","en",203
+2459,"Cluj","en",203
+2474,"Neamt","en",203
+2467,"Harghita","en",203
+2473,"Mures","en",203
+2484,"Vaslui","en",203
+2449,"Bacau","en",203
+2447,"Arad","en",203
+2446,"Alba","en",203
+2468,"Hunedoara","en",203
+2479,"Sibiu","en",203
+2461,"Covasna","en",203
+2454,"Brasov","en",203
+2486,"Vrancea","en",203
+2482,"Timis","en",203
+2464,"Galati","en",203
+2456,"Buzau","en",203
+2458,"Caras-severin","en",203
+2448,"Arges","en",203
+2485,"Vilcea","en",203
+2476,"Prahova","en",203
+2453,"Braila","en",203
+2462,"Dimbovita","en",203
+2483,"Tulcea","en",203
+2466,"Gorj","en",203
+2472,"Mehedinti","en",203
+2475,"Olt","en",203
+2469,"Ialomita","en",203
+2460,"Constanta","en",203
+2455,"Bucuresti","en",203
+2463,"Dolj","en",203
+2465,"Giurgiu","en",203
+2457,"Calarasi","en",203
+2481,"Teleorman","en",203
+2562,"Taymyrskiy Okrug","en",204
+2575,"Yamalo-nenetskiy Okrug","en",204
+2504,"Evenkiyskiy Okrug","en",204
+2551,"Sakha Rep.","en",204
+2520,"Komi Rep.","en",204
+2525,"Krasnoyarskiy Kray","en",204
+2538,"Nenetskiy Okrug","en",204
+2536,"Murmanskaya Oblast","en",204
+2518,"Khanty-mansyiskiy Okrug","en",204
+2501,"Chukotskiy Okrug","en",204
+2506,"Irkutskaya Oblast","en",204
+2514,"Karelya Rep.","en",204
+2492,"Arkhangelskaya Oblast","en",204
+2559,"Sverdlovskaya Oblast","en",204
+2546,"Permskaya Oblast","en",204
+2573,"Vologodskaya Oblast","en",204
+2521,"Komi-permyatskiy Okrug","en",204
+2519,"Kirovskaya Oblast","en",204
+2563,"Tomskaya Oblast","en",204
+2554,"Sankt-peterburg","en",204
+2566,"Tyumenskaya Oblast","en",204
+2529,"Leningradskaya Oblast","en",204
+2523,"Kostromskaya Oblast","en",204
+2540,"Novgorodskaya Oblast","en",204
+2531,"Magadanskaya Oblast","en",204
+2576,"Yaroslavskaya Oblast","en",204
+2565,"Tverskaya Oblast","en",204
+2542,"Omskaya Oblast","en",204
+2568,"Udmurtiya Rep.","en",204
+2500,"Chitinskaya Oblast","en",204
+2548,"Pskovskaya Oblast","en",204
+2539,"Nizhegorodskaya Oblast","en",204
+2507,"Ivanovskaya Oblast","en",204
+2532,"Mariy-el Rep.","en",204
+2541,"Novosibirskaya Oblast","en",204
+2497,"Buryatiya Rep.","en",204
+2522,"Koryakskiy Okrug","en",204
+2491,"Amurskaya Oblast","en",204
+2534,"Moskovskaya Oblast","en",204
+2526,"Kurganskaya Oblast","en",204
+2515,"Kemerovskaya Oblast","en",204
+2571,"Vladimirskaya Oblast","en",204
+2561,"Tatarstan Rep.","en",204
+2494,"Bashkortostan Rep.","en",204
+2499,"Chelyabinskaya Oblast","en",204
+2557,"Smolenskaya Oblast","en",204
+2535,"Moskva","en",204
+2517,"Khakasiya Rep.","en",204
+2550,"Ryazanskaya Oblast","en",204
+2511,"Kaluzhskaya Oblast","en",204
+2533,"Mordoviya Rep.","en",204
+2502,"Chuvashiya Rep.","en",204
+2569,"Ulyanovskaya Oblast","en",204
+2512,"Kamchatskaya Oblast","en",204
+2564,"Tulskaya Oblast","en",204
+2553,"Samarskaya Oblast","en",204
+2509,"Kaliningradskaya Oblast","en",204
+2490,"Altayskiy Kray","en",204
+2543,"Orenburgskaya Oblast","en",204
+2570,"Ustordynskiy Buryatskiy Okrug","en",204
+2496,"Bryanskaya Oblast","en",204
+2545,"Penzenskaya Oblast","en",204
+2560,"Tambovskaya Oblast","en",204
+2567,"Tyva Rep.","en",204
+2544,"Orlovskaya Oblast","en",204
+2530,"Lipetskaya Oblast","en",204
+2516,"Khabarovskiy Kray","en",204
+2555,"Saratovskaya Oblast","en",204
+2489,"Altay Rep.","en",204
+2527,"Kurskaya Oblast","en",204
+2574,"Voronezhskaya Oblast","en",204
+2488,"Aginskiy Buryatskiy A. Okrug","en",204
+2495,"Belgorodskaya Oblast","en",204
+2572,"Volgogradskaya Oblast","en",204
+2549,"Rostovskaya Oblast","en",204
+2577,"Yevreyskaya A. Oblast","en",204
+2537,"Name Unknown","en",204
+2528,"Administrative unit not available","en",204
+2558,"Stavropolskiy Kray","en",204
+2552,"Sakhalinskaya Oblast","en",204
+2524,"Krasnodarskiy Kray","en",204
+2493,"Astrakhanskaya Oblast","en",204
+2487,"Adygeya Rep.","en",204
+2510,"Kalmykiya Rep.","en",204
+2513,"Karatchayevo-cherkesiya Rep.","en",204
+2498,"Chechnya Rep.","en",204
+2503,"Dagestan Rep.","en",204
+2508,"Kabardino-balkariya Rep.","en",204
+2556,"Severnaya Osetiya-alaniya Rep.","en",204
+2505,"Ingushetiya Rep.","en",204
+2547,"Primorskiy Kray","en",204
+2589,"Umutara","en",205
+2588,"Ruhengeri","en",205
+2579,"Byumba","en",205
+2582,"Gisenyi","en",205
+2586,"Kigali-ngali","en",205
+2583,"Gitarama","en",205
+2584,"Kibungo","en",205
+2585,"Kibuye","en",205
+2587,"Prefecture De La Ville De Kigali","en",205
+2580,"Cyangugu","en",205
+2581,"Gikongoro","en",205
+2578,"Butare","en",205
+2590,"Arrondissement_du_vent","en",206
+2591,"Arrondissement_souse_le_vent","en",206
+68772,"Ascension","en",207
+68773,"Saint Helena","en",207
+68774,"Tristan Da Cunha","en",207
+2598,"Saint John Capisterre","en",208
+2601,"Saint Paul Capisterre","en",208
+2593,"Christ Church Nichola Town","en",208
+2594,"Saint Anne Sandy Point","en",208
+2600,"Saint Mary Cayon","en",208
+2605,"Saint Thomas Middle Island","en",208
+2603,"Saint Peter Basseterre","en",208
+2606,"Trinity Palmetto Point","en",208
+2595,"Saint George Basseterre","en",208
+2597,"Saint James Windward","en",208
+2604,"Saint Thomas Lowland","en",208
+2602,"Saint Paul Charlestown","en",208
+2599,"Saint John Figtree","en",208
+2596,"Saint George Gingerland","en",208
+2608,"Region Number 1","en",209
+2615,"Region Number 8","en",209
+2609,"Region Number 2","en",209
+2607,"Area Under National Administra","en",209
+2610,"Region Number 3","en",209
+2614,"Region Number 7","en",209
+2613,"Region Number 6","en",209
+2611,"Region Number 4","en",209
+2612,"Region Number 5","en",209
+39511,"Miquelon-Langlade","en",210
+39512,"Saint-Pierre","en",210
+61286,"Charlotte","en",211
+61288,"Saint David","en",211
+61290,"Saint Patrick","en",211
+61287,"Saint Andrew","en",211
+61289,"Saint George","en",211
+61285,"Grenadines","en",211
+2618,"Administrative unit not available","en",212
+2619,"Administrative unit not available","en",213
+2620,"Principe","en",214
+2621,"Sao Tome","en",214
+2631,"Northern Frontier","en",215
+2626,"Jawf","en",215
+2634,"Tabuk","en",215
+2625,"Hail","en",215
+2633,"Riyad","en",215
+2632,"Quassim","en",215
+2624,"Eastern Province","en",215
+2628,"Madinah","en",215
+2622,"Asir","en",215
+2623,"Baha","en",215
+2630,"Najran","en",215
+2629,"Makkah","en",215
+2627,"Jizan","en",215
+2635,"Administrative unit not available","en",216
+2644,"Thies","en",217
+47585,"Diourbel","en",217
+2636,"Dakar","en",217
+47589,"Saint-Louis","en",217
+47587,"Louga","en",217
+47588,"Matam","en",217
+2643,"Tambacounda","en",217
+47586,"Fatick","en",217
+2639,"Kaolack","en",217
+2640,"Kolda","en",217
+2645,"Ziguinchor","en",217
+2646,"Administrative unit not available","en",218
+61150,"Bird","en",220
+61161,"Denis","en",220
+61141,"Aride","en",220
+61159,"Curieuse","en",220
+61170,"Grande Soeur","en",220
+61187,"Petite Soeur","en",220
+61193,"Praslin","en",220
+61175,"Ile la Fouche","en",220
+61173,"Ile Cocos","en",220
+61176,"Ilot Platte","en",220
+61166,"Felicite","en",220
+61157,"Cousin","en",220
+61181,"Marianne","en",220
+61178,"La Digue","en",220
+61158,"Cousine","en",220
+61186,"North Island","en",220
+61199,"Silhouette","en",220
+61168,"Glacis","en",220
+61139,"Anse Etoile","en",220
+61167,"Fregate","en",220
+61146,"Beau Vallon","en",220
+61204,"Ste Anne","en",220
+61164,"English River","en",220
+61183,"Mont Buxton","en",220
+61198,"Seche","en",220
+61148,"Belombre","en",220
+61200,"St Louis","en",220
+61185,"Moyenne","en",220
+61147,"Bel Air","en",220
+61197,"Round Island","en",220
+61180,"Long Island","en",220
+61192,"Port Glaud","en",220
+61154,"Cerf Island","en",220
+61184,"Mont Fleuri","en",220
+61188,"Plaisance","en",220
+61133,"Administrative unit not available","en",220
+61179,"Les Mamelles","en",220
+61152,"Cachee","en",220
+61153,"Cascade","en",220
+61196,"Roche Caiman","en",220
+61169,"Grand Anse Mahe","en",220
+61208,"Administrative unit not available","en",220
+61155,"Conception","en",220
+61177,"Islette","en",220
+61190,"Pointe Larue","en",220
+61171,"Ile Aux Rat","en",220
+61206,"Therese","en",220
+61138,"Anse Boileau","en",220
+61137,"Anse Aux Pins","en",220
+61172,"Ile Aux Vaches","en",220
+61144,"Au Cap","en",220
+61140,"Anse Royale","en",220
+61145,"Baie Lazare","en",220
+61205,"Takamaka","en",220
+61134,"African Banks","en",220
+61195,"Remire","en",220
+61202,"St. Joseph Atoll","en",220
+61160,"Darros","en",220
+61163,"Desroches","en",220
+61191,"Poivre","en",220
+61174,"Ile du Sud","en",220
+61189,"Platte","en",220
+61151,"Boudeuse","en",220
+61182,"Marie-Louise","en",220
+61162,"Desnoeufs","en",220
+61136,"Alphonse","en",220
+61149,"Bijoutier","en",220
+61207,"Coetivy","en",220
+61201,"St. Francois","en",220
+61194,"Providence","en",220
+61203,"St. Pierre","en",220
+61135,"Aldabra","en",220
+61142,"Assumption","en",220
+61156,"Cosmoledo","en",220
+61143,"Astove","en",220
+61165,"Farquhar","en",220
+2654,"Eastern","en",221
+2655,"Northern","en",221
+2656,"Southern","en",221
+2657,"Western Area","en",221
+2665,"Sembawang-hong Kah","en",222
+2658,"Ang Mo Kio-cheng San","en",222
+2662,"Marine Parade","en",222
+2663,"Northeast","en",222
+2661,"Hougang","en",222
+2660,"Central Singapore","en",222
+2664,"Potong Pasir","en",222
+2666,"Tanjong Pagar","en",222
+2659,"Bukit Timah","en",222
+2674,"Zilna","en",223
+2671,"Presov","en",223
+2672,"Trencin","en",223
+2669,"Kosice","en",223
+2667,"Banska Bystrica","en",223
+2673,"Trnava","en",223
+2670,"Nitra","en",223
+2668,"Bratislava","en",223
+2683,"Pomurska","en",224
+2682,"Podravska","en",224
+2678,"Koroska","en",224
+2675,"Gorenjska","en",224
+2684,"Savinjska","en",224
+2676,"Goriska","en",224
+2681,"Osrednjeslovenska","en",224
+2686,"Zasavska","en",224
+2685,"Spodnjeposavska","en",224
+2677,"Jugovzodna Slovenija","en",224
+2679,"Notranjsko-kraska","en",224
+2680,"Obalno-kraska","en",224
+2687,"Administrative unit not available","en",225
+2690,"Bari","en",226
+2688,"Awdal","en",226
+2702,"Sanaag","en",226
+2705,"Woqooyi Galbeed","en",226
+2704,"Togdheer","en",226
+2703,"Sool","en",226
+2701,"Nugaal","en",226
+2700,"Mudug","en",226
+2693,"Galgaduud","en",226
+2695,"Hiraan","en",226
+2689,"Bakool","en",226
+2694,"Gedo","en",226
+2691,"Bay","en",226
+2699,"Shabelle Dhexe","en",226
+2697,"Shabelle Hoose","en",226
+2692,"Banadir","en",226
+2698,"Juba Dhexe","en",226
+2696,"Juba Hoose","en",226
+2713,"Northern Province","en",227
+2710,"Mpumalanga","en",227
+2711,"North-west","en",227
+2712,"Northern Cape","en",227
+2708,"Gauteng","en",227
+2707,"Free State","en",227
+2709,"Kwazulu-natal","en",227
+2706,"Eastern Cape","en",227
+2714,"Western Cape","en",227
+2715,"Administrative unit not available","en",228
+2718,"Asturias, Principado De","en",229
+2721,"Cantabria","en",229
+2733,"Pais Vasco","en",229
+2717,"Aragon","en",229
+2722,"Castilla Y Leon","en",229
+2734,"Rioja, La","en",229
+2724,"Cataluna","en",229
+2732,"Navarra, Comunidad Foral De","en",229
+2728,"Galicia","en",229
+2723,"Castilla-la Mancha","en",229
+2729,"Madrid, Comunidad De","en",229
+2727,"Extremadura","en",229
+2719,"Balears, Illes","en",229
+2726,"Comunidad Valenciana","en",229
+2731,"Murcia, Region De","en",229
+2716,"Andalucia","en",229
+2725,"Ceuta, Ciudad Autonoma De","en",229
+2730,"Melilla, Ciudad Autonoma De","en",229
+2720,"Canarias","en",229
+73921,"Administrative unit not available","en",230
+2738,"North Central","en",231
+2740,"Northern","en",231
+2739,"North Western","en",231
+2736,"Central","en",231
+2737,"Eastern","en",231
+2743,"Uva","en",231
+2741,"Sabaragamuwa","en",231
+2744,"Western","en",231
+2742,"Southern","en",231
+2772,"Commewijne","en",233
+2775,"Nickerie","en",233
+2778,"Saramacca","en",233
+2774,"Marowijne","en",233
+2773,"Coronie","en",233
+2780,"Wanica","en",233
+2777,"Paramaribo","en",233
+2776,"Para","en",233
+2779,"Sipaliwini","en",233
+2771,"Brokopondo","en",233
+2781,"Administrative unit not available","en",234
+2782,"Hhohho","en",235
+2783,"Lubombo","en",235
+2784,"Manzini","en",235
+2785,"Shiselweni","en",235
+2803,"Vaesterbottens Laen","en",236
+2791,"Jaemtlands Laen","en",236
+2795,"Norrbottens Laen","en",236
+2804,"Vaesternorrlands Laen","en",236
+2787,"Dalarnas Laen","en",236
+2802,"Vaermlands Laen","en",236
+2788,"Gaevleborgs Laen","en",236
+2801,"Uppsala Laen","en",236
+2805,"Vaestmanlands Laen","en",236
+2800,"Stockholms Laen","en",236
+2796,"Oerebro Laen","en",236
+2806,"Vaestra Goetalands Laen","en",236
+2799,"Soedermanlands Laen","en",236
+2792,"Joenkoepings Laen","en",236
+2797,"Oestergoetlands Laen","en",236
+2794,"Kronobergs Laen","en",236
+2789,"Gotlands Laen","en",236
+2790,"Hallands Laen","en",236
+2793,"Kalmar Laen","en",236
+2786,"Blekinge Laen","en",236
+2798,"Skaane Laen","en",236
+2832,"Zurich","en",237
+2826,"Thurgau","en",237
+2807,"Aargau","en",237
+2811,"Basel-stadt","en",237
+2823,"Schaffhausen","en",237
+2810,"Basel-landschaft","en",237
+2822,"Sankt Gallen","en",237
+2817,"Jura","en",237
+2808,"Appenzell Ausser-rhoden","en",237
+2809,"Appenzell Inner-rhoden","en",237
+2824,"Schwyz","en",237
+2831,"Zug","en",237
+2815,"Glarus","en",237
+2825,"Solothurn","en",237
+2819,"Neuchatel","en",237
+2816,"Graubunden","en",237
+2818,"Luzern","en",237
+2820,"Nidwalden","en",237
+2830,"Vaud","en",237
+2828,"Uri","en",237
+2812,"Bern","en",237
+2821,"Obwalden","en",237
+2813,"Fribourg","en",237
+2829,"Valais","en",237
+2827,"Ticino","en",237
+2814,"Geneve","en",237
+2841,"Hassakeh","en",238
+2834,"Aleppo","en",238
+2845,"Raqqa","en",238
+2839,"Dayr_Az_Zor","en",238
+2843,"Idleb","en",238
+2844,"Lattakia","en",238
+2840,"Hama","en",238
+2842,"Homs","en",238
+2846,"Tartous","en",238
+2837,"Damascus","en",238
+2836,"City_Damascus","en",238
+2833,"Al_Qunaytirah","en",238
+2838,"Dara","en",238
+2835,"As_Suweida","en",238
+2849,"Sogd","en",239
+2850,"Tadzhikistan Territories","en",239
+2847,"Badakhshoni Kuni","en",239
+2848,"Khatlon","en",239
+2860,"Chiang Rai","en",240
+2859,"Chiang Mai","en",240
+2872,"Mae Hong Son","en",240
+2891,"Phayao","en",240
+2881,"Nan","en",240
+2868,"Lampang","en",240
+2897,"Phrae","en",240
+2869,"Lamphun","en",240
+2884,"Nong Khai","en",240
+2924,"Uttaradit","en",240
+2870,"Loei","en",240
+2905,"Sakon Nakhon","en",240
+2922,"Udon Thani","en",240
+2877,"Nakhon Phanom","en",240
+2918,"Tak","en",240
+2914,"Sukhothai","en",240
+2895,"Phitsanulok","en",240
+2883,"Nong Bua Lamphu","en",240
+2892,"Phetchabun","en",240
+2863,"Kalasin","en",240
+2866,"Khon Kaen","en",240
+2874,"Mukdahan","en",240
+2864,"Kampaeng Phet","en",240
+2857,"Chaiyaphum","en",240
+2894,"Phichit","en",240
+2873,"Maha Sarakham","en",240
+2903,"Roi Et","en",240
+2926,"Yasothon","en",240
+2851,"Amnat Charoen","en",240
+2879,"Nakhon Sawan","en",240
+2921,"Ubon Ratchathani","en",240
+2878,"Nakhon Ratchasima","en",240
+2923,"Uthai Thani","en",240
+2854,"Buriram","en",240
+2865,"Kanchanaburi","en",240
+2871,"Lopburi","en",240
+2911,"Si Saket","en",240
+2917,"Surin","en",240
+2856,"Chainat","en",240
+2912,"Singburi","en",240
+2915,"Suphanburi","en",240
+2909,"Saraburi","en",240
+2852,"Ang Thong","en",240
+2896,"Phra Nakhon Si Ayudhya","en",240
+2875,"Nakhon Nayok","en",240
+2888,"Phachinburi","en",240
+2886,"Pathum Thani","en",240
+2876,"Nakhon Pathom","en",240
+2904,"Sa Kaeo","en",240
+2885,"Nonthaburi","en",240
+2855,"Chachoengsao","en",240
+2853,"Bangkok","en",240
+2901,"Ratchaburi","en",240
+2907,"Samut Sakhon","en",240
+2906,"Samut Prakarn","en",240
+2908,"Samut Songkham","en",240
+2893,"Phetchaburi","en",240
+2919,"Trad","en",240
+2902,"Rayong","en",240
+2861,"Chonburi","en",240
+2858,"Chanthaburi","en",240
+2899,"Prachuap Khilikhan","en",240
+2862,"Chumphon","en",240
+2916,"Surat Thani","en",240
+2900,"Ranong","en",240
+2880,"Nakhon Si Thammarat","en",240
+2889,"Phangnga","en",240
+2920,"Trang","en",240
+2890,"Phatthalung","en",240
+2898,"Phuket","en",240
+2867,"Krabi","en",240
+2913,"Songkhla","en",240
+2887,"Pattani","en",240
+2925,"Yala","en",240
+2910,"Satun","en",240
+2882,"Narathiwat","en",240
+2939,"Kriva Palanka","en",241
+2941,"Kumanovo","en",241
+2948,"Skopje","en",241
+2953,"Tetovo","en",241
+2938,"Kratovo","en",241
+2937,"Kocani","en",241
+2945,"Probistip","en",241
+2931,"Delcevo","en",241
+2952,"Sveti Nikole","en",241
+2956,"Vinica","en",241
+2934,"Gostivar","en",241
+2955,"Veles","en",241
+2949,"Stip","en",241
+2927,"Berovo","en",241
+2929,"Brod","en",241
+2946,"Radovic","en",241
+2936,"Kicevo","en",241
+2942,"Negotino","en",241
+2951,"Strumica","en",241
+2944,"Prilep","en",241
+2930,"Debar","en",241
+2935,"Kavadarci","en",241
+2940,"Krusevo","en",241
+2954,"Valandovo","en",241
+2943,"Ohrid","en",241
+2932,"Demir Hisar","en",241
+2950,"Struga","en",241
+2933,"Gevgelija","en",241
+2928,"Bitola","en",241
+2947,"Resen","en",241
+2959,"Baucau","en",242
+2966,"Manatuto","en",242
+2962,"Dili","en",242
+2965,"Liquica","en",242
+2957,"Aileu","en",242
+2969,"Viqueque","en",242
+2963,"Ermera","en",242
+2960,"Bobonaro","en",242
+2967,"Manufahi","en",242
+2958,"Ainaro","en",242
+2964,"Lautem","en",242
+2961,"Cova Lima","en",242
+2968,"Oecussi","en",242
+2974,"Savanes","en",243
+2971,"Kara","en",243
+2970,"Centrale","en",243
+2973,"Plateaux","en",243
+2972,"Maritime","en",243
+2975,"Administrative unit not available","en",244
+2976,"Administrative unit not available","en",245
+2990,"Tobago","en",246
+2988,"Sangre Grande","en",246
+2987,"San Juan/Laventille","en",246
+2991,"Tunapuna/Piarco","en",246
+2983,"Port Of Spain","en",246
+2980,"Diego Martin","en",246
+2977,"Arima","en",246
+2979,"Couva/Tabaquite/Talparo","en",246
+2978,"Chaguanas","en",246
+2985,"Rio Claro/Mayaro","en",246
+2984,"Princes Town","en",246
+2986,"San Fernando","en",246
+2981,"Penal/Debe","en",246
+2989,"Siparia","en",246
+2982,"Point Fortin","en",246
+2992,"Administrative unit not available","en",247
+2995,"Bizerte","en",248
+2996,"Beja","en",248
+2993,"Ariana","en",248
+3008,"Nabeul","en",248
+2999,"Jendouba","en",248
+3005,"Manouba","en",248
+3015,"Tunis","en",248
+2994,"Ben Arous","en",248
+3016,"Zaghouan","en",248
+3011,"Siliana","en",248
+3003,"Le Kef","en",248
+3012,"Sousse","en",248
+3000,"Kairouan","en",248
+3001,"Kasserine","en",248
+3006,"Monastir","en",248
+3004,"Mahdia","en",248
+3010,"Sidi Bouz","en",248
+2998,"Gafsa","en",248
+3009,"Sfax","en",248
+3014,"Tozeur","en",248
+2997,"Gabes","en",248
+3002,"Kebili","en",248
+3007,"Medenine","en",248
+3013,"Tataouine","en",248
+3066,"Kirklareli","en",249
+3085,"Sinop","en",249
+3062,"Kastamonu","en",249
+3043,"Edirne","en",249
+3029,"Bartin","en",249
+3082,"Samsun","en",249
+3025,"Ardahan","en",249
+3059,"Karabuk","en",249
+3096,"Zonguldak","en",249
+3088,"Tekirdag","en",249
+3026,"Artvin","en",249
+3080,"Rize","en",249
+3040,"Corum","en",249
+3068,"Kocaeli","en",249
+3081,"Sakarya","en",249
+3078,"Ordu","en",249
+3035,"Bolu","en",249
+3090,"Trabzon","en",249
+3022,"Amasya","en",249
+3049,"Giresun","en",249
+3039,"Cankiri","en",249
+3061,"Kars","en",249
+3046,"Erzurum","en",249
+3089,"Tokat","en",249
+3056,"Istanbul","en",249
+3050,"Gumushane","en",249
+3094,"Yalova","en",249
+3023,"Ankara","en",249
+3037,"Bursa","en",249
+3031,"Bayburt","en",249
+3032,"Bilecik","en",249
+3087,"Sivas","en",249
+3065,"Kirikkale","en",249
+3095,"Yozgat","en",249
+3054,"Igdir","en",249
+3047,"Eskisehir","en",249
+3045,"Erzincan","en",249
+3020,"Agri","en",249
+3070,"Kutahya","en",249
+3038,"Canakkale","en",249
+3067,"Kirsehir","en",249
+3091,"Tunceli","en",249
+3033,"Bingol","en",249
+3075,"Mus","en",249
+3076,"Nevsehir","en",249
+3072,"Manisa","en",249
+3093,"Van","en",249
+3028,"Balikesir","en",249
+3063,"Kayseri","en",249
+3019,"Afyon","en",249
+3069,"Konya","en",249
+3044,"Elazig","en",249
+3071,"Malatya","en",249
+3021,"Aksaray","en",249
+3034,"Bitlis","en",249
+3092,"Usak","en",249
+3042,"Diyarbakir","en",249
+3058,"K.maras","en",249
+3030,"Batman","en",249
+3055,"Isparta","en",249
+3041,"Denizli","en",249
+3057,"Izmir","en",249
+3077,"Nigde","en",249
+3017,"Adana","en",249
+3084,"Siirt","en",249
+3018,"Adiyaman","en",249
+3083,"Sanliurfa","en",249
+3036,"Burdur","en",249
+3051,"Hakkari","en",249
+3086,"Sirnak","en",249
+3073,"Mardin","en",249
+3079,"Osmaniye","en",249
+3060,"Karaman","en",249
+3027,"Aydin","en",249
+3048,"Gaziantep","en",249
+3064,"Kilis","en",249
+3052,"Hatay","en",249
+3074,"Mugla","en",249
+3053,"Icel","en",249
+3024,"Antalya","en",249
+3100,"Tashauz","en",250
+3101,"Turkmenistan Territories","en",250
+3098,"Administrative unit not available","en",250
+3097,"Chardzhou","en",250
+3099,"Mary","en",250
+39499,"North Caicos","en",251
+39500,"Providenciales and West Caicos","en",251
+39498,"Middle Caicos","en",251
+39497,"Grand Turk","en",251
+39502,"South and West Caicos","en",251
+39501,"Salt City","en",251
+3103,"Administrative unit not available","en",252
+47074,"Kaabong","en",253
+42186,"Kitgum","en",253
+3136,"Moyo","en",253
+42201,"Yumbe","en",253
+47080,"Koboko","en",253
+3104,"Adjumani","en",253
+3111,"Gulu","en",253
+47069,"Arua","en",253
+47081,"Kotido","en",253
+42196,"Pader","en",253
+42191,"Moroto","en",253
+3140,"Nebbi","en",253
+47082,"Lira","en",253
+3105,"Apac","en",253
+42194,"Nakapiripirit","en",253
+47068,"Amuria","en",253
+42188,"Masindi","en",253
+47078,"Katakwi","en",253
+42181,"Kaberamaido","en",253
+42199,"Soroti","en",253
+3112,"Hoima","en",253
+47067,"Amolatar","en",253
+3128,"Kumi","en",253
+42195,"Nakasongola","en",253
+47077,"Kapchorwa","en",253
+42198,"Sironko","en",253
+47076,"Kamuli","en",253
+42185,"Kayunga","en",253
+47089,"Nakaseke","en",253
+47070,"Bukwa","en",253
+3124,"Kiboga","en",253
+3142,"Pallisa","en",253
+3108,"Bundibugyo","en",253
+47075,"Kaliro","en",253
+3123,"Kibaale","en",253
+47085,"Mbale","en",253
+47083,"Luweero","en",253
+47084,"Manafwa","en",253
+42179,"Iganga","en",253
+47071,"Butaleja","en",253
+42180,"Kabarole","en",253
+42187,"Kyenjojo","en",253
+47090,"Tororo","en",253
+47088,"Mubende","en",253
+42193,"Mukono","en",253
+3107,"Bugiri","en",253
+3114,"Jinja","en",253
+47087,"Mityana","en",253
+42189,"Mayuge","en",253
+3110,"Busia","en",253
+42200,"Wakiso","en",253
+42183,"Kamwenge","en",253
+3121,"Kasese","en",253
+42192,"Mpigi","en",253
+42182,"Kampala","en",253
+3145,"Sembabule","en",253
+47079,"Kiruhura","en",253
+47072,"Ibanda","en",253
+3131,"Masaka","en",253
+3143,"Rakai","en",253
+3109,"Bushenyi","en",253
+3117,"Kalangala","en",253
+47086,"Mbarara","en",253
+42197,"Rukungiri","en",253
+42184,"Kanungu","en",253
+47073,"Isingiro","en",253
+3141,"Ntungamo","en",253
+3115,"Kabale","en",253
+3125,"Kisoro","en",253
+3149,"Chernihivs'ka","en",254
+3166,"Sums'ka","en",254
+3169,"Volyns'ka","en",254
+3165,"Rivnens'ka","en",254
+3172,"Zhytomyrs'ka","en",254
+3159,"Kyyivs'ka","en",254
+3160,"L'vivs'ka","en",254
+3156,"Khmel'nyts'ka","en",254
+3164,"Poltavs'ka","en",254
+3154,"Kharkivs'ka","en",254
+3167,"Ternopil's'ka","en",254
+3148,"Cherkas'ka","en",254
+3161,"Luhans'ka","en",254
+3168,"Vinnyts'ka","en",254
+3153,"Ivano-frankivs'ka","en",254
+3157,"Kirovohrads'ka","en",254
+3151,"Dnipropetrovs'ka","en",254
+3170,"Zakarpats'ka","en",254
+3150,"Chernivets'ka","en",254
+3171,"Zaporiz'ka","en",254
+3152,"Donets'ka","en",254
+3162,"Mykolayivs'ka","en",254
+3155,"Khersons'ka","en",254
+3158,"Krym","en",254
+3163,"Odes'ka","en",254
+3181,"Umm Al Qaywayn","en",255
+3179,"Ras Al Khaymah","en",255
+3174,"Ajman","en",255
+3180,"Shariqah","en",255
+3175,"Al Fujarah/shariqah","en",255
+3176,"Al Fujayrah","en",255
+3177,"Dubai","en",255
+3178,"Neutral Zone","en",255
+3173,"Abu Dhabi","en",255
+3184,"Scotland","en",256
+3183,"Northern Ireland","en",256
+3186,"Wales","en",256
+3182,"England","en",256
+48361,"Kagera","en",257
+48366,"Mara","en",257
+48370,"Mwanza","en",257
+48357,"Arusha","en",257
+48376,"Shinyanga","en",257
+48362,"Kigoma","en",257
+48363,"Kilimanjaro","en",257
+48365,"Manyara","en",257
+48377,"Singida","en",257
+48380,"Tabora","en",257
+48381,"Tanga","en",257
+48359,"Dodoma","en",257
+48371,"Pemba North","en",257
+48374,"Rukwa","en",257
+48378,"Pemba South","en",257
+48372,"Unguja North","en",257
+48368,"Morogoro","en",257
+48379,"Unguja South","en",257
+48382,"Unguja Urban West","en",257
+48367,"Mbeya","en",257
+48360,"Iringa","en",257
+48358,"Dar es Salaam","en",257
+48373,"Pwani","en",257
+48364,"Lindi","en",257
+48375,"Ruvuma","en",257
+48369,"Mtwara","en",257
+39509,"Saint John (County Equivalent)","en",258
+39510,"Saint Thomas (County Equivalent)","en",258
+39508,"Saint Croix (County Equivalent)","en",258
+3215,"Alaska","en",259
+3261,"Washington","en",259
+3226,"Idaho","en",259
+3240,"Montana","en",259
+3248,"North Dakota","en",259
+3237,"Minnesota","en",259
+3263,"Wisconsin","en",259
+3251,"Oregon","en",259
+3255,"South Dakota","en",259
+3243,"New Hampshire","en",259
+3264,"Wyoming","en",259
+3259,"Vermont","en",259
+3233,"Maine","en",259
+3229,"Iowa","en",259
+3241,"Nebraska","en",259
+3227,"Illinois","en",259
+3252,"Pennsylvania","en",259
+3236,"Michigan","en",259
+3242,"Nevada","en",259
+3258,"Utah","en",259
+3228,"Indiana","en",259
+3249,"Ohio","en",259
+3220,"Connecticut","en",259
+3235,"Massachusetts","en",259
+3253,"Rhode Island","en",259
+3219,"Colorado","en",259
+3262,"West Virginia","en",259
+3239,"Missouri","en",259
+3246,"New York","en",259
+3230,"Kansas","en",259
+3260,"Virginia","en",259
+3244,"New Jersey","en",259
+3222,"District Of Columbia","en",259
+3221,"Delaware","en",259
+3234,"Maryland","en",259
+3216,"Arizona","en",259
+3250,"Oklahoma","en",259
+3245,"New Mexico","en",259
+3256,"Tennessee","en",259
+3231,"Kentucky","en",259
+3257,"Texas","en",259
+3217,"Arkansas","en",259
+3254,"South Carolina","en",259
+3247,"North Carolina","en",259
+3218,"California","en",259
+3224,"Georgia","en",259
+3214,"Alabama","en",259
+3238,"Mississippi","en",259
+3232,"Louisiana","en",259
+3223,"Florida","en",259
+3225,"Hawaii","en",259
+3265,"Artigas","en",260
+3279,"Salto","en",260
+3277,"Rivera","en",260
+3282,"Tacuarembo","en",260
+3275,"Paysandu","en",260
+3267,"Cerro Largo","en",260
+3269,"Durazno","en",260
+3283,"Treinta Y Tres","en",260
+3281,"Soriano","en",260
+3270,"Flores","en",260
+3271,"Florida","en",260
+3276,"Rio Negro","en",260
+3278,"Rocha","en",260
+3272,"Lavalleja","en",260
+3280,"San Jose","en",260
+3268,"Colonia","en",260
+3274,"Montevideo","en",260
+3266,"Canelones","en",260
+3273,"Maldonado","en",260
+3287,"Karakalpakstan","en",261
+39697,"Navoiy","en",261
+3295,"Tashkent","en",261
+3289,"Khorezm","en",261
+3291,"Namangan","en",261
+3285,"Bukhara","en",261
+39698,"Tashkent city","en",261
+39696,"Jizzakh","en",261
+3284,"Andijan","en",261
+3294,"Sirdarya","en",261
+3292,"Samarkand","en",261
+3286,"Fergana","en",261
+3288,"Kashkadarya","en",261
+3293,"Surkhandarya","en",261
+3301,"Torba","en",262
+3297,"Penama","en",262
+3298,"Sanma","en",262
+3296,"Malampa","en",262
+3299,"Shefa","en",262
+3300,"Tafea","en",262
+3325,"Zulia","en",263
+3311,"Dependencias Federales","en",263
+3313,"Falcon","en",263
+3319,"Nueva Esparta","en",263
+3315,"Lara","en",263
+3324,"Yaracuy","en",263
+3321,"Sucre","en",263
+67152,"Vargas","en",263
+67153,"Distrito Capital","en",263
+3305,"Aragua","en",263
+3308,"Carabobo","en",263
+3317,"Miranda","en",263
+3303,"Anzoategui","en",263
+3309,"Cojedes","en",263
+3314,"Guarico","en",263
+3323,"Trujillo","en",263
+3320,"Portuguesa","en",263
+3318,"Monagas","en",263
+3316,"Merida","en",263
+3306,"Barinas","en",263
+3322,"Tachira","en",263
+3310,"Delta Amacuro","en",263
+3307,"Bolivar","en",263
+3304,"Apure","en",263
+3302,"Amazonas","en",263
+3345,"Ha Giang","en",264
+3338,"Cao Bang","en",264
+73939,"Lao Cai","en",264
+73938,"Lai Chau","en",264
+3328,"Bac Kan","en",264
+3387,"Tuyen Quang","en",264
+73936,"Dien Bien","en",264
+3360,"Lang Son","en",264
+3390,"Yen Bai","en",264
+3381,"Thai Nguyen","en",264
+3378,"Son La","en",264
+3369,"Phu Tho","en",264
+3329,"Bac Giang","en",264
+3389,"Vinh Phuc","en",264
+3347,"Ha Noi City","en",264
+3348,"Ha Tay","en",264
+3331,"Bac Ninh","en",264
+3350,"Hai Duong","en",264
+3353,"Hoa Binh","en",264
+3354,"Hung Yen","en",264
+3375,"Quang Ninh","en",264
+3380,"Thai Binh","en",264
+3346,"Ha Nam","en",264
+3382,"Thanh Hoa","en",264
+3364,"Nam Dinh","en",264
+3351,"Hai Phong City","en",264
+3367,"Ninh Binh","en",264
+3366,"Nghe An","en",264
+3349,"Ha Tinh","en",264
+3371,"Quang Binh","en",264
+3376,"Quang Tri","en",264
+3383,"Thua Thien - Hue","en",264
+3340,"Da Nang City","en",264
+3372,"Quang Nam","en",264
+3357,"Kon Tum","en",264
+3374,"Quang Ngai","en",264
+3344,"Gia Lai","en",264
+3333,"Binh Dinh","en",264
+73934,"Dak Lak","en",264
+3370,"Phu Yen","en",264
+73935,"Dak Nong","en",264
+3359,"Lam Dong","en",264
+3335,"Binh Phuoc","en",264
+3355,"Khanh Hoa","en",264
+3379,"Tay Ninh","en",264
+3368,"Ninh Thuan","en",264
+3334,"Binh Duong","en",264
+3362,"Long An","en",264
+3343,"Dong Thap","en",264
+3326,"An Giang","en",264
+3342,"Dong Nai","en",264
+3384,"Tien Giang","en",264
+3352,"Ho Chi Minh City","en",264
+3388,"Vinh Long","en",264
+73933,"Can Tho city","en",264
+3386,"Tra Vinh","en",264
+73937,"Hau Giang","en",264
+3336,"Binh Thuan","en",264
+3377,"Soc Trang","en",264
+3332,"Ben Tre","en",264
+3330,"Bac Lieu","en",264
+3356,"Kien Giang","en",264
+3327,"Ba Ria-Vung Tau","en",264
+3339,"Ca Mau","en",264
+3391,"Administrative unit not available","en",265
+3392,"Administrative unit not available","en",266
+3398,"Jenin","en",267
+3404,"Tulkarm","en",267
+3403,"Tubas","en",267
+3399,"Nablus","en",267
+3400,"Qalqiliya","en",267
+3396,"Ariha (Jericho)","en",267
+3402,"Salfit","en",267
+3401,"Ramallah","en",267
+68765,"Administrative unit not available","en",267
+3395,"Al Quds (Jerusalem)","en",267
+68766,"Administrative unit not available","en",267
+3397,"Bethlehem","en",267
+3394,"Al Khalil (Hebron)","en",267
+3406,"Saguia El Hamra","en",268
+3405,"Rio De Oro","en",268
+3417,"Hadramaut","en",269
+3413,"Al Maharah","en",269
+3422,"S,adah","en",269
+3412,"Al Jawf","en",269
+3415,"Amran","en",269
+3421,"Marib","en",269
+3423,"Sana'a","en",269
+3418,"Hajjah","en",269
+3414,"Al Mahwit","en",269
+3416,"Dhamar","en",269
+3410,"Al Bayda","en",269
+3419,"Ibb","en",269
+3407,"Abyan","en",269
+3408,"Ad Dali","en",269
+3420,"Lahj","en",269
+3424,"Shabwah","en",269
+3425,"Taizz","en",269
+3411,"Al Hudaydah","en",269
+3409,"Aden","en",269
+3432,"Northern","en",270
+3428,"Eastern","en",270
+3434,"Western","en",270
+3430,"Lusaka","en",270
+3433,"Southern","en",270
+3429,"Luapula","en",270
+3431,"North-Western","en",270
+3426,"Central","en",270
+3427,"Copperbelt","en",270
+3440,"Mashonaland West","en",271
+3438,"Mashonaland Central","en",271
+69550,"Mashonaland East","en",271
+69549,"Matabeleland North","en",271
+3444,"Midlands","en",271
+3437,"Manicaland","en",271
+3436,"Harare","en",271
+3441,"Masvingo","en",271
+3443,"Matabeleland South","en",271
+3435,"Bulawayo","en",271
+25363,"Pljevlja","en",2647
+25364,"Pluzine","en",2647
+25370,"Zabljak","en",2647
+25353,"Bijelo Polje","en",2647
+25367,"Savnik","en",2647
+25361,"Niksic","en",2647
+25360,"Mojkovac","en",2647
+25352,"Berane","en",2647
+25366,"Rozaj","en",2647
+25358,"Kolasin","en",2647
+25350,"Andrijevica","en",2647
+25356,"Danilovgrad","en",2647
+25355,"Cetinje","en",2647
+25365,"Podgorica","en",2647
+25362,"Plav","en",2647
+25357,"Herceg Novi","en",2647
+25359,"Kotor","en",2647
+25368,"Tivat","en",2647
+25351,"Bar","en",2647
+25354,"Budva","en",2647
+25369,"Ulcinj","en",2647
+25392,"Severno-backi","en",2648
+25393,"Severno-banatski","en",2648
+25399,"Zapadno-backi","en",2648
+25394,"Srednje-banatski","en",2648
+25375,"Juzno-backi","en",2648
+25376,"Juzno-banatski","en",2648
+25395,"Sremski","en",2648
+25373,"Grad Beograd","en",2648
+25381,"Macvanski","en",2648
+25372,"Branicevski","en",2648
+25387,"Podunavski","en",2648
+25371,"Borski","en",2648
+25377,"Kolubarski","en",2648
+25396,"Sumadijski","en",2648
+25388,"Pomoravski","en",2648
+25382,"Moravicki","en",2648
+25398,"Zajecarski","en",2648
+25400,"Zlatiborski","en",2648
+25391,"Raski","en",2648
+25390,"Rasinski","en",2648
+25383,"Nisavski","en",2648
+25397,"Toplicki","en",2648
+25386,"Pirotski","en",2648
+25379,"Kosovsko-mitrovatski","en",2648
+25374,"Jablanicki","en",2648
+25378,"Kosovski","en",2648
+25385,"Pecki","en",2648
+25384,"Pcinjski","en",2648
+25380,"Kosovsko-pomoravski","en",2648
+25389,"Prizremski","en",2648
+910,"Administrative unit not available","en",33364
+40776,"Administrative unit not available","en",40760
+40777,"Administrative unit not available","en",40762
+3185,"United Kingdom","en",40763
+2755,"Northern","en",40764
+2761,"Nile","en",40764
+2757,"Northern Darfur","en",40764
+40772,"Red Sea","en",40764
+68783,"Kassala","en",40764
+2753,"Khartoum","en",40764
+68784,"Northern Kordofan","en",40764
+68805,"Gadaref","en",40764
+2745,"Al Jazeera","en",40764
+2770,"White Nile","en",40764
+2769,"Western Darfur","en",40764
+2762,"Sennar","en",40764
+2764,"Southern Darfur","en",40764
+68785,"Southern Kordofan","en",40764
+2749,"Blue Nile","en",40764
+37021,"Upper Nile","en",40764
+2766,"Western Bahr El Ghazal","en",40764
+2747,"Unity","en",40764
+2754,"Northern Bahr El Ghazal","en",40764
+2751,"Jonglei","en",40764
+2765,"Warab","en",40764
+2746,"El Buheyrat","en",40764
+2768,"Western Equatoria","en",40764
+2748,"Central Equatoria","en",40764
+2750,"Eastern Equatoria","en",40764
+1180,"Matruh","en",40765
+1159,"Al Buhayrah (behera)","en",40765
+1179,"Kafr-el-sheikh","en",40765
+1163,"Al Iskandariyah (alex.)","en",40765
+1177,"Dumyat (damietta)","en",40765
+1176,"Bur Said (port Said)","en",40765
+1172,"Ash Sharqiyah (sharkia)","en",40765
+1160,"Al Daqahliyah (dakahlia)","en",40765
+1162,"Al Gharbiyah (gharbia)","en",40765
+1170,"As Ismailiyah (ismailia)","en",40765
+1182,"Shamal Sina (north Sinai)","en",40765
+1165,"Al Minufiyah (menoufia)","en",40765
+1168,"Al Qalyubiyah (kalyoubia)","en",40765
+1167,"Al Qahirah (cairo)","en",40765
+1164,"Al Jizah (giza)","en",40765
+1171,"As Suways (suez)","en",40765
+1178,"Janub Sina (south Sinai)","en",40765
+1161,"Al Fayyum (fayoum)","en",40765
+1175,"Beni Suwayf (beni-suef)","en",40765
+1166,"Al Minya (menia)","en",40765
+1169,"Al Wadi/al Jadid","en",40765
+1174,"Asyiut","en",40765
+1183,"Suhaj","en",40765
+1181,"Qina","en",40765
+1173,"Aswan","en",40765
+1158,"Al Bahr/al Ahmar (redsea)","en",40765
+40409,"Administrative unit not available","en",40781
+40422,"Administrative unit not available","en",40781
+40408,"Administrative unit not available","en",40781
+40431,"Administrative unit not available","en",40781
+40423,"Administrative unit not available","en",40781
+40424,"Administrative unit not available","en",40781
+40425,"Administrative unit not available","en",40781
+40426,"Administrative unit not available","en",40781
+40427,"Administrative unit not available","en",40781
+40428,"Administrative unit not available","en",40781
+40429,"Administrative unit not available","en",40781
+40430,"Administrative unit not available","en",40781
+61033,"Administrative unit not available","en",61013
+2401,"Ilha Do Corvo (acores)","en",74578
+2397,"Ilha Das Flores (acores)","en",74578
+2395,"Ilha Da Graciosa (acores)","en",74578
+2404,"Ilha Terceira (acores)","en",74578
+2399,"Ilha De Sao Jorge (acores)","en",74578
+2402,"Ilha Do Faial (acores)","en",74578
+2403,"Ilha Do Pico (acores)","en",74578
+2400,"Ilha De Sao Miguel (acores)","en",74578
+2398,"Ilha De Santa Maria (acores)","en",74578

@@ -1,0 +1,29 @@
+<layer type="shp">
+  <title>Kenya Maize Production</title>
+  <abstract>Generated from KenyaPMaize -- Shapefile Layer 'KenyaPMaize::maize'</abstract>
+  <source country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</source>
+  <provider country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</provider>
+  <region>133</region>
+  <categories />
+  <sharingcode>Public</sharingcode>
+  <featuretype>
+    <title>Kenya Maize Production</title>
+    <abstract>Generated from KenyaPMaize</abstract>
+    <defaultstyle>kenyamaize</defaultstyle>
+    <bbox>
+      <srs>4326</srs>
+      <minx>33.92802</minx>
+      <maxx>40.988873</maxx>
+      <miny>-4.678047</miny>
+      <maxy>3.746963</maxy>
+    </bbox>
+    <layername>maize</layername>
+    <datastore>
+      <name>KenyaPMaize</name>
+      <namespace>fenix</namespace>
+    </datastore>
+  </featuretype>
+  <!--Data dumped from geoserver at:-->
+  <!--REST url: http://ldvapp07.fao.org:8032/geoserverDev-->
+  <!--WMS url: http://ldvapp07.fao.org:8032/geoserverDev/wms?-->
+</layer>

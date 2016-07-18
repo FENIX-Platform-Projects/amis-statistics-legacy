@@ -1,0 +1,46 @@
+<metadata>
+<type>ECKeyMessagesEmergency</type>
+<periodTypeCode>monthly</periodTypeCode>
+<abstractAbstract>Key messages for emergency analysis</abstractAbstract>
+<keywords>Key messages for emergency analysis</keywords>
+<provider country="0">FAO</provider>
+<region>0</region>
+<dateLastUpdate>2009-10-01</dateLastUpdate>
+<sharingCode>Public</sharingCode>
+<source country="0">FAO</source>
+<categories>027</categories>
+<title>Key messages for Haiti Emergency</title>
+<code>null</code>
+<descriptors>
+	<descriptor key="true">
+		<header>Country</header>
+		<contentDescriptor>featureCode</contentDescriptor>
+		<options>
+			<option>
+				<name>Geographic</name>
+				<value>GAUL</value>
+			</option>
+			<option>
+				<name>featureCodeSet</name>
+				<value>gaul0</value>
+			</option>
+		</options>
+	</descriptor>
+		<descriptor key="true">
+		<header>Date</header>
+		<contentDescriptor>date</contentDescriptor>
+	</descriptor>
+	<descriptor>
+		<header>Value</header>
+		<contentDescriptor>quantity</contentDescriptor>
+	</descriptor>
+	<descriptor key="true">
+		<header>Section</header>
+		<contentDescriptor>firstIndicator</contentDescriptor>
+	</descriptor>
+	<descriptor key="false">
+		<header>Text</header>
+		<contentDescriptor>secondIndicator</contentDescriptor>
+	</descriptor>
+</descriptors>
+</metadata>

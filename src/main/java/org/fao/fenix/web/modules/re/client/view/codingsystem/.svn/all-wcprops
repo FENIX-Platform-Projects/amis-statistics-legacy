@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/codingsystem
+END
+CatalogueContextMenuCodingSystem.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/codingsystem/CatalogueContextMenuCodingSystem.java
+END
+SearchParametersCodingSystem.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/fenix/!svn/ver/6412/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/codingsystem/SearchParametersCodingSystem.java
+END
+ResourceExplorerCodingSystem.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/codingsystem/ResourceExplorerCodingSystem.java
+END
+CataloguePagerCodingSystem.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/fenix/!svn/ver/6412/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/codingsystem/CataloguePagerCodingSystem.java
+END
+CatalogueCodingSystem.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/codingsystem/CatalogueCodingSystem.java
+END

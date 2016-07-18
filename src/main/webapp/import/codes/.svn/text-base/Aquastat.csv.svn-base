@@ -1,0 +1,26 @@
+Code, Label
+00, Freshwater withdrawal as % of total renewable water resources (actual)
+01, Rural population
+02, Total population
+03, Urban population
+04, Agricultural water withdrawal
+05, Agricultural water withdrawal as % of total renewable water resources (actual)
+06, Agricultural water withdrawal as % of total water withdrawal
+07, Area equipped for full control irrigation by groundwater
+08, Area equipped for full control irrigation by other sources
+09, Area equipped for full control irrigation by surface water
+10, Area equipped for irrigation as % of cultivated area
+11, Area equipped for irrigation: actually irrigated
+12, Area equipped for irrigation: full control localized irrigation
+13, Area equipped for irrigation: full control sprinkler irrigation
+14, Area equipped for irrigation: full control surface irrigation
+15, Area equipped for irrigation: total
+16, Cultivated area (arable land + permanent crops)
+17, Domestic water withdrawal
+18, Freshwater withdrawal as % of total renewable water resources (actual)
+19, Groundwater withdrawal
+20, Industrial water withdrawal
+21, Irrigation potential
+22, Surface water withdrawal
+23, Total water withdrawal per capita
+24, Water resources: total renewable per capita (actual)

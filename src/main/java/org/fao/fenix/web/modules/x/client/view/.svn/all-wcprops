@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/x/client/view
+END
+XExplorerResultPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/fenix/!svn/ver/6415/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/x/client/view/XExplorerResultPanel.java
+END
+XExplorerMetadataPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/x/client/view/XExplorerMetadataPanel.java
+END
+XExplorerPager.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/fenix/!svn/ver/6415/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/x/client/view/XExplorerPager.java
+END
+XImporterWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/fenix/!svn/ver/6415/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/x/client/view/XImporterWindow.java
+END
+XExplorerDatasetFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/fenix/!svn/ver/6415/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/x/client/view/XExplorerDatasetFilter.java
+END
+XExplorerWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/fenix/!svn/ver/6640/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/x/client/view/XExplorerWindow.java
+END
+XExplorerSearchPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/fenix/!svn/ver/6640/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/x/client/view/XExplorerSearchPanel.java
+END

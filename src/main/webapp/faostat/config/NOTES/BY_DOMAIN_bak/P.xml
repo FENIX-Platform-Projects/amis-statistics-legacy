@@ -1,0 +1,62 @@
+﻿<NOTES type="Prices">
+<NOTE type="Introduction">
+<E>&lt;b&gt;Click in the tree &lt;/b&gt; to access the download page of the &lt;b&gt;agricultural price statistics
+sub-domains.&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+
+The Price domain of FAOSTAT contains annual data on prices received by farmers (called Producer prices) for primary crops, live animals and livestock primary products as collected at the point of initial sale (prices paid at the farm-gate). Data are provided for over 130 countries and for some 200 commodities, representing over 97 percent of the world’s value of gross agricultural production (at 1999-2001 International Dollar Prices).
+</E>
+<F>&lt;b&gt;Click in the tree &lt;/b&gt; to access the download page of the &lt;b&gt;agricultural price statistics
+sub-domains.&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+
+Le domaine des prix de FAOSTAT contient des données annuelles sur les prix effectivement appliqués par les agriculteurs (dits « prix à la production ») pour les produits agricoles de base, les animaux vivants et les produits d'élevage primaire, tels qu’ils sont collectés au stade de la vente initiale (« prix à la sortie de l'exploitation »). Ces données portent sur plus de 130 pays et près de 200 produits de base, qui représentent plus de 97 pour cent de la valeur de la production agricole brute mondiale (aux prix internationaux en USD de 1999-2001).
+</F>
+<S>&lt;b&gt;Click in the tree &lt;/b&gt; to access the download page of the &lt;b&gt;agricultural price statistics
+sub-domains.&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+
+El ámbito de los precios de FAOSTAT contiene datos anuales sobre los precios que reciben los agricultores (llamados “precios al productor") para los cultivos primarios, los animales vivos y los productos de ganadería primaria recopilados en el punto inicial de venta (precios pagados a puerta de finca). Se facilitan datos para más de 130 países y unos 200 productos, que representan más del 97 % del valor mundial de la producción agrícola bruta (a precios internacionales de 1999-2001 en dólares EE.UU.).
+</S>
+</NOTE>
+<NOTE type="Description">
+<TITLE><E>Price Archive</E>
+</TITLE>
+<E>This sub-domain contains historical data from 1966 to 1990, whilst the other sub-domains contain data from 1991 onwards. However, these two data sets may not always be comparable. See 'Please Note' section below.</E>
+</NOTE>
+<NOTE type="Description">
+<TITLE><E>Agricultural Producer Price Indices</E>
+</TITLE>
+<E>The FAO indices of agricultural producer prices measure the average annual change over time in the selling prices received by farmers (prices at the farm-gate or at the first point of sale. The indices are constructed using price data in Standardised Local Currency (SLC). For more information on the &lt;b&gt;Data source&lt;/b&gt;, &lt;b&gt;Coverage&lt;/b&gt;&lt;b&gt;Periodicty&lt;/b&gt; and &lt;b&gt;Methodology&lt;/b&gt; click  &lt;a href='indicies_E.html' target='_blank'&gt;here &lt;/a&gt;. &lt;br/&gt;&lt;br/&gt;
+
+There are two categories of producer price indices available in FAOSTAT:&lt;br/&gt;&lt;br/&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;b&gt;Agriculture Producer Price Index&lt;/b&gt;&lt;/li&gt;
+This is an aggregate index for all primary crops and livestock products.
+For a country, the aggregate would include all primary crops and livestock products that are produced in that country, and for which both production and producer price data are available.
+&lt;br/&gt;&lt;br/&gt;
+&lt;li&gt;&lt;b&gt;Single item indices&lt;/b&gt;&lt;/li&gt;
+Price indices are also available for individual commodities, subject to data availability. Examples of these include: 
+&lt;ol&gt;
+&lt;li&gt;Wheat Producer Price Index&lt;/li&gt;
+&lt;li&gt;Rice, paddy Producer Price Index&lt;/li&gt;
+&lt;li&gt;Maize Producer Price Index&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/ol&gt;
+</E>
+</NOTE>
+<NOTEGROUP type="Please Note">
+ <TITLE><E>Please Note</E></TITLE>
+ <NOTE type="General">
+<E>&lt;b&gt;Price Archive:&lt;/b&gt; In the year 1995 the price series in the FAOSTAT were interrupted for some time due to resource constraints. Due to lack of resources detailed work could not be done for countries which have not provided any basic data and also for the period ending in 1990. Historical data on producer prices being compiled and disseminated earlier are still available under Price Archive. However, for various known reasons the two data-sets may differ in the overlapping year of 1991. FAO Statistics Division would not like to give any explanation for differences in the two sets. Users using a combination of two sets may keep this limitation in mind. 
+</E>
+</NOTE>
+<NOTE type="General">
+<E>&lt;b&gt;Units:&lt;/b&gt; Data is provided in three units: i) Local Currency Units (&lt;b&gt;LCU&lt;/b&gt;); ii) Standard Local Currency  (&lt;b&gt;SLC&lt;/b&gt;); and, iii) US Dollars. Although, both LCU and SLC denote prices in the local currency of a country, there is an important distinction between the two units. Prices in LCU refer to the currency prevailing in a country in the year of data reporting. Thus, if there is (are) currency change(s) in a country during the years for which data is available, the data series will refer to more than one currency. Please see the &lt;b&gt;Local Currency&lt;/b&gt; section under &lt;b&gt;Methods &amp; Standards&lt;/b&gt; for information on currencies. Prices in SLC are standardised to reflect data in one currency only, normally the currency in the most recent year of data reporting. Having price data series in the same currency helps in 'smoothing' data series and is particularly useful for analysing time series data or constructing price indices.
+</E>
+</NOTE>
+
+<NOTE type="General">
+<E>&lt;b&gt;Country Notes:&lt;/b&gt; Whilst countries are requested by FAO to provide prices received by farmers, it is possible that some countries do not collect such prices and may report an alternative set of data, mainly, wholesale prices or unit values compiled for national accounts. 
+</E>
+</NOTE>
+</NOTEGROUP>
+</NOTES>

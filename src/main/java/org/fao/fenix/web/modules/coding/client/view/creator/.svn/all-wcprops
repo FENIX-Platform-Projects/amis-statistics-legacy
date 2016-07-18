@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/fenix/!svn/ver/6750/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/coding/client/view/creator
+END
+DcmtCodingCreatorWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/fenix/!svn/ver/6750/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/coding/client/view/creator/DcmtCodingCreatorWindow.java
+END
+DcmtCodingCreatorMenu.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/fenix/!svn/ver/6750/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/coding/client/view/creator/DcmtCodingCreatorMenu.java
+END
+DcmtCreatorConfirm.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/fenix/!svn/ver/6750/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/coding/client/view/creator/DcmtCreatorConfirm.java
+END
+DcmtCodingCreatorResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/fenix/!svn/ver/6750/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/coding/client/view/creator/DcmtCodingCreatorResult.java
+END
+DcmtCodingCreatorPager.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/fenix/!svn/ver/6406/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/coding/client/view/creator/DcmtCodingCreatorPager.java
+END
+CodingCodeSelector.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/fenix/!svn/ver/6750/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/coding/client/view/creator/CodingCodeSelector.java
+END
+DcmtCodingCreatorAttributesTree.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/fenix/!svn/ver/6750/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/coding/client/view/creator/DcmtCodingCreatorAttributesTree.java
+END
+DcmtCreateNewItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/fenix/!svn/ver/6750/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/coding/client/view/creator/DcmtCreateNewItem.java
+END
+DcmtCodingCreatorElementsTree.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/fenix/!svn/ver/6750/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/coding/client/view/creator/DcmtCodingCreatorElementsTree.java
+END
+DcmtCodingCreatorTableMenu.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/fenix/!svn/ver/6750/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/coding/client/view/creator/DcmtCodingCreatorTableMenu.java
+END

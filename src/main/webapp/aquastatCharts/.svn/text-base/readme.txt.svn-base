@@ -1,0 +1,1 @@
+This folder will contains temporary image files for Aquastat.

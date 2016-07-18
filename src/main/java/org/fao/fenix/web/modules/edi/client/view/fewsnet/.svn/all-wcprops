@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/fenix/!svn/ver/7234/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/edi/client/view/fewsnet
+END
+FEWSNETCodesPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/fenix/!svn/ver/7234/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/edi/client/view/fewsnet/FEWSNETCodesPanel.java
+END
+FEWSNETSettingsPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/fenix/!svn/ver/7234/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/edi/client/view/fewsnet/FEWSNETSettingsPanel.java
+END
+FEWSNETDataPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/fenix/!svn/ver/7234/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/edi/client/view/fewsnet/FEWSNETDataPanel.java
+END
+FEWSNETFENIXPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/fenix/!svn/ver/7234/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/edi/client/view/fewsnet/FEWSNETFENIXPanel.java
+END
+FEWSNETHTTPSettingsPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/fenix/!svn/ver/7234/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/edi/client/view/fewsnet/FEWSNETHTTPSettingsPanel.java
+END
+FEWSNETButtonsPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/fenix/!svn/ver/7234/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/edi/client/view/fewsnet/FEWSNETButtonsPanel.java
+END
+FEWSNETInfoPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/fenix/!svn/ver/7234/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/edi/client/view/fewsnet/FEWSNETInfoPanel.java
+END
+FEWSNETWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/fenix/!svn/ver/7234/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/edi/client/view/fewsnet/FEWSNETWindow.java
+END
+FEWSNETTabPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/fenix/!svn/ver/7234/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/edi/client/view/fewsnet/FEWSNETTabPanel.java
+END

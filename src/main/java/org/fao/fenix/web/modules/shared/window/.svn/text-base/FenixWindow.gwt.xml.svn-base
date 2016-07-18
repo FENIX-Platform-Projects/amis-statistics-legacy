@@ -1,0 +1,36 @@
+<module>
+
+	<!-- Inherit the core Web Toolkit stuff. -->
+	<inherits name='com.google.gwt.user.User' />
+	<inherits name='com.google.gwt.json.JSON' />
+
+	<!-- EXT GWT -->
+	<inherits name='com.extjs.gxt.ui.GXT' />
+
+	<!--  Multi-language -->
+	<inherits name="com.google.gwt.i18n.I18N" />
+
+	<!-- Language, independent of country -->
+	<extend-property name="locale" values="fr" />
+	<extend-property name="locale" values="en" />
+	<extend-property name="locale" values="es" />
+	<extend-property name="locale" values="it" />
+	
+	<!-- FENIX Modules -->
+	<inherits name="org.fao.fenix.web.modules.lang.FenixLang" />
+
+	<!-- Specify the app entry point class. -->
+	<!-- entry-point class='org.fao.fenix.web.modules.core.client.Fenix'/ -->
+
+	<!-- Images, CSS, ... -->
+	<public path="public/css/images" />
+	<public path="public/css/re-images" />
+	<public path="public/img/birt" />
+	<public path="public/xml" />
+	<public path="public/css" />
+	<public path="public" />
+
+	<!-- Inject CSS style -->
+	<stylesheet src="fenix-style.css" />
+
+</module>

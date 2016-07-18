@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/fenix/!svn/ver/10001/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/server/faostat/codingsystem
+END
+FAOSTATGetCodingSystem.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/fenix/!svn/ver/9635/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/server/faostat/codingsystem/FAOSTATGetCodingSystem.java
+END
+FAOSTATCodingSystemQueryBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/fenix/!svn/ver/10001/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/server/faostat/codingsystem/FAOSTATCodingSystemQueryBuilder.java
+END
+FAOSTATSearchQueryBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/fenix/!svn/ver/9246/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/server/faostat/codingsystem/FAOSTATSearchQueryBuilder.java
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/fenix/!svn/ver/10058/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/server
+END
+DataViewerServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/fenix/!svn/ver/9699/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/server/DataViewerServiceImpl.java
+END
+DWFAOSTATQueryBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/fenix/!svn/ver/10001/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/server/DWFAOSTATQueryBuilder.java
+END
+DataServiceUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/fenix/!svn/ver/9450/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/server/DataServiceUtils.java
+END
+MapsServiceUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/fenix/!svn/ver/9693/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/server/MapsServiceUtils.java
+END

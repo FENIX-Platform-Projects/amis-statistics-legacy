@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/fenix/!svn/ver/11209/trunk/fenix-web/src/main/resources/org/fao/fenix/web/modules/amis/public
+END
+pivot.js
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/fenix/!svn/ver/10453/trunk/fenix-web/src/main/resources/org/fao/fenix/web/modules/amis/public/pivot.js
+END
+style.css
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/fenix/!svn/ver/10620/trunk/fenix-web/src/main/resources/org/fao/fenix/web/modules/amis/public/style.css
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/fenix/!svn/ver/11536/trunk/fenix-web/src/main/resources/org/fao/fenix/web/modules/amis/public/index.html
+END
+pivot.html
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/fenix/!svn/ver/10617/trunk/fenix-web/src/main/resources/org/fao/fenix/web/modules/amis/public/pivot.html
+END
+amis-activity-tracking.js
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/fenix/!svn/ver/10519/trunk/fenix-web/src/main/resources/org/fao/fenix/web/modules/amis/public/amis-activity-tracking.js
+END
+date-converter.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/fenix/!svn/ver/10919/trunk/fenix-web/src/main/resources/org/fao/fenix/web/modules/amis/public/date-converter.jsp
+END
+amis-home-style.css
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/fenix/!svn/ver/10519/trunk/fenix-web/src/main/resources/org/fao/fenix/web/modules/amis/public/amis-home-style.css
+END
+amis-style.css
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/fenix/!svn/ver/10164/trunk/fenix-web/src/main/resources/org/fao/fenix/web/modules/amis/public/amis-style.css
+END

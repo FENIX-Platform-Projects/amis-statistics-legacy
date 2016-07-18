@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/fenix/!svn/ver/9454/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/compare
+END
+FAOSTATCompare.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/fenix/!svn/ver/9154/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/compare/FAOSTATCompare.java
+END
+FAOSTATCompareClose.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/fenix/!svn/ver/9165/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/compare/FAOSTATCompareClose.java
+END
+FAOSTATCompareDataButtons.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/fenix/!svn/ver/9454/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/compare/FAOSTATCompareDataButtons.java
+END
+FAOSTATCompareData.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/fenix/!svn/ver/9438/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/compare/FAOSTATCompareData.java
+END
+FAOSTATCompareSecondaryMenu.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/fenix/!svn/ver/8627/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/compare/FAOSTATCompareSecondaryMenu.java
+END
+FAOSTATCompareSelectionPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/fenix/!svn/ver/9454/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/compare/FAOSTATCompareSelectionPanel.java
+END
+FAOSTATCompareDomainPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/fenix/!svn/ver/9454/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/compare/FAOSTATCompareDomainPanel.java
+END

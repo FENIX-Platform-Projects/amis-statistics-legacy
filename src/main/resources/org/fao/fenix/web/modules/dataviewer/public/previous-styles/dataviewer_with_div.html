@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="description" content="FENIX Workstation 3.3.4">
+<meta name="keywords"
+	content="">
+<title>FAOSTAT</title>
+<link rel="stylesheet" type="text/css" href="resources/css/gxt-all.css"> 
+<link REL="SHORTCUT ICON" HREF="favicon.ico">
+<script type='text/javascript' src='dataviewer.nocache.js'></script>
+<link rel="stylesheet" href="map-style.css" type="text/css" />
+<link rel="stylesheet" href="dataviewer-style.css" type="text/css" />
+
+<script type='text/javascript' src='http://www.google.com/jsapi'></script>
+  <script type='text/javascript'>
+    google.load('visualization', '1', {'packages': ['geomap']});
+
+    var countries;
+    var values;
+    var countriesLabel;
+
+    var map_width;
+    var map_height;
+    var map_position;
+
+    function drawMap() {
+
+      var data = new google.visualization.DataTable();
+
+      data.addRows(countries.length);
+
+      data.addColumn('string', 'Country');
+      data.addColumn('number', 'Value');
+      data.addColumn('string', 'Country Label');
+
+      for (var i=0; i<countries.length; i++) {
+//	alert("0:" + countries[i]);
+//	alert("1:" + values[i]);
+	data.setValue(i, 0, countries[i]);
+        data.setValue(i, 1, values[i]);
+ 	data.setValue(i, 2, countriesLabel[i]);
+     }
+
+
+      var options = {};
+      options['dataMode'] = 'regions';
+      options['height'] = map_height;
+      options['width'] = map_width;
+   //   options['showZoomOut'] = true;	
+
+      var container = document.getElementById(map_position);
+      var geomap = new google.visualization.GeoMap(container);
+      geomap.draw(data, options);
+  };
+
+
+ 
+  var _gaq = _gaq || [];
+
+  _gaq.push(['_setAccount', 'UA-20137943-1']);
+
+  _gaq.push(['_trackPageview']);
+
+ 
+
+  (function() {
+
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+
+  })();
+
+  </script>
+
+<script type="text/javascript">
+
+var intersection = "0";
+
+function writePriorities(current, e) {
+
+	//alert("1)write:" + current);
+	//alert("2)write: " + window.intersection);
+	window.intersection = current;
+	//("3)write: " + window.intersection);
+	//var XY = getXY(e); // get mouse XY
+}
+
+function w(){
+	alert("2)ciao: ");
+}
+</script>
+
+<script type="text/javascript">
+(function(){
+  if (window.addEventListener)
+  {
+    window.addEventListener("load", nascondi_loading_screen, false);
+  }else{
+    window.attachEvent("onload", nascondi_loading_screen);
+  }
+})();
+function mostra_loading_screen()
+{
+ // document.getElementById("loading_screen").style.display = 'block';
+}
+function nascondi_loading_screen()
+{
+  //document.getElementById("loading_screen").style.display = 'none';
+}
+</script>
+
+
+
+</head>
+
+
+<body>
+	<div id="wrapper">
+		<div class="header_title_left"> Food and Agriculture Organization of the United Nations - for a world without hunger </div>
+		<div class="header_title_right" id="header_title_right"> English | French | Spanish </div>
+		<br clear="all"/>
+		<div class="BANNER">
+			<div id="LOGOS"><img src="faostat-images/LOGO_FAO.gif" width="45px" height="45px"/> &nbsp <img src="faostat-images/faostat_logo.gif"/></div>
+			<div id="SEARCH"></div>	
+			<div id="MENU"></div>
+		</div>
+		<!--<div class="MENU_CONTAINER">
+			<div id="MENU"></div> 
+		</div>-->
+		<div id="SECONDARY_MENU"></div>	
+	
+		
+		<div id="MAIN_CONTENT"></div>
+
+		<div class="footer"> 
+				<a class="footer_link" href='http://www.fao.org/'>Food and Agriculture Organization</a> :
+				<a class="footer_link" href='http://www.fao.org/'>About FAOStat</a> :
+				<a class="footer_link" href='http://www.foodsec.org/workstation/'>Help</a> :
+				<a class="footer_link" href='http://www.foodsec.org/workstation/'>Contact Us</a>
+		</div>	
+
+	<!--	<div style="float:left; background:blue;  width:300px; height:50px;">asdasd</div>
+		<div style="float:right; background:green;  width:200px; height:50px;">2</div>
+	    	<br clear="all">
+	    	 <div style="background:red; height:50px;"></div> 
+	-->
+	</div>
+
+
+<!--
+<table align="center" class='grey-banner' width="100%" cellspacing='0' border="0">
+	<tr  valign="center">
+	    <td  width="2%"></td>
+	    <td  width='50%' align="left" class="top-links">Food and Agriculture Organization of the United Nations - for a world without hunger</td>
+	    <td  width='30%'></td>
+	    <td  width='5%' align="right" class="top-links">english</td>
+	    <td  width='2%'></td>
+	    <td  width='5%' align="right" class="top-links">fran&#231;ais</td>
+	    <td  width='2%'></tbd>
+	    <td  width='5%' align="right" class="top-links">espa&#241;ol</td>
+	    <td  width='2%' align="right"></td>
+	</tr>
+</table>
+
+<table bgcolor="#3688C2" align="center"  width="100%" cellspacing='7' >
+	<tr>
+		<td  bgcolor="#FFFFFF" rowspan="2" align="left"><img src="images/faostat.gif" alt="some_text"/></td>
+		<td colspan="4" valign="CENTER" width='100%' align='right' ><div id="MAIN_MENU" /></td>
+	</tr>
+  
+	 <tr>
+		<td colspan="2" valign="BOTTOM" align="left"> <div id="BOTTOM_MENU_LEFT"/></td>
+		<td colspan="2" valign="BOTTOM" align="right"><div id="BOTTOM_MENU_RIGHT"/></td>
+	</tr> 
+
+</table>
+
+
+<table bgcolor="#D8DEE6" valign="TOP" align="center" height="500px" width="100%" cellspacing='10'>
+	<tr valign="TOP">
+		<td><div id="MAIN_CONTENT" /></td>
+	</tr>
+</table>
+
+
+
+
+
+
+
+
+
+</table>
+	<table bgcolor="#3688c2" valign="BOTTOM" align="center" width="100%" class="footer">
+		<tr>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+		</tr>
+		<tr>
+			<td align="center" >
+				<a class="footer" href='http://www.fao.org/'>Food and Agriculture Organization</a> :
+				<a class="footer" href='http://www.fao.org/'>About FAOStat</a> :
+				<a class="footer" href='http://www.foodsec.org/workstation/'>Help</a> :
+				<a class="footer" href='http://www.foodsec.org/workstation/'>Contact Us</a>
+			</td>
+		</tr>
+			<tr>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+		</tr>
+	</table>
+
+</div>
+-->
+</body>
+
+</html>

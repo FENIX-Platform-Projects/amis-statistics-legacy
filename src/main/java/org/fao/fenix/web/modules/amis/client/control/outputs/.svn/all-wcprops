@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/fenix/!svn/ver/9710/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/client/control/outputs
+END
+AMISChartController.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/fenix/!svn/ver/12377/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/client/control/outputs/AMISChartController.java
+END
+AMISTableController.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/fenix/!svn/ver/8090/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/client/control/outputs/AMISTableController.java
+END

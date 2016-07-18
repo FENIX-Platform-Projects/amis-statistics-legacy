@@ -1,0 +1,31 @@
+<module>
+
+	<!-- Inherit the core Web Toolkit stuff. -->
+	<inherits name='com.google.gwt.user.User'/>
+    <inherits name='com.google.gwt.json.JSON'/>
+
+	<!-- EXT GWT -->
+	<inherits name='com.extjs.gxt.ui.GXT'/>
+			
+	<!--  Multi-language --> 
+	<inherits name="com.google.gwt.i18n.I18N" />
+
+	<!-- French language, independent of country -->
+	<extend-property name="locale" values="fr" />
+
+	<!-- English language, independent of country -->
+	<extend-property name="locale" values="en" />
+	
+	<!-- Spanish language, independent of country -->
+	<extend-property name="locale" values="es" />
+	
+	<!-- Italian language, independent of country -->
+	<extend-property name="locale" values="it" />
+
+	<!-- Specify the app entry point class. -->
+	<!-- entry-point class='org.fao.fenix.web.modules.ccbs.client.CCBS'/ -->
+
+        <source path="client" />
+        <source path="common" />
+        
+</module>

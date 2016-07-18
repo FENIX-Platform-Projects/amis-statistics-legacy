@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/fenix/!svn/ver/7008/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/tableview
+END
+CatalogueContextMenuTableView.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/fenix/!svn/ver/7008/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/tableview/CatalogueContextMenuTableView.java
+END
+CatalogueTableView.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/fenix/!svn/ver/7008/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/tableview/CatalogueTableView.java
+END
+CataloguePagerTableView.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/fenix/!svn/ver/7008/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/tableview/CataloguePagerTableView.java
+END
+ResourceExplorerTableView.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/fenix/!svn/ver/7008/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/tableview/ResourceExplorerTableView.java
+END
+SearchParametersTableView.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/fenix/!svn/ver/7008/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/tableview/SearchParametersTableView.java
+END

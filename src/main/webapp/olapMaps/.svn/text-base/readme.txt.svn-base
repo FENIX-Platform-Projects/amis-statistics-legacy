@@ -1,0 +1,1 @@
+This file is needed by Maven to create this folder in the deploy phase. This folder will contains the mapse generated ny the OLAP Tool.

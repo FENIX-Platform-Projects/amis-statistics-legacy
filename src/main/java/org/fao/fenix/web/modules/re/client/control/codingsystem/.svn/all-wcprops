@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/control/codingsystem
+END
+CataloguePagerCodingSystemController.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/fenix/!svn/ver/6412/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/control/codingsystem/CataloguePagerCodingSystemController.java
+END
+CatalogueCodingSystemController.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/control/codingsystem/CatalogueCodingSystemController.java
+END
+CatalogueContextMenuCodingSystemController.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/control/codingsystem/CatalogueContextMenuCodingSystemController.java
+END

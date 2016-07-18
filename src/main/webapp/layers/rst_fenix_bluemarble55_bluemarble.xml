@@ -1,0 +1,30 @@
+<layer type="rst">
+  <title>World</title>
+  <abstract>Full world image -- Raster Layer 'bluemarble55::bluemarble'</abstract>
+  <source country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</source>
+  <provider country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</provider>
+  <region />
+  <categories />
+  <sharingcode>Public</sharingcode>
+  <code>layer_baseraster</code>
+  <coverage>
+    <layername>bluemarble</layername>
+    <bbox>
+      <srs>EPSG:4326</srs>
+      <minx>-180.0</minx>
+      <maxx>-89.9999999999971</maxx>
+      <miny>179.9999999999942</miny>
+      <maxy>90.0</maxy>
+    </bbox>
+    <defaultstyle>raster</defaultstyle>
+    <label>World</label>
+    <description>Full world image</description>
+    <coveragestore>
+      <namespace>fenix</namespace>
+      <name>bluemarble55</name>
+    </coveragestore>
+  </coverage>
+  <!--Data dumped from geoserver at:-->
+  <!--REST url: http://ldvapp07.fao.org:8032/geoserverDev-->
+  <!--WMS url: http://ldvapp07.fao.org:8032/geoserverDev/wms?-->
+</layer>

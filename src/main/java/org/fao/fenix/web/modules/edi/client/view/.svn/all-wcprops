@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/fenix/!svn/ver/7234/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/edi/client/view
+END
+EDIFENIXPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/fenix/!svn/ver/7191/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/edi/client/view/EDIFENIXPanel.java
+END
+EDIHTTPSettingsPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/fenix/!svn/ver/7234/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/edi/client/view/EDIHTTPSettingsPanel.java
+END
+EDIButtonsPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/fenix/!svn/ver/7191/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/edi/client/view/EDIButtonsPanel.java
+END
+EDIDatabaseSettingsPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/fenix/!svn/ver/7185/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/edi/client/view/EDIDatabaseSettingsPanel.java
+END
+EDIPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/fenix/!svn/ver/7174/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/edi/client/view/EDIPanel.java
+END
+EDIWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/fenix/!svn/ver/7234/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/edi/client/view/EDIWindow.java
+END
+EDITabPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/fenix/!svn/ver/7174/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/edi/client/view/EDITabPanel.java
+END
+EDISettingsPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/fenix/!svn/ver/7234/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/edi/client/view/EDISettingsPanel.java
+END
+EDIParameters.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/fenix/!svn/ver/7174/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/edi/client/view/EDIParameters.java
+END
+EDIFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/fenix/!svn/ver/7174/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/edi/client/view/EDIFilter.java
+END

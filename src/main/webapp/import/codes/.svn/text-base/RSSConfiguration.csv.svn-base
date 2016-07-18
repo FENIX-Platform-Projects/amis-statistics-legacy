@@ -1,0 +1,8 @@
+Code,Label,LangCode,Description
+00D, "FAO-HQ - Dataset", "EN", "Channel Title"
+00T, "FAO-HQ - Text", "EN", "Channel Title"
+00V, "FAO-HQ - Vector", "EN", "Channel Title"
+00R, "FAO-HQ - Raster", "EN", "Channel Title"
+01, "Food security and Early warning Network and Information eXchange", "EN", "Channel Description"
+02, "http://lprapp08.fao.org:8080/fenix-web/", "EN", "Channel Link"
+03, "http://ldvapp07.fao.org:8031/FenixUserWiki/images/6/67/Giews.jpg", "EN", "Image Link"

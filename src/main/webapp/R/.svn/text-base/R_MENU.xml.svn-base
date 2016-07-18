@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	@title has to be a valid method name of the RLang interface for I18N support
+	@command has to be a valid entry of the RFunction enumeration 
+ -->
+<menu>
+	<firstLevel title="descriptiveStatistics" command="">
+<!--		<secondLevel title="variationCoefficient" command="variationCoefficient" />-->
+		<secondLevel title="correlation" command="correlation" />
+<!--		<secondLevel title="max" command="max" />-->
+		<secondLevel title="mean" command="mean" />
+<!--		<secondLevel title="median" command="median" />-->
+<!--		<secondLevel title="min" command="min" />-->
+		<secondLevel title="standardDeviation" command="standardDeviation" />
+		<secondLevel title="summary" command="summary" />
+	</firstLevel>
+<!--	<firstLevel title="indices" command="">-->
+<!--		<secondLevel title="giniIndex" command="giniIndex" />-->
+<!--	</firstLevel>-->
+	<firstLevel title="tests" command="">
+		<secondLevel title="correlationTest" command="correlationTest" />
+	</firstLevel>
+</menu>

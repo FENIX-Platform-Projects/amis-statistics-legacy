@@ -1,0 +1,73 @@
+<metadata>
+<type>RetailPriceDataset</type>
+<periodTypeCode>daily</periodTypeCode>
+<abstractAbstract>ghdsfdsfs, ds
+sdgsfs</abstractAbstract>
+<keywords>retail, price</keywords>
+<provider country="23"></provider>
+<region>23</region>
+<startDate>2007-01-01</startDate>
+<endDate>2009-06-15</endDate>
+<dateLastUpdate>2009-06-15</dateLastUpdate>
+<sharingCode>PublicAndDownload</sharingCode>
+<source country="23">MISM</source>
+<categories>023</categories>
+<title>Daily Retail price of Coarse rice, Wheat, Paddy and Atta</title>
+<code>null</code>
+<descriptors>
+	<descriptor key="true">
+		<header>Days</header>
+		<contentDescriptor>date</contentDescriptor>
+	</descriptor>
+	<descriptor key="true">
+		<header>Value</header>
+		<contentDescriptor>quantity</contentDescriptor>
+	</descriptor>
+	<descriptor key="true">
+		<header>Measurement Unit</header>
+		<contentDescriptor>measurementUnit</contentDescriptor>
+	</descriptor>
+	<descriptor key="true">
+		<header>Geographic Area</header>
+		<contentDescriptor>featureCode</contentDescriptor>
+		<options>
+			<option>
+				<name>Geographic</name>
+				<value>GAULBangladesh</value>
+				<region>23</region>
+			</option>
+		</options>
+	</descriptor>
+	<descriptor key="true">
+		<header>Commodity</header>
+		<contentDescriptor>commodityCode</contentDescriptor>
+		<options>
+			<option>
+				<name>Commodity</name>
+				<value>HS</value>
+			</option>
+		</options>
+	</descriptor>
+	<descriptor key="true">
+		<header>Market Label</header>
+		<contentDescriptor>firstIndicator</contentDescriptor>
+		<options>
+			<option>
+				<name>Indicator</name>
+				<value>MarketLabel</value>
+			</option>
+		</options>
+	</descriptor>
+	<descriptor key="true">
+		<header>Commodity Origin</header>
+		<contentDescriptor>secondIndicator</contentDescriptor>
+		<options>
+			<option>
+				<name>Indicator</name>
+				<value>CommodityOriginCode</value>
+				<region>23</region>
+			</option>
+		</options>
+	</descriptor>
+</descriptors>
+</metadata>

@@ -1,0 +1,78 @@
+<VIEW type="Major commodities importers">
+
+	<TITLE>
+		<E>Major commodities importers</E>
+		<F>Principaux importateurs</F>
+		<S>Principales importadores</S>
+	</TITLE>
+	 <FILTERS>
+
+		<FILTER width="80px" type="CODING_SYSTEM">
+			<FILTERTYPE>YEARS</FILTERTYPE>
+			<DOMAINS>
+				<DOMAIN label="TIN">TP</DOMAIN>	
+			</DOMAINS>
+		</FILTER>
+	</FILTERS> 
+
+	<RESOURCES>
+		<DEFAULT>
+
+			<RESOURCE>	
+				<RESOURCETYPE>TABLE</RESOURCETYPE>
+				<OUTPUTTYPE>HTML</OUTPUTTYPE>
+				<TITLE>
+					<E>Top 20 Importers</E>
+					<S>20 principales Exportadores</S>
+					<F>Top 20 Importateurs</F>
+				</TITLE>
+				<SIZE>
+					<WIDTH>550</WIDTH>
+					<HEIGHT>250</HEIGHT>
+				</SIZE>
+
+				<BASEQUERY>
+					
+					<SELECTS>
+							<SELECT aliasE='Area' aliasS='Región' aliasF='Région' lang="true">A.AreaName</SELECT>	
+							<SELECT aliasE='Commodity' aliasS='Producto' aliasF='Produit' lang="true">I.ItemName</SELECT>	
+							<SELECT aliasE='Value (1000 $)' aliasS='Valor (1000$)' aliasF='Valeur (1000$)'>CAST(D.Value as numeric(38,0))</SELECT>
+							<SELECT aliasE='Flag' aliasS='Símbolo' aliasF='Symbole'>D.Flag</SELECT>
+					</SELECTS>
+					<TABLES>		       
+							<FROM>Data</FROM>
+							<FROM>Element</FROM>
+							<FROM>Area</FROM>
+							<FROM>Item</FROM>
+					</TABLES>
+					<WHERE>
+						    	<DOMAINS>
+								<DOMAIN label="TIN">TP</DOMAIN>
+							</DOMAINS>
+							<ELEMENTSLIST>
+								<ELEMENTLIST label='Import value'>2620</ELEMENTLIST>
+							</ELEMENTSLIST>
+							<ITEMSLEVEL>
+								<ITEMLEVEL>5</ITEMLEVEL>
+							</ITEMSLEVEL>
+							<AREASBLACKLIST>
+								<AREABLACKLIST>261</AREABLACKLIST>
+								<AREABLACKLIST>266</AREABLACKLIST>
+								<AREABLACKLIST>268</AREABLACKLIST>
+							</AREASBLACKLIST>
+							<YEARS>
+								<YEAR>2009</YEAR>
+							</YEARS>
+					</WHERE>
+
+					<SORT type="DESC">
+						<FIELD>D.Value</FIELD>
+					</SORT>
+			
+					<LIMIT field="D.Value">20</LIMIT>
+					
+				</BASEQUERY>					
+			</RESOURCE>
+		</DEFAULT>	
+	</RESOURCES>
+</VIEW>

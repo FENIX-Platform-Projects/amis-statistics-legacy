@@ -1,0 +1,175 @@
+<metadata>
+	<type>FSATMISDataset</type>
+	<title>FSATMIS Pakistan</title>
+	<abstractAbstract>Budget Monitoring</abstractAbstract>
+	<keywords>budget, monitoring</keywords>
+	<provider country="0" contact="Info-GIEWS-Workstation@fao.org">FAO TC_PAK_2X</provider>
+	<source country="0" contact="Info-GIEWS-Workstation@fao.org">FAO TC_PAK_2X</source>
+	<region>0</region>
+	<startDate>2009-01-01</startDate>
+	<endDate>2009-12-31</endDate>
+	<dateLastUpdate>2009-09-15</dateLastUpdate>
+	<periodTypeCode>monthly</periodTypeCode>
+	<sharingCode>PublicAndDownload</sharingCode>
+	<refGeoUnit>Country Boundary</refGeoUnit>
+	<layerCodeSet>gaul0</layerCodeSet>
+	<precision>0</precision>
+	<categories>005</categories>
+	<code>budget</code>
+	<descriptors>
+		<descriptor key="true">
+			<header>Project Name</header>
+			<contentDescriptor>text</contentDescriptor>
+		</descriptor>
+		<descriptor key="true">
+			<header>Project Symbol</header>
+			<contentDescriptor>text</contentDescriptor>
+		</descriptor>
+		<descriptor key="true">
+			<header>Country</header>
+			<contentDescriptor>text</contentDescriptor>
+			<options>
+				<option>
+					<name>Geographic</name>
+					<value>GAUL0</value>
+				</option>
+				<option>
+					<name>featureCodeSet</name>
+					<value>gaul0</value>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="true">
+			<header>Province</header>
+			<contentDescriptor>text</contentDescriptor>
+			<options>
+				<option>
+					<name>Geographic</name>
+					<value>GAUL1</value>
+				</option>
+				<option>
+					<name>featureCodeSet</name>
+					<value>gaul1</value>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="true">
+			<header>Location</header>
+			<contentDescriptor>text</contentDescriptor>
+		</descriptor>
+		<descriptor key="true">
+			<header>Donor Type</header>
+			<contentDescriptor>text</contentDescriptor>
+			<options>
+				<option>
+					<name>Indicator</name>
+					<value>Donor Type</value>
+					<region>0</region>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="true">
+			<header>Donor</header>
+			<contentDescriptor>text</contentDescriptor>
+			<options>
+				<option>
+					<name>Indicator</name>
+					<value>Donor-Implementing</value>
+				</option>
+			</options>
+		</descriptor>
+				<descriptor key="true">
+			<header>Project Status</header>
+			<contentDescriptor>text</contentDescriptor>
+			<options>
+				<option>
+					<name>Indicator</name>
+					<value>Project Status</value>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="true">
+			<header>From Date</header>
+			<contentDescriptor>date</contentDescriptor>
+		</descriptor>
+		<descriptor key="true">
+			<header>To Date</header>
+			<contentDescriptor>date</contentDescriptor>
+		</descriptor>
+		<descriptor>
+			<header>Budget</header>
+			<contentDescriptor>quantity</contentDescriptor>
+		</descriptor>
+		
+		<descriptor key="true">
+			<header>Currency</header>
+			<contentDescriptor>text</contentDescriptor>
+		</descriptor>
+		<descriptor key="true">
+			<header>Priority Sector</header>
+			<contentDescriptor>text</contentDescriptor>
+			<options>
+				<option>
+					<name>Indicator</name>
+					<value>DAC</value>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="true">
+			<header>Priority Description</header>
+			<contentDescriptor>text</contentDescriptor>
+			<options>
+				<option>
+					<name>Indicator</name>
+					<value>DAC</value>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="true">
+			<header>Food Security</header>
+			<contentDescriptor>text</contentDescriptor>
+			<options>
+				<option>
+					<name>Indicator</name>
+					<value>Food Security</value>
+					<region>0</region>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="true">
+			<header>Budget Type</header>
+			<contentDescriptor>text</contentDescriptor>
+			<options>
+				<option>
+					<name>Indicator</name>
+					<value>BudgetType</value>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="true">
+			<header>Implementing Agency Type</header>
+			<contentDescriptor>text</contentDescriptor>
+			<options>
+				<option>
+					<name>Indicator</name>
+					<value>Donor Type</value>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="true">
+			<header>Implementing Agency</header>
+			<contentDescriptor>text</contentDescriptor>
+			<options>
+				<option>
+					<name>Indicator</name>
+					<value>Donor-Implementing</value>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="true">
+			<header>Notes</header>
+			<contentDescriptor>text</contentDescriptor>
+		</descriptor>
+					
+	</descriptors>
+</metadata>

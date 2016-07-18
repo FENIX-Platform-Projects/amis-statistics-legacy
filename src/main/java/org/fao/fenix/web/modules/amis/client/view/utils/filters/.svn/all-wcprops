@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/fenix/!svn/ver/8678/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/client/view/utils/filters
+END
+AMISFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/fenix/!svn/ver/8678/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/client/view/utils/filters/AMISFilter.java
+END
+AMISMultiselectionItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/fenix/!svn/ver/8092/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/client/view/utils/filters/AMISMultiselectionItem.java
+END
+AMISAreasFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/fenix/!svn/ver/8396/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/client/view/utils/filters/AMISAreasFilter.java
+END
+AMISMultiselectionSelectedItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/fenix/!svn/ver/8092/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/client/view/utils/filters/AMISMultiselectionSelectedItem.java
+END
+AMISMultiselectionFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/fenix/!svn/ver/8396/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/client/view/utils/filters/AMISMultiselectionFilter.java
+END

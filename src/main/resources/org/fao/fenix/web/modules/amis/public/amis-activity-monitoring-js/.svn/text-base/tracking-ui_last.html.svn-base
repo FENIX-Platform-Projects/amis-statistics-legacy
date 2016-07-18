@@ -1,0 +1,105 @@
+<table style="width: 1010px; padding-bottom:20px">
+	<tr>
+		<td>
+			<div>
+				<table>
+				  <tr><td class="tracking_intro_text">User interactions with the AMIS Statistics website are tracked using <a href="http://www.google.com/analytics/" target="_blank"> Google Analytics</a>. This section displays the Analytics data recorded each time a registered member carries out one of the following activities: "Comparing & Viewing", "Downloading" and "Modifying" Data. </td></tr>
+				 </table>
+			</div>
+
+		</td>
+	</tr>
+</table>
+
+<table style="width: 1010px">
+	<tr>
+		<td>
+			<div>
+				<table>
+					<tr>
+						<td valign="top">
+							<div id="displayLabel" class="tracking_text">Track Activities by:</div>
+							<div id="displayActivitySummaryRadioButton">Activity Type</div>
+    						<div id='displayCountrySummaryRadioButton'>Registered Members</div>
+    					</td>
+    					<td>
+    						<table style="border: 1px solid #99BBE8; padding:8px" >
+								<tr>
+									<td valign="top">
+										<div id="membersLabel" class="tracking_tab">Registered Members</div>
+										<div id="membersList"></div>
+									</td>
+									<td valign="top">
+										<div id="activitiesLabel" class="tracking_tab">Type of Activities</div>
+										<div id="activitiesList"></div>
+									</td>
+									<td valign="top" ><div class="tracking_tab_label" id="startDateLabel">From</div>
+									</td>
+									<td valign="top" ><div style="width: 250px;" id="startDate"></div></td>
+									<td valign="top" >
+										<div class="tracking_tab_label" id="endDateLabel">To</div>
+									</td>
+									<td valign="top" ><div style="width:200px;" id="endDate"></div></td>
+								</tr>
+								<tr>
+									<td colspan="5">&nbsp;</td>
+									<td valign="bottom">
+
+							       		<div id="submitButton">
+    							     		<div class="show_data_button">&nbsp; &nbsp; &nbsp; Show Tracking Data</div>
+    							     	</div>
+						      		</td>
+								</tr>
+							</table>
+    					</td>
+
+        			   </tr>
+				</table>
+			</div>
+		</td>
+	</tr>
+</table>
+
+<table style="width: 600px; height:400px; padding-top:20px">
+	<tr>
+		<td>
+			<div>
+				<table>
+				  		<tr>
+					 	<td>
+					 		 <div id="analytics-bar-chart-top-panel" style="width:600px">
+					 		 	 <div id="analytics-bar-chart-title" style="width:600px"></div>
+					 		 </div>
+					 		 <div id="analytics-bar-chart"  style="height:400px"></div>
+						</td>
+					  </tr>
+				 </table>
+			</div>
+
+		</td>
+	</tr>
+</table>
+
+<table style="width:1000px; height:450px; padding-top:20px">
+	<tr>
+		<td>
+			<div>
+				<table>
+				  		<tr>
+					 	<td>
+					 		 <div id="analytics-time-chart-top-panel" style="width:1000px">
+					 		 	 <div id="analytics-time-chart-title" style="width:750px;float:left;"></div>
+					 		 	 <div id="analytics-time-chart-options" style="width:200px;float:right">
+            						<button style="padding:4px 16px;" id="day">Daily</button>
+            						<button style="padding:4px 16px;" id="month">Monthly</button>
+        						</div>
+					 		 </div>
+					 		 <div id="analytics-time-chart" style="height:400px"></div>
+						</td>
+					  </tr>
+				 </table>
+			</div>
+
+		</td>
+	</tr>
+</table>

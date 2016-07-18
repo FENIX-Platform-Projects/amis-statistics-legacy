@@ -1,0 +1,29 @@
+<layer type="shp">
+  <title>Kenya Barley Production</title>
+  <abstract>Generated from KenyaPBarley -- Shapefile Layer 'KenyaPBarley::barley'</abstract>
+  <source country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</source>
+  <provider country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</provider>
+  <region>133</region>
+  <categories />
+  <sharingcode>Public</sharingcode>
+  <featuretype>
+    <title>Kenya Barley Production</title>
+    <abstract>Generated from KenyaPBarley</abstract>
+    <defaultstyle>kenyabarley</defaultstyle>
+    <bbox>
+      <srs>4326</srs>
+      <minx>35.035925</minx>
+      <maxx>36.005059</maxx>
+      <miny>-1.400785</miny>
+      <maxy>0.663443</maxy>
+    </bbox>
+    <layername>barley</layername>
+    <datastore>
+      <name>KenyaPBarley</name>
+      <namespace>fenix</namespace>
+    </datastore>
+  </featuretype>
+  <!--Data dumped from geoserver at:-->
+  <!--REST url: http://ldvapp07.fao.org:8032/geoserverDev-->
+  <!--WMS url: http://ldvapp07.fao.org:8032/geoserverDev/wms?-->
+</layer>

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/fenix/!svn/ver/9060/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/server/xml
+END
+AMISXMLParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/fenix/!svn/ver/8679/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/server/xml/AMISXMLParser.java
+END
+XMLUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/fenix/!svn/ver/9060/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/amis/server/xml/XMLUtils.java
+END

@@ -1,0 +1,12 @@
+package org.fao.fenix.web.modules.edi.common.vo;
+
+public enum EDISettings {
+
+	WORKSTATION, FAOSTAT, ESOKO, FEWSNET,
+	JDBC, HTTP, WEBSERVICE,
+	DB_URL, DB_SERVER_NAME, DB_USERNAME, DB_PASSWORD, DB_PORT_NUMBER, DB_NAME,
+	ECONOMIC, FORESTRY, PRICES, PRODUCTION, RESOURCES, SUA, TRADE,
+	POSTGRESQL, MYSQL, SQLSERVER2000,
+	Data, Area, Item, Element, Flag, Domain, DomainItem
+	
+}

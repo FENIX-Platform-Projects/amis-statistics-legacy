@@ -1,0 +1,29 @@
+<layer type="shp">
+  <title>Kenya Major Towns</title>
+  <abstract>Generated from KenyaTowns -- Shapefile Layer 'KenyaTowns::kenya_major_towns'</abstract>
+  <source country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</source>
+  <provider country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</provider>
+  <region>133</region>
+  <categories />
+  <sharingcode>Public</sharingcode>
+  <featuretype>
+    <title>Kenia Major Towns</title>
+    <abstract>Generated from KenyaTowns</abstract>
+    <defaultstyle>point</defaultstyle>
+    <bbox>
+      <srs>4326</srs>
+      <minx>34.07014846801758</minx>
+      <maxx>41.84012222290039</maxx>
+      <miny>-4.182496547698975</miny>
+      <maxy>4.265939235687256</maxy>
+    </bbox>
+    <layername>kenya_major_towns</layername>
+    <datastore>
+      <name>KenyaTowns</name>
+      <namespace>fenix</namespace>
+    </datastore>
+  </featuretype>
+  <!--Data dumped from geoserver at:-->
+  <!--REST url: http://ldvapp07.fao.org:8032/geoserverDev-->
+  <!--WMS url: http://ldvapp07.fao.org:8032/geoserverDev/wms?-->
+</layer>

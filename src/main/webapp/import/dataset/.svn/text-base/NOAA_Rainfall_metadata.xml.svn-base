@@ -1,0 +1,44 @@
+<metadata>
+	<type>Rainfall</type>
+	<title>Rainfall</title>
+	<abstractAbstract>Rainfall</abstractAbstract>
+	<keywords>rainfall</keywords>
+	<provider country="0" contact="Info-GIEWS-Workstation@fao.org">FAO GIEWS</provider>
+	<source country="0" contact="Info-GIEWS-Workstation@fao.org">FAO-NOAA</source>
+	<region>0</region>
+	<startDate>2009-01-01</startDate>
+	<endDate>2009-01-31</endDate>
+	<dateLastUpdate>2009-01-29</dateLastUpdate>
+	<periodTypeCode>decade</periodTypeCode>
+	<sharingCode>PublicAndDownload</sharingCode>
+	<refGeoUnit>Country Boundary</refGeoUnit>
+	<layerCodeSet>gaul0</layerCodeSet>
+	<precision>0</precision>
+	<categories>004</categories>
+	<code>FAO-NOAA-GAUL1</code>
+	<descriptors>
+		<descriptor key="true">
+			<header>FeatureCode</header>
+			<contentDescriptor>featureCode</contentDescriptor>
+			<options>
+				<option>
+					<name>Geographic</name>
+					<value>GAUL</value>
+					<region>0</region>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="true">
+			<header>Date</header>
+			<contentDescriptor>date</contentDescriptor>
+		</descriptor>
+		<descriptor>
+			<header>Value</header>
+			<contentDescriptor>quantity</contentDescriptor>
+		</descriptor>
+		<descriptor key="true">
+			<header>MeasurementUnit</header>
+			<contentDescriptor>measurementUnit</contentDescriptor>
+		</descriptor>
+	</descriptors>
+</metadata>

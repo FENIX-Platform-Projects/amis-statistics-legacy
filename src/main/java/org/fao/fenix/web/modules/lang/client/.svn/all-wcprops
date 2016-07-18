@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/fenix/!svn/ver/9029/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/lang/client
+END
+CNSALang_EN.properties
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/fenix/!svn/ver/6680/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/lang/client/CNSALang_EN.properties
+END
+ECLang_FR.properties
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/fenix/!svn/ver/6410/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/lang/client/ECLang_FR.properties
+END
+MenuLang_fr.properties
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/fenix/!svn/ver/6613/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/lang/client/MenuLang_fr.properties
+END
+EsokoLang_ar.properties
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/fenix/!svn/ver/6594/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/lang/client/EsokoLang_ar.properties
+END
+FENIXMultilanguage_ar.properties
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/fenix/!svn/ver/7107/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/lang/client/FENIXMultilanguage_ar.properties
+END
+CNSALangEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/fenix/!svn/ver/6680/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/lang/client/CNSALangEntry.java
+END
+HaitiLang_FR.properties
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/fenix/!svn/ver/6698/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/lang/client/HaitiLang_FR.properties
+END
+CNSALang.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/lang/client/CNSALang.java
+END
+FENIXMultilanguage_fr.properties
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/fenix/!svn/ver/7234/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/lang/client/FENIXMultilanguage_fr.properties
+END
+DcmtLang_fr.properties
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/fenix/!svn/ver/6410/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/lang/client/DcmtLang_fr.properties
+END
+CNSALang_FR.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/fenix/!svn/ver/6680/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/lang/client/CNSALang_FR.java
+END
+FENIXMultilanguage.properties
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/fenix/!svn/ver/9562/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/lang/client/FENIXMultilanguage.properties
+END
+BabelFish.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/fenix/!svn/ver/6743/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/lang/client/BabelFish.java
+END
+CNSALang_EN.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/fenix/!svn/ver/6680/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/lang/client/CNSALang_EN.java
+END
+TextLang_es.properties
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/fenix/!svn/ver/6410/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/lang/client/TextLang_es.properties
+END
+HaitiLangEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/fenix/!svn/ver/6680/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/lang/client/HaitiLangEntry.java
+END
+TextLang_fr.properties
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/fenix/!svn/ver/6410/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/lang/client/TextLang_fr.properties
+END
+HaitiLang_FR.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/fenix/!svn/ver/6410/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/lang/client/HaitiLang_FR.java
+END
+HaitiLang_EN.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/fenix/!svn/ver/6410/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/lang/client/HaitiLang_EN.java
+END
+HaitiLang.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/lang/client/HaitiLang.java
+END
+FENIXMultilanguage.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/fenix/!svn/ver/9029/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/lang/client/FENIXMultilanguage.java
+END
+CNSALang_FR.properties
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/fenix/!svn/ver/7047/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/lang/client/CNSALang_FR.properties
+END

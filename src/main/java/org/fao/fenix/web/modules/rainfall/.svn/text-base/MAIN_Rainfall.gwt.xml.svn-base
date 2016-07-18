@@ -1,0 +1,81 @@
+<module>
+
+	<!-- Inherit the core Web Toolkit stuff. -->
+	<inherits name='com.google.gwt.user.User' />
+	<inherits name='com.google.gwt.json.JSON' />
+
+	<!-- EXT GWT -->
+	<inherits name='com.extjs.gxt.ui.GXT' />
+	<inherits name='com.extjs.gxt.charts.Chart' />
+
+	<!--  Multi-language -->
+	<inherits name="com.google.gwt.i18n.I18N" />
+
+	<!-- Languages, independent of country -->
+	<extend-property name="locale" values="en" />
+
+	<!-- FENIX Modules -->
+	<inherits name="org.fao.fenix.web.modules.birt.BIRT" />
+	<inherits name="org.fao.fenix.web.modules.ipc.IPC" />
+	<inherits name="org.fao.fenix.web.modules.fpi.FPI" />
+	<inherits name="org.fao.fenix.web.modules.communication.Communication" />
+	<inherits name="org.fao.fenix.web.modules.map.Map" />
+	<inherits name="org.fao.fenix.web.modules.re.RE" />
+	<inherits name="org.fao.fenix.web.modules.table.Table" />
+	<inherits name="org.fao.fenix.web.modules.udtable.UDTable" />
+	<inherits name="org.fao.fenix.web.modules.text.Text" />
+	<inherits name="org.fao.fenix.web.modules.pm.PM" />
+	<inherits name="org.fao.fenix.web.modules.core.Fenix" />
+	<inherits name="org.fao.fenix.web.modules.haiti.Haiti" />
+	<inherits name="org.fao.fenix.web.modules.metadataeditor.MetadataEditor" />
+	<inherits name="org.fao.fenix.web.modules.olap.OLAP" />
+	<inherits name="org.fao.fenix.web.modules.datasetupload.DatasetUploader" />
+	<inherits name="org.fao.fenix.web.modules.shapefileupload.ShapeFileUploader" />
+	<inherits name="org.fao.fenix.web.modules.geotiffupload.GeotiffUploader" />
+	<inherits name="org.fao.fenix.web.modules.map.client.view.sldeditor.ExternalGraphicFileUploader" />
+	<inherits name="org.fao.fenix.web.modules.cfs.CFS" />
+	<inherits name="org.fao.fenix.web.modules.giews.GIEWS" />
+	<inherits name="org.fao.fenix.web.modules.console.Console" />
+	<inherits name="org.fao.fenix.web.modules.coding.Coding" />
+	<inherits name="org.fao.fenix.web.modules.codingupload.CodingUploader" />
+	<inherits name="org.fao.fenix.web.modules.codingmappingupload.CodingMappingUploader" />
+	<inherits name="org.fao.fenix.web.modules.codinghierarchyupload.CodingHierarchyUploader" />
+	<inherits name="org.fao.fenix.web.modules.fsatmis.FSATMIS" />
+	<inherits name="org.fao.fenix.web.modules.ccbs.CCBS" />
+	<inherits name="org.fao.fenix.web.modules.aquastat.Aquastat" />
+	<inherits name="org.fao.fenix.web.modules.ofcchart.OfcChart" />
+	<inherits name="org.fao.fenix.web.modules.bangladesh.Bangladesh" />
+	<inherits name="org.fao.fenix.web.modules.ec.EC" />
+	<inherits name="org.fao.fenix.web.modules.x.X" />
+	<inherits name="org.fao.fenix.web.modules.qb.QueryBuilder" />
+	<inherits name="org.fao.fenix.web.modules.excelimporter.ExcelImporter" />
+	<inherits name="org.fao.fenix.web.modules.latex.Latex" />
+
+	<!-- External FENIX JARs -->
+	<inherits name="org.fao.fenix.web.modules.lang.FenixLang" />
+	<inherits name="org.fao.fenix.web.modules.shared.window.FenixWindow" />
+	<inherits name='com.rednels.ofcgwt.OFCGWT' />
+
+	<!-- Specify the app entry pnameoint class. -->
+	<entry-point class='org.fao.fenix.web.modules.rainfall.client.Rainfall' />
+
+	<set-property name="gwt.suppressNonStaticFinalFieldWarnings" value="true" />
+
+	<!-- Images, CSS, ... -->
+	<public path="public" />
+	<source path="client" />
+	<source path="common" />
+
+	<!-- Inject CSS style -->
+	<stylesheet src="fenix-rainfall.css" />
+
+	<!--
+		Next 2 lines will speedup GWT compilation, but platform compatibility
+		will be reduced. Feel free to uncomment and edit them in a development
+		environment, but make sure to not commit such changes.
+	-->
+	<set-property name="user.agent" value="ie6,gecko,gecko1_8" />
+<!--	<set-property name="user.agent" value="gecko1_8" />-->
+	<extend-property name="locale" values="en_UK" />
+
+</module>

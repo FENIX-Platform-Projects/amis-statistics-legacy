@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>About ADAM</title>
+<style>
+
+body {
+     margin:20px;
+
+	font-family: verdana;
+	background: #CCCCCC;
+	color: #0F5A99;
+}
+
+
+A:link {text-decoration: none; color: #0F5A99}
+A:visited {text-decoration: none; color: #0F5A99}
+A:active {text-decoration: none; color: #0F5A99}
+A:hover {text-decoration: underline; color: #FFFFFF;}
+
+.bold {
+  font-weight: bold;
+}
+
+.text-size {
+  font-size: 12px;
+}
+
+</style>
+</head>
+<body>
+	<table class="text-size">
+		<tr>
+			<td colspan="2"><img src="../adam-images/adam_logo.png"/></td>
+
+		</tr>
+		<tr>
+			<td colspan="2">&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="bold">Version:</td>
+			<td> 1.0</td>
+		</tr>
+		<tr>
+			<td class="bold" colspan="2">Developed and managed by FAO TCSP Division
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">&nbsp;
+			</td>
+		</tr>
+		<tr>
+			<td class="bold">Coordinators:
+			</td>
+			<td> Dominique Di Biase
+			</td>
+		</tr>
+		<tr>
+			<td class="bold">&nbsp;
+			</td>
+			<td>Vito Cistulli
+			</td>
+		</tr>
+		<tr>
+			<td class="bold">Contact:
+			</td>
+			<td> <a href="mailto:RM-Help-Desk@fao.org">RM-Help-Desk@fao.org</a>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">&nbsp;
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2"><a href="http://www.fao.org/corp/copyright/en/" target="_blank">&copy; FAO, 2011 <a>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

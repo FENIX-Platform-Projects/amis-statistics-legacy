@@ -1,0 +1,1595 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" bocontent="text/html; charset=UTF-8">
+<meta name="description" content="ADAM">
+<meta name="keywords"
+	content="FAO ADAM Asistente para el mapeo del desarrollo de la agricultura">
+<title>ADAM - Asistente para el mapeo del desarrollo de la agricultura</title>
+<link rel="stylesheet" type="text/css" href="resources/css/gxt-all.css">
+<link REL="SHORTCUT ICON" HREF="favicon.ico">
+<link rel="stylesheet"
+	href="../libJS/openlayers/theme/default/style.css" type="text/css" />
+<link rel="stylesheet" href="map-style.css" type="text/css" />
+<link rel="stylesheet" href="adam-style_es.css" type="text/css" />
+<link rel="stylesheet" href="adam-slider-style.css" type="text/css" />
+
+<script type='text/javascript' src="tinyslider/script.js"></script>
+
+<script type='text/javascript' src='data.nocache.js'></script>
+<!-- <script type="text/javascript"
+	src="../libJS/openlayers/lib/OpenLayers.js"></script>
+<script type='text/javascript' src="../libJS/GeoSolutions/json2.js"></script>
+<script type='text/javascript' src='../libJS/fenixJs/gwt2olUtils.js'></script> -->
+
+<script type='text/javascript' src='http://www.google.com/jsapi'></script>
+  <script type='text/javascript'>
+    google.load('visualization', '1', {'packages': ['geomap']});
+
+    var slideshow;
+    var countries;
+    var values;
+    var countriesLabel;
+
+    var map_width;
+    var map_height;
+    var map_position;
+
+    function drawMap() {
+
+      var data = new google.visualization.DataTable();
+
+      data.addRows(countries.length);
+
+      data.addColumn('string', 'Country');
+      data.addColumn('number', 'Budget (USD Mil)');
+      data.addColumn('string', 'Country Label');
+
+      for (var i=0; i<countries.length; i++) {
+//	alert("0:" + countries[i]);
+//	alert("1:" + values[i]);
+	data.setValue(i, 0, countries[i]);
+        data.setValue(i, 1, values[i]);
+ 	data.setValue(i, 2, countriesLabel[i]);
+     }
+
+
+      var options = {};
+      options['dataMode'] = 'regions';
+      options['height'] = map_height;
+      options['width'] = map_width;
+   //   options['showZoomOut'] = true;
+
+      var container = document.getElementById(map_position);
+      var geomap = new google.visualization.GeoMap(container);
+      geomap.draw(data, options);
+  };
+
+
+ var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27454300-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  </script>
+
+<script type="text/javascript">
+
+var intersection = "0";
+
+var x;
+
+var y;
+
+var imageMapId = "0";
+
+function writePriorities(current, id, e) {
+
+	//alert("1)write:" + current);
+	//alert("2)write: " + window.intersection);
+	window.intersection = current;
+	window.imageMapId = id;
+
+
+	//("3)write: " + window.intersection);
+	//var XY = getXY(e); // get mouse XY
+}
+
+function onhover(current, e) {
+
+	//alert("1)write:" + current);
+	//alert("2)write: " + window.intersection);
+	//window.intersection = current;
+	//("3)write: " + window.intersection);
+	//var XY = getXY(e); // get mouse XY
+	//alert("XY:" + XY);
+	//alert("1)write:" + current);
+
+	x = (window.Event) ? e.pageX : event.clientX;
+	y = (window.Event) ? e.pageY : event.clientY;
+	//alert("x:" + x);
+	//alert("y:" + y);
+
+
+}
+
+</script>
+
+<script type="text/javascript">
+(function(){
+  if (window.addEventListener)
+  {
+    window.addEventListener("load", nascondi_loading_screen, false);
+  }else{
+    window.attachEvent("onload", nascondi_loading_screen);
+  }
+})();
+function mostra_loading_screen()
+{
+ // document.getElementById("loading_screen").style.display = 'block';
+}
+function nascondi_loading_screen()
+{
+  //document.getElementById("loading_screen").style.display = 'none';
+}
+</script>
+
+<style type='text/css'>
+
+.filters-text {
+	font-weight: bold;
+	font-size: 9px;
+	font-family: Serif;
+	font-family: arial, sans-serif;
+	color: #FFFFFF;
+}
+
+.filters-text-right {
+	font-weight: bold;
+	font-size: 11px;
+	font-family: Serif;
+	font-family: arial, sans-serif;
+	color: #FFFFFF;
+}
+
+
+
+
+
+
+.switch_selection {
+	font-size: 11px;
+	font-family: Serif;
+	font-family: arial, sans-serif;
+	color: #000000;
+}
+
+.datasource {
+	font-weight: bold;
+	font-size: 11px;
+	font-family: Serif;
+	font-family: arial, sans-serif;
+	color: #FFFFFF;
+ 	/** border-bottom: 2px solid #154f85;
+	border-right: 2px solid #154f85; **/
+  	padding: 2px;
+
+}
+
+
+.reference-period {
+
+}
+
+.quantity-text {
+	font-weight: bold;
+	font-size: 11px;
+	font-family: Serif;
+	font-family: arial, sans-serif;
+	color: #FFFFFF;
+}
+
+.quantity {
+}
+
+.button-options-text {
+	font-size: 9px;
+	font-weight: bold;
+	font-family: Serif;
+	font-family: arial, sans-serif;
+	color: #000000;
+}
+
+.empty-values-panel {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.empty-values-title {
+	padding-top: 70px;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: Serif;
+	font-family: arial, sans-serif;
+	color: #154f85;
+
+}
+
+
+/* donor profiles */
+
+a.profile:link {text-decoration: none; color: #3688c2; font-size: 10px; font-family: arial, sans-serif;}
+a.profile:visited {text-decoration: none; color: #3688c2; font-size: 10px; font-family: arial, sans-serif;}
+a.profile:active {text-decoration: none; color: t#3688c2; font-size: 10px; font-family: arial, sans-serif;}
+a.profile:hover {text-decoration: underline; color: #3688c2; font-size: 10px; font-family: arial, sans-serif;}
+
+.profile-edit-form .x-form-item {
+  margin-top: 15px;
+}
+
+.cw-FlexTable td {
+  border: 1px solid #BBBBBB;
+  padding: 3px;
+}
+
+.cw-FlexTable-buttonPanel td {
+  border: 0px;
+}
+
+/* Tab font style */
+.x-tab-strip span.x-tab-strip-text {
+white-space: nowrap;
+cursor:pointer;
+padding-left:12px;
+font-family:arial, sans-serif;
+font-size:11pt;
+font-weight:bold;
+color:#1D4589;
+}
+
+.x-tab-strip-active span.x-tab-strip-text {
+cursor:default;
+color:#3688c2;
+font-family:arial, sans-serif;
+}
+
+/* allow combo boxes to have samaller font size and different font family*/
+.x-form-field {
+	font: 11px arial, sans-serif;
+}
+
+/* combo box height */
+.ext-strict .x-form-text {
+    height: 16px;
+}
+
+.x-form-field-wrap .x-form-trigger {
+    background-image: url("default/form/trigger.gif");
+    border-bottom-color: #589BCC;
+    height: 19px;
+}
+
+/* allow text wrap in Grid column headers (matrix)*/
+.x-grid3-cell-inner, .x-grid3-hd-inner {
+white-space:normal !important;
+}
+
+/* set grid column headers to bold */
+.x-grid3-hd-inner {
+  font-weight:bold !important;
+}
+
+/* Override standard grid styles (add colour to vertical grid lines) */
+.x-grid3-col {
+    border-left:  1px solid #FFFFFF;
+    border-right: 1px solid #EEEEEE;
+}
+
+/* Also remove padding from table data (to compensate for added grid lines) */
+/**.x-grid3-row td, .x-grid3-summary-row td {
+    padding-left: 0px;
+    padding-right: 0px;
+}**/
+
+
+
+.x-grid3-row td.x-grid3-cell, .x-grid3-summary-row td.x-grid3-cell {
+    line-height: 14px;
+    padding-left: 0;
+    padding-right: 0;
+    vertical-align: top;
+}
+
+
+.title {
+	font-size: 12px;
+	font-family: arial, sans-serif;
+	font-weight: bold;
+	color: #17376d;
+}
+
+.title-toolbar {
+	font-size: 12px;
+	font-family: arial, sans-serif;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.no-display {
+	visibility:hidden;
+	display:none;
+}
+.display {
+	visibility:visible;
+ 	display:block;
+}
+.remove-box {
+	width: 150px;
+	height: 0px;
+	color: #FFFFFF;
+}
+.link-title {
+	font-size: 9px;
+	font-family: arial, sans-serif;
+	text-align: left;
+	font-weight: bold;
+	text-decoration: underline;
+	color: #1d4589;
+}
+.link {
+	font-size: 9px;
+	font-family: arial, sans-serif;
+	text-align: left;
+	cursor: default;
+	color: #315594;
+}
+.link:hover {
+	text-decoration: underline;
+	cursor: hand;
+	cursor: pointer;
+	color: #315594;
+}
+.key-messages {
+	font-size: 12px;
+	text-align: center;
+	font-family: arial, sans-serif;
+}
+.title-box {
+	font-size: 12px;
+	font-family: arial, sans-serif;
+	font-weight: bold;
+	color: #17376d;
+}
+.content {
+	font-size: 12px;
+	font-family: arial, sans-serif;
+	padding: 5px;
+	color: #1d4589;
+}
+.small-content {
+	font-size: 12px;
+	font-family: Serif;
+	font-family: arial, sans-serif;
+	color: #003a6c;
+}
+.small-blue-box {
+	width: 160px;
+	height: 55px;
+	font-size: 10px;
+	font-family: arial, sans-serif;
+}
+.small-gray-box {
+	width: 160px;
+	height: 55px;
+	font-size: 10px;
+}
+.small-green-box {
+
+	width: 160px;
+	height: 55px;
+	font-size: 10px;
+	font-family: arial, sans-serif;
+	background: #a2c447;
+}
+.small-red-box {
+
+	width: 160px;
+	height: 55px;
+	font-size: 10px;
+	font-family: arial, sans-serif;
+	background: #cd0000;
+}
+.small-yellow-box {
+	width: 160px;
+	height: 55px;
+	font-size: 10px;
+	background: #FFAA22;
+	font-family: arial, sans-serif;
+}
+.medium-red-box {
+	border-style:solid;
+	border-width:1px;
+	border-color: #b6b8bb;
+	background: #f3f5f7;
+	font-family: arial, sans-serif;
+	visibility:visible;
+ 	display:block;
+}
+
+.medium-gray-box {
+	font-family: arial, sans-serif;
+}
+.medium-green-box {
+	border-style:solid;
+	border-width:1px;
+	border-color:#b6b8bb;
+	background: #f3f5f7;
+}
+.medium-blue-box {
+	border-style:solid;
+	border-width:1px;
+	border-color: #b6b8bb;
+	background: #f3f5f7;
+
+}
+.medium-yellow-box {
+	border-style:solid;
+	border-width:1px;
+	border-color: #b6b8bb;
+	background: #f3f5f7;
+	font-family: arial, sans-serif;
+	vertical-align:bottom;
+}
+
+
+.medium-matrix-box {
+	height: 350px;
+	border-style:solid;
+	border-width:1px;
+	border-color:#b6b8bb;
+	background: #f3f5f7;
+}
+
+.keymessages {
+	width: 700px;
+	height: 55px;
+	font-family: arial, sans-serif;
+	border-style:solid;
+	border-width:4px;
+	border-color: #579BBC;
+	background: #FFFFFF;
+}
+.big-green-box {
+	padding: 5px;
+	border-style:solid;
+	border-width:1px;
+	border-color: #b6b8bb;
+	background: #f3f5f7;
+	font-family: arial, sans-serif;
+}
+.big-blue-box {
+	padding: 5px;
+	border-style:solid;
+	border-width:1px;
+	border-color: #b6b8bb;
+	background: #f3f5f7;
+	font-family: arial, sans-serif;
+}
+.big-yellow-box {
+	padding: 5px;
+	font-family: arial, sans-serif;
+	border-style:solid;
+	border-width:1px;
+	border-color: #b6b8bb;
+	background: #f3f5f7;
+}
+.big-red-box {
+	padding: 5px;
+	font-family: arial, sans-serif;
+	border-style:solid;
+	border-width:1px;
+	border-color: #b6b8bb;
+	background: #f3f5f7;
+}
+.big-gray-box {
+	width: 950px;
+	height: 525px;
+	border-style:solid;
+	border-width:1px;
+	border-color: #b6b8bb;
+	background: #f3f5f7;
+
+}
+.question-yellow-box {
+	width: 565px;
+	height: 185px;
+	font-family: arial, sans-serif;
+	border-style:solid;
+	border-width:4px;
+	border-color: #FFAA22;
+	background: #FFFFFF;
+	color: #ff6600l;
+}
+.question-green-box {
+	width: 565px;
+	height: 185px;
+	font-family: arial, sans-serif;
+	border-style:solid;
+	border-width:4px;
+	border-color: #32A734;
+	background: #FFFFFF;
+}
+.question-red-box {
+	width: 565px;
+	height: 185px;
+	font-family: arial, sans-serif;
+	border-style:solid;
+	border-width:4px;
+	border-color: #900020;
+	background: #FFFFFF;
+	color: #ff6600l;
+}
+.multiselection-country-box {
+	width: 865px;
+	height: 245px;
+	padding: 5px;
+	border-style:solid;
+	border-width:4px;key
+	border-color: #FFAA22;
+	background: #FFFFFF;
+	visibility:visible;
+ 	display:block;
+}
+.multiselection-donor-box {
+	width: 865px;
+	height: 245px;
+	padding: 5px;
+	border-style:solid;
+	border-width:4px;
+	border-color: #32A734;
+	background: #FFFFFF;
+	font-family: arial, sans-serif;
+}
+.multiselection-sector-box {
+	width: 865px;
+	height: 245px;
+	padding: 5px;
+	border-style:solid;
+	border-width:4px;
+	border-color: #FF2000;
+	background: #FFFFFF;
+	visibility:visible;
+ 	display:block;
+}
+.custom-box {
+	width: 950px;
+	height: 525px;
+	padding: 5px;
+	border-style:solid;
+	border-width:4px;
+	border-color: #32A734;
+	background: #FFFFFF;
+	font-family: arial, sans-serif;
+	color: #ff6600l;
+}
+
+.border-box {
+	border-style:solid;
+	border-width:4px;
+	border-color: #32A734;
+	background: #FFFFFF;
+	font-family: arial, sans-serif;
+	color: #ff6600l;
+	border-radius: 1em;
+	-moz-border-radius: 1em;
+}
+
+.viewmenu-box {
+	background: #32A734;
+}
+.viewmenu-title {
+	font-weight: bold;
+	font-size: 12px;
+	font-family: arial, sans-serif;
+	color: #1d4589;
+}
+
+.viewmenu-small-title {
+	font-weight: bold;
+	font-size: 11px;
+	font-family: arial, sans-serif;
+	color: #1d4589;
+}
+
+.viewmenu-content {
+	font-size: 10px;
+	font-family: arial, sans-serif;
+	color: #1d4589;
+}
+
+
+.country {
+background: #FFAA22;
+display:table-cell; padding: 5px; border: 1px solid #003399;
+}
+
+.donor {
+	background: #a2c447;
+display:table-cell;  padding: 5px; border: 1px solid #003399;
+}
+
+.sector {
+	background: #cd0000;
+display:table-cell; width: 300px; padding: 5px; border: 1px solid #003399;
+}
+
+.channel {
+	background: #9BC3E2;
+display:table-cell; width: 300px; padding: 5px; border: 1px solid #003399;
+}
+
+.box {
+ 	background-color: #8db4d8;
+
+}
+
+.venn_matrix_option_text {
+	font-size: 11px;
+	font-family: arial, sans-serif;
+	color: #17376d;
+}
+
+/*formatted tooltip for matrix*/
+a.donormatrix{
+    position:relative; /*this is the key*/
+    z-index:24; background-color:#ccc;
+    color:#000;
+    text-decoration:none}
+
+a.donormatrix:hover{z-index:25; background-color:#ff0}
+
+a.donormatrix span{display: none}
+
+a.donormatrix:hover span{ /*the span will display just on :hover state*/
+    display:block;
+    position:absolute;
+    top:2em; left:2em; width:50em;
+    border:1px solid #0cf;
+    background-color:#cff; color:#000;
+    text-align: left;
+    font-size: 11px}
+
+
+.footer {
+   font-size: 12px;
+   font-family:arial, sans-serif;
+   font-weight: bold;
+   color: #FFFFFF !important;
+   background-color: #003a6c;
+
+}
+
+a.footer:link { font-family:verdana; text-decoration: none; font-size: 10px; color: #FFFFFF !important; }
+a.footer:visited { font-family:verdana; text-decoration: none; font-size: 10px; color: #FFFFFF !important;}
+a.footer:active { font-family:verdana; text-decoration: none; font-size: 10px; color: #FFFFFF !important;}
+a.footer:hover { font-family:verdana; text-decoration: none; font-size: 10px; color: #FFFFFF !important;}
+
+html,body{margin:0;padding:0}
+body{
+
+font: 100.01% "Trebuchet MS",Arial,sans-serif
+
+}
+
+
+
+/***********************************************************
+*                     MenuBar Main
+***********************************************************/
+
+
+
+.main-MenuBar
+{
+    border                      :   1px solid #666;
+    border-width                :   2px 0;
+    border-color                :   #579BBC;
+   /* background-color            :   #D6DDEA;*/
+    font-size                   :   14px;
+    font-weight                 :   bold;
+
+}
+
+.main-MenuBar table
+{
+    border-collapse             :   separate;
+   height: 40px;
+}
+.main-MenuBar .gwt-MenuItem
+{
+    cursor                      :   hand;
+    cursor                      :   pointer;
+
+    border-left                 :   1px solid #999;
+    border-right                :   1px solid #999;
+    background-color            :   #D6DDEA;
+    padding                     :   0 12px;
+    color                   	:   #404040;
+
+}
+
+.main-MenuBar .gwt-MenuItem-selected
+{
+    background-color            :   #579BBC;
+    color                   	:   #fff;
+}
+
+/***********************************************************
+*                     Top Links e.g. login
+***********************************************************/
+.top-links {
+	text-align					:   left;
+	font-size                   :   11px;
+    font-weight                 :   bold;
+	cursor                      :   hand;
+    cursor                      :   pointer;
+}
+
+.top-links {
+   color						: #154f85;
+}
+
+a.top-links:link {
+ 	color: #154f85;
+    text-decoration: none;
+}
+
+a.top-links:hover {
+     color: #154f85;
+     text-decoration: none;
+}
+
+a.top-links:visited {
+     color: #154f85;
+     text-decoration: none;
+}
+
+
+a.link-fao {
+	color: #154f85;
+	font-size: 11px;
+}
+
+a.link-fao:link {
+	color: #FFF;
+	text-decoration: none
+}
+
+a.link-fao:visited {
+	color: #FFF;
+	text-decoration: none;
+}
+
+a.link-fao:hover {
+	color: #FFF;
+	text-decoration: none;
+}
+
+
+.top-links-loggedin {
+	text-align					:   left;
+	font-size                   :   11px;
+    font-weight                 :   bold;
+	cursor                      :   hand;
+    cursor                      :   pointer;
+	color						:   #fff;
+}
+
+.tab_menu_default {
+	text-align		    :   center;
+	font-size                   :   13px;
+        font-weight                 :   bold;
+	cursor                      :   hand;
+        cursor                      :   pointer;
+	color			    :   #FFFFFF;
+}
+
+.tab_menu_default:hover {
+	color			    : #ffffff;
+	background-color	    :   #1b65a4;
+}
+
+.tab_menu_selected {
+	text-align		    :   center;
+	font-size                   :   12px;
+        font-weight                 :   bold;
+	cursor                      :   hand;
+        cursor                      :   pointer;
+	color			    :   #FFFFFF;
+	background-color	    :   #1b65a4;
+}
+
+.tab_menu_selected:hover {
+	color			    : #FFFFFF;
+	background-color	    :   #1b65a4;
+	font-weight:bold;
+}
+
+.tab_view {
+	height: 30px;
+	vertical-align:center;
+	background:#003a6c;
+	border-bottom: 1px solid  #003a6c;
+	border-collapse: collapse;
+}
+
+.tab_view td {
+	border-bottom: 1px solid #003a6c;
+	border-collapse: collapse;
+}
+
+
+
+
+<!-- FILTERS - TABLE background:  -->
+
+filter-table {
+	width: 100%;
+	background: #3688c2
+}
+
+    .div-country{width: 250px}
+    .div-donor{width: 250px}
+    .div-sector{width: 450px}
+    .div-all{width: 100%;}
+    .div-table-col-space{width: 7px; }
+
+
+<!-- ADAM VIEW - TABLE -->
+    .div-table-adam{display:table; width: 100%; vertical-align:bottom; }
+    .div-table-row-adam{display:table-row; width: 100%; vertical-align:bottom; }
+    .div-table-row-adam-space{width: 100%; height: 7px;}
+    .div-table-col-adam-space{display:table-cell; vertical-align:bottom; width: 15px; }
+    .div-table-col-adam{display:table-cell; vertical-align:bottom; }
+
+<!-- LOADING  -->
+#loading_screen
+{
+  display: none;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  color: blue;
+  text-align: center;
+  padding-top: 100px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+
+
+div#tipDiv {
+    color:#003A6C; font-size:13px;
+    border: 1px solid;
+   background-color: #FFF;
+
+
+}
+div#tipDiv div.txt { padding: 3px;  text-align:center; }
+
+
+</style>
+
+</head>
+
+
+<body>
+
+<!-- LOADING -->
+<!--  <div id="loading_screen"> -->
+  <!-- <h1>Loading<img src="loading.gif"/>
+	</h1> -->
+<!--  <div style="font-size: 21px; font-weight: bold; color: #1D4589;">ADAM is loading, please wait...</div>
+  <br>
+  <div style="font-size: 25px; font-weight: bold; color: #1D4589;">Loading &nbsp <img src="loading.gif"/>
+  </div>
+
+</div>
+<script type="text/javascript">
+mostra_loading_screen();
+</script> -->
+
+
+<div id="languages-menu">
+<table  align="center" width="100%" cellspacing='0' border="0">
+	<tr  valign="center">
+	    <td  width="2%"></td>
+	    <td  width='80%'></td>
+	    <td  width='5%' align="right" class="language-links"><a href='index.html'>english</a></td>
+	    <td  width='2%'></td>
+	    <td  width='5%' align="right" class="language-links"><a href='index_fr.html?locale=fr'>fran&#231;ais</a></td>
+	    <td  width='2%'></td>
+	    <td  width='5%' align="right" class="language-links_selected"><b>espa&#241;ol</b></td>
+	    <td  width='2%' align="right"></td>
+	</tr>
+</table>
+</div>
+
+
+	<div id="banner_es">
+		<table width="100%" border="0">
+		  <tr>
+			<td width="70">&nbsp;</td>
+			<td colspan="2"><a class="link-fao" href="http://www.fao.org" target="_blank" title="Organizaci&#243;n de las Naciones Unidas para la Alimentaci&#243;n y la Agricultura">Organizaci&#243;n de las Naciones Unidas para la Alimentaci&#243;n y la Agricultura - por un mundo sin hambre</a></td>
+            <td valign="TOP" align='right' ><div id="MAIN_MENU" /></td>
+		  </tr>
+		  <tr>
+			<td align="right" valign="top"><a href="http://www.fao.org" target='_blank'><img src="adam-images/FAO.png" title="Organizaci&#243;n de las Naciones Unidas para la Alimentaci&#243;n y la Agricultura"/></a></td>
+			<td width="448" id="ADAM_LOGO"></td>
+			<td valign="TOP" class="small-content" align="right"><div id="loginMessage"/></td>
+			<td valign="TOP" class="small-content" align="right"><div id="SECONDARY_MENU" /></td>
+		  </tr>
+		  <tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<!--<td valign="TOP" align="right"><div class="link" id="loginMessage"/></td>-->
+		  </tr>
+
+		</table>
+	</div>
+<!--<table align="center"  width="100%" cellspacing='3px'>
+    <tr>
+		<td colspan="4"></td>
+	</tr>
+	<tr>
+	    <td></td>
+		<td colspan="3" align="left"><div id="FAO_TITLE" /></td>
+		<td valign="TOP" width='100%' align='right' ><div id="MAIN_MENU" /></td>
+	</tr>
+	<tr>
+		<td align="left"><div id="FAO_LOGO" /></td>
+		<td align="left"><div id="ADAM_LOGO" /></td>
+		<td colspan="2" align="left" valign="BOTTOM"><div id="ADAM_WRITE" /></td>
+	</tr>
+    <tr>
+		<td colspan="2" class="small-content" align="right"><div id="SECONDARY_MENU" /></td>
+	</tr>
+	<tr>
+		<td colspan="3"></td>
+		<td valign="TOP" align="right"><div class="link" id="loginMessage"/></td>
+	</tr>
+
+</table>-->
+
+
+
+
+<div width="100%">
+<!--	<tr><td height='30px' width='100%' align='left' class="demo-MenuBar"><div id="TAB_MENU" /></td> </tr>
+<tr><td height='5px'></td> </tr> -->
+
+<table class="tab_view" id="TAB_VIEW" align="center" width="100%" height="15x">
+	<tr>
+		<td width="2%"></td>
+		<td id="TAB1" width="10%" align="center"></td>
+		<td id="TAB2" width="10%" align="center"></td>
+		<td id="TAB3" width="20%" align="center"></td>
+		<td id="TAB4" width="20%" align="center"></td>
+		<td width="40%"></td>
+	</tr>
+</table>
+
+<!--<div class="div-table-row-space">&nbsp</div>
+<div bgcolor="#3688c2" class="div-table" id="KEY_MESSAGES_TABLE" width="100%">
+ 	<div class="div-table-row">
+		<div class="div-table-col-space">&nbsp</div>
+		<div class="div-table-col-country" id="COUNTRY_SELECTOR"> </div>
+		<div class="div-table-col-space">&nbsp</div>
+		<div class="div-table-col-donor" id="DONOR_SELECTOR"></div>
+		<div class="div-table-col-space">&nbsp</div>
+		<div class="div-table-col-sector" id="SECTOR_SELECTOR" ></div>
+		<div class="div-table-col-space">&nbsp</div>
+		<div class="div-table-col-aggregation" id="AGGREGATION_COLUMN" ></div>
+		<div class="div-table-col-space">&nbsp</div>
+		<div class="div-table-col-date" id="REFERENCE_PERIOD" ></div>
+		<div class="div-table-col-all"></div>
+
+	</div>
+</div>-->
+
+<!--<table height="40px" bordercolor="#FFFFFF" id="KEY_MESSAGES_TABLE" border="0" align="center" bgcolor="#1b65a4">
+	<tr>
+	   	<td width="2%"></td>
+		<td align="left" width="216px" id="COUNTRY_SELECTOR" ></td>
+		<td align="left" width="216px" id="DONOR_SELECTOR" ></td>
+		<td align="left" width="183px" id="SWITCH_SELECTOR" ></td>
+		<td align="left" width="183px" id="SECTOR_SELECTOR" ></td>
+		<td align="left" width="183px" id="SO_SELECTOR" ></td>
+		<td align="left" width="183px" id="CHANNEL_SELECTOR" ></td>-->
+<!--		<td align="left" width="167px" id="AGGREGATION_COLUMN"></div></td>
+		<td align="left" width="245px" id="REFERENCE_PERIOD" ></td> -->
+		<!--	<td width="100%"></td>
+	</tr>
+</table>-->
+
+
+<table height="40px"  bordercolor="#1b65a4" id="KEY_MESSAGES_TABLE" border="0" align="center" bgcolor="#1b65a4">
+	 
+	<tr>
+	                <td width="10px"></td>
+					<td align="left" width="285px" id="COUNTRY_SELECTOR" ></td>
+					<td align="left" width="360px" id="DONOR_SELECTOR" ></td>
+					<td align="left" width="690px" id="SECTOR_SELECTOR" ></td>
+
+		</tr>
+	
+	</tr>
+</table>
+
+<!--<div bgcolor="#3688c2" class="div-table" id="KEY_MESSAGES_TABLE" width="100%">
+ 	<div class="div-table-row">
+		<div class="div-table-col-space">&nbsp</div>
+		<div class="div-table-col-country" id="COUNTRY_SELECTOR"> </div>
+		<div class="div-table-col-space">&nbsp</div>
+		<div class="div-table-col-donor" id="DONOR_SELECTOR"></div>
+		<div class="div-table-col-space">&nbsp</div>
+		<div class="div-table-col-sector" id="SECTOR_SELECTOR" ></div>
+		<div class="div-table-col-space">&nbsp</div>
+		<div class="div-table-col-aggregation" id="AGGREGATION_COLUMN" ></div>
+		<div class="div-table-col-space">&nbsp</div>
+		<div class="div-table-col-date" id="REFERENCE_PERIOD" ></div>
+		<div class="div-table-col-all"></div>
+
+	</div>
+</div>-->
+<table bgcolor="#3688c2" id="MULTISELECTION_TABLE" align="center" width="100%">
+
+	<tr>
+		<!-- <td width="595px"></td> -->
+		<!-- <td width="300px"></td> -->
+		<td align="left"><div id="MULTISELECTION" /></td>
+ 		<td width="300px">
+	</tr>
+</table>
+
+
+<!--<table  id="SUB_SELECTOR" width="100%" bgcolor="#589BCC">
+
+			<tr>
+ 			    <td width=2%"></td>
+			    <td width="500px" valign="TOP" align="left"><div id="VIEWMENU_LEFT"/></td>
+			    <td width="20px"></td>
+			    <td width="150px" valign="TOP" align="left"><div id="AGGREGATION_COLUMN"/></td>
+			    <td width="150px" valign="TOP" align="left"><div id="REFERENCE_PERIOD"/></td>
+			    <td width="50%"></td>
+			</tr>
+</table>-->
+
+<table  id="SUB_SELECTOR" bgcolor="#589BCC" border="0" align="center" border="0px">
+			<tr>
+				            <!--    <td width="10px"></td>
+								<td align="left" valign="MIDDLE" width="300px" id="VIEWMENU_LEFT" ></td>
+								<td width="172px" valign="MIDDLE" align="left">&nbsp;</td>
+								<td align="left" valign="MIDDLE" width="250px" id="AGGREGATION_COLUMN" ></td>
+								<td align="left" valign="MIDDLE" width="250px" id="REFERENCE_PERIOD" ></td>-->
+
+									                <td width="10px"></td>
+													<td align="left" width="585px" id="VIEWMENU_LEFT" ></td>
+													<td align="left" width="300px" id="AGGREGATION_COLUMN" ></td>
+													<td align="left" width="320px" id="REFERENCE_PERIOD" ></td>
+
+
+
+
+		</tr>
+</table>
+
+
+
+<table bgcolor="#FFFFFF" width="100%" border="0">
+	<tr>
+	<td>
+	<table id="VIEWMENU"  width="100%" border="0">
+			<tr>
+				<td width="20px">&nbsp</td>
+				<td width="100%" valign="TOP" align="left"><div id="VIEWMENU_TITLE"/></td>
+				<td width="50%" valign="TOP" align="right"><div id="VIEWMENU_RIGHT"/></td>
+	<!--			<td width="100%" valign="TOP" align="right"><div id="REFERENCE_PERIOD"/></td>
+				<td width="100%" valign="TOP" align="right"><div id="AGGREGATION_COLUMN"/></td>		-->
+				<td width=20px">&nbsp</td>
+			</tr>
+			<tr>
+				<td width="100%" valign="TOP" align="left" colspan='4'><div id="VIEWMENU_CONTENT"/></td>
+			</tr>
+	</table>
+
+	<table id="PROJECTS" align="center" width="100%" border="0">
+	<TR>
+		<TD rowspan=4 width="10px">
+		</TD>
+		<TD>
+			<div id="PROJECTS_TABLE"></div>
+		</TD>
+		<TD rowspan=4 width="10px">
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			<div id="PROJECTS_TITLE"></div>
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			<div id="PROJECTS_FILTERS"></div>
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			<div id="PROJECTS_VIEW"></div>
+		</TD>
+	</TR>
+</table>
+
+
+<table align="center" id="FAO_TABLE" width="100%" >
+		<tr valign="TOP">
+			<td width=10px"></td>
+			<td><div id="FAO_14" /></td>
+			<td width=10px"></td>
+			<td><div id="FAO_15" /></td>
+			<td width=10px"></td>
+		</tr>
+		<tr valign="TOP">
+			<td width=10px"></td>
+			<td><div id="FAO_16" /></td>
+			<td width=10px"></td>
+			<td><div id="FAO_17" /></td>
+			<td width=10px"></td>
+		</tr>
+		<tr valign="TOP">
+			<td width=10px"></td>
+			<td><div id="FAO_12" /></td>
+			<td width=10px"></td>
+			<td><div id="FAO_13" /></td>
+			<td width=10px"></td>
+		</tr>
+		<tr valign="TOP">
+			<td width=10px"></td>
+			<td><div id="FAO_10" /></td>
+			<td width=10px"></td>
+			<td><div id="FAO_11" /></td>
+			<td width=10px"></td>
+		</tr>
+</table>
+
+<table align="center" id="CHANNELS_TABLE" width="100%" >
+		<tr valign="TOP">
+			<td width=10px"></td>
+			<td><div id="CHANNELS_10" /></td>
+			<td width=10px"></td>
+			<td><div id="CHANNELS_11" /></td>
+			<td width=10px"></td>
+		</tr>
+</table>
+
+
+<table align="center" id="COMPARATIVE_ADVANTAGE_TABLE" width="100%" >
+		<tr valign="TOP">
+			<td width="10px"></td>
+			<td><div id="COMPARATIVE_ADVANTAGE_10" /></td>
+			<td width="10px"></td>
+			<td><div id="COMPARATIVE_ADVANTAGE_11" /></td>
+			<td width="10px"></td>
+		</tr>
+</table>
+
+
+
+
+	<table align="center" id="QUESTION_TABLE" width="100%">
+		<tr align="center">
+			<td><div id="QUESTION_11" /></td>
+			<td><div id="QUESTION_12" /></td>
+		</tr>
+		<tr>
+			<td height="5px" colspan="3"></td>
+		</tr>
+		<tr align="center">
+			<td><div id="QUESTION_13" /></td>
+			<td><div id="QUESTION_14" /></td>
+		</tr>
+		<tr>
+			<td height="5px" colspan="3"></td>
+		</tr>
+		<tr align="center">
+			<td><div id="QUESTION_15" /></td>
+			<td><div id="QUESTION_16" /></td>
+		</tr>
+		<tr>
+			<td height="5px" colspan="3"></td>
+		</tr>
+		<tr align="center">
+			<td><div id="QUESTION_17" /></td>
+			<td><div id="QUESTION_18" /></td>
+		</tr>
+		<tr>
+			<td height="5px" colspan="3"></td>
+		</tr>
+		<tr align="center">
+			<td><div id="QUESTION_19" /></td>
+			<td><div id="QUESTION_20" /></td>
+		</tr>
+	</table>
+
+	<table align="center" id="CUSTOM_TABLE" width="100%">
+		<tr align="center">
+			<td width="10px"></td>
+			<td><div id="CUSTOM" /></td>
+			<td width="10px"></td>
+		</tr>
+	</table>
+
+<table align="center" id="CUSTOM_VIEW_TABLE" width="100%" >
+		<tr valign="TOP">
+			<td width=10px"></td>
+			<td><div id="CUSTOM_18" /></td>
+			<td width=10px"></td>
+			<td><div id="CUSTOM_19" /></td>
+			<td width=10px"></td>
+		</tr>
+		<tr valign="TOP">
+			<td width=10px"></td>
+			<td><div id="CUSTOM_16" /></td>
+			<td width=10px"></td>
+			<td><div id="CUSTOM_17" /></td>
+			<td width=10px"></td>
+		</tr>
+		<tr valign="TOP">
+			<td width=10px"></td>
+			<td><div id="CUSTOM_14" /></td>
+			<td width=10px"></td>
+			<td><div id="CUSTOM_15" /></td>
+			<td width=10px"></td>
+		</tr>
+		<tr valign="TOP">
+			<td width=10px"></td>
+			<td><div id="CUSTOM_12" /></td>
+			<td width=10px"></td>
+			<td><div id="CUSTOM_13" /></td>
+			<td width=10px"></td>
+		</tr>
+		<tr valign="TOP">
+			<td width=10px"></td>
+			<td><div id="CUSTOM_10" /></td>
+			<td width=10px"></td>
+			<td><div id="CUSTOM_11" /></td>
+			<td width=10px"></td>
+		</tr>
+</table>
+<table width="100%" id="HOMEVIEW" bgcolor="#FFFFFF">
+		<tr>
+			<td width="10px"></td>
+			<td><div id="HOME">
+			<table border="0" width="1150px">
+					<tr>
+						<td width="900px" valign="top">
+							<div id="top-container">
+								<div id="top-column1">
+									<p></p>
+			                        <p class="welcome">Bienvenidos a ADAM</p>
+									<p class="adam_wel">ADAM recopila informaci&#243;n de varias bases de datos para ayudar a los usuarios:</p>
+
+								   		<ul class="top-container-list">
+										 	<li>Determinar las ventajas comparativas de la FAO.</li>
+										 	<li>Establecer las prioridades de asistencia de la FAO.</li>
+										 	<li>Formular estrategias para la movilizaci&#243;n de recursos.</li>
+								   		</ul>
+
+								</div>
+								<div id="top-column2">
+									<div id="wrapper">
+										<div>
+											<div class="sliderbutton"><img src="adam-images/slider-left.gif" width="32" height="38" alt="Previous" onclick="slideshow.move(-1)" /></div>
+											<div id="slider">
+												<ul>
+													<li><img src="adam-images/es/slides/1stslide.jpg"  /></li>
+													<li><img src="adam-images/es/slides/2ndslide.jpg"  /></li>
+													<li><img src="adam-images/es/slides/3rdslide.jpg"  /></li>
+			                                        <li><img src="adam-images/es/slides/4thslide.jpg"  /></li>
+												</ul>
+											</div>
+											<div class="sliderbutton"><img src="adam-images/slider-right.gif" width="32" height="38" alt="Next" onclick="slideshow.move(1)" /></div>
+										</div>
+										<ul id="pagination" class="pagination">
+											<li onclick="slideshow.pos(0)">1</li>
+											<li onclick="slideshow.pos(1)">2</li>
+											<li onclick="slideshow.pos(2)">3</li>
+											<li onclick="slideshow.pos(3)">4</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div id="content-wrapper">
+								<div id="column1">
+									<p class="indent" id="adam-label"> <img src="adam-images/es/adam_view.gif" title="Ir a la vista ADAM"  /><br/></p>
+									<p class="minitext_es"> Encontrar informaci&#243;n sobre los Asociados de Recursos d&#243;nde y qu&#233; tipo de actividades est&#225;n financiando. Evaluar las ventajas comparativas de la FAO vis a vis otros asociados de recursos utilizando el Marco Estrat&#233;gico de la FAO o la clasificaci&#243;n sectorial del CAD.</p>
+								    <p class="col-image"><img src="adam-images/adam-view.png" width="255px" alt="" /></p>
+								    <p class="gototext_es" id="adam-go">&nbsp;&nbsp;&nbsp;&nbsp;Ir a la vista ADAM <img src="adam-images/more.png"></p>
+								</div>
+								<div id="column2">
+									<p class="indent" id="matrix-label"><img src="adam-images/es/matrix.gif" title="Ir a la Matriz de Asociados de Recursos" /><br/></p>
+									<p class="minitext_es"> Obtener una imagen detallada de las contribuciones de los asociados de recursos y clasificarlos en funci&#243;n de dichas contribuciones. Ver las contribuciones de cada asociado de recursos en calidad de ayuda oficial al desarrollo (AOD) y por subsectores de agricultura y seguridad alimentaria.</p>
+									<p class="col-image"><img src="adam-images/matrix-view.png" width="255px" alt="" /></p>
+									<p class="gototext_es" id="matrix-go">&nbsp;&nbsp;&nbsp;&nbsp;Ir a la Matriz de <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Asociados de Recursos <img src="adam-images/more.png"></p>
+								</div>
+								<div id="column3">
+									<p class="indent" id="profile-label"><img src="adam-images/es/profile.gif" title="Ir a Perfil de los Asociados de Recursos" /><br/></p>
+									<p class="minitext_es"> Obtener informaci&#243;n sobre las prioridades tem&#225;ticas y geogr&#225;ficas de los asociados de recursos, sus preferencias en cuanto a mecanismos de financiaci&#243;n y los principales procesos internos. Tambi&#233;n se incluye enlaces web y los datos de contacto de los puntos focales para cada donante.<br/></p>
+			                        <p class="col-image"><img src="adam-images/profile-view.png" width="255px" height="130px" alt="" /></p>
+			                        <p class="gototext_es" id="profile-go">&nbsp;&nbsp;&nbsp;&nbsp;Ir a Perfil de los <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Asociados de Recursos <img src="adam-images/more.png"></p>
+								  </div>
+							</div>
+						</td>
+						<td width="50px">&nbsp;</td>
+
+						<td width="200px" valign="top">
+							<div id="right">
+								<table bgcolor="#ffffff" border="0px" width="200px">
+									<tr>
+										<td>
+										<table width="170px" border="0px" style="border-collapse:collapse" >
+
+
+																			<tr>
+																				<td ><img src="adam-images/es/resources.gif" alt="" /></td>
+																			</tr>
+																			<tr>
+																				<td  bgcolor="#cee8ff">
+																					<ul class="right-list">
+																						<li><a class="link-section" href="adam-docs/adam_concept_note.pdf" target="_blank">Nota de concepto ADAM</a></li>
+																						<li><a class="link-section" href="adam-docs/adam_user_manual.pdf" target="_blank">Manual de usuario</a></li>
+																						<li><a class="link-section" href="adam-docs/ADAM.ppt" target="_blank">Presentaci&#243;n</a></li>
+
+                   <li><a class="link-section" href="javascript: void(0)"
+			   				    onclick="window.open('adam-docs/questionnaire.html',
+			   				   'adam_questionnaire',
+			   				   'width=783,height=3777, scrollbars=yes');
+				    return false;" target="_blank">Cuestionario</a></li>
+
+<li><a class="link-section" href="http://www.fao.org/tc/adam/data/adam-docs/DAC_codes.pdf" target="_blank">DAC Clasificaci&#243;n</a></li>
+																					</ul>
+																				</td>
+
+																			</tr>
+
+																		</table>
+
+											<table width="170px" border="0px" style="border-collapse:collapse">
+
+												<tr bgcolor="#FFFFFF" height="10px">
+													<td></td>
+												</tr>
+												<tr>
+													<td><img src="adam-images/es/adam_brochure.gif" alt="" /></td>
+												</tr>
+												<tr>
+													<td></td>
+												</tr>
+
+			                                     <tr>
+			                                       <td class="subtitles2" bgcolor="#cee8ff">&nbsp;</td>
+			                                  </tr>
+												<tr align="center" bgcolor="#cee8ff">
+													<td><a class="link-section" href="adam-docs/brochure.pdf" target="_blank" title="Folleto ADAM"><img src="adam-images/brochure.png" alt=""  width="145" height="193" /></a></td>
+												</tr>
+												<tr bgcolor="#ffffff">
+													<td class="subtitles2"  bgcolor="#cee8ff"><br/></td>
+												</tr>
+											</table>
+											<table width="170px" border="0px" style="border-collapse:collapse" >
+												<tr bgcolor="#FFFFFF" height="10px">
+													<td></td>
+												</tr>
+												<tr>
+													<td ><img src="adam-images/es/fao_links.gif" alt="" /></td>
+												</tr>
+												<tr>
+													<td bgcolor="#cee8ff">
+														<ul class="right-list">
+															<li><a class="link-section" href="http://countrybriefs.fao.org" target="_blank">Informes online (BOL)</a></li>
+															<li><a class="link-section" href="http://intranet.fao.org/cpf" title="CPF" target="_blank">CPF (Intranet)</a></li>
+															<li><a class="link-section" href="https://extranet.fao.org/fpmis/" title="Field Programme Management Information System" target="_blank">FPMIS</a></li>
+															<li><a class="link-section" href="http://www.fao.org/tc/resource-mobilization/rmhomepage" target="_blank">Movilizaci&#243;n de Recursos</a></li>
+															<!--<li><a class="link-section" href="http://www.fao.org/tc/tca/" target="_blank">TCS</a></li>-->
+															<li><a class="link-section" href="http://www.foodsec.org/workstation" target="_blank">Workstation (FENIX)</a></li>
+														</ul>
+													</td>
+												</tr>
+											</table>
+											<table width="170px" border="0px" style="border-collapse:collapse">
+																			<tr bgcolor="#FFFFFF" height="10px">
+																				<td></td>
+																			</tr>
+																				<tr>
+																					<td ><img src="adam-images/es/partners.gif" border="1" alt="" /></td>
+																				</tr>
+																				<tr>
+																					<td bgcolor="#cee8ff">
+																						<ul class="right-list">
+																							<!-- <li><a class="link-section" href="http://www.aiddata.org/" target="_blank">AidData</a></li> -->
+																							<li><a class="link-section" href="http://www.oecd.org/department/0,2688,en_2649_33721_1_1_1_1_1,00.html" target="_blank">OCDE-CAD</a></li>
+
+																						</ul>
+																					</td>
+																				</tr>
+											</table>
+
+
+											<!--<table width="200px" border="0px">
+												<tr bgcolor="#ffffff">
+													<td  height="15px" ></td>
+												</tr>
+												<tr>
+													<td width="200" bgcolor="#336699" class="subtitles">Contact Us</td>
+												</tr>
+												<tr>
+													<td bgcolor="#ffffff"> <p class="minitext"><a href="mailto:RM-Help-Desk@fao.org">RM-Help-Desk@fao.org</a></p></td>
+												</tr>
+											</table>-->
+										</td>
+								  	</tr>
+								</table>
+							</div>
+						</td>
+					</tr>
+	</table>
+
+
+			</div>
+			</td>
+			<td width=10px"></td>
+		</tr>
+</table>
+
+<table align="center" width="100%" bgcolor="#FFFFFF">
+		<tr align="center">
+			<td width="10px"></td>
+			<td><div id="CENTER" /></td>
+			<td width="10px"></td>
+		</tr>
+</table>
+
+
+<table align="center" id="ADAM_VIEW_TABLE" bgcolor="#FFFFFF" width="100%" >
+		<tr valign="TOP">
+			<td width=10px"></td>
+			<td ><div id="TOP_LEFT" /></td>
+			<td width=10px"></td>
+			<td><div id="TOP_RIGHT" /></td>
+			<td width=10px"></td>
+		</tr>
+		<tr align="center">
+			<td height="10px"></td>
+		</tr>
+
+		<tr valign="TOP">
+			<td width=10px"></td>
+			<td><div id="BOTTOM_LEFT" /></td>
+			<td width=10px"></td>
+			<td><div id="BOTTOM_RIGHT" /></td>
+			<td width=10px"></td>
+		</tr>
+		<tr align="center">
+			<td height="10px"></td>
+		</tr>
+
+			<tr valign="TOP">
+			<td width=10px"></td>
+			<td><div id="MAP_LEFT" /></td>
+			<td width=10px"></td>
+			<td><div  id="MAP_RIGHT" /></td>
+			<td width=10px"></td>
+		</tr>
+</table>
+
+
+
+<!--
+<div bgcolor="#3688c2" class="div-table-adam" id="ADAM_VIEW_TABLE" width="100%">
+ 	<div class="div-table-row-adam">
+		<div class="div-table-col-adam-space">&nbsp</div>
+		<div class="div-table-col-adam" id="TOP_LEFT"> </div>
+		<div class="div-table-col-adam-space">&nbsp</div>
+		<div class="div-table-col-adam" id="TOP_RIGHT"></div>
+		<div class="div-table-col-adam-space">&nbsp</div>
+	</div>
+</div>
+
+<div bgcolor="#3688c2" class="div-table-adam" id="ADAM_VIEW_TABLE1" width="100%">
+	<div class="div-table-row-adam">
+		<div class="div-table-col-adam-space">&nbsp</div>
+		<div class="div-table-col-adam" id="BOTTOM_LEFT"> </div>
+		<div class="div-table-col-adam-space">&nbsp</div>
+		<div class="div-table-col-adam" id="BOTTOM_RIGHT"></div>
+		<div class="div-table-col-adam-space">&nbsp</div>
+	</div>
+</div>
+
+<div bgcolor="#3688c2" class="div-table-adam" id="ADAM_VIEW_TABLE2" width="100%">
+	<div class="div-table-row">
+		<div class="div-table-col-adam-space">&nbsp</div>
+		<div class="div-table-col-adam" id="MAP_LEFT"></div>
+		<div class="div-table-col-adam-space">&nbsp</div>
+		<div class="div-table-col-adam" id="MAP_RIGHT"></div>
+		<div class="div-table-col-adam-space">&nbsp</div>
+	</div>
+</div>
+-->
+
+
+
+
+
+</table>
+	<table bgcolor="#3688c2" align="center" width="100%" class="footer">
+			<tr>
+			   <td width="2%">
+						&nbsp;
+				</td>
+			 	<td align="left" width="6%">
+					<a class="footer" href='http://www.fao.org/corp/copyright/' target='_blank'>&copy; FAO 2011</a>
+
+				</td>
+				<td align="left" width="20%">
+
+								<a class="footer" href='http://www.foodsec.org/workstation/' target='_blank'><i>Desarrollado por </i> la estaci&#243;n de trabajo (FENIX)</a>
+
+				</td>
+
+ 				 <td align="right" width="60%">
+
+ 				 <a class="footer" href="javascript: void(0)"
+				    onclick="window.open('adam-docs/about.html',
+				   'adam_home',
+				   'width=420,height=340');
+				    return false;">Acerca de ADAM</a>&nbsp;:&nbsp;
+<a class="footer" href='adam-docs/adam_user_manual.pdf' target='_blank'>Ayuda</a>&nbsp;:&nbsp;
+								<a class="footer" href='mailto:ADAM@fao.org'>Cont&#225;ctanos</a>
+
+				</td>
+
+				<td width="2%">	&nbsp;</td>
+			</tr>
+			<tr>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+			</tr>
+	</table>
+</div>
+
+<script type="text/javascript">
+		var slideshow=new TINY.slider.slide('slideshow',{
+			id:'slider',
+			auto:6,
+			resume:true,
+			vertical:false,
+			navid:'pagination',
+			activeclass:'current',
+			position:0
+		});
+		</script>
+
+</body>
+
+</html>

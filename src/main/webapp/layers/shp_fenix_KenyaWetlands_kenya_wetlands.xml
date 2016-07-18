@@ -1,0 +1,29 @@
+<layer type="shp">
+  <title>Kenya Wetlands</title>
+  <abstract>Generated from KenyaWetlands -- Shapefile Layer 'KenyaWetlands::kenya_wetlands'</abstract>
+  <source country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</source>
+  <provider country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</provider>
+  <region>133</region>
+  <categories />
+  <sharingcode>Public</sharingcode>
+  <featuretype>
+    <title>Kenya Wetlands</title>
+    <abstract>Generated from KenyaWetlands</abstract>
+    <defaultstyle>kenyawetland</defaultstyle>
+    <bbox>
+      <srs>4326</srs>
+      <minx>33.90886</minx>
+      <maxx>41.51528</maxx>
+      <miny>-4.664498</miny>
+      <maxy>4.615069</maxy>
+    </bbox>
+    <layername>kenya_wetlands</layername>
+    <datastore>
+      <name>KenyaWetlands</name>
+      <namespace>fenix</namespace>
+    </datastore>
+  </featuretype>
+  <!--Data dumped from geoserver at:-->
+  <!--REST url: http://ldvapp07.fao.org:8032/geoserverDev-->
+  <!--WMS url: http://ldvapp07.fao.org:8032/geoserverDev/wms?-->
+</layer>

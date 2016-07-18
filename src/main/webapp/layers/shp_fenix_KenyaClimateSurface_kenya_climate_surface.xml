@@ -1,0 +1,29 @@
+<layer type="shp">
+  <title>Kenya Climate: max temp</title>
+  <abstract>Generated from KenyaClimateSurface -- Shapefile Layer 'KenyaClimateSurface::kenya_climate_surface'</abstract>
+  <source country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</source>
+  <provider country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</provider>
+  <region>133</region>
+  <categories />
+  <sharingcode>Public</sharingcode>
+  <featuretype>
+    <title>Kenya Climate: max temp</title>
+    <abstract>Generated from KenyaClimateSurface</abstract>
+    <defaultstyle>point</defaultstyle>
+    <bbox>
+      <srs>4326</srs>
+      <minx>33.92499923706055</minx>
+      <maxx>41.875</maxx>
+      <miny>-4.675000190734863</miny>
+      <maxy>5.025000095367432</maxy>
+    </bbox>
+    <layername>kenya_climate_surface</layername>
+    <datastore>
+      <name>KenyaClimateSurface</name>
+      <namespace>fenix</namespace>
+    </datastore>
+  </featuretype>
+  <!--Data dumped from geoserver at:-->
+  <!--REST url: http://ldvapp07.fao.org:8032/geoserverDev-->
+  <!--WMS url: http://ldvapp07.fao.org:8032/geoserverDev/wms?-->
+</layer>

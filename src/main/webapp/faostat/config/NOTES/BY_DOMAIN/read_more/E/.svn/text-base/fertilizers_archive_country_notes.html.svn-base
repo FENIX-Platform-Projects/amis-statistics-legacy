@@ -1,0 +1,270 @@
+<html>
+<head>
+
+<script type="text/javascript">
+function cCookie(name,value,days) {
+if (days) {
+var date = new Date();
+date.setTime(date.getTime()+(days*24*60*60*1000));
+var expires = "; expires="+date.toGMTString();
+}
+else var expires = "";
+document.cookie = name+"="+value+expires+"; path=/";
+} 
+
+function rCookie(name) {
+var nameEQ = name + "=";
+var ca = document.cookie.split(';');
+for(var i=0;i < ca.length;i++) {
+var c = ca[i];
+while (c.charAt(0)==' ') c = c.substring(1,c.length);
+if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+}
+return null;
+} 
+
+function toggleDiv(element){
+var el;
+var currcookie;
+el = document.getElementById(element);
+currcookie = rCookie('toggleDiv');
+if(el.style.display != 'block') {
+el.style.display = 'block';
+currcookie = ((currcookie==null)?'':currcookie)+element+'|';
+cCookie('toggleDiv',currcookie,1);
+}
+else {
+el.style.display = 'none';
+currcookie = currcookie.replace(element+'|',"");
+cCookie('toggleDiv',currcookie,1);
+}
+}
+</script>
+
+</head>
+<body>
+<p><strong>Fertilizers Archive Country Notes</strong></p>
+
+<p><span class="link_arrows"><img alt="bullet-arrow" src="/Portals/_Faostat/images/images/link_arrows.gif" /></span><a onclick="toggleDiv('texthidAfrica');" href="javascript:void(0)"><strong>Africa</strong></a></p>
+<div id="texthidAfrica" style="DISPLAY: none">
+<div id="addText">
+<p>Prices fixed by government. Subsidy programme ended in 1987. </p>
+<p><strong>Botswana:</strong><br />
+Subsidy programme started in October 1985; subsidies (not deducted) paid to agricultural marketing board distribution agent. </p>
+<p><strong>Burkina Faso:</strong><br />
+Retail prices. Subsidy programme ended in 1988. Prices are fixed by SOFITEX. </p>
+<p><strong>Burundi:</strong><br />
+Prices at retail store. Government subsidy on taxes and rights for the public and parapublic enterprises. The price is fixed on the base of value CIF charges of distribution. </p>
+<p><strong>Cameroon:</strong><br />
+TVA suppressed from 1999.</p>
+<p><strong>Cape Verde:</strong><br />
+Retail prices fixed by government. Subsidy programme started in October 1981. Subsidies directly paid to farmers. </p>
+<p><strong>Egypt:</strong><br />
+Retail prices fixed by government. Subsidies paid to manufacturers, cooperatives, farmers' organizations or special agricultural suppliers. From 1998 free market.</p>
+<p><strong>Ethiopia:</strong><br />
+Retail prices fixed by government. Subsidy programme ended in 1997. Prices deregulated. After 2001 free market.</p>
+<p><strong>Ghana:</strong><br />
+Prices fixed by government. Subsidy programme ended in 1997.</p>
+<p><strong>Kenya:</strong><br />
+Retail prices fixed by government. Prices agreed upon by government treasury and suppliers. </p>
+<p><strong>Madagascar:</strong><br />
+Retail prices. Subsidy programme ended in 1986. </p>
+<p><strong>Malawi:</strong><br />
+Prices at farmers' nearest market fixed by government. Subsidies of 25% for ammonium sulphate, calcium ammonium nitrate, urea and 20-20-0.</p>
+<p><strong>Mauritania:</strong><br />
+prices fixed by government. </p>
+<p><strong>Mauritius:</strong><br />
+Ex-factory prices. Subsidy programme ended in February 1986. </p>
+<p><strong>Morocco:</strong><br />
+Prices fixed by government until 1989. Subsidy programme from 1974 to 1990, with subsidies paid to fertilizer manufacturers and importers. After July 1991 liberalized sector.</p>
+<p><strong>Niger:</strong><br />
+Prices fixed by government. Subsidies paid to farmers and government agencies for distribution of fertilizers. </p>
+<p><strong>Nigeria:</strong><br />
+Prices fixed by government for subsidized fertilizers. Subsidy programme started in 1991 and ended in 1997. </p>
+<p><strong>Rwanda:</strong><br />
+Prices fixed by government. </p>
+<p><strong>Seychelles:</strong><br />
+Prices fixed by government. </p>
+<p><strong>Sierra Leone:</strong><br />
+Subsidy programme ended in 1994. Prices are determined by demand and supply and by the security situation in the country at the time.</p>
+<p><strong>South Africa:</strong><br />
+Farmgate prices. Subsidy programme ended in 1984. Prices from 1997 are based on company price lists. </p>
+<p><strong>Sudan:</strong><br />
+The Ministry of Agriculture is responsible for supplying the government schemes concerning inputs; farmers receive these inputs (including fertilizers) at the actual costs.</p>
+<p><strong>Swaziland:</strong><br />
+Retail prices. </p>
+<p><strong>Tanzania, United Republic of:</strong><br />
+Retail prices. Subsidy programme ended in 1994.</p>
+<p><strong>Togo:</strong> <br />
+Prices fixed by government. Subsidy programme started in August 1986. Subsidies paid to transport agencies, cooperatives, farmers' organizations or special agricultural suppliers. </p>
+<p><strong>Uganda:</strong><br />
+From 1998 prices determined by market forces in a liberalized economy.</p>
+<p><strong>Zimbabwe:</strong><br />
+Ex factory prices fixed by government.</p>
+
+<p><a onclick="toggleDiv('texthidAfrica');" href="javascript:void(0)"><strong>close</strong></a></p>
+</div>
+</div>
+
+<p><span class="link_arrows"><img alt="bullet-arrow" src="/Portals/_Faostat/images/images/link_arrows.gif" /></span><a onclick="toggleDiv('texthidNCA');" href="javascript:void(0)"><strong>North and Central America</strong></a></p>
+<div id="texthidNCA" style="DISPLAY: none">
+<div id="addText">
+
+<p><strong>Dominican Republic</strong>:<br />
+Store prices.</p>
+<p><strong>El Salvador</strong>:<br />
+Retail prices. </p>
+<p><strong>Haiti</strong>:<br />
+Prices fixed by government. Subsidy programme started in 1997. Subsidies paid to farmers.</p>
+<p><strong>Nicaragua</strong>:<br />
+Retail prices.</p>
+<p><strong>St. Lucia</strong>:<br />
+Prices fixed by fertilizers agencies. From 1998 subsidies paid to fertilizers manufacturers.</p>
+<p><strong>Trinidad and Tobago</strong>:<br />
+From 1993 prices for urea are f.o.b. Subsidy programme started in 1998.</p>
+
+<p><a onclick="toggleDiv('texthidNCA');" href="javascript:void(0)"><strong>close</strong></a></p>
+</div>
+</div>
+
+<p><span class="link_arrows"><img alt="bullet-arrow" src="/Portals/_Faostat/images/images/link_arrows.gif" /></span><a onclick="toggleDiv('texthidSA');" href="javascript:void(0)"><strong>South America</strong></a></p>
+<div id="texthidSA" style="DISPLAY: none">
+<div id="addText">
+
+<p><strong>Bolivia: </strong><br />
+Prices fixed by government. Subsidy programme ended in 1985. Prices in pesos up to 1985, in bolivianos from 1986 onwards.</p>
+<p><strong>Brazil: </strong><br />
+F.O.B. Factory prices. Prices in cruzeiros up to 1985, from 1986 to 1989 in cruzados, from 1990 to 1992 in cruzeiros, for 1993 in cruzeiros reais and from 1994 onward in reais. From 1997 for mixed fertilizers f.o.b. factory prices. </p>
+<p><strong>Paraguay: </strong><br />
+Retail prices fixed by government. </p>
+<p><strong>Peru: </strong><br />
+Retail store prices. Subsidy programme ended in January 1979. Prices are in soles up to 1978, from 1979 to 1989 in intis, in new soles from 1990 onward. </p>
+<p><strong>Uruguay: </strong><br />
+Factory prices. Up to 1970 prices are in pesos, from 1974 to 1991 new pesos, from 1993 onward in uruguayan pesos. </p>
+<p><strong>Venezuela: </strong><br />
+Prices fixed by government. Subsidies paid to fertilizer manufacturers. From 1990 to 1994 prices include subsidies. Subsidy programme ended in 1994.</p>
+
+<p><a onclick="toggleDiv('texthidSA');" href="javascript:void(0)"><strong>close</strong></a></p>
+</div>
+</div>
+
+<p><span class="link_arrows"><img alt="bullet-arrow" src="/Portals/_Faostat/images/images/link_arrows.gif" /></span><a onclick="toggleDiv('texthidAsia');" href="javascript:void(0)"><strong>Asia</strong></a></p>
+<div id="texthidAsia" style="DISPLAY: none">
+<div id="addText">
+
+<p><strong>Bahrain: </strong><br />
+Retail prices.</p>
+<p><strong>Bangladesh: </strong><br />
+Ex factory prices fixed by government. Subsidy paid to fertilizer manufacturers.</p>
+<p><strong>Cambodia: </strong><br />
+Prices fixed by government. Subsidies paid to farmers. From 1996 prices are the averages of the monthly prices during the year in the city of Phnom Penh.</p>
+<p><strong>China: </strong><br />
+Retail prices.</p>
+<p><strong>Cyprus: </strong><br />
+prices controlled by the price control committee of the Ministry of Commerce. Weighted averages of selling prices of several village cooperatives. </p>
+<p><strong>India: </strong><br />
+Retail prices. </p>
+<p><strong>Indonesia:</strong><br />
+Retail prices. Subsidy programme stopped since December 1998. Government still gives subsidies to the urea manufacturers. </p>
+<p><strong>Iran, Islamic Republic of:</strong><br />
+Prices fixed by government. Subsidies paid to transport agencies. </p>
+<p><strong>Israel:</strong><br />
+Ex factory prices. Urea: price at port. Muriate: price at retail store. </p>
+<p><strong>Jordan:</strong><br />
+Retail prices. Muriate over 45%: from 1997 wholesale prices in bulk. </p>
+<p><strong>Korea, Republic of:</strong> <br />
+Prices fixed by government. Subsidies paid to farmers. </p>
+<p><strong>Malaysia: </strong><br />
+Retail prices. </p>
+<p><strong>Myanmar: </strong><br />
+Retail prices fixed by government. Subsidies paid to farmers.</p>
+<p><strong>Nepal: </strong><br />
+Retail prices. Subsidy programme ended in 1998.</p>
+<p><strong>Pakistan: </strong><br />
+Subsidies paid to fertilizer manufacturers.</p>
+<p><strong>Philippines: </strong><br />
+Retail prices. Subsidy programme ended in 1997.</p>
+<p><strong>Qatar: </strong><br />
+F.O.B. Factory prices. Since 1984 prices fixed by government for local sales.</p>
+<p><strong>Singapore: </strong><br />
+Wholesale price.</p>
+<p><strong>Sri Lanka: </strong><br />
+Retail prices fixed by government. Subsidies paid to importers. From 1997 subsidy programme only for urea. </p>
+<p><strong>Syrian Arab Republic: </strong><br />
+Retail prices fixed by government.</p>
+<p><strong>Thailand: </strong><br />
+Retail prices. </p>
+<p><strong>Turkey: </strong><br />
+Subsidy programme ended in 2001.</p>
+<p><strong>Yemen: </strong><br />
+Subsidies not deducted.</p>
+
+<p><a onclick="toggleDiv('texthidAsia');" href="javascript:void(0)"><strong>close</strong></a></p>
+</div>
+</div>
+
+<p><span class="link_arrows"><img alt="bullet-arrow" src="/Portals/_Faostat/images/images/link_arrows.gif" /></span><a onclick="toggleDiv('texthidEurope');" href="javascript:void(0)"><strong>Europe</strong></a></p>
+<div id="texthidEurope" style="DISPLAY: none">
+<div id="addText">
+
+<p><strong>Austria: </strong><br />
+Prices in bulk. 20% of VAT excluded. Since 2002 prices are in euro.</p>
+<p><strong>Belgium: </strong><br />
+Prices exclude VAT. Since 2002 prices are in euro.</p>
+<p><strong>Bulgaria: </strong><br />
+Bagged factory prices</p>
+<p><strong>Finland: </strong><br />
+Prices include excise tax up to 1996. Subsidy programme ended in June 1976. Since 2002 prices are in euro.</p>
+<p><strong>France: </strong><br />
+Since 2002 prices are in euro.</p>
+<p><strong>Germany: </strong><br />
+Since 2002 prices are in euro.</p>
+<p><strong>Greece: </strong><br />
+Prices fixed by government. Since 2002 prices are in euro.</p>
+<p><strong>Hungary: </strong><br />
+Prices in bulk. Free market.</p>
+<p><strong>Iceland: </strong><br />
+Prices fixedt at port. Subsidies paid to fertilizer manufacturers during 1990-91 were stopped. </p>
+<p><strong>Ireland: </strong><br />
+retail prices. Subsidies on phosphate abolished beginning 1978. New price series introduced in March 1979. Prices may not be strictly comparable. Since 2002 prices are in euro.</p>
+<p><strong>Italy: </strong><br />
+Since 2002 prices are in euro. VAT excluded</p>
+<p><strong>Netherlands: </strong><br />
+Since 2002 prices are in euro.</p>
+<p><strong>Portugal: </strong><br />
+Since 2002 prices are in euro.</p>
+<p><strong>Poland: </strong><br />
+Zloty up to 1988. New zloty from 1989 onward. </p>
+<p><strong>Russian Federation: </strong><br />
+Prices fixed by government. </p>
+<p><strong>Slovakia: </strong><br />
+Subsidies are under government programme from 1997 to 1999. </p>
+<p><strong>Spain: </strong><br />
+Subsidy programme ended in December 1987. Since 2002 prices are in euro.</p>
+<p><strong>Sweden: </strong><br />
+From 1999 there is an environmental tax on nitrate. </p>
+<p><strong>Switzerland: </strong><br />
+Prices excluded VAT.</p>
+<p><strong>Ukraine: </strong><br />
+Factory prices.</p>
+
+<p><a onclick="toggleDiv('texthidEurope');" href="javascript:void(0)"><strong>close</strong></a></p>
+</div>
+</div>
+
+<p><span class="link_arrows"><img alt="bullet-arrow" src="/Portals/_Faostat/images/images/link_arrows.gif" /></span><a onclick="toggleDiv('texthidOceania');" href="javascript:void(0)"><strong>Oceania</strong></a></p>
+<div id="texthidOceania" style="DISPLAY: none">
+<div id="addText">
+
+<p><strong>Fiji:</strong><br />
+Subsidy programme ended in 1987.</p>
+<p><strong>New Zealand:<br />
+</strong>Retail prices. </p>
+
+<p></span><a onclick="toggleDiv('texthidOceania');" href="javascript:void(0)"><strong>close</strong></a></p>
+</div>
+<br />
+</div>
+</div>
+</body>
+</html>

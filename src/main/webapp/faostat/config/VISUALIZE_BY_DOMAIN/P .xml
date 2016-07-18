@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<VIEW type="Browse By P - Prices" >
+	<TITLE>
+		<E>Prices</E>
+		<S>Precios</S>
+		<F>Prix</F>
+	</TITLE>
+	<FILTERS>
+		<FILTER width="200px">
+			<FILTERTYPE>ITEMS</FILTERTYPE>
+			<DROPDOWNCODES>
+				<CODE label="Cereals, Total" domain='PI'>1717</CODE>
+				<CODE label="Rice, paddy" domain='PI'>27</CODE>			
+				<CODE label="Sugar cane" domain='PI'>156</CODE>
+				<CODE label="Tea" domain='PI'>667</CODE>
+				<CODE label="Wheat" domain='PI'>15</CODE>
+			</DROPDOWNCODES>
+			<DEFAULTCODES>
+				<CODE label="Rice, paddy" domain='PI'>27</CODE>
+			</DEFAULTCODES>
+		</FILTER>	
+		<FILTER>
+			<FILTERTYPE>TIMERANGE</FILTERTYPE>
+			<DROPDOWNCODES>
+				<CODE>1991</CODE>
+				<CODE>2009</CODE>			
+			</DROPDOWNCODES>
+			<DEFAULTCODES>
+				<CODE>1999</CODE>
+				<CODE>2009</CODE>
+			</DEFAULTCODES>
+		</FILTER>
+			
+		<FILTER>
+			<FILTERTYPE>AGGREGATION_TYPE</FILTERTYPE>
+			<CODE label="Average">AVG</CODE>
+		</FILTER>	
+	</FILTERS>
+	<RESOURCES>
+		<DEFAULT>
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>BAR_WITH_CATEGORIES</OUTPUTTYPE>
+				<TITLE>
+					<E>Top 10 countries with highest prices for the selected commodity</E>
+					<S>10 principales países con los mayores precios para el producto seleccionado</S>
+					<F>Top 10 des pays avec les prix les plus élevés pour le produit sélectionné</F>
+				</TITLE>
+				<SIZE>
+					<WIDTH>800</WIDTH>
+					<HEIGHT>330</HEIGHT>
+				</SIZE>
+				<APPLICABLE_FILTERS>
+					<APPLY_ALL_FILTERS_EXCEPT_AREA>true</APPLY_ALL_FILTERS_EXCEPT_AREA>
+				</APPLICABLE_FILTERS>
+				<DATEQUERY>
+					<MAXDATELIMIT>2010</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> -->
+					<TIMESPAN type="year">9</TIMESPAN>
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+ 						<SELECT lang="true">I.ItemName</SELECT>	
+						<SELECT lang="true">A.AreaName</SELECT>	
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Production">PP</DOMAIN>	
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Rice">27</ITEM>
+						</ITEMS>	
+						<ELEMENTS>
+							<ELEMENT label='Producer price'>5532</ELEMENT>
+						</ELEMENTS>								
+					</WHERE>
+					<SORT>
+						<FIELD type="aggregation">D.Value</FIELD>
+					</SORT>	
+
+					<NESTEDLIMIT field="D.AreaCode">10</NESTEDLIMIT>
+				</BASEQUERY>					
+			</RESOURCE>
+		</DEFAULT>	
+	</RESOURCES>
+</VIEW>

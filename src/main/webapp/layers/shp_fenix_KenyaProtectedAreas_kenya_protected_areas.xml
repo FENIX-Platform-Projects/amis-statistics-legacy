@@ -1,0 +1,29 @@
+<layer type="shp">
+  <title>Kenya Protected Areas</title>
+  <abstract>Generated from KenyaProtectedAreas -- Shapefile Layer 'KenyaProtectedAreas::kenya_protected_areas'</abstract>
+  <source country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</source>
+  <provider country="0" contact="Info-GIEWS-Workstation@fao.org">GIEWS Workstation - UN FAO</provider>
+  <region>133</region>
+  <categories />
+  <sharingcode>Public</sharingcode>
+  <featuretype>
+    <title>Kenya Protected Areas</title>
+    <abstract>Generated from KenyaProtectedAreas</abstract>
+    <defaultstyle>kenyaprotareastyle</defaultstyle>
+    <bbox>
+      <srs>4326</srs>
+      <minx>34.0015907287598</minx>
+      <maxx>41.5638046264648</maxx>
+      <miny>-4.54487133026123</miny>
+      <maxy>4.27137422561646</maxy>
+    </bbox>
+    <layername>kenya_protected_areas</layername>
+    <datastore>
+      <name>KenyaProtectedAreas</name>
+      <namespace>fenix</namespace>
+    </datastore>
+  </featuretype>
+  <!--Data dumped from geoserver at:-->
+  <!--REST url: http://ldvapp07.fao.org:8032/geoserverDev-->
+  <!--WMS url: http://ldvapp07.fao.org:8032/geoserverDev/wms?-->
+</layer>

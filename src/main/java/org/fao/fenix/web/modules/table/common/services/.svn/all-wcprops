@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/fenix/!svn/ver/7170/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/table/common/services
+END
+TableServiceEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/fenix/!svn/ver/6413/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/table/common/services/TableServiceEntry.java
+END
+TableService.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/fenix/!svn/ver/7170/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/table/common/services/TableService.java
+END
+TableServiceAsync.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/fenix/!svn/ver/7170/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/table/common/services/TableServiceAsync.java
+END

@@ -1,0 +1,16 @@
+com.extjs.gxt.ui.client.core.FastMap, true, true, true, true, com.extjs.gxt.ui.client.core.FastMap/3488076414, 3488076414
+com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException, true, true, true, true, com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException/3936916533, 3936916533
+java.lang.Exception, true, false, true, false, java.lang.Exception/1920171873, 1920171873
+java.lang.Long, true, true, false, false, java.lang.Long/4227064769, 4227064769
+java.lang.Number, true, false, false, false, java.lang.Number/300033342, 300033342
+java.lang.RuntimeException, true, false, true, false, java.lang.RuntimeException/515124647, 515124647
+java.lang.String, true, true, true, true, java.lang.String/2004016611, 2004016611
+java.lang.Throwable, true, false, true, false, java.lang.Throwable/2953622131, 2953622131
+java.util.HashMap, true, true, true, true, java.util.HashMap/962170901, 962170901
+java.util.IdentityHashMap, true, true, true, true, java.util.IdentityHashMap/3881143367, 3881143367
+java.util.LinkedHashMap, true, true, true, true, java.util.LinkedHashMap/1551059846, 1551059846
+java.util.TreeMap, true, true, true, true, java.util.TreeMap/1575826026, 1575826026
+org.fao.fenix.web.modules.core.common.exception.FenixGWTException, true, true, false, false, org.fao.fenix.web.modules.core.common.exception.FenixGWTException/132683058, 132683058
+org.fao.fenix.web.modules.edi.common.services.FAOStatService, false, false, false, false, _, 2508325906
+org.fao.fenix.web.modules.edi.common.vo.EDISettings, false, false, true, true, org.fao.fenix.web.modules.edi.common.vo.EDISettings/1197714637, 1197714637
+org.fao.fenix.web.modules.edi.common.vo.FAOStatParametersVO, false, false, true, true, org.fao.fenix.web.modules.edi.common.vo.FAOStatParametersVO/1686481654, 1686481654

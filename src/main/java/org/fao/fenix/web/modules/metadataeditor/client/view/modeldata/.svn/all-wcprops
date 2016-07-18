@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/fenix/!svn/ver/6410/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/metadataeditor/client/view/modeldata
+END
+CodingTypeModelData.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/fenix/!svn/ver/6410/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/metadataeditor/client/view/modeldata/CodingTypeModelData.java
+END
+CodingNameModelData.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/fenix/!svn/ver/6410/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/metadataeditor/client/view/modeldata/CodingNameModelData.java
+END
+PeriodTypeCodeModelData.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/fenix/!svn/ver/6410/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/metadataeditor/client/view/modeldata/PeriodTypeCodeModelData.java
+END
+SharingCodeModelData.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/fenix/!svn/ver/6410/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/metadataeditor/client/view/modeldata/SharingCodeModelData.java
+END
+DatasetTypeModelData.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/fenix/!svn/ver/6410/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/metadataeditor/client/view/modeldata/DatasetTypeModelData.java
+END

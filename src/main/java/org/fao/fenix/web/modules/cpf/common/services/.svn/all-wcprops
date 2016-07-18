@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/fenix/!svn/ver/8819/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/cpf/common/services
+END
+CPFServiceAsync.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/fenix/!svn/ver/8819/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/cpf/common/services/CPFServiceAsync.java
+END
+CPFService.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/fenix/!svn/ver/8819/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/cpf/common/services/CPFService.java
+END
+CPFServiceEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/fenix/!svn/ver/8819/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/cpf/common/services/CPFServiceEntry.java
+END

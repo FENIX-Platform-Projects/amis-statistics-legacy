@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+        This file contains the definitions of the servers to be harvested during the boot
+-->
+
+<servers>
+	<server>
+		<title>NASA JPL OneEarth WMS</title>
+		<url>http://wms.jpl.nasa.gov/wms.cgi</url>
+	</server>
+	<server>
+		<title>NASA Earth Observations (NEO) WMS</title>
+		<url>http://neowms.sci.gsfc.nasa.gov/wms/wms</url>
+	</server>
+	<server>
+		<title>Landsat 7</title>
+		<url>http://hypercube.telascience.org/cgi-bin/landsat7</url>
+	</server>	
+</servers>

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/fenix/!svn/ver/7156/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataMapper/common/services
+END
+DataMapperService.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/fenix/!svn/ver/7156/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataMapper/common/services/DataMapperService.java
+END
+DataMapperServiceEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/fenix/!svn/ver/6951/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataMapper/common/services/DataMapperServiceEntry.java
+END
+DataMapperServiceAsync.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/fenix/!svn/ver/7156/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataMapper/common/services/DataMapperServiceAsync.java
+END

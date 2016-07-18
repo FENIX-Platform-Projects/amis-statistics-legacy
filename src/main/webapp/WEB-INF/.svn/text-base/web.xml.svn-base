@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" version="2.4">
+	<display-name>fenix-web</display-name>
+
+     <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+     </welcome-file-list>
+        
+	<context-param>
+		<param-name>log4jConfigLocation</param-name>
+		<param-value>/WEB-INF/lib/log4j.properties</param-value>
+	</context-param>
+
+
+
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>
+			/WEB-INF/applicationContext.xml,
+			classpath:/applicationContext-cache.xml,
+			classpath:/applicationContext-pojo.xml,
+			classpath:/applicationContext-gwt.xml,
+			classpath:/applicationContext-x.xml,
+			classpath:/applicationContext-security.xml
+		</param-value>
+	</context-param>
+
+
+
+	<listener>
+		<listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
+	</listener>
+
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+
+	<servlet>
+		<servlet-name>UpdateChartServlet</servlet-name>
+		<servlet-class>org.fao.fenix.web.modules.core.server.upload.UpdateChartServlet</servlet-class>
+		<load-on-startup>5</load-on-startup>
+	</servlet>
+	<!-- upload servlet -->
+	<servlet>
+		<servlet-name>SingleDatasetUploadServlet</servlet-name>
+		<servlet-class>org.fao.fenix.web.modules.core.server.upload.SingleDatasetUploadServlet</servlet-class>
+		<load-on-startup>5</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>ParseDatasetHeadersServlet</servlet-name>
+		<servlet-class>org.fao.fenix.web.modules.excelimporter.server.ParseDatasetHeadersServlet</servlet-class>
+		<load-on-startup>5</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>GhostFormServlet</servlet-name>
+		<servlet-class>org.fao.fenix.web.modules.excelimporter.server.GhostFormServlet</servlet-class>
+		<load-on-startup>5</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>CodeListUploaderServlet</servlet-name>
+		<servlet-class>org.fao.fenix.web.modules.core.server.upload.CodeListUploaderServlet</servlet-class>
+		<load-on-startup>5</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>AquastatServlet</servlet-name>
+		<servlet-class>org.fao.fenix.web.modules.aquastat.server.AquastatServlet</servlet-class>
+		<load-on-startup>5</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>LayerUploadServlet</servlet-name>
+		<servlet-class>org.fao.fenix.web.modules.core.server.upload.LayerUploadServlet</servlet-class>
+		<load-on-startup>6</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>XImporterServlet</servlet-name>
+		<servlet-class>org.fao.fenix.web.modules.x.server.XImporterServlet</servlet-class>
+		<load-on-startup>7</load-on-startup>
+	</servlet>
+	
+	<!-- Joint Login/Upload Servlet -->
+	<servlet>
+		<servlet-name>JointLoginUploaderServlet</servlet-name>
+		<servlet-class>org.fao.fenix.web.modules.datasetupload.server.JointLoginUploaderServlet</servlet-class>
+		<load-on-startup>5</load-on-startup>
+	</servlet>
+
+	<!--
+		unused <servlet> <servlet-name>mapService</servlet-name> <servlet-class> org.fao.fenix.web.servlet.MapService
+		</servlet-class> <init-param> <param-name>contextConfigLocation</param-name>
+		<param-value>/WEB-INF/applicationContext.xml</param-value> </init-param> </servlet>
+	-->
+
+	<!-- shape file upload servlet -->
+	<servlet>
+		<servlet-name>SingleShapeFileUploadServlet</servlet-name>
+		<servlet-class>org.fao.fenix.web.modules.core.server.upload.SingleShapeFileUploadServlet</servlet-class>
+		<load-on-startup>7</load-on-startup>
+	</servlet>
+
+	<!-- shape file store servlet -->
+	<servlet>
+		<servlet-name>SingleShapeFileStoreServlet</servlet-name>
+		<servlet-class>org.fao.fenix.web.modules.core.server.upload.SingleShapeFileStoreServlet</servlet-class>
+		<load-on-startup>8</load-on-startup>
+	</servlet>
+
+	<!-- geotiff file upload servlet -->
+	<servlet>
+		<servlet-name>SingleGeotiffUploadServlet</servlet-name>
+		<servlet-class>org.fao.fenix.web.modules.core.server.upload.SingleGeotiffUploadServlet</servlet-class>
+		<load-on-startup>7</load-on-startup>
+	</servlet>
+
+	<!-- geotiff file store servlet -->
+	<servlet>
+		<servlet-name>SingleGeotiffStoreServlet</servlet-name>
+		<servlet-class>org.fao.fenix.web.modules.core.server.upload.SingleGeotiffStoreServlet</servlet-class>
+		<load-on-startup>8</load-on-startup>
+	</servlet>
+
+	<!-- external graphic file upload servlet -->
+	<servlet>
+		<servlet-name>SingleExternalGraphicUploadServlet</servlet-name>
+		<servlet-class>org.fao.fenix.web.modules.core.server.upload.SingleExternalGraphicUploadServlet</servlet-class>
+		<load-on-startup>8</load-on-startup>
+	</servlet>
+
+	<!-- sld file upload servlet -->
+	<servlet>
+		<servlet-name>SingleSLDUploadServlet</servlet-name>
+		<servlet-class>org.fao.fenix.web.modules.core.server.upload.SingleSLDUploadServlet</servlet-class>
+		<load-on-startup>8</load-on-startup>
+	</servlet>
+	
+	<!-- NEW SLD file upload servlet -->
+	<servlet>
+		<servlet-name>SLDUploaderServlet</servlet-name>
+		<servlet-class>org.fao.fenix.web.modules.core.server.upload.SLDUploaderServlet</servlet-class>
+		<load-on-startup>8</load-on-startup>
+	</servlet>
+
+	<!-- sld file save servlet -->
+	<servlet>
+		<servlet-name>SingleSLDSaveServlet</servlet-name>
+		<servlet-class>org.fao.fenix.web.modules.core.server.upload.SingleSLDSaveServlet</servlet-class>
+		<load-on-startup>10</load-on-startup>
+	</servlet>
+
+	<!-- statsinfo servlet -->
+	<servlet>
+		<servlet-name>StatsInfoServlet</servlet-name>
+		<servlet-class>org.fao.fenix.web.modules.core.server.utils.StatsInfoServlet</servlet-class>
+		<load-on-startup>9</load-on-startup>
+	</servlet>
+
+	<!-- subset data select servlet -->
+	<servlet>
+		<servlet-name>SubsetDataSelectServlet</servlet-name>
+		<servlet-class>org.fao.fenix.web.modules.core.server.utils.SubsetDataSelectServlet</servlet-class>
+		<load-on-startup>9</load-on-startup>
+	</servlet>
+	
+<!--	 Coding System Upload Servlet -->
+	<servlet>
+		<servlet-name>CodingUploadServlet</servlet-name>
+		<servlet-class>org.fao.fenix.web.modules.core.server.upload.CodingUploadServlet</servlet-class>
+		<load-on-startup>10</load-on-startup>
+	</servlet>
+	
+	
+<!--	 Coding Hierarchy Upload Servlet -->
+	<servlet>
+		<servlet-name>CodingHierarchyUploadServlet</servlet-name>
+		<servlet-class>org.fao.fenix.web.modules.core.server.upload.CodingHierarchyUploadServlet</servlet-class>
+		<load-on-startup>10</load-on-startup>
+	</servlet>
+	
+	<!-- Mapping Coding System Upload Servlet -->
+	<servlet>
+		<servlet-name>CodingMappingUploadServlet</servlet-name>
+		<servlet-class>org.fao.fenix.web.modules.core.server.upload.CodingMappingUploadServlet</servlet-class>
+		<load-on-startup>11</load-on-startup>
+	</servlet>
+	
+	<!-- image file upload servlet -->
+	<servlet>
+		<servlet-name>SingleImageUploadServlet</servlet-name>
+		<servlet-class>org.fao.fenix.web.modules.core.server.upload.SingleImageUploadServlet</servlet-class>
+		<load-on-startup>12</load-on-startup>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ChangeBannerServlet</servlet-name>
+		<servlet-class>org.fao.fenix.web.modules.core.server.upload.ChangeBannerServlet</servlet-class>
+		<load-on-startup>12</load-on-startup>
+	</servlet>
+
+	<!-- Proxy servlet-->
+	<servlet>
+		<servlet-name>Proxy</servlet-name>
+		<servlet-class>org.fao.fenix.web.modules.core.server.utils.Proxy</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>/WEB-INF/applicationContext.xml</param-value>
+		</init-param>
+	</servlet>
+
+	<!-- SaveWMC servlet-->
+	<servlet>
+		<servlet-name>saveWMC</servlet-name>
+		<servlet-class>org.fao.fenix.web..modules.core.client.control.services..mapService.SaveWMC</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>/WEB-INF/applicationContext.xml</param-value>
+		</init-param>
+	</servlet>
+	<!--
+		Added this filter after problems with GWT failed to lazily initialize a collection of role no session or session was
+		closed
+	-->
+	<filter>
+		<filter-name>Spring OpenEntityManagerInViewFilter</filter-name>
+		<filter-class>org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>Spring OpenEntityManagerInViewFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<!-- 
+		Mapping the GWTController
+	-->
+	<servlet>
+		<servlet-name>exporter</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<!-- 
+		Mapping the GWTController
+	-->
+	<servlet-mapping>
+		<servlet-name>exporter</servlet-name>
+		<url-pattern>/exporter/*</url-pattern>
+	</servlet-mapping>
+	<!--
+		unused <servlet-mapping> <servlet-name>mapService</servlet-name> <url-pattern>/json/mapservice</url-pattern>
+		</servlet-mapping>
+	-->
+	<servlet-mapping>
+		<servlet-name>LayerUploadServlet</servlet-name>
+		<url-pattern>/LayerUploadServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SingleDatasetUploadServlet</servlet-name>
+		<url-pattern>/SingleDatasetUploadServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ParseDatasetHeadersServlet</servlet-name>
+		<url-pattern>/ParseDatasetHeadersServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GhostFormServlet</servlet-name>
+		<url-pattern>/GhostFormServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CodeListUploaderServlet</servlet-name>
+		<url-pattern>/CodeListUploaderServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdateChartServlet</servlet-name>
+		<url-pattern>/UpdateChartServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AquastatServlet</servlet-name>
+		<url-pattern>/AquastatServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>XImporterServlet</servlet-name>
+		<url-pattern>/XImporterServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>JointLoginUploaderServlet</servlet-name>
+		<url-pattern>/JointLoginUploaderServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SingleGeotiffUploadServlet</servlet-name>
+		<url-pattern>/SingleGeotiffUploadServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SingleGeotiffStoreServlet</servlet-name>
+		<url-pattern>/SingleGeotiffStoreServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SingleShapeFileUploadServlet</servlet-name>
+		<url-pattern>/SingleShapeFileUploadServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SingleShapeFileStoreServlet</servlet-name>
+		<url-pattern>/SingleShapeFileStoreServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SingleExternalGraphicUploadServlet</servlet-name>
+		<url-pattern>/SingleExternalGraphicUploadServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SingleSLDUploadServlet</servlet-name>
+		<url-pattern>/SingleSLDUploadServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SLDUploaderServlet</servlet-name>
+		<url-pattern>/SLDUploaderServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SingleSLDSaveServlet</servlet-name>
+		<url-pattern>/SingleSLDSaveServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SubsetDataSelectServlet</servlet-name>
+		<url-pattern>/SubsetDataSelectServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CodingUploadServlet</servlet-name>
+		<url-pattern>/CodingUploadServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CodingHierarchyUploadServlet</servlet-name>
+		<url-pattern>/CodingHierarchyUploadServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CodingMappingUploadServlet</servlet-name>
+		<url-pattern>/CodingMappingUploadServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SingleImageUploadServlet</servlet-name>
+		<url-pattern>/SingleImageUploadServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ChangeBannerServlet</servlet-name>
+		<url-pattern>/ChangeBannerServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Proxy</servlet-name>
+		<url-pattern>/proxy</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>saveWMC</servlet-name>
+		<url-pattern>/saveWMC</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>StatsInfoServlet</servlet-name>
+		<url-pattern>/stats</url-pattern>
+	</servlet-mapping>
+
+	<!-- Definitions for Spring Security -->
+	<filter>
+		<filter-name>springSecurityFilterChain</filter-name>
+		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>springSecurityFilterChain</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+</web-app>

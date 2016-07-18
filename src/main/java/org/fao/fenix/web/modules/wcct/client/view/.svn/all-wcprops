@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/wcct/client/view
+END
+WCCTTabPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/wcct/client/view/WCCTTabPanel.java
+END
+MapWestPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/wcct/client/view/MapWestPanel.java
+END
+ChartWestPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/fenix/!svn/ver/6662/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/wcct/client/view/ChartWestPanel.java
+END
+TableWestPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/wcct/client/view/TableWestPanel.java
+END
+WCCTTool.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/wcct/client/view/WCCTTool.java
+END
+MapCenterPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/fenix/!svn/ver/6414/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/wcct/client/view/MapCenterPanel.java
+END
+ChartCenterPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/fenix/!svn/ver/6662/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/wcct/client/view/ChartCenterPanel.java
+END
+TableCenterPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/wcct/client/view/TableCenterPanel.java
+END

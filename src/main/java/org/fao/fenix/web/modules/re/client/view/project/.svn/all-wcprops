@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/fenix/!svn/ver/7078/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/project
+END
+CatalogueProject.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/project/CatalogueProject.java
+END
+CataloguePagerProject.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/fenix/!svn/ver/6412/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/project/CataloguePagerProject.java
+END
+ResourceExplorerProject.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/project/ResourceExplorerProject.java
+END
+SearchParametersProject.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/fenix/!svn/ver/6412/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/project/SearchParametersProject.java
+END
+CatalogueContextMenuProject.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/fenix/!svn/ver/7078/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/project/CatalogueContextMenuProject.java
+END

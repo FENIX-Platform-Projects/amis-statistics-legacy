@@ -1,0 +1,25 @@
+<VIEW type="VIew By Topic - List of Questions" >
+	
+	<QUESTIONS>
+		<QUESTION>
+			<TITLE>
+				<E>Which regions produce more food</E>
+			</TITLE>
+			<SUBTITLE>
+				<E>THE VIEW SHOWS Which regions produce more food...BAL BLA</E>
+			</SUBTITLE>
+			<DESCRIPTION>
+				<E>DESCRIPTION OF FOOD UIAHSDIUH</E>
+			</DESCRIPTION>
+			<FILENAME>which_regions_produce_more_food</FILENAME>		</QUESTION>
+
+
+		<QUESTION>
+			<TITLE>
+				<E>How do we feed the world</E>
+			</TITLE>
+			<FILENAME>how_do_we_feed_the_world</FILENAME>		</QUESTION>
+
+	</QUESTIONS>
+
+</VIEW>

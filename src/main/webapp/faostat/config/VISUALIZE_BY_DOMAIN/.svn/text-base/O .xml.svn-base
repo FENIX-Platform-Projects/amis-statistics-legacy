@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<VIEW type="Browse By O - Population" >
+	<TITLE>
+		<E>Population </E>
+		<S>Población</S>
+		<F>Population</F>
+	</TITLE>
+	<FILTERS>
+		<FILTER width="70px">
+			<FILTERTYPE>YEARS</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE>2010</CODE>
+			</DEFAULTCODES>
+		</FILTER>
+			
+		<FILTER>
+			<FILTERTYPE>AGGREGATION_TYPE</FILTERTYPE>
+			<CODE label="Average">AVG</CODE>
+		</FILTER>	
+	</FILTERS>
+	<RESOURCES>
+		<DEFAULT>
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<TITLE>
+					<E>Global population dynamics</E>
+					<S>Dinámicas de la población mundial</S>
+					<F>Dynamique de la population mondiale</F>
+				</TITLE>
+				<SIZE>
+					<WIDTH>880</WIDTH>
+					<HEIGHT>330</HEIGHT>
+				</SIZE>
+				<APPLICABLE_FILTERS>
+					<NOT_APPLY_FILTERS>true</NOT_APPLY_FILTERS>
+				</APPLICABLE_FILTERS>
+			
+				<DATEQUERY>
+					<MAXDATELIMIT>2010</MAXDATELIMIT>
+					<TIMESPAN type="year">49</TIMESPAN>
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+ 						<SELECT lang="true">E.ElementName</SELECT>	
+						<SELECT>D.Year</SELECT>		
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Annual Population">OA</DOMAIN>
+						</DOMAINS>
+						<ELEMENTS>
+							<ELEMENT label='Rural population'>551</ELEMENT>		
+							<ELEMENT label='Agricultural population'>571</ELEMENT>	
+							<ELEMENT label='total population'>511</ELEMENT>	 
+							<ELEMENT label='Male economically active population in Agr'>602</ELEMENT>		
+							<ELEMENT label='Female economically active population in Agr'>603</ELEMENT>	
+						</ELEMENTS>	
+						<AREAS>
+							<AREA label="Afghanistan">5000</AREA>	
+						</AREAS> 
+						<ITEMS>
+							<ITEM label="Population - Est. Proj">3010</ITEM>
+						</ITEMS>	
+					</WHERE>
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>
+					<SORT type="ASC">
+					        <FIELD>D.Year</FIELD>
+					</SORT>			
+				</BASEQUERY>					
+			</RESOURCE>
+
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>BAR_WITH_CATEGORIES</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>430</WIDTH>
+					<HEIGHT>250</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>Global population composition by year</E>
+					<S>Composición mundial de la población por año</S>
+					<F>Composition de la population mondiale par année</F>
+				</TITLE>
+				<BASEQUERY>
+					<SELECTS>
+						<SELECT lang="true">E.ElementName</SELECT>
+						<SELECT>D.Year</SELECT>
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Annual Population">OA</DOMAIN>
+						</DOMAINS>
+						<ELEMENTS>
+							<ELEMENT label='Rural population'>551</ELEMENT>		
+							<ELEMENT label='Agricultural population'>571</ELEMENT>	
+							<ELEMENT label='total population'>511</ELEMENT>	
+							<ELEMENT label='Male economically active population in Agr'>602</ELEMENT>		
+							<ELEMENT label='Female economically active population in Agr'>603</ELEMENT>	
+						</ELEMENTS>	
+						<AREAS>
+							<AREA label="Afghanistan">5000</AREA>	
+						</AREAS> 
+						<ITEMS>
+							<ITEM label="Population - Est. Proj">3010</ITEM>
+						</ITEMS>
+						<YEARS>
+							<YEAR>2010</YEAR>
+						</YEARS>
+					</WHERE>
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>
+					<SORT type="ASC">
+					        <FIELD>D.Year</FIELD>
+					</SORT>	
+
+				</BASEQUERY>							
+			</RESOURCE>
+
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>PIE</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>430</WIDTH>
+					<HEIGHT>250</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>Global population composition (area of residence)</E>
+					<S>Composición mundial de la población (área de residencia)</S>
+					<F>Composition de la population mondiale (zone de résidence)</F>
+				</TITLE>
+				<BASEQUERY>
+					<SELECTS>
+						<SELECT>D.ElementCode</SELECT>	
+						<SELECT lang="true">E.ElementName</SELECT>
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Annual Population">OA</DOMAIN>
+						</DOMAINS>
+						<ELEMENTS>
+							<ELEMENT label='Rural population'>551</ELEMENT>	
+							<ELEMENT label='Urban population'>561</ELEMENT>
+
+						</ELEMENTS>	
+						<AREAS>
+							<AREA label="Afghanistan">5000</AREA>	
+						</AREAS> 
+						<ITEMS>
+							<ITEM label="Population - Est. Proj">3010</ITEM>
+						</ITEMS>
+						<YEARS>
+							<YEAR>2010</YEAR>
+						</YEARS>
+					</WHERE>
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>
+					<SORT type="ASC">
+					        <FIELD lang="true">E.ElementName</FIELD>
+					</SORT>	
+
+				</BASEQUERY>							
+			</RESOURCE>
+
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>PIE</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>550</WIDTH>
+					<HEIGHT>250</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>Global population composition (gender)</E>
+					<S>Composición mundial de la población (sexo)</S>
+					<F>Composition de la population mondiale (genre)</F>
+				</TITLE>
+				<BASEQUERY>
+					<SELECTS>
+						<SELECT>D.ElementCode</SELECT>	
+						<SELECT lang="true">E.ElementName</SELECT>
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Annual Population">OA</DOMAIN>
+						</DOMAINS>
+						<ELEMENTS>
+							<ELEMENT label='Male economically active population'>592</ELEMENT>	
+							<ELEMENT label='Female economically active population'>593</ELEMENT>
+						</ELEMENTS>	
+						<AREAS>
+							<AREA label="Afghanistan">5000</AREA>	
+						</AREAS> 
+						<ITEMS>
+							<ITEM label="Population - Est. Proj">3010</ITEM>
+						</ITEMS>
+						<YEARS>
+							<YEAR>2010</YEAR>
+						</YEARS>
+					</WHERE>
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>FALSE</COUNTRY_LEVEL>
+					<SORT type="ASC">
+					        <FIELD lang="true">E.ElementName</FIELD>
+					</SORT>	
+
+				</BASEQUERY>							
+			</RESOURCE>
+		</DEFAULT>	
+	</RESOURCES>
+</VIEW>

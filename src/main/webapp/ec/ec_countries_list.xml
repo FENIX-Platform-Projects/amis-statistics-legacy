@@ -1,0 +1,348 @@
+<root>
+	<country title="Afghanistan" code="1">
+		<dates>
+			<date stringDate="October 2009" referenceDate="01-11-2009"/>
+			<date stringDate="February 2010" referenceDate="01-03-2010"/>
+			<date stringDate="May 2010" referenceDate="01-06-2010"/>
+			<date stringDate="June-August 2010" referenceDate="01-10-2010" />
+			<date stringDate="September-December 2010" referenceDate="15-01-2011" unhcrDate="01/12/2010" priceLegend="Source: &lt;A HREF=&quot;http://www.fao.org/giews/pricetool&quot;&gt; GIEWS National basic food prices data and analysis tool &lt;/A&gt;" reportType="TEMPLATE_2011"/>
+			<date stringDate="January-April 2011" referenceDate="15-05-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>
+			<date stringDate="May-August 2011" referenceDate="15-10-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>
+		</dates>
+	</country>
+	
+	<country title="Armenia" code="13">
+		<dates>
+			<date stringDate="June-August 2010" referenceDate="01-10-2010" priceLegend="nolegend" foodBalanceLegend="nolegend"/>
+			<date stringDate="September-December 2010" referenceDate="15-01-2011" unhcrDate="01/12/2010" priceLegend="nolegend" foodBalanceLegend="nolegend" reportType="TEMPLATE_2011"/>
+		</dates>
+	</country>
+	
+	<country title="Azerbaijan" code="19">
+		<dates>
+			<date stringDate="June-August 2010" referenceDate="01-10-2010"/>
+			<date stringDate="September-December 2010" referenceDate="15-01-2011" unhcrDate="01/12/2010" priceLegend="nolegend" foodBalanceLegend="nolegend" reportType="TEMPLATE_2011"/>
+		</dates>
+	</country>
+	
+	<country title="Bangladesh" code="23">
+		<dates>
+			<date stringDate="February 2010" referenceDate="01-03-2010"/>
+			<date stringDate="May 2010" referenceDate="01-06-2010"/>
+			<date stringDate="June-August 2010" referenceDate="01-10-2010"/>
+			<date stringDate="September-December 2010" referenceDate="15-01-2011" unhcrDate="01/12/2010" priceLegend="Source: &lt;A HREF=&quot;http://www.fao.org/giews/pricetool&quot;&gt; GIEWS National basic food prices data and analysis tool &lt;/A&gt;" reportType="TEMPLATE_2011"/>
+			<date stringDate="January-April 2011" referenceDate="15-05-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>
+			<date stringDate="May-August 2011" referenceDate="15-10-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>
+		</dates>
+	</country>
+	<country title="Bolivia" code="33">
+		<dates>
+			<date stringDate="February 2010" referenceDate="01-03-2010"/>
+			<date stringDate="May 2010" referenceDate="01-06-2010"/>
+			<date stringDate="June-August 2010" referenceDate="01-10-2010"/>
+			<date stringDate="September-December 2010" referenceDate="15-01-2011" unhcrDate="01/12/2010" priceLegend="Source: &lt;A HREF=&quot;http://www.fao.org/giews/pricetool&quot;&gt; GIEWS National basic food prices data and analysis tool &lt;/A&gt;" reportType="TEMPLATE_2011"/>	
+			<date stringDate="January-April 2011" referenceDate="15-05-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>	
+			<date stringDate="May-August 2011" referenceDate="15-10-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>	
+		</dates>
+	</country>
+	<country title="Burkina Faso" code="42">
+		<dates>
+			<date stringDate="October 2009" referenceDate="01-11-2009"/>
+			<date stringDate="February 2010" referenceDate="01-03-2010"/>
+			<date stringDate="May 2010" referenceDate="01-06-2010"/>
+			<date stringDate="June-August 2010" referenceDate="01-10-2010"/>
+			<date stringDate="September-December 2010" referenceDate="15-01-2011" unhcrDate="01/12/2010" priceLegend="Source: &lt;A HREF=&quot;http://www.fao.org/giews/pricetool&quot;&gt; GIEWS National basic food prices data and analysis tool &lt;/A&gt;" reportType="TEMPLATE_2011"/>		
+			<date stringDate="January-April 2011" referenceDate="15-05-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>	
+			<date stringDate="May-August 2011" referenceDate="15-10-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>
+		</dates>
+	</country>
+	<country title="Cambodia" code="44">
+		<dates>
+			<date stringDate="February 2010" referenceDate="01-03-2010"/>
+			<date stringDate="May 2010" referenceDate="01-06-2010"/>
+			<date stringDate="June-August 2010" referenceDate="01-10-2010"/>
+		</dates>
+	</country>
+	<country title="Central African Republic" code="49">
+		<dates>
+			<date stringDate="February 2010" referenceDate="01-03-2010"/>
+			<date stringDate="May 2010" referenceDate="01-06-2010"/>
+			<date stringDate="June-August 2010" referenceDate="01-10-2010"/>
+			<date stringDate="September-December 2010" referenceDate="15-01-2011" unhcrDate="01/12/2010" priceLegend="nolegend" reportType="TEMPLATE_2011"/>	
+			<date stringDate="January-April 2011" referenceDate="15-05-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>	
+			<date stringDate="May-August 2011" referenceDate="15-10-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>
+		</dates>
+	</country>
+	<country title="Dem Rep of Congo" code="68">
+		<dates>
+			<date stringDate="February 2010" referenceDate="01-03-2010"/>
+			<date stringDate="May 2010" referenceDate="01-06-2010"/>
+			<date stringDate="June-August 2010" referenceDate="01-10-2010"/>
+			<date stringDate="September-December 2010" referenceDate="15-01-2011" unhcrDate="01/12/2010" priceLegend="Source: &lt;A HREF=&quot;http://www.fao.org/giews/pricetool&quot;&gt; GIEWS National basic food prices data and analysis tool &lt;/A&gt;" reportType="TEMPLATE_2011"/>	
+			<date stringDate="January-April 2011" referenceDate="15-05-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>
+			<date stringDate="May-August 2011" referenceDate="15-10-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>
+		</dates>
+	</country>
+	<country title="Eritrea" code="77">
+		<dates>
+			<date stringDate="October 2009" referenceDate="01-11-2009"/>
+			<date stringDate="February 2010" referenceDate="01-03-2010"/>
+			<date stringDate="May 2010" referenceDate="01-06-2010"/>
+			<date stringDate="June-August 2010" referenceDate="01-10-2010"/>
+			<date stringDate="September-December 2010" referenceDate="15-01-2011" unhcrDate="01/12/2010" priceLegend="nolegend" foodBalanceLegend="nolegend" reportType="TEMPLATE_2011"/>	
+			<date stringDate="January-April 2011" referenceDate="15-05-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>
+			<date stringDate="May-August 2011" referenceDate="15-10-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>	
+		</dates>
+	</country>
+	<country title="Ethiopia" code="79">
+		<dates>
+			<date stringDate="October 2009" referenceDate="01-11-2009"/>
+			<date stringDate="February 2010" referenceDate="01-03-2010"/>
+			<date stringDate="May 2010" referenceDate="01-06-2010"/>
+			<date stringDate="June-August 2010" referenceDate="01-10-2010"/>
+			<date stringDate="September-December 2010" referenceDate="15-01-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>			
+			<date stringDate="January-April 2011" referenceDate="15-05-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>
+			<date stringDate="May-August 2011 (info for September are included to reflect the current Horn crisis)" referenceDate="15-10-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>	
+		</dates>
+	</country>
+	
+	<country title="Georgia" code="92">
+		<dates>
+			<date stringDate="June-August 2010" referenceDate="01-10-2010" priceLegend="nolegend" foodBalanceLegend="nolegend"/>
+			<date stringDate="September-December 2010" referenceDate="15-01-2011" unhcrDate="01/12/2010" priceLegend="nolegend" foodBalanceLegend="nolegend" reportType="TEMPLATE_2011"/>			
+		</dates>
+	</country>
+	
+	<country title="Guinea" code="106">
+		<dates>
+			<date stringDate="February 2010" referenceDate="01-03-2010"/>
+			<date stringDate="May 2010" referenceDate="01-06-2010"/>
+			<date stringDate="June-August 2010" referenceDate="01-10-2010"/>
+			<date stringDate="September-December 2010" referenceDate="15-01-2011" unhcrDate="01/12/2010" priceLegend="nolegend"  reportType="TEMPLATE_2011"/>		
+			<date stringDate="January-April 2011" referenceDate="15-05-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>
+			<date stringDate="May-August 2011" referenceDate="15-10-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>		
+		</dates>
+	</country>
+	<country title="Haiti" code="108">
+		<dates>
+			<date stringDate="October 2009" referenceDate="01-11-2009"/>
+			<date stringDate="May 2010" referenceDate="01-06-2010"/>
+			<date stringDate="June-August 2010" referenceDate="01-10-2010"/>
+			<date stringDate="September-December 2010" referenceDate="15-01-2011" unhcrDate="01/12/2010" priceLegend="nolegend"  reportType="TEMPLATE_2011"/>	
+			<date stringDate="January-April 2011" referenceDate="15-05-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>	
+			<date stringDate="May-August 2011" referenceDate="15-10-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>		
+		</dates>
+	</country>
+	<country title="Honduras" code="111">
+		<dates>
+			<date stringDate="February 2010" referenceDate="01-03-2010"/>
+			<date stringDate="May 2010" referenceDate="01-06-2010"/>
+			<date stringDate="June-August 2010" referenceDate="01-10-2010"/>
+			<date stringDate="September-December 2010" referenceDate="15-01-2011" unhcrDate="01/12/2010" priceLegend="Source: &lt;A HREF=&quot;http://www.fao.org/giews/pricetool&quot;&gt; GIEWS National basic food prices data and analysis tool &lt;/A&gt;" reportType="TEMPLATE_2011"/>	
+			<date stringDate="January-April 2011" referenceDate="15-05-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>		
+			<date stringDate="May-August 2011" referenceDate="15-10-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>	
+		</dates>
+	</country>
+	<country title="Kenya" code="133">
+		<dates>
+			<date stringDate="October 2009" referenceDate="01-11-2009"/>
+			<date stringDate="February 2010" referenceDate="01-03-2010"/>
+			<date stringDate="May 2010" referenceDate="01-06-2010"/>
+			<date stringDate="June-August 2010" referenceDate="01-10-2010"/>
+			<date stringDate="September-December 2010" referenceDate="15-01-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>	
+			<date stringDate="January-April 2011" referenceDate="15-05-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>			
+			<date stringDate="May-August 2011 (info for September are included to reflect the current Horn crisis)" referenceDate="15-10-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>
+		</dates>
+	</country>
+
+	<country title="Lesotho" code="142">
+		<dates>
+			<date stringDate="February 2010" referenceDate="01-03-2010"/>
+			<date stringDate="May 2010" referenceDate="01-06-2010"/>
+			<date stringDate="June-August 2010" referenceDate="01-10-2010"/>
+			<date stringDate="September-December 2010" referenceDate="15-01-2011" unhcrDate="01/12/2010" priceLegend="nolegend" reportType="TEMPLATE_2011"/>		
+			<date stringDate="January-April 2011" referenceDate="15-05-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>	
+			<date stringDate="May-August 2011" referenceDate="15-10-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>		
+		</dates>
+	</country>
+	<country title="Liberia" code="144">
+		<dates>
+			<date stringDate="February 2010" referenceDate="01-03-2010"/>
+			<date stringDate="May 2010" referenceDate="01-06-2010"/>
+			<date stringDate="June-August 2010" referenceDate="01-10-2010"/>
+			<date stringDate="September-December 2010" referenceDate="15-01-2011" unhcrDate="01/12/2010" priceLegend="nolegend" reportType="TEMPLATE_2011"/>		
+			<date stringDate="January-April 2011" referenceDate="15-05-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>	
+			<date stringDate="May-August 2011" referenceDate="15-10-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>	
+		</dates>
+	</country>
+	<country title="Madagascar" code="150">
+		<dates>
+			<date stringDate="October 2009" referenceDate="01-11-2009"/>
+			<date stringDate="February 2010" referenceDate="01-03-2010"/>
+			<date stringDate="May 2010" referenceDate="01-06-2010"/>
+			<date stringDate="June-August 2010" referenceDate="01-10-2010"/>
+			<date stringDate="September-December 2010" referenceDate="15-01-2011" unhcrDate="01/12/2010" priceLegend="Source: &lt;A HREF=&quot;http://www.fao.org/giews/pricetool&quot;&gt; GIEWS National basic food prices data and analysis tool &lt;/A&gt;" reportType="TEMPLATE_2011"/>	
+			<date stringDate="January-April 2011" referenceDate="15-05-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>			
+			<date stringDate="May-August 2011" referenceDate="15-10-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>
+		</dates>
+	</country>
+	<country title="Malawi" code="152">
+		<dates>
+			<date stringDate="October 2009" referenceDate="01-11-2009"/>
+			<date stringDate="February 2010" referenceDate="01-03-2010"/>
+			<date stringDate="May 2010" referenceDate="01-06-2010"/>
+			<date stringDate="June-August 2010" referenceDate="01-10-2010"/>
+			<date stringDate="September-December 2010" referenceDate="15-01-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>		
+			<date stringDate="January-April 2011" referenceDate="15-05-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>	
+			<date stringDate="May-August 2011" referenceDate="15-10-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>	
+		</dates>
+	</country>
+	<country title="Mali" code="155">
+		<dates>
+			<date stringDate="October 2009" referenceDate="01-11-2009"/>
+			<date stringDate="February 2010" referenceDate="01-03-2010"/>
+			<date stringDate="May 2010" referenceDate="01-06-2010"/>
+			<date stringDate="June-August 2010" referenceDate="01-10-2010"/>
+			<date stringDate="September-December 2010" referenceDate="15-01-2011" unhcrDate="01/12/2010" priceLegend="Source: &lt;A HREF=&quot;http://www.fao.org/giews/pricetool&quot;&gt; GIEWS National basic food prices data and analysis tool &lt;/A&gt;" reportType="TEMPLATE_2011"/>	
+			<date stringDate="January-April 2011" referenceDate="15-05-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>			
+			<date stringDate="May-August 2011" referenceDate="15-10-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>
+		</dates>
+	</country>
+	<country title="Mauritania" code="159">
+		<dates>
+			<date stringDate="October 2009" referenceDate="01-11-2009"/>
+			<date stringDate="February 2010" referenceDate="01-03-2010"/>
+			<date stringDate="May 2010" referenceDate="01-06-2010"/>
+			<date stringDate="September-December 2010" referenceDate="15-01-2011" unhcrDate="01/12/2010" priceLegend="Source: &lt;A HREF=&quot;http://www.fao.org/giews/pricetool&quot;&gt; GIEWS National basic food prices data and analysis tool &lt;/A&gt;" reportType="TEMPLATE_2011"/>	
+			<date stringDate="January-April 2011" referenceDate="15-05-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>			
+			<date stringDate="May-August 2011" referenceDate="15-10-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>
+		</dates>
+	</country>
+
+	<country title="Mozambique" code="170">
+		<dates>
+			<date stringDate="October 2009" referenceDate="01-11-2009"/>
+			<date stringDate="February 2010" referenceDate="01-03-2010"/>
+			<date stringDate="May 2010" referenceDate="01-06-2010"/>
+			<date stringDate="June-August 2010" referenceDate="01-10-2010"/>
+			<date stringDate="September-December 2010" referenceDate="15-01-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>	
+			<date stringDate="January-April 2011" referenceDate="15-05-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>			
+			<date stringDate="May-August 2011" referenceDate="15-10-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>
+		</dates>
+	</country>
+	
+	<country title="Nepal" code="175">
+		<dates>
+			<date stringDate="October 2009" referenceDate="01-11-2009"/>
+			<date stringDate="February 2010" referenceDate="01-03-2010"/>
+			<date stringDate="May 2010" referenceDate="01-06-2010"/>
+			<date stringDate="June-August 2010" referenceDate="01-10-2010"/>
+			<date stringDate="September-December 2010" referenceDate="15-01-2011" unhcrDate="01/12/2010" priceLegend="nolegend" reportType="TEMPLATE_2011"/>	
+			<date stringDate="January-April 2011" referenceDate="15-05-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>			
+			<date stringDate="May-August 2011" referenceDate="15-10-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>
+		</dates>
+	</country>
+	<country title="Nicaragua" code="180">
+		<dates>
+			<date stringDate="October 2009" referenceDate="01-11-2009"/>
+			<date stringDate="February 2010" referenceDate="01-03-2010"/>
+			<date stringDate="May 2010" referenceDate="01-06-2010"/>
+			<date stringDate="June-August 2010" referenceDate="01-10-2010"/>
+			<date stringDate="September-December 2010" referenceDate="15-01-2011" unhcrDate="01/12/2010" priceLegend="Source: &lt;A HREF=&quot;http://www.fao.org/giews/pricetool&quot;&gt; GIEWS National basic food prices data and analysis tool &lt;/A&gt;" reportType="TEMPLATE_2011"/>	
+			<date stringDate="January-April 2011" referenceDate="15-05-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>			
+			<date stringDate="May-August 2011" referenceDate="15-10-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>
+		</dates>
+	</country>
+	<country title="Niger" code="181">
+		<dates>
+			<date stringDate="October 2009" referenceDate="01-11-2009"/>
+			<date stringDate="February 2010" referenceDate="01-03-2010"/>
+			<date stringDate="May 2010" referenceDate="01-06-2010"/>
+			<date stringDate="June-August 2010" referenceDate="01-10-2010"/>
+			<date stringDate="September-December 2010" referenceDate="15-01-2011" unhcrDate="01/12/2010" priceLegend="Source: &lt;A HREF=&quot;http://www.fao.org/giews/pricetool&quot;&gt; GIEWS National basic food prices data and analysis tool &lt;/A&gt;" reportType="TEMPLATE_2011"/>	
+			<date stringDate="January-April 2011" referenceDate="15-05-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>			
+			<date stringDate="May-August 2011" referenceDate="15-10-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>
+		</dates>
+	</country>
+	<country title="Pakistan" code="188">
+		<dates>
+			<date stringDate="February 2010" referenceDate="01-03-2010"/>
+			<date stringDate="May 2010" referenceDate="01-06-2010"/>
+			<date stringDate="June-August 2010" referenceDate="01-10-2010"/>
+			<date stringDate="September-December 2010" referenceDate="15-01-2011" unhcrDate="01/12/2010" priceLegend="Source: &lt;A HREF=&quot;http://www.fao.org/giews/pricetool&quot;&gt; GIEWS National basic food prices data and analysis tool &lt;/A&gt;" reportType="TEMPLATE_2011"/>			
+		<!--	<date stringDate="June-August 2010" referenceDate="01-10-2010" reportType="SPECIAL_PAKISTAN"/> -->
+			<date stringDate="January-April 2011" referenceDate="15-05-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>	
+			<date stringDate="May-August 2011 (info for September are included to reflect the current flood crisis)" referenceDate="15-10-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>
+		</dates>
+
+	</country>
+	<country title="Repubblic of Moldova" code="165">
+		<dates>
+			<date stringDate="June-August 2010" referenceDate="01-10-2010" priceLegend="nolegend" foodBalanceLegend="nolegend"/>
+			<date stringDate="September-December 2010" referenceDate="15-01-2011" unhcrDate="01/12/2010" priceLegend="nolegend" foodBalanceLegend="nolegend" reportType="TEMPLATE_2011"/>			
+		</dates>
+	</country>
+	<country title="Somalia" code="226">
+		<dates>
+			<date stringDate="October 2009" referenceDate="01-11-2009"/>
+			<date stringDate="February 2010" referenceDate="01-03-2010"/>
+			<date stringDate="May 2010" referenceDate="01-06-2010"/>
+			<date stringDate="June-August 2010" referenceDate="01-10-2010"/>
+			<date stringDate="September-December 2010" referenceDate="15-01-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>	
+			<date stringDate="January-April 2011" referenceDate="15-05-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>			
+			<date stringDate="May-August 2011 (info for September are included to reflect the current Horn crisis)" referenceDate="15-10-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>
+		</dates>
+	</country>
+	<country title="Sierra Leone" code="221">
+		<dates>
+			<date stringDate="February 2010" referenceDate="01-03-2010"/>
+			<date stringDate="May 2010" referenceDate="01-06-2010"/>
+			<date stringDate="June-August 2010" referenceDate="01-10-2010"/>
+			<date stringDate="September-December 2010" referenceDate="15-01-2011" unhcrDate="01/12/2010" priceLegend="nolegend"  reportType="TEMPLATE_2011"/>	
+			<date stringDate="January-April 2011" referenceDate="15-05-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>			
+			<date stringDate="May-August 2011" referenceDate="15-10-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>
+		</dates>
+	</country>
+	<country title="Sri Lanka" code="231">
+		<dates>
+			<date stringDate="February 2010" referenceDate="01-03-2010"/>
+			<date stringDate="May 2010" referenceDate="01-06-2010"/>
+			<date stringDate="June-August 2010" referenceDate="01-10-2010"/>
+			<date stringDate="September-December 2010" referenceDate="15-01-2011" unhcrDate="01/12/2010" priceLegend="Source: &lt;A HREF=&quot;http://www.fao.org/giews/pricetool&quot;&gt; GIEWS National basic food prices data and analysis tool &lt;/A&gt;" reportType="TEMPLATE_2011"/>	
+			<date stringDate="January-April 2011" referenceDate="15-05-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>			
+			<date stringDate="May-August 2011" referenceDate="15-10-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>
+		</dates>
+	</country>
+	<country title="Sudan" code="40764">
+		<dates>
+			<date stringDate="October 2009" referenceDate="01-11-2009"/>
+			<date stringDate="February 2010" referenceDate="01-03-2010"/>
+			<date stringDate="May 2010" referenceDate="01-06-2010"/>
+			<date stringDate="June-August 2010" referenceDate="01-10-2010"/>
+			<date stringDate="September-December 2010" referenceDate="15-01-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>
+			<date stringDate="January-April 2011" referenceDate="15-05-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>			
+			<date stringDate="May-August 2011" referenceDate="15-10-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>
+		</dates>
+	</country>
+	<country title="Yemen" code="269">
+		<dates>
+			<date stringDate="February 2010" referenceDate="01-03-2010"/>
+			<date stringDate="May 2010" referenceDate="01-06-2010"/>
+			<date stringDate="June-August 2010" referenceDate="01-10-2010"/>
+			<date stringDate="September-December 2010" referenceDate="15-01-2011" unhcrDate="01/12/2010" priceLegend="nolegend"  reportType="TEMPLATE_2011"/>
+			<date stringDate="January-April 2011" referenceDate="15-05-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>				
+			<date stringDate="May-August 2011" referenceDate="15-10-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>
+		</dates>
+	</country>
+	<country title="Zimbabwe" code="271">
+		<dates>
+			<date stringDate="October 2009" referenceDate="01-11-2009"/>
+			<date stringDate="February 2010" referenceDate="01-03-2010"/>
+			<date stringDate="May 2010" referenceDate="01-06-2010"/>
+			<date stringDate="June-August 2010" referenceDate="01-10-2010"/>
+			<date stringDate="September-December 2010" referenceDate="15-01-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>	
+			<date stringDate="January-April 2011" referenceDate="15-05-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>					
+			<date stringDate="May-August 2011" referenceDate="15-10-2011" unhcrDate="01/12/2010" reportType="TEMPLATE_2011"/>
+		</dates>
+	</country>
+</root>

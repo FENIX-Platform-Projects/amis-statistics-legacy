@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/fenix/!svn/ver/7574/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/fsatmis
+END
+MAIN_FSATMIS.gwt.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/fenix/!svn/ver/6894/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/fsatmis/MAIN_FSATMIS.gwt.xml
+END
+FSATMIS.gwt.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/fenix/!svn/ver/6894/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/fsatmis/FSATMIS.gwt.xml
+END
+FSATMIS_STANDALONE.gwt.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/fenix/!svn/ver/6894/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/fsatmis/FSATMIS_STANDALONE.gwt.xml
+END

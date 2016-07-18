@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:lang="http://www.springframework.org/schema/lang"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+                           http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang-2.5.xsd">
+
+	<!-- AQUASTAT SERVICE -->
+	<bean id="aquastatService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="aquastatServicePojo" />
+	</bean>
+	
+	<!-- ADAM SERVICE -->
+	<bean id="adamService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="adamServicePojo" />
+	</bean>
+	
+	<!-- BANGLADESH SERVICE -->
+	<bean id="bangladeshService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="bangladeshServicePojo" />
+	</bean>
+	
+	<!-- NEW RE SERVICE -->
+	<bean id="reService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="reServicePojo" />
+	</bean>
+
+	<!-- BIRT SERVICE -->
+	<bean id="birtService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="birtServicePojo" />
+	</bean>
+	
+	<!-- TABLE SERVICE -->
+	<bean id="tableService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="tableServicePojo" />
+	</bean>
+	
+	<!-- UD-TABLE SERVICE -->
+	<bean id="udtableService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="udtableServicePojo" />
+	</bean>
+	
+	<!-- TEXT SERVICE -->
+	<bean id="textService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="textServicePojo" />
+	</bean>
+
+	<!-- User SERVICE new -->
+	<bean id="userService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="userServicePojo" />
+	</bean>
+	
+	<!-- METADATA SERVICE -->
+	<bean id="metadataService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="metadataServicePojo" />
+	</bean>
+	
+	<!-- MAP SERVICE -->
+	<bean id="mapService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="mapServicePojo" />
+	</bean>
+		
+	<!-- PROJECT MANAGER SERVICE -->
+	<bean id="projectManagerService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="projectManagerServicePojo" />
+	</bean>
+	
+	<!-- COMMUNICATION SERVICE -->
+	<bean id="communicationService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="communicationServicePojo" />
+	</bean>
+	
+	<!-- HAITI SERVICE -->
+	<bean id="haitiService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="haitiServicePojo" />
+	</bean>
+	
+	<!-- IPC SERVICE -->
+	<bean id="ipcService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="ipcServicePojo" />
+	</bean>
+	
+	<!-- IPC XML SERVICE -->
+	<bean id="ipcxmlService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="ipcxmlServicePojo" />
+	</bean>
+	
+	<!-- CONSOLE -->
+	<bean id="consoleService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="consoleServicePojo" />
+	</bean>
+	
+	<!-- FPI -->
+	<bean id="fpiService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="fpiServicePojo" />
+	</bean>
+	
+	<!-- GIEWS -->
+	<bean id="giewsService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="giewsServicePojo" />
+	</bean>
+
+	<!-- FSATMIS -->
+	<bean id="fsatmisService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="fsatmisServicePojo" />
+	</bean>
+	
+	<!-- CODING SERVICE -->
+	<bean id="codingService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="codingServicePojo" />
+	</bean>
+	
+	<!-- RAINFALL SERVICE -->
+	<bean id="rainfallService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="rainfallServicePojo" />
+	</bean>
+	
+	<!-- OLAP SERVICE -->
+	<bean id="olapService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="olapServicePojo" />
+	</bean>
+	<!-- WCCT SERVICE -->
+	<bean id="wcctService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="wcctServicePojo" />
+	</bean>
+	<!-- FIXER SERVICE -->
+	<bean id="fixerService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="fixerServicePojo" />
+	</bean>
+
+	<bean id="ccbsService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="ccbsServicePojo" />
+	</bean>
+	
+	<bean id="ofcChartService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="ofcChartServicePojo" />
+	</bean>
+	
+	<bean id="ecService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="ecServicePojo" />
+	</bean>
+	
+	<!-- X Service -->
+	<bean id="xService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="xServicePojo" />
+	</bean>
+	
+	<!-- SDMX Service -->
+	<bean id="sdmxService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="sdmxServicePojo" />
+	</bean>
+	
+	<!-- Query Builder Service -->
+	<bean id="queryBuilderService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="queryBuilderServicePojo" />
+	</bean>
+
+	<!-- LaTeX Service -->
+	<bean id="latexService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="latexServicePojo" />
+	</bean>
+	
+	<!-- Venn Service -->
+	<bean id="vennService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="vennServicePojo" />
+	</bean>
+	
+	<!-- Venn Chart Utils Pojo - -->
+	<bean id="vennChartUtilsPojo" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="vennChartUtilsPojo" />
+	</bean>
+
+	
+	<!-- Excel Importer Service -->
+	<bean id="excelImporterService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="excelImporterServicePojo" />
+	</bean>
+	
+	<!-- Esoko Service -->
+	<bean id="esokoService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="esokoServicePojo" />
+	</bean>
+	
+	<!-- FieldClimate Service -->
+	<bean id="fcService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="fcServicePojo" />
+	</bean>
+	
+	<!-- R Service -->
+	<bean id="rService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="rServicePojo" />
+	</bean>
+	
+	<!-- SLD Editor Service -->
+	<bean id="sldEditorService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="sldEditorServicePojo" />
+	</bean>
+
+	<!-- CNSA Service -->
+	<bean id="cnsaService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="cnsaServicePojo" />
+	</bean>
+	
+	<!-- CNSA Service -->
+	<bean id="haitiCNSAToolService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="haitiCNSAToolServicePojo" />
+	</bean>
+	
+	<!-- Sifsia Service -->
+	<bean id="sifsiaService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="sifsiaServicePojo" />
+	</bean>
+	
+	<!-- Data Mapper Service -->
+	<bean id="dataMapperService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="dataMapperServicePojo" />
+	</bean>
+	
+	<!-- FAOStat Service -->
+	<bean id="faoStatService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="faoStatServicePojo" />
+	</bean>
+	
+	<!-- FEWSNET Service -->
+	<bean id="fewsnetService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="fewsnetServicePojo" />
+	</bean>
+	
+	<!-- Chart Designer Service -->
+	<bean id="chartDesignerService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="chartDesignerServicePojo" />
+	</bean>
+	
+	<!-- IMF Service -->
+	<bean id="imfService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="imfServicePojo" />
+	</bean>
+	
+	<!-- DataViewer Service -->
+	<bean id="dataViewerService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="dataViewerServicePojo" />
+	</bean>
+	
+	<!-- TinyMCE Service -->
+	<bean id="tinyMCEService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="tinyMCEServicePojo" />
+	</bean>
+	
+	<!-- Welcome Service -->
+	<bean id="welcomeService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="welcomeServicePojo" />
+	</bean>
+	
+	<!-- Statistics Service -->
+	<bean id="statisticsService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="statisticsServicePojo" />
+	</bean>
+	
+	<!-- AMIS Service -->
+	<bean id="amisService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+		<property name="service" ref="amisServicePojo" />
+	</bean>
+	
+	<!-- CPF Service -->
+		<bean id="cpfService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+			<property name="service" ref="cpfServicePojo" />
+	</bean>
+	
+		<!-- CPF Service -->
+		<bean id="olapViewerService" class="org.gwtwidgets.server.spring.GWTRPCServiceExporter">
+			<property name="service" ref="olapViewerServicePojo" />
+	</bean>
+	
+</beans>

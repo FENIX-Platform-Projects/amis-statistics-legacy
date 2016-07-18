@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/fenix/!svn/ver/6594/trunk/fenix-web/src/main/webapp/esoko
+END
+EsokoCommodities_metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/fenix/!svn/ver/6590/trunk/fenix-web/src/main/webapp/esoko/EsokoCommodities_metadata.xml
+END
+EsokoMeasurementUnit.csv
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/fenix/!svn/ver/6590/trunk/fenix-web/src/main/webapp/esoko/EsokoMeasurementUnit.csv
+END
+EsokoCurrencies_metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/fenix/!svn/ver/6590/trunk/fenix-web/src/main/webapp/esoko/EsokoCurrencies_metadata.xml
+END
+EsokoPriceType.csv
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/fenix/!svn/ver/6590/trunk/fenix-web/src/main/webapp/esoko/EsokoPriceType.csv
+END
+EsokoPrices_metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/fenix/!svn/ver/6594/trunk/fenix-web/src/main/webapp/esoko/EsokoPrices_metadata.xml
+END
+EsokoPriceType_metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/fenix/!svn/ver/6590/trunk/fenix-web/src/main/webapp/esoko/EsokoPriceType_metadata.xml
+END
+EsokoMeasurementUnit_metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/fenix/!svn/ver/6590/trunk/fenix-web/src/main/webapp/esoko/EsokoMeasurementUnit_metadata.xml
+END
+EsokoMeasures_metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/fenix/!svn/ver/6590/trunk/fenix-web/src/main/webapp/esoko/EsokoMeasures_metadata.xml
+END
+EsokoLocations_metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/fenix/!svn/ver/6590/trunk/fenix-web/src/main/webapp/esoko/EsokoLocations_metadata.xml
+END

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/fenix/!svn/ver/9334/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/utils/boxmenu
+END
+FAOSTATBoxMenuPivotTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/fenix/!svn/ver/8720/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/utils/boxmenu/FAOSTATBoxMenuPivotTable.java
+END
+FAOSTATBoxMenuChart.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/fenix/!svn/ver/9318/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/utils/boxmenu/FAOSTATBoxMenuChart.java
+END
+FAOSTATBoxMenuTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/fenix/!svn/ver/8627/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/utils/boxmenu/FAOSTATBoxMenuTable.java
+END
+FAOSTATBoxMenuMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/fenix/!svn/ver/9699/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/utils/boxmenu/FAOSTATBoxMenuMap.java
+END
+FAOSTATBoxFootnote.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/fenix/!svn/ver/9307/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/utils/boxmenu/FAOSTATBoxFootnote.java
+END
+FAOSTATBoxMenuFlatTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/fenix/!svn/ver/8720/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/utils/boxmenu/FAOSTATBoxMenuFlatTable.java
+END
+FAOSTATBoxMenu.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/fenix/!svn/ver/9334/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/utils/boxmenu/FAOSTATBoxMenu.java
+END

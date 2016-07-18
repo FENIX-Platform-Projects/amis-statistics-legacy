@@ -1,0 +1,123 @@
+﻿<VIEW type="Browse By T - Trade" >
+	<TITLE>
+		<E>Trade</E>
+		<S>Comercio</S>
+		<F>Commerce</F>
+	</TITLE>
+	<FILTERS>
+		<FILTER width="80px" type="CODING_SYSTEM">
+			<FILTERTYPE>YEARS</FILTERTYPE>
+		</FILTER>	
+	</FILTERS>
+	<RESOURCES>
+		<DEFAULT>			
+			 <RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>BAR_WITH_CATEGORIES</OUTPUTTYPE>
+				<TITLE>
+					<E>Top 10 exporters of agricultural products</E>
+					<S>10 principales exportadores de productos agrícolas</S>
+					<F>Top 10 des exportateurs de produits agricoles</F>
+				</TITLE>
+				<SIZE>
+					<WIDTH>800</WIDTH>
+					<HEIGHT>330</HEIGHT>
+				</SIZE>
+				<APPLICABLE_FILTERS>
+					<APPLY_ALL_FILTERS_EXCEPT_AREAS>true</APPLY_ALL_FILTERS_EXCEPT_AREAS>
+				</APPLICABLE_FILTERS>
+				<!-- <DATEQUERY>
+					<MAX>D.Year</MAX>
+				</DATEQUERY>-->
+				<BASEQUERY>
+					
+					<SELECTS>
+ 						<SELECT lang="true">I.ItemName</SELECT>	
+						<SELECT lang="true">A.AreaName</SELECT>		
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Trade-crops and livestock">TP</DOMAIN>	
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Agricultural products">1882</ITEM>
+						</ITEMS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Export'>2920</ELEMENTLIST>
+						</ELEMENTSLIST>
+						<YEARS>
+							<YEAR>2009</YEAR>
+						</YEARS>
+					</WHERE>
+					<SORT>
+						<FIELD type="aggregation">D.Value</FIELD>
+					</SORT>	
+			
+					<NESTEDLIMIT field="D.AreaCode">10</NESTEDLIMIT>
+					
+				</BASEQUERY>					
+			</RESOURCE>
+			
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>BAR_WITH_CATEGORIES</OUTPUTTYPE>
+				<TITLE>
+					<E>Top 10 importers of agricultural products</E>
+					<S>10 principales importadores de productos agrícolas</S>
+					<F>Top 10 des importateurs de produits agricoles</F>
+				</TITLE>
+				<SIZE>
+					<WIDTH>800</WIDTH>
+					<HEIGHT>330</HEIGHT>
+				</SIZE>
+				<APPLICABLE_FILTERS>
+					<APPLY_ALL_FILTERS_EXCEPT_AREAS>true</APPLY_ALL_FILTERS_EXCEPT_AREAS>
+				</APPLICABLE_FILTERS>
+				<!-- <DATEQUERY>
+					<MAX>D.Year</MAX>
+				</DATEQUERY>-->
+				<BASEQUERY>
+					
+					<SELECTS>
+ 						<SELECT lang="true">I.ItemName</SELECT>	
+						<SELECT lang="true">A.AreaName</SELECT>		
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Trade-crops and livestock">TP</DOMAIN>	
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Agricultural products">1882</ITEM>
+						</ITEMS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='import'>2620</ELEMENTLIST>
+						</ELEMENTSLIST>
+						<YEARS>
+							<YEAR>2009</YEAR>
+						</YEARS>
+					</WHERE>
+					<SORT>
+						<FIELD type="aggregation">D.Value</FIELD>
+					</SORT>	
+			
+					<NESTEDLIMIT field="D.AreaCode">10</NESTEDLIMIT>
+					
+				</BASEQUERY>					
+			</RESOURCE>
+		</DEFAULT>	
+	</RESOURCES>
+</VIEW>

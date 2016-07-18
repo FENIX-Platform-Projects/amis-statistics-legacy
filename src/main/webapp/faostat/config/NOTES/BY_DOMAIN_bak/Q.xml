@@ -1,0 +1,84 @@
+﻿<NOTES type="Production">
+<NOTE type="Introduction">
+<E>&lt;b&gt;Click in the tree &lt;/b&gt; to access the download page of the &lt;b&gt;agricultural production sub-domains&lt;/b&gt;. The agricultural production domain covers:&lt;br/&gt;&lt;br/&gt;
+
+&lt;ul class='bullet-list'&gt;
+&lt;li&gt;Quantity produced&lt;/li&gt;
+&lt;li&gt;Producer price&lt;/li&gt;
+&lt;li&gt;Value at farmgate (forthcoming)&lt;/li&gt;
+&lt;li&gt;Area harvested<br/>
+&lt;li&gt;Yield per hectare&lt;/li&gt;
+&lt;/ul&gt;
+
+</E>
+<F>Le domaine de la production agricole couvre :
+
+Quantité produite 
+Prix à la production 
+Prix à l'exploitation (prochainement) 
+Superficie récoltée 
+Rendement par hectare 
+</F>
+<S>El  ámbito de producción agrícola cubre:
+
+Cantidad producida 
+Precios al productor  
+Valor a la puerta de la explotación (próximamente) 
+Área de cosecha 
+Rendimiento por hectárea 
+</S>
+</NOTE>
+<NOTEGROUP type="Please Note">
+ <TITLE><E>Please Note</E></TITLE>
+ <NOTE type="General">
+<E>Users may note that a new methodology for imputing non-reported/missing Production domain data has been 
+
+implemented this year. The methodology has been applied to data from 1990 onwards and data imputed using this 
+
+methodology is flagged by the symbol 'Im'. 
+</E>
+<F>Les utilisateurs sont priés de prendre note qu’une nouvelle méthodologie d’imputation de données non-déclarées 
+
+ou mancantes a été adoptée. Cette méthodologie a été appliquée aux données à partir de 1990 et les données imputées 
+
+en suivant cette methodologie sont indiquées par le symbole 'Im'.
+</F>
+<S>Los usuarios deben notar que este año se ha implementado una nueva metodología en la imputación de datos no 
+
+reportados o ausentes correspondientes al dominio Producción. La metodología ha sido aplicada a los datos del año 
+
+1990 y de los años subsiguientes. Los datos imputados usando la nueva metodología están marcados con el símbolo 
+
+'Im'.
+</S>
+</NOTE>
+<NOTE type="General">
+<E>Aggregates are the sum of available data. 
+
+Aggregates in 2009 include estimated data.
+
+For some item aggregates, conversion factors are applied to values when calculating totals. Please see item 
+
+Metadata for the factors.
+</E>
+<F>Les agrégats sont la somme des données disponibles. 
+
+Les agrégats en 2009 incluent des données estimées.
+
+Pour certains agrégats d'items, des facteurs de conversion sont appliqués aux valeurs lors du calcul des totaux. 
+
+Veuillez consulter les métadonnées pour connaître ces facteurs.
+</F>
+<S>Los agregados son la suma de los datos disponibles. 
+
+Agregados en 2009 incluyen los datos estimados.
+
+Para algunos grupos de items, factores de conversión se aplican a los valores en el cálculo de los totales. Por 
+
+favor, consulte los metadatos para estos factores.
+</S>
+</NOTE>
+</NOTEGROUP>
+
+
+</NOTES>

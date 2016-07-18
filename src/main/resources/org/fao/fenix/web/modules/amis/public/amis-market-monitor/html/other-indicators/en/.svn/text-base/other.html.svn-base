@@ -1,0 +1,36 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://fenixapps.fao.org/wrepo/service/support"></script>
+<script src="http://statistics.amis-outlook.org/data/amis-market-monitor/fnx_amis_market_monitor_charts.js" type="text/javascript"></script>
+</head>
+<body>
+<div>
+<b>AMIS Indicator/Market Monitor Charts Preview</b>
+
+
+<div>
+<div></div>
+<div id="amis_mm_oi_charts_container">
+<table id = "amis_mm_oi_charts" border="0">
+<!--<tr> <td><p>&nbsp;</p><div id="amis_mm_oi_chart_USD" style="width: 700px; height: 350px; "></div></td></tr>
+
+ <tr>  <td><p>&nbsp;</p><div id="amis_mm_oi_chart_FP" style="width: 700px; height: 350px; "></div></td></tr>
+
+<tr>  <td><p>&nbsp;</p><div id="amis_mm_oi_chart_COP" style="width: 700px; height: 350px; "></div></td></tr>   -->
+          <tr>  <td><p>&nbsp;</p><div id="amis_mm_oi_chart_FP_GCFPPGVC" style="width: 700px; height: 600px;"></div></td></tr>
+            <tr>  <td><p>&nbsp;</p><div id="amis_mm_oi_chart_FP_GCFPDAGE" style="width: 700px; height: 600px;"></div></td></tr>
+            <tr>  <td><p>&nbsp;</p><div id="amis_mm_oi_chart_FP_GCFPURBS" style="width: 700px; height: 600px;"></div></td></tr>
+            <tr>  <td><p>&nbsp;</p><div id="amis_mm_oi_chart_FP_GCFPPRM" style="width: 700px; height: 600px;"></div></td></tr>
+
+</table>
+
+</div>
+</div>
+</div>
+</body>
+</html>
+
+
+
+

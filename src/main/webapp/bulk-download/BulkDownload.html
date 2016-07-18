@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>FAOSTAT Bulk Download</title>
+		<link rel="stylesheet" href="css/jqx.base.css" type="text/css" />
+		<link rel="stylesheet" href="css/bulk-downloads.css" type="text/css" />
+		<link href="http://ldvapp07.fao.org:8030/downloads/fao.png" type="image/png" rel="icon">
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery.url.js"></script>
+		<script type="text/javascript" src="js/bulk-download-controller.js"></script>
+		<script type="text/javascript" src="js/jqxcore.js"></script>
+		<script type="text/javascript" src="js/jqxbuttons.js"></script>
+		<script type="text/javascript" src="js/jqxscrollbar.js"></script>
+		<script type="text/javascript" src="js/jqxpanel.js"></script>
+		<script type="text/javascript" src="js/jqxtree.js"></script>
+	</head>
+
+	<body class='default' onload="BulkDownload.initUI()">
+		
+		<div id="container" style="overflow: hidden;">
+			
+			<div id='jqxWidget' style="float: left;">
+				
+				<div id='jqxTree'>
+						
+					<ul id="groupList">
+													
+					</ul>
+					
+				</div>
+				
+			</div>
+			
+			<div id="listArea" style="float: left; padding: 10px;">
+				
+			</div>
+			
+		</div>
+
+	</body>
+
+</html>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<VIEW type="Browse By C - Food Supply" >
+	<TITLE>
+		<E>Food supply</E>
+		<S>Suministro de alimentos</S>
+		<F>Disponibilité alimentaire</F>
+	</TITLE>
+	 <FILTERS>
+		<FILTER width="250px">
+			<FILTERTYPE>ITEMS</FILTERTYPE>
+			<DROPDOWNCODES>
+				<CODE label="Cereals - Excluding Beer" domain='CC'>2905</CODE>
+				<CODE label="Meat, Total" domain='CL'>2943</CODE>
+			</DROPDOWNCODES>
+			<DEFAULTCODES>
+				<CODE label="Cereals - Excluding Beer" domain='CC'>2905</CODE>
+			</DEFAULTCODES>
+		</FILTER>	
+		<FILTER type="CODING_SYSTEM">
+			<FILTERTYPE>TIMERANGE</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE>1992</CODE>
+				<CODE>2007</CODE>
+			</DEFAULTCODES> 
+		</FILTER>
+	</FILTERS> 
+	
+	<RESOURCES>
+		<DEFAULT>
+
+			<RESOURCE>			
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>430</WIDTH>
+					<HEIGHT>220</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>World fat supply quantity</E>
+					<S>Cantidad mundial de suministro de grasas</S>
+					<F>La quantité mondiale de disponibilité de matiéres grasses </F>
+				</TITLE>
+			
+				<DATEQUERY>
+					<MAXDATELIMIT>2007</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> -->
+					<TIMESPAN type="year">15</TIMESPAN>
+				</DATEQUERY>
+
+				<BASEQUERY>					 
+					<SELECTS>		       
+						<SELECT lang="true">E.ElementName</SELECT>
+						<SELECT>D.Year</SELECT>
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Balance Crops">CC</DOMAIN>
+							<DOMAIN label="Balance Livestock">CL</DOMAIN>
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Cereals - Excluding Beer">2905</ITEM>
+						</ITEMS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Fat supply quantity (g/capita/day)'>684</ELEMENTLIST> 
+						</ELEMENTSLIST>
+					
+						<AREAS>
+							<AREA label="World">5000</AREA>	
+						</AREAS> 
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD>D.Year</FIELD>
+					</SORT>
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>TRUE</COUNTRY_LEVEL>			
+	             
+				 </BASEQUERY>					
+			</RESOURCE>
+
+
+			<RESOURCE>			
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>430</WIDTH>
+					<HEIGHT>220</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>World protein supply quantity</E>
+					<S>Cantidad mundial de suministro de proteínas</S>
+					<F>La quantité mondiale de disponibilité de protéines </F>
+				</TITLE>
+			
+				<DATEQUERY>
+					<MAXDATELIMIT>2007</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> -->
+					<TIMESPAN type="year">15</TIMESPAN>
+				</DATEQUERY>
+
+				<BASEQUERY>					 
+					<SELECTS>		       
+						<SELECT lang="true">E.ElementName</SELECT>
+						<SELECT>D.Year</SELECT>
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Balance Crops">CC</DOMAIN>
+							<DOMAIN label="Balance Livestock">CL</DOMAIN>
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Cereals - Excluding Beer">2905</ITEM>
+						</ITEMS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Protein supply quantity (g/capita/day)'>674</ELEMENTLIST> 
+						</ELEMENTSLIST>
+					
+						<AREAS>
+							<AREA label="World">5000</AREA>	
+						</AREAS> 
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD>D.Year</FIELD>
+					</SORT>
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>TRUE</COUNTRY_LEVEL>
+	             
+				 </BASEQUERY>					
+			</RESOURCE>
+
+			<RESOURCE>			
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>430</WIDTH>
+					<HEIGHT>220</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>World food supply quantity (kg/capita/yr)</E>
+					<S>Cantidad mundial de suministro de alimentos (kg/persona/año)</S>
+					<F>La quantité mondiale de disponibilité alimentaire</F>
+				</TITLE>
+
+				<DATEQUERY>
+					<MAXDATELIMIT>2007</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> -->
+					<TIMESPAN type="year">15</TIMESPAN>
+				</DATEQUERY>
+
+				<BASEQUERY>					 
+					<SELECTS>		       
+						<SELECT lang="true">E.ElementName</SELECT>
+						<SELECT>D.Year</SELECT>
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Balance Crops">CC</DOMAIN>
+							<DOMAIN label="Balance Livestock">CL</DOMAIN>
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Cereals - Excluding Beer">2905</ITEM>
+						</ITEMS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Food supply quantity (kg/capita/yr)'>645</ELEMENTLIST> 
+						</ELEMENTSLIST>
+					
+						<AREAS>
+							<AREA label="World">5000</AREA>	
+						</AREAS> 
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD>D.Year</FIELD>
+					</SORT>
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>TRUE</COUNTRY_LEVEL>	
+	             
+				 </BASEQUERY>					
+			</RESOURCE>
+
+			<RESOURCE>			
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>430</WIDTH>
+					<HEIGHT>220</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>World food supply quantity (tonnes)</E>
+					<S>Cantidad mundial de suministro de alimentos (toneladas)</S>
+					<F>La quantité de disponibilité alimentaire (tonnes)</F>
+				</TITLE>
+			
+				<DATEQUERY>
+					<MAXDATELIMIT>2007</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> -->
+					<TIMESPAN type="year">15</TIMESPAN>
+				</DATEQUERY>
+
+				<BASEQUERY>					 
+					<SELECTS>		       
+						<SELECT lang="true">E.ElementName</SELECT>
+						<SELECT>D.Year</SELECT>
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Balance Crops">CC</DOMAIN>
+							<DOMAIN label="Balance Livestock">CL</DOMAIN>
+						</DOMAINS>
+						<ITEMS>
+							<ITEM label="Cereals - Excluding Beer">2905</ITEM>
+						</ITEMS>
+						<ELEMENTSLIST>
+							<ELEMENTLIST label='Food supply quantity (tonnes)'>641</ELEMENTLIST> 
+						</ELEMENTSLIST>
+						<AREAS>
+							<AREA label="World">5000</AREA>	
+						</AREAS> 
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD>D.Year</FIELD>
+					</SORT>
+					<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+					<COUNTRY_LEVEL>TRUE</COUNTRY_LEVEL>			
+				 </BASEQUERY>					
+			</RESOURCE>
+		</DEFAULT>	
+	</RESOURCES>
+</VIEW>

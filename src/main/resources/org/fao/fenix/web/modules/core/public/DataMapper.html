@@ -1,0 +1,551 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" bocontent="text/html; charset=UTF-8">
+<meta name="description" content="GIEWS Workstation 3.2">
+<meta name="keywords"
+	content="FAO food security early warning price production developing country countries information exchange agriculture gis mapping tool">
+<title>DATA MAPPER</title>
+<script type="text/javascript" language='javascript'
+	src='resources/flash/swfobject.js'></script>
+<link rel="stylesheet" type="text/css" href="resources/css/gxt-all.css">
+<link REL="SHORTCUT ICON" HREF="favicon.ico">
+<link rel="stylesheet"
+	href="../libJS/openlayers/theme/default/style.css" type="text/css" />
+<link rel="stylesheet" href="map-style.css" type="text/css" />
+
+<script type='text/javascript' src='datamapper.nocache.js'></script>
+
+<script type="text/javascript"
+	src="../libJS/openlayers/lib/OpenLayers.js"></script>
+<script type='text/javascript' src="../libJS/GeoSolutions/json2.js"></script>
+<script type='text/javascript' src='../libJS/fenixJs/gwt2olUtils.js'></script>
+
+
+<style type='text/css'>
+.no-display {
+	visibility:hidden;
+	display:none;
+}
+.display {
+	visibility:visible;
+ 	display:block;
+}s
+.remove-box {
+	width: 150px;
+	height: 0px;
+	color: #FFFFFF;
+}
+.link-title {
+	font-size: 9px;
+	font-family: arial, sans-serif;
+	text-align: left;
+	font-weight: bold;
+	text-decoration: underline;
+	color: #1d4589;
+}
+.link {
+	font-size: 9px;
+	font-family: arial, sans-serif;
+	text-align: left;
+	cursor: default;
+	color: #315594;
+}
+.link:hover {
+	text-decoration: underline;
+	cursor: hand;
+	cursor: pointer;
+	color: #315594;
+}
+.key-messages {
+	font-size: 12px;
+	text-align: center;
+	font-family: arial, sans-serif;
+}
+.title-box {
+	font-size: 12px;
+	font-family: arial, sans-serif;
+	font-weight: bold;
+	text-decoration: underline;
+	color: #17376d;
+}
+.content {
+	font-size: 12px;
+	font-family: arial, sans-serif;
+	padding: 5px;
+	color: #1d4589;
+}
+.small-content {
+	font-size: 11px;
+	font-family: Serif;
+	font-family: arial, sans-serif;
+	color: #1d4589;
+}
+.small-blue-box {
+	width: 160px;
+	height: 55px;
+	font-size: 10px;
+	font-family: arial, sans-serif;
+	background: -moz-linear-gradient(top,  #579BBC,  #224466);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#579BBC', endColorstr='#224466');
+}
+.small-gray-box {
+	width: 160px;
+	height: 55px;
+	font-size: 10px;
+
+<!--	font-family: arial, sans-serif;
+	background: -moz-linear-gradient(top,  #EFEFEF,  #242424);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EFEFEF', endColorstr='#242424'); -->
+}
+.small-green-box {
+
+	width: 160px;
+	height: 55px;
+	font-size: 10px;
+	font-family: arial, sans-serif;
+	background: #a2c447;
+	<!-- background: -moz-linear-gradient(top,  #32A734,  #005200);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#32A734', endColorstr='#005200'); -->
+}
+.small-red-box {
+
+	width: 160px;
+	height: 55px;
+	font-size: 10px;
+	font-family: arial, sans-serif;
+	background: #cd0000;
+<!--	background: -moz-linear-gradient(top,  #FF2000,  #900020);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF2000', endColorstr='#900020'); -->
+}
+.small-yellow-box {
+	width: 160px;
+	height: 55px;
+	font-size: 10px;
+	background: #FFAA22;
+	font-family: arial, sans-serif;
+<!--	background: -moz-linear-gradient(top,  #FFEE66,  #FFAA22);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEE66', endColorstr='#FFAA22'); -->
+}
+.medium-red-box {
+	width: 565px;
+	height: 250px;
+	border-style:solid;
+	border-width:4px;
+	border-color: #cd0000;
+	background: #FFFFFF;
+	font-family: arial, sans-serif;
+	visibility:visible;
+ 	display:block;
+<!--	background: #d55900; -->
+}
+.medium-gray-box {
+	width: 565px;
+	height: 250px;
+	font-family: arial, sans-serif;
+	background: -moz-linear-gradient(top,  #EFEFEF,  #242424);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EFEFEF', endColorstr='#242424');
+}
+.medium-green-box {
+	width: 565px;
+	height: 250px;
+	border-style:solid;
+	border-width:4px;
+	border-color:#32A734;
+	background: #FFFFFF;
+<!--	background: #4fb020; -->
+<!-- 	background: -moz-linear-gradient(top,  #bde15c,  #32A734);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bde15c', endColorstr='#32A734'); -->
+}
+.medium-blue-box {
+	width: 565px;
+	height: 250px;
+	font-family: arial, sans-serif;
+	background: -moz-linear-gradient(top,  #579BBC,  #224466);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#579BBC', endColorstr='#224466');
+}
+.medium-yellow-box {
+	width: 565px;
+	height: 250px;
+	border-style:solid;
+	border-width:4px;
+	border-color: #FFAA22;
+	background: #FFFFFF;
+	font-family: arial, sans-serif;
+<!--	background: -moz-linear-gradient(top,  #FFEE66,  #FFAA22);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEE66', endColorstr='#FFAA22'); -->
+}
+.keymessages {
+	width: 700px;
+	height: 55px;
+	font-family: arial, sans-serif;
+	border-style:solid;
+	border-width:4px;
+	border-color: #579BBC;
+	background: #FFFFFF;
+}
+.big-green-box {
+	width: 1150px;
+	height: 525px;
+	padding: 5px;
+	border-style:solid;
+	border-width:4px;
+	border-color: #32A734;
+	background: #FFFFFF;
+	font-family: arial, sans-serif;
+	<!-- background: -moz-linear-gradient(top,  #32A734,  #005200);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#32A734', endColorstr='#005200'); -->
+	color: #ff6600l;
+}
+.big-blue-box {
+	width: 1150px;
+	height: 525px;
+	padding: 5px;
+	font-family: arial, sans-serif;
+	background: -moz-linear-gradient(top,  #579BBC,  #224466);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#579BBC', endColorstr='#224466');
+	color: #ff6600l;
+}
+.big-yellow-box {
+	width: 1150px;
+	height: 525px;
+	padding: 5px;
+
+	font-family: arial, sans-serif;
+	border-style:solid;
+	border-width:4px;
+	border-color:  #FFAA22;
+	background: #FFFFFF;
+}
+.big-red-box {
+	width: 1150px;
+	height: 525px;
+	padding: 5px;
+	font-family: arial, sans-serif;
+	border-style:solid;
+	border-width:4px;
+	border-color: #cd0000;
+	background: #FFFFFF;
+<!--	background: -moz-linear-gradient(top,  #FF2000,  #900020);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF2000', endColorstr='#900020'); -->
+
+}
+.big-gray-box {
+	width: 1150px;
+	height: 525px;
+	padding: 5px;
+	background: -moz-linear-gradient(top,  #EFEFEF,  #242424);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EFEFEF', endColorstr='#242424');
+
+}
+.border {
+	border-radius: 1em;
+	-moz-border-radius: 1em;
+}
+.question-yellow-box {
+	width: 565px;
+	height: 185px;
+	font-family: arial, sans-serif;
+	border-style:solid;
+	border-width:4px;
+	border-color: #FFAA22;
+	background: #FFFFFF;
+<!--	background: -moz-linear-gradient(top,  #FFEE66,  #FFAA22);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEE66', endColorstr='#FFAA22'); -->
+	color: #ff6600l;
+}
+.question-green-box {
+	width: 565px;
+	height: 185px;
+	font-family: arial, sans-serif;
+	border-style:solid;
+	border-width:4px;
+	border-color: #32A734;
+	background: #FFFFFF;
+	<!-- background: -moz-linear-gradient(top,  #c8ef60,  #32A734);
+	<!-- filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#005200', endColorstr='#32A734'); -->
+}
+.question-red-box {
+	width: 565px;
+	height: 185px;
+	font-family: arial, sans-serif;
+	border-style:solid;
+	border-width:4px;
+	border-color: #900020;
+	background: #FFFFFF;
+<!--	background: -moz-linear-gradient(top,  #FF2000,  #900020);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF2000', endColorstr='#900020'); -->
+	color: #ff6600l;
+}
+.multiselection-country-box {
+	width: 865px;
+	height: 245px;
+	padding: 5px;
+	border-style:solid;
+	border-width:4px;
+	border-color: #FFAA22;
+	background: #FFFFFF;
+	visibility:visible;
+ 	display:block;
+<!--	background: -moz-linearer-gradient(top,  #FFEE66,  #FFAA22);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEE66', endColorstr='#FFAA22'); -->
+}
+.multiselection-donor-box {
+	width: 865px;
+	height: 245px;
+	padding: 5px;
+	border-style:solid;
+	border-width:4px;
+	border-color: #32A734;
+	background: #FFFFFF;
+	font-family: arial, sans-serif;
+}
+.multiselection-sector-box {
+	width: 865px;
+	height: 245px;
+	padding: 5px;
+	border-style:solid;
+	border-width:4px;
+	border-color: #FF2000;
+	background: #FFFFFF;
+	visibility:visible;
+ 	display:block;
+<!--	font-family: arial, sans-serif;
+	background: -moz-linear-gradient(top,  #FF2000,  #900020);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF2000', endColorstr='#900020'); -->
+
+}
+.custom-box {
+	width: 1150px;
+	height: 525px;
+	padding: 5px;
+	border-style:solid;
+	border-width:4px;
+	border-color: #32A734;
+	background: #FFFFFF;
+	font-family: arial, sans-serif;
+	color: #ff6600l;
+}
+
+.border-box {
+	border-style:solid;
+	border-width:4px;
+	border-color: #32A734;
+	background: #FFFFFF;
+	font-family: arial, sans-serif;
+	color: #ff6600l;
+	border-radius: 1em;
+	-moz-border-radius: 1em;
+}
+.viewmenu {
+<!--	border-style:solid;
+	border-width:1px;
+	border-color: #32A734;
+	background: #FFFFFF; -->
+<!--	font-family: arial, sans-serif;
+	color: #ff6600l;
+	border-radius: 1em;
+	-moz-border-radius: 1em; -->
+}
+
+.viewmenu-box {
+<!--	border-style:solid;
+	border-width:4px;-->
+<!--	border-color: #32A734; -->
+	background: #32A734;
+<!--	font-family: arial, sans-serif;
+	color: #ff6600l;
+	border-radius: 1em;
+	-moz-border-radius: 1em; -->
+}
+.viewmenu-title {
+	font-weight: bold;
+	font-size: 12px;
+	font-family: arial, sans-serif;
+	color: #1d4589;
+}
+
+.viewmenu-content {
+	font-size: 10px;
+	font-family: arial, sans-serif;
+	color: #1d4589;
+}
+
+
+
+.reference-period {
+	font-size: 10px;
+	font-family: arial, sans-serif;
+ 	background: #d0dded;
+}
+
+.country {
+ 	font-size: 10px;
+	background: #FFAA22;
+	font-family: arial, sans-serif;
+}
+
+.donor {
+ 	font-size: 10px;
+	font-family: arial, sans-serif;
+	background: #a2c447;
+}
+
+.sector {
+ 	font-size: 10px;
+	font-family: arial, sans-serif;
+	background: #cd0000;
+}
+
+.box {
+ 	background: -moz-linear-gradient(top,  #315594,  #FFFFFF);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#315594', endColorstr='#FFFFFF');
+
+}
+A:link {text-decoration: none; color: #579BBC; font-size: 10px; font-family: arial, sans-serif;}
+A:visited {text-decoration: none; color: #579BBC; font-size: 10px; font-family: arial, sans-serif;}
+A:active {text-decoration: none; color: #579BBC; font-size: 10px; font-family: arial, sans-serif;}
+A:hover {text-decoration: underline; color: #579BBC; font-size: 10px; font-family: arial, sans-serif;}
+
+
+html,body{margin:0;padding:0}
+body{font: 100.01% "Trebuchet MS",Arial,sans-serif}
+
+/***********************************************************
+*                     MenuBar Main
+***********************************************************/
+
+.main-MenuBar
+{
+    /*  border                      :   1px solid #666;
+    border-width                :   2px 0;
+    border-color                :   #579BBC;
+  background-color            :   #D6DDEA;*/
+    background-color: #579BBC;
+    font-family: Verdana, arial, sans-serif;
+    font-size                   :   11px;
+    font-weight                 :   bold;
+
+}
+
+.main-MenuBar table
+{
+   border-collapse             :   separate;
+   height: 35px;
+}
+.main-MenuBar .gwt-MenuItem
+{
+    cursor                      :   hand;
+    cursor                      :   pointer;
+
+   /* border-left                 :   1px solid #999;
+    border-right                :   1px solid #999;*/
+    background-color            :   #D6DDEA;
+    padding                     :   0 12px;
+    color                   	:   #404040;
+
+}
+
+.main-MenuBar .gwt-MenuItem-selected
+{
+   background: #579BBC url("images/hover.JPG") bottom center no-repeat;
+    background-color            :   #579BBC;
+    color                   	:   #fff;
+}
+
+/***********************************************************
+*                     Top Links e.g. login
+***********************************************************/
+.top-links {
+	text-align					:   left;
+	font-size                   :   12px;
+    font-weight                 :   bold;
+	cursor                      :   hand;
+    cursor                      :   pointer;
+	color						: #fff;
+}
+
+
+<!-- div#header{background-color:#9CF}
+div#header h1{margin:0;line-height:70px;margin-left:20px}
+div#navigation{background-color: #9cf;border-bottom: 1px solid #787878;padding-left: 20px}
+div#navigation ul{list-style-type: none;margin: 0;padding: 0;white-space: nowrap}
+div#navigation li{display: inline;margin: 0;padding:0}
+div#navigation li a{text-decoration: none;border: 1px solid #787878;padding: 0px 0.3em;
+    background: #ccc;color: #036}
+div#navigation li a:hover{background-color: #f0f0f0}
+div#navigation li#activelink a{border-bottom: 1px solid #fff;background-color: #fff;color: #603} -->
+</style>
+
+</head>
+
+<body class="xtheme-aero" bgcolor='#d7deef'>
+<!-- <body class="xtheme-aero" bgcolor='#224466'> =-->
+<!-- <body class="box" > -->
+
+
+
+<table bgcolor="#ffffff" align="center" width="1108px">
+		<tr>
+			<td width="1110px"><div id="LOGO" /></td>
+			
+		</tr>
+</table>
+
+<table bgcolor="#ffffff" width="1108px" align="center" height="5px">
+</table>
+
+<table bgcolor="#ffffff" align="center" width="1100px">	
+<tr>
+<td>
+	<table bgcolor="#ffffff" id=TOOLBAR_TOP_TABLE  align="center" width="1100px">
+		<tr>
+			<td height="10px" width="1100px"><div id="TOOLBAR_TOP_PANEL" /></td>
+		</tr>
+	</table>
+
+	<table bgcolor="#FFFFFF" id=MAP_TABLE  valign="top" align="center" height="410px" width="1100px">
+		<tr>
+			<td  valign="top" width="800px"><div id="MAP_PANEL" /></td>
+			<td valign="top" width="300px"><div id="LEGEND_PANEL" /></td> 
+		</tr>
+	</table>
+
+	<table id=OPTIONS_TABLE  align="center" width="1100px">
+		<tr>
+			<td height="265px" width="1100px"><div id="OPTIONS_PANEL" /></td>
+		</tr>
+	</table>
+
+	<table id=TOOLBAR_TABLE  align="center" width="1100px">
+		<tr>
+			<td height="10px" width="1100px"><div id="TOOLBAR_PANEL" /></td>
+		</tr>
+	</table>
+</td>
+</tr>
+</table>
+
+<table align="center" width="1100px">
+	<tr>
+		<td align="center">
+			<a href='http://www.fao.org/'>Food and Agriculture Organization </a>
+			<a href='http://ec.europa.eu/'>European Commission </a>
+			<a href='http://www.foodsec.org/workstation/'>Workstation</a>
+		</td>
+	</tr>
+</table>
+
+<table align="center" width="1100px">
+	<tr>
+		<td align="center">
+			<a href='http://www.foodsec.org/workstation/'>About Workstation Mapper Tool</a>
+			<a href='http://www.foodsec.org/workstation/'>Help </a>
+			<a href='http://www.foodsec.org/workstation/'>Contact Us</a>
+		</td>
+	</tr>
+</table>
+
+</body>
+
+</html>

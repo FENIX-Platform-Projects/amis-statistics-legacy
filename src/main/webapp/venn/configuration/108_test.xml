@@ -1,0 +1,19 @@
+<adam>
+	<!--  this is for the 10th questions or standard configurations -->
+	<!-- useful the type? -->
+	<countries>
+		<country countryCode="108" />
+	</countries>
+	<type type="normal">
+		<sets>
+			<setA organizationType="Country" organization="Nepal">
+				<strategies>
+					<strategy strategyCode="Y"/>
+					<strategy strategyCode="X1"/>
+				</strategies>
+			</setA>
+		</sets>
+		<configurationParameters>
+		</configurationParameters>
+	</type>
+</adam>

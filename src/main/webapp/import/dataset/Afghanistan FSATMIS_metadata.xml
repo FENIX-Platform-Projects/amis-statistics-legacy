@@ -1,0 +1,147 @@
+<metadata>
+	<type>FSATMISDataset</type>
+	<title>Afghanistan FSATMIS</title>
+	<abstractAbstract>Budget Monitoring</abstractAbstract>
+	<keywords>budget, monitoring</keywords>
+	<provider country="0" contact="Info-GIEWS-Workstation@fao.org">FAO GIEWS</provider>
+	<source country="0" contact="Info-GIEWS-Workstation@fao.org">FAO </source>
+	<region>0</region>
+	<startDate>2000-01-01</startDate>
+	<endDate>2008-12-31</endDate>
+	<dateLastUpdate>2009-05-14</dateLastUpdate>
+	<periodTypeCode>monthly</periodTypeCode>
+	<sharingCode>PublicAndDownload</sharingCode>
+	<refGeoUnit>Country Boundary</refGeoUnit>
+	<layerCodeSet>gaul0</layerCodeSet>
+	<precision>0</precision>
+	<categories>005</categories>
+	<code>budget</code>
+	<descriptors>
+		<descriptor key="true">
+			<header>Project Name</header>
+			<contentDescriptor>text</contentDescriptor>
+		</descriptor>
+		<descriptor key="true">
+				<header>Project Symbol</header>
+				<contentDescriptor>text</contentDescriptor>
+		</descriptor>
+		<descriptor key="true">
+			<header>Country</header>
+			<contentDescriptor>text</contentDescriptor>
+			<options>
+				<option>
+					<name>Geographic</name>
+					<value>GAUL</value>
+					<region>0</region>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="true">
+			<header>Province</header>
+			<contentDescriptor>text</contentDescriptor>
+			<options>
+				<option>
+					<name>Geographic</name>
+					<value>GAUL1</value>
+					<region>0</region>
+				</option>
+				<option>
+					<name>featureCodeSet</name>
+					<value>gaul1</value>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="true">
+			<header>Location</header>
+			<contentDescriptor>text</contentDescriptor>
+		</descriptor>
+		<descriptor key="true">
+			<header>Donor</header>
+			<contentDescriptor>text</contentDescriptor>
+			<options>
+				<option>
+					<name>Indicator</name>
+					<value>OrganizationCode</value>
+					<region>0</region>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="true">
+			<header>Project Status</header>
+			<contentDescriptor>text</contentDescriptor>
+			<options>
+				<option>
+					<name>Indicator</name>
+					<value>ProjectStatus</value>
+					<region>0</region>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="true">
+			<header>From Date</header>
+			<contentDescriptor>date</contentDescriptor>
+		</descriptor>
+		<descriptor key="true">
+			<header>To Date</header>
+			<contentDescriptor>date</contentDescriptor>
+		</descriptor>
+		<descriptor>
+			<header>Budget</header>
+			<contentDescriptor>quantity</contentDescriptor>
+		</descriptor>
+		
+		<descriptor key="true">
+			<header>Currency</header>
+			<contentDescriptor>text</contentDescriptor>
+		</descriptor>
+		<descriptor key="true">
+			<header>DAC Code</header>
+			<contentDescriptor>text</contentDescriptor>
+			<options>
+				<option>
+					<name>Indicator</name>
+					<value>DAC</value>
+					<region>0</region>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="true">
+			<header>Food Security</header>
+			<contentDescriptor>text</contentDescriptor>
+			<options>
+				<option>
+					<name>Indicator</name>
+					<value>FoodSecurityCode</value>
+					<region>0</region>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="true">
+			<header>Budget Type</header>
+			<contentDescriptor>text</contentDescriptor>
+			<options>
+				<option>
+					<name>Indicator</name>
+					<value>BudgetTypeCode</value>
+					<region>0</region>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="true">
+			<header>Notes</header>
+			<contentDescriptor>text</contentDescriptor>
+		</descriptor>
+		<descriptor key="true">
+			<header>Implementing Agency</header>
+			<contentDescriptor>text</contentDescriptor>
+			<options>
+				<option>
+					<name>Indicator</name>
+					<value>AgencyCode</value>
+					<region>0</region>
+				</option>
+			</options>
+		</descriptor>
+		
+	</descriptors>
+</metadata>

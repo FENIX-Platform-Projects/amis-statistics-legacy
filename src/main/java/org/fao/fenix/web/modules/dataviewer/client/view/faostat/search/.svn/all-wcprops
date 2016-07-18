@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/fenix/!svn/ver/9341/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/search
+END
+FAOSTATSearch.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/fenix/!svn/ver/9341/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/search/FAOSTATSearch.java
+END
+FAOSTATSearchOracleOutput.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/fenix/!svn/ver/8663/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/search/FAOSTATSearchOracleOutput.java
+END
+FAOSTATSearchTextBox.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/fenix/!svn/ver/9153/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/search/FAOSTATSearchTextBox.java
+END
+FAOSTATSearchClusterResults.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/fenix/!svn/ver/8425/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/search/FAOSTATSearchClusterResults.java
+END
+FAOSTATSearchData.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/fenix/!svn/ver/9321/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/search/FAOSTATSearchData.java
+END
+FAOSTATSearchTypes.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/fenix/!svn/ver/9323/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/search/FAOSTATSearchTypes.java
+END
+FAOSTATSearchOracleResults.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/fenix/!svn/ver/8311/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/search/FAOSTATSearchOracleResults.java
+END
+FAOSTATSearchFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/fenix/!svn/ver/8627/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/search/FAOSTATSearchFilter.java
+END
+FAOSTATSearchClusterResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/fenix/!svn/ver/8627/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/search/FAOSTATSearchClusterResult.java
+END
+FAOSTATSearchResults.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/fenix/!svn/ver/8412/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/search/FAOSTATSearchResults.java
+END
+FAOSTATSearchSingleResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/fenix/!svn/ver/8663/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/search/FAOSTATSearchSingleResult.java
+END
+FAOSTATSearchResultsPaging.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/fenix/!svn/ver/8627/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/search/FAOSTATSearchResultsPaging.java
+END
+FAOSTATSearchAdvancedPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/fenix/!svn/ver/9278/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/dataviewer/client/view/faostat/search/FAOSTATSearchAdvancedPanel.java
+END

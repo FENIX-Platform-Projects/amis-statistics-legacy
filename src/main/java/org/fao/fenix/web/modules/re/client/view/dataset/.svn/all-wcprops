@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/fenix/!svn/ver/7715/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/dataset
+END
+CatalogueDataset.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/fenix/!svn/ver/6757/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/dataset/CatalogueDataset.java
+END
+CataloguePagerDataset.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/fenix/!svn/ver/6412/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/dataset/CataloguePagerDataset.java
+END
+ResourceExplorerDataset.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/fenix/!svn/ver/7715/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/dataset/ResourceExplorerDataset.java
+END
+SearchParametersDataset.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/fenix/!svn/ver/6412/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/dataset/SearchParametersDataset.java
+END
+CatalogueContextMenuDataset.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/fenix/!svn/ver/7078/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/re/client/view/dataset/CatalogueContextMenuDataset.java
+END

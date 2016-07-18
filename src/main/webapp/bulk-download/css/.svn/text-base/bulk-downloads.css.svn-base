@@ -1,0 +1,47 @@
+﻿.bullet-list {
+	list-style: none outside none;
+	margin: 0 0 1em 15px;
+	padding: 0;
+}
+.bullet-list li {
+	background: url(images/blue_circle_bullet.png) no-repeat scroll 0 4px transparent;
+	line-height: 1.2em;
+	list-style: none outside none;
+	margin: .4em 0;
+	padding: 0 0 0 15px;
+}
+.bullet-list li ol {
+	list-style: none outside none;
+	margin: 0 0 0 30px;
+	padding: 0;
+}
+.bullet-list li ol li {
+	background: none repeat scroll 0 0 transparent;
+	list-style-type: lower-roman;
+	margin: 0 0 0 30px;
+}
+* {
+	font-family: arial, tahoma, helvetica, sans-serif;
+	font-size: 11px;
+	margin: 0;
+	padding: 0;
+}
+a:link {
+	color: #1D4589;
+}
+a:visited {
+	color: #CA1616;
+}
+body {
+	background-color: #FFF;
+	color: #000;
+	font-family: verdana;
+	margin: 0;
+}
+.download_title {
+	color: #0C5C86;
+	font-family: verdana;
+	font-size: 16px;
+	font-variant: small-caps;
+	font-weight: 700;
+}

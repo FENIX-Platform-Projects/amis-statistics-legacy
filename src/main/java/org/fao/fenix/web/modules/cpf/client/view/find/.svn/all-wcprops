@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/fenix/!svn/ver/8841/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/cpf/client/view/find
+END
+CPFSearchResults.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/fenix/!svn/ver/8841/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/cpf/client/view/find/CPFSearchResults.java
+END
+CPFSearchOutput.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/fenix/!svn/ver/8841/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/cpf/client/view/find/CPFSearchOutput.java
+END
+CPFFindPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/fenix/!svn/ver/8841/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/cpf/client/view/find/CPFFindPanel.java
+END
+CPFSearchCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/fenix/!svn/ver/8841/trunk/fenix-web/src/main/java/org/fao/fenix/web/modules/cpf/client/view/find/CPFSearchCache.java
+END

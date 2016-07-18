@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<VIEW type="Browse By OA - Population - Annual Population " >
+	<TITLE>
+		<E>Population - annual population </E>
+		<S>Población - población anual</S>
+		<F>Population - annuelle de la population</F>
+	</TITLE>
+	<FILTERS>
+		<FILTER>
+			<FILTERTYPE>COUNTRIES</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE label="Afghanistan">2</CODE>
+			</DEFAULTCODES> 
+		</FILTER>
+		<FILTER>
+			<FILTERTYPE>YEARS</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE>2010</CODE>
+			</DEFAULTCODES>
+		</FILTER>
+			
+		<FILTER>
+			<FILTERTYPE>AGGREGATION_TYPE</FILTERTYPE>
+			<CODE label="Average">AVG</CODE>
+		</FILTER>	
+	</FILTERS>
+	<RESOURCES>
+		<DEFAULT>
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>TIMESERIE</OUTPUTTYPE>
+				<TITLE>
+					<E>Population dynamics in selected country</E>
+					<S>Dinámicas de población en el país seleccionado</S>
+					<F>La dynamique des populations dans le pays sélectionné</F>
+				</TITLE>
+				<APPLICABLE_FILTERS>
+					<APPLY_ONLY_AREAS>true</APPLY_ONLY_AREAS>
+				</APPLICABLE_FILTERS>
+				<SIZE>
+					<WIDTH>880</WIDTH>
+					<HEIGHT>330</HEIGHT>
+				</SIZE>
+				<DATEQUERY>
+					<MAXDATELIMIT>2010</MAXDATELIMIT>
+					<TIMESPAN type="year">49</TIMESPAN>
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+ 						<SELECT lang="true">E.ElementName</SELECT>	
+						<SELECT>D.Year</SELECT>		
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Annual Population">OA</DOMAIN>
+						</DOMAINS>
+						<ELEMENTS>
+							<ELEMENT label='Rural population'>551</ELEMENT>		
+							<ELEMENT label='Agricultural population'>571</ELEMENT>	
+							<ELEMENT label='total population'>511</ELEMENT>	 
+							<ELEMENT label='Male economically active population in Agr'>602</ELEMENT>		
+							<ELEMENT label='Female economically active population in Agr'>603</ELEMENT>	
+						</ELEMENTS>	
+						<AREAS>
+							<AREA label="Afghanistan">2</AREA>	
+						</AREAS> 
+						<ITEMS>
+							<ITEM label="Population - Est. Proj">3010</ITEM>
+						</ITEMS>	
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD>D.Year</FIELD>
+					</SORT>			
+				</BASEQUERY>					
+			</RESOURCE>
+
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>BAR_WITH_CATEGORIES</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>430</WIDTH>
+					<HEIGHT>250</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>Population composition in selected country (by year)</E>
+					<S>Composición de la población en el país seleccionado (por año)</S>
+					<F>Composition de la population dans le pays sélectionné (par année)</F>
+				</TITLE>
+				<BASEQUERY>
+					<SELECTS>
+
+						<SELECT lang="true">E.ElementName</SELECT>
+						<SELECT>D.Year</SELECT>
+					
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Annual Population">OA</DOMAIN>
+						</DOMAINS>
+						<ELEMENTS>
+							<ELEMENT label='Rural population'>551</ELEMENT>		
+							<ELEMENT label='Agricultural population'>571</ELEMENT>	
+							<ELEMENT label='total population'>511</ELEMENT>	
+							<ELEMENT label='Male economically active population in Agr'>602</ELEMENT>		
+							<ELEMENT label='Female economically active population in Agr'>603</ELEMENT>	
+						</ELEMENTS>	
+						<AREAS>
+							<AREA label="Afghanistan">2</AREA>	
+						</AREAS> 
+						<ITEMS>
+							<ITEM label="Population - Est. Proj">3010</ITEM>
+						</ITEMS>
+						<YEARS>
+							<YEAR>2010</YEAR>
+						</YEARS>
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD>D.Year</FIELD>
+					</SORT>	
+
+				</BASEQUERY>							
+			</RESOURCE>
+
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>PIE</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>430</WIDTH>
+					<HEIGHT>250</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>Population composition in selected country (by area of residence)</E>
+					<S>Composición de la población en el país seleccionado (por área de residencia)</S>
+					<F>Composition de la population dans le pays sélectionné (par zone de résidence)</F>
+				</TITLE>
+				<BASEQUERY>
+					
+					<SELECTS>
+						<SELECT>D.ElementCode</SELECT>	
+						<SELECT lang="true">E.ElementName</SELECT>
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Annual Population">OA</DOMAIN>
+						</DOMAINS>
+						<ELEMENTS>
+							<ELEMENT label='Rural population'>551</ELEMENT>	
+							<ELEMENT label='Urban population'>561</ELEMENT>
+						</ELEMENTS>	
+						<AREAS>
+							<AREA label="Afghanistan">2</AREA>	
+						</AREAS> 
+						<ITEMS>
+							<ITEM label="Population - Est. Proj">3010</ITEM>
+						</ITEMS>
+						<YEARS>
+							<YEAR>2010</YEAR>
+						</YEARS>
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">E.ElementName</FIELD>
+					</SORT>	
+
+				</BASEQUERY>							
+			</RESOURCE>
+
+
+
+			<RESOURCE>	
+				<RESOURCETYPE>CHART</RESOURCETYPE>
+				<OUTPUTTYPE>PIE</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>550</WIDTH>
+					<HEIGHT>250</HEIGHT>
+				</SIZE>
+				<TITLE>
+					<E>Population composition in selected country (by gender)</E>
+					<S>Composición de la población en el país seleccionado (por sexo)</S>
+					<F>Composition de la population dans le pays sélectionné (par sexe)</F>
+				</TITLE>
+				<BASEQUERY>
+					
+					<SELECTS>
+						<SELECT>D.ElementCode</SELECT>	
+						<SELECT lang="true">E.ElementName</SELECT>
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Annual Population">OA</DOMAIN>
+						</DOMAINS>
+						<ELEMENTS>
+							<ELEMENT label='Male economically active population'>592</ELEMENT>	
+							<ELEMENT label='Female economically active population'>593</ELEMENT>
+						</ELEMENTS>	
+						<AREAS>
+							<AREA label="Afghanistan">2</AREA>	
+						</AREAS> 
+						<ITEMS>
+							<ITEM label="Population - Est. Proj">3010</ITEM>
+						</ITEMS>
+						<YEARS>
+							<YEAR>2010</YEAR>
+						</YEARS>
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">E.ElementName</FIELD>
+					</SORT>	
+
+				</BASEQUERY>							
+			</RESOURCE>
+			
+			<RESOURCE>			
+				<RESOURCETYPE>TABLE</RESOURCETYPE>
+ 				<OUTPUTTYPE>HTML</OUTPUTTYPE>
+				<SIZE>
+					<WIDTH>305</WIDTH>
+				</SIZE>
+				<TITLE>
+					<E>Growth rate</E>
+					<S>Tasa de Crecimiento</S>
+					<F>Taux de croissance</F>
+				</TITLE>
+				<APPLICABLE_FILTERS>
+					<APPLY_ONLY_AREAS>true</APPLY_ONLY_AREAS>
+				</APPLICABLE_FILTERS>
+				<CALCULATIONQUERY>
+					<TYPE>ANNUAL_GROWTH_RATE_LEAST_SQUARE</TYPE> 
+				</CALCULATIONQUERY> 
+				<DATEQUERY>
+					<MAXDATELIMIT>2010</MAXDATELIMIT>
+					<!--<MAX>D.Year</MAX> -->
+					<TIMESPAN type="year">10</TIMESPAN>
+				</DATEQUERY>
+				<BASEQUERY>
+					
+					<SELECTS>
+						<SELECT lang="true">A.AreaName</SELECT>
+						<SELECT lang="true">E.ElementName</SELECT>
+						<SELECT>D.Year</SELECT>
+					</SELECTS>
+					<TABLES>		       
+						<FROM>Data</FROM>
+						<FROM>Element</FROM>
+						<FROM>Area</FROM>
+						<FROM>Item</FROM>
+						<FROM>DomainArea</FROM>	
+					</TABLES>
+					<WHERE>
+						<DOMAINS>
+							<DOMAIN label="Annual Population">OA</DOMAIN>
+						</DOMAINS>
+						<ELEMENTS>
+							<ELEMENT label='Rural population'>551</ELEMENT>	
+							<ELEMENT label='Urban population'>561</ELEMENT>
+							<ELEMENT label='total population'>511</ELEMENT>	
+						</ELEMENTS>	
+						<AREAS>
+							<AREA label="Afghanistan">2</AREA>	
+						</AREAS> 
+						<ITEMS>
+							<ITEM label="Population - Est. Proj">3010</ITEM>
+						</ITEMS>
+					</WHERE>
+					<SORT type="ASC">
+					        <FIELD lang="true">E.ElementName</FIELD>
+					</SORT>	
+
+				</BASEQUERY>					
+			</RESOURCE> 
+		</DEFAULT>	
+	</RESOURCES>
+</VIEW>

@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<VIEW type="Commodities by regions">
+	<TITLE>
+		<E>Imports - Commodities by regions</E>
+		<S>Importaciones - Productos por regiones</S>
+		<F>Importations - Produits par regions</F>
+	</TITLE>
+
+	 <FILTERS>
+		<FILTER width="300px" >
+			<FILTERTYPE>AREAS_WORLD</FILTERTYPE>
+			<DEFAULTCODES>
+				<CODE label="World">5000</CODE>
+			</DEFAULTCODES>
+			<DOMAINS>
+				<DOMAIN label="TIN">TP</DOMAIN>	
+			</DOMAINS>
+		</FILTER>
+
+		<FILTER width="80px" type="CODING_SYSTEM">
+			<FILTERTYPE>YEARS</FILTERTYPE>
+			<DOMAINS>
+				<DOMAIN label="TIN">TP</DOMAIN>	
+			</DOMAINS>
+		</FILTER>
+
+		<FILTER width="110px" useCodingSystem="false">
+			<FILTERTYPE>SORTING</FILTERTYPE>
+			<DROPDOWNCODES>
+				<CODE labelE="Quantity" labelF="Quantité" labelS="Cantitad">Q1.Value</CODE>
+				<CODE labelE="Value" labelF="Valeur" labelS="Valor">Q2.Value</CODE>
+				<CODE labelE="Unit Value" labelF="Valeur Unitaire" labelS="Valor unitario">'Unit value ($/tonne)'</CODE>
+			</DROPDOWNCODES>
+			<DEFAULTCODES>
+				<CODE labelE="Quantity" labelF="Quantité" labelS="Cantitad">Q1.Value</CODE>
+			</DEFAULTCODES>
+		</FILTER>	
+	</FILTERS> 
+
+	<RESOURCES>
+		<DEFAULT>
+
+		<RESOURCE>
+			<RESOURCETYPE>CHART</RESOURCETYPE>
+			<OUTPUTTYPE>BAR_WITH_CATEGORIES</OUTPUTTYPE>
+			<TITLE>
+				<E>Top 10 Imports </E>
+				<S>10 principales Importadores</S>
+				<F>Top 10 Importations</F>
+			</TITLE>
+			<IMAGESIZE>
+			        <SIZE>
+					<WIDTH>780</WIDTH>
+					<HEIGHT>290</HEIGHT>
+				</SIZE>
+			</IMAGESIZE>
+
+			<JOINQUERY>
+				
+				<JOINCOLUMN>ItemCode</JOINCOLUMN>
+				<SORT type="DESC">
+					<FIELD>Q1.Value</FIELD>
+				</SORT>
+
+				<!--<DATEQUERY>
+					<MAX>D.Year</MAX>
+				</DATEQUERY>-->
+
+					<LIMIT field="D.ItemCode">10</LIMIT>
+					<SELECTS>
+					<SELECT lang="true">Q1.ItemName</SELECT>		
+					<SELECT lang="true">Q1.ElementName</SELECT>
+					<SELECT lang="true">Q1.UnitName</SELECT>	
+					<SELECT>Q1.Value</SELECT>
+					<SELECT lang="true">Q2.ElementName</SELECT>
+					<SELECT lang="true">Q2.UnitName</SELECT>
+					<SELECT>Q2.Value</SELECT>
+					<SELECT aliasE='Element Name' aliasS='Producto' aliasF='Produit'>'Unit value ($/tonne)'</SELECT>
+					<SELECT aliasE='Measurement Unit' >'Unit value ($/tonne)'</SELECT>
+ 					<SELECT aliasE='Unit value ($/tonne)' aliasS='Valor unitario ($/tonne)'  aliasF='Valeur unitaire ($/tonne)'>ROUND(((Q2.Value * 1000) / (Q1.Value)), 2)</SELECT>
+				</SELECTS>
+	
+				<BASEQUERIES>
+				  	<BASEQUERY>
+						
+						<SELECTS>
+							<SELECT>I.ItemCode</SELECT>	
+							<SELECT lang="true">I.ItemName</SELECT>	
+							<SELECT lang="true">E.ElementName</SELECT>	
+							<SELECT lang="true">E.UnitName</SELECT>	
+							<SELECT>D.Value</SELECT>
+						</SELECTS>
+						<TABLES>		       
+							<FROM>Data</FROM>
+							<FROM>Element</FROM>
+							<FROM>Area</FROM>
+							<FROM>Item</FROM>
+						</TABLES>
+						<WHERE>
+						    	<DOMAINS>
+								<DOMAIN label="TIN">TP</DOMAIN>
+							</DOMAINS>
+							<AREAS>
+								<AREA label="World">5000</AREA>
+							</AREAS>
+							<ELEMENTSLIST>
+								<ELEMENTLIST label='Import Quantity'>2610</ELEMENTLIST>
+							</ELEMENTSLIST>
+							<ITEMSLEVEL>
+								<ITEMLEVEL>5</ITEMLEVEL>
+							</ITEMSLEVEL>
+							<YEARS>
+								<YEAR>2009</YEAR>
+							</YEARS>
+						</WHERE>
+						<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+						<SHOWNULL>FALSE</SHOWNULL>
+					</BASEQUERY>	
+					  	<BASEQUERY>
+				
+						<SELECTS>
+							<SELECT>I.ItemCode</SELECT>	
+							<SELECT lang="true">I.ItemName</SELECT>	
+							<SELECT lang="true">E.ElementName</SELECT>	
+							<SELECT lang="true">E.UnitName</SELECT>	
+							<SELECT>D.Value</SELECT>
+						</SELECTS>
+						<TABLES>		       
+							<FROM>Data</FROM>
+							<FROM>Element</FROM>
+							<FROM>Area</FROM>
+							<FROM>Item</FROM>
+							<FROM>DomainArea</FROM>	
+						</TABLES>
+						<WHERE>
+						    	<DOMAINS>
+								<DOMAIN label="TIN">TP</DOMAIN>
+							</DOMAINS>
+							<AREAS>
+								<AREA label="World">5000</AREA>
+							</AREAS>
+							<ELEMENTSLIST>
+								<ELEMENTLIST label='Import value'>2620</ELEMENTLIST>
+							</ELEMENTSLIST>
+							<ITEMSLEVEL>
+								<ITEMLEVEL>5</ITEMLEVEL>
+							</ITEMSLEVEL>
+							<YEARS>
+								<YEAR>2009</YEAR>
+							</YEARS>
+						</WHERE>
+						<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+						<SHOWNULL>FALSE</SHOWNULL>
+					</BASEQUERY>	
+				</BASEQUERIES>
+			</JOINQUERY>
+		</RESOURCE>
+
+
+		<RESOURCE>
+			<RESOURCETYPE>TABLE</RESOURCETYPE>
+				<OUTPUTTYPE>HTML</OUTPUTTYPE>
+				<TITLE>
+					<E>Top 25 Commodities</E>
+					<S>25 principales Productos</S>
+					<F>Top 25 Produits</F>
+				</TITLE>
+				<IMAGESIZE>
+				        <SIZE>
+						<WIDTH>780</WIDTH>
+						<HEIGHT>400</HEIGHT>
+					</SIZE>
+				</IMAGESIZE>
+
+
+				<JOINQUERY>
+					
+					<JOINCOLUMN>ItemCode</JOINCOLUMN>
+					<SORT type="DESC">
+						<FIELD>Q1.Value</FIELD>
+					</SORT>
+
+					<!-- <DATEQUERY>
+						<MAX>D.Year</MAX>
+					</DATEQUERY>-->
+
+					<LIMIT field="D.ItemCode">25</LIMIT>
+				  	<SELECTS>
+						<SELECT aliasE="Commodity" aliasS="Producto"  aliasF="Produit" lang="true">Q1.ItemName</SELECT>		
+						<SELECT aliasE="Quantity (tonnes)" aliasS="Cantitad (tonnes)" aliasF="Quantité (tonnes)">CAST(Q1.Value as numeric(38,0))</SELECT>
+						<SELECT aliasS="Símbolo" aliasF="Symbole">Q1.Flag</SELECT> 
+						<SELECT aliasE="Value (1000 $)" aliasS="Valor (1000 $)" aliasF="Valeur (1000 $)">CAST(Q2.Value as numeric(38,0))</SELECT>
+ 						<SELECT aliasS="Símbolo" aliasF="Symbole">Q2.Flag</SELECT>
+ 						<SELECT aliasE='Unit value ($/tonne)'  aliasS='Valor unitario ($/tonne)' aliasF='Valeur unitarie ($/tonne)'>CAST(ROUND(((Q2.Value * 1000) / (Q1.Value)), 2)as numeric(38,0))</SELECT>
+					</SELECTS>
+
+					
+		
+				<BASEQUERIES>
+				  	<BASEQUERY>
+				
+						<SELECTS>
+							<SELECT>I.ItemCode</SELECT>	
+							<SELECT lang="true">I.ItemName</SELECT>	
+							<SELECT lang="true">E.ElementName</SELECT>	
+							<SELECT lang="true">E.UnitName</SELECT>	
+							<SELECT>D.Flag</SELECT>	
+							<SELECT lang="true">F.FlagDescription</SELECT>	
+							<SELECT>D.Value</SELECT>
+						</SELECTS>
+						<TABLES>		       
+							<FROM>Data</FROM>
+							<FROM>Element</FROM>
+							<FROM>Area</FROM>
+							<FROM>Item</FROM>
+						</TABLES>
+						<WHERE>
+						    	<DOMAINS>
+								<DOMAIN label="TIN">TP</DOMAIN>
+							</DOMAINS>
+							<AREAS>
+								<AREA label="World">5000</AREA>
+							</AREAS>
+							<ELEMENTSLIST>
+								<ELEMENTLIST label='Import Quantity'>2610</ELEMENTLIST>
+							</ELEMENTSLIST>
+							<ITEMSLEVEL>
+								<ITEMLEVEL>5</ITEMLEVEL>
+							</ITEMSLEVEL>
+							<YEARS>
+								<YEAR>2009</YEAR>
+							</YEARS>
+						</WHERE>
+						<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+						<SHOWNULL>FALSE</SHOWNULL>
+					</BASEQUERY>	
+					  	<BASEQUERY>
+				
+						<SELECTS>
+							<SELECT>I.ItemCode</SELECT>	
+							<SELECT lang="true">I.ItemName</SELECT>	
+							<SELECT lang="true">E.ElementName</SELECT>	
+							<SELECT lang="true">E.UnitName</SELECT>	
+							<SELECT>D.Flag</SELECT>	
+							<SELECT lang="true">F.FlagDescription</SELECT>	
+							<SELECT>D.Value</SELECT>
+						</SELECTS>
+						<TABLES>		       
+							<FROM>Data</FROM>
+							<FROM>Element</FROM>
+							<FROM>Area</FROM>
+							<FROM>Item</FROM>
+						</TABLES>
+						<WHERE>
+						    	<DOMAINS>
+								<DOMAIN label="TIN">TP</DOMAIN>
+							</DOMAINS>
+							<AREAS>
+								<AREA label="World">5000</AREA>
+							</AREAS>
+							<ELEMENTSLIST>
+								<ELEMENTLIST label='Import value'>2620</ELEMENTLIST>
+							</ELEMENTSLIST>
+							<ITEMSLEVEL>
+								<ITEMLEVEL>5</ITEMLEVEL>
+							</ITEMSLEVEL>
+							<YEARS>
+								<YEAR>2009</YEAR>
+							</YEARS>
+						</WHERE>
+						<REGIONAL_LEVEL>TRUE</REGIONAL_LEVEL>
+						<SHOWNULL>FALSE</SHOWNULL>
+					</BASEQUERY>	
+				</BASEQUERIES>
+				</JOINQUERY>
+			</RESOURCE>
+		</DEFAULT>	
+	</RESOURCES>
+</VIEW>

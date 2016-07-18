@@ -1,0 +1,86 @@
+<metadata>
+	<type>CropCalendarDek</type>
+	<title>CropCalendarDek</title>
+	<abstractAbstract>crop calendar by country and by crop</abstractAbstract>
+	<keywords>crop</keywords>
+	<provider>FAO GIEWS</provider>
+	<source country="UN">FAO GIEWS</source>
+	<contact>Info-GIEWS-Workstation@fao.org</contact>
+	<region>0</region>
+	<startDate></startDate>
+	<endDate></endDate>
+	<dateLastUpdate>2009-01-29</dateLastUpdate>
+	<periodTypeCode>decade</periodTypeCode>
+	<sharingCode>Public</sharingCode>
+	<refGeoUnit>AdminBoundary0</refGeoUnit>
+	<layerCodeSet>gaul0</layerCodeSet>
+	<precision>0</precision>
+	<categories>004</categories>
+	<code>ds_cropcalendar_dek</code>
+	<descriptors>
+		<descriptor key="true">
+			<header>FeatureCode</header>
+			<contentDescriptor>featureCode</contentDescriptor>
+			<options>
+				<option>
+					<name>Geographic</name>
+					<value>GAUL</value>
+					<region>0</region>
+				</option>
+				<option>
+					<name>FeatureCodeSet</name>
+					<value>gaul1</value>
+				</option>
+			</options>
+		</descriptor>	
+		<descriptor key="true">
+			<header>Commodity</header>
+			<contentDescriptor>commodityCode</contentDescriptor>
+			<options>
+				<option>
+					<name>Commodity</name>
+					<value>HS</value>
+					<region>0</region>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="true">
+			<header>Season</header>
+			<contentDescriptor>firstIndicator</contentDescriptor>
+			<options>
+				<option>
+					<name>Indicator</name>
+					<value>SeasonCode</value>
+					<region>0</region>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor key="true">
+			<header>Others</header>
+			<contentDescriptor>secondIndicator</contentDescriptor>
+			<options>
+				<option>
+					<name>Indicator</name>
+					<value>OthersWcctCode</value>
+					<region>0</region>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor>
+			<header>Value</header>
+			<contentDescriptor>quantity</contentDescriptor>
+		</descriptor>
+		<descriptor key="true">
+			<header>Date</header>
+			<contentDescriptor>date</contentDescriptor>
+		</descriptor>
+		<descriptor>
+			<header>StartDate</header>
+			<contentDescriptor>baseDateFrom</contentDescriptor>
+		</descriptor>
+		<descriptor>
+			<header>EndDate</header>
+			<contentDescriptor>baseDateTo</contentDescriptor>
+		</descriptor>
+	</descriptors>
+</metadata>

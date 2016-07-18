@@ -1,0 +1,57 @@
+<metadata>
+	<type>Music</type>
+	<title>Hard Rock Albums</title>
+	<abstractAbstract>Greatest hard rock band ever</abstractAbstract>
+	<keywords>hard, rock, music</keywords>
+	<provider country="0" contact="Info-GIEWS-Workstation@fao.org">FAO GIEWS</provider>
+	<source country="0" contact="Info-GIEWS-Workstation@fao.org">FAO</source>
+	<region>0</region>
+	<startDate>1998-12-31</startDate>
+	<endDate>2008-12-31</endDate>
+	<dateLastUpdate>2008-09-03</dateLastUpdate>
+	<periodTypeCode>monthly</periodTypeCode>
+	<sharingCode>PublicAndDownload</sharingCode>
+	<refGeoUnit>Country Boundary</refGeoUnit>
+	<layerCodeSet>gaul0</layerCodeSet>
+	<precision>0</precision>
+	<categories>economy</categories>
+	<code>abc123</code>
+	<descriptors>
+		<descriptor key="true">
+			<header>Release Date</header>
+			<contentDescriptor>date</contentDescriptor>
+		</descriptor>
+		<descriptor key="true">
+			<header>Band</header>
+			<contentDescriptor>commodityCode</contentDescriptor>
+		</descriptor>
+		<descriptor key="true">
+			<header>Leader</header>
+			<contentDescriptor>commodityCode</contentDescriptor>
+		</descriptor>
+		<descriptor key="true">
+			<header>Album Title</header>
+			<contentDescriptor>featureCode</contentDescriptor>
+		</descriptor>
+		<descriptor>
+			<header>Average Price</header>
+			<contentDescriptor>quantity</contentDescriptor>
+			<options>
+				<option>
+					<name>measurementUnit</name>
+					<value>USD</value>
+				</option>
+			</options>
+		</descriptor>
+		<descriptor>
+			<header>Best Chart Position</header>
+			<contentDescriptor>quantity</contentDescriptor>
+			<options>
+				<option>
+					<name>measurementUnit</name>
+					<value>u</value>
+				</option>
+			</options>
+		</descriptor>
+	</descriptors>
+</metadata>

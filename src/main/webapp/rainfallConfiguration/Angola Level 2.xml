@@ -1,0 +1,34 @@
+<configuration>
+	<regions>
+		<region>
+			<system>GAUL</system>
+			<code>398</code>
+			<label>Bengo</label>
+		</region>
+		<region>
+			<system>GAUL</system>
+			<code>399</code>
+			<label>Benguela</label>
+		</region>
+		<region>
+			<system>GAUL</system>
+			<code>4206</code>
+			<label>Ambriz</label>
+		</region>
+	</regions>
+	<period>
+		<fromDecade>121</fromDecade>
+		<fromYear>2008</fromYear>
+		<toDecade>123</toDecade>
+		<toYear>2008</toYear>
+		<compareYear>2007</compareYear>
+	</period>
+	<options>
+		<template>giews</template>
+		<cumulate>false</cumulate>
+		<average>true</average>
+		<map>true</map>
+		<chart>true</chart>
+		<table>true</table>
+	</options>
+</configuration>
