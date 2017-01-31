@@ -8,6 +8,10 @@ import com.extjs.gxt.ui.client.widget.HorizontalPanel;
 import com.extjs.gxt.ui.client.widget.Html;
 import com.extjs.gxt.ui.client.widget.button.ToggleButton;
 import com.extjs.gxt.ui.client.widget.form.ComboBox;
+//import com.google.gwt.json.client.JSONObject;
+//import com.google.gwt.json.client.JSONArray;
+import com.google.gwt.http.client.*;
+import org.json.simple.JSONObject;
 import org.fao.fenix.web.modules.amis.client.control.AMISController;
 import org.fao.fenix.web.modules.amis.client.control.objects.AMISFaostatPivotTableController;
 import org.fao.fenix.web.modules.amis.client.view.download.*;
@@ -34,6 +38,8 @@ import com.extjs.gxt.ui.client.widget.ListView;
 import com.extjs.gxt.ui.client.widget.form.Radio;
 import com.google.gwt.user.client.Timer;
 import com.google.gwt.user.client.rpc.AsyncCallback;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 
 public class AMISDownloadController {
 	
@@ -700,8 +706,13 @@ public static void exportCSVAgent(AMISDownload download, ArrayList<String> codeL
 			
 			if ( tokensAsync > 0)
 				checkExportIfAllTheAsyncCallsAreReturned(qvo, download, loadingWindow);
-			else
-				exportCSVAgentCall(qvo, download, loadingWindow);
+			else {
+                exportCSVAgentCall(qvo, download, loadingWindow);
+//				if(isFoodBalance)
+//					exportExcelServiceCall(qvo, download, loadingWindow);
+//				else
+//					exportCSVAgentCall(qvo, download, loadingWindow);
+			}
 		}
 
 	}
@@ -730,8 +741,15 @@ public static void exportCSVAgent(AMISDownload download, ArrayList<String> codeL
 							{
 								System.out.println("AmisFaostatDownloadController exportCSVAgentCall Text: data available for the current selection...");
 								loadingWindow.destroyLoadingBox();
+
+                                download.getTablePanel().getTablesPanel().removeAll();
+                                download.getTablePanel().getViewMorePanel().hide();
+
+								//openUrl(vo.getExportFilename());
+								//com.google.gwt.user.client.Window.open(vo.getExportFilename(), "_blank", "menubar=no,location=no,resizable=yes,scrollbars=yes,status=no");
 								com.google.gwt.user.client.Window.open("../exportObject/" + vo.getExportFilename(), "_blank", "menubar=no,location=no,resizable=yes,scrollbars=yes,status=no");
-							}
+
+                            }
 						}
 						else
 						{
@@ -749,9 +767,56 @@ public static void exportCSVAgent(AMISDownload download, ArrayList<String> codeL
 			e.printStackTrace();
 		}
 	}
-	
-	
-	
+
+
+	private static native void openUrl(String url) /*-{
+        $wnd.location = url;
+    }-*/;
+
+
+	/*private static void exportExcelServiceCall(final AMISQueryVO qvo, final AMISDownload download, final LoadingWindow loadingWindow) {
+		System.out.println("AmisFaostatDownloadController exportExcelServiceCall Text: Before calling SERVICE");
+
+		//Ensures the removal of the "No data available ..." message
+		download.getTablePanel().getTablesPanel().removeAll();
+
+		String json = "{\"resource\": {\"metadata\": {}, \"data\": []}, \"input\": {\"plugin\": \"inputAMISSupply\", \"config\": {}}, \"output\": {\"plugin\": \"SupplyAndDemandOutput\", \"config\": {}}";
+
+		JSONParser parser = new JSONParser();
+		try {
+			JSONObject jsObj = (JSONObject)parser.parse(json);
+			JSONObject input = (JSONObject)jsObj.get("input");
+
+			String url = "http://exlpramis1.ext.fao.org:10400/exportManager/fenix/export";
+
+
+            System.out.print("============ #### REQUEST url: =========== "+ url);
+            System.out.print("============ #### REQUEST post data: =========== "+ jsObj.toJSONString());
+
+			RequestBuilder builder = new RequestBuilder(RequestBuilder.POST, url);
+			builder.setHeader("ContentType", "application/json");
+            builder.sendRequest(jsObj.toJSONString(), new RequestCallback(){
+            @Override
+			public void onResponseReceived(Request request, Response response){
+				System.out.print("============ #### RESPONSE SUCCESS Status Code: =========== "+ response.getStatusCode());
+				System.out.print("============ ####  RESPONSE SUCCESS Text:  =========== "+ response.getText());
+			}
+
+			@Override
+			public void onError(Request request, Throwable exception){
+				System.out.print("============ ####  RESPONSE ERROR =========== "+exception.getMessage());
+			}
+			});
+		}
+        catch(ParseException ex){
+        	System.out.print("============ ####  PARSE JSON ERROR ===========");
+		}
+		catch(RequestException ex){
+			System.out.print("============ ####  REQUEST ERROR ===========");
+		}
+
+	}*/
+
 	public static SelectionListener<ButtonEvent> showTable(final AMISDownload download) {
 		return new SelectionListener<ButtonEvent>() {
 			public void componentSelected(ButtonEvent ce) {

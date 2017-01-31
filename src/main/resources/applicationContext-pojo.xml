@@ -521,6 +521,7 @@
         <property name="amisDao" ref="amisDao" />
         <property name="tableExcel" ref="tableExcel" />
         <property name="amisSupplyDemandExcel" ref="amisSupplyDemandExcel" />
+        <property name="amisRequestBuilder" ref="amisRequestBuilder" />
         <property name="configFilePath" value="/data/config" />
         <property name="fileFactory" ref="fileFactory" />
         <property name="dbAdapter" ref="ccbsDbAdapter" />

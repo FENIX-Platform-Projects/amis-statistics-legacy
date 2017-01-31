@@ -227,7 +227,8 @@ public class FoodBalanceQueryBuilder {
 
         long endTime = System.currentTimeMillis();
 
-        LOGGER.info("get -- ITY ELEMENTS -- qvo.getFoodBalanceElements() size = " +  qvo.getFoodBalanceElements());
+        LOGGER.info("get -- ELEMENTS -- qvo.getElements() size = " +  qvo.getElements());
+        LOGGER.info("get -- ITY ELEMENTS -- qvo.getItyElements() size = " +  qvo.getItyElements());
 
         return qvo;
     }

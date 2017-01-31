@@ -418,6 +418,9 @@
     <bean id="amisSupplyDemandExcel" class="org.fao.fenix.web.modules.amis.server.supplydemand.AMISSupplyDemandExcel">
     </bean>
 
+	<bean id="amisRequestBuilder" class="org.fao.fenix.web.modules.amis.server.supplydemand.AMISRequestBuilder">
+	</bean>
+
 	<!-- THIS ENTRY HAS TO BE REMOVED WHEN IN PRODUCTION -->
 <!--	<bean id="persister" class="org.fao.fenix.core.utils.Persister" lazy-init="false" init-method="databasePopulateAll">-->
 <!--		<property name="fenixGaulDao" ref="fenixGaulDao" />-->

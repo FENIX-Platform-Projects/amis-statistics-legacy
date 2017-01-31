@@ -89,6 +89,8 @@ public class AMISSupplyDemandUtils {
         if(datasource.equals("United States of America")){
             datasource = "USA";
         }
+
+
         if(country.equals("Russian Federation")){
             country = "Russian Fed";
         }
@@ -108,6 +110,7 @@ public class AMISSupplyDemandUtils {
         if(datasource.equals("Republic of Korea")){
             datasource = "Rep of Korea";
         }
+
 
         if(country.equals("China Mainland")){
             country = "China Main";
@@ -129,8 +132,17 @@ public class AMISSupplyDemandUtils {
             datasource = "EU";
         }
 
+
         if(datasource.equals("CBS")){
             datasource = "FAO-AMIS";
+        }
+
+        if(label.equals("CBS")){
+            label = "FAO-AMIS";
+        }
+
+        if(country.equals("CBS")){
+            country = "FAO-AMIS";
         }
 
         if(country.contains("Rice")){
@@ -143,12 +155,22 @@ public class AMISSupplyDemandUtils {
             label = "Rice";
         }
 
+        if(datasource.contains("Rice")){
+            //label = label.split(",")[0];
+            datasource = "Rice";
+        }
+
         if(country.contains("Wheat")){
             country = country.split("\\(")[0];
         }
 
         if(label.contains("Wheat")){
             label = label.split("\\(")[0];
+        }
+
+        if(datasource.contains("Wheat")){
+            //label = label.split(",")[0];
+            datasource = "Wheat";
         }
 
 

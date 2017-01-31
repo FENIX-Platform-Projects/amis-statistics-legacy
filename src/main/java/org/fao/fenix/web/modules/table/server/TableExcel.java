@@ -314,6 +314,7 @@ public class TableExcel {
 	}
 
 	public String createExcel(String titleFilename, String title, List<String> headers, List<List<String>> table, Integer stringColumnIndex, Integer numericColumnIndex) {
+		System.out.println("createExcel  EXPORT TO FIX AMIS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!?????????????????????????????");
 		// initiate filename
 		StringBuilder filename = new StringBuilder();
 		filename.append(Setting.getSystemPath());
@@ -480,7 +481,7 @@ public class TableExcel {
 	}
 
     private int createContents(Integer rowIndex, List<List<String>> table, HSSFWorkbook workbook, HSSFSheet sheet, Integer columnIndex, Boolean isStringColumnIndex) {
-	//	System.out.println("createContents columnIndex = "+columnIndex + " isStringColumnIndex " + isStringColumnIndex);
+		System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!????????????????????????????? createContents columnIndex = "+columnIndex + " isStringColumnIndex " + isStringColumnIndex + " rowIndex = "+rowIndex);
     		 
 		for (int i = 0; i < table.size(); i++) {
 			HSSFRow row = sheet.createRow(rowIndex);
@@ -489,16 +490,16 @@ public class TableExcel {
 				HSSFCell cell = row.createCell((short) j);
 
 				if(!isStringColumnIndex) {
-					//System.out.println("createContents !isStringColumnIndex (false) " + isStringColumnIndex);
+					System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!????????????????????????????? createContents !isStringColumnIndex (false) " + isStringColumnIndex);
 
 					if ( j == columnIndex) {
-						//System.out.println("CELL_TYPE_NUMERIC value = '"+content.get(j)+"'");
+						System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!????????????????????????????? CELL_TYPE_NUMERIC value = '"+content.get(j)+"'");
 						if(content.get(j).equals(EmptyDatumLabel.getLabel())) {
 							cell.setCellType(HSSFCell.CELL_TYPE_BLANK);		
 						} else if(content.get(j).length()==0) {
 							cell.setCellType(HSSFCell.CELL_TYPE_BLANK);			 
 						} else {
-							System.out.println(" numeric");
+							System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!?????????????????????????????  numeric");
 							cell.setCellType(HSSFCell.CELL_TYPE_NUMERIC);
 							cell.setCellValue(Double.valueOf(content.get(j).replace(",", "")));		
 						}
@@ -509,20 +510,20 @@ public class TableExcel {
 					}
 				}
 				else {
-					//System.out.println("createContents isStringColumnIndex (true) " + isStringColumnIndex);
+					System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!????????????????????????????? createContents isStringColumnIndex (true) " + isStringColumnIndex);
 
 					if ( j == columnIndex) {
-						//System.out.println("IF CELL_TYPE_STRING value = "+content.get(j));
+						System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!????????????????????????????? IF CELL_TYPE_STRING value = "+content.get(j));
 						cell.setCellType(HSSFCell.CELL_TYPE_STRING);
 						cell.setCellValue(content.get(j));		 						
 					} else {
-						//System.out.println("ELSE CELL_TYPE_NUMERIC  value = '"+content.get(j)+"'");
+						System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!????????????????????????????? ELSE CELL_TYPE_NUMERIC  value = '"+content.get(j)+"'");
 						if(content.get(j).equals(EmptyDatumLabel.getLabel())) {
 							cell.setCellType(HSSFCell.CELL_TYPE_BLANK);		
 						} else if(content.get(j).length()==0) {
 							cell.setCellType(HSSFCell.CELL_TYPE_BLANK);			 
 						} else {
-							//System.out.println(" numeric");
+							System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!????????????????????????????? numeric");
 						    cell.setCellType(HSSFCell.CELL_TYPE_NUMERIC);
 							cell.setCellValue(Double.valueOf(content.get(j).replace(",", "")));			 
 						}

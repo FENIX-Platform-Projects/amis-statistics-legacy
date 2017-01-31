@@ -1,11 +1,17 @@
 package org.fao.fenix.web.modules.amis.server.supplydemand;
 
 import org.apache.log4j.Logger;
-import org.apache.poi.hssf.usermodel.*;
-import org.apache.poi.hssf.util.Region;
-
+import org.apache.poi.hssf.usermodel.HSSFCellStyle;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.util.CellRangeAddress;
 import org.fao.fenix.web.modules.amis.common.constants.AMISConstants;
 import org.fao.fenix.web.modules.amis.common.vo.AMISQueryVO;
+
+
+
 
 import java.util.LinkedHashMap;
 
@@ -16,7 +22,8 @@ public class AMISSupplyDemandNotes {
     private static final String PSD_SOYBEANS_FOOTNOTE = "Feed Waste Domestic Consumption";
     private static final String IGC_SOYBEANS_FOOTNOTE = "Feed";
 
-     public static boolean createSoybeansFootNotes(int rowCounter, HSSFWorkbook workbook, HSSFSheet sheet, AMISQueryVO qvo, String product){
+     public static boolean createSoybeansFootNotes(int rowCounter, HSSFWorkbook workbook, Sheet sheet, AMISQueryVO qvo, String product,
+                                                   AmisSupplyDemandExcelUtilsNew utils){
         //Footnotes
         //IGC & PSD Soybeans Footnote
         boolean footnoteAdded = false;
@@ -38,12 +45,12 @@ public class AMISSupplyDemandNotes {
 
                      if(qvo.getDatabases().containsKey(AMISConstants.IGC.name()))   {
                          LOGGER.info(".. and IGC createFootnote ");
-                         createFixedFootnotes(rowCounter, sheet, workbook, "Other Uses", IGC_SOYBEANS_FOOTNOTE, false);
+                         createFixedFootnotes(rowCounter, sheet, workbook, "Other Uses", IGC_SOYBEANS_FOOTNOTE, false,utils);
                          footnoteAdded = true;
                      }
                      else if(qvo.getDatabases().containsKey(AMISConstants.PSD.name()))   {
                          LOGGER.info(".. and PSD createFootnote ");
-                         createFixedFootnotes(rowCounter, sheet, workbook, "Other Uses", PSD_SOYBEANS_FOOTNOTE, false);
+                         createFixedFootnotes(rowCounter, sheet, workbook, "Other Uses", PSD_SOYBEANS_FOOTNOTE, false,utils);
                          footnoteAdded = true;
                      }
                 }
@@ -55,11 +62,11 @@ public class AMISSupplyDemandNotes {
 
              if(productCode.equals("6") && product.equals(AMISConstants.IGC.name())) {
                  LOGGER.info("IS Soybeans AND IGC createFootnote: ");
-                 createFixedFootnotes(rowCounter, sheet, workbook, "Other Uses", IGC_SOYBEANS_FOOTNOTE, false);
+                 createFixedFootnotes(rowCounter, sheet, workbook, "Other Uses", IGC_SOYBEANS_FOOTNOTE, false,utils);
                  footnoteAdded = true;
              }  else if(productCode.equals("6") && product.equals(AMISConstants.PSD.name())){
                  LOGGER.info("IS Soybeans AND PSD createFootnote: ");
-                 createFixedFootnotes(rowCounter, sheet, workbook, "Other Uses", PSD_SOYBEANS_FOOTNOTE, false);
+                 createFixedFootnotes(rowCounter, sheet, workbook, "Other Uses", PSD_SOYBEANS_FOOTNOTE, false,utils);
                  footnoteAdded = true;
              }
 
@@ -71,16 +78,16 @@ public class AMISSupplyDemandNotes {
 
 
 
-    public static int createFootnotes(int rowCounter, HSSFSheet sheet, HSSFWorkbook workbook, LinkedHashMap<String, String> elementNotes, boolean footnoteAdded){
+    public static int createFootnotes(int rowCounter, Sheet sheet, HSSFWorkbook workbook, LinkedHashMap<String, String> elementNotes, boolean footnoteAdded, AmisSupplyDemandExcelUtilsNew utils){
 
 
         if(!footnoteAdded){
             LOGGER.info("createFootnote: 0");
-            rowCounter = AMISSupplyDemandExcelUtils.createEmptyRow(rowCounter, sheet, workbook);
+            rowCounter = AmisSupplyDemandExcelUtilsNew.createEmptyRow(rowCounter, sheet, workbook);
 
             LOGGER.info("createFootnote: 1");
 
-            rowCounter = createInformationRow(rowCounter, sheet,  workbook, "FOOTNOTES:", "", true, 0);
+            rowCounter = createInformationRow(rowCounter, sheet,  workbook, "FOOTNOTES:", "", true, 0, utils);
         }
 
         LOGGER.info("createFootnote: 2");
@@ -90,8 +97,8 @@ public class AMISSupplyDemandNotes {
         LOGGER.info("createFootnote: 3 elementNotesMap = "+elementNotes);
 
         for(String element: elementNotes.keySet()){
-            sheet.addMergedRegion(new Region(t, (short) 0, t, (short) (2)));
-            createInformationRow(t, sheet,  workbook, element+" = "+elementNotes.get(element), "", true, 0);
+            sheet.addMergedRegion(new CellRangeAddress(t, t,(short) 0,  (short) (2)));
+            createInformationRow(t, sheet,  workbook, element+" = "+elementNotes.get(element), "", true, 0, utils);
 
             t++;
         }
@@ -101,61 +108,75 @@ public class AMISSupplyDemandNotes {
     }
 
 
-    public static int createFixedFootnotes(int rowCounter, HSSFSheet sheet, HSSFWorkbook workbook, String header, String value, boolean footnoteAdded){
+    public static int createFixedFootnotes(int rowCounter, Sheet sheet, HSSFWorkbook workbook, String header, String value, boolean footnoteAdded,
+    AmisSupplyDemandExcelUtilsNew utils){
       if(!footnoteAdded){
             LOGGER.info("createStandardFootnotes: 0");
-             rowCounter = AMISSupplyDemandExcelUtils.createEmptyRow(rowCounter, sheet, workbook);
+             rowCounter = utils.createEmptyRow(rowCounter, sheet, workbook);
 
             LOGGER.info("createStandardFootnotes: 1");
 
-            rowCounter = createInformationRow(rowCounter, sheet,  workbook, "FOOTNOTES:", "", true, 0);
+            rowCounter = createInformationRow(rowCounter, sheet,  workbook, "FOOTNOTES:", "", true, 0, utils);
         }
 
         LOGGER.info("createStandardFootnotes: 2");
 
         int t = rowCounter++;
-        sheet.addMergedRegion(new Region(t, (short) 0, t, (short) (2)));
-        createInformationRow(t, sheet,  workbook, header+" = "+value, "", true, 0);
+
+        sheet.addMergedRegion(new CellRangeAddress(t, t,(short) 0,  (short) (2)));
+
+      //  sheet.addMergedRegion(new CellRangeAddress(t, (short) 0, t, (short) (2)));
+        createInformationRow(t, sheet,  workbook, header+" = "+value, "", true, 0, utils);
 
         LOGGER.info("createStandardFootnotes: 4 END ");
         return t;
     }
 
-    public static int createInformationRow(int rowCounter, HSSFSheet sheet,  HSSFWorkbook workbook, String header, String headerValue, Boolean isBold, int cellIndex){
-        HSSFRow row = sheet.createRow(rowCounter++);
+    public static int createInformationRow(int rowCounter, Sheet sheet,  HSSFWorkbook workbook, String header, String headerValue, Boolean isBold, int cellIndex, AmisSupplyDemandExcelUtilsNew utils){
+        Row row = sheet.createRow(rowCounter++);
 
         if(header != null && headerValue==null){
-            HSSFCell cell = row.createCell((short) cellIndex);
-            cell.setCellStyle(AMISSupplyDemandExcelUtils.getSmallTextCellStyle(workbook, null, isBold));
+            Cell cell = row.createCell((short) cellIndex);
+            cell.setCellStyle(utils.getBoldSmallTextCellStyle());
             cell.setCellValue(header);
+            cell.getCellStyle().setBorderBottom((short)0);
+            cell.getCellStyle().setBorderTop((short)0);
+            cell.getCellStyle().setBorderLeft((short)0);
+            cell.getCellStyle().setBorderRight((short)0);
 
             row.createCell((short) 1).setCellValue("");
+            cell.getCellStyle().setBorderBottom((short)0);
+            cell.getCellStyle().setBorderTop((short)0);
+            cell.getCellStyle().setBorderLeft((short)0);
+            cell.getCellStyle().setBorderRight((short)0);
         }
         else {
-            HSSFCell cell = row.createCell((short) cellIndex);
-            cell.setCellStyle(AMISSupplyDemandExcelUtils.getSmallTextCellStyle(workbook, null, isBold));
+            Cell cell = row.createCell((short) cellIndex);
+            cell.setCellStyle(utils.getBoldSmallTextCellStyle());
             cell.setCellValue(header);
+            cell.getCellStyle().setBorderBottom((short)0);
+            cell.getCellStyle().setBorderTop((short)0);
+            cell.getCellStyle().setBorderLeft((short)0);
+            cell.getCellStyle().setBorderRight((short)0);
+
 
             cell = row.createCell((short) (cellIndex+1));
-            cell.setCellStyle(AMISSupplyDemandExcelUtils.getSmallTextCellStyle(workbook, null, isBold));
+            cell.setCellStyle(utils.getBoldSmallTextCellStyle());
+
             cell.setCellValue(headerValue);
+            cell.getCellStyle().setBorderBottom((short)0);
+            cell.getCellStyle().setBorderTop((short)0);
+            cell.getCellStyle().setBorderLeft((short)0);
+            cell.getCellStyle().setBorderRight((short)0);
+
         }
 
-
-         return rowCounter;
-    }
-
-
-
-    public static int createMarketingTradeNoteRow(int rowCounter, HSSFSheet sheet, HSSFWorkbook workbook, String note){
-        HSSFRow row = sheet.createRow(rowCounter++);
-        HSSFCell cell = row.createCell((short) 0);
-        HSSFCellStyle cellStyle = AMISSupplyDemandExcelUtils.getLeftAlignmentStyle(workbook);
-        cell.setCellStyle(cellStyle);
-        cell.setCellValue(note);
 
         return rowCounter;
     }
+
+
+
 
 
     public static String buildNote(String value, String baseYear, String period, String type){

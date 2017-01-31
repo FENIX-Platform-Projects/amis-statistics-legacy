@@ -15,8 +15,6 @@ import org.fao.fenix.web.modules.venn.common.vo.VennGraphBeanVO;
 import org.fao.fenix.web.modules.venn.common.vo.VennIntersectionsBean;
 import org.fao.fenix.web.modules.venn.common.vo.VennProjectsBean;
 
-import ch.ethz.ssh2.log.Logger;
-
 public class VennUtils {
 
 	
@@ -1145,7 +1143,7 @@ public class VennUtils {
 	public static LinkedHashMap<String, Double> setXaxisEntries(LinkedHashMap<String, Double> hashMap, int maxXentry) {
 		// if the entries in the hashmap are less than maxXentry 
 		
-		hashMap = sortByValues(hashMap);
+		hashMap = sortByValuesDouble(hashMap);
 		
 //		System.out.println("maxXentry: " + maxXentry);
 //		System.out.println("hashMap.size(): " + hashMap.size());
@@ -1176,7 +1174,7 @@ public class VennUtils {
 		}
 	}
 	
-	private static LinkedHashMap<String, Double> sortByValues(Map<String, Double> in) {
+	private static LinkedHashMap<String, Double> sortByValuesDouble(Map<String, Double> in) {
 		LinkedHashMap<String, Double> out = new LinkedHashMap<String, Double>();
 		List<String> mapKeys = new ArrayList<String>(in.keySet());
 		List<Double> mapValues = new ArrayList<Double>(in.values());

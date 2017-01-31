@@ -41,6 +41,7 @@ import org.fao.fenix.web.modules.amis.common.vo.ClientAmisDatasetResult;
 import org.fao.fenix.web.modules.amis.common.vo.ClientCbsDatasetResult;
 import org.fao.fenix.web.modules.amis.common.vo.Page;
 import org.fao.fenix.web.modules.amis.common.vo.CCBS.Codes;
+import org.fao.fenix.web.modules.amis.server.supplydemand.AMISRequestBuilder;
 import org.fao.fenix.web.modules.amis.server.supplydemand.AMISSupplyDemandExcel;
 import org.fao.fenix.web.modules.amis.server.utils.AMISFaostatUtils;
 import org.fao.fenix.web.modules.amis.server.utils.AMISHtmlUtils;
@@ -75,6 +76,7 @@ public class AMISServiceImpl extends RemoteServiceServlet implements
     private TableExcel tableExcel;
 
     private AMISSupplyDemandExcel amisSupplyDemandExcel;
+    private AMISRequestBuilder amisRequestBuilder;
 
     private String dir;
     private String configFilePath;
@@ -439,6 +441,17 @@ public class AMISServiceImpl extends RemoteServiceServlet implements
         return outputfile;
     }
 
+
+    private String sendSupplyDemandRequest(AMISQueryVO qvo) {
+        String outputfile = "";
+
+
+        LOGGER.info("============== sendSupplyDemandRequest ...");
+        outputfile = amisRequestBuilder.postRequest(qvo);
+
+        return outputfile;
+    }
+
     private AMISResultVO createCerealBalanceTable(AMISQueryVO qvo, AMISResultVO rvo) {
 
         LinkedHashMap<String, Map<String, String>> values = new LinkedHashMap<String, Map<String,String>>();
@@ -781,6 +794,8 @@ public class AMISServiceImpl extends RemoteServiceServlet implements
     public String export(AMISResultVO rvo) {
 
         // TODO: change it...
+        System.out.println(" EXPORT TO FIX AMIS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!?????????????????????????????");
+        System.out.println(rvo);
         String filename = tableExcel.createExcel("", rvo.getExportTitle(), rvo.getExportTableHeaders(), rvo
                 .getTableContents(), rvo.getStringColumnIndex(), rvo.getNumericColumnIndex());
 
@@ -1100,6 +1115,9 @@ public class AMISServiceImpl extends RemoteServiceServlet implements
 
         if(qvo.getTypeOfOutput()!=null && qvo.getTypeOfOutput().contains(AMISConstants.FOOD_BALANCE.name())){
             rvo = createSupplyDemandTable(qvo, rvo);
+            System.out.println("Before exportExcelServiceCall!!!");
+//            rvo = getSupplyDemandTable(qvo, rvo);
+
         }  else {
             rvo = createStandardTable(qvo, rvo);
         }
@@ -1186,6 +1204,32 @@ public class AMISServiceImpl extends RemoteServiceServlet implements
                     String file = getSupplyDemandExcel(qvo, rvo, foodBalanceResult, otherResult, ityResult );
                     rvo.setExportFilename(file);
                     long endTime = System.currentTimeMillis();
+
+                    break;
+            }
+
+        } catch (Exception e) {
+            throw new FenixException(e.getMessage());
+        }
+
+
+        return rvo;
+
+    }
+
+    private AMISResultVO getSupplyDemandTable(AMISQueryVO qvo, AMISResultVO rvo)  {
+        LOGGER.info("============== getSupplyDemandTable START ...");
+        try {
+            AMISConstants type = AMISConstants.valueOf(qvo.getTypeOfOutput());
+            switch (type) {
+                case HTML:
+                    break;
+                case EXPORT_EXCEL_FOOD_BALANCE:
+                    long startTime = System.currentTimeMillis();
+                    LOGGER.info("============== getSupplyDemandTable 1 ...");
+
+                    String file = sendSupplyDemandRequest(qvo);
+                    rvo.setExportFilename(file);
 
                     break;
             }
@@ -4576,6 +4620,12 @@ public class AMISServiceImpl extends RemoteServiceServlet implements
     public void setAmisSupplyDemandExcel(AMISSupplyDemandExcel amisSupplyDemandExcel) {
         this.amisSupplyDemandExcel = amisSupplyDemandExcel;
     }
+
+    public void setAmisRequestBuilder(AMISRequestBuilder amisRequestBuilder) {
+        this.amisRequestBuilder = amisRequestBuilder;
+    }
+
+
 
 //	public CustomDatasetDao getCustomDatasetDao() {
 //		return customDatasetDao;
